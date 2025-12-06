@@ -23,7 +23,7 @@
 */
 
 // Define base and accent colors
-$base-color: #610e0e;
+$base-color: #2a1818;
 $base-color-hover: darken($base-color, 10%);
 
 $dark-mode-base: #080808;
@@ -204,9 +204,9 @@ header {
     background: linear-gradient(270deg, $dark-mode-base, $base-color, $dark-mode-text-alt);
     background-size: 800% 800%;
     
-    -webkit-animation: grad-anim 5s ease infinite;
-    -moz-animation: grad-anim 5s ease infinite;
-    animation: grad-anim 5s ease infinite;
+    -webkit-animation: grad-anim 12s ease-in-out infinite;
+    -moz-animation: grad-anim 12s ease-in-out infinite;
+    animation: grad-anim 12s ease-in-out infinite;
     &.active {
         display: block;
     }
@@ -499,9 +499,9 @@ footer {
     background: linear-gradient(270deg, $dark-mode-base, $base-color, $dark-mode-text-alt);
     background-size: 800% 800%;
     
-    -webkit-animation: grad-anim 5s ease infinite;
-    -moz-animation: grad-anim 5s ease infinite;
-    animation: grad-anim 5s ease infinite;
+    -webkit-animation: grad-anim 12s ease-in-out infinite;
+    -moz-animation: grad-anim 12s ease-in-out infinite;
+    animation: grad-anim 12s ease-in-out infinite;
 
 
     h2 {
@@ -677,9 +677,9 @@ footer {
     background: linear-gradient(270deg, $dark-mode-base, $base-color, $dark-mode-text-alt);
     background-size: 800% 800%;
     
-    -webkit-animation: grad-anim 5s ease infinite;
-    -moz-animation: grad-anim 5s ease infinite;
-    animation: grad-anim 5s ease infinite;
+    -webkit-animation: grad-anim 12s ease-in-out infinite;
+    -moz-animation: grad-anim 12s ease-in-out infinite;
+    animation: grad-anim 12s ease-in-out infinite;
 
     h2 {
         color: $heading;
@@ -783,9 +783,9 @@ footer {
     background: linear-gradient(270deg, $dark-mode-base, $base-color, $dark-mode-text-alt);
     background-size: 800% 800%;
     
-    -webkit-animation: grad-anim 5s ease infinite;
-    -moz-animation: grad-anim 5s ease infinite;
-    animation: grad-anim 5s ease infinite;
+    -webkit-animation: grad-anim 12s ease-in-out infinite;
+    -moz-animation: grad-anim 12s ease-in-out infinite;
+    animation: grad-anim 12s ease-in-out infinite;
 
     h2 {
         margin: 0 0 15px 0;
@@ -854,9 +854,9 @@ footer {
     background: linear-gradient(270deg, $dark-mode-base, $base-color, $dark-mode-text-alt);
     background-size: 800% 800%;
     
-    -webkit-animation: grad-anim 5s ease infinite;
-    -moz-animation: grad-anim 5s ease infinite;
-    animation: grad-anim 5s ease infinite;
+    -webkit-animation: grad-anim 12s ease-in-out infinite;
+    -moz-animation: grad-anim 12s ease-in-out infinite;
+    animation: grad-anim 12s ease-in-out infinite;
 
     h2 {
         color: $heading;
@@ -900,9 +900,9 @@ footer {
     background: linear-gradient(270deg, $dark-mode-base, $base-color, $dark-mode-text-alt);
     background-size: 800% 800%;
     
-    -webkit-animation: grad-anim 5s ease infinite;
-    -moz-animation: grad-anim 5s ease infinite;
-    animation: grad-anim 5s ease infinite; 
+    -webkit-animation: grad-anim 12s ease-in-out infinite;
+    -moz-animation: grad-anim 12s ease-in-out infinite;
+    animation: grad-anim 12s ease-in-out infinite; 
     border-radius: 10px;
     border: none;
     padding: 0;
@@ -1128,17 +1128,23 @@ footer {
 
   @-webkit-keyframes grad-anim {
     0%{background-position:0% 96%}
+    25%{background-position:50% 50%}
     50%{background-position:100% 5%}
+    75%{background-position:50% 50%}
     100%{background-position:0% 96%}
 }
 @-moz-keyframes grad-anim {
     0%{background-position:0% 96%}
+    25%{background-position:50% 50%}
     50%{background-position:100% 5%}
+    75%{background-position:50% 50%}
     100%{background-position:0% 96%}
 }
 @keyframes grad-anim {
     0%{background-position:0% 96%}
+    25%{background-position:50% 50%}
     50%{background-position:100% 5%}
+    75%{background-position:50% 50%}
     100%{background-position:0% 96%}
 }
 

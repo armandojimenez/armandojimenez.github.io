@@ -4,7 +4,12 @@
   "description": "",
   "main": "js/scripts.js",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "npm run build:css && npm run build:js && echo 'Build complete. Use: npm run dev'",
+    "dev": "npm run watch:css & npm run watch:js",
+    "watch:css": "npx sass --watch scss/styles.scss css/styles.css --style compressed",
+    "watch:js": "npx babel js/scripts.js --out-file js/scripts.min.js --presets=@babel/env --minified --watch",
+    "build:css": "npx sass scss/styles.scss css/styles.css --style compressed",
+    "build:js": "npx babel js/scripts.js --out-file js/scripts.min.js --presets=@babel/env --minified"
   },
   "keywords": [
     "portfolio",

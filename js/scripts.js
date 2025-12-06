@@ -42,8 +42,8 @@
     // Create timeline
     $('#experience-timeline').each(function() {
 
-        $this = $(this); // Store reference to this
-        $userContent = $this.children('div'); // user content
+        var $this = $(this); // Store reference to this
+        var $userContent = $this.children('div'); // user content
 
         // Create each timeline block
         $userContent.each(function() {
@@ -81,6 +81,58 @@
         $(this).fadeOut(300, function() {
             $('#more-projects').fadeIn(300);
         });
+    });
+
+    // Mouse interaction for lead section - spotlight effect
+    var $spotlight = null;
+
+    $('#lead').mousemove(function(e) {
+        var $lead = $(this);
+        var $overlay = $lead.find('#lead-overlay');
+        var offset = $lead.offset();
+        var width = $lead.width();
+        var height = $lead.height();
+
+        // Calculate mouse position relative to the lead element
+        var x = e.pageX - offset.left;
+        var y = e.pageY - offset.top;
+
+        // Create color based on mouse position for the spotlight
+        var hue = (x / width) * 360; // Full color spectrum based on horizontal position
+        var saturation = 40 + ((y / height) * 30); // 40-70% saturation
+        var lightness = 25 + ((y / height) * 20); // 25-45% lightness
+
+        // Create spotlight element if it doesn't exist
+        if (!$spotlight) {
+            $spotlight = $('<div class="spotlight"></div>');
+            $spotlight.css({
+                'position': 'absolute',
+                'top': '0',
+                'left': '0',
+                'width': '100%',
+                'height': '100%',
+                'pointer-events': 'none',
+                'z-index': '15', // Higher than lead-content (z-index: 10)
+                'background': 'radial-gradient(circle 150px at ' + (x / width * 100) + '% ' + (y / height * 100) + '%, rgba(0, 0, 0, 0.6) 0%, transparent 70%)',
+                'transition': 'none'
+            });
+            $overlay.append($spotlight);
+        } else {
+            // Update existing spotlight position and color
+            $spotlight.css({
+                'background': 'radial-gradient(circle 150px at ' + (x / width * 100) + '% ' + (y / height * 100) + '%, rgba(0, 0, 0, 0.6) 0%, transparent 70%)'
+            });
+        }
+    });
+
+    // Remove spotlight when mouse leaves
+    $('#lead').mouseleave(function() {
+        if ($spotlight) {
+            $spotlight.fadeOut(500, function() {
+                $(this).remove();
+                $spotlight = null;
+            });
+        }
     });
 
 })(jQuery);
