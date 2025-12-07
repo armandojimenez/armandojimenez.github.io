@@ -1,4 +1,3 @@
-
 /*
     File Contents:
 
@@ -44,7 +43,7 @@
     --card-bg: rgba(255, 255, 255, 0.9);
     --card-hover-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.3);
     /* Image tile border color (theme-aware) */
-    --img-border: rgba(0,0,0,0.08);
+    --img-border: rgba(0, 0, 0, 0.08);
     /* Image tile background (can be a gradient) */
     --img-bg: var(--accent-gradient);
 }
@@ -70,7 +69,7 @@
     --card-bg: rgba(30, 41, 59, 0.9);
     --card-hover-shadow: 0 15px 35px -8px rgba(129, 140, 248, 0.4);
     /* Brighter border on dark backgrounds */
-    --img-border: rgba(255,255,255,0.18);
+    --img-border: rgba(255, 255, 255, 0.18);
     /* Use the theme's accent gradient for the tile background (matches old colors)
        so the tile keeps the purple gradient feel in dark mode as well. */
     --img-bg: var(--accent-gradient);
@@ -129,6 +128,7 @@ $card-color: var(--card-bg);
 
 @mixin hover-lift {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover {
         transform: translateY(-8px);
         box-shadow: var(--card-hover-shadow);
@@ -211,7 +211,11 @@ body {
 }
 
 // Focus visible for accessibility
-a, button, input, textarea, select {
+a,
+button,
+input,
+textarea,
+select {
     &:focus-visible {
         outline: 3px solid var(--accent-primary);
         outline-offset: 3px;
@@ -238,6 +242,7 @@ a, button, input, textarea, select {
 
 // Reduced motion for accessibility
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -274,13 +279,13 @@ body.loading {
 // No JS styles
 .no-js {
     #experience-timeline {
-        > div {
+        >div {
             @include glass-effect;
             padding: 24px;
             margin-bottom: 20px;
             border-radius: 16px;
             box-shadow: var(--shadow-lg);
-            
+
             h3 {
                 font-size: 1.5em;
                 font-weight: 600;
@@ -310,19 +315,21 @@ body.loading {
             }
         }
 
-        &:before, &:after {
+        &:before,
+        &:after {
             content: none;
         }
     }
 }
 
 @keyframes dropHeader {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 header {
@@ -416,6 +423,7 @@ header {
 
 #menu {
     @include glass-effect;
+
     &.active {
         display: block;
     }
@@ -596,13 +604,19 @@ footer {
 }
 
 @keyframes heartbeat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
-    10%, 30% {
+
+    10%,
+    30% {
         transform: scale(1.2);
     }
-    20%, 40% {
+
+    20%,
+    40% {
         transform: scale(1.1);
     }
 }
@@ -712,7 +726,8 @@ footer {
     transform: translate(-50%, -50%);
     text-align: center;
 
-    h1, h2 {
+    h1,
+    h2 {
         margin: 0;
     }
 
@@ -768,9 +783,12 @@ footer {
 /* Flutter icon removed — kept CSS clean */
 
 @keyframes gradient-shift {
-    0%, 100% {
+
+    0%,
+    100% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
@@ -785,15 +803,13 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 1;
-    
+
     // Modern gradient background
-    background: linear-gradient(
-        135deg,
-        rgba(99, 102, 241, 0.1) 0%,
-        rgba(139, 92, 246, 0.05) 50%,
-        var(--bg-primary) 100%
-    );
-    
+    background: linear-gradient(135deg,
+            rgba(99, 102, 241, 0.1) 0%,
+            rgba(139, 92, 246, 0.05) 50%,
+            var(--bg-primary) 100%);
+
     // Animated gradient orbs
     &::before {
         content: '';
@@ -805,7 +821,7 @@ footer {
         left: -250px;
         animation: float 20s ease-in-out infinite;
     }
-    
+
     &::after {
         content: '';
         position: absolute;
@@ -819,12 +835,16 @@ footer {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) translateX(0);
     }
+
     33% {
         transform: translateY(-20px) translateX(20px);
     }
+
     66% {
         transform: translateY(20px) translateX(-20px);
     }
@@ -896,9 +916,9 @@ footer {
     // Smooth transitions for background and text when toggling invert-mode
     // Slower durations for a gentler, less abrupt visual change
     transition: background-color 800ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                color 800ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                box-shadow 800ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                background 800ms cubic-bezier(0.22, 0.9, 0.32, 1);
+        color 800ms cubic-bezier(0.22, 0.9, 0.32, 1),
+        box-shadow 800ms cubic-bezier(0.22, 0.9, 0.32, 1),
+        background 800ms cubic-bezier(0.22, 0.9, 0.32, 1);
 
     // Use an overlay pseudo-element for the gradient so we can animate
     // the visual color change via opacity (gradients themselves can't be
@@ -1044,9 +1064,9 @@ footer {
         box-shadow: var(--shadow-xl);
         overflow: hidden;
         transition: box-shadow 700ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                    transform 600ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                    border-radius 600ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                    border-color 600ms cubic-bezier(0.22, 0.9, 0.32, 1);
+            transform 600ms cubic-bezier(0.22, 0.9, 0.32, 1),
+            border-radius 600ms cubic-bezier(0.22, 0.9, 0.32, 1),
+            border-color 600ms cubic-bezier(0.22, 0.9, 0.32, 1);
 
         /* Background gradient layer (under the content) */
         &::before {
@@ -1073,7 +1093,8 @@ footer {
         }
 
         /* Ensure image/content sits above the background layers */
-        img, #me {
+        img,
+        #me {
             position: relative;
             z-index: 2;
             display: block;
@@ -1089,12 +1110,12 @@ footer {
         &:hover {
             transform: scale(1.05) rotate(2deg);
             border-color: var(--accent-primary);
-            box-shadow: 0 30px 60px rgba(99,102,241,0.18);
+            box-shadow: 0 30px 60px rgba(99, 102, 241, 0.18);
         }
 
         // Accessible focus state if image becomes focusable via JS
         &:focus {
-            outline: 3px solid rgba(255,255,255,0.12);
+            outline: 3px solid rgba(255, 255, 255, 0.12);
             outline-offset: 6px;
         }
     }
@@ -1107,9 +1128,10 @@ footer {
         color: #ffffff;
 
         // Add a subtle backdrop transition to smooth the change
-        box-shadow: 0 10px 40px rgba(0,0,0,0.18);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
 
-        h2, .heading {
+        h2,
+        .heading {
             // Make headings readable against the accent background
             color: #ffffff !important;
             -webkit-text-fill-color: #ffffff !important;
@@ -1132,15 +1154,16 @@ footer {
         }
 
         p {
-            color: rgba(255,255,255,0.95);
+            color: rgba(255, 255, 255, 0.95);
             transition: color 600ms ease;
         }
 
         // Ensure links or buttons inside about remain visible and accessible
-        a, .btn-rounded-white {
+        a,
+        .btn-rounded-white {
             color: #ffffff;
-            background: rgba(255,255,255,0.06);
-            border-color: rgba(255,255,255,0.12);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.12);
             transition: background-color 600ms ease, color 600ms ease, border-color 600ms ease;
         }
 
@@ -1148,17 +1171,20 @@ footer {
             // Make the image container pop on the new background; keep the image itself unchanged
             padding: 6px;
             border-radius: 22px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
             transform: scale(1.06) rotate(1deg);
             transition: background-color 700ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                        box-shadow 700ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                        transform 700ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                        border-radius 700ms cubic-bezier(0.22, 0.9, 0.32, 1),
-                        border-color 700ms cubic-bezier(0.22, 0.9, 0.32, 1);
+                box-shadow 700ms cubic-bezier(0.22, 0.9, 0.32, 1),
+                transform 700ms cubic-bezier(0.22, 0.9, 0.32, 1),
+                border-radius 700ms cubic-bezier(0.22, 0.9, 0.32, 1),
+                border-color 700ms cubic-bezier(0.22, 0.9, 0.32, 1);
             /* When invert-mode is active, use a darker border so it contrasts against the white tile */
-            border-color: rgba(0,0,0,0.08);
+            border-color: rgba(0, 0, 0, 0.08);
+
             /* Ensure the white overlay is visible */
-            &::after { opacity: 1; }
+            &::after {
+                opacity: 1;
+            }
         }
 
         // Keep the portrait itself unchanged — only change the container/background.
@@ -1175,6 +1201,7 @@ footer {
         }
 
         @media (prefers-reduced-motion: reduce) {
+
             #me,
             .img-thumbnail img {
                 transition: none;
@@ -1198,6 +1225,7 @@ footer {
 @media (max-width: 992px) {
     #about {
         .row {
+
             // center the image column so the tile sits in the middle on mobile
             .col-md-4 {
                 display: flex;
@@ -1591,7 +1619,7 @@ footer {
     transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     align-items: stretch;
-    
+
     &.animated {
         opacity: 1;
         transform: scale(1) translateY(0);
@@ -1600,16 +1628,16 @@ footer {
     &:hover {
         transform: translateY(-8px) scale(1.02);
         box-shadow: var(--card-hover-shadow);
-        
+
         .project-icon img {
             transform: scale(1.08) rotate(3deg);
         }
-        
+
         .project-icon::after {
             opacity: 0.6;
         }
     }
-    
+
     &::before {
         content: '';
         position: absolute;
@@ -1635,62 +1663,62 @@ footer {
     justify-content: center;
     padding: 30px;
     // Use CSS custom properties for dynamic icon colors with softer opacity
-    background: linear-gradient(135deg, 
-        var(--icon-color-1, rgba(99, 102, 241, 0.06)) 0%, 
-        var(--icon-color-2, rgba(139, 92, 246, 0.08)) 100%
-    );
+    background: linear-gradient(135deg,
+            var(--icon-color-1, rgba(99, 102, 241, 0.06)) 0%,
+            var(--icon-color-2, rgba(139, 92, 246, 0.08)) 100%);
     border-right: 1px solid var(--glass-border);
-    
+
     // Subtle animated gradient overlay
     &::before {
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, 
-            var(--icon-color-1, rgba(99, 102, 241, 0.03)) 0%, 
-            var(--icon-color-2, rgba(139, 92, 246, 0.05)) 50%,
-            var(--icon-color-1, rgba(99, 102, 241, 0.03)) 100%
-        );
+        background: linear-gradient(135deg,
+                var(--icon-color-1, rgba(99, 102, 241, 0.03)) 0%,
+                var(--icon-color-2, rgba(139, 92, 246, 0.05)) 50%,
+                var(--icon-color-1, rgba(99, 102, 241, 0.03)) 100%);
         background-size: 200% 200%;
         animation: icon-gradient-shift 6s ease infinite;
         opacity: 0.4;
     }
-    
+
     // Glow effect on hover - uses the icon color
     &::after {
         content: '';
         position: absolute;
         width: 140px;
         height: 140px;
-        background: radial-gradient(circle, 
-            var(--icon-color-1, rgba(99, 102, 241, 0.2)) 0%, 
-            transparent 70%
-        );
+        background: radial-gradient(circle,
+                var(--icon-color-1, rgba(99, 102, 241, 0.2)) 0%,
+                transparent 70%);
         border-radius: 50%;
         opacity: 0;
         transition: opacity 0.4s ease;
         pointer-events: none;
     }
-    
+
     img {
         position: relative;
         z-index: 2;
         width: 120px;
         height: 120px;
         border-radius: 26px; // iOS app icon corner radius (26.67% for 120px)
-        box-shadow: 
+        box-shadow:
             0 10px 40px rgba(0, 0, 0, 0.2),
             0 6px 20px rgba(0, 0, 0, 0.15),
             inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-        transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), 
-                    box-shadow 0.4s ease;
+        transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+            box-shadow 0.4s ease;
     }
 }
 
 @keyframes icon-gradient-shift {
-    0%, 100% {
+
+    0%,
+    100% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
@@ -1759,7 +1787,7 @@ footer {
                 animation: flutter-bounce 0.6s ease infinite;
             }
         }
-        
+
         i {
             font-size: 0.9em;
             transition: transform 0.3s ease;
@@ -1771,9 +1799,12 @@ footer {
     }
 
     @keyframes flutter-bounce {
-        0%, 100% {
+
+        0%,
+        100% {
             transform: translateY(0);
         }
+
         50% {
             transform: translateY(-4px);
         }
@@ -1825,6 +1856,7 @@ footer {
         from {
             transform: rotate(0deg);
         }
+
         to {
             transform: rotate(360deg);
         }
@@ -1845,11 +1877,11 @@ footer {
         padding: 15px 0;
         border-top: 1px solid var(--glass-border);
         border-bottom: 1px solid var(--glass-border);
-        
+
         .stat {
             text-align: center;
             flex: 1;
-            
+
             .stat-value {
                 font-size: 1.1em;
                 font-weight: 700;
@@ -1859,24 +1891,24 @@ footer {
                 align-items: center;
                 justify-content: center;
                 gap: 6px;
-                
+
                 .stars {
                     display: flex;
                     gap: 2px;
-                    
+
                     i {
                         color: #FFD700;
                         font-size: 0.85em;
                         filter: drop-shadow(0 1px 2px rgba(255, 215, 0, 0.3));
                     }
                 }
-                
+
                 .rating-number {
                     font-size: 0.95em;
                     color: var(--text-primary);
                 }
             }
-            
+
             .stat-label {
                 font-size: 0.75em;
                 font-weight: 500;
@@ -2016,7 +2048,7 @@ footer {
     text-align: left;
     box-shadow: var(--shadow-lg);
     @include hover-lift;
-    
+
     .skill-category-header {
         display: flex;
         align-items: center;
@@ -2024,7 +2056,7 @@ footer {
         margin-bottom: 20px;
         padding-bottom: 15px;
         border-bottom: 1px solid var(--glass-border);
-        
+
         .skill-icon {
             width: 50px;
             height: 50px;
@@ -2034,13 +2066,13 @@ footer {
             background: var(--accent-gradient);
             border-radius: 12px;
             box-shadow: var(--shadow-md);
-            
+
             i {
                 font-size: 1.5em;
                 color: #fff;
             }
         }
-        
+
         h4 {
             margin: 0;
             font-size: 1.25em;
@@ -2048,7 +2080,7 @@ footer {
             color: var(--text-primary);
         }
     }
-    
+
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -2057,7 +2089,7 @@ footer {
         padding: 0;
         list-style: none;
     }
-    
+
     li {
         display: inline-flex;
         align-items: center;
@@ -2070,14 +2102,14 @@ footer {
         border: 1px solid var(--border-color);
         @include transition();
         cursor: default;
-        
+
         &:hover {
             transform: translateY(-2px);
             background: var(--accent-gradient);
             border-color: transparent;
             box-shadow: var(--shadow-md);
         }
-        
+
         .skill-name {
             display: block;
         }
@@ -2314,7 +2346,8 @@ footer {
         }
     }
 
-    input, textarea {
+    input,
+    textarea {
         display: block;
         width: 100%;
         padding: 14px 18px;
@@ -2325,7 +2358,7 @@ footer {
         font-size: 1em;
         font-family: inherit;
         @include transition();
-        
+
         @include placeholder {
             color: var(--text-tertiary);
         }
@@ -2395,16 +2428,20 @@ footer {
             transform: translateY(-1px);
         }
 
-        span, i {
+        span,
+        i {
             position: relative;
             z-index: 1;
         }
     }
 
     @keyframes send-plane {
-        0%, 100% {
+
+        0%,
+        100% {
             transform: translateX(0) translateY(0);
         }
+
         50% {
             transform: translateX(10px) translateY(-10px);
         }
@@ -2528,17 +2565,17 @@ footer {
     // The <img> should not perform the hover transform itself; transforms
     // are handled on the wrapper so rounded corners and clipping remain
     // consistent. Keep the hover shadow subtle only.
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: inherit;
-        background: transparent;
-        padding: 0;
-        border: none;
-        box-shadow: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
 
-        transition: transform 600ms cubic-bezier(0.22, 0.9, 0.32, 1), opacity 600ms cubic-bezier(0.22, 0.9, 0.32, 1);
-    }
+    transition: transform 600ms cubic-bezier(0.22, 0.9, 0.32, 1), opacity 600ms cubic-bezier(0.22, 0.9, 0.32, 1);
+}
 
 /*
     -----------------------------
@@ -2550,7 +2587,9 @@ footer {
 @media only screen and (max-width: 750px) {
 
     #experience-timeline {
-        &:before, &:after {
+
+        &:before,
+        &:after {
             left: 23px;
         }
     }
@@ -2585,7 +2624,7 @@ footer {
         align-items: center;
         justify-content: center;
     }
-    
+
     #lead #me {
         max-width: 45% !important;
         margin-bottom: 25px;
@@ -2644,7 +2683,8 @@ footer {
         margin-bottom: 25px;
     }
 
-    #mobile-menu-open, #mobile-menu-close {
+    #mobile-menu-open,
+    #mobile-menu-close {
         display: block;
     }
 
@@ -2733,7 +2773,7 @@ footer {
     #lead-down {
         display: block;
         bottom: 20px;
-        
+
         span {
             width: 45px;
             height: 45px;
@@ -2742,12 +2782,19 @@ footer {
     }
 
     @keyframes bounce-mobile {
-        0%, 20%, 50%, 80%, 100% {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
             transform: translateY(0);
         }
+
         40% {
             transform: translateY(-20px);
         }
+
         60% {
             transform: translateY(-10px);
         }
@@ -2814,7 +2861,9 @@ footer {
         }
 
         .footer-section {
-            &.copyright, &.social {
+
+            &.copyright,
+            &.social {
                 text-align: center;
             }
 
@@ -2835,7 +2884,7 @@ footer {
         padding: 30px 25px 20px;
         border-right: none;
         border-bottom: 1px solid var(--glass-border);
-        
+
         img {
             width: 100px;
             height: 100px;
@@ -2859,7 +2908,7 @@ footer {
             padding: 0;
             text-align: center;
         }
-        
+
         .tech-stack {
             margin: 0 auto 12px;
         }
@@ -2867,16 +2916,16 @@ footer {
         .website-link {
             margin: 0 auto 15px;
         }
-        
+
         .app-stats {
             justify-content: center;
             gap: 15px;
-            
+
             .stat {
                 min-width: 70px;
             }
         }
-        
+
         .download-buttons {
             justify-content: center;
         }
@@ -2894,31 +2943,31 @@ footer {
     .heading {
         font-size: 1.8em;
     }
-    
+
     // Skills responsive
     .skills-container {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .skill-category {
         padding: 20px;
-        
+
         .skill-category-header {
             .skill-icon {
                 width: 45px;
                 height: 45px;
-                
+
                 i {
                     font-size: 1.3em;
                 }
             }
-            
+
             h4 {
                 font-size: 1.1em;
             }
         }
-        
+
         li {
             padding: 6px 14px;
             font-size: 0.85em;
@@ -2954,7 +3003,7 @@ footer {
 
     .project-icon {
         padding: 25px 20px 15px;
-        
+
         img {
             width: 80px;
             height: 80px;
@@ -2964,52 +3013,52 @@ footer {
 
     .project-info {
         padding: 20px 15px 25px;
-        
+
         h3 {
             font-size: 1.2em;
         }
-        
+
         .tech-stack {
             font-size: 0.75em;
             padding: 3px 10px;
         }
-        
+
         p {
             font-size: 0.85em;
         }
-        
+
         .app-stats {
             gap: 10px;
             padding: 12px 0;
-            
+
             .stat {
                 min-width: 60px;
-                
+
                 .stat-value {
                     font-size: 0.95em;
                     flex-direction: column;
                     gap: 2px;
-                    
+
                     .stars {
                         i {
                             font-size: 0.75em;
                         }
                     }
-                    
+
                     .rating-number {
                         font-size: 0.85em;
                     }
                 }
-                
+
                 .stat-label {
                     font-size: 0.65em;
                 }
             }
         }
-        
+
         .download-buttons {
             gap: 10px;
-            
+
             img {
                 width: 120px;
                 height: 35px;
@@ -3030,9 +3079,11 @@ footer {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
     }
+
     70% {
         -webkit-box-shadow: 0 0 0 20px rgba(99, 102, 241, 0);
     }
+
     100% {
         -webkit-box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
     }
@@ -3043,10 +3094,12 @@ footer {
         -moz-box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
         box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
     }
+
     70% {
         -moz-box-shadow: 0 0 0 20px rgba(99, 102, 241, 0);
         box-shadow: 0 0 0 20px rgba(99, 102, 241, 0);
     }
+
     100% {
         -moz-box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
         box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
@@ -3063,77 +3116,138 @@ footer {
         pointer-events: none;
         cursor: default;
     }
+
     text-align: center;
     margin: 1% 0;
-  }
-  .bounce {
+}
+
+.bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
-  }
-  
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
-  }
+}
 
-  .fade-in {
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.fade-in {
     animation: fadeIn ease 5s;
     -webkit-animation: fadeIn ease 5s;
     -moz-animation: fadeIn ease 5s;
     -o-animation: fadeIn ease 5s;
     -ms-animation: fadeIn ease 5s;
-  }
-  
-  
-  @keyframes fadeIn{
+}
+
+
+@keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
+
     100% {
-      opacity:1;
+        opacity: 1;
     }
-  }
-  
-  @-moz-keyframes fadeIn {
+}
+
+@-moz-keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
+
     100% {
-      opacity:1;
+        opacity: 1;
     }
-  }
-  
-  @-webkit-keyframes fadeIn {
+}
+
+@-webkit-keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
+
     100% {
-      opacity:1;
+        opacity: 1;
     }
-  }
-  
-  @-o-keyframes fadeIn {
+}
+
+@-o-keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
+
     100% {
-      opacity:1;
+        opacity: 1;
     }
-  }
-  
-  @-ms-keyframes fadeIn {
+}
+
+@-ms-keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity: 0;
     }
+
     100% {
-      opacity:1;
+        opacity: 1;
     }
-  }
+}
+
+/*
+    -----------------------------
+    ----- 14. New Feature Styles -----
+    -----------------------------
+*/
+
+/* --- Magic Button --- */
+#magic-button-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.magic-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: var(--accent-gradient);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+        transform: scale(1.1) rotate(15deg);
+        box-shadow: 0 15px 35px rgba(99, 102, 241, 0.7);
+
+        .magic-icon {
+            animation: shake 0.5s ease-in-out infinite;
+        }
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+/* --- Hacker Mode - REMOVED --- */
+/* --- Vanilla Tilt - REMOVED --- */
+/* --- Typed Cursor - REMOVED --- */

@@ -1,11 +1,11 @@
 
-(function($) {
+(function ($) {
 
     // Remove no-js class
     $('html').removeClass('no-js');
 
     // Page loading animation
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         $('body').addClass('loaded');
     });
 
@@ -13,24 +13,24 @@
     const themeToggle = $('#theme-toggle');
     const body = $('body');
     const themeIcon = themeToggle.find('i');
-    
+
     // Check for saved theme preference or default to 'light'
     const currentTheme = localStorage.getItem('theme') || 'light';
     body.attr('data-theme', currentTheme);
     updateThemeIcon(currentTheme);
 
     // Theme toggle click handler
-    themeToggle.on('click', function() {
+    themeToggle.on('click', function () {
         const currentTheme = body.attr('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         body.attr('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         updateThemeIcon(newTheme);
-        
+
         // Update aria-pressed for accessibility
         themeToggle.attr('aria-pressed', newTheme === 'dark' ? 'true' : 'false');
-        
+
         // Add animation class
         body.css('transition', 'background-color 0.3s ease, color 0.3s ease');
     });
@@ -46,7 +46,7 @@
     }
 
     // Animate to section when nav is clicked
-    $('header a').click(function(e) {
+    $('header a').click(function (e) {
 
         // Treat as normal link if no-scroll class
         if ($(this).hasClass('no-scroll')) return;
@@ -66,14 +66,14 @@
     });
 
     // Scroll to top
-    $('#to-top').click(function() {
+    $('#to-top').click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 800);
     });
 
     // Scroll to first element
-    $('#lead-down span').click(function() {
+    $('#lead-down span').click(function () {
         var scrollDistance = $('#lead').next().offset().top;
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
@@ -81,45 +81,45 @@
     });
 
     // Create timeline
-    $('#experience-timeline').each(function() {
+    $('#experience-timeline').each(function () {
 
         var $this = $(this); // Store reference to this
         var $userContent = $this.children('div'); // user content
 
         // Create each timeline block
-        $userContent.each(function() {
+        $userContent.each(function () {
             $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
         });
 
         // Add icons to each block
-        $this.find('.vtimeline-point').each(function() {
+        $this.find('.vtimeline-point').each(function () {
             $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
         });
 
         // Add dates to the timeline if exists
-        $this.find('.vtimeline-content').each(function() {
+        $this.find('.vtimeline-content').each(function () {
             var date = $(this).data('date');
             if (date) { // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
+                $(this).parent().prepend('<span class="vtimeline-date">' + date + '</span>');
             }
         });
 
     });
 
     // Open mobile menu
-    $('#mobile-menu-open').click(function() {
+    $('#mobile-menu-open').click(function () {
         $('header, body').addClass('active');
     });
 
     // Close mobile menu
-    $('#mobile-menu-close').click(function() {
+    $('#mobile-menu-close').click(function () {
         $('header, body').removeClass('active');
     });
 
     // Load additional projects
-    $('#view-more-projects').click(function(e){
+    $('#view-more-projects').click(function (e) {
         e.preventDefault();
-        $(this).fadeOut(300, function() {
+        $(this).fadeOut(300, function () {
             $('#more-projects').fadeIn(300);
         });
     });
@@ -138,7 +138,7 @@
         });
     }
 
-    $('#lead').on('mousemove touchmove', function(e) {
+    $('#lead').on('mousemove touchmove', function (e) {
         // If device doesn't support hover or viewport is small, skip parallax
         if (!supportsHover() || $(window).width() < 993 || parallaxDisabledByTouch) return;
 
@@ -165,7 +165,7 @@
 
         // Throttle with requestAnimationFrame
         if (leadRAF) cancelAnimationFrame(leadRAF);
-        leadRAF = requestAnimationFrame(function() {
+        leadRAF = requestAnimationFrame(function () {
             $content.css({
                 'transform': 'translate(calc(-50% + ' + moveX + 'px), calc(-50% + ' + moveY + 'px))'
             });
@@ -173,18 +173,18 @@
     });
 
     // Reset parallax when mouse leaves
-    $('#lead').on('mouseleave touchend touchcancel', function() {
+    $('#lead').on('mouseleave touchend touchcancel', function () {
         // Always reset transform when pointer leaves or touch ends
         resetLeadTransform();
     });
 
     // If a touch is detected, disable parallax for this session to avoid synthetic mouse events
-    $(document).on('touchstart', function() {
+    $(document).on('touchstart', function () {
         parallaxDisabledByTouch = true;
     });
 
     // On resize, ensure transforms are reset when below threshold or hover unsupported
-    $(window).on('resize', function() {
+    $(window).on('resize', function () {
         if (!supportsHover() || $(window).width() < 993) {
             resetLeadTransform();
         }
@@ -196,91 +196,91 @@
     function animateOnScroll() {
         var scrollTop = $(window).scrollTop();
         var windowHeight = $(window).height();
-        
+
         // Animate timeline elements with stagger effect
-        $('.vtimeline-point').each(function(index) {
+        $('.vtimeline-point').each(function (index) {
             var elementTop = $(this).offset().top;
             var triggerPoint = scrollTop + windowHeight - 100;
-            
+
             if (elementTop < triggerPoint) {
                 var $icon = $(this).find('.vtimeline-icon');
                 var $content = $(this).find('.vtimeline-content');
                 var $date = $(this).find('.vtimeline-date');
-                
+
                 if (!$icon.hasClass('animated')) {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         $date.addClass('animated');
                     }, index * 100);
-                    
-                    setTimeout(function() {
+
+                    setTimeout(function () {
                         $icon.addClass('animated');
                     }, index * 100 + 150);
-                    
-                    setTimeout(function() {
+
+                    setTimeout(function () {
                         $content.addClass('animated');
                     }, index * 100 + 300);
                 }
             }
         })
-        
+
         // Animate education blocks
-        $('.education-block').each(function(index) {
+        $('.education-block').each(function (index) {
             var elementTop = $(this).offset().top;
             var triggerPoint = scrollTop + windowHeight - 100;
-            
+
             if (elementTop < triggerPoint && !$(this).hasClass('animated')) {
                 var $this = $(this);
-                setTimeout(function() {
+                setTimeout(function () {
                     $this.addClass('animated');
                 }, index * 150);
             }
         });
-        
+
         // Animate project cards
-        $('.project').each(function(index) {
+        $('.project').each(function (index) {
             var elementTop = $(this).offset().top;
             var triggerPoint = scrollTop + windowHeight - 100;
-            
+
             if (elementTop < triggerPoint && !$(this).hasClass('animated')) {
                 var $this = $(this);
-                setTimeout(function() {
+                setTimeout(function () {
                     $this.addClass('animated');
                 }, index * 120);
             }
         });
-        
+
         // Animate optional sections
-        $('.optional-section-block').each(function(index) {
+        $('.optional-section-block').each(function (index) {
             var elementTop = $(this).offset().top;
             var triggerPoint = scrollTop + windowHeight - 100;
-            
+
             if (elementTop < triggerPoint && !$(this).hasClass('animated')) {
                 var $this = $(this);
-                setTimeout(function() {
+                setTimeout(function () {
                     $this.addClass('animated');
                 }, index * 150);
             }
         });
     }
-    
+
     // Run on scroll with throttling for performance
     var scrollTimeout;
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if (!scrollTimeout) {
-            scrollTimeout = setTimeout(function() {
+            scrollTimeout = setTimeout(function () {
                 animateOnScroll();
                 scrollTimeout = null;
             }, 15);
         }
     });
-    
+
     // Run once on page load
-    $(document).ready(function() {
+    $(document).ready(function () {
         setTimeout(animateOnScroll, 100);
     });
 
     // --- About image interactive invert behavior (hover, focus, keyboard & touch accessible)
-    (function() {
+    (function () {
         var $me = $('#me');
         var $about = $('#about');
 
@@ -321,11 +321,11 @@
             var bound = !!$wrap.data('hoverBound');
 
             if (shouldBind && !bound) {
-                $wrap.on('mouseenter.aboutHover', function() {
+                $wrap.on('mouseenter.aboutHover', function () {
                     enableInvert();
                 });
 
-                $wrap.on('mouseleave.aboutHover', function() {
+                $wrap.on('mouseleave.aboutHover', function () {
                     disableInvert();
                 });
                 $wrap.data('hoverBound', true);
@@ -339,21 +339,21 @@
         bindHoverIfNeeded();
 
         // Recalculate on resize to avoid stale bindings when crossing breakpoints
-        $(window).on('resize.aboutHover', function() {
+        $(window).on('resize.aboutHover', function () {
             bindHoverIfNeeded();
         });
 
         // Focus interactions
-        $wrap.on('focus', function() {
+        $wrap.on('focus', function () {
             enableInvert();
         });
 
-        $wrap.on('blur', function() {
+        $wrap.on('blur', function () {
             disableInvert();
         });
 
         // Click / touch toggles invert for touch users — explicit enable/disable
-        $wrap.on('click', function(e) {
+        $wrap.on('click', function (e) {
             e.preventDefault();
             if ($about.hasClass('invert-mode')) {
                 disableInvert();
@@ -363,7 +363,7 @@
         });
 
         // Keyboard activation (Enter / Space)
-        $wrap.on('keydown', function(e) {
+        $wrap.on('keydown', function (e) {
             var k = e.key || e.keyCode;
             if (k === 'Enter' || k === ' ' || k === 'Spacebar' || k === 13 || k === 32) {
                 e.preventDefault();
@@ -377,7 +377,7 @@
     })();
 
     // --- About image interactive invert behavior (hover, focus, keyboard & touch accessible)
-    (function() {
+    (function () {
         var $me = $('#me');
         var $about = $('#about');
 
@@ -410,11 +410,11 @@
             var bound = !!$me.data('hoverBound');
 
             if (shouldBind && !bound) {
-                $me.on('mouseenter.aboutHover', function() {
+                $me.on('mouseenter.aboutHover', function () {
                     enableInvert();
                 });
 
-                $me.on('mouseleave.aboutHover', function() {
+                $me.on('mouseleave.aboutHover', function () {
                     disableInvert();
                 });
                 $me.data('hoverBound', true);
@@ -428,21 +428,21 @@
         bindHoverIfNeeded();
 
         // Recalculate on resize to avoid stale hover bindings
-        $(window).on('resize.aboutHover', function() {
+        $(window).on('resize.aboutHover', function () {
             bindHoverIfNeeded();
         });
 
         // Keyboard focus interactions
-        $me.on('focus', function() {
+        $me.on('focus', function () {
             enableInvert();
         });
 
-        $me.on('blur', function() {
+        $me.on('blur', function () {
             disableInvert();
         });
 
         // Click / touch toggles invert for touch users
-        $me.on('click', function(e) {
+        $me.on('click', function (e) {
             e.preventDefault();
             // Toggle state explicitly so the visual state and aria state stay
             // consistent across input types.
@@ -454,7 +454,7 @@
         });
 
         // Keyboard activation (Enter / Space)
-        $me.on('keydown', function(e) {
+        $me.on('keydown', function (e) {
             var k = e.key || e.keyCode;
             if (k === 'Enter' || k === ' ' || k === 'Spacebar' || k === 13 || k === 32) {
                 e.preventDefault();
@@ -471,16 +471,16 @@
         if (!$container.length) return;
 
         var icons = [
-            'fa-code', 'fa-terminal', 'fa-laptop', 'fa-mobile', 'fa-database', 'fa-server', 
-            'fa-bug', 'fa-keyboard-o', 'fa-gamepad', 'fa-headphones', 'fa-coffee', 'fa-heart', 
-            'fa-star', 'fa-cloud', 'fa-wifi', 'fa-lock', 'fa-shield', 'fa-html5', 'fa-css3', 
-            'fa-linux', 'fa-apple', 'fa-android', 'fa-windows', 'fa-chrome', 'fa-firefox', 
+            'fa-code', 'fa-terminal', 'fa-laptop', 'fa-mobile', 'fa-database', 'fa-server',
+            'fa-bug', 'fa-keyboard-o', 'fa-gamepad', 'fa-headphones', 'fa-coffee', 'fa-heart',
+            'fa-star', 'fa-cloud', 'fa-wifi', 'fa-lock', 'fa-shield', 'fa-html5', 'fa-css3',
+            'fa-linux', 'fa-apple', 'fa-android', 'fa-windows', 'fa-chrome', 'fa-firefox',
             'fa-git', 'fa-github', 'fa-cogs', 'fa-rocket', 'fa-bolt', 'fa-magic'
         ];
 
         var shapes = [];
         var numShapes = 50;
-        
+
         // Create shapes (font icons or image icons)
         for (var i = 0; i < numShapes; i++) {
             var icon = icons[Math.floor(Math.random() * icons.length)];
@@ -528,12 +528,12 @@
         var isHovering = false;
         var angle = 0;
 
-        $('#lead').on('mousemove touchmove', function(e) {
+        $('#lead').on('mousemove touchmove', function (e) {
             isHovering = true;
             var offset = $(this).offset();
             var w = $(this).width();
             var h = $(this).height();
-            
+
             var evt = e.originalEvent || e;
             var pageX = evt.pageX;
             var pageY = evt.pageY;
@@ -546,7 +546,7 @@
             mouseY = ((pageY - offset.top) / h) * 100;
         });
 
-        $('#lead').on('mouseleave touchend', function() {
+        $('#lead').on('mouseleave touchend', function () {
             isHovering = false;
         });
 
@@ -569,7 +569,7 @@
             var containerH = $container.height();
             var radius = 300; // px
 
-            shapes.forEach(function(shape) {
+            shapes.forEach(function (shape) {
                 var shapeXPx = (shape.x / 100) * containerW;
                 var shapeYPx = (shape.y / 100) * containerH;
                 var spotXPx = (spotlightX / 100) * containerW;
@@ -602,5 +602,39 @@
     }
 
     initLeadBackground();
+
+})(jQuery);
+
+/*
+    -----------------------------
+    ----- New Features Logic -----
+    -----------------------------
+*/
+(function ($) {
+
+    // 1. Magic Button - Confetti & Fun
+    $('#magic-button').on('click', function () {
+        // Confetti explosion
+        var count = 200;
+        var defaults = {
+            origin: { y: 0.7 }
+        };
+
+        function fire(particleRatio, opts) {
+            confetti(Object.assign({}, defaults, opts, {
+                particleCount: Math.floor(count * particleRatio)
+            }));
+        }
+
+        fire(0.25, { spread: 26, startVelocity: 55 });
+        fire(0.2, { spread: 60 });
+        fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
+        fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
+        fire(0.1, { spread: 120, startVelocity: 45 });
+
+        // Add a temporary "pop" effect to the button
+        $(this).addClass('active');
+        setTimeout(() => $(this).removeClass('active'), 200);
+    });
 
 })(jQuery);
