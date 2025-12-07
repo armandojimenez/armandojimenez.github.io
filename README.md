@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website showcasing my work and experienc
 
 Currently live at: [armandojimenez.dev](https://armandojimenez.dev)
 
-![Portfolio](images/portfolio-anim.svg)
+
 
 ## ✨ Features
 
@@ -14,7 +14,7 @@ Currently live at: [armandojimenez.dev](https://armandojimenez.dev)
 - **Interactive animations** including scroll-triggered effects and custom gradients
 - **Mouse spotlight effect** in the hero section for enhanced interactivity
 - **Timeline components** for experience and education sections
-- **Simple inline SVG animation** used in the README/site (replaces older GIF)
+ 
 - **Modern build system** with automated SCSS compilation and JS minification
 
 ## 🛠️ Technologies Used
@@ -53,7 +53,7 @@ npm run dev
 
 This will automatically compile SCSS and JS files and watch for changes.
 
-Note: the site uses a lightweight animated SVG (`images/portfolio-anim.svg`) instead of a GIF for better performance and quality.
+ 
 
 ### Build Commands
 
