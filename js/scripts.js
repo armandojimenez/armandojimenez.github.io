@@ -124,70 +124,12 @@
         });
     });
 
-    // Mouse / touch interaction for lead section - subtle parallax effect (only on true-hover large screens)
-    var leadRAF = null;
-    var parallaxDisabledByTouch = false;
+    // Old parallax code removed to prevent conflict with Antigravity engine
 
-    function supportsHover() {
-        return window.matchMedia && window.matchMedia('(hover: hover)').matches;
-    }
-
-    function resetLeadTransform() {
-        $('#lead-content').css({
-            'transform': 'translate(-50%, -50%)'
-        });
-    }
-
-    $('#lead').on('mousemove touchmove', function (e) {
-        // If device doesn't support hover or viewport is small, skip parallax
-        if (!supportsHover() || $(window).width() < 993 || parallaxDisabledByTouch) return;
-
-        // Normalize coordinates for mouse and touch
-        var evt = e.originalEvent || e;
-        var pageX = evt.pageX;
-        var pageY = evt.pageY;
-        if (evt.touches && evt.touches.length) {
-            pageX = evt.touches[0].pageX;
-            pageY = evt.touches[0].pageY;
-        }
-
-        var $lead = $(this);
-        var $content = $lead.find('#lead-content');
-        var offset = $lead.offset();
-        var width = $lead.width();
-        var height = $lead.height();
-
-        var x = pageX - offset.left;
-        var y = pageY - offset.top;
-
-        var moveX = (x - width / 2) / width * 10;
-        var moveY = (y - height / 2) / height * 10;
-
-        // Throttle with requestAnimationFrame
-        if (leadRAF) cancelAnimationFrame(leadRAF);
-        leadRAF = requestAnimationFrame(function () {
-            $content.css({
-                'transform': 'translate(calc(-50% + ' + moveX + 'px), calc(-50% + ' + moveY + 'px))'
-            });
-        });
-    });
-
-    // Reset parallax when mouse leaves
-    $('#lead').on('mouseleave touchend touchcancel', function () {
-        // Always reset transform when pointer leaves or touch ends
-        resetLeadTransform();
-    });
-
-    // If a touch is detected, disable parallax for this session to avoid synthetic mouse events
-    $(document).on('touchstart', function () {
-        parallaxDisabledByTouch = true;
-    });
 
     // On resize, ensure transforms are reset when below threshold or hover unsupported
+    // On resize
     $(window).on('resize', function () {
-        if (!supportsHover() || $(window).width() < 993) {
-            resetLeadTransform();
-        }
         // Re-run scroll animations to adjust triggers
         animateOnScroll();
     });
@@ -465,139 +407,221 @@
         });
     })();
 
-    // Lead Background Animation
+    // Lead Background Animation - Antigravity Enhanced
     function initLeadBackground() {
-        var $container = $('#lead-background-shapes');
+        const $container = $('#lead-background-shapes');
+        const $leadContent = $('#lead-content');
         if (!$container.length) return;
 
-        var icons = [
+        const icons = [
             'fa-code', 'fa-terminal', 'fa-laptop', 'fa-mobile', 'fa-database', 'fa-server',
             'fa-bug', 'fa-keyboard-o', 'fa-gamepad', 'fa-headphones', 'fa-coffee', 'fa-heart',
             'fa-star', 'fa-cloud', 'fa-wifi', 'fa-lock', 'fa-shield', 'fa-html5', 'fa-css3',
             'fa-linux', 'fa-apple', 'fa-android', 'fa-windows', 'fa-chrome', 'fa-firefox',
-            'fa-git', 'fa-github', 'fa-cogs', 'fa-rocket', 'fa-bolt', 'fa-magic'
+            'fa-git', 'fa-github', 'fa-cogs', 'fa-rocket', 'fa-bolt', 'fa-magic',
+            'fa-microchip', 'fa-usb', 'fa-bluetooth', 'fa-battery-full'
         ];
 
-        var shapes = [];
-        var numShapes = 50;
+        // Physics Constants - SUPERCHARGED
+        const MOUSE_RADIUS = 400; // Larger radius
+        const MOUSE_STRENGTH = 2.5; // Stronger push
+        const CONTENT_MOUSE_STRENGTH = 1.0; // Text moves too
+        const FRICTION = 0.90; // Less sliding, more control
+        const SPRING = 0.03; // Looser spring, more float
+        const FLOAT_SPEED = 0.015;
 
-        // Create shapes (font icons or image icons)
-        for (var i = 0; i < numShapes; i++) {
-            var icon = icons[Math.floor(Math.random() * icons.length)];
-            var isImg = (icon.indexOf('img:') === 0);
-            var $shape;
+        let shapes = [];
+        let width = $container.width();
+        let height = $container.height();
 
-            var x = Math.random() * 100; // percent
-            var y = Math.random() * 100; // percent
-            var size = 1 + Math.random() * 2; // rem
+        // Track mouse relative to VIEWPORT to handle scrolling correctly
+        // But for calculation we need relative to container
+        let mouseX = -10000;
+        let mouseY = -10000;
 
-            if (isImg) {
-                var src = icon.split(':')[1];
-                $shape = $('<img class="shape shape-img" src="' + src + '" alt="" aria-hidden="true">');
-                // Use width for image sizing (height auto)
-                $shape.css({
-                    left: x + '%',
-                    top: y + '%',
-                    width: (size * 1.6) + 'rem'
-                });
-            } else {
-                $shape = $('<i class="shape fa ' + icon + '"></i>');
-                $shape.css({
-                    left: x + '%',
-                    top: y + '%',
-                    fontSize: size + 'rem'
-                });
+        // Content Physics State
+        const contentState = {
+            x: 0, y: 0,
+            vx: 0, vy: 0,
+            ox: 0, oy: 0 // Original offset handled by CSS translate(-50%, -50%)
+        };
+
+        // Grid configuration
+        const COLS = 8;
+        const ROWS = 6;
+
+        function createShapes() {
+            $container.empty();
+            shapes = [];
+            width = $container.width();
+            height = $container.height();
+
+            const cellW = width / COLS;
+            const cellH = height / ROWS;
+
+            let iconDeck = [];
+            while (iconDeck.length < COLS * ROWS) {
+                const batch = [...icons].sort(() => 0.5 - Math.random());
+                iconDeck = iconDeck.concat(batch);
             }
 
-            $container.append($shape);
-            shapes.push({
-                el: $shape[0],
-                x: x, // percent
-                y: y, // percent
-                size: size,
-                isImg: isImg
-            });
+            let iconIdx = 0;
+
+            for (let r = 0; r < ROWS; r++) {
+                for (let c = 0; c < COLS; c++) {
+                    const cx = (c + 0.5) * cellW;
+                    const cy = (r + 0.5) * cellH;
+
+                    const offsetX = (Math.random() - 0.5) * cellW * 0.8;
+                    const offsetY = (Math.random() - 0.5) * cellH * 0.8;
+
+                    const x = cx + offsetX;
+                    const y = cy + offsetY;
+
+                    const size = 1.2 + Math.random() * 1.8;
+
+                    const iconClass = iconDeck[iconIdx++];
+                    const $shape = $('<i class="shape fa ' + iconClass + '"></i>');
+
+                    const rotation = Math.random() * 360;
+
+                    // HIGHER OPACITY for visibility
+                    const opacity = 0.2 + Math.random() * 0.3; // 0.2 to 0.5
+
+                    $shape.css({
+                        fontSize: size + 'rem',
+                        opacity: opacity,
+                        position: 'absolute',
+                        left: 0,
+                        top: 0,
+                        color: 'rgba(99, 102, 241, ' + opacity + ')' // Force color with opacity
+                    });
+
+                    $container.append($shape);
+
+                    shapes.push({
+                        el: $shape[0],
+                        x: x, y: y,
+                        vx: 0, vy: 0,
+                        ox: x, oy: y,
+                        rotation: rotation,
+                        vr: (Math.random() - 0.5) * 0.5,
+                        floatOffset: Math.random() * 100
+                    });
+                }
+            }
         }
 
-        var mouseX = 50; // percent
-        var mouseY = 50; // percent
-        var spotlightX = 50;
-        var spotlightY = 50;
-        var targetX = 50;
-        var targetY = 50;
-        var isHovering = false;
-        var angle = 0;
+        // Updated Mouse Tracker - Robust
+        const $lead = $('#lead');
+        $lead.on('mousemove touchmove', function (e) {
+            const offset = $lead.offset();
+            const evt = e.originalEvent || e;
 
-        $('#lead').on('mousemove touchmove', function (e) {
-            isHovering = true;
-            var offset = $(this).offset();
-            var w = $(this).width();
-            var h = $(this).height();
+            let pageX = evt.pageX;
+            let pageY = evt.pageY;
 
-            var evt = e.originalEvent || e;
-            var pageX = evt.pageX;
-            var pageY = evt.pageY;
             if (evt.touches && evt.touches.length) {
                 pageX = evt.touches[0].pageX;
                 pageY = evt.touches[0].pageY;
             }
 
-            mouseX = ((pageX - offset.left) / w) * 100;
-            mouseY = ((pageY - offset.top) / h) * 100;
+            // Relative to container
+            mouseX = pageX - offset.left;
+            mouseY = pageY - offset.top;
         });
 
-        $('#lead').on('mouseleave touchend', function () {
-            isHovering = false;
+        $lead.on('mouseleave touchend', function () {
+            mouseX = -10000;
+            mouseY = -10000;
         });
 
+        let resizeTimer;
+        $(window).on('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(createShapes, 200);
+        });
+
+        // Animation Loop
+        let frame = 0;
         function animate() {
-            if (isHovering) {
-                targetX = mouseX;
-                targetY = mouseY;
-            } else {
-                // Auto movement (figure-8)
-                angle += 0.005;
-                targetX = 50 + Math.cos(angle) * 30;
-                targetY = 50 + Math.sin(angle * 2) * 20;
+            frame++;
+
+            // --- 1. Background Shapes Physics ---
+            shapes.forEach(shape => {
+                const floatX = Math.sin((frame * FLOAT_SPEED) + shape.floatOffset) * 15;
+                const floatY = Math.cos((frame * FLOAT_SPEED) + shape.floatOffset) * 15;
+                const homeX = shape.ox + floatX;
+                const homeY = shape.oy + floatY;
+
+                const dx = shape.x - mouseX;
+                const dy = shape.y - mouseY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                // Repulsion
+                if (dist < MOUSE_RADIUS) {
+                    const force = (MOUSE_RADIUS - dist) / MOUSE_RADIUS;
+                    const angle = Math.atan2(dy, dx);
+                    // Power curve: force^2 for stronger punch near center
+                    const power = force * force * MOUSE_STRENGTH * 30;
+
+                    shape.vx += Math.cos(angle) * power;
+                    shape.vy += Math.sin(angle) * power;
+                }
+
+                // Spring back
+                const hdx = homeX - shape.x;
+                const hdy = homeY - shape.y;
+                shape.vx += hdx * SPRING;
+                shape.vy += hdy * SPRING;
+
+                // Friction
+                shape.vx *= FRICTION;
+                shape.vy *= FRICTION;
+
+                // Apply
+                shape.x += shape.vx;
+                shape.y += shape.vy;
+                shape.rotation += shape.vr + (shape.vx * 0.3);
+
+                shape.el.style.transform = `translate3d(${shape.x}px, ${shape.y}px, 0) rotate(${shape.rotation}deg)`;
+            });
+
+            // --- 2. Lead Content (Text) Parallax ---
+            // User requested NO repulsion for text (accessibility/usability)
+            // Instead, a subtle parallax effect (depth)
+
+            // Mouse relative to CENTER of container
+            const cx = width / 2;
+            const cy = height / 2;
+
+            // If mouse is off screen, drift back to center
+            let targetX = 0;
+            let targetY = 0;
+
+            if (mouseX > -5000) {
+                // Mouse is active
+                // Parallax factor: 0.02 means it moves 2% of the distance the mouse is from center
+                // Moving opposite to mouse = depth (far away)
+                // Moving with mouse = foreground (close)
+                // Let's make it float slightly WITH the mouse like it's in the foreground 3D space
+                const parallaxStrength = 0.03;
+                targetX = (mouseX - cx) * parallaxStrength;
+                targetY = (mouseY - cy) * parallaxStrength;
             }
 
-            // Lerp spotlight
-            spotlightX += (targetX - spotlightX) * 0.05;
-            spotlightY += (targetY - spotlightY) * 0.05;
+            // Lerp towards target for smoothness
+            contentState.x += (targetX - contentState.x) * 0.1;
+            contentState.y += (targetY - contentState.y) * 0.1;
 
-            var containerW = $container.width();
-            var containerH = $container.height();
-            var radius = 300; // px
-
-            shapes.forEach(function (shape) {
-                var shapeXPx = (shape.x / 100) * containerW;
-                var shapeYPx = (shape.y / 100) * containerH;
-                var spotXPx = (spotlightX / 100) * containerW;
-                var spotYPx = (spotlightY / 100) * containerH;
-
-                var dx = shapeXPx - spotXPx;
-                var dy = shapeYPx - spotYPx;
-                var dist = Math.sqrt(dx * dx + dy * dy);
-
-                if (dist < radius) {
-                    var intensity = 1 - (dist / radius);
-                    // Ease intensity
-                    intensity = intensity * intensity * (3 - 2 * intensity); // Smoothstep
-
-                    var scale = 1 + intensity * 0.8; // Zoom up to 1.8x
-                    var opacity = intensity * 0.8; // Max opacity 0.8
-
-                    shape.el.style.opacity = opacity;
-                    shape.el.style.transform = 'translate(-50%, -50%) scale(' + scale + ')';
-                } else {
-                    shape.el.style.opacity = 0;
-                    shape.el.style.transform = 'translate(-50%, -50%) scale(0)';
-                }
-            });
+            // Apply to #lead-content
+            // CSS transform: translate(-50%, -50%) must be preserved. We add our parallax offset.
+            $leadContent[0].style.transform = `translate(calc(-50% + ${contentState.x}px), calc(-50% + ${contentState.y}px))`;
 
             requestAnimationFrame(animate);
         }
 
+        createShapes();
         animate();
     }
 
