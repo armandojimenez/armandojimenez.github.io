@@ -5,7 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Armando Jiménez - Portfolio</title>
+    <title>Armando Jiménez - Senior Software Engineer | Mobile & Full-Stack Developer</title>
+    <meta name="description" content="Senior Software Engineer with 9+ years of experience in Flutter, Java, Spring Boot, React, Next.js. Building secure, scalable fintech solutions.">
+    <meta name="keywords" content="Software Engineer, Full Stack Developer, Flutter, React, Next.js, Mobile Development, Fintech">
+    <meta name="author" content="Armando Jiménez">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Armando Jiménez - Senior Software Engineer">
+    <meta property="og:description" content="Senior Software Engineer specializing in mobile and full-stack development with 9+ years of experience.">
+    <meta property="og:image" content="/images/me.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Armando Jiménez - Senior Software Engineer">
+    <meta property="twitter:description" content="Senior Software Engineer specializing in mobile and full-stack development with 9+ years of experience.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -21,45 +36,53 @@
 
 </head>
 
-<body>
+<body data-theme="dark">
+    <a href="#about" class="skip-to-main">Skip to main content</a>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <!-- End #mobile-menu-toggle -->
-    <header>
+    <header role="banner">
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
+        <nav aria-label="Main navigation">
+            <ul id="menu" class="shadow">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
 
-            <li>
-                <a href="#hobbies">Hobbies</a>
-            </li>
+                <li>
+                    <a href="#hobbies">Hobbies</a>
+                </li>
 
-            <li>
-                <a href="#certs">Certs</a>
-            </li>
+                <li>
+                    <a href="#certs">Certs</a>
+                </li>
 
-            <li>
-                <a href="#contact ">Contact</a>
-            </li>
+                <li>
+                    <a href="#contact ">Contact</a>
+                </li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle between light and dark mode" aria-pressed="true">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    </button>
+                </li>
 
-        </ul>
+            </ul>
+        </nav>
     </header>
     <!-- End header -->
 
@@ -432,7 +455,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-cubic',
+            once: false,
+            mirror: true,
+            anchorPlacement: 'top-bottom',
+            offset: 50,
+            delay: 100
+        });
     </script>
 </body>
 

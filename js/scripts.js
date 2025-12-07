@@ -4,6 +4,47 @@
     // Remove no-js class
     $('html').removeClass('no-js');
 
+    // Page loading animation
+    $(window).on('load', function() {
+        $('body').addClass('loaded');
+    });
+
+    // Theme Toggle Functionality
+    const themeToggle = $('#theme-toggle');
+    const body = $('body');
+    const themeIcon = themeToggle.find('i');
+    
+    // Check for saved theme preference or default to 'dark'
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    body.attr('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+
+    // Theme toggle click handler
+    themeToggle.on('click', function() {
+        const currentTheme = body.attr('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        body.attr('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+        
+        // Update aria-pressed for accessibility
+        themeToggle.attr('aria-pressed', newTheme === 'dark' ? 'true' : 'false');
+        
+        // Add animation class
+        body.css('transition', 'background-color 0.3s ease, color 0.3s ease');
+    });
+
+    function updateThemeIcon(theme) {
+        if (theme === 'dark') {
+            themeIcon.removeClass('fa-sun-o').addClass('fa-moon-o');
+            themeToggle.attr('aria-label', 'Toggle to light mode');
+        } else {
+            themeIcon.removeClass('fa-moon-o').addClass('fa-sun-o');
+            themeToggle.attr('aria-label', 'Toggle to dark mode');
+        }
+    }
+
     // Animate to section when nav is clicked
     $('header a').click(function(e) {
 
@@ -16,7 +57,7 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+        }, 800);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
@@ -28,7 +69,7 @@
     $('#to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
-        }, 500);
+        }, 800);
     });
 
     // Scroll to first element
@@ -36,7 +77,7 @@
         var scrollDistance = $('#lead').next().offset().top;
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, 500);
+        }, 800);
     });
 
     // Create timeline
@@ -83,56 +124,345 @@
         });
     });
 
-    // Mouse interaction for lead section - spotlight effect
-    var $spotlight = null;
+    // Mouse / touch interaction for lead section - subtle parallax effect (only on true-hover large screens)
+    var leadRAF = null;
+    var parallaxDisabledByTouch = false;
 
-    $('#lead').mousemove(function(e) {
+    function supportsHover() {
+        return window.matchMedia && window.matchMedia('(hover: hover)').matches;
+    }
+
+    function resetLeadTransform() {
+        $('#lead-content').css({
+            'transform': 'translate(-50%, -50%)'
+        });
+    }
+
+    $('#lead').on('mousemove touchmove', function(e) {
+        // If device doesn't support hover or viewport is small, skip parallax
+        if (!supportsHover() || $(window).width() < 993 || parallaxDisabledByTouch) return;
+
+        // Normalize coordinates for mouse and touch
+        var evt = e.originalEvent || e;
+        var pageX = evt.pageX;
+        var pageY = evt.pageY;
+        if (evt.touches && evt.touches.length) {
+            pageX = evt.touches[0].pageX;
+            pageY = evt.touches[0].pageY;
+        }
+
         var $lead = $(this);
-        var $overlay = $lead.find('#lead-overlay');
+        var $content = $lead.find('#lead-content');
         var offset = $lead.offset();
         var width = $lead.width();
         var height = $lead.height();
 
-        // Calculate mouse position relative to the lead element
-        var x = e.pageX - offset.left;
-        var y = e.pageY - offset.top;
+        var x = pageX - offset.left;
+        var y = pageY - offset.top;
 
-        // Create color based on mouse position for the spotlight
-        var hue = (x / width) * 360; // Full color spectrum based on horizontal position
-        var saturation = 40 + ((y / height) * 30); // 40-70% saturation
-        var lightness = 25 + ((y / height) * 20); // 25-45% lightness
+        var moveX = (x - width / 2) / width * 10;
+        var moveY = (y - height / 2) / height * 10;
 
-        // Create spotlight element if it doesn't exist
-        if (!$spotlight) {
-            $spotlight = $('<div class="spotlight"></div>');
-            $spotlight.css({
-                'position': 'absolute',
-                'top': '0',
-                'left': '0',
-                'width': '100%',
-                'height': '100%',
-                'pointer-events': 'none',
-                'z-index': '15', // Higher than lead-content (z-index: 10)
-                'background': 'radial-gradient(circle 150px at ' + (x / width * 100) + '% ' + (y / height * 100) + '%, rgba(0, 0, 0, 0.6) 0%, transparent 70%)',
-                'transition': 'none'
+        // Throttle with requestAnimationFrame
+        if (leadRAF) cancelAnimationFrame(leadRAF);
+        leadRAF = requestAnimationFrame(function() {
+            $content.css({
+                'transform': 'translate(calc(-50% + ' + moveX + 'px), calc(-50% + ' + moveY + 'px))'
             });
-            $overlay.append($spotlight);
-        } else {
-            // Update existing spotlight position and color
-            $spotlight.css({
-                'background': 'radial-gradient(circle 150px at ' + (x / width * 100) + '% ' + (y / height * 100) + '%, rgba(0, 0, 0, 0.6) 0%, transparent 70%)'
-            });
-        }
+        });
     });
 
-    // Remove spotlight when mouse leaves
-    $('#lead').mouseleave(function() {
-        if ($spotlight) {
-            $spotlight.fadeOut(500, function() {
-                $(this).remove();
-                $spotlight = null;
-            });
+    // Reset parallax when mouse leaves
+    $('#lead').on('mouseleave touchend touchcancel', function() {
+        // Always reset transform when pointer leaves or touch ends
+        resetLeadTransform();
+    });
+
+    // If a touch is detected, disable parallax for this session to avoid synthetic mouse events
+    $(document).on('touchstart', function() {
+        parallaxDisabledByTouch = true;
+    });
+
+    // On resize, ensure transforms are reset when below threshold or hover unsupported
+    $(window).on('resize', function() {
+        if (!supportsHover() || $(window).width() < 993) {
+            resetLeadTransform();
+        }
+        // Re-run scroll animations to adjust triggers
+        animateOnScroll();
+    });
+
+    // Enhanced scroll-triggered animations with staggered timeline effects
+    function animateOnScroll() {
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        
+        // Animate timeline elements with stagger effect
+        $('.vtimeline-point').each(function(index) {
+            var elementTop = $(this).offset().top;
+            var triggerPoint = scrollTop + windowHeight - 100;
+            
+            if (elementTop < triggerPoint) {
+                var $icon = $(this).find('.vtimeline-icon');
+                var $content = $(this).find('.vtimeline-content');
+                var $date = $(this).find('.vtimeline-date');
+                
+                if (!$icon.hasClass('animated')) {
+                    setTimeout(function() {
+                        $date.addClass('animated');
+                    }, index * 100);
+                    
+                    setTimeout(function() {
+                        $icon.addClass('animated');
+                    }, index * 100 + 150);
+                    
+                    setTimeout(function() {
+                        $content.addClass('animated');
+                    }, index * 100 + 300);
+                }
+            }
+        })
+        
+        // Animate education blocks
+        $('.education-block').each(function(index) {
+            var elementTop = $(this).offset().top;
+            var triggerPoint = scrollTop + windowHeight - 100;
+            
+            if (elementTop < triggerPoint && !$(this).hasClass('animated')) {
+                var $this = $(this);
+                setTimeout(function() {
+                    $this.addClass('animated');
+                }, index * 150);
+            }
+        });
+        
+        // Animate project cards
+        $('.project').each(function(index) {
+            var elementTop = $(this).offset().top;
+            var triggerPoint = scrollTop + windowHeight - 100;
+            
+            if (elementTop < triggerPoint && !$(this).hasClass('animated')) {
+                var $this = $(this);
+                setTimeout(function() {
+                    $this.addClass('animated');
+                }, index * 120);
+            }
+        });
+        
+        // Animate optional sections
+        $('.optional-section-block').each(function(index) {
+            var elementTop = $(this).offset().top;
+            var triggerPoint = scrollTop + windowHeight - 100;
+            
+            if (elementTop < triggerPoint && !$(this).hasClass('animated')) {
+                var $this = $(this);
+                setTimeout(function() {
+                    $this.addClass('animated');
+                }, index * 150);
+            }
+        });
+    }
+    
+    // Run on scroll with throttling for performance
+    var scrollTimeout;
+    $(window).on('scroll', function() {
+        if (!scrollTimeout) {
+            scrollTimeout = setTimeout(function() {
+                animateOnScroll();
+                scrollTimeout = null;
+            }, 15);
         }
     });
+    
+    // Run once on page load
+    $(document).ready(function() {
+        setTimeout(animateOnScroll, 100);
+    });
+
+    // --- About image interactive invert behavior (hover, focus, keyboard & touch accessible)
+    (function() {
+        var $me = $('#me');
+        var $about = $('#about');
+
+        if (!$me.length || !$about.length) return;
+
+        // Wrap the image in a container so we can animate the tile (background,
+        // border-radius, shadow) independently from the <img> itself. This
+        // prevents the rounded-corners from being lost when the image is
+        // transformed (scaling) and lets us keep smooth clipping.
+        if (!$me.parent().hasClass('img-wrap')) {
+            $me.wrap('<div class="img-wrap img-thumbnail"></div>');
+            $me.removeClass('img-thumbnail');
+        }
+
+        var $wrap = $me.parent();
+
+        // Make image focusable and expose as a control for assistive tech
+        $wrap.attr('role', 'button');
+        $wrap.attr('tabindex', 0);
+        $wrap.attr('aria-pressed', 'false');
+        $wrap.attr('aria-label', 'Toggle about section invert');
+
+        function enableInvert() {
+            $about.addClass('invert-mode');
+            $wrap.attr('aria-pressed', 'true');
+        }
+
+        function disableInvert() {
+            $about.removeClass('invert-mode');
+            $wrap.attr('aria-pressed', 'false');
+        }
+
+        // Detect true hover-capable devices
+        var supportsHover = (window.matchMedia && window.matchMedia('(hover: hover)').matches);
+
+        function bindHoverIfNeeded() {
+            var shouldBind = supportsHover && $(window).width() >= 993;
+            var bound = !!$wrap.data('hoverBound');
+
+            if (shouldBind && !bound) {
+                $wrap.on('mouseenter.aboutHover', function() {
+                    enableInvert();
+                });
+
+                $wrap.on('mouseleave.aboutHover', function() {
+                    disableInvert();
+                });
+                $wrap.data('hoverBound', true);
+            } else if (!shouldBind && bound) {
+                $wrap.off('.aboutHover');
+                $wrap.data('hoverBound', false);
+            }
+        }
+
+        // Initial bind
+        bindHoverIfNeeded();
+
+        // Recalculate on resize to avoid stale bindings when crossing breakpoints
+        $(window).on('resize.aboutHover', function() {
+            bindHoverIfNeeded();
+        });
+
+        // Focus interactions
+        $wrap.on('focus', function() {
+            enableInvert();
+        });
+
+        $wrap.on('blur', function() {
+            disableInvert();
+        });
+
+        // Click / touch toggles invert for touch users — explicit enable/disable
+        $wrap.on('click', function(e) {
+            e.preventDefault();
+            if ($about.hasClass('invert-mode')) {
+                disableInvert();
+            } else {
+                enableInvert();
+            }
+        });
+
+        // Keyboard activation (Enter / Space)
+        $wrap.on('keydown', function(e) {
+            var k = e.key || e.keyCode;
+            if (k === 'Enter' || k === ' ' || k === 'Spacebar' || k === 13 || k === 32) {
+                e.preventDefault();
+                if ($about.hasClass('invert-mode')) {
+                    disableInvert();
+                } else {
+                    enableInvert();
+                }
+            }
+        });
+    })();
+
+    // --- About image interactive invert behavior (hover, focus, keyboard & touch accessible)
+    (function() {
+        var $me = $('#me');
+        var $about = $('#about');
+
+        if (!$me.length || !$about.length) return;
+
+        // Make image focusable and expose as a control for assistive tech
+        $me.attr('role', 'button');
+        $me.attr('tabindex', 0);
+        $me.attr('aria-pressed', 'false');
+        $me.attr('aria-label', 'Toggle about section invert');
+
+        function enableInvert() {
+            $about.addClass('invert-mode');
+            $me.attr('aria-pressed', 'true');
+        }
+
+        function disableInvert() {
+            $about.removeClass('invert-mode');
+            $me.attr('aria-pressed', 'false');
+        }
+
+        // Mouse interactions: only bind hover when device actually supports hover
+        // and when the layout is wide enough. This avoids touch devices (and
+        // small viewports) receiving synthetic mouse events that cause
+        // flickering between states.
+        var supportsHover = (window.matchMedia && window.matchMedia('(hover: hover)').matches);
+
+        function bindHoverIfNeeded() {
+            var shouldBind = supportsHover && $(window).width() >= 993;
+            var bound = !!$me.data('hoverBound');
+
+            if (shouldBind && !bound) {
+                $me.on('mouseenter.aboutHover', function() {
+                    enableInvert();
+                });
+
+                $me.on('mouseleave.aboutHover', function() {
+                    disableInvert();
+                });
+                $me.data('hoverBound', true);
+            } else if (!shouldBind && bound) {
+                $me.off('.aboutHover');
+                $me.data('hoverBound', false);
+            }
+        }
+
+        // Initial bind state
+        bindHoverIfNeeded();
+
+        // Recalculate on resize to avoid stale hover bindings
+        $(window).on('resize.aboutHover', function() {
+            bindHoverIfNeeded();
+        });
+
+        // Keyboard focus interactions
+        $me.on('focus', function() {
+            enableInvert();
+        });
+
+        $me.on('blur', function() {
+            disableInvert();
+        });
+
+        // Click / touch toggles invert for touch users
+        $me.on('click', function(e) {
+            e.preventDefault();
+            // Toggle state explicitly so the visual state and aria state stay
+            // consistent across input types.
+            if ($about.hasClass('invert-mode')) {
+                disableInvert();
+            } else {
+                enableInvert();
+            }
+        });
+
+        // Keyboard activation (Enter / Space)
+        $me.on('keydown', function(e) {
+            var k = e.key || e.keyCode;
+            if (k === 'Enter' || k === ' ' || k === 'Spacebar' || k === 13 || k === 32) {
+                e.preventDefault();
+                $about.toggleClass('invert-mode');
+                var pressed = $about.hasClass('invert-mode');
+                $me.attr('aria-pressed', pressed ? 'true' : 'false');
+            }
+        });
+    })();
 
 })(jQuery);
