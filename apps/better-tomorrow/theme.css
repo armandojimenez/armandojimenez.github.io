@@ -1,0 +1,220 @@
+/* 
+ * Better Tomorrow - Custom Soft Rose Theme
+ * Overrides for policy pages
+ */
+
+/* Import base styles */
+@import url('../policy-styles.css');
+
+/* ===========================
+   Custom Color Palette - Soft Rose
+   =========================== */
+:root {
+    /* Override Light Theme with Soft Rose */
+    --bg-primary: #fdf8f6;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #ffeef0;
+    --bg-accent: #ffe4e8;
+    
+    --text-primary: #2d1820;
+    --text-secondary: #6b4855;
+    --text-tertiary: #9b7984;
+    --text-link: #d64574;
+    --text-link-hover: #b13660;
+    
+    --border-color: #f5d4dd;
+    --border-light: #fce8ed;
+    
+    --accent-primary: #d64574;
+    --accent-secondary: #e78fa3;
+    --accent-success: #8bc9a3;
+    --accent-warning: #f6a192;
+    --accent-danger: #e56b7a;
+}
+
+/* Dark Theme with Soft Rose Accents */
+[data-theme="dark"] {
+    --bg-primary: #1a0f14;
+    --bg-secondary: #261820;
+    --bg-tertiary: #331f28;
+    --bg-accent: #3d2630;
+    
+    --text-primary: #fdf8f6;
+    --text-secondary: #d4bcc5;
+    --text-tertiary: #a78893;
+    --text-link: #e78fa3;
+    --text-link-hover: #f3b3c2;
+    
+    --border-color: #4a3340;
+    --border-light: #3d2630;
+    
+    --accent-primary: #e78fa3;
+    --accent-secondary: #d64574;
+    --accent-success: #9ed4b4;
+    --accent-warning: #f6b3a8;
+    --accent-danger: #ee8996;
+}
+
+/* ===========================
+   Custom Highlight Boxes
+   =========================== */
+.highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #fff5f7 100%);
+    border-left-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #2d1e27 100%);
+}
+
+.highlight-box.warning {
+    background: linear-gradient(135deg, rgba(230, 143, 163, 0.15) 0%, rgba(230, 143, 163, 0.05) 100%);
+    border-left-color: var(--accent-warning);
+}
+
+/* ===========================
+   Custom App Badge
+   =========================== */
+.app-badge {
+    background: linear-gradient(135deg, #fff 0%, #fdf3f5 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .app-badge {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #2d1e25 100%);
+}
+
+/* ===========================
+   Custom Section Headers
+   =========================== */
+.policy-section h2 {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom-color: var(--accent-primary);
+}
+
+/* ===========================
+   Theme Toggle Custom Colors
+   =========================== */
+.theme-toggle {
+    background: linear-gradient(135deg, #fff 0%, #fef5f7 100%);
+    border-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #33202a 100%);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 16px rgba(214, 69, 116, 0.2);
+}
+
+/* ===========================
+   Navigation Links
+   =========================== */
+.nav-link {
+    background: var(--bg-accent);
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+/* ===========================
+   Contact Card Custom Style
+   =========================== */
+.contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #fff5f7 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #2d1e27 100%);
+}
+
+.contact-card h3 {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===========================
+   TOC Active State
+   =========================== */
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+/* ===========================
+   Scrollbar Custom Colors
+   =========================== */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* ===========================
+   Selection Color
+   =========================== */
+::selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* ===========================
+   Back to Top Button (from JS)
+   =========================== */
+.back-to-top {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%) !important;
+}
+
+.back-to-top:hover {
+    background: var(--accent-primary) !important;
+    box-shadow: 0 8px 24px rgba(214, 69, 116, 0.3) !important;
+}
+
+/* ===========================
+   Custom Animations for Rose Theme
+   =========================== */
+@keyframes roseGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(214, 69, 116, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(214, 69, 116, 0.2);
+    }
+}
+
+.policy-header {
+    animation: roseGlow 3s ease-in-out infinite;
+}
+
+/* ===========================
+   Link Underline Effect
+   =========================== */
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
