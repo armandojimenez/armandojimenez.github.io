@@ -166,6 +166,49 @@ body {
 }
 
 /* ===========================
+   Language Switcher
+   =========================== */
+.language-switcher {
+    position: fixed;
+    top: 1.5rem;
+    right: 5.5rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 1000;
+}
+
+.lang-button {
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.lang-button:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.lang-button.active {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: white;
+}
+
+.lang-button:active {
+    transform: scale(0.95);
+}
+
+/* ===========================
    Container & Layout
    =========================== */
 .container {
@@ -373,6 +416,26 @@ body {
 @media (max-width: 767px) {
     .policy-content {
         padding: var(--space-md);
+    }
+    
+    .language-switcher {
+        top: 5.5rem;
+        right: 1rem;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .lang-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        min-width: 80px;
+    }
+    
+    .theme-toggle {
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
     }
 }
 

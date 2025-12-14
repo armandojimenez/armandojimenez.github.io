@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-policy-app="better-tomorrow" data-policy-type="terms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6756529709">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
     <title>Terms & Conditions - Better Tomorrow</title>
     <meta name="description" content="Terms and Conditions for Better Tomorrow mood tracking app">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +27,8 @@
     <link rel="icon" type="image/x-icon" href="../../favicon.ico">
 </head>
 <body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
     <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>

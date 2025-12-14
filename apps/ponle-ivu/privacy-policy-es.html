@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="ponle-ivu" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de Privacidad - Ponle IVU</title>
+    <meta name="description" content="Política de Privacidad de Ponle IVU, aplicación de calculadora de impuestos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">📱</div>
+                <div class="badge-text">
+                    <div class="badge-title">Ponle IVU</div>
+                    <div class="badge-subtitle">Calculadora de Impuestos</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última Actualización: 14 de diciembre de 2025</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Fecha de Vigencia: 14 de diciembre de 2025</span>
+            </div>
+
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#information-collection">Información que Recopilamos</a></li>
+                    <li><a href="#how-we-use">Cómo Usamos su Información</a></li>
+                    <li><a href="#data-storage">Almacenamiento y Seguridad de Datos</a></li>
+                    <li><a href="#advertising">Publicidad</a></li>
+                    <li><a href="#third-party">Servicios de Terceros</a></li>
+                    <li><a href="#your-rights">Sus Derechos de Privacidad</a></li>
+                    <li><a href="#children">Privacidad de Menores</a></li>
+                    <li><a href="#international">Usuarios Internacionales</a></li>
+                    <li><a href="#changes">Cambios a la Política</a></li>
+                    <li><a href="#contact">Contáctenos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Bienvenido a Ponle IVU ("la Aplicación"), desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Estamos comprometidos a proteger su privacidad y garantizar transparencia sobre cómo manejamos su información.</p>
+                    <p>Ponle IVU es una aplicación de calculadora de impuestos diseñada para ayudarle a calcular impuestos (IVU/IVA), propinas, descuentos y dividir cuentas entre varias personas. Esta Política de Privacidad explica nuestras prácticas en cuanto a la recopilación, uso y protección de datos.</p>
+                    <div class="highlight-box">
+                        <strong>Principios Clave de Privacidad:</strong>
+                        <ul>
+                            <li>Todos los cálculos se realizan localmente en su dispositivo</li>
+                            <li>Ningún dato personal de cálculos se transmite a nuestros servidores</li>
+                            <li>No se requieren cuentas de usuario ni registros</li>
+                            <li>Recopilación mínima de datos solo para funcionalidad de la aplicación</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>2. Información que Recopilamos</h2>
+                    <h3>2.1 Información que Usted Proporciona</h3>
+                    <p>Ponle IVU opera completamente sin conexión. La aplicación NO recopila, transmite ni almacena ninguno de los siguientes datos:</p>
+                    <ul>
+                        <li>Información de identificación personal (nombre, correo electrónico, número de teléfono)</li>
+                        <li>Información financiera (detalles de tarjetas de crédito, cuentas bancarias)</li>
+                        <li>Datos de cálculos (montos de compras, cálculos de impuestos, recibos)</li>
+                        <li>Datos de ubicación</li>
+                        <li>Información de contactos</li>
+                        <li>Fotos o archivos multimedia</li>
+                    </ul>
+
+                    <h3>2.2 Información Recopilada Automáticamente</h3>
+                    <p>Para usuarios gratuitos, Google AdMob puede recopilar automáticamente información técnica limitada con fines publicitarios:</p>
+                    <ul>
+                        <li><strong>Información del Dispositivo:</strong> Modelo de dispositivo, versión del sistema operativo, identificadores únicos de dispositivo (ID de Publicidad)</li>
+                        <li><strong>Datos de Uso:</strong> Interacciones con la aplicación, impresiones de anuncios, clics en anuncios</li>
+                        <li><strong>Datos Técnicos:</strong> Dirección IP (ubicación aproximada solamente), registros de fallos para estabilidad</li>
+                    </ul>
+                    <p><strong>Nota para Usuarios Premium:</strong> Los usuarios que compran la versión sin publicidad no tendrán ningún dato recopilado por Google AdMob.</p>
+
+                    <h3>2.3 Recibos Guardados</h3>
+                    <p>Cuando guarda recibos dentro de la aplicación:</p>
+                    <ul>
+                        <li>Todos los datos de recibos se almacenan localmente solo en su dispositivo</li>
+                        <li>Los datos de recibos nunca se suben a servidores externos</li>
+                        <li>Usted tiene control total para ver, editar o eliminar recibos guardados</li>
+                        <li>Los datos de recibos se incluyen en copias de seguridad del dispositivo (iCloud/Google Drive) si está habilitado</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>3. Cómo Usamos su Información</h2>
+                    <p>Dado que Ponle IVU opera completamente sin conexión, no recopilamos ni usamos directamente su información personal. Sin embargo, los servicios de terceros pueden usar los datos recopilados para:</p>
+                    
+                    <h3>3.1 Funcionalidad de la Aplicación</h3>
+                    <ul>
+                        <li>Realizar cálculos de impuestos, propinas y descuentos localmente en su dispositivo</li>
+                        <li>Guardar y administrar sus recibos dentro de la aplicación</li>
+                        <li>Generar reportes PDF de sus cálculos</li>
+                        <li>Mantener preferencias y configuraciones de la aplicación</li>
+                    </ul>
+
+                    <h3>3.2 Publicidad (Solo Versión Gratuita)</h3>
+                    <p>Google AdMob usa los datos recopilados para:</p>
+                    <ul>
+                        <li>Mostrar publicidad relevante</li>
+                        <li>Medir el rendimiento y efectividad de los anuncios</li>
+                        <li>Prevenir fraude y garantizar calidad de anuncios</li>
+                        <li>Proporcionar anuncios personalizados basados en sus intereses (con su consentimiento)</li>
+                    </ul>
+
+                    <h3>3.3 Mejora de la Aplicación</h3>
+                    <ul>
+                        <li>Analizar reportes de fallos para corregir errores y mejorar la estabilidad</li>
+                        <li>Comprender patrones de uso de la aplicación para mejorar la experiencia del usuario</li>
+                        <li>Probar nuevas funciones y mejoras</li>
+                    </ul>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>4. Almacenamiento y Seguridad de Datos</h2>
+                    <h3>4.1 Almacenamiento Local</h3>
+                    <p>Todos sus datos de cálculos y recibos guardados se almacenan exclusivamente en su dispositivo usando:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Almacenamiento seguro sandbox de aplicación protegido por las funciones de seguridad de iOS</li>
+                        <li><strong>Android:</strong> Almacenamiento interno de aplicación con protecciones de seguridad de Android</li>
+                    </ul>
+
+                    <h3>4.2 Copias de Seguridad del Dispositivo</h3>
+                    <p>Sus datos guardados pueden incluirse en copias de seguridad del dispositivo:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Copia de Seguridad de iCloud (si está habilitado por usted)</li>
+                        <li><strong>Android:</strong> Copia de Seguridad de Google Drive (si está habilitado por usted)</li>
+                    </ul>
+                    <p>Estas copias de seguridad están controladas por las políticas de privacidad de Apple y Google respectivamente, no por nosotros.</p>
+
+                    <h3>4.3 Medidas de Seguridad</h3>
+                    <p>Implementamos prácticas de seguridad estándar de la industria:</p>
+                    <ul>
+                        <li>El código de la aplicación se actualiza y prueba regularmente para seguridad</li>
+                        <li>No hay transmisión de datos, lo que significa que no hay riesgo de interceptación</li>
+                        <li>Protecciones de seguridad del dispositivo local (cifrado, autenticación biométrica)</li>
+                        <li>Auditorías de seguridad y evaluaciones de vulnerabilidades regulares</li>
+                    </ul>
+
+                    <h3>4.4 Retención de Datos</h3>
+                    <ul>
+                        <li>Los datos locales permanecen en su dispositivo hasta que elimine la aplicación</li>
+                        <li>Eliminar la aplicación eliminará permanentemente todos los cálculos y recibos guardados</li>
+                        <li>Los registros de compras premium son retenidos por Apple/Google con fines de transacción</li>
+                    </ul>
+                </section>
+
+                <section id="advertising" class="policy-section">
+                    <h2>5. Publicidad</h2>
+                    <h3>5.1 Google AdMob (Solo Versión Gratuita)</h3>
+                    <p>La versión gratuita de Ponle IVU muestra publicidad proporcionada por Google AdMob. AdMob puede recopilar y procesar datos según se describe en su política de privacidad.</p>
+
+                    <h3>5.2 Identificador de Publicidad</h3>
+                    <p>AdMob usa el ID de Publicidad de su dispositivo para publicidad personalizada:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Identificador para Anunciantes (IDFA)</li>
+                        <li><strong>Android:</strong> ID de Publicidad de Google (GAID)</li>
+                    </ul>
+
+                    <h3>5.3 Optar por No Recibir Anuncios Personalizados</h3>
+                    <p>Puede optar por no recibir publicidad personalizada:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Configuración → Privacidad y Seguridad → Seguimiento → Desactivar "Permitir que las Apps Soliciten Seguimiento"</li>
+                        <li><strong>Android:</strong> Configuración → Google → Anuncios → Optar por no recibir Personalización de Anuncios</li>
+                    </ul>
+                    <p>Incluso después de optar por no recibirlos, seguirá viendo anuncios, pero serán menos relevantes para sus intereses.</p>
+
+                    <h3>5.4 Opción Sin Publicidad</h3>
+                    <p>Puede eliminar permanentemente toda la publicidad comprando la versión sin anuncios mediante una compra única dentro de la aplicación. Una vez comprada:</p>
+                    <ul>
+                        <li>Todos los anuncios se eliminan inmediata y permanentemente</li>
+                        <li>Google AdMob ya no recopilará ningún dato de su dispositivo</li>
+                        <li>La compra está vinculada a su Apple ID/cuenta de Google</li>
+                    </ul>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>6. Servicios de Terceros</h2>
+                    <p>Ponle IVU integra los siguientes servicios de terceros:</p>
+
+                    <h3>6.1 Google AdMob (Versión Gratuita)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Mostrar publicidad</li>
+                        <li><strong>Datos Recopilados:</strong> Identificadores de dispositivo, datos de uso, interacciones con anuncios</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>6.2 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Distribución de aplicación y procesamiento de compras dentro de la aplicación</li>
+                        <li><strong>Datos Recopilados:</strong> Historial de compras, descargas de aplicación, reportes de fallos</li>
+                        <li><strong>Políticas de Privacidad:</strong>
+                            <ul>
+                                <li>Apple: <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">https://www.apple.com/privacy/</a></li>
+                                <li>Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>6.3 Sin Otros Servicios de Terceros</h3>
+                    <p>No integramos ningún servicio de análisis, plataformas de redes sociales u otros SDKs de terceros más allá de los mencionados anteriormente.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>7. Sus Derechos de Privacidad</h2>
+                    <p>Dependiendo de su ubicación, puede tener derechos de privacidad específicos:</p>
+
+                    <h3>7.1 Derechos GDPR (Unión Europea)</h3>
+                    <ul>
+                        <li><strong>Derecho de Acceso:</strong> Solicitar información sobre los datos recopilados</li>
+                        <li><strong>Derecho de Rectificación:</strong> Corregir datos inexactos</li>
+                        <li><strong>Derecho de Eliminación:</strong> Solicitar la eliminación de sus datos</li>
+                        <li><strong>Derecho a la Portabilidad de Datos:</strong> Recibir sus datos en un formato estructurado</li>
+                        <li><strong>Derecho de Oposición:</strong> Oponerse al procesamiento de datos</li>
+                        <li><strong>Derecho de Retirar el Consentimiento:</strong> Retirar el consentimiento en cualquier momento</li>
+                    </ul>
+
+                    <h3>7.2 Derechos CCPA (California)</h3>
+                    <ul>
+                        <li><strong>Derecho a Saber:</strong> Solicitar información sobre los datos recopilados</li>
+                        <li><strong>Derecho a Eliminar:</strong> Solicitar la eliminación de información personal</li>
+                        <li><strong>Derecho a Optar por No Participar:</strong> Optar por no participar en la venta de datos (no vendemos datos)</li>
+                        <li><strong>Derecho a la No Discriminación:</strong> Servicio igual independientemente de las elecciones de privacidad</li>
+                    </ul>
+
+                    <h3>7.3 Ejercicio de Sus Derechos</h3>
+                    <p>Dado que todos los datos se almacenan localmente en su dispositivo:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Todos sus datos son accesibles dentro de la aplicación</li>
+                        <li><strong>Eliminación:</strong> Elimine recibos individuales en la aplicación o desinstale para eliminar todos los datos</li>
+                        <li><strong>Exportación:</strong> Use la función de exportación PDF para guardar sus datos</li>
+                        <li><strong>Publicidad:</strong> Use la configuración del dispositivo para administrar preferencias de anuncios</li>
+                    </ul>
+                    <p>Para preguntas sobre la recopilación de datos de terceros, contáctenos en: <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>8. Privacidad de Menores</h2>
+                    <p>Ponle IVU no está dirigido a menores de 13 años (o la edad aplicable en su jurisdicción). No recopilamos conscientemente información personal de menores.</p>
+                    
+                    <h3>8.1 Requisitos de Edad</h3>
+                    <ul>
+                        <li>La aplicación está clasificada para mayores de 4 años (audiencia general)</li>
+                        <li>No se requiere verificación de edad ni consentimiento parental</li>
+                        <li>La aplicación no contiene contenido inapropiado para la edad</li>
+                    </ul>
+
+                    <h3>8.2 Controles Parentales</h3>
+                    <p>Los padres pueden:</p>
+                    <ul>
+                        <li>Usar controles parentales del dispositivo para restringir el uso de la aplicación</li>
+                        <li>Monitorear recibos guardados y cálculos</li>
+                        <li>Desactivar compras dentro de la aplicación mediante la configuración del dispositivo</li>
+                        <li>Controlar la personalización de anuncios mediante la configuración del dispositivo</li>
+                    </ul>
+
+                    <h3>8.3 Cumplimiento COPPA (EE.UU.)</h3>
+                    <p>Cumplimos con la Ley de Protección de la Privacidad en Línea de los Niños (COPPA):</p>
+                    <ul>
+                        <li>No se recopila información personal de ningún usuario</li>
+                        <li>Sin seguimiento de comportamiento de niños</li>
+                        <li>Los anuncios cumplen con las políticas de publicidad dirigida a niños de Google</li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>9. Usuarios Internacionales</h2>
+                    <h3>9.1 Transferencias de Datos</h3>
+                    <p>Dado que todos los datos se almacenan localmente en su dispositivo, no hay transferencias internacionales de datos. Sin embargo, Google AdMob (para usuarios gratuitos) puede transferir datos internacionalmente según se describe en su política de privacidad.</p>
+
+                    <h3>9.2 Cumplimiento Regional</h3>
+                    <ul>
+                        <li><strong>Unión Europea:</strong> Cumplimiento con GDPR</li>
+                        <li><strong>California:</strong> Cumplimiento con CCPA</li>
+                        <li><strong>Brasil:</strong> Cumplimiento con LGPD</li>
+                        <li><strong>Otras Regiones:</strong> Respetamos todas las leyes de privacidad aplicables</li>
+                    </ul>
+
+                    <h3>9.3 Soporte de Idioma</h3>
+                    <p>Esta Política de Privacidad está disponible en inglés y español. Si se traduce, la versión en inglés prevalecerá en caso de conflictos.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>10. Cambios a Esta Política de Privacidad</h2>
+                    <p>Podemos actualizar esta Política de Privacidad de vez en cuando para reflejar cambios en:</p>
+                    <ul>
+                        <li>Funciones y funcionalidad de la aplicación</li>
+                        <li>Requisitos legales y regulatorios</li>
+                        <li>Integraciones de servicios de terceros</li>
+                        <li>Nuestras prácticas comerciales</li>
+                    </ul>
+
+                    <h3>10.1 Notificación de Cambios</h3>
+                    <p>Cuando hacemos cambios significativos:</p>
+                    <ul>
+                        <li>La fecha de "Última Actualización" será revisada</li>
+                        <li>Puede recibir una notificación dentro de la aplicación</li>
+                        <li>El uso continuo de la aplicación constituye aceptación de los cambios</li>
+                    </ul>
+
+                    <h3>10.2 Revisar Regularmente</h3>
+                    <p>Le recomendamos revisar esta Política de Privacidad periódicamente. La versión más actual estará siempre disponible dentro de la aplicación y en nuestro sitio web.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>11. Contáctenos</h2>
+                    <p>Si tiene alguna pregunta, inquietud o solicitud con respecto a esta Política de Privacidad o nuestras prácticas de privacidad, contáctenos:</p>
+                    
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo Electrónico:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Sitio Web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de Respuesta</h3>
+                    <p>Responderemos a su consulta dentro de:</p>
+                    <ul>
+                        <li>30 días para consultas generales</li>
+                        <li>72 horas para preocupaciones urgentes de privacidad</li>
+                        <li>Según lo requerido por la ley aplicable para solicitudes de derechos</li>
+                    </ul>
+
+                    <h3>Quejas</h3>
+                    <p>Si cree que no hemos abordado adecuadamente sus preocupaciones de privacidad, tiene derecho a presentar una queja ante su autoridad local de protección de datos.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última Actualización:</strong> 14 de diciembre de 2025</p>
+                    <p><strong>Fecha de Vigencia:</strong> 14 de diciembre de 2025</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2025 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

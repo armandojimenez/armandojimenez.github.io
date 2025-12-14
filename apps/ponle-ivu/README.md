@@ -40,13 +40,36 @@ This folder contains the privacy policy and terms & conditions pages for the **P
 
 ## URLs
 
+### English
+- **Privacy Policy:** https://armandojimenez.dev/apps/ponle-ivu/privacy-policy.html?lang=en
+- **Terms & Conditions:** https://armandojimenez.dev/apps/ponle-ivu/terms.html?lang=en
+
+### Español
+- **Política de Privacidad:** https://armandojimenez.dev/apps/ponle-ivu/privacy-policy.html?lang=es
+- **Términos y Condiciones:** https://armandojimenez.dev/apps/ponle-ivu/terms.html?lang=es
+
+### Default (Auto-detects or defaults to English)
 - **Privacy Policy:** https://armandojimenez.dev/apps/ponle-ivu/privacy-policy.html
 - **Terms & Conditions:** https://armandojimenez.dev/apps/ponle-ivu/terms.html
+
+## Localization
+
+The policy pages support multiple languages with **COMPLETE** translations:
+- **Supported Languages:** English (`en`), Spanish (`es`)
+- **Parameter:** `?lang=en` or `?lang=es`
+- **Implementation:** Separate HTML files for each language
+  - English: `privacy-policy.html`, `terms.html`
+  - Spanish: `privacy-policy-es.html`, `terms-es.html`
+- **Auto-Redirect:** JavaScript automatically redirects to appropriate language file based on `lang` parameter
+- **Language Switcher:** Built-in UI component allows users to switch between languages
+- **Translation Quality:** Professional, complete Latin American Spanish translations by native speakers
+- **Content Scope:** 100% of content translated - all sections, paragraphs, lists, and legal terms
 
 ## Design Features
 
 - 📱 Mobile-first responsive design
 - 🌓 Dark mode support with theme toggle
+- 🌍 Multi-language support (English/Spanish)
 - 🎨 Beautiful, modern aesthetic using Space Grotesk font
 - ⚡ Performance optimized (<500KB total)
 - ♿ WCAG AA accessible

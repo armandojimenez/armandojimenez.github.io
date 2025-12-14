@@ -2,30 +2,45 @@
 ## Agent Instructions for Creating App Store Compliance Documents
 
 **Last Updated:** December 14, 2025  
-**Version:** 1.0  
+**Version:** 1.2  
 **Purpose:** Complete guide for generating privacy policies and terms & conditions for mobile apps
+
+---
+
+## 🚨 CRITICAL LOCALIZATION REQUIREMENT 🚨
+
+**ALL NEW POLICIES MUST BE CREATED IN MULTIPLE LANGUAGES**
+
+### Default Language Requirements:
+- **English (en):** REQUIRED for all policies
+- **Spanish (es):** REQUIRED for all policies (Latin American Spanish)
+- **Additional languages:** As specified by developer
+
+### Exception:
+Only create single-language policies if explicitly specified by developer request.
 
 ---
 
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [App Store Requirements Research](#app-store-requirements-research)
-3. [Information Gathering](#information-gathering)
-4. [Privacy Policy Structure](#privacy-policy-structure)
-5. [Terms & Conditions Structure](#terms-conditions-structure)
-6. [Design Guidelines](#design-guidelines)
-7. [Technical Implementation](#technical-implementation)
-8. [Legal Compliance Checklist](#legal-compliance-checklist)
-9. [Testing & Validation](#testing-validation)
-10. [Template Variables](#template-variables)
+2. [Localization Requirements (CRITICAL)](#localization-requirements-critical)
+3. [App Store Requirements Research](#app-store-requirements-research)
+4. [Information Gathering](#information-gathering)
+5. [Privacy Policy Structure](#privacy-policy-structure)
+6. [Terms & Conditions Structure](#terms-conditions-structure)
+7. [Design Guidelines](#design-guidelines)
+8. [Technical Implementation](#technical-implementation)
+9. [Legal Compliance Checklist](#legal-compliance-checklist)
+10. [Testing & Validation](#testing-validation)
+11. [Template Variables](#template-variables)
 
 ---
 
 ## 1. Overview
 
 ### Purpose
-This document provides step-by-step instructions for creating comprehensive, compliant privacy policies and terms & conditions for mobile applications distributed through Apple App Store and Google Play Store.
+This document provides step-by-step instructions for creating comprehensive, compliant, and **FULLY LOCALIZED** privacy policies and terms & conditions for mobile applications distributed through Apple App Store and Google Play Store.
 
 ### Key Principles
 - **Clarity:** Use plain language, avoid legalese when possible
@@ -33,17 +48,173 @@ This document provides step-by-step instructions for creating comprehensive, com
 - **Honesty:** Accurately describe data practices
 - **User-Friendly:** Mobile-first design, easy navigation
 - **Compliance:** Meet GDPR, CCPA, COPPA, and app store requirements
+- **Localization:** Provide complete translations in all required languages
 
 ### Deliverables for Each App
-1. Privacy Policy (HTML page)
-2. Terms & Conditions (HTML page)
-3. Mobile-responsive CSS styling
-4. JavaScript for interactivity
-5. File structure: `/apps/{app-name}/privacy-policy.html` and `/apps/{app-name}/terms.html`
+1. Privacy Policy - English (HTML page)
+2. Privacy Policy - Spanish (HTML page)  
+3. Terms & Conditions - English (HTML page)
+4. Terms & Conditions - Spanish (HTML page)
+5. Additional language versions as specified
+6. Mobile-responsive CSS styling
+7. JavaScript for interactivity and language switching
+8. File structure: 
+   - `/apps/{app-name}/privacy-policy.html` (English)
+   - `/apps/{app-name}/privacy-policy-es.html` (Spanish)
+   - `/apps/{app-name}/terms.html` (English)
+   - `/apps/{app-name}/terms-es.html` (Spanish)
 
 ---
 
-## 2. App Store Requirements Research
+## 2. Localization Requirements (CRITICAL)
+
+### 🌍 Multi-Language Policy Creation is MANDATORY
+
+**Every new policy request MUST include:**
+- ✅ Complete English version
+- ✅ Complete Spanish version (Latin American Spanish)
+- ✅ Any additional languages specified by developer
+
+### Default Languages
+Unless explicitly told otherwise by the developer, **ALWAYS create policies in BOTH English AND Spanish**.
+
+#### Primary Languages
+1. **English (en)** - Required for global distribution
+2. **Spanish (es)** - Required, use Latin American Spanish variant for broader reach
+
+#### Additional Languages (on request)
+- Portuguese (pt)
+- French (fr)
+- German (de)
+- Japanese (ja)
+- Chinese (zh)
+- Others as specified
+
+### File Naming Convention
+
+**English versions (base files):**
+```
+privacy-policy.html
+terms.html
+```
+
+**Translated versions (append language code):**
+```
+privacy-policy-es.html  (Spanish)
+privacy-policy-pt.html  (Portuguese)
+privacy-policy-fr.html  (French)
+terms-es.html           (Spanish)
+terms-pt.html           (Portuguese)
+terms-fr.html           (French)
+```
+
+### URL Parameter System
+
+While files are separate, the system uses `?lang=` parameter for user-friendly URLs:
+
+**User-facing URLs:**
+```
+privacy-policy.html?lang=en  → Loads privacy-policy.html
+privacy-policy.html?lang=es  → Redirects to privacy-policy-es.html
+terms.html?lang=en           → Loads terms.html
+terms.html?lang=es           → Redirects to terms-es.html
+```
+
+### Inline Redirect Implementation
+
+**CRITICAL:** Each HTML file must include an inline redirect script in the `<head>` section.
+
+**For English files (privacy-policy.html, terms.html):**
+```html
+<script>
+    // IMMEDIATE language redirect - executes before page loads
+    (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang');
+        if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+            const spanishPath = window.location.pathname.replace('.html', '-es.html');
+            urlParams.delete('lang');
+            const queryString = urlParams.toString();
+            window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+        }
+    })();
+</script>
+```
+
+**For Spanish files (privacy-policy-es.html, terms-es.html):**
+```html
+<script>
+    // IMMEDIATE language redirect - redirect to English if requested
+    (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang');
+        if (lang === 'en') {
+            const englishPath = window.location.pathname.replace('-es.html', '.html');
+            const queryString = urlParams.toString();
+            window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+        }
+    })();
+</script>
+```
+
+### Translation Quality Standards
+
+#### Professional Quality Required
+- ✅ Use professional translators or native speakers
+- ✅ Legal terminology must be accurate
+- ✅ Maintain same tone and formality as English
+- ✅ Cultural appropriateness for target audience
+- ✅ 100% of content translated (not just headings)
+
+#### Latin American Spanish Guidelines
+- Use "ustedes" instead of "vosotros"
+- Use "aplicación" not "app" in formal contexts
+- Use "correo electrónico" for email
+- Avoid Spain-specific colloquialisms
+- Keep legal terminology consistent
+
+#### Mental Health Content (for wellness apps)
+- Use sensitive, appropriate terminology
+- Translate crisis resources accurately
+- Maintain supportive, non-clinical tone
+- Verify mental health terms with professionals
+
+### HTML Structure Requirements
+
+All translated files must maintain:
+1. **Same HTML structure** as English version
+2. **Same IDs and classes** for navigation
+3. **Same data attributes**: `data-policy-app`, `data-policy-type`
+4. **Language attribute**: `lang="es"` for Spanish
+5. **Translated meta tags**: `<title>`, `<meta name="description">`
+6. **Language switcher div**: `<div class="language-switcher" id="languageSwitcher"></div>`
+
+### Workflow for Creating New Policies
+
+When creating policies for a new app:
+
+1. ✅ **Gather Requirements** - Collect all app information
+2. ✅ **Create English Version** - Write complete privacy policy and terms in English
+3. ✅ **Create Spanish Version** - Translate 100% of content to professional Spanish
+4. ✅ **Add Inline Redirects** - Include redirect scripts in ALL files
+5. ✅ **Verify HTML Structure** - Ensure IDs, classes, and structure match
+6. ✅ **Test Language Switching** - Verify `?lang=` parameter works
+7. ✅ **Quality Check** - Review translations for accuracy
+8. ✅ **Update Apps Index** - Add language-specific URLs to apps/index.html
+
+### Single Language Exception
+
+**Only create single-language policies if:**
+- Developer explicitly requests one language only
+- Specify in documentation that it's single-language by request
+- Still implement redirect script structure for future expansion
+
+**Example:**
+> "Developer requested English-only policies. Spanish translation not included per developer specification."
+
+---
+
+## 3. App Store Requirements Research
 
 ### Apple App Store Requirements
 
@@ -492,27 +663,49 @@ Use this structure for every app:
 
 ## 7. Technical Implementation
 
+### 🚨 REMINDER: Create ALL Language Versions
+Before implementing, remember to create:
+- ✅ privacy-policy.html (English)
+- ✅ privacy-policy-es.html (Spanish)
+- ✅ terms.html (English)
+- ✅ terms-es.html (Spanish)
+
 ### File Structure
 
 ```
 /apps/
   /{app-name}/
-    privacy-policy.html
-    terms.html
+    privacy-policy.html         # English
+    privacy-policy-es.html      # Spanish
+    terms.html                  # English
+    terms-es.html              # Spanish
 /css/
-  policy-styles.css
+  policy-styles.css             # Shared styles
 /js/
-  policy-scripts.js
+  policy-scripts.js             # Shared scripts
 ```
 
-### HTML Template Structure
+### HTML Template Structure (English Version)
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-policy-app="{app-name}" data-policy-type="{privacy|terms}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
     <title>{POLICY_TYPE} - {APP_NAME}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -900,6 +1093,94 @@ IF {INTERNATIONAL_USERS}:
 
 ---
 
+## 11. Localization Requirements
+
+### Language Support
+
+All privacy policies and terms & conditions **MUST** be created in **BOTH** English and Latin American Spanish unless otherwise specified by the developer.
+
+#### Default Languages
+- **English (en):** Primary language
+- **Spanish (es):** Latin American Spanish variant
+
+#### URL Parameter System
+Policies use a language parameter system for localization:
+- **Parameter name:** `lang` (language code only, no country code)
+- **English:** `?lang=en`
+- **Spanish:** `?lang=es`
+- **Default behavior:** If no `lang` parameter or unsupported language, default to English
+
+#### Example URLs
+```
+https://armandojimenez.dev/apps/app-name/privacy-policy.html?lang=en
+https://armandojimenez.dev/apps/app-name/privacy-policy.html?lang=es
+https://armandojimenez.dev/apps/app-name/terms.html?lang=en
+https://armandojimenez.dev/apps/app-name/terms.html?lang=es
+```
+
+#### Implementation Requirements
+1. **Language Switcher:** Each policy page must include a language switcher in the top-right corner
+2. **Automatic Detection:** JavaScript detects `lang` parameter and loads appropriate content
+3. **Fallback:** If language not available, automatically show English version
+4. **HTML Attributes:** Add `data-policy-app` and `data-policy-type` attributes to HTML tag
+5. **Consistent Styling:** Language switcher buttons use the existing policy-styles.css framework
+
+#### Translation Guidelines
+- **Accuracy:** Ensure legal translations are accurate and culturally appropriate
+- **Consistency:** Use consistent terminology across all policy documents
+- **Professional:** Use professional translation services or native speakers for legal content
+- **Regional Variants:** Use Latin American Spanish (not Spain Spanish) for broader reach
+- **Legal Review:** Have translations reviewed by legal professionals familiar with target regions
+
+#### Translation Implementation
+
+Create **COMPLETE** Spanish HTML files for each policy document:
+- `privacy-policy-es.html` - Full Spanish privacy policy
+- `terms-es.html` - Full Spanish terms & conditions
+
+**File Structure:**
+```
+apps/
+  {app-name}/
+    privacy-policy.html (English)
+    privacy-policy-es.html (Spanish - COMPLETE translation)
+    terms.html (English)
+    terms-es.html (Spanish - COMPLETE translation)
+```
+
+**Translation Requirements:**
+1. **Complete Translation:** 100% of content must be translated, not just headings
+2. **Professional Quality:** Use professional translators or native speakers for legal accuracy
+3. **HTML Structure:** Maintain exact same HTML structure, IDs, classes, and links
+4. **Meta Tags:** Update `<title>`, `<meta>`, and `lang` attribute to Spanish
+5. **Data Attributes:** Include `data-policy-app` and `data-policy-type` attributes
+6. **Language Switcher:** Include `<div class="language-switcher" id="languageSwitcher"></div>`
+7. **Styling:** Use same CSS files (policy-styles.css, theme.css if applicable)
+8. **Scripts:** Include same JavaScript files (policy-scripts.js handles auto-redirect)
+
+**Auto-Redirect System:**
+The `policy-scripts.js` file automatically:
+- Detects `?lang=es` parameter
+- Redirects to `-es.html` version if Spanish is requested
+- Redirects back to English version if `?lang=en` on Spanish page
+- Language switcher buttons work seamlessly with this system
+
+**Translation Quality Standards:**
+- Use Latin American Spanish for broader reach
+- Maintain legal terminology accuracy
+- Preserve all technical terms appropriately
+- Keep tone and formality consistent with English version
+- For mental health apps: Use sensitive, appropriate mental health terminology
+
+#### Single Language Exception
+If the developer specifies that only one language is needed:
+- Still implement the language parameter system
+- Create content only in the specified language
+- Set that language as the default fallback
+- Document the single-language setup in the app's README
+
+---
+
 ## Resources
 
 ### Official Guidelines
@@ -923,6 +1204,8 @@ IF {INTERNATIONAL_USERS}:
 
 ## Version History
 
+- **v1.2** (Dec 14, 2025): **CRITICAL UPDATE** - Made localization MANDATORY for all new policies. Default: English + Spanish required. Added inline redirect scripts implementation. Complete translation workflow documented.
+- **v1.1** (Dec 14, 2025): Added localization requirements (en/es support)
 - **v1.0** (Dec 14, 2025): Initial document created for Ponle IVU app
 
 ---
