@@ -9,7 +9,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const lang = urlParams.get('lang');
             if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
-                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                const spanishPath = window.location.pathname.replace(/\.html$/, '-es.html');
                 urlParams.delete('lang');
                 const queryString = urlParams.toString();
                 window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
@@ -57,7 +57,7 @@
             <h1 class="policy-title">Privacy Policy</h1>
             <div class="policy-meta">
                 <span class="meta-item">Last Updated: February 13, 2026</span>
-                <span class="meta-divider">&bull;</span>
+                <span class="meta-divider">•</span>
                 <span class="meta-item">Effective Date: February 13, 2026</span>
             </div>
         </header>

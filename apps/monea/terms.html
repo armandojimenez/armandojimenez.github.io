@@ -9,7 +9,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const lang = urlParams.get('lang');
             if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
-                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                const spanishPath = window.location.pathname.replace(/\.html$/, '-es.html');
                 urlParams.delete('lang');
                 const queryString = urlParams.toString();
                 window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));

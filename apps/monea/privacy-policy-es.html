@@ -9,7 +9,8 @@
             const urlParams = new URLSearchParams(window.location.search);
             const lang = urlParams.get('lang');
             if (lang === 'en') {
-                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const englishPath = window.location.pathname.replace(/-es\.html$/, '.html');
+                urlParams.delete('lang');
                 const queryString = urlParams.toString();
                 window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
             }
