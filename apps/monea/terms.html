@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="monea" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms & Conditions - Monea</title>
+    <meta name="description" content="Terms and Conditions for Monea abundance wallet app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">💰</div>
+                <div class="badge-text">
+                    <div class="badge-title">Monea</div>
+                    <div class="badge-subtitle">Your Abundance Wallet</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms & Conditions</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: February 13, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: February 13, 2026</span>
+            </div>
+
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#description">App Description</a></li>
+                    <li><a href="#license">License to Use</a></li>
+                    <li><a href="#user-obligations">User Obligations</a></li>
+                    <li><a href="#virtual-currency">Virtual Currency Disclaimer</a></li>
+                    <li><a href="#purchases">In-App Purchases</a></li>
+                    <li><a href="#ai-concierge">AI Concierge Feature</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#prohibited-uses">Prohibited Uses</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#disclaimers">Disclaimers</a></li>
+                    <li><a href="#limitation">Limitation of Liability</a></li>
+                    <li><a href="#indemnification">Indemnification</a></li>
+                    <li><a href="#governing-law">Governing Law</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>Welcome to Monea ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. By downloading, installing, accessing, or using the App, you ("User," "you," or "your") agree to be bound by these Terms and Conditions ("Terms").</p>
+
+                    <div class="highlight-box">
+                        <strong>⚠️ Important:</strong> If you do not agree to these Terms, do not download, install, or use the App. Your continued use of the App constitutes acceptance of these Terms and any updates made to them.
+                    </div>
+
+                    <h3>1.1 Agreement to Terms</h3>
+                    <p>These Terms constitute a legally binding agreement between you and Believe PR. By using the App, you represent that:</p>
+                    <ul>
+                        <li>You are at least 13 years of age (or the minimum age required in your jurisdiction)</li>
+                        <li>You have the legal capacity to enter into these Terms</li>
+                        <li>If you are under 18, you have obtained parental or guardian consent</li>
+                        <li>You will comply with all applicable laws and regulations</li>
+                    </ul>
+
+                    <h3>1.2 Additional Terms</h3>
+                    <p>In addition to these Terms, your use of the App is also governed by:</p>
+                    <ul>
+                        <li>Our <a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li>Apple App Store Terms of Service (iOS users)</li>
+                        <li>Google Play Store Terms of Service (Android users)</li>
+                        <li>RevenueCat Terms of Service (subscription management)</li>
+                    </ul>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. App Description</h2>
+                    <h3>2.1 Purpose</h3>
+                    <p>Monea is an abundance visualization and manifestation application designed to help users:</p>
+                    <ul>
+                        <li>Practice the "Prosperity Game" method — receive virtual daily deposits and spend on dream purchases</li>
+                        <li>Shift their abundance mindset through intentional visualization</li>
+                        <li>Build a positive relationship with wealth and prosperity</li>
+                        <li>All currency within Monea is <strong>FICTIONAL</strong> and holds no real monetary value</li>
+                    </ul>
+
+                    <h3>2.2 Key Features</h3>
+                    <ul>
+                        <li><strong>Virtual Daily Deposits:</strong> Receive fictional deposits in linear, doubling, or fixed modes</li>
+                        <li><strong>Curated Luxury Catalog:</strong> Browse and make virtual purchases from a luxury catalog</li>
+                        <li><strong>AI-Powered Abundance Concierge:</strong> Motivational and visualization guidance via AI chat</li>
+                        <li><strong>Prosperity Analytics Dashboard:</strong> Track your abundance journey with visual analytics</li>
+                        <li><strong>Achievement System:</strong> Earn achievements as you progress</li>
+                        <li><strong>Card Customization:</strong> Personalize your wallet card with photo backgrounds</li>
+                        <li><strong>Collection Vault:</strong> Store and organize your virtual purchases</li>
+                    </ul>
+
+                    <h3>2.3 Availability</h3>
+                    <ul>
+                        <li>The App is available for iOS and Android devices</li>
+                        <li>Certain features may vary by platform</li>
+                        <li>We reserve the right to modify or discontinue features at any time</li>
+                    </ul>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. License to Use</h2>
+                    <h3>3.1 License Grant</h3>
+                    <p>Subject to your compliance with these Terms, Believe PR grants you a limited, non-exclusive, non-transferable, revocable license to:</p>
+                    <ul>
+                        <li>Download and install the App on devices you own or control</li>
+                        <li>Access and use the App for personal, non-commercial purposes</li>
+                        <li>Use all features and functionalities as intended</li>
+                    </ul>
+
+                    <h3>3.2 License Restrictions</h3>
+                    <p>You may NOT:</p>
+                    <ul>
+                        <li>Copy, modify, or create derivative works of the App</li>
+                        <li>Reverse engineer, decompile, or disassemble the App</li>
+                        <li>Remove or modify any copyright, trademark, or proprietary notices</li>
+                        <li>Rent, lease, lend, sell, or sublicense the App</li>
+                        <li>Use the App for any commercial purpose without written permission</li>
+                        <li>Circumvent any security features or access restrictions</li>
+                        <li>Use automated tools to access or interact with the App</li>
+                    </ul>
+
+                    <h3>3.3 Ownership</h3>
+                    <p>The App and all intellectual property rights remain the exclusive property of Believe PR and Armando Jimenez. This license does not grant you any ownership rights.</p>
+                </section>
+
+                <section id="user-obligations" class="policy-section">
+                    <h2>4. User Obligations</h2>
+                    <h3>4.1 Responsible Use</h3>
+                    <p>You agree to:</p>
+                    <ul>
+                        <li>Use the App in accordance with these Terms and applicable laws</li>
+                        <li>Understand that all currency within the App is entirely fictional</li>
+                        <li>Not rely on the App for real financial decisions</li>
+                        <li>Keep your device secure and protect your saved data</li>
+                        <li>Not use the App for any unlawful or fraudulent purposes</li>
+                    </ul>
+
+                    <h3>4.2 Account Security</h3>
+                    <p>Although the App does not require user accounts:</p>
+                    <ul>
+                        <li>You are responsible for securing your device</li>
+                        <li>Protect your saved data from unauthorized access</li>
+                        <li>Do not share sensitive personal information within the App</li>
+                    </ul>
+
+                    <h3>4.3 Prohibited Conduct</h3>
+                    <p>You agree NOT to:</p>
+                    <ul>
+                        <li>Use the App to facilitate fraud or misrepresentation</li>
+                        <li>Share or distribute the App outside official app stores</li>
+                        <li>Attempt to gain unauthorized access to App features</li>
+                        <li>Interfere with the proper functioning of the App</li>
+                        <li>Upload malware or malicious code</li>
+                    </ul>
+                </section>
+
+                <section id="virtual-currency" class="policy-section">
+                    <h2>5. Virtual Currency Disclaimer</h2>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ IMPORTANT - READ CAREFULLY</strong>
+                    </div>
+
+                    <p>All virtual currency, deposits, and purchases within Monea are <strong>ENTIRELY FICTIONAL</strong> and hold <strong>no real monetary value whatsoever</strong>. You acknowledge and agree that:</p>
+                    <ul>
+                        <li>Virtual currency cannot be redeemed, exchanged, or converted to real currency</li>
+                        <li>Virtual currency is not connected to any bank, payment system, or financial institution</li>
+                        <li>The "wallet" is a visualization and manifestation tool only</li>
+                        <li>Monea is not a financial product, investment, or savings account</li>
+                        <li>Monea is not regulated by any financial authority</li>
+                        <li>We make no claims about financial outcomes from using the App</li>
+                        <li>Any resemblance to real financial products is intentional for visualization purposes only</li>
+                    </ul>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>6. In-App Purchases</h2>
+                    <h3>6.1 Monea Luxury Subscription</h3>
+                    <p>The App offers a premium subscription with the following details:</p>
+                    <ul>
+                        <li><strong>Type:</strong> Auto-renewable subscription (monthly or annual)</li>
+                        <li><strong>Benefits:</strong> Unlimited features, all catalog categories, premium analytics</li>
+                        <li><strong>Billing:</strong> Charged to your Apple ID or Google Play account</li>
+                        <li><strong>Renewal:</strong> Automatically renews unless cancelled 24 hours before period ends</li>
+                        <li><strong>Cancellation:</strong> Manage in App Store or Play Store settings</li>
+                    </ul>
+
+                    <h3>6.2 Payment Processing</h3>
+                    <ul>
+                        <li>All purchases are processed through Apple App Store or Google Play Store</li>
+                        <li>Pricing is set in your local currency</li>
+                        <li>Payment is charged to your App Store or Play Store account</li>
+                        <li>We do not have access to your payment information</li>
+                    </ul>
+
+                    <h3>6.3 Refund Policy</h3>
+                    <p><strong>Non-Refundable Purchases:</strong> All in-app purchases are final and non-refundable, except as required by applicable law.</p>
+
+                    <h4>Exceptions:</h4>
+                    <ul>
+                        <li><strong>Technical Issues:</strong> If the purchase does not unlock premium features, contact us for support</li>
+                        <li><strong>Accidental Purchases:</strong> Refund requests must be made through Apple or Google within their refund windows</li>
+                        <li><strong>Legal Requirements:</strong> Refunds as required by consumer protection laws in your jurisdiction</li>
+                    </ul>
+
+                    <h4>How to Request Refunds:</h4>
+                    <ul>
+                        <li><strong>iOS:</strong> Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Android:</strong> Visit <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play refund page</a></li>
+                        <li><strong>Our Support:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                    </ul>
+
+                    <h3>6.4 Subscription Terms</h3>
+                    <p><strong>Auto-Renewal:</strong> Your subscription will automatically renew at the end of each billing period unless you cancel at least 24 hours before the period ends. You can manage auto-renewal in your account settings.</p>
+                    <p><strong>Price Changes:</strong> We reserve the right to change subscription prices with advance notice. Changes apply to new billing periods only.</p>
+                    <p><strong>Access Upon Cancellation:</strong> If you cancel, you retain premium access until the end of the current billing period.</p>
+                </section>
+
+                <section id="ai-concierge" class="policy-section">
+                    <h2>7. AI Concierge Feature</h2>
+                    <h3>7.1 Nature of Service</h3>
+                    <p>Monea includes an AI-powered abundance concierge chat feature powered by Google Gemini. This feature:</p>
+                    <ul>
+                        <li>Provides motivational and visualization guidance</li>
+                        <li>Offers suggestions for abundance practices</li>
+                        <li>Is NOT financial advice, therapy, or professional consultation</li>
+                        <li>Is intended for entertainment and motivational purposes only</li>
+                    </ul>
+
+                    <h3>7.2 Limitations</h3>
+                    <p>You acknowledge and agree that:</p>
+                    <ul>
+                        <li>AI may produce inaccurate or misleading information</li>
+                        <li>Responses are for entertainment and motivation only</li>
+                        <li>Do not make financial decisions based on AI suggestions</li>
+                        <li>The AI concierge is not a substitute for professional financial advisors</li>
+                        <li>AI responses do not constitute professional advice of any kind</li>
+                    </ul>
+
+                    <h3>7.3 User Responsibility</h3>
+                    <p>You are solely responsible for how you use AI-generated suggestions. We are not liable for any actions taken based on AI responses, including but not limited to financial decisions, investment choices, or lifestyle changes.</p>
+                </section>
+
+                <section id="intellectual-property" class="policy-section">
+                    <h2>8. Intellectual Property</h2>
+                    <h3>8.1 Ownership</h3>
+                    <p>All intellectual property rights in and to the App, including but not limited to:</p>
+                    <ul>
+                        <li>Source code and software</li>
+                        <li>User interface and design</li>
+                        <li>Graphics, logos, and icons</li>
+                        <li>Text, content, and documentation</li>
+                        <li>Algorithms and calculations</li>
+                        <li>Trademarks and brand names</li>
+                    </ul>
+                    <p>...are owned exclusively by Believe PR and Armando Jimenez.</p>
+
+                    <h3>8.2 Trademarks</h3>
+                    <p>"Monea" and associated logos are trademarks of Believe PR. You may not use these marks without prior written permission.</p>
+
+                    <h3>8.3 User Content</h3>
+                    <p>You retain ownership of:</p>
+                    <ul>
+                        <li>Your personal data and preferences</li>
+                        <li>Virtual purchase history and collections</li>
+                        <li>Customization choices and card designs</li>
+                    </ul>
+                    <p>Since this data is stored locally on your device and never transmitted to our servers, we claim no ownership or rights to your content.</p>
+
+                    <h3>8.4 Copyright Infringement</h3>
+                    <p>If you believe any content in the App infringes your copyright, contact us at: <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                </section>
+
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>9. Prohibited Uses</h2>
+                    <p>You agree NOT to use the App for:</p>
+
+                    <h3>9.1 Illegal Activities</h3>
+                    <ul>
+                        <li>Fraud or misrepresentation</li>
+                        <li>Claiming virtual currency has real monetary value</li>
+                        <li>Any activity that violates local, state, or federal laws</li>
+                        <li>Facilitating illegal transactions</li>
+                    </ul>
+
+                    <h3>9.2 Unauthorized Access</h3>
+                    <ul>
+                        <li>Hacking or cracking the App</li>
+                        <li>Bypassing security measures</li>
+                        <li>Accessing restricted features without authorization</li>
+                        <li>Reverse engineering the App code</li>
+                    </ul>
+
+                    <h3>9.3 Commercial Exploitation</h3>
+                    <ul>
+                        <li>Reselling or redistributing the App</li>
+                        <li>Using the App as part of a commercial service without permission</li>
+                        <li>Incorporating the App into other products</li>
+                        <li>Scraping or extracting App content</li>
+                    </ul>
+
+                    <h3>9.4 Harmful Activities</h3>
+                    <ul>
+                        <li>Uploading malware or viruses</li>
+                        <li>Disrupting App functionality</li>
+                        <li>Interfering with other users' experience</li>
+                        <li>Attempting to overload or crash servers</li>
+                    </ul>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>10. Termination</h2>
+                    <h3>10.1 Termination by You</h3>
+                    <p>You may terminate this agreement at any time by:</p>
+                    <ul>
+                        <li>Uninstalling the App from all devices</li>
+                        <li>Deleting all saved data</li>
+                        <li>Ceasing all use of the App</li>
+                    </ul>
+
+                    <h3>10.2 Termination by Us</h3>
+                    <p>We reserve the right to:</p>
+                    <ul>
+                        <li>Discontinue the App at any time</li>
+                        <li>Block access if Terms are violated</li>
+                        <li>Remove the App from app stores</li>
+                        <li>Disable features or functionality</li>
+                    </ul>
+
+                    <h3>10.3 Effect of Termination</h3>
+                    <p>Upon termination:</p>
+                    <ul>
+                        <li>Your license to use the App immediately ends</li>
+                        <li>You must cease all use of the App</li>
+                        <li>You should delete the App and all data</li>
+                        <li>All virtual currency and purchases are permanently deleted</li>
+                        <li>Provisions regarding disclaimers, liability, and indemnification survive</li>
+                    </ul>
+
+                    <h3>10.4 No Refunds on Termination</h3>
+                    <p>We are not obligated to provide refunds if:</p>
+                    <ul>
+                        <li>You voluntarily uninstall the App</li>
+                        <li>We terminate your access due to Terms violations</li>
+                        <li>The App is discontinued (unless required by law)</li>
+                    </ul>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>11. Disclaimers</h2>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ READ CAREFULLY - IMPORTANT LEGAL DISCLAIMERS</strong>
+                    </div>
+
+                    <h3>11.1 "AS IS" and "AS AVAILABLE"</h3>
+                    <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                    <ul>
+                        <li>WARRANTIES OF MERCHANTABILITY</li>
+                        <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                        <li>NON-INFRINGEMENT</li>
+                        <li>ACCURACY OR RELIABILITY</li>
+                        <li>UNINTERRUPTED OR ERROR-FREE OPERATION</li>
+                    </ul>
+
+                    <h3>11.2 No Guarantee of Results</h3>
+                    <p>WE DO NOT WARRANT THAT:</p>
+                    <ul>
+                        <li>The App will produce any specific abundance or financial outcomes</li>
+                        <li>The App will meet your specific requirements</li>
+                        <li>All features will function perfectly at all times</li>
+                        <li>Bugs or errors will be corrected</li>
+                        <li>The App will be compatible with all devices</li>
+                    </ul>
+
+                    <h3>11.3 Not Financial Advice or Products</h3>
+                    <p>WE ARE NOT RESPONSIBLE FOR:</p>
+                    <ul>
+                        <li>Financial decisions made based on App usage</li>
+                        <li>Any real-world financial outcomes</li>
+                        <li>Investment or spending decisions</li>
+                        <li>Loss of data or saved collections</li>
+                        <li>Consequences of relying on the App for financial guidance</li>
+                    </ul>
+
+                    <h3>11.4 Third-Party Services</h3>
+                    <p>WE ARE NOT RESPONSIBLE FOR:</p>
+                    <ul>
+                        <li>Google Gemini AI responses or data processing</li>
+                        <li>Apple App Store or Google Play Store policies</li>
+                        <li>RevenueCat subscription management</li>
+                        <li>Device operating system issues</li>
+                        <li>Internet connectivity problems</li>
+                        <li>Third-party services integrated with the App</li>
+                    </ul>
+
+                    <h3>11.5 Jurisdictional Limitations</h3>
+                    <p>Some jurisdictions do not allow the exclusion of implied warranties. In such jurisdictions, the above exclusions may not apply to you, and you may have additional rights.</p>
+                </section>
+
+                <section id="limitation" class="policy-section">
+                    <h2>12. Limitation of Liability</h2>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ IMPORTANT LIABILITY LIMITATIONS</strong>
+                    </div>
+
+                    <h3>12.1 Maximum Liability</h3>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL BELIEVE PR, ARMANDO JIMENEZ, OR THEIR AFFILIATES BE LIABLE FOR:</p>
+                    <ul>
+                        <li>INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES</li>
+                        <li>LOSS OF PROFITS, REVENUE, OR BUSINESS OPPORTUNITIES</li>
+                        <li>LOSS OF DATA OR INFORMATION</li>
+                        <li>COST OF SUBSTITUTE GOODS OR SERVICES</li>
+                        <li>PERSONAL INJURY OR PROPERTY DAMAGE</li>
+                    </ul>
+
+                    <h3>12.2 Cap on Liability</h3>
+                    <p>OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO THE APP SHALL NOT EXCEED THE GREATER OF:</p>
+                    <ul>
+                        <li>$50 USD (or equivalent in your local currency)</li>
+                        <li>The amount you paid for the subscription (if applicable)</li>
+                    </ul>
+
+                    <h3>12.3 Basis of the Bargain</h3>
+                    <p>These limitations reflect the allocation of risk between the parties. The App is offered at a nominal price (or free), and the limitations are an essential basis of the agreement.</p>
+
+                    <h3>12.4 Jurisdictional Exceptions</h3>
+                    <p>Some jurisdictions do not allow limitations on liability for certain types of damages. In such jurisdictions, our liability will be limited to the maximum extent permitted by law.</p>
+                </section>
+
+                <section id="indemnification" class="policy-section">
+                    <h2>13. Indemnification</h2>
+                    <h3>13.1 Your Indemnification</h3>
+                    <p>You agree to indemnify, defend, and hold harmless Believe PR, Armando Jimenez, and their affiliates, officers, employees, and agents from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:</p>
+                    <ul>
+                        <li>Your use or misuse of the App</li>
+                        <li>Your violation of these Terms</li>
+                        <li>Your violation of any applicable laws or regulations</li>
+                        <li>Your violation of any third-party rights</li>
+                        <li>Any financial decisions made based on App usage</li>
+                        <li>Any claims that virtual currency has real value</li>
+                    </ul>
+
+                    <h3>13.2 Defense of Claims</h3>
+                    <p>We reserve the right to:</p>
+                    <ul>
+                        <li>Assume exclusive defense and control of any matter subject to indemnification</li>
+                        <li>Cooperate with you in defending such claims</li>
+                        <li>Settle claims at our discretion</li>
+                    </ul>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>14. Governing Law and Dispute Resolution</h2>
+                    <h3>14.1 Governing Law</h3>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of Puerto Rico, without regard to its conflict of law provisions.</p>
+
+                    <h3>14.2 Jurisdiction</h3>
+                    <p>You agree that any legal action or proceeding arising from these Terms shall be brought exclusively in the courts of Puerto Rico, and you consent to the jurisdiction of such courts.</p>
+
+                    <h3>14.3 Dispute Resolution</h3>
+                    <p>Before filing any legal action, you agree to attempt to resolve disputes through:</p>
+                    <ul>
+                        <li><strong>Informal Negotiation:</strong> Contact us at <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                        <li><strong>Good Faith Discussion:</strong> Allow 30 days for resolution attempts</li>
+                        <li><strong>Mediation:</strong> Consider voluntary mediation if informal resolution fails</li>
+                    </ul>
+
+                    <h3>14.4 Class Action Waiver</h3>
+                    <p>TO THE EXTENT PERMITTED BY LAW, YOU AGREE THAT ANY DISPUTE SHALL BE RESOLVED ON AN INDIVIDUAL BASIS AND NOT AS A CLASS ACTION, CONSOLIDATED ACTION, OR REPRESENTATIVE ACTION.</p>
+
+                    <h3>14.5 Consumer Rights</h3>
+                    <p>Nothing in these Terms limits your statutory rights as a consumer under applicable consumer protection laws.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>15. Changes to Terms</h2>
+                    <h3>15.1 Right to Modify</h3>
+                    <p>We reserve the right to modify these Terms at any time. Changes may be made to reflect:</p>
+                    <ul>
+                        <li>New features or functionality</li>
+                        <li>Legal or regulatory requirements</li>
+                        <li>Business practices changes</li>
+                        <li>User feedback and concerns</li>
+                    </ul>
+
+                    <h3>15.2 Notice of Changes</h3>
+                    <p>When we make significant changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>You may receive an in-app notification</li>
+                        <li>Material changes will be highlighted</li>
+                    </ul>
+
+                    <h3>15.3 Acceptance of Changes</h3>
+                    <p>By continuing to use the App after changes are posted:</p>
+                    <ul>
+                        <li>You accept the modified Terms</li>
+                        <li>The new Terms become effective immediately</li>
+                        <li>If you disagree, you must stop using the App</li>
+                    </ul>
+
+                    <h3>15.4 Historical Versions</h3>
+                    <p>Previous versions of these Terms are available upon request. Contact us at: <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>16. Contact Information</h2>
+                    <p>For questions, concerns, or notices regarding these Terms, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>16.1 Customer Support</h3>
+                    <p>For technical support or assistance:</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                        <li><strong>Response Time:</strong> Within 2-5 business days</li>
+                        <li><strong>Support Hours:</strong> Monday-Friday, 9 AM - 5 PM AST</li>
+                    </ul>
+
+                    <h3>16.2 Legal Notices</h3>
+                    <p>For legal notices, service of process, or formal communications:</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                        <li><strong>Subject Line:</strong> "Legal Notice - Monea"</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <h3>17. Miscellaneous</h3>
+
+                    <h4>17.1 Entire Agreement</h4>
+                    <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Believe PR regarding the App.</p>
+
+                    <h4>17.2 Severability</h4>
+                    <p>If any provision is found to be unenforceable, the remaining provisions will remain in full effect.</p>
+
+                    <h4>17.3 Waiver</h4>
+                    <p>Our failure to enforce any right or provision does not constitute a waiver of such right or provision.</p>
+
+                    <h4>17.4 Assignment</h4>
+                    <p>You may not assign or transfer these Terms. We may assign our rights and obligations without restriction.</p>
+
+                    <h4>17.5 Survival</h4>
+                    <p>Provisions regarding disclaimers, limitation of liability, indemnification, and dispute resolution survive termination.</p>
+
+                    <h4>17.6 Language</h4>
+                    <p>These Terms are written in English. Any translations are for convenience only; the English version controls.</p>
+
+                    <hr class="divider">
+
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> February 13, 2026</p>
+                    <p><strong>Effective Date:</strong> February 13, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
