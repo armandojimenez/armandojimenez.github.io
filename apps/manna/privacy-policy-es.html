@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="manna" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de Privacidad - Manna</title>
+    <meta name="description" content="Política de Privacidad para Manna - Recoge Tu Verdad Diaria. Aplicación de afirmaciones cristianas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">🍞</div>
+                <div class="badge-text">
+                    <div class="badge-title">Manna</div>
+                    <div class="badge-subtitle">Recoge Tu Verdad Diaria</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Pol&iacute;tica de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">&Uacute;ltima Actualizaci&oacute;n: 21 de febrero de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha de Vigencia: 21 de febrero de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducci&oacute;n</a></li>
+                    <li><a href="#privacy-first">Enfoque de Privacidad Primero</a></li>
+                    <li><a href="#information-collection">Informaci&oacute;n que Recopilamos</a></li>
+                    <li><a href="#how-we-use">C&oacute;mo Usamos Su Informaci&oacute;n</a></li>
+                    <li><a href="#data-storage">Almacenamiento y Seguridad</a></li>
+                    <li><a href="#permissions">Permisos</a></li>
+                    <li><a href="#third-party">Servicios de Terceros</a></li>
+                    <li><a href="#your-rights">Sus Derechos de Privacidad</a></li>
+                    <li><a href="#children">Privacidad de Menores</a></li>
+                    <li><a href="#international">Usuarios Internacionales</a></li>
+                    <li><a href="#changes">Cambios a la Pol&iacute;tica</a></li>
+                    <li><a href="#contact">Cont&aacute;ctenos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducci&oacute;n</h2>
+                    <p>Bienvenido a Manna (&quot;la Aplicaci&oacute;n&quot;), desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Estamos profundamente comprometidos con la protecci&oacute;n de su privacidad.</p>
+                    <p>Manna es una aplicaci&oacute;n de afirmaciones cristianas dise&ntilde;ada para ayudarle a recoger verdades diarias a trav&eacute;s de afirmaciones inspiradas en las Escrituras. La aplicaci&oacute;n ofrece afirmaciones diarias en 20 categor&iacute;as, recordatorios personalizables, creaci&oacute;n de afirmaciones personales y temas visuales para enriquecer su pr&aacute;ctica espiritual.</p>
+                    <div class="highlight-box">
+                        <strong>🍞 Nuestra Promesa de Privacidad:</strong>
+                        <ul>
+                            <li>Todos sus datos permanecen en SU dispositivo</li>
+                            <li>NO PODEMOS acceder a sus afirmaciones personales o entradas</li>
+                            <li>No se requiere cuenta de usuario ni correo electr&oacute;nico</li>
+                            <li>Sin anal&iacute;ticas, rastreo ni recopilaci&oacute;n de datos por terceros</li>
+                            <li>Su pr&aacute;ctica espiritual es completamente privada</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Enfoque de Privacidad Primero</h2>
+                    <p>Manna est&aacute; construida sobre una base de privacidad primero. Creemos que su pr&aacute;ctica espiritual y afirmaciones personales deben permanecer completamente privadas. A diferencia de muchas aplicaciones, nosotros:</p>
+                    <ul>
+                        <li>Almacenamos todos los datos localmente en su dispositivo &uacute;nicamente</li>
+                        <li>Nunca subimos sus datos de usuario a ning&uacute;n servidor</li>
+                        <li>No requerimos correo electr&oacute;nico, inicio de sesi&oacute;n ni informaci&oacute;n personal</li>
+                        <li>No incluimos ning&uacute;n SDK de anal&iacute;ticas, rastreo o publicidad</li>
+                        <li>Operamos completamente sin conexi&oacute;n &mdash; no se requiere internet para la funcionalidad principal</li>
+                    </ul>
+                    <p><strong>Importante:</strong> Si elimina la aplicaci&oacute;n, todos sus datos se perder&aacute;n permanentemente. No podemos recuperarlos porque nunca tuvimos acceso a ellos. Use la funci&oacute;n de respaldo dentro de la aplicaci&oacute;n para guardar sus datos antes de desinstalar.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Informaci&oacute;n que Recopilamos</h2>
+                    <h3>3.1 Informaci&oacute;n que Usted Crea</h3>
+                    <p>Todos los siguientes datos se almacenan localmente en su dispositivo y NUNCA se transmiten a nuestros servidores ni a terceros:</p>
+                    <ul>
+                        <li><strong>Afirmaciones:</strong> Afirmaciones integradas y personalizadas que usted crea (en ingl&eacute;s y/o espa&ntilde;ol)</li>
+                        <li><strong>Favoritos:</strong> Afirmaciones que marca para acceso r&aacute;pido</li>
+                        <li><strong>Mezclas Personalizadas:</strong> Combinaciones de categor&iacute;as que usted crea</li>
+                        <li><strong>Temas Personalizados:</strong> Temas visuales con colores, fuentes e im&aacute;genes</li>
+                        <li><strong>Afirmaciones Ocultas:</strong> Contenido que elige ocultar de su feed</li>
+                        <li><strong>Configuraci&oacute;n de Recordatorios:</strong> Horarios de notificaciones, horas, d&iacute;as y categor&iacute;as preferidas</li>
+                        <li><strong>Archivos de Respaldo:</strong> Exportaciones JSON cifradas de todos sus datos</li>
+                    </ul>
+
+                    <h3>3.2 Datos de Uso Almacenados Localmente</h3>
+                    <p>Los siguientes datos de uso se almacenan en su dispositivo &uacute;nicamente para la funcionalidad de la aplicaci&oacute;n (por ejemplo, seguimiento de rachas, solicitudes de rese&ntilde;a) y NUNCA se transmiten externamente:</p>
+                    <ul>
+                        <li><strong>Datos de Sesi&oacute;n:</strong> Total de sesiones, d&iacute;as de uso y fecha de &uacute;ltima sesi&oacute;n</li>
+                        <li><strong>Datos de Interacci&oacute;n:</strong> Conteos de deslizamientos, favoritos y compartidos</li>
+                        <li><strong>Datos de Racha:</strong> Racha actual y fechas de actividad</li>
+                        <li><strong>Preferencias:</strong> Modo de tema, selecci&oacute;n de idioma, configuraci&oacute;n de visualizaci&oacute;n</li>
+                    </ul>
+
+                    <h3>3.3 Informaci&oacute;n que NO Recopilamos</h3>
+                    <p>Expl&iacute;citamente NO recopilamos ni tenemos acceso a:</p>
+                    <ul>
+                        <li>&#10060; Sus afirmaciones, favoritos o contenido personalizado</li>
+                        <li>&#10060; Identificaci&oacute;n personal (nombre, correo electr&oacute;nico, n&uacute;mero de tel&eacute;fono)</li>
+                        <li>&#10060; Datos de ubicaci&oacute;n o GPS</li>
+                        <li>&#10060; Identificadores de dispositivo o IDs de publicidad</li>
+                        <li>&#10060; Anal&iacute;ticas de uso o datos de comportamiento</li>
+                        <li>&#10060; Datos de salud, financieros o de contactos</li>
+                        <li>&#10060; Fotos (solo accedemos a im&aacute;genes que usted selecciona expl&iacute;citamente)</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. C&oacute;mo Usamos Su Informaci&oacute;n</h2>
+                    <h3>4.1 Funcionalidad de la Aplicaci&oacute;n (Solo en el Dispositivo)</h3>
+                    <p>Sus datos se utilizan completamente en su dispositivo para:</p>
+                    <ul>
+                        <li>Mostrar su feed diario de afirmaciones de las categor&iacute;as seleccionadas</li>
+                        <li>Administrar sus favoritos y afirmaciones ocultas</li>
+                        <li>Enviar recordatorios programados mediante notificaciones locales</li>
+                        <li>Aplicar sus temas visuales y preferencias de visualizaci&oacute;n elegidos</li>
+                        <li>Rastrear su racha de interacci&oacute;n para motivaci&oacute;n</li>
+                        <li>Permitir respaldo y restauraci&oacute;n de sus datos personales</li>
+                        <li>Impulsar la funci&oacute;n de b&uacute;squeda en todas las afirmaciones</li>
+                    </ul>
+
+                    <h3>4.2 Para Qu&eacute; NO Usamos los Datos</h3>
+                    <p>NO usamos ning&uacute;n dato para:</p>
+                    <ul>
+                        <li>Publicidad o segmentaci&oacute;n de anuncios</li>
+                        <li>Anal&iacute;ticas o seguimiento de uso</li>
+                        <li>Perfilamiento o an&aacute;lisis de comportamiento</li>
+                        <li>Venta o compartici&oacute;n con terceros</li>
+                        <li>Comunicaciones de marketing</li>
+                    </ul>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Almacenamiento y Seguridad de Datos</h2>
+                    <p>Todos sus datos personales se almacenan en su dispositivo utilizando:</p>
+                    <ul>
+                        <li><strong>Base de Datos:</strong> Base de datos local SQLite/Drift (manna.sqlite)</li>
+                        <li><strong>Preferencias:</strong> SharedPreferences para configuraciones</li>
+                        <li><strong>Im&aacute;genes:</strong> Directorio de documentos de la aplicaci&oacute;n para im&aacute;genes de temas personalizados</li>
+                        <li><strong>iOS:</strong> Sandbox seguro de la aplicaci&oacute;n con cifrado de iOS</li>
+                        <li><strong>Android:</strong> Almacenamiento interno de la aplicaci&oacute;n con seguridad de Android</li>
+                    </ul>
+
+                    <h3>5.1 Retenci&oacute;n de Datos</h3>
+                    <ul>
+                        <li>Los datos permanecen en su dispositivo indefinidamente hasta que usted los elimine</li>
+                        <li>Eliminar la aplicaci&oacute;n remueve todos los datos locales permanentemente</li>
+                        <li>Los archivos de respaldo que exporte est&aacute;n bajo su control</li>
+                    </ul>
+
+                    <h3>5.2 Respaldo y Restauraci&oacute;n</h3>
+                    <p>Manna proporciona una funci&oacute;n de respaldo y restauraci&oacute;n:</p>
+                    <ul>
+                        <li>Los respaldos se almacenan como archivos JSON en el directorio de documentos de la aplicaci&oacute;n</li>
+                        <li>Tama&ntilde;o m&aacute;ximo de archivo de respaldo: 10 MB</li>
+                        <li>Los respaldos contienen todas sus afirmaciones, configuraciones, temas y preferencias</li>
+                        <li>Los archivos de respaldo se almacenan localmente y nunca se suben a ning&uacute;n servidor</li>
+                        <li>Usted es responsable de resguardar cualquier archivo de respaldo exportado</li>
+                    </ul>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>6. Permisos</h2>
+                    <h3>6.1 Permisos Requeridos</h3>
+
+                    <h4>Notificaciones</h4>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Entregar recordatorios programados de afirmaciones</li>
+                        <li><strong>Privacidad:</strong> Las notificaciones se generan localmente y no transmiten datos</li>
+                        <li><strong>Control:</strong> Puede desactivar las notificaciones en cualquier momento en la configuraci&oacute;n del dispositivo</li>
+                    </ul>
+
+                    <h4>Almacenamiento Local</h4>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Guardar datos de la aplicaci&oacute;n, temas y archivos de respaldo en su dispositivo</li>
+                    </ul>
+
+                    <h3>6.2 Permisos Opcionales</h3>
+                    <h4>Acceso a la Biblioteca de Fotos</h4>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Seleccionar im&aacute;genes para fondos de temas personalizados e im&aacute;genes de portada de mezclas</li>
+                        <li><strong>Lo que Accedemos:</strong> Solo fotos que usted selecciona expl&iacute;citamente a trav&eacute;s del selector de im&aacute;genes</li>
+                        <li><strong>Almacenamiento:</strong> Las im&aacute;genes seleccionadas se copian al directorio de la aplicaci&oacute;n y se almacenan localmente</li>
+                    </ul>
+
+                    <h4>Guardar en la Biblioteca de Fotos</h4>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Guardar capturas de pantalla de afirmaciones en su biblioteca de fotos para compartir</li>
+                        <li><strong>Control:</strong> Solo se activa cuando usted expl&iacute;citamente comparte o guarda una afirmaci&oacute;n</li>
+                    </ul>
+
+                    <h3>6.3 Permisos que NO Solicitamos</h3>
+                    <p>Manna NO solicita:</p>
+                    <ul>
+                        <li>&#10060; Ubicaci&oacute;n/GPS</li>
+                        <li>&#10060; Contactos</li>
+                        <li>&#10060; Calendario</li>
+                        <li>&#10060; Datos de salud</li>
+                        <li>&#10060; Micr&oacute;fono</li>
+                        <li>&#10060; C&aacute;mara (usamos solo el selector de fotos del sistema)</li>
+                        <li>&#10060; Bluetooth</li>
+                        <li>&#10060; Acceso a internet para recopilaci&oacute;n de datos</li>
+                    </ul>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>7. Servicios de Terceros</h2>
+                    <p>Manna est&aacute; dise&ntilde;ada para operar sin servicios de terceros. NO integramos:</p>
+                    <ul>
+                        <li>&#10060; Firebase Analytics, Crashlytics ni ning&uacute;n servicio de Google</li>
+                        <li>&#10060; Google AdMob ni ning&uacute;n servicio de publicidad</li>
+                        <li>&#10060; Facebook SDK ni ning&uacute;n rastreador de redes sociales</li>
+                        <li>&#10060; Ninguna plataforma de anal&iacute;ticas o rastreo</li>
+                        <li>&#10060; Ning&uacute;n servicio de almacenamiento en la nube o sincronizaci&oacute;n</li>
+                        <li>&#10060; Ning&uacute;n servicio de procesamiento de pagos</li>
+                    </ul>
+
+                    <h3>7.1 Servicios de la Plataforma</h3>
+                    <p>Las &uacute;nicas interacciones externas son a trav&eacute;s de funciones est&aacute;ndar de la plataforma:</p>
+                    <ul>
+                        <li><strong>Apple App Store / Google Play Store:</strong> Distribuci&oacute;n de la aplicaci&oacute;n y actualizaciones</li>
+                        <li><strong>Rese&ntilde;a en la Aplicaci&oacute;n:</strong> Solicitud nativa de rese&ntilde;a del sistema operativo (no se nos env&iacute;a ning&uacute;n dato)</li>
+                        <li><strong>Hoja de Compartir:</strong> Funcionalidad de compartir del sistema cuando elige compartir una afirmaci&oacute;n</li>
+                        <li><strong>Lanzador de URL:</strong> Abre enlaces externos (sitio web del desarrollador, Instagram) en su navegador predeterminado</li>
+                    </ul>
+                    <p>Estas son funciones est&aacute;ndar del sistema operativo y est&aacute;n reguladas por las pol&iacute;ticas de privacidad respectivas de Apple y Google.</p>
+
+                    <p><strong>Sin Servicios de Publicidad:</strong> Manna NO utiliza Google AdMob ni ning&uacute;n otro servicio de publicidad. No hay anuncios en la aplicaci&oacute;n.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>8. Sus Derechos de Privacidad</h2>
+                    <h3>8.1 Derechos RGPD (Uni&oacute;n Europea)</h3>
+                    <p>Si se encuentra en la UE, tiene los siguientes derechos:</p>
+                    <ul>
+                        <li><strong>Derecho de Acceso:</strong> Todos sus datos son accesibles dentro de la aplicaci&oacute;n en todo momento</li>
+                        <li><strong>Derecho de Rectificaci&oacute;n:</strong> Edite o corrija cualquier dato directamente en la aplicaci&oacute;n</li>
+                        <li><strong>Derecho de Supresi&oacute;n:</strong> Elimine cualquier dato o todos los datos a trav&eacute;s de la configuraci&oacute;n de la aplicaci&oacute;n</li>
+                        <li><strong>Derecho a la Portabilidad de Datos:</strong> Exporte sus datos usando la funci&oacute;n de respaldo</li>
+                        <li><strong>Derecho de Oposici&oacute;n:</strong> Oponerse al procesamiento de datos (aunque no procesamos datos externamente)</li>
+                        <li><strong>Derecho a Retirar el Consentimiento:</strong> Revoque permisos en cualquier momento en la configuraci&oacute;n del dispositivo</li>
+                    </ul>
+
+                    <h3>8.2 Derechos CCPA (California)</h3>
+                    <p>Si se encuentra en California, tiene los siguientes derechos:</p>
+                    <ul>
+                        <li><strong>Derecho a Saber:</strong> No recopilamos informaci&oacute;n personal m&aacute;s all&aacute; de lo almacenado en su dispositivo</li>
+                        <li><strong>Derecho a Eliminar:</strong> Elimine todos los datos removiendo la aplicaci&oacute;n o usando la configuraci&oacute;n dentro de la aplicaci&oacute;n</li>
+                        <li><strong>Derecho a No Participar:</strong> No vendemos ning&uacute;n dato</li>
+                        <li><strong>Derecho a la No Discriminaci&oacute;n:</strong> Servicio igualitario sin importar las decisiones de privacidad</li>
+                    </ul>
+
+                    <h3>8.3 Ejercicio de Sus Derechos</h3>
+                    <p>Dado que todos los datos se almacenan localmente en su dispositivo, usted tiene control total:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Todos sus datos son visibles dentro de la aplicaci&oacute;n en todo momento</li>
+                        <li><strong>Eliminaci&oacute;n:</strong> Elimine elementos individuales o todos los datos a trav&eacute;s de la aplicaci&oacute;n</li>
+                        <li><strong>Exportaci&oacute;n:</strong> Use la funci&oacute;n de respaldo para exportar todos sus datos</li>
+                        <li><strong>Permisos:</strong> Administre todos los permisos a trav&eacute;s de la configuraci&oacute;n de su dispositivo</li>
+                    </ul>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>9. Privacidad de Menores</h2>
+                    <p>Manna est&aacute; dirigida a una audiencia general de 13 a&ntilde;os en adelante. No recopilamos intencionalmente informaci&oacute;n personal de ni&ntilde;os menores de 13 a&ntilde;os.</p>
+                    <ul>
+                        <li>Edad m&iacute;nima: 13 a&ntilde;os</li>
+                        <li>Se recomienda supervisi&oacute;n parental para usuarios m&aacute;s j&oacute;venes</li>
+                        <li>No se recopilan datos personales de ning&uacute;n usuario sin importar su edad</li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>10. Usuarios Internacionales</h2>
+                    <h3>10.1 Transferencias de Datos</h3>
+                    <p>Dado que todos sus datos se almacenan localmente en su dispositivo, no hay transferencias internacionales de datos. Sus afirmaciones, configuraciones y contenido personal nunca salen de su dispositivo.</p>
+
+                    <h3>10.2 Cumplimiento Regional</h3>
+                    <ul>
+                        <li><strong>Uni&oacute;n Europea:</strong> Cumple con el RGPD</li>
+                        <li><strong>California:</strong> Cumple con la CCPA</li>
+                        <li><strong>Brasil:</strong> Cumple con la LGPD</li>
+                        <li><strong>Otras Regiones:</strong> Respetamos todas las leyes de privacidad aplicables</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>11. Cambios a Esta Pol&iacute;tica de Privacidad</h2>
+                    <p>Podemos actualizar esta Pol&iacute;tica de Privacidad de vez en cuando para reflejar:</p>
+                    <ul>
+                        <li>Nuevas funciones o funcionalidades de la aplicaci&oacute;n</li>
+                        <li>Cambios en los requisitos legales</li>
+                        <li>Comentarios de usuarios y mejoras de privacidad</li>
+                    </ul>
+
+                    <h3>11.1 Notificaci&oacute;n de Cambios</h3>
+                    <p>Cuando realicemos cambios significativos:</p>
+                    <ul>
+                        <li>La fecha de &quot;&Uacute;ltima Actualizaci&oacute;n&quot; ser&aacute; revisada</li>
+                        <li>Los cambios se resaltar&aacute;n en la pol&iacute;tica</li>
+                        <li>El uso continuado constituye aceptaci&oacute;n</li>
+                    </ul>
+
+                    <h3>11.2 Revise Regularmente</h3>
+                    <p>Le animamos a revisar esta Pol&iacute;tica de Privacidad peri&oacute;dicamente. La versi&oacute;n m&aacute;s actual siempre estar&aacute; disponible dentro de la aplicaci&oacute;n y en nuestro sitio web.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>12. Cont&aacute;ctenos</h2>
+                    <p>Si tiene alguna pregunta, inquietud o solicitud sobre esta Pol&iacute;tica de Privacidad o nuestras pr&aacute;cticas de privacidad, cont&aacute;ctenos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo Electr&oacute;nico:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Sitio Web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de Respuesta</h3>
+                    <p>Responderemos a su consulta dentro de:</p>
+                    <ul>
+                        <li>30 d&iacute;as para consultas generales</li>
+                        <li>72 horas para inquietudes urgentes de privacidad</li>
+                        <li>Seg&uacute;n lo requiera la ley aplicable para solicitudes de derechos</li>
+                    </ul>
+
+                    <h3>Quejas</h3>
+                    <p>Si cree que no hemos abordado adecuadamente sus inquietudes de privacidad, tiene derecho a presentar una queja ante su autoridad local de protecci&oacute;n de datos.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>&Uacute;ltima Actualizaci&oacute;n:</strong> 21 de febrero de 2026</p>
+                    <p><strong>Fecha de Vigencia:</strong> 21 de febrero de 2026</p>
+                    <p><strong>Versi&oacute;n:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="manna" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace(/\.html$/, '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Manna</title>
+    <meta name="description" content="Privacy Policy for Manna - Gather Your Daily Truth. Christian affirmations app.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">🍞</div>
+                <div class="badge-text">
+                    <div class="badge-title">Manna</div>
+                    <div class="badge-subtitle">Gather Your Daily Truth</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: February 21, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: February 21, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#privacy-first">Privacy-First Approach</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#how-we-use">How We Use Your Information</a></li>
+                    <li><a href="#data-storage">Data Storage & Security</a></li>
+                    <li><a href="#permissions">Permissions</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#changes">Changes to Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to Manna ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. We are deeply committed to protecting your privacy.</p>
+                    <p>Manna is a Christian affirmations app designed to help you gather daily truth through Scripture-inspired affirmations. The app provides daily affirmations across 20 categories, customizable reminders, personal affirmation creation, and visual themes to enhance your spiritual practice.</p>
+                    <div class="highlight-box">
+                        <strong>🍞 Our Privacy Promise:</strong>
+                        <ul>
+                            <li>All your data stays on YOUR device</li>
+                            <li>We CANNOT access your personal affirmations or entries</li>
+                            <li>No user accounts or email required</li>
+                            <li>No analytics, tracking, or third-party data collection</li>
+                            <li>Your spiritual practice is completely private</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Privacy-First Approach</h2>
+                    <p>Manna is built on a privacy-first foundation. We believe your spiritual practice and personal affirmations should remain entirely private. Unlike many apps, we:</p>
+                    <ul>
+                        <li>Store all data locally on your device only</li>
+                        <li>Never upload your user data to any servers</li>
+                        <li>Don't require email, login, or any personal information</li>
+                        <li>Include zero analytics, tracking, or advertising SDKs</li>
+                        <li>Operate fully offline &mdash; no internet connection required for core functionality</li>
+                    </ul>
+                    <p><strong>Important:</strong> If you delete the app, all your data will be permanently lost. We cannot recover it because we never had access to it. Use the in-app backup feature to save your data before uninstalling.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+                    <h3>3.1 Information You Create</h3>
+                    <p>All of the following data is stored locally on your device and is NEVER transmitted to our servers or any third party:</p>
+                    <ul>
+                        <li><strong>Affirmations:</strong> Built-in and custom affirmations you create (in English and/or Spanish)</li>
+                        <li><strong>Favorites:</strong> Affirmations you bookmark for quick access</li>
+                        <li><strong>Custom Mixes:</strong> Category combinations you create</li>
+                        <li><strong>Custom Themes:</strong> Visual themes with colors, fonts, and background images</li>
+                        <li><strong>Hidden Affirmations:</strong> Content you choose to hide from your feed</li>
+                        <li><strong>Reminder Settings:</strong> Notification schedules, times, days, and preferred categories</li>
+                        <li><strong>Backup Files:</strong> Encrypted JSON exports of all your data</li>
+                    </ul>
+
+                    <h3>3.2 Usage Data Stored Locally</h3>
+                    <p>The following usage data is stored on your device only for app functionality (e.g., streak tracking, review prompts) and is NEVER transmitted externally:</p>
+                    <ul>
+                        <li><strong>Session Data:</strong> Total sessions, days used, and last session date</li>
+                        <li><strong>Engagement Data:</strong> Swipe counts, favorites count, share count</li>
+                        <li><strong>Streak Data:</strong> Current streak and activity dates</li>
+                        <li><strong>Preferences:</strong> Theme mode, language selection, display settings</li>
+                    </ul>
+
+                    <h3>3.3 Information We Do NOT Collect</h3>
+                    <p>We explicitly do NOT collect or have access to:</p>
+                    <ul>
+                        <li>&#10060; Your affirmations, favorites, or custom content</li>
+                        <li>&#10060; Personal identification (name, email, phone number)</li>
+                        <li>&#10060; Location or GPS data</li>
+                        <li>&#10060; Device identifiers or advertising IDs</li>
+                        <li>&#10060; Usage analytics or behavioral data</li>
+                        <li>&#10060; Health, financial, or contact data</li>
+                        <li>&#10060; Photos (we access only images you explicitly select)</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. How We Use Your Information</h2>
+                    <h3>4.1 App Functionality (On-Device Only)</h3>
+                    <p>Your data is used entirely on your device to:</p>
+                    <ul>
+                        <li>Display your daily affirmation feed from selected categories</li>
+                        <li>Manage your favorites and hidden affirmations</li>
+                        <li>Send scheduled local notification reminders</li>
+                        <li>Apply your chosen visual themes and display preferences</li>
+                        <li>Track your engagement streak for motivation</li>
+                        <li>Enable backup and restore of your personal data</li>
+                        <li>Power the search feature across all affirmations</li>
+                    </ul>
+
+                    <h3>4.2 What We Do NOT Use Data For</h3>
+                    <p>We do NOT use any data for:</p>
+                    <ul>
+                        <li>Advertising or ad targeting</li>
+                        <li>Analytics or usage tracking</li>
+                        <li>Profiling or behavioral analysis</li>
+                        <li>Sale or sharing with third parties</li>
+                        <li>Marketing communications</li>
+                    </ul>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Data Storage & Security</h2>
+                    <p>All your personal data is stored on your device using:</p>
+                    <ul>
+                        <li><strong>Database:</strong> Local SQLite/Drift database (manna.sqlite)</li>
+                        <li><strong>Preferences:</strong> SharedPreferences for settings</li>
+                        <li><strong>Images:</strong> App document directory for custom theme images</li>
+                        <li><strong>iOS:</strong> Secure app sandbox with iOS encryption</li>
+                        <li><strong>Android:</strong> Internal app storage with Android security</li>
+                    </ul>
+
+                    <h3>5.1 Data Retention</h3>
+                    <ul>
+                        <li>Data remains on your device indefinitely until you delete it</li>
+                        <li>Deleting the app removes all local data permanently</li>
+                        <li>Backup files you export are under your control</li>
+                    </ul>
+
+                    <h3>5.2 Backup & Restore</h3>
+                    <p>Manna provides a backup and restore feature:</p>
+                    <ul>
+                        <li>Backups are stored as JSON files in the app documents directory</li>
+                        <li>Maximum backup file size: 10 MB</li>
+                        <li>Backups contain all your affirmations, settings, themes, and preferences</li>
+                        <li>Backup files are stored locally and never uploaded to any server</li>
+                        <li>You are responsible for safeguarding any exported backup files</li>
+                    </ul>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>6. Permissions</h2>
+                    <h3>6.1 Required Permissions</h3>
+
+                    <h4>Notifications</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Deliver scheduled affirmation reminders</li>
+                        <li><strong>Privacy:</strong> Notifications are generated locally and do not transmit data</li>
+                        <li><strong>Control:</strong> You can disable notifications at any time in device settings</li>
+                    </ul>
+
+                    <h4>Local Storage</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Save app data, themes, and backup files on your device</li>
+                    </ul>
+
+                    <h3>6.2 Optional Permissions</h3>
+                    <h4>Photo Library Access</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Select images for custom theme backgrounds and mix cover images</li>
+                        <li><strong>What We Access:</strong> Only photos you explicitly select through the image picker</li>
+                        <li><strong>Storage:</strong> Selected images are copied to the app directory and stored locally</li>
+                    </ul>
+
+                    <h4>Save to Photo Library</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Save affirmation screenshots to your photo library for sharing</li>
+                        <li><strong>Control:</strong> Only triggered when you explicitly share or save an affirmation</li>
+                    </ul>
+
+                    <h3>6.3 Permissions We DON'T Request</h3>
+                    <p>Manna does NOT request:</p>
+                    <ul>
+                        <li>&#10060; Location/GPS</li>
+                        <li>&#10060; Contacts</li>
+                        <li>&#10060; Calendar</li>
+                        <li>&#10060; Health data</li>
+                        <li>&#10060; Microphone</li>
+                        <li>&#10060; Camera (we use the system photo picker only)</li>
+                        <li>&#10060; Bluetooth</li>
+                        <li>&#10060; Internet access for data collection</li>
+                    </ul>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>7. Third-Party Services</h2>
+                    <p>Manna is designed to operate without third-party services. We do NOT integrate:</p>
+                    <ul>
+                        <li>&#10060; Firebase Analytics, Crashlytics, or any Google services</li>
+                        <li>&#10060; Google AdMob or any advertising service</li>
+                        <li>&#10060; Facebook SDK or any social media tracker</li>
+                        <li>&#10060; Any analytics or tracking platform</li>
+                        <li>&#10060; Any cloud storage or sync service</li>
+                        <li>&#10060; Any payment processing service</li>
+                    </ul>
+
+                    <h3>7.1 Platform Services</h3>
+                    <p>The only external interactions are through standard platform features:</p>
+                    <ul>
+                        <li><strong>Apple App Store / Google Play Store:</strong> App distribution and updates</li>
+                        <li><strong>In-App Review:</strong> Native OS review prompt (no data is sent to us)</li>
+                        <li><strong>Share Sheet:</strong> System share functionality when you choose to share an affirmation</li>
+                        <li><strong>URL Launcher:</strong> Opens external links (developer website, Instagram) in your default browser</li>
+                    </ul>
+                    <p>These are standard operating system features and are governed by Apple's and Google's respective privacy policies.</p>
+
+                    <p><strong>No Advertising Services:</strong> Manna does NOT use Google AdMob or any other advertising service. There are no ads in the app.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>8. Your Privacy Rights</h2>
+                    <h3>8.1 GDPR Rights (European Union)</h3>
+                    <p>If you are in the EU, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Access:</strong> All your data is accessible within the app at any time</li>
+                        <li><strong>Right to Rectification:</strong> Edit or correct any data directly in the app</li>
+                        <li><strong>Right to Erasure:</strong> Delete any or all data through the app settings</li>
+                        <li><strong>Right to Data Portability:</strong> Export your data using the backup feature</li>
+                        <li><strong>Right to Object:</strong> Object to data processing (though we process no data externally)</li>
+                        <li><strong>Right to Withdraw Consent:</strong> Revoke permissions at any time in device settings</li>
+                    </ul>
+
+                    <h3>8.2 CCPA Rights (California)</h3>
+                    <p>If you are in California, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Know:</strong> We collect no personal information beyond what is stored on your device</li>
+                        <li><strong>Right to Delete:</strong> Delete all data by removing the app or using in-app settings</li>
+                        <li><strong>Right to Opt-Out:</strong> We do not sell any data</li>
+                        <li><strong>Right to Non-Discrimination:</strong> Equal service regardless of privacy choices</li>
+                    </ul>
+
+                    <h3>8.3 Exercising Your Rights</h3>
+                    <p>Since all data is stored locally on your device, you have full control:</p>
+                    <ul>
+                        <li><strong>Access:</strong> All your data is visible within the app at all times</li>
+                        <li><strong>Deletion:</strong> Delete individual items or all data through the app</li>
+                        <li><strong>Export:</strong> Use the backup feature to export all your data</li>
+                        <li><strong>Permissions:</strong> Manage all permissions through your device settings</li>
+                    </ul>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>9. Children's Privacy</h2>
+                    <p>Manna is intended for a general audience aged 13 and older. We do not knowingly collect personal information from children under 13.</p>
+                    <ul>
+                        <li>Minimum age: 13 years old</li>
+                        <li>Parental supervision recommended for younger users</li>
+                        <li>No personal data is collected from any user regardless of age</li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>10. International Users</h2>
+                    <h3>10.1 Data Transfers</h3>
+                    <p>Since all your data is stored locally on your device, there are no international data transfers. Your affirmations, settings, and personal content never leave your device.</p>
+
+                    <h3>10.2 Regional Compliance</h3>
+                    <ul>
+                        <li><strong>European Union:</strong> GDPR compliant</li>
+                        <li><strong>California:</strong> CCPA compliant</li>
+                        <li><strong>Brazil:</strong> LGPD compliant</li>
+                        <li><strong>Other Regions:</strong> We respect all applicable privacy laws</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>11. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time to reflect:</p>
+                    <ul>
+                        <li>New app features or functionality</li>
+                        <li>Changes in legal requirements</li>
+                        <li>User feedback and privacy enhancements</li>
+                    </ul>
+
+                    <h3>11.1 Notification of Changes</h3>
+                    <p>When we make significant changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>Changes will be highlighted in the policy</li>
+                        <li>Continued use constitutes acceptance</li>
+                    </ul>
+
+                    <h3>11.2 Review Regularly</h3>
+                    <p>We encourage you to review this Privacy Policy periodically. The most current version will always be available within the app and on our website.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>12. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <p>We will respond to your inquiry within:</p>
+                    <ul>
+                        <li>30 days for general inquiries</li>
+                        <li>72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for rights requests</li>
+                    </ul>
+
+                    <h3>Complaints</h3>
+                    <p>If you believe we have not adequately addressed your privacy concerns, you have the right to lodge a complaint with your local data protection authority.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> February 21, 2026</p>
+                    <p><strong>Effective Date:</strong> February 21, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
