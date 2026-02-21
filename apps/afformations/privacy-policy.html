@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="afformations" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Afformations</title>
+    <meta name="description" content="Privacy Policy for the Afformations empowering questions app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">&#10067;</div>
+                <div class="badge-text">
+                    <div class="badge-title">Afformations</div>
+                    <div class="badge-subtitle">Empowering Questions</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: February 21, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: February 21, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#privacy-first">Privacy-First Approach</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#how-we-use">How We Use Your Information</a></li>
+                    <li><a href="#data-storage">Data Storage &amp; Security</a></li>
+                    <li><a href="#ai-features">AI-Generated Afformations</a></li>
+                    <li><a href="#permissions">App Permissions</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#changes">Changes to Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to Afformations ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. We are deeply committed to protecting your privacy.</p>
+                    <p>Afformations is an empowering questions app based on the Afformations methodology. It helps you build a daily practice of asking better questions across 21 categories of personal growth, with AI-powered question generation, custom themes, and bilingual support (English and Spanish) &mdash; all while keeping your data private and secure on your device.</p>
+                    <div class="highlight-box">
+                        <strong>Our Privacy Promise:</strong>
+                        <ul>
+                            <li>All your data stays on YOUR device</li>
+                            <li>No user accounts required</li>
+                            <li>No advertisements, no ad tracking</li>
+                            <li>No analytics or usage tracking</li>
+                            <li>No subscriptions or in-app purchases</li>
+                            <li>We CANNOT access your personal data</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Privacy-First Approach</h2>
+                    <h3>2.1 Our Philosophy</h3>
+                    <p>Afformations is built on a privacy-first foundation. We believe your personal growth journey should remain private. Unlike many apps, we:</p>
+                    <ul>
+                        <li>Store all data locally on your device</li>
+                        <li>Never require user accounts or email addresses</li>
+                        <li>Do not display advertisements</li>
+                        <li>Do not collect analytics or usage data</li>
+                        <li>Do not sell, share, or monetize your data in any way</li>
+                        <li>Cannot read your favorites, custom afformations, or any personal content</li>
+                    </ul>
+
+                    <h3>2.2 What This Means for You</h3>
+                    <p>When you use Afformations:</p>
+                    <ul>
+                        <li>Your favorite afformations remain on your phone</li>
+                        <li>Your custom afformations never leave your device</li>
+                        <li>Your theme preferences stay local</li>
+                        <li>Your practice history is stored only on your device</li>
+                        <li>Your reminder settings stay on your device</li>
+                    </ul>
+
+                    <p><strong>Important:</strong> If you delete the app, all your data will be permanently lost. We cannot recover it because we never had access to it.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+                    <h3>3.1 Information You Create</h3>
+                    <p>All of the following data is stored locally on your device and NOT transmitted to our servers:</p>
+                    <ul>
+                        <li><strong>Favorites:</strong> Afformations you mark as favorites</li>
+                        <li><strong>Custom Afformations:</strong> Questions you write yourself</li>
+                        <li><strong>Practice History:</strong> Your daily deck review history</li>
+                        <li><strong>Mixes:</strong> Custom collections you create</li>
+                        <li><strong>Theme Preferences:</strong> Your chosen visual themes and custom themes</li>
+                        <li><strong>Reminder Settings:</strong> Notification times and preferences</li>
+                        <li><strong>App Settings:</strong> Language, appearance mode, deck size preferences</li>
+                    </ul>
+
+                    <h3>3.2 Information Sent to AI Services</h3>
+                    <p>When you use the "Create with AI" feature:</p>
+                    <ul>
+                        <li><strong>What is sent:</strong> Your prompt text, selected style, tone, and categories</li>
+                        <li><strong>Where it goes:</strong> Google Gemini via Firebase AI Logic SDK</li>
+                        <li><strong>What is NOT sent:</strong> Your favorites, history, custom afformations, or any other personal data</li>
+                        <li><strong>Purpose:</strong> Solely to generate personalized afformations based on your request</li>
+                    </ul>
+                    <p>See Section 6 for full details on AI data handling.</p>
+
+                    <h3>3.3 Information Collected for Support</h3>
+                    <p>Only when you choose to contact us via the in-app "Contact Us" feature:</p>
+                    <ul>
+                        <li><strong>Device Info:</strong> Device model, OS version (via device_info_plus)</li>
+                        <li><strong>App Info:</strong> App version, build number (via package_info_plus)</li>
+                        <li><strong>App Language:</strong> Your selected language setting</li>
+                        <li><strong>Basic Stats:</strong> Number of favorites saved, number of custom afformations</li>
+                    </ul>
+                    <p>This information is included in the support email <strong>only when you explicitly choose to send it</strong>. It is never collected automatically.</p>
+
+                    <h3>3.4 Information We Do NOT Collect</h3>
+                    <p>We explicitly do NOT collect or have access to:</p>
+                    <ul>
+                        <li>Personal identification information (name, email, etc.)</li>
+                        <li>Location data</li>
+                        <li>Device advertising identifiers</li>
+                        <li>Usage analytics or behavioral data</li>
+                        <li>Your favorites, history, or custom afformations</li>
+                        <li>Health data</li>
+                        <li>Contacts, calendar, or social media data</li>
+                        <li>Financial or payment information</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. How We Use Your Information</h2>
+                    <h3>4.1 App Functionality (On-Device)</h3>
+                    <p>Your data is used entirely on your device to:</p>
+                    <ul>
+                        <li>Display your daily deck of afformations</li>
+                        <li>Show your favorites and practice history</li>
+                        <li>Present your custom afformations and mixes</li>
+                        <li>Apply your chosen visual theme</li>
+                        <li>Send local notification reminders</li>
+                        <li>Search across your afformation library</li>
+                    </ul>
+
+                    <h3>4.2 AI Feature</h3>
+                    <p>When you use the AI generation feature, your prompt is sent to Google Gemini solely to generate afformations. The generated results are stored locally on your device. See Section 6 for details.</p>
+
+                    <h3>4.3 Feature Flags</h3>
+                    <p>We use Firebase Remote Config to manage feature flags (enabling/disabling features remotely). This service does not collect personal data or track individual users.</p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Data Storage &amp; Security</h2>
+                    <h3>5.1 Local Storage</h3>
+                    <p>All your personal data is stored on your device using:</p>
+                    <ul>
+                        <li><strong>Database:</strong> Local SQLite database (via drift)</li>
+                        <li><strong>Preferences:</strong> SharedPreferences for settings</li>
+                        <li><strong>iOS:</strong> Secure app sandbox with iOS encryption</li>
+                        <li><strong>Android:</strong> Internal app storage with Android security</li>
+                    </ul>
+
+                    <h3>5.2 Encryption</h3>
+                    <ul>
+                        <li><strong>At Rest:</strong> Your device's built-in encryption protects stored data</li>
+                        <li><strong>In Transit:</strong> AI requests use HTTPS/TLS encryption</li>
+                    </ul>
+
+                    <h3>5.3 Data Retention</h3>
+                    <ul>
+                        <li>Data remains on your device indefinitely until you delete it</li>
+                        <li>You can delete individual favorites, custom afformations, or history entries at any time</li>
+                        <li>Deleting the app removes all local data permanently</li>
+                        <li>There is no cloud backup &mdash; your data exists only on your device</li>
+                    </ul>
+                </section>
+
+                <section id="ai-features" class="policy-section">
+                    <h2>6. AI-Generated Afformations</h2>
+                    <h3>6.1 How AI Works in Afformations</h3>
+                    <p>Afformations uses the Firebase AI Logic SDK to connect to Google Gemini (Gemini 2.0 Flash Lite) for generating personalized afformations. Here's how it works:</p>
+                    <ul>
+                        <li><strong>User-Initiated:</strong> AI generation only happens when you explicitly tap "Generate"</li>
+                        <li><strong>What is Sent:</strong> Your prompt text, selected style, tone, and category preferences</li>
+                        <li><strong>What is Returned:</strong> A set of generated afformation questions</li>
+                        <li><strong>Local Storage:</strong> Generated afformations you choose to save are stored locally</li>
+                    </ul>
+
+                    <h3>6.2 Privacy in AI Processing</h3>
+                    <ul>
+                        <li>Only the specific prompt and settings for each generation request are sent</li>
+                        <li>Your favorites, history, custom afformations, and other app data are never sent</li>
+                        <li>We do not use your prompts to train AI models</li>
+                        <li>Generation requests are processed by Google under their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+                        <li>There is a daily generation limit to prevent excessive API usage</li>
+                    </ul>
+
+                    <h3>6.3 Disclaimers</h3>
+                    <div class="highlight-box warning">
+                        <strong>AI Content Disclaimer</strong>
+                        <p>AI-generated afformations are:</p>
+                        <ul>
+                            <li>For personal growth and self-reflection purposes only</li>
+                            <li>Not a substitute for professional advice (medical, psychological, or otherwise)</li>
+                            <li>Generated content that may not always be perfectly aligned with your intent</li>
+                            <li>Not verified or endorsed by the app developers</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>7. App Permissions</h2>
+                    <h3>7.1 Notifications</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> To send you afformation practice reminders</li>
+                        <li><strong>When Requested:</strong> When you create a reminder</li>
+                        <li><strong>What We Send:</strong> Local notifications with afformations from your library</li>
+                        <li><strong>Privacy:</strong> All notifications are generated locally on your device</li>
+                    </ul>
+
+                    <h3>7.2 Camera &amp; Photo Library (Optional)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> To set custom background images for mix covers and themes</li>
+                        <li><strong>When Requested:</strong> When you choose to add a custom image</li>
+                        <li><strong>What We Access:</strong> Only images you explicitly select</li>
+                        <li><strong>Storage:</strong> Selected images are stored locally in app storage</li>
+                    </ul>
+
+                    <h3>7.3 Internet Access</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Required for AI generation feature and Firebase Remote Config</li>
+                        <li><strong>When Used:</strong> Only when generating AI afformations or checking feature flags</li>
+                        <li><strong>What is Sent:</strong> Only AI prompts and feature flag requests (see Sections 4 and 6)</li>
+                    </ul>
+
+                    <h3>7.4 Permissions We DON'T Request</h3>
+                    <ul>
+                        <li>Location/GPS access</li>
+                        <li>Contacts access</li>
+                        <li>Calendar access</li>
+                        <li>Microphone access</li>
+                        <li>Health data access</li>
+                        <li>Bluetooth access</li>
+                        <li>Phone/SMS access</li>
+                    </ul>
+
+                    <h3>7.5 Managing Permissions</h3>
+                    <p>You can manage all permissions in your device settings:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Settings &rarr; Afformations &rarr; Permissions</li>
+                        <li><strong>Android:</strong> Settings &rarr; Apps &rarr; Afformations &rarr; Permissions</li>
+                    </ul>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>8. Third-Party Services</h2>
+                    <p>Afformations integrates the following third-party services:</p>
+
+                    <h3>8.1 Firebase AI Logic SDK (Google Gemini)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> AI-powered afformation generation</li>
+                        <li><strong>Data Sent:</strong> User prompts, style/tone preferences (NOT personal content)</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>8.2 Firebase Remote Config</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Feature flag management</li>
+                        <li><strong>Data Collected:</strong> Anonymous installation ID (no personal data)</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+                    </ul>
+
+                    <h3>8.3 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> App distribution</li>
+                        <li><strong>Data Collected:</strong> App downloads (managed by Apple/Google)</li>
+                        <li><strong>Privacy Policies:</strong> See Apple and Google policies</li>
+                    </ul>
+
+                    <h3>8.4 No Advertising Services</h3>
+                    <p>We do NOT use any advertising services. There are no ads in Afformations, and no advertising SDKs are included.</p>
+
+                    <h3>8.5 No Analytics Services</h3>
+                    <p>We do NOT use any analytics services (no Google Analytics, no Firebase Analytics, no third-party tracking of any kind).</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>9. Your Privacy Rights</h2>
+                    <h3>9.1 GDPR Rights (European Union)</h3>
+                    <p>If you are in the EU, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Access:</strong> All your data is accessible within the app at any time</li>
+                        <li><strong>Right to Rectification:</strong> Edit your custom afformations and settings directly</li>
+                        <li><strong>Right to Erasure:</strong> Delete any data within the app, or delete the app entirely</li>
+                        <li><strong>Right to Data Portability:</strong> Your data is stored locally and accessible on your device</li>
+                        <li><strong>Right to Object:</strong> You control all data processing through app features</li>
+                        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time by adjusting permissions or deleting the app</li>
+                    </ul>
+
+                    <h3>9.2 CCPA Rights (California)</h3>
+                    <p>If you are in California, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Know:</strong> This policy details all data practices</li>
+                        <li><strong>Right to Delete:</strong> Delete your data through the app or by uninstalling</li>
+                        <li><strong>Right to Opt-Out:</strong> We do not sell personal data</li>
+                        <li><strong>Right to Non-Discrimination:</strong> Equal service regardless of privacy choices</li>
+                    </ul>
+
+                    <h3>9.3 Exercising Your Rights</h3>
+                    <p>Since all data is stored locally on your device:</p>
+                    <ul>
+                        <li><strong>Access:</strong> Open the app to view all your data</li>
+                        <li><strong>Deletion:</strong> Delete individual items or uninstall the app</li>
+                        <li><strong>Control:</strong> Manage all permissions through device settings</li>
+                    </ul>
+
+                    <p>For questions about third-party data (like Firebase), contact us at: <a href="mailto:afformations@armandojimenez.dev">afformations@armandojimenez.dev</a></p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>10. Children's Privacy</h2>
+                    <h3>10.1 Age Requirements</h3>
+                    <p>Afformations is not targeted at children under 13. We do not knowingly collect personal information from children under 13.</p>
+                    <ul>
+                        <li>Minimum age: 13 years old</li>
+                        <li>Parental supervision recommended for teens</li>
+                    </ul>
+
+                    <h3>10.2 If We Learn of Underage Use</h3>
+                    <p>Since the app does not collect personal information or require accounts, there is no server-side data to delete. Parents can simply uninstall the app to remove all local data.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>11. International Users</h2>
+                    <h3>11.1 Data Transfers</h3>
+                    <p>Since all personal data is stored locally on your device, there are no international data transfers of your personal content.</p>
+                    <p>When using the AI generation feature, your prompt is processed by Google's servers, which may be located in various countries. This is subject to Google's data transfer policies.</p>
+
+                    <h3>11.2 Regional Compliance</h3>
+                    <ul>
+                        <li><strong>European Union:</strong> GDPR compliant</li>
+                        <li><strong>California:</strong> CCPA compliant</li>
+                        <li><strong>Brazil:</strong> LGPD compliant</li>
+                        <li><strong>Other Regions:</strong> We respect all applicable privacy laws</li>
+                    </ul>
+
+                    <h3>11.3 Language Support</h3>
+                    <p>This Privacy Policy is available in English and Spanish. In case of conflicts between translations, the English version shall prevail.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>12. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time to reflect:</p>
+                    <ul>
+                        <li>New app features or functionality</li>
+                        <li>Changes in legal requirements</li>
+                        <li>Third-party service updates</li>
+                        <li>User feedback and privacy enhancements</li>
+                    </ul>
+
+                    <h3>12.1 Notification of Changes</h3>
+                    <p>When we make significant changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>Changes will be reflected on our website</li>
+                        <li>Continued use constitutes acceptance</li>
+                    </ul>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>13. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:afformations@armandojimenez.dev">afformations@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <p>We will respond to your inquiry within:</p>
+                    <ul>
+                        <li>30 days for general inquiries</li>
+                        <li>72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for rights requests</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> February 21, 2026</p>
+                    <p><strong>Effective Date:</strong> February 21, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="afformations" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Pol&iacute;tica de Privacidad - Aformaciones</title>
+    <meta name="description" content="Pol&iacute;tica de Privacidad de la aplicaci&oacute;n de preguntas empoderantes Aformaciones">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">&#10067;</div>
+                <div class="badge-text">
+                    <div class="badge-title">Aformaciones</div>
+                    <div class="badge-subtitle">Preguntas Empoderantes</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Pol&iacute;tica de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">&Uacute;ltima Actualizaci&oacute;n: 21 de febrero de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha Efectiva: 21 de febrero de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducci&oacute;n</a></li>
+                    <li><a href="#privacy-first">Privacidad Primero</a></li>
+                    <li><a href="#information-collection">Informaci&oacute;n que Recopilamos</a></li>
+                    <li><a href="#how-we-use">C&oacute;mo Usamos Tu Informaci&oacute;n</a></li>
+                    <li><a href="#data-storage">Almacenamiento y Seguridad</a></li>
+                    <li><a href="#ai-features">Aformaciones Generadas por IA</a></li>
+                    <li><a href="#permissions">Permisos de la App</a></li>
+                    <li><a href="#third-party">Servicios de Terceros</a></li>
+                    <li><a href="#your-rights">Tus Derechos de Privacidad</a></li>
+                    <li><a href="#children">Privacidad de Menores</a></li>
+                    <li><a href="#international">Usuarios Internacionales</a></li>
+                    <li><a href="#changes">Cambios a la Pol&iacute;tica</a></li>
+                    <li><a href="#contact">Cont&aacute;ctanos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducci&oacute;n</h2>
+                    <p>Bienvenido/a a Aformaciones ("la App"), desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Estamos profundamente comprometidos con la protecci&oacute;n de tu privacidad.</p>
+                    <p>Aformaciones es una app de preguntas empoderantes basada en la metodolog&iacute;a de Aformaciones. Te ayuda a construir una pr&aacute;ctica diaria de hacer mejores preguntas en 21 categor&iacute;as de crecimiento personal, con generaci&oacute;n de preguntas por IA, temas personalizados y soporte biling&uuml;e (ingl&eacute;s y espa&ntilde;ol) &mdash; todo mientras mantiene tus datos privados y seguros en tu dispositivo.</p>
+                    <div class="highlight-box">
+                        <strong>Nuestra Promesa de Privacidad:</strong>
+                        <ul>
+                            <li>Todos tus datos permanecen en TU dispositivo</li>
+                            <li>No se requieren cuentas de usuario</li>
+                            <li>Sin publicidad, sin rastreo publicitario</li>
+                            <li>Sin anal&iacute;ticas ni seguimiento de uso</li>
+                            <li>Sin suscripciones ni compras dentro de la app</li>
+                            <li>NO podemos acceder a tus datos personales</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Privacidad Primero</h2>
+                    <h3>2.1 Nuestra Filosof&iacute;a</h3>
+                    <p>Aformaciones est&aacute; construida sobre una base de privacidad primero. Creemos que tu camino de crecimiento personal debe permanecer privado. A diferencia de muchas apps, nosotros:</p>
+                    <ul>
+                        <li>Almacenamos todos los datos localmente en tu dispositivo</li>
+                        <li>Nunca requerimos cuentas de usuario ni direcciones de correo</li>
+                        <li>No mostramos publicidad</li>
+                        <li>No recopilamos anal&iacute;ticas ni datos de uso</li>
+                        <li>No vendemos, compartimos ni monetizamos tus datos de ninguna manera</li>
+                        <li>No podemos leer tus favoritos, aformaciones personales ni ning&uacute;n contenido personal</li>
+                    </ul>
+
+                    <h3>2.2 Lo Que Esto Significa Para Ti</h3>
+                    <p>Cuando usas Aformaciones:</p>
+                    <ul>
+                        <li>Tus aformaciones favoritas permanecen en tu tel&eacute;fono</li>
+                        <li>Tus aformaciones personales nunca salen de tu dispositivo</li>
+                        <li>Tus preferencias de tema se mantienen locales</li>
+                        <li>Tu historial de pr&aacute;ctica se almacena solo en tu dispositivo</li>
+                        <li>Tus ajustes de recordatorios se quedan en tu dispositivo</li>
+                    </ul>
+
+                    <p><strong>Importante:</strong> Si eliminas la app, todos tus datos se perder&aacute;n permanentemente. No podemos recuperarlos porque nunca tuvimos acceso a ellos.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Informaci&oacute;n que Recopilamos</h2>
+                    <h3>3.1 Informaci&oacute;n que T&uacute; Creas</h3>
+                    <p>Todos los siguientes datos se almacenan localmente en tu dispositivo y NO se transmiten a nuestros servidores:</p>
+                    <ul>
+                        <li><strong>Favoritos:</strong> Aformaciones que marcas como favoritas</li>
+                        <li><strong>Aformaciones Personales:</strong> Preguntas que escribes t&uacute; mismo/a</li>
+                        <li><strong>Historial de Pr&aacute;ctica:</strong> Tu historial de revisi&oacute;n del mazo diario</li>
+                        <li><strong>Mezclas:</strong> Colecciones personalizadas que creas</li>
+                        <li><strong>Preferencias de Tema:</strong> Tus temas visuales elegidos y temas personalizados</li>
+                        <li><strong>Ajustes de Recordatorios:</strong> Horarios y preferencias de notificaci&oacute;n</li>
+                        <li><strong>Ajustes de la App:</strong> Idioma, modo de apariencia, tama&ntilde;o del mazo</li>
+                    </ul>
+
+                    <h3>3.2 Informaci&oacute;n Enviada a Servicios de IA</h3>
+                    <p>Cuando usas la funci&oacute;n "Crear con IA":</p>
+                    <ul>
+                        <li><strong>Qu&eacute; se env&iacute;a:</strong> Tu texto de indicaci&oacute;n, estilo seleccionado, tono y categor&iacute;as</li>
+                        <li><strong>A d&oacute;nde va:</strong> Google Gemini a trav&eacute;s del SDK de Firebase AI Logic</li>
+                        <li><strong>Qu&eacute; NO se env&iacute;a:</strong> Tus favoritos, historial, aformaciones personales ni ning&uacute;n otro dato personal</li>
+                        <li><strong>Prop&oacute;sito:</strong> &Uacute;nicamente para generar aformaciones personalizadas seg&uacute;n tu solicitud</li>
+                    </ul>
+                    <p>Consulta la Secci&oacute;n 6 para detalles completos sobre el manejo de datos de IA.</p>
+
+                    <h3>3.3 Informaci&oacute;n Recopilada para Soporte</h3>
+                    <p>Solo cuando eliges contactarnos a trav&eacute;s de la funci&oacute;n "Cont&aacute;ctanos" en la app:</p>
+                    <ul>
+                        <li><strong>Info del Dispositivo:</strong> Modelo, versi&oacute;n del SO (v&iacute;a device_info_plus)</li>
+                        <li><strong>Info de la App:</strong> Versi&oacute;n, n&uacute;mero de compilaci&oacute;n (v&iacute;a package_info_plus)</li>
+                        <li><strong>Idioma de la App:</strong> Tu configuraci&oacute;n de idioma seleccionada</li>
+                        <li><strong>Estad&iacute;sticas B&aacute;sicas:</strong> N&uacute;mero de favoritos guardados, n&uacute;mero de aformaciones personales</li>
+                    </ul>
+                    <p>Esta informaci&oacute;n se incluye en el correo de soporte <strong>solo cuando t&uacute; eliges expl&iacute;citamente enviarla</strong>. Nunca se recopila autom&aacute;ticamente.</p>
+
+                    <h3>3.4 Informaci&oacute;n que NO Recopilamos</h3>
+                    <p>Expl&iacute;citamente NO recopilamos ni tenemos acceso a:</p>
+                    <ul>
+                        <li>Informaci&oacute;n de identificaci&oacute;n personal (nombre, correo, etc.)</li>
+                        <li>Datos de ubicaci&oacute;n</li>
+                        <li>Identificadores publicitarios del dispositivo</li>
+                        <li>Anal&iacute;ticas de uso o datos de comportamiento</li>
+                        <li>Tus favoritos, historial o aformaciones personales</li>
+                        <li>Datos de salud</li>
+                        <li>Contactos, calendario o datos de redes sociales</li>
+                        <li>Informaci&oacute;n financiera o de pago</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. C&oacute;mo Usamos Tu Informaci&oacute;n</h2>
+                    <h3>4.1 Funcionalidad de la App (En Dispositivo)</h3>
+                    <p>Tus datos se usan enteramente en tu dispositivo para:</p>
+                    <ul>
+                        <li>Mostrar tu mazo diario de aformaciones</li>
+                        <li>Mostrar tus favoritos e historial de pr&aacute;ctica</li>
+                        <li>Presentar tus aformaciones personales y mezclas</li>
+                        <li>Aplicar tu tema visual elegido</li>
+                        <li>Enviar recordatorios de notificaci&oacute;n locales</li>
+                        <li>Buscar en tu biblioteca de aformaciones</li>
+                    </ul>
+
+                    <h3>4.2 Funci&oacute;n de IA</h3>
+                    <p>Cuando usas la funci&oacute;n de generaci&oacute;n con IA, tu indicaci&oacute;n se env&iacute;a a Google Gemini &uacute;nicamente para generar aformaciones. Los resultados generados se almacenan localmente en tu dispositivo. Consulta la Secci&oacute;n 6 para detalles.</p>
+
+                    <h3>4.3 Banderas de Funcionalidad</h3>
+                    <p>Usamos Firebase Remote Config para gestionar banderas de funcionalidad (habilitar/deshabilitar funciones remotamente). Este servicio no recopila datos personales ni rastrea usuarios individuales.</p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Almacenamiento y Seguridad de Datos</h2>
+                    <h3>5.1 Almacenamiento Local</h3>
+                    <p>Todos tus datos personales se almacenan en tu dispositivo usando:</p>
+                    <ul>
+                        <li><strong>Base de Datos:</strong> Base de datos SQLite local (v&iacute;a drift)</li>
+                        <li><strong>Preferencias:</strong> SharedPreferences para ajustes</li>
+                        <li><strong>iOS:</strong> Sandbox seguro con cifrado de iOS</li>
+                        <li><strong>Android:</strong> Almacenamiento interno con seguridad de Android</li>
+                    </ul>
+
+                    <h3>5.2 Cifrado</h3>
+                    <ul>
+                        <li><strong>En Reposo:</strong> El cifrado integrado de tu dispositivo protege los datos almacenados</li>
+                        <li><strong>En Tr&aacute;nsito:</strong> Las solicitudes de IA usan cifrado HTTPS/TLS</li>
+                    </ul>
+
+                    <h3>5.3 Retenci&oacute;n de Datos</h3>
+                    <ul>
+                        <li>Los datos permanecen en tu dispositivo indefinidamente hasta que los elimines</li>
+                        <li>Puedes eliminar favoritos individuales, aformaciones personales o entradas del historial en cualquier momento</li>
+                        <li>Eliminar la app borra todos los datos locales permanentemente</li>
+                        <li>No hay respaldo en la nube &mdash; tus datos existen solo en tu dispositivo</li>
+                    </ul>
+                </section>
+
+                <section id="ai-features" class="policy-section">
+                    <h2>6. Aformaciones Generadas por IA</h2>
+                    <h3>6.1 C&oacute;mo Funciona la IA en Aformaciones</h3>
+                    <p>Aformaciones usa el SDK de Firebase AI Logic para conectarse a Google Gemini (Gemini 2.0 Flash Lite) para generar aformaciones personalizadas. As&iacute; es como funciona:</p>
+                    <ul>
+                        <li><strong>Iniciada por el Usuario:</strong> La generaci&oacute;n de IA solo ocurre cuando tocas expl&iacute;citamente "Generar"</li>
+                        <li><strong>Qu&eacute; se Env&iacute;a:</strong> Tu texto de indicaci&oacute;n, estilo, tono y categor&iacute;as seleccionadas</li>
+                        <li><strong>Qu&eacute; se Devuelve:</strong> Un conjunto de preguntas de aformaci&oacute;n generadas</li>
+                        <li><strong>Almacenamiento Local:</strong> Las aformaciones generadas que eliges guardar se almacenan localmente</li>
+                    </ul>
+
+                    <h3>6.2 Privacidad en el Procesamiento de IA</h3>
+                    <ul>
+                        <li>Solo se env&iacute;a la indicaci&oacute;n espec&iacute;fica y los ajustes de cada solicitud de generaci&oacute;n</li>
+                        <li>Tus favoritos, historial, aformaciones personales y otros datos de la app nunca se env&iacute;an</li>
+                        <li>No usamos tus indicaciones para entrenar modelos de IA</li>
+                        <li>Las solicitudes de generaci&oacute;n son procesadas por Google bajo su <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Pol&iacute;tica de Privacidad</a></li>
+                        <li>Hay un l&iacute;mite diario de generaci&oacute;n para prevenir uso excesivo de la API</li>
+                    </ul>
+
+                    <h3>6.3 Descargos de Responsabilidad</h3>
+                    <div class="highlight-box warning">
+                        <strong>Descargo de Contenido de IA</strong>
+                        <p>Las aformaciones generadas por IA son:</p>
+                        <ul>
+                            <li>Solo para crecimiento personal y autorreflexion</li>
+                            <li>No son un sustituto de asesoramiento profesional (m&eacute;dico, psicol&oacute;gico u otro)</li>
+                            <li>Contenido generado que puede no siempre estar perfectamente alineado con tu intenci&oacute;n</li>
+                            <li>No verificadas ni respaldadas por los desarrolladores de la app</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>7. Permisos de la App</h2>
+                    <h3>7.1 Notificaciones</h3>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Enviarte recordatorios de pr&aacute;ctica de aformaciones</li>
+                        <li><strong>Cu&aacute;ndo se Solicita:</strong> Cuando creas un recordatorio</li>
+                        <li><strong>Qu&eacute; Enviamos:</strong> Notificaciones locales con aformaciones de tu biblioteca</li>
+                        <li><strong>Privacidad:</strong> Todas las notificaciones se generan localmente en tu dispositivo</li>
+                    </ul>
+
+                    <h3>7.2 C&aacute;mara y Biblioteca de Fotos (Opcional)</h3>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Establecer im&aacute;genes de fondo personalizadas para portadas de mezclas y temas</li>
+                        <li><strong>Cu&aacute;ndo se Solicita:</strong> Cuando eliges agregar una imagen personalizada</li>
+                        <li><strong>Qu&eacute; Accedemos:</strong> Solo las im&aacute;genes que seleccionas expl&iacute;citamente</li>
+                        <li><strong>Almacenamiento:</strong> Las im&aacute;genes seleccionadas se almacenan localmente en la app</li>
+                    </ul>
+
+                    <h3>7.3 Acceso a Internet</h3>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Requerido para la funci&oacute;n de generaci&oacute;n con IA y Firebase Remote Config</li>
+                        <li><strong>Cu&aacute;ndo se Usa:</strong> Solo al generar aformaciones con IA o verificar banderas de funcionalidad</li>
+                        <li><strong>Qu&eacute; se Env&iacute;a:</strong> Solo indicaciones de IA y solicitudes de banderas de funcionalidad (ver Secciones 4 y 6)</li>
+                    </ul>
+
+                    <h3>7.4 Permisos que NO Solicitamos</h3>
+                    <ul>
+                        <li>Acceso a ubicaci&oacute;n/GPS</li>
+                        <li>Acceso a contactos</li>
+                        <li>Acceso al calendario</li>
+                        <li>Acceso al micr&oacute;fono</li>
+                        <li>Acceso a datos de salud</li>
+                        <li>Acceso a Bluetooth</li>
+                        <li>Acceso a tel&eacute;fono/SMS</li>
+                    </ul>
+
+                    <h3>7.5 Administrar Permisos</h3>
+                    <p>Puedes administrar todos los permisos en los ajustes de tu dispositivo:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Ajustes &rarr; Aformaciones &rarr; Permisos</li>
+                        <li><strong>Android:</strong> Ajustes &rarr; Apps &rarr; Aformaciones &rarr; Permisos</li>
+                    </ul>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>8. Servicios de Terceros</h2>
+                    <p>Aformaciones integra los siguientes servicios de terceros:</p>
+
+                    <h3>8.1 SDK de Firebase AI Logic (Google Gemini)</h3>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Generaci&oacute;n de aformaciones con IA</li>
+                        <li><strong>Datos Enviados:</strong> Indicaciones del usuario, preferencias de estilo/tono (NO contenido personal)</li>
+                        <li><strong>Pol&iacute;tica de Privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>8.2 Firebase Remote Config</h3>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Gesti&oacute;n de banderas de funcionalidad</li>
+                        <li><strong>Datos Recopilados:</strong> ID de instalaci&oacute;n an&oacute;nimo (sin datos personales)</li>
+                        <li><strong>Pol&iacute;tica de Privacidad:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+                    </ul>
+
+                    <h3>8.3 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Prop&oacute;sito:</strong> Distribuci&oacute;n de la app</li>
+                        <li><strong>Datos Recopilados:</strong> Descargas de la app (gestionado por Apple/Google)</li>
+                        <li><strong>Pol&iacute;ticas de Privacidad:</strong> Ver pol&iacute;ticas de Apple y Google</li>
+                    </ul>
+
+                    <h3>8.4 Sin Servicios de Publicidad</h3>
+                    <p>NO usamos ning&uacute;n servicio de publicidad. No hay anuncios en Aformaciones, y no se incluyen SDKs publicitarios.</p>
+
+                    <h3>8.5 Sin Servicios de Anal&iacute;ticas</h3>
+                    <p>NO usamos ning&uacute;n servicio de anal&iacute;ticas (sin Google Analytics, sin Firebase Analytics, sin rastreo de terceros de ning&uacute;n tipo).</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>9. Tus Derechos de Privacidad</h2>
+                    <h3>9.1 Derechos RGPD (Uni&oacute;n Europea)</h3>
+                    <p>Si est&aacute;s en la UE, tienes los siguientes derechos:</p>
+                    <ul>
+                        <li><strong>Derecho de Acceso:</strong> Todos tus datos son accesibles dentro de la app en cualquier momento</li>
+                        <li><strong>Derecho de Rectificaci&oacute;n:</strong> Edita tus aformaciones personales y ajustes directamente</li>
+                        <li><strong>Derecho de Supresi&oacute;n:</strong> Elimina cualquier dato dentro de la app, o elimina la app completamente</li>
+                        <li><strong>Derecho a la Portabilidad:</strong> Tus datos se almacenan localmente y son accesibles en tu dispositivo</li>
+                        <li><strong>Derecho de Oposici&oacute;n:</strong> T&uacute; controlas todo el procesamiento de datos a trav&eacute;s de las funciones de la app</li>
+                        <li><strong>Derecho a Retirar el Consentimiento:</strong> Retira el consentimiento en cualquier momento ajustando permisos o eliminando la app</li>
+                    </ul>
+
+                    <h3>9.2 Derechos CCPA (California)</h3>
+                    <p>Si est&aacute;s en California, tienes los siguientes derechos:</p>
+                    <ul>
+                        <li><strong>Derecho a Saber:</strong> Esta pol&iacute;tica detalla todas las pr&aacute;cticas de datos</li>
+                        <li><strong>Derecho a Eliminar:</strong> Elimina tus datos a trav&eacute;s de la app o desinstalando</li>
+                        <li><strong>Derecho a Excluirse:</strong> No vendemos datos personales</li>
+                        <li><strong>Derecho a la No Discriminaci&oacute;n:</strong> Servicio igualitario independientemente de las elecciones de privacidad</li>
+                    </ul>
+
+                    <h3>9.3 Ejercer Tus Derechos</h3>
+                    <p>Dado que todos los datos se almacenan localmente en tu dispositivo:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Abre la app para ver todos tus datos</li>
+                        <li><strong>Eliminaci&oacute;n:</strong> Elimina elementos individuales o desinstala la app</li>
+                        <li><strong>Control:</strong> Administra todos los permisos a trav&eacute;s de los ajustes del dispositivo</li>
+                    </ul>
+
+                    <p>Para preguntas sobre datos de terceros (como Firebase), cont&aacute;ctanos en: <a href="mailto:afformations@armandojimenez.dev">afformations@armandojimenez.dev</a></p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>10. Privacidad de Menores</h2>
+                    <h3>10.1 Requisitos de Edad</h3>
+                    <p>Aformaciones no est&aacute; dirigida a menores de 13 a&ntilde;os. No recopilamos intencionalmente informaci&oacute;n personal de menores de 13 a&ntilde;os.</p>
+                    <ul>
+                        <li>Edad m&iacute;nima: 13 a&ntilde;os</li>
+                        <li>Se recomienda supervisi&oacute;n parental para adolescentes</li>
+                    </ul>
+
+                    <h3>10.2 Si Descubrimos Uso por Menores</h3>
+                    <p>Dado que la app no recopila informaci&oacute;n personal ni requiere cuentas, no hay datos del lado del servidor que eliminar. Los padres pueden simplemente desinstalar la app para eliminar todos los datos locales.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>11. Usuarios Internacionales</h2>
+                    <h3>11.1 Transferencias de Datos</h3>
+                    <p>Dado que todos los datos personales se almacenan localmente en tu dispositivo, no hay transferencias internacionales de datos de tu contenido personal.</p>
+                    <p>Al usar la funci&oacute;n de generaci&oacute;n con IA, tu indicaci&oacute;n es procesada por los servidores de Google, que pueden estar ubicados en varios pa&iacute;ses. Esto est&aacute; sujeto a las pol&iacute;ticas de transferencia de datos de Google.</p>
+
+                    <h3>11.2 Cumplimiento Regional</h3>
+                    <ul>
+                        <li><strong>Uni&oacute;n Europea:</strong> Cumple con RGPD</li>
+                        <li><strong>California:</strong> Cumple con CCPA</li>
+                        <li><strong>Brasil:</strong> Cumple con LGPD</li>
+                        <li><strong>Otras Regiones:</strong> Respetamos todas las leyes de privacidad aplicables</li>
+                    </ul>
+
+                    <h3>11.3 Soporte de Idiomas</h3>
+                    <p>Esta Pol&iacute;tica de Privacidad est&aacute; disponible en ingl&eacute;s y espa&ntilde;ol. En caso de conflictos entre traducciones, la versi&oacute;n en ingl&eacute;s prevalecer&aacute;.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>12. Cambios a Esta Pol&iacute;tica de Privacidad</h2>
+                    <p>Podemos actualizar esta Pol&iacute;tica de Privacidad de vez en cuando para reflejar:</p>
+                    <ul>
+                        <li>Nuevas funciones o funcionalidades de la app</li>
+                        <li>Cambios en requisitos legales</li>
+                        <li>Actualizaciones de servicios de terceros</li>
+                        <li>Comentarios de usuarios y mejoras de privacidad</li>
+                    </ul>
+
+                    <h3>12.1 Notificaci&oacute;n de Cambios</h3>
+                    <p>Cuando realicemos cambios significativos:</p>
+                    <ul>
+                        <li>La fecha de "&Uacute;ltima Actualizaci&oacute;n" ser&aacute; revisada</li>
+                        <li>Los cambios se reflejar&aacute;n en nuestro sitio web</li>
+                        <li>El uso continuado constituye aceptaci&oacute;n</li>
+                    </ul>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>13. Cont&aacute;ctanos</h2>
+                    <p>Si tienes alguna pregunta, inquietud o solicitud respecto a esta Pol&iacute;tica de Privacidad o nuestras pr&aacute;cticas de privacidad, cont&aacute;ctanos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo:</strong> <a href="mailto:afformations@armandojimenez.dev">afformations@armandojimenez.dev</a></p>
+                        <p><strong>Sitio Web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de Respuesta</h3>
+                    <p>Responderemos a tu consulta dentro de:</p>
+                    <ul>
+                        <li>30 d&iacute;as para consultas generales</li>
+                        <li>72 horas para inquietudes urgentes de privacidad</li>
+                        <li>Seg&uacute;n lo requiera la ley aplicable para solicitudes de derechos</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>&Uacute;ltima Actualizaci&oacute;n:</strong> 21 de febrero de 2026</p>
+                    <p><strong>Fecha Efectiva:</strong> 21 de febrero de 2026</p>
+                    <p><strong>Versi&oacute;n:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/*
+ * Afformations Theme Override
+ * "The Thoughtful Journal" — warm, tactile, editorial
+ * Overrides policy-styles.css default colors
+ */
+
+:root {
+    /* Light Theme — Unbleached Linen + Walnut Ink + Terracotta */
+    --bg-primary: #F6F1EB;
+    --bg-secondary: #FFFDF9;
+    --bg-tertiary: #EDE7DE;
+    --bg-accent: #F0E8DD;
+
+    --text-primary: #2C2520;
+    --text-secondary: #4A3F38;
+    --text-tertiary: #7A6E65;
+    --text-link: #C2552A;
+    --text-link-hover: #A3431F;
+
+    --border-color: #D9CFC4;
+    --border-light: #EDE7DE;
+
+    --accent-primary: #C2552A;
+    --accent-secondary: #8B6B4A;
+    --accent-success: #5A7A4A;
+    --accent-warning: #C2852A;
+    --accent-danger: #B33D3D;
+
+    --shadow-sm: 0 2px 4px rgba(44, 37, 32, 0.06);
+    --shadow-md: 0 4px 12px rgba(44, 37, 32, 0.10);
+    --shadow-lg: 0 12px 32px rgba(44, 37, 32, 0.14);
+}
+
+/* Dark Theme — Warm Charcoal-Brown */
+[data-theme="dark"] {
+    --bg-primary: #1C1917;
+    --bg-secondary: #252220;
+    --bg-tertiary: #302C28;
+    --bg-accent: #3A352F;
+
+    --text-primary: #F6F1EB;
+    --text-secondary: #C9BFB3;
+    --text-tertiary: #9A8E82;
+    --text-link: #D4714A;
+    --text-link-hover: #E89370;
+
+    --border-color: #453E37;
+    --border-light: #3A352F;
+
+    --accent-primary: #D4714A;
+    --accent-secondary: #B89A76;
+    --accent-success: #7A9E6A;
+    --accent-warning: #D4A04A;
+    --accent-danger: #D45A5A;
+
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+}

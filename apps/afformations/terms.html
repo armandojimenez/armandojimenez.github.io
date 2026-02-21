@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="afformations" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms &amp; Conditions - Afformations</title>
+    <meta name="description" content="Terms and Conditions for the Afformations empowering questions app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">&#10067;</div>
+                <div class="badge-text">
+                    <div class="badge-title">Afformations</div>
+                    <div class="badge-subtitle">Empowering Questions</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms &amp; Conditions</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: February 21, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: February 21, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#description">App Description</a></li>
+                    <li><a href="#license">License to Use</a></li>
+                    <li><a href="#user-content">User-Generated Content</a></li>
+                    <li><a href="#ai-content">AI-Generated Content</a></li>
+                    <li><a href="#methodology">Afformations Methodology</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#prohibited-uses">Prohibited Uses</a></li>
+                    <li><a href="#disclaimers">Disclaimers</a></li>
+                    <li><a href="#limitation">Limitation of Liability</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#governing-law">Governing Law</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>Welcome to Afformations ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. By downloading, installing, accessing, or using the App, you ("User," "you," or "your") agree to be bound by these Terms and Conditions ("Terms").</p>
+
+                    <div class="highlight-box">
+                        <strong>Important:</strong> If you do not agree to these Terms, do not download, install, or use the App. Your continued use of the App constitutes acceptance of these Terms and any updates made to them.
+                    </div>
+
+                    <h3>1.1 Agreement to Terms</h3>
+                    <p>These Terms constitute a legally binding agreement between you and Believe PR. By using the App, you represent that:</p>
+                    <ul>
+                        <li>You are at least 13 years of age (or the minimum age required in your jurisdiction)</li>
+                        <li>You have the legal capacity to enter into these Terms</li>
+                        <li>If you are under 18, you have obtained parental or guardian consent</li>
+                        <li>You will comply with all applicable laws and regulations</li>
+                    </ul>
+
+                    <h3>1.2 Additional Terms</h3>
+                    <p>In addition to these Terms, your use of the App is also governed by:</p>
+                    <ul>
+                        <li>Our <a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li>Apple App Store Terms of Service (iOS users)</li>
+                        <li>Google Play Store Terms of Service (Android users)</li>
+                    </ul>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. App Description</h2>
+                    <h3>2.1 Purpose</h3>
+                    <p>Afformations is an empowering questions app designed to help users:</p>
+                    <ul>
+                        <li>Practice daily afformations (empowering questions) across 21 categories</li>
+                        <li>Generate personalized afformations using AI</li>
+                        <li>Create and manage custom afformations</li>
+                        <li>Build a personal library of favorites and mixes</li>
+                        <li>Customize their experience with themes and reminders</li>
+                    </ul>
+
+                    <h3>2.2 Free App</h3>
+                    <p>Afformations is a completely free application:</p>
+                    <ul>
+                        <li>No in-app purchases</li>
+                        <li>No subscriptions</li>
+                        <li>No advertisements</li>
+                        <li>All features available to all users</li>
+                    </ul>
+
+                    <h3>2.3 Availability</h3>
+                    <ul>
+                        <li>The App is available for iOS and Android devices</li>
+                        <li>Available in English and Spanish</li>
+                        <li>Certain features may vary by platform</li>
+                        <li>We reserve the right to modify or discontinue features at any time</li>
+                    </ul>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. License to Use</h2>
+                    <h3>3.1 License Grant</h3>
+                    <p>Subject to your compliance with these Terms, Believe PR grants you a limited, non-exclusive, non-transferable, revocable license to:</p>
+                    <ul>
+                        <li>Download and install the App on devices you own or control</li>
+                        <li>Access and use the App for personal, non-commercial purposes</li>
+                        <li>Use all features and functionalities as intended</li>
+                    </ul>
+
+                    <h3>3.2 License Restrictions</h3>
+                    <p>You may NOT:</p>
+                    <ul>
+                        <li>Copy, modify, or create derivative works of the App</li>
+                        <li>Reverse engineer, decompile, or disassemble the App</li>
+                        <li>Remove or modify any copyright, trademark, or proprietary notices</li>
+                        <li>Rent, lease, lend, sell, or sublicense the App</li>
+                        <li>Use the App for any commercial purpose without written permission</li>
+                        <li>Circumvent any security features or access restrictions</li>
+                        <li>Use automated tools to access or interact with the App</li>
+                    </ul>
+
+                    <h3>3.3 Ownership</h3>
+                    <p>The App and all intellectual property rights remain the exclusive property of Believe PR and Armando Jimenez. This license does not grant you any ownership rights.</p>
+                </section>
+
+                <section id="user-content" class="policy-section">
+                    <h2>4. User-Generated Content</h2>
+                    <h3>4.1 Custom Afformations</h3>
+                    <p>The App allows you to create custom afformations. You retain full ownership of your custom content:</p>
+                    <ul>
+                        <li>Your custom afformations are stored locally on your device</li>
+                        <li>We never access, copy, or transmit your custom content</li>
+                        <li>You are solely responsible for the content you create</li>
+                    </ul>
+
+                    <h3>4.2 Responsibility for Content</h3>
+                    <p>You agree that any custom afformations you create:</p>
+                    <ul>
+                        <li>Do not violate any applicable laws</li>
+                        <li>Do not infringe on third-party intellectual property rights</li>
+                        <li>Are created at your own discretion and responsibility</li>
+                    </ul>
+
+                    <h3>4.3 Data Loss</h3>
+                    <p>Since all user content is stored locally:</p>
+                    <ul>
+                        <li>Deleting the app permanently removes all your content</li>
+                        <li>We cannot recover lost data as we never had access to it</li>
+                        <li>You are responsible for any backups of your content</li>
+                    </ul>
+                </section>
+
+                <section id="ai-content" class="policy-section">
+                    <h2>5. AI-Generated Content</h2>
+                    <h3>5.1 How AI Generation Works</h3>
+                    <p>The App uses Google Gemini (via Firebase AI Logic SDK) to generate afformations based on your prompts. You understand that:</p>
+                    <ul>
+                        <li>AI-generated content is created algorithmically and may vary in quality</li>
+                        <li>Generated afformations are not reviewed or endorsed by the developer</li>
+                        <li>There is a daily limit on AI generation requests</li>
+                        <li>The AI feature requires an internet connection</li>
+                    </ul>
+
+                    <h3>5.2 Disclaimer of AI Content</h3>
+                    <div class="highlight-box warning">
+                        <strong>AI Content Disclaimer</strong>
+                        <p>AI-generated afformations are provided "as is" without any warranty. They are:</p>
+                        <ul>
+                            <li>For personal growth and self-reflection purposes only</li>
+                            <li>Not a substitute for professional advice (medical, psychological, financial, or legal)</li>
+                            <li>Not guaranteed to be accurate, complete, or appropriate for your situation</li>
+                            <li>Subject to the limitations of current AI technology</li>
+                        </ul>
+                    </div>
+
+                    <h3>5.3 Ownership of AI-Generated Content</h3>
+                    <p>AI-generated afformations that you choose to save become part of your local library. We make no claim of ownership over AI-generated content saved to your device.</p>
+                </section>
+
+                <section id="methodology" class="policy-section">
+                    <h2>6. Afformations Methodology</h2>
+                    <h3>6.1 Trademark Notice</h3>
+                    <div class="highlight-box">
+                        <strong>Trademark Acknowledgment</strong>
+                        <p>The Afformations&reg; methodology was created by Noah St. John. "Afformations" is a registered trademark. This app is inspired by and based on the Afformations methodology but is not officially affiliated with, endorsed by, or sponsored by Noah St. John.</p>
+                    </div>
+
+                    <h3>6.2 Content Basis</h3>
+                    <p>The curated afformations in this app are:</p>
+                    <ul>
+                        <li>Original questions inspired by the Afformations methodology</li>
+                        <li>Organized across 21 categories of personal growth</li>
+                        <li>Created independently by the app developer</li>
+                        <li>Not taken directly from any published work by Noah St. John</li>
+                    </ul>
+
+                    <h3>6.3 Not Professional Advice</h3>
+                    <p>The afformations in this app are for personal growth and self-reflection purposes only. They are NOT:</p>
+                    <ul>
+                        <li>Medical or mental health advice</li>
+                        <li>A substitute for therapy or professional counseling</li>
+                        <li>Guaranteed to produce specific results</li>
+                        <li>Scientifically validated treatments</li>
+                    </ul>
+                </section>
+
+                <section id="intellectual-property" class="policy-section">
+                    <h2>7. Intellectual Property</h2>
+                    <h3>7.1 App Ownership</h3>
+                    <p>All intellectual property rights in and to the App, including but not limited to:</p>
+                    <ul>
+                        <li>Source code and software</li>
+                        <li>User interface and design</li>
+                        <li>Graphics, logos, and icons</li>
+                        <li>Curated afformation content</li>
+                        <li>Category organization and curation</li>
+                    </ul>
+                    <p>...are owned exclusively by Believe PR and Armando Jimenez.</p>
+
+                    <h3>7.2 Third-Party Trademarks</h3>
+                    <p>"Afformations" is a registered trademark of Noah St. John. All other trademarks, service marks, and trade names used in the App are the property of their respective owners.</p>
+
+                    <h3>7.3 User Content Ownership</h3>
+                    <p>You retain ownership of:</p>
+                    <ul>
+                        <li>Custom afformations you create</li>
+                        <li>Custom themes and settings</li>
+                        <li>Personal mixes and collections</li>
+                    </ul>
+                    <p>Since this data is stored locally on your device and never transmitted to our servers, we claim no ownership or rights to your content.</p>
+                </section>
+
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>8. Prohibited Uses</h2>
+                    <p>You agree NOT to use the App for:</p>
+
+                    <h3>8.1 Unauthorized Access</h3>
+                    <ul>
+                        <li>Hacking or cracking the App</li>
+                        <li>Bypassing security measures or access restrictions</li>
+                        <li>Reverse engineering the App code</li>
+                        <li>Accessing restricted features without authorization</li>
+                    </ul>
+
+                    <h3>8.2 Commercial Exploitation</h3>
+                    <ul>
+                        <li>Reselling or redistributing the App</li>
+                        <li>Using the App as part of a commercial service without permission</li>
+                        <li>Republishing curated afformation content</li>
+                        <li>Scraping or extracting App content</li>
+                    </ul>
+
+                    <h3>8.3 Harmful Activities</h3>
+                    <ul>
+                        <li>Uploading malware or viruses</li>
+                        <li>Disrupting App functionality</li>
+                        <li>Abusing the AI generation feature (excessive requests, harmful prompts)</li>
+                        <li>Attempting to overload or crash servers</li>
+                    </ul>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>9. Disclaimers</h2>
+                    <div class="highlight-box warning">
+                        <strong>READ CAREFULLY &mdash; IMPORTANT LEGAL DISCLAIMERS</strong>
+                    </div>
+
+                    <h3>9.1 "AS IS" and "AS AVAILABLE"</h3>
+                    <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                    <ul>
+                        <li>WARRANTIES OF MERCHANTABILITY</li>
+                        <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                        <li>NON-INFRINGEMENT</li>
+                        <li>ACCURACY OR RELIABILITY</li>
+                        <li>UNINTERRUPTED OR ERROR-FREE OPERATION</li>
+                    </ul>
+
+                    <h3>9.2 No Guarantee of Results</h3>
+                    <p>WE DO NOT WARRANT THAT:</p>
+                    <ul>
+                        <li>Using afformations will produce any specific results</li>
+                        <li>AI-generated content will meet your expectations</li>
+                        <li>All features will function perfectly at all times</li>
+                        <li>The App will be compatible with all devices</li>
+                    </ul>
+
+                    <h3>9.3 Not Professional Advice</h3>
+                    <p>THE APP DOES NOT PROVIDE:</p>
+                    <ul>
+                        <li>Medical or mental health advice</li>
+                        <li>Psychological counseling or therapy</li>
+                        <li>Professional coaching or consulting</li>
+                        <li>Guaranteed self-improvement outcomes</li>
+                    </ul>
+
+                    <h3>9.4 Jurisdictional Limitations</h3>
+                    <p>Some jurisdictions do not allow the exclusion of implied warranties. In such jurisdictions, the above exclusions may not apply to you, and you may have additional rights.</p>
+                </section>
+
+                <section id="limitation" class="policy-section">
+                    <h2>10. Limitation of Liability</h2>
+                    <div class="highlight-box warning">
+                        <strong>IMPORTANT LIABILITY LIMITATIONS</strong>
+                    </div>
+
+                    <h3>10.1 Maximum Liability</h3>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL BELIEVE PR, ARMANDO JIMENEZ, OR THEIR AFFILIATES BE LIABLE FOR:</p>
+                    <ul>
+                        <li>INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES</li>
+                        <li>LOSS OF DATA OR INFORMATION</li>
+                        <li>PERSONAL INJURY OR EMOTIONAL DISTRESS</li>
+                        <li>ANY DAMAGES ARISING FROM USE OF AI-GENERATED CONTENT</li>
+                    </ul>
+
+                    <h3>10.2 Cap on Liability</h3>
+                    <p>OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO THE APP SHALL NOT EXCEED $50 USD (or equivalent in your local currency).</p>
+
+                    <h3>10.3 Basis of the Bargain</h3>
+                    <p>These limitations reflect the allocation of risk between the parties. The App is offered for free, and the limitations are an essential basis of the agreement.</p>
+
+                    <h3>10.4 Jurisdictional Exceptions</h3>
+                    <p>Some jurisdictions do not allow limitations on liability for certain types of damages. In such jurisdictions, our liability will be limited to the maximum extent permitted by law.</p>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>11. Termination</h2>
+                    <h3>11.1 Termination by You</h3>
+                    <p>You may terminate this agreement at any time by:</p>
+                    <ul>
+                        <li>Uninstalling the App from all devices</li>
+                        <li>Deleting all saved data</li>
+                        <li>Ceasing all use of the App</li>
+                    </ul>
+
+                    <h3>11.2 Termination by Us</h3>
+                    <p>We reserve the right to:</p>
+                    <ul>
+                        <li>Discontinue the App at any time</li>
+                        <li>Remove the App from app stores</li>
+                        <li>Disable features or functionality</li>
+                        <li>Restrict access to AI generation services</li>
+                    </ul>
+
+                    <h3>11.3 Effect of Termination</h3>
+                    <p>Upon termination:</p>
+                    <ul>
+                        <li>Your license to use the App immediately ends</li>
+                        <li>You must cease all use of the App</li>
+                        <li>Provisions regarding disclaimers, liability, and indemnification survive</li>
+                    </ul>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>12. Governing Law and Dispute Resolution</h2>
+                    <h3>12.1 Governing Law</h3>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of Puerto Rico, without regard to its conflict of law provisions.</p>
+
+                    <h3>12.2 Jurisdiction</h3>
+                    <p>You agree that any legal action or proceeding arising from these Terms shall be brought exclusively in the courts of Puerto Rico, and you consent to the jurisdiction of such courts.</p>
+
+                    <h3>12.3 Dispute Resolution</h3>
+                    <p>Before filing any legal action, you agree to attempt to resolve disputes through:</p>
+                    <ul>
+                        <li><strong>Informal Negotiation:</strong> Contact us at <a href="mailto:afformations@armandojimenez.dev">afformations@armandojimenez.dev</a></li>
+                        <li><strong>Good Faith Discussion:</strong> Allow 30 days for resolution attempts</li>
+                        <li><strong>Mediation:</strong> Consider voluntary mediation if informal resolution fails</li>
+                    </ul>
+
+                    <h3>12.4 Consumer Rights</h3>
+                    <p>Nothing in these Terms limits your statutory rights as a consumer under applicable consumer protection laws.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>13. Changes to Terms</h2>
+                    <h3>13.1 Right to Modify</h3>
+                    <p>We reserve the right to modify these Terms at any time. Changes may be made to reflect:</p>
+                    <ul>
+                        <li>New features or functionality</li>
+                        <li>Legal or regulatory requirements</li>
+                        <li>Business practices changes</li>
+                        <li>User feedback and concerns</li>
+                    </ul>
+
+                    <h3>13.2 Acceptance of Changes</h3>
+                    <p>By continuing to use the App after changes are posted:</p>
+                    <ul>
+                        <li>You accept the modified Terms</li>
+                        <li>The new Terms become effective immediately</li>
+                        <li>If you disagree, you must stop using the App</li>
+                    </ul>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>14. Contact Information</h2>
+                    <p>For questions, concerns, or notices regarding these Terms, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:afformations@armandojimenez.dev">afformations@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>14.1 Customer Support</h3>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:afformations@armandojimenez.dev">afformations@armandojimenez.dev</a></li>
+                        <li><strong>Response Time:</strong> Within 2-5 business days</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <h3>15. Miscellaneous</h3>
+
+                    <h4>15.1 Entire Agreement</h4>
+                    <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Believe PR regarding the App.</p>
+
+                    <h4>15.2 Severability</h4>
+                    <p>If any provision is found to be unenforceable, the remaining provisions will remain in full effect.</p>
+
+                    <h4>15.3 Waiver</h4>
+                    <p>Our failure to enforce any right or provision does not constitute a waiver of such right or provision.</p>
+
+                    <h4>15.4 Assignment</h4>
+                    <p>You may not assign or transfer these Terms. We may assign our rights and obligations without restriction.</p>
+
+                    <h4>15.5 Language</h4>
+                    <p>These Terms are written in English. Any translations are for convenience only; the English version controls.</p>
+
+                    <hr class="divider">
+
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> February 21, 2026</p>
+                    <p><strong>Effective Date:</strong> February 21, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
