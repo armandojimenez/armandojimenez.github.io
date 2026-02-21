@@ -9,7 +9,8 @@
             const urlParams = new URLSearchParams(window.location.search);
             const lang = urlParams.get('lang');
             if (lang === 'en') {
-                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const englishPath = window.location.pathname.replace(/-es\.html$/, '.html');
+                urlParams.delete('lang');
                 const queryString = urlParams.toString();
                 window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
             }
@@ -25,9 +26,9 @@
     <link rel="icon" type="image/x-icon" href="../../favicon.ico">
 </head>
 <body>
-    <div class="language-switcher" id="languageSwitcher"></div>
+    <div class="language-switcher" id="languageSwitcher" role="navigation" aria-label="Idioma"></div>
 
-    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo oscuro">
         <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -42,7 +43,7 @@
         <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
-    </div>
+    </button>
 
     <div class="container">
         <header class="policy-header">

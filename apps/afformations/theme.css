@@ -57,3 +57,9 @@
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
+
+/* Button reset for theme toggle (changed from div to button for a11y) */
+button.theme-toggle {
+    padding: 0;
+    font: inherit;
+}
