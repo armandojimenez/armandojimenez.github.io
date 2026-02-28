@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="devotion" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace(/-es\.html$/, '.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de Privacidad - Devotion</title>
+    <meta name="description" content="Política de Privacidad de Devotion - Un Santuario Diario de Fe. Aplicación devocional con inteligencia artificial para cristianos.">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/devotion/privacy-policy-es.html">
+    <meta property="og:title" content="Política de Privacidad - Devotion">
+    <meta property="og:description" content="Lea la política de privacidad de Devotion, una aplicación devocional diaria con inteligencia artificial.">
+    <meta property="og:url" content="https://armandojimenez.dev/apps/devotion/privacy-policy-es.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/devotion/privacy-policy.html">
+    <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/devotion/privacy-policy-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://armandojimenez.dev/apps/devotion/privacy-policy.html">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">🕊️</div>
+                <div class="badge-text">
+                    <div class="badge-title">Devotion</div>
+                    <div class="badge-subtitle">Un Santuario Diario de Fe</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última Actualización: 28 de febrero de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha de Vigencia: 28 de febrero de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#privacy-first">Enfoque de Privacidad Primero</a></li>
+                    <li><a href="#information-collection">Información que Recopilamos</a></li>
+                    <li><a href="#how-we-use">Cómo Usamos su Información</a></li>
+                    <li><a href="#data-storage">Almacenamiento y Seguridad de Datos</a></li>
+                    <li><a href="#ai-devotionals">Devocionales Generados por IA</a></li>
+                    <li><a href="#permissions">Permisos</a></li>
+                    <li><a href="#subscriptions">Suscripciones</a></li>
+                    <li><a href="#third-party">Servicios de Terceros</a></li>
+                    <li><a href="#your-rights">Sus Derechos de Privacidad</a></li>
+                    <li><a href="#children">Privacidad de Menores</a></li>
+                    <li><a href="#international">Usuarios Internacionales</a></li>
+                    <li><a href="#changes">Cambios a la Política</a></li>
+                    <li><a href="#contact">Contáctenos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Bienvenido a Devotion ("la Aplicación"), desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Estamos profundamente comprometidos con la protección de su privacidad y su práctica espiritual.</p>
+                    <p>Devotion es una aplicación devocional diaria con inteligencia artificial para cristianos. Cada día, la aplicación genera una experiencia devocional personalizada que se adapta a su estado de ánimo, categoría elegida y el significado histórico y espiritual de la fecha. El contenido es generado por la inteligencia artificial Gemini de Google a través de Firebase AI Logic.</p>
+                    <div class="highlight-box">
+                        <strong>🕊️ Nuestra Promesa de Privacidad:</strong>
+                        <ul>
+                            <li>Todos sus datos devocionales permanecen en SU dispositivo</li>
+                            <li>NO PODEMOS acceder a sus reflexiones personales o entradas</li>
+                            <li>No se requieren cuentas de usuario ni correo electrónico</li>
+                            <li>Su práctica espiritual es completamente privada</li>
+                            <li>Sin publicidad — nunca</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Enfoque de Privacidad Primero</h2>
+                    <p>Devotion está construida sobre una base de privacidad primero. Creemos que su práctica espiritual y reflexiones personales deben permanecer privadas. A diferencia de muchas aplicaciones, nosotros:</p>
+                    <ul>
+                        <li>Almacenamos todos los datos devocionales localmente en su dispositivo</li>
+                        <li>Nunca subimos su contenido personal a nuestros servidores</li>
+                        <li>No requerimos correo electrónico, inicio de sesión ni identificación personal</li>
+                        <li>No mostramos ninguna publicidad</li>
+                    </ul>
+                    <p><strong>Importante:</strong> Si elimina la aplicación, todos sus devocionales guardados, marcadores y preferencias se perderán permanentemente. No podemos recuperar estos datos porque nunca tuvimos acceso a ellos.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Información que Recopilamos</h2>
+
+                    <h3>3.1 Información que Usted Crea</h3>
+                    <p>Todos los siguientes datos se almacenan localmente en su dispositivo y NO se transmiten a nuestros servidores:</p>
+                    <ul>
+                        <li><strong>Devocionales Generados:</strong> Contenido devocional diario generado por IA, incluyendo escrituras, reflexiones, oraciones y afirmaciones</li>
+                        <li><strong>Selecciones de Ánimo y Categoría:</strong> Su texto de estado de ánimo opcional y categoría devocional elegida (por ejemplo, Gratitud, Paz, Esperanza)</li>
+                        <li><strong>Devocionales Guardados:</strong> Devocionales que elige guardar para lectura posterior</li>
+                        <li><strong>Historial de Devocionales:</strong> Un registro cronológico de todos sus devocionales anteriores</li>
+                        <li><strong>Preferencias de Notificaciones:</strong> Su configuración y horarios de recordatorios diarios</li>
+                        <li><strong>Preferencias de Tema:</strong> Selección de modo claro, modo oscuro o tema del sistema</li>
+                    </ul>
+
+                    <h3>3.2 Información Recopilada Automáticamente</h3>
+                    <p>Podemos recopilar los siguientes datos anónimos para mejorar la experiencia de la aplicación:</p>
+                    <ul>
+                        <li><strong>Firebase Analytics:</strong> Análisis de uso anónimo como vistas de pantalla, uso de funciones y su categoría devocional seleccionada (por ejemplo, "Esperanza", "Paz"). No se recopila información de identificación personal. NO recopilamos el texto de estado de ánimo libre que ingresa.</li>
+                        <li><strong>Firebase Remote Config:</strong> Indicadores de funciones y configuración de la aplicación. No se recopilan datos personales.</li>
+                        <li><strong>Firebase Crashlytics:</strong> Informes de fallos anónimos que incluyen tipo de dispositivo y versión del sistema operativo para mejoras de estabilidad. Su contenido devocional nunca se incluye.</li>
+                        <li><strong>Firebase App Check:</strong> Tokens de atestación del dispositivo para proteger nuestro backend contra abusos. No se recopilan datos personales.</li>
+                    </ul>
+
+                    <h3>3.3 Información que NO Recopilamos</h3>
+                    <p>Explícitamente NO recopilamos ni tenemos acceso a:</p>
+                    <ul>
+                        <li>❌ Sus entradas de estado de ánimo o sentimientos personales</li>
+                        <li>❌ Su contenido devocional o reflexiones</li>
+                        <li>❌ Identificación personal (nombre, correo electrónico, etc.)</li>
+                        <li>❌ Datos de ubicación o información GPS</li>
+                        <li>❌ Datos de salud o biométricos</li>
+                        <li>❌ Contactos, calendario o perfiles de redes sociales</li>
+                        <li>❌ Información financiera o bancaria</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. Cómo Usamos su Información</h2>
+
+                    <h3>4.1 Funcionalidad de la Aplicación (En el Dispositivo)</h3>
+                    <p>Sus datos se utilizan completamente en su dispositivo para:</p>
+                    <ul>
+                        <li>Mostrar su contenido devocional diario</li>
+                        <li>Almacenar y recuperar su historial de devocionales</li>
+                        <li>Gestionar sus devocionales guardados</li>
+                        <li>Enviar recordatorios devocionales diarios en el horario elegido</li>
+                        <li>Aplicar su tema visual preferido</li>
+                    </ul>
+
+                    <h3>4.2 Generación de Contenido con IA</h3>
+                    <p>Cuando genera un devocional, lo siguiente se envía a la IA Gemini de Google:</p>
+                    <ul>
+                        <li>Su texto de estado de ánimo opcional (si lo proporcionó)</li>
+                        <li>Su categoría seleccionada (si eligió una)</li>
+                        <li>La fecha actual para contenido contextual</li>
+                    </ul>
+                    <p>Esta información se utiliza únicamente para generar su devocional personalizado. Consulte la Sección 6 para detalles sobre la privacidad de la IA.</p>
+
+                    <h3>4.3 Mejora de la Aplicación</h3>
+                    <p>Los datos anónimos nos ayudan a:</p>
+                    <ul>
+                        <li>Corregir errores mediante informes de fallos anónimos</li>
+                        <li>Comprender el uso de funciones mediante análisis anónimos</li>
+                        <li>Optimizar el rendimiento y la estabilidad de la aplicación</li>
+                    </ul>
+                    <p><strong>Su contenido devocional y entradas personales NUNCA se utilizan para análisis.</strong></p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Almacenamiento y Seguridad de Datos</h2>
+                    <p>Todos sus datos personales se almacenan en su dispositivo utilizando:</p>
+                    <ul>
+                        <li><strong>Base de Datos:</strong> Base de datos SQLite local a través de Drift (una base de datos que prioriza el uso sin conexión)</li>
+                        <li><strong>Preferencias:</strong> SharedPreferences (almacenamiento estándar de clave-valor de la plataforma) para configuraciones de tema y notificaciones</li>
+                        <li><strong>iOS:</strong> Sandbox seguro de la aplicación con cifrado de iOS</li>
+                        <li><strong>Android:</strong> Almacenamiento interno de la aplicación con seguridad de Android</li>
+                    </ul>
+
+                    <h3>5.1 Retención de Datos</h3>
+                    <ul>
+                        <li>Los datos permanecen en su dispositivo indefinidamente hasta que los elimine</li>
+                        <li>Eliminar la aplicación elimina todos los datos locales permanentemente</li>
+                        <li>No tenemos la capacidad de recuperar datos eliminados</li>
+                    </ul>
+                </section>
+
+                <section id="ai-devotionals" class="policy-section">
+                    <h2>6. Devocionales Generados por IA</h2>
+
+                    <h3>6.1 Cómo Funciona</h3>
+                    <p>Devotion utiliza la IA Gemini de Google (a través de Firebase AI Logic) para generar contenido devocional diario:</p>
+                    <ul>
+                        <li>Su texto de estado de ánimo opcional y categoría elegida se envían a los servidores de Google para su procesamiento</li>
+                        <li>La IA genera un devocional completo que incluye escritura, reflexión, oración y un paso de acción</li>
+                        <li>El contenido generado se entrega a su dispositivo y se almacena localmente</li>
+                    </ul>
+
+                    <h3>6.2 Privacidad en el Procesamiento de IA</h3>
+                    <p>Protecciones de privacidad importantes:</p>
+                    <ul>
+                        <li>Su entrada de estado de ánimo y selecciones de categoría son procesadas por Google Gemini pero NO se almacenan a largo plazo por Google</li>
+                        <li>Las entradas no están vinculadas a su identidad personal</li>
+                        <li>No se retiene historial de conversaciones en los servidores de Google después de la generación</li>
+                        <li>Sujeto a las <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">políticas de privacidad de IA de Google</a></li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>💡 Consejo:</strong> Le recomendamos encarecidamente que no incluya nombres personales, ubicaciones u otra información identificable en su entrada de estado de ánimo. El texto que escribe se envía a los servidores de Google para el procesamiento de IA.
+                    </div>
+
+                    <h3>6.3 Avisos Importantes</h3>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ Aviso sobre Contenido de IA</strong>
+                        <p>El contenido generado por IA de Devotion es:</p>
+                        <ul>
+                            <li>Solo para enriquecimiento espiritual y reflexión personal</li>
+                            <li>No es un sustituto de orientación pastoral, consejería u otra asesoría profesional</li>
+                            <li>No está respaldado por ninguna iglesia, denominación o autoridad religiosa específica</li>
+                            <li>El contenido generado debe considerarse junto con su propio estudio de las Escrituras y comunidad de fe</li>
+                        </ul>
+                    </div>
+
+                    <h3>6.4 Exclusión Voluntaria</h3>
+                    <p>La generación con IA es una función central de la aplicación. Puede optar por no proporcionar un estado de ánimo o categoría, en cuyo caso la IA generará un devocional general para el día.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>7. Permisos</h2>
+
+                    <h3>7.1 Permisos Requeridos</h3>
+
+                    <h4>Acceso a Internet</h4>
+                    <ul>
+                        <li><strong>Propósito:</strong> Generar devocionales con IA a través de Firebase AI, enviar análisis anónimos y gestionar suscripciones</li>
+                        <li><strong>Privacidad:</strong> Solo se utiliza para generación de IA, análisis y verificación de suscripciones — nunca para subir sus datos personales</li>
+                    </ul>
+
+                    <h4>Almacenamiento Local</h4>
+                    <ul>
+                        <li><strong>Propósito:</strong> Guardar devocionales, marcadores y preferencias en su dispositivo</li>
+                    </ul>
+
+                    <h3>7.2 Permisos Opcionales</h3>
+
+                    <h4>Notificaciones</h4>
+                    <ul>
+                        <li><strong>Propósito:</strong> Recordatorios devocionales diarios</li>
+                        <li><strong>Privacidad:</strong> Las notificaciones son recordatorios genéricos y no contienen su contenido devocional o estado de ánimo</li>
+                        <li><strong>Control:</strong> Puede activar o desactivar los recordatorios en cualquier momento en Configuración</li>
+                    </ul>
+
+                    <h3>7.3 Permisos que NO Solicitamos</h3>
+                    <p>Devotion NO solicita:</p>
+                    <ul>
+                        <li>❌ Cámara o biblioteca de fotos</li>
+                        <li>❌ Ubicación / GPS</li>
+                        <li>❌ Contactos</li>
+                        <li>❌ Calendario</li>
+                        <li>❌ Micrófono</li>
+                        <li>❌ Datos de salud</li>
+                        <li>❌ Bluetooth</li>
+                    </ul>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>8. Suscripciones</h2>
+
+                    <h3>8.1 Suscripción Premium</h3>
+                    <div class="highlight-box">
+                        <strong>📋 Nota:</strong> Las funciones de suscripción premium están planificadas para una versión futura. Los términos de esta sección se aplicarán una vez que las suscripciones estén disponibles.
+                    </div>
+                    <p>Devotion ofrece un nivel de suscripción premium para funciones mejoradas:</p>
+                    <ul>
+                        <li><strong>Facturación:</strong> Suscripción mensual o anual con renovación automática</li>
+                        <li><strong>Pago:</strong> Gestionado a través de RevenueCat + Apple App Store / Google Play Store</li>
+                        <li><strong>Cancelación:</strong> Cancele en cualquier momento en la configuración de suscripciones de App Store o Play Store</li>
+                    </ul>
+
+                    <h3>8.2 Datos de Suscripción</h3>
+                    <p>La gestión de suscripciones involucra:</p>
+                    <ul>
+                        <li><strong>RevenueCat:</strong> Procesa tokens de compra y gestiona el estado de la suscripción. No se comparten datos de contenido personal con RevenueCat.</li>
+                        <li><strong>Apple / Google:</strong> El procesamiento de pagos es manejado completamente por Apple App Store o Google Play Store.</li>
+                    </ul>
+
+                    <h3>8.3 Política de Reembolsos</h3>
+                    <p>Los reembolsos se gestionan a través de:</p>
+                    <ul>
+                        <li><strong>Apple:</strong> <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Google:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Página de reembolsos de Google Play</a></li>
+                    </ul>
+                    <p>Las políticas de reembolso están sujetas a los términos de Apple y Google.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>9. Servicios de Terceros</h2>
+                    <p>Devotion integra los siguientes servicios de terceros:</p>
+
+                    <h3>9.1 Firebase Analytics</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Datos de uso anónimo (vistas de pantalla, uso de funciones)</li>
+                        <li><strong>Datos Recopilados:</strong> Sin información de identificación personal</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.2 Firebase Remote Config</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Indicadores de funciones y configuración de la aplicación</li>
+                        <li><strong>Datos Recopilados:</strong> Sin datos personales</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.3 Firebase Crashlytics</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Informes de fallos para mejoras de estabilidad</li>
+                        <li><strong>Datos Recopilados:</strong> Información del dispositivo, trazas de errores (NO su contenido devocional)</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.4 Firebase AI / Google Gemini</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Generación de contenido devocional con inteligencia artificial</li>
+                        <li><strong>Datos Recopilados:</strong> Texto de estado de ánimo y categoría (procesados, no almacenados a largo plazo)</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.5 RevenueCat</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Gestión de suscripciones y verificación de compras</li>
+                        <li><strong>Datos Recopilados:</strong> Tokens de compra, estado de suscripción</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.6 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Distribución de la aplicación y procesamiento de suscripciones</li>
+                        <li><strong>Datos Recopilados:</strong> Historial de compras, descargas de la aplicación</li>
+                        <li><strong>Políticas de Privacidad:</strong> Consulte las políticas de Apple y Google mencionadas anteriormente</li>
+                    </ul>
+
+                    <h3>9.7 Firebase App Check</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Proteger los servicios de backend contra abusos verificando que las solicitudes provengan de nuestra aplicación genuina</li>
+                        <li><strong>Datos Recopilados:</strong> Tokens de atestación del dispositivo (no contienen datos personales)</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacidad de Firebase</a></li>
+                    </ul>
+
+                    <h3>9.8 Tecnologías de Seguimiento</h3>
+                    <p>Devotion no utiliza cookies, píxeles ni almacenamiento web. Firebase Analytics utiliza identificadores de instancia de la aplicación que se restablecen cuando desinstala la aplicación o restablece el identificador de publicidad de su dispositivo. No realizamos seguimiento entre dispositivos ni entre aplicaciones.</p>
+
+                    <p><strong>Sin Servicios de Publicidad:</strong> Devotion NO utiliza Google AdMob ni ningún otro servicio de publicidad. No hay anuncios en la aplicación.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>10. Sus Derechos de Privacidad</h2>
+
+                    <h3>10.1 Derechos del RGPD (Unión Europea)</h3>
+                    <p>Si se encuentra en la UE, tiene los siguientes derechos:</p>
+
+                    <h4>Base Legal para el Procesamiento</h4>
+                    <p>Procesamos datos sobre las siguientes bases legales según el Artículo 6 del RGPD:</p>
+                    <ul>
+                        <li><strong>Funcionalidad de la aplicación y generación de contenido con IA:</strong> Ejecución de un contrato (Art. 6(1)(b)) — necesario para proporcionar el servicio que solicitó.</li>
+                        <li><strong>Análisis y reportes de fallos:</strong> Interés legítimo (Art. 6(1)(f)) — para mejorar la estabilidad y la experiencia del usuario. Puede limitar los análisis restableciendo el identificador de publicidad de su dispositivo.</li>
+                    </ul>
+                    <p>No hemos designado un Delegado de Protección de Datos (DPO) ya que nuestras actividades de procesamiento no alcanzan los umbrales del Artículo 37 del RGPD. Puede contactarnos en el correo electrónico indicado abajo para cualquier consulta sobre protección de datos.</p>
+                    <p>Los datos de Firebase Analytics son retenidos por Google durante 14 meses (por defecto). Los datos de Crashlytics se retienen durante 90 días.</p>
+
+                    <h4>Sus Derechos</h4>
+                    <ul>
+                        <li><strong>Derecho de Acceso:</strong> Solicitar información sobre los datos recopilados</li>
+                        <li><strong>Derecho de Rectificación:</strong> Corregir datos inexactos</li>
+                        <li><strong>Derecho de Supresión:</strong> Solicitar la eliminación de sus datos</li>
+                        <li><strong>Derecho a la Portabilidad de Datos:</strong> Recibir sus datos en un formato portátil</li>
+                        <li><strong>Derecho de Oposición:</strong> Oponerse al procesamiento de datos</li>
+                        <li><strong>Derecho a Retirar el Consentimiento:</strong> Retirar el consentimiento en cualquier momento</li>
+                    </ul>
+
+                    <h3>10.2 Derechos CCPA (California)</h3>
+                    <p>Si se encuentra en California, tiene los siguientes derechos:</p>
+                    <p>En los últimos 12 meses, hemos recopilado las siguientes categorías de información personal: identificadores de dispositivo y datos de uso (a través de Firebase Analytics), datos de diagnóstico de fallos (a través de Firebase Crashlytics) y selecciones de estado de ánimo/categoría (transmitidas a Google Gemini para generación de contenido con IA).</p>
+                    <p><strong>NO vendemos ni compartimos su información personal</strong> según la definición de la Ley de Privacidad del Consumidor de California. Divulgamos datos a las siguientes categorías de proveedores de servicios: Google LLC (análisis, reportes de fallos, generación de contenido con IA) y Apple Inc./Google LLC (distribución de la aplicación).</p>
+                    <ul>
+                        <li><strong>Derecho a Saber:</strong> Solicitar detalles sobre los datos recopilados</li>
+                        <li><strong>Derecho a Eliminar:</strong> Solicitar la eliminación de información personal</li>
+                        <li><strong>Derecho a Optar por No Participar:</strong> Optar por no participar en la venta de datos (no vendemos datos)</li>
+                        <li><strong>Derecho a la No Discriminación:</strong> Servicio igualitario independientemente de las opciones de privacidad</li>
+                    </ul>
+
+                    <h3>10.3 Ejercicio de sus Derechos</h3>
+                    <p>Dado que la mayoría de los datos se almacenan localmente en su dispositivo:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Todos sus devocionales y datos son accesibles dentro de la aplicación en cualquier momento</li>
+                        <li><strong>Eliminación:</strong> Elimine la aplicación para borrar todos los datos locales, o elimine devocionales individuales dentro de la aplicación</li>
+                        <li><strong>Para datos de análisis:</strong> Contáctenos en el correo electrónico indicado abajo y atenderemos su solicitud</li>
+                    </ul>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>11. Privacidad de Menores</h2>
+                    <p>Devotion está destinada a una audiencia general de 13 años en adelante. No recopilamos intencionalmente información personal de menores de 13 años.</p>
+                    <ul>
+                        <li>Edad mínima: 13 años</li>
+                        <li>Se recomienda la supervisión de los padres para usuarios más jóvenes</li>
+                        <li>Si descubrimos que un menor de 13 años nos ha proporcionado información personal, tomaremos medidas para eliminar dicha información y terminar cualquier acceso asociado</li>
+                        <li>Si usted es padre o tutor y cree que su hijo nos ha proporcionado información personal, contáctenos inmediatamente en <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>12. Usuarios Internacionales</h2>
+
+                    <h3>12.1 Transferencias de Datos</h3>
+                    <p>Dado que todos sus datos personales se almacenan localmente en su dispositivo, no hay transferencias internacionales de datos de su contenido devocional, entradas de estado de ánimo o marcadores.</p>
+                    <p>Sin embargo, al generar un devocional, su texto de estado de ánimo y categoría son procesados por los servidores de Google y están sujetos a las políticas de transferencia de datos de Google.</p>
+
+                    <h3>12.2 Cumplimiento Regional</h3>
+                    <ul>
+                        <li><strong>Unión Europea:</strong> Cumple con el RGPD</li>
+                        <li><strong>California:</strong> Cumple con la CCPA</li>
+                        <li><strong>Brasil:</strong> Cumple con la LGPD</li>
+                        <li><strong>Otras Regiones:</strong> Respetamos todas las leyes de privacidad aplicables</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>13. Cambios a Esta Política de Privacidad</h2>
+                    <p>Podemos actualizar esta Política de Privacidad periódicamente para reflejar:</p>
+                    <ul>
+                        <li>Nuevas funciones o funcionalidades de la aplicación</li>
+                        <li>Cambios en los requisitos legales</li>
+                        <li>Actualizaciones de servicios de terceros</li>
+                        <li>Comentarios de usuarios y mejoras de privacidad</li>
+                    </ul>
+
+                    <h3>13.1 Notificación de Cambios</h3>
+                    <p>Cuando realicemos cambios significativos:</p>
+                    <ul>
+                        <li>Se revisará la fecha de "Última Actualización"</li>
+                        <li>Los cambios se destacarán en la política</li>
+                        <li>Mostraremos un aviso destacado dentro de la aplicación para cambios materiales</li>
+                        <li>Cuando lo requiera la ley aplicable, solicitaremos su consentimiento renovado</li>
+                    </ul>
+
+                    <h3>13.2 Revisión Periódica</h3>
+                    <p>Le recomendamos revisar esta Política de Privacidad periódicamente. La versión más actual siempre estará disponible dentro de la aplicación y en nuestro sitio web.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>14. Contáctenos</h2>
+                    <p>Si tiene preguntas, inquietudes o solicitudes sobre esta Política de Privacidad o nuestras prácticas de privacidad, contáctenos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo Electrónico:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Sitio Web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de Respuesta</h3>
+                    <p>Responderemos a su consulta dentro de:</p>
+                    <ul>
+                        <li>30 días para consultas generales</li>
+                        <li>72 horas para preocupaciones urgentes de privacidad</li>
+                        <li>Según lo requiera la ley aplicable para solicitudes de derechos</li>
+                    </ul>
+
+                    <h3>Quejas</h3>
+                    <p>Si considera que no hemos abordado adecuadamente sus preocupaciones de privacidad, tiene derecho a presentar una queja ante la autoridad local de protección de datos.</p>
+
+                    <h3>Notificación de Violación de Datos</h3>
+                    <p>En caso de una violación de datos que afecte su información personal, notificaremos a la autoridad supervisora correspondiente dentro de 72 horas e informaremos a los usuarios afectados sin demora indebida según lo requiera la ley aplicable.</p>
+
+                    <h3>Idioma Rector</h3>
+                    <p>Esta Política de Privacidad se proporciona en inglés y español. En caso de conflicto o inconsistencia entre las versiones en inglés y español, prevalecerá la versión en inglés.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última Actualización:</strong> 28 de febrero de 2026</p>
+                    <p><strong>Fecha de Vigencia:</strong> 28 de febrero de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

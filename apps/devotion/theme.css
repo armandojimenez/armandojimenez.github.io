@@ -1,0 +1,244 @@
+/*
+ * Devotion - Sacred Gold Brand Theme
+ * Overrides for policy pages — aligned with BRAND_GUIDELINES.md
+ */
+
+/* ===========================
+   Custom Color Palette - Sacred Gold / Faith
+   =========================== */
+:root {
+    /* Light Theme — Linen & Sacred Gold */
+    --bg-primary: #FAF7F2;
+    --bg-secondary: #FFFFFF;
+    --bg-tertiary: #F3EDE4;
+    --bg-accent: #F5E6C8;
+    --bg-gold-tint: #FFF8EB;
+    --bg-gold-dark: #2A2218;
+
+    --text-primary: #2C2420;
+    --text-secondary: #6B5E54;
+    --text-tertiary: #8B7560;
+    --text-link: #B8860B;
+    --text-link-hover: #8B6508;
+
+    --border-color: #D4C5B3;
+    --border-light: #E8DDD0;
+
+    --accent-primary: #B8860B;
+    --accent-primary-rgb: 184, 134, 11;
+    --accent-secondary: #7A8B6F;
+    --accent-success: #7A8B6F;
+    --accent-warning: #D4A847;
+    --accent-danger: #C45D4A;
+}
+
+/* Dark Theme — Deep Night & Golden Light */
+[data-theme="dark"] {
+    --bg-primary: #1A1614;
+    --bg-secondary: #252019;
+    --bg-tertiary: #33291F;
+    --bg-accent: #3D3020;
+    --bg-gold-tint: #2A2218;
+    --bg-gold-dark: #1E1A14;
+
+    --text-primary: #F3EDE4;
+    --text-secondary: #C0B5A5;
+    --text-tertiary: #8B7E74;
+    --text-link: #D4A84B;
+    --text-link-hover: #E8C06B;
+
+    --border-color: #3D3020;
+    --border-light: #33291F;
+
+    --accent-primary: #D4A84B;
+    --accent-primary-rgb: 212, 168, 75;
+    --accent-secondary: #9B7E6B;
+    --accent-success: #7DB87D;
+    --accent-warning: #D4A847;
+    --accent-danger: #D47070;
+}
+
+/* ===========================
+   Custom Highlight Boxes
+   =========================== */
+.highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-gold-tint) 100%);
+    border-left-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-gold-dark) 100%);
+}
+
+.highlight-box.warning {
+    background: linear-gradient(135deg, rgba(var(--accent-primary-rgb), 0.15) 0%, rgba(var(--accent-primary-rgb), 0.05) 100%);
+    border-left-color: var(--accent-warning);
+}
+
+/* ===========================
+   Custom App Badge
+   =========================== */
+.app-badge {
+    background: linear-gradient(135deg, #fff 0%, var(--bg-gold-tint) 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .app-badge {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-gold-dark) 100%);
+}
+
+/* ===========================
+   Custom Section Headers
+   =========================== */
+.policy-section h2 {
+    color: var(--accent-primary); /* fallback for browsers without gradient text */
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom-color: var(--accent-primary);
+}
+
+/* Forced contrast mode fallback */
+@media (forced-colors: active) {
+    .policy-section h2,
+    .contact-card h3 {
+        -webkit-text-fill-color: unset;
+        background: none;
+        color: LinkText;
+    }
+}
+
+/* ===========================
+   Theme Toggle Custom Colors
+   =========================== */
+.theme-toggle {
+    background: linear-gradient(135deg, #fff 0%, var(--bg-gold-tint) 100%);
+    border-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-gold-dark) 100%);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 16px rgba(var(--accent-primary-rgb), 0.2);
+}
+
+/* ===========================
+   Navigation Links
+   =========================== */
+.nav-link {
+    background: var(--bg-accent);
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: var(--bg-secondary);
+    border-color: var(--accent-primary);
+}
+
+/* ===========================
+   Contact Card Custom Style
+   =========================== */
+.contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-gold-tint) 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-gold-dark) 100%);
+}
+
+.contact-card h3 {
+    color: var(--accent-primary); /* fallback */
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===========================
+   TOC Active State
+   =========================== */
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+/* ===========================
+   Scrollbar Custom Colors
+   =========================== */
+
+/* Standard (Firefox, future browsers) */
+html {
+    scrollbar-color: var(--accent-primary) var(--bg-tertiary);
+    scrollbar-width: thin;
+}
+
+/* Chromium & Safari */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* ===========================
+   Selection Color
+   =========================== */
+::selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* ===========================
+   Back to Top Button (from JS)
+   =========================== */
+[data-policy-app="devotion"] .back-to-top {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+}
+
+[data-policy-app="devotion"] .back-to-top:hover {
+    background: var(--accent-primary);
+    box-shadow: 0 8px 24px rgba(var(--accent-primary-rgb), 0.3);
+}
+
+/* ===========================
+   Custom Animations - Sacred Glow
+   =========================== */
+@keyframes sacredGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(var(--accent-primary-rgb), 0.1);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(var(--accent-primary-rgb), 0.2);
+    }
+}
+
+.policy-header {
+    animation: sacredGlow 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .policy-header {
+        animation: none;
+    }
+}
+
+/* ===========================
+   Link Underline Effect
+   =========================== */
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}

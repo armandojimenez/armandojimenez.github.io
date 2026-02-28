@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="devotion" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace(/\.html$/, '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Devotion</title>
+    <meta name="description" content="Privacy Policy for Devotion - A Daily Sanctuary of Faith. AI-powered devotional app for Christians.">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/devotion/privacy-policy.html">
+    <meta property="og:title" content="Privacy Policy - Devotion">
+    <meta property="og:description" content="Read the privacy policy for Devotion, an AI-powered daily devotional app.">
+    <meta property="og:url" content="https://armandojimenez.dev/apps/devotion/privacy-policy.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/devotion/privacy-policy.html">
+    <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/devotion/privacy-policy-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://armandojimenez.dev/apps/devotion/privacy-policy.html">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">🕊️</div>
+                <div class="badge-text">
+                    <div class="badge-title">Devotion</div>
+                    <div class="badge-subtitle">A Daily Sanctuary of Faith</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: February 28, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: February 28, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#privacy-first">Privacy-First Approach</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#how-we-use">How We Use Your Information</a></li>
+                    <li><a href="#data-storage">Data Storage &amp; Security</a></li>
+                    <li><a href="#ai-devotionals">AI-Generated Devotionals</a></li>
+                    <li><a href="#permissions">Permissions</a></li>
+                    <li><a href="#subscriptions">Subscriptions</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#changes">Changes to Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to Devotion ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. We are deeply committed to protecting your privacy and your spiritual practice.</p>
+                    <p>Devotion is an AI-powered daily devotional app for Christians. Each day, the app generates a personalized devotional experience that adapts to your mood, chosen category, and the historical and spiritual significance of the date. Content is generated via Google's Gemini AI through Firebase AI Logic.</p>
+                    <div class="highlight-box">
+                        <strong>🕊️ Our Privacy Promise:</strong>
+                        <ul>
+                            <li>All your devotional data stays on YOUR device</li>
+                            <li>We CANNOT access your personal reflections or entries</li>
+                            <li>No user accounts or email required</li>
+                            <li>Your spiritual practice is completely private</li>
+                            <li>No advertising — ever</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Privacy-First Approach</h2>
+                    <p>Devotion is built on a privacy-first foundation. We believe your spiritual practice and personal reflections should remain private. Unlike many apps, we:</p>
+                    <ul>
+                        <li>Store all devotional data locally on your device</li>
+                        <li>Never upload your personal content to our servers</li>
+                        <li>Don't require email, login, or any personal identification</li>
+                        <li>Don't serve any advertisements</li>
+                    </ul>
+                    <p><strong>Important:</strong> If you delete the app, all your saved devotionals, bookmarks, and preferences will be permanently lost. We cannot recover this data because we never had access to it.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+
+                    <h3>3.1 Information You Create</h3>
+                    <p>All of the following data is stored locally on your device and is NOT transmitted to our servers:</p>
+                    <ul>
+                        <li><strong>Generated Devotionals:</strong> Daily AI-generated devotional content including scripture, reflections, prayers, and affirmations</li>
+                        <li><strong>Mood &amp; Category Selections:</strong> Your optional mood text and chosen devotional category (e.g., Gratitude, Peace, Hope)</li>
+                        <li><strong>Bookmarked Devotionals:</strong> Devotionals you choose to save for later reading</li>
+                        <li><strong>Devotional History:</strong> A chronological record of all your past devotionals</li>
+                        <li><strong>Notification Preferences:</strong> Your daily reminder settings and times</li>
+                        <li><strong>Theme Preferences:</strong> Light mode, dark mode, or system theme selection</li>
+                    </ul>
+
+                    <h3>3.2 Information Automatically Collected</h3>
+                    <p>We may collect the following anonymous data to improve the app experience:</p>
+                    <ul>
+                        <li><strong>Firebase Analytics:</strong> Anonymous usage analytics such as screen views, feature usage, and your selected devotional category (e.g., "Hope", "Peace"). No personally identifiable information is collected. We do NOT collect the free-text mood description you enter.</li>
+                        <li><strong>Firebase Remote Config:</strong> Feature flags and app configuration. No personal data is collected.</li>
+                        <li><strong>Firebase Crashlytics:</strong> Anonymous crash reports including device type and OS version for stability improvements. Your devotional content is never included.</li>
+                        <li><strong>Firebase App Check:</strong> Device attestation tokens to protect our backend from abuse. No personal data is collected.</li>
+                    </ul>
+
+                    <h3>3.3 Information We Do NOT Collect</h3>
+                    <p>We explicitly do NOT collect or have access to:</p>
+                    <ul>
+                        <li>❌ Your mood entries or personal feelings</li>
+                        <li>❌ Your devotional content or reflections</li>
+                        <li>❌ Personal identification (name, email, etc.)</li>
+                        <li>❌ Location data or GPS information</li>
+                        <li>❌ Health or biometric data</li>
+                        <li>❌ Contacts, calendar, or social media profiles</li>
+                        <li>❌ Financial or banking information</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. How We Use Your Information</h2>
+
+                    <h3>4.1 App Functionality (On-Device)</h3>
+                    <p>Your data is used entirely on your device to:</p>
+                    <ul>
+                        <li>Display your daily devotional content</li>
+                        <li>Store and retrieve your devotional history</li>
+                        <li>Manage your bookmarked devotionals</li>
+                        <li>Send daily devotional reminders at your chosen time</li>
+                        <li>Apply your preferred visual theme</li>
+                    </ul>
+
+                    <h3>4.2 AI Content Generation</h3>
+                    <p>When you generate a devotional, the following is sent to Google's Gemini AI:</p>
+                    <ul>
+                        <li>Your optional mood text (if provided)</li>
+                        <li>Your selected category (if chosen)</li>
+                        <li>The current date for contextual content</li>
+                    </ul>
+                    <p>This information is used solely to generate your personalized devotional. See Section 6 for details on AI privacy.</p>
+
+                    <h3>4.3 App Improvement</h3>
+                    <p>Anonymous data helps us:</p>
+                    <ul>
+                        <li>Fix bugs via anonymous crash reports</li>
+                        <li>Understand feature usage via anonymous analytics</li>
+                        <li>Optimize app performance and stability</li>
+                    </ul>
+                    <p><strong>Your devotional content and personal entries are NEVER used for analytics.</strong></p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Data Storage &amp; Security</h2>
+                    <p>All your personal data is stored on your device using:</p>
+                    <ul>
+                        <li><strong>Database:</strong> Local SQLite database via Drift (an offline-first database)</li>
+                        <li><strong>Preferences:</strong> SharedPreferences (platform-standard key-value storage) for theme and notification settings</li>
+                        <li><strong>iOS:</strong> Secure app sandbox with iOS encryption</li>
+                        <li><strong>Android:</strong> Internal app storage with Android security</li>
+                    </ul>
+
+                    <h3>5.1 Data Retention</h3>
+                    <ul>
+                        <li>Data remains on your device indefinitely until you delete it</li>
+                        <li>Deleting the app removes all local data permanently</li>
+                        <li>We have no ability to recover deleted data</li>
+                    </ul>
+                </section>
+
+                <section id="ai-devotionals" class="policy-section">
+                    <h2>6. AI-Generated Devotionals</h2>
+
+                    <h3>6.1 How It Works</h3>
+                    <p>Devotion uses Google's Gemini AI (via Firebase AI Logic) to generate daily devotional content:</p>
+                    <ul>
+                        <li>Your optional mood text and chosen category are sent to Google's servers for processing</li>
+                        <li>The AI generates a complete devotional including scripture, reflection, prayer, and an action step</li>
+                        <li>The generated content is delivered to your device and stored locally</li>
+                    </ul>
+
+                    <h3>6.2 Privacy in AI Processing</h3>
+                    <p>Important privacy protections:</p>
+                    <ul>
+                        <li>Your mood input and category selections are processed by Google Gemini but are NOT stored long-term by Google</li>
+                        <li>Inputs are not linked to your personal identity</li>
+                        <li>No conversation history is retained on Google's servers after generation</li>
+                        <li>Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's AI privacy policies</a></li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>💡 Tip:</strong> We strongly recommend you do not include personal names, locations, or other identifying information in your mood entry. The mood text you type is sent to Google's servers for AI processing.
+                    </div>
+
+                    <h3>6.3 Important Disclaimers</h3>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ AI Content Disclaimer</strong>
+                        <p>Devotion's AI-generated content is:</p>
+                        <ul>
+                            <li>For spiritual enrichment and personal reflection only</li>
+                            <li>Not a substitute for pastoral guidance, counseling, or professional advice</li>
+                            <li>Not endorsed by any specific church, denomination, or religious authority</li>
+                            <li>Generated content should be considered alongside your own Scripture study and community of faith</li>
+                        </ul>
+                    </div>
+
+                    <h3>6.4 Opting Out</h3>
+                    <p>The AI generation is a core feature of the app. You can choose not to provide a mood or category, in which case the AI will generate a general devotional for the day.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>7. Permissions</h2>
+
+                    <h3>7.1 Required Permissions</h3>
+
+                    <h4>Internet Access</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Generate AI devotionals via Firebase AI, deliver anonymous analytics, and manage subscriptions</li>
+                        <li><strong>Privacy:</strong> Only used for AI generation, analytics, and subscription verification — never to upload your personal data</li>
+                    </ul>
+
+                    <h4>Local Storage</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Save devotionals, bookmarks, and preferences on your device</li>
+                    </ul>
+
+                    <h3>7.2 Optional Permissions</h3>
+
+                    <h4>Notifications</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Daily devotional reminders</li>
+                        <li><strong>Privacy:</strong> Notifications are generic reminders and do not contain your devotional content or mood</li>
+                        <li><strong>Control:</strong> You can enable or disable reminders at any time in Settings</li>
+                    </ul>
+
+                    <h3>7.3 Permissions We DON'T Request</h3>
+                    <p>Devotion does NOT request:</p>
+                    <ul>
+                        <li>❌ Camera or photo library</li>
+                        <li>❌ Location / GPS</li>
+                        <li>❌ Contacts</li>
+                        <li>❌ Calendar</li>
+                        <li>❌ Microphone</li>
+                        <li>❌ Health data</li>
+                        <li>❌ Bluetooth</li>
+                    </ul>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>8. Subscriptions</h2>
+
+                    <h3>8.1 Premium Subscription</h3>
+                    <div class="highlight-box">
+                        <strong>📋 Note:</strong> Premium subscription features are planned for a future release. The terms in this section will apply once subscriptions become available.
+                    </div>
+                    <p>Devotion offers a premium subscription tier for enhanced features:</p>
+                    <ul>
+                        <li><strong>Billing:</strong> Monthly or annual auto-renewable subscription</li>
+                        <li><strong>Payment:</strong> Managed via RevenueCat + Apple App Store / Google Play Store</li>
+                        <li><strong>Cancellation:</strong> Cancel anytime in your App Store or Play Store subscription settings</li>
+                    </ul>
+
+                    <h3>8.2 Subscription Data</h3>
+                    <p>Subscription management involves:</p>
+                    <ul>
+                        <li><strong>RevenueCat:</strong> Processes purchase tokens and manages subscription status. No personal content data is shared with RevenueCat.</li>
+                        <li><strong>Apple / Google:</strong> Payment processing is handled entirely by Apple App Store or Google Play Store.</li>
+                    </ul>
+
+                    <h3>8.3 Refund Policy</h3>
+                    <p>Refunds are handled through:</p>
+                    <ul>
+                        <li><strong>Apple:</strong> <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Google:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play refund page</a></li>
+                    </ul>
+                    <p>Refund policies are subject to Apple and Google's terms.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>9. Third-Party Services</h2>
+                    <p>Devotion integrates the following third-party services:</p>
+
+                    <h3>9.1 Firebase Analytics</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Anonymous usage data (screen views, feature usage)</li>
+                        <li><strong>Data Collected:</strong> No personally identifiable information</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.2 Firebase Remote Config</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Feature flags and app configuration</li>
+                        <li><strong>Data Collected:</strong> No personal data</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.3 Firebase Crashlytics</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Crash reports for stability improvements</li>
+                        <li><strong>Data Collected:</strong> Device info, crash stack traces (NOT your devotional content)</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.4 Firebase AI / Google Gemini</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> AI-powered devotional content generation</li>
+                        <li><strong>Data Collected:</strong> Mood text and category (processed, not stored long-term)</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.5 RevenueCat</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Subscription management and purchase verification</li>
+                        <li><strong>Data Collected:</strong> Purchase tokens, subscription status</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+                    </ul>
+
+                    <h3>9.6 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> App distribution and subscription processing</li>
+                        <li><strong>Data Collected:</strong> Purchase history, app downloads</li>
+                        <li><strong>Privacy Policies:</strong> See Apple and Google policies above</li>
+                    </ul>
+
+                    <h3>9.7 Firebase App Check</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Protects backend resources from abuse by verifying requests come from our authentic app</li>
+                        <li><strong>Data Collected:</strong> Device attestation tokens</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+                    </ul>
+
+                    <h3>9.8 Tracking Technologies</h3>
+                    <p>We do not use cookies. Firebase Analytics may use device-level identifiers (such as Apple's IDFA or Google's Advertising ID) for anonymous usage analytics. You can reset or limit these identifiers in your device's privacy settings (iOS: Settings &gt; Privacy &gt; Tracking; Android: Settings &gt; Google &gt; Ads).</p>
+
+                    <p><strong>No Advertising Services:</strong> Devotion does NOT use Google AdMob or any other advertising service. There are no ads in the app.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>10. Your Privacy Rights</h2>
+
+                    <h3>10.1 GDPR Rights (European Union)</h3>
+                    <p>If you are in the EU, you have the following rights:</p>
+
+                    <h4>Legal Basis for Processing</h4>
+                    <p>We process data on the following legal bases under GDPR Article 6:</p>
+                    <ul>
+                        <li><strong>App functionality and AI content generation:</strong> Performance of a contract (Art. 6(1)(b)) — necessary to provide the service you requested.</li>
+                        <li><strong>Analytics and crash reporting:</strong> Legitimate interest (Art. 6(1)(f)) — to improve app stability and user experience. You can limit analytics by resetting your device's advertising identifier.</li>
+                    </ul>
+                    <p>We have not appointed a Data Protection Officer (DPO) as our processing activities do not meet the thresholds in GDPR Article 37. You may contact us at the email below for any data protection inquiries.</p>
+                    <p>Firebase Analytics data is retained by Google for 14 months (default). Crashlytics data is retained for 90 days.</p>
+
+                    <h4>Your Rights</h4>
+                    <ul>
+                        <li><strong>Right to Access:</strong> Request information about data collected</li>
+                        <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
+                        <li><strong>Right to Erasure:</strong> Request deletion of your data</li>
+                        <li><strong>Right to Data Portability:</strong> Receive your data in a portable format</li>
+                        <li><strong>Right to Object:</strong> Object to data processing</li>
+                        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
+                    </ul>
+
+                    <h3>10.2 CCPA Rights (California)</h3>
+                    <p>If you are in California, you have the following rights:</p>
+                    <p>In the preceding 12 months, we have collected the following categories of personal information: device identifiers and usage data (via Firebase Analytics), crash diagnostic data (via Firebase Crashlytics), and mood/category selections (transmitted to Google Gemini for AI content generation).</p>
+                    <p><strong>We do NOT sell or share your personal information</strong> as defined under the California Consumer Privacy Act. We disclose data to the following categories of service providers: Google LLC (analytics, crash reporting, AI content generation) and Apple Inc./Google LLC (app distribution).</p>
+                    <ul>
+                        <li><strong>Right to Know:</strong> Request details about collected data</li>
+                        <li><strong>Right to Delete:</strong> Request deletion of personal information</li>
+                        <li><strong>Right to Opt-Out:</strong> Opt out of data sale (we do not sell data)</li>
+                        <li><strong>Right to Non-Discrimination:</strong> Equal service regardless of privacy choices</li>
+                    </ul>
+
+                    <h3>10.3 Exercising Your Rights</h3>
+                    <p>Since most data is stored locally on your device:</p>
+                    <ul>
+                        <li><strong>Access:</strong> All your devotionals and data are accessible within the app at any time</li>
+                        <li><strong>Deletion:</strong> Delete the app to remove all local data, or remove individual devotionals within the app</li>
+                        <li><strong>For analytics data:</strong> Contact us at the email below and we will address your request</li>
+                    </ul>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>11. Children's Privacy</h2>
+                    <p>Devotion is intended for a general audience aged 13 and older. We do not knowingly collect personal information from children under 13.</p>
+                    <ul>
+                        <li>Minimum age: 13 years old</li>
+                        <li>Parental supervision is recommended for younger users</li>
+                        <li>If we become aware that a child under 13 has provided us with personal information, we will take steps to delete such information and terminate any associated access</li>
+                        <li>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>12. International Users</h2>
+
+                    <h3>12.1 Data Transfers</h3>
+                    <p>Since all your personal data is stored locally on your device, there are no international data transfers of your devotional content, mood entries, or bookmarks.</p>
+                    <p>However, when generating a devotional, your mood text and category are processed by Google's servers and are subject to Google's data transfer policies.</p>
+
+                    <h3>12.2 Regional Compliance</h3>
+                    <ul>
+                        <li><strong>European Union:</strong> GDPR compliant</li>
+                        <li><strong>California:</strong> CCPA compliant</li>
+                        <li><strong>Brazil:</strong> LGPD compliant</li>
+                        <li><strong>Other Regions:</strong> We respect all applicable privacy laws</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>13. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time to reflect:</p>
+                    <ul>
+                        <li>New app features or functionality</li>
+                        <li>Changes in legal requirements</li>
+                        <li>Third-party service updates</li>
+                        <li>User feedback and privacy enhancements</li>
+                    </ul>
+
+                    <h3>13.1 Notification of Changes</h3>
+                    <p>When we make significant changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>Changes will be highlighted in the policy</li>
+                        <li>We will display a prominent notice within the app for material changes</li>
+                        <li>Where required by applicable law, we will seek your renewed consent</li>
+                    </ul>
+
+                    <h3>13.2 Review Regularly</h3>
+                    <p>We encourage you to review this Privacy Policy periodically. The most current version will always be available within the app and on our website.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>14. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <p>We will respond to your inquiry within:</p>
+                    <ul>
+                        <li>30 days for general inquiries</li>
+                        <li>72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for rights requests</li>
+                    </ul>
+
+                    <h3>Complaints</h3>
+                    <p>If you believe we have not adequately addressed your privacy concerns, you have the right to lodge a complaint with your local data protection authority.</p>
+
+                    <h3>Data Breach Notification</h3>
+                    <p>In the event of a data breach affecting your personal information, we will notify the relevant supervisory authority within 72 hours and will inform affected users without undue delay as required by applicable law.</p>
+
+                    <h3>Governing Language</h3>
+                    <p>This Privacy Policy is provided in English and Spanish. In the event of any conflict or inconsistency between the English and Spanish versions, the English version shall prevail and govern.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> February 28, 2026</p>
+                    <p><strong>Effective Date:</strong> February 28, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

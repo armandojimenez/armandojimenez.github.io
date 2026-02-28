@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="devotion" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace(/-es\.html$/, '.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Términos y Condiciones - Devotion</title>
+    <meta name="description" content="Términos y Condiciones de Devotion - Un Santuario Diario de Fe. Aplicación devocional con inteligencia artificial para cristianos.">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/devotion/terms-es.html">
+    <meta property="og:title" content="Términos y Condiciones - Devotion">
+    <meta property="og:description" content="Lea los términos y condiciones de Devotion, una aplicación devocional diaria con inteligencia artificial.">
+    <meta property="og:url" content="https://armandojimenez.dev/apps/devotion/terms-es.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/devotion/terms.html">
+    <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/devotion/terms-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://armandojimenez.dev/apps/devotion/terms.html">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">🕊️</div>
+                <div class="badge-text">
+                    <div class="badge-title">Devotion</div>
+                    <div class="badge-subtitle">Un Santuario Diario de Fe</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Términos y Condiciones</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última Actualización: 28 de febrero de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha de Vigencia: 28 de febrero de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Aceptación de Términos</a></li>
+                    <li><a href="#description">Descripción de la Aplicación</a></li>
+                    <li><a href="#license">Licencia de Uso</a></li>
+                    <li><a href="#user-obligations">Obligaciones del Usuario</a></li>
+                    <li><a href="#ai-content">Aviso sobre Contenido Generado por IA</a></li>
+                    <li><a href="#subscriptions">Suscripciones y Compras</a></li>
+                    <li><a href="#intellectual-property">Propiedad Intelectual</a></li>
+                    <li><a href="#prohibited-uses">Usos Prohibidos</a></li>
+                    <li><a href="#termination">Terminación</a></li>
+                    <li><a href="#disclaimers">Descargos de Responsabilidad</a></li>
+                    <li><a href="#limitation">Limitación de Responsabilidad</a></li>
+                    <li><a href="#indemnification">Indemnización</a></li>
+                    <li><a href="#governing-law">Ley Aplicable</a></li>
+                    <li><a href="#changes">Cambios a los Términos</a></li>
+                    <li><a href="#contact">Información de Contacto</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Aceptación de Términos</h2>
+                    <p>Bienvenido a Devotion ("la Aplicación"), desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Al descargar, instalar, acceder o usar la Aplicación, usted ("Usuario," "usted" o "su") acepta quedar obligado por estos Términos y Condiciones ("Términos").</p>
+
+                    <div class="highlight-box">
+                        <strong>⚠️ Importante:</strong> Si no está de acuerdo con estos Términos, no descargue, instale ni use la Aplicación. Su uso continuado de la Aplicación constituye la aceptación de estos Términos y cualquier actualización realizada a los mismos.
+                    </div>
+
+                    <h3>1.1 Acuerdo de Términos</h3>
+                    <p>Estos Términos constituyen un acuerdo legalmente vinculante entre usted y Believe PR. Al usar la Aplicación, usted declara que:</p>
+                    <ul>
+                        <li>Tiene al menos 13 años de edad (o la edad mínima requerida en su jurisdicción)</li>
+                        <li>Tiene la capacidad legal para aceptar estos Términos</li>
+                        <li>Usará la Aplicación en cumplimiento con todas las leyes y regulaciones aplicables</li>
+                    </ul>
+
+                    <h3>1.2 Términos Adicionales</h3>
+                    <p>Su uso de la Aplicación también se rige por nuestra <a href="privacy-policy-es.html">Política de Privacidad</a>, que se incorpora a estos Términos por referencia.</p>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. Descripción de la Aplicación</h2>
+
+                    <h3>2.1 Propósito</h3>
+                    <p>Devotion es una aplicación devocional diaria con inteligencia artificial diseñada para cristianos. Proporciona una experiencia espiritual personalizada generando contenido devocional diario que incluye escrituras, reflexiones, oraciones, afirmaciones y pasos de acción.</p>
+
+                    <h3>2.2 Funciones</h3>
+                    <ul>
+                        <li><strong>Generación de Devocionales Diarios:</strong> Un devocional generado por IA por día, personalizado según su estado de ánimo y categoría elegida</li>
+                        <li><strong>Personalización:</strong> Entrada opcional de texto de estado de ánimo y selección de categoría (Gratitud, Paz, Esperanza, Fortaleza, Sanación, Alegría, Perdón, Propósito, Paciencia, Guía)</li>
+                        <li><strong>Historial de Devocionales:</strong> Explore y relea todos sus devocionales anteriores</li>
+                        <li><strong>Marcadores:</strong> Guarde sus devocionales favoritos para acceso rápido</li>
+                        <li><strong>Recordatorios Diarios:</strong> Notificaciones push personalizables para su práctica devocional</li>
+                        <li><strong>Modo Claro y Oscuro:</strong> Soporte completo de temas para lectura cómoda</li>
+                    </ul>
+
+                    <h3>2.3 Disponibilidad</h3>
+                    <ul>
+                        <li><strong>Plataformas:</strong> iOS y Android</li>
+                        <li><strong>Internet Requerido:</strong> Se requiere una conexión activa a internet para generar nuevos devocionales</li>
+                        <li><strong>Acceso Sin Conexión:</strong> Los devocionales previamente generados están disponibles sin conexión</li>
+                    </ul>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. Licencia de Uso</h2>
+
+                    <h3>3.1 Concesión de Licencia</h3>
+                    <p>Sujeto a su cumplimiento de estos Términos, Believe PR le otorga una licencia limitada, no exclusiva, intransferible y revocable para descargar y usar la Aplicación en su dispositivo móvil personal para uso personal y no comercial.</p>
+
+                    <h3>3.2 Restricciones de la Licencia</h3>
+                    <p>Usted NO puede:</p>
+                    <ul>
+                        <li>Copiar, modificar o distribuir la Aplicación o cualquier parte de ella</li>
+                        <li>Realizar ingeniería inversa, descompilar o desensamblar la Aplicación</li>
+                        <li>Alquilar, arrendar, prestar, vender o sublicenciar la Aplicación</li>
+                        <li>Eliminar o alterar cualquier aviso o etiqueta de propiedad</li>
+                        <li>Usar la Aplicación para desarrollar productos competidores</li>
+                        <li>Usar scripts automatizados o bots para interactuar con la Aplicación</li>
+                    </ul>
+
+                    <h3>3.3 Propiedad</h3>
+                    <p>La Aplicación, incluyendo todos los derechos de propiedad intelectual, sigue siendo propiedad exclusiva de Believe PR. Esta licencia no le otorga ningún interés de propiedad sobre la Aplicación.</p>
+                </section>
+
+                <section id="user-obligations" class="policy-section">
+                    <h2>4. Obligaciones del Usuario</h2>
+
+                    <h3>4.1 Uso Responsable</h3>
+                    <p>Usted acepta usar la Aplicación de manera responsable y de acuerdo con su propósito previsto como herramienta devocional personal. Específicamente:</p>
+                    <ul>
+                        <li>Usar la Aplicación solo para enriquecimiento espiritual personal</li>
+                        <li>No depender del contenido generado por IA como sustituto de orientación pastoral, consejería profesional o asesoramiento médico</li>
+                        <li>Mantener la seguridad de su dispositivo para proteger sus datos devocionales</li>
+                    </ul>
+
+                    <h3>4.2 Responsabilidad de los Datos</h3>
+                    <p>Dado que todos los datos devocionales se almacenan localmente en su dispositivo:</p>
+                    <ul>
+                        <li>Usted es responsable de realizar copias de seguridad de su dispositivo</li>
+                        <li>Eliminar la aplicación borra permanentemente todos sus datos devocionales</li>
+                        <li>No podemos recuperar datos eliminados bajo ninguna circunstancia</li>
+                    </ul>
+                </section>
+
+                <section id="ai-content" class="policy-section">
+                    <h2>5. Aviso sobre Contenido Generado por IA</h2>
+
+                    <div class="highlight-box warning">
+                        <strong>⚠️ Aviso Importante — Lea Cuidadosamente</strong>
+                        <p>Todo el contenido devocional en Devotion es generado por inteligencia artificial (Google Gemini a través de Firebase AI Logic). Este contenido se proporciona solo para enriquecimiento espiritual y reflexión personal.</p>
+                    </div>
+
+                    <h3>5.1 Naturaleza del Contenido de IA</h3>
+                    <ul>
+                        <li>Los devocionales generados por IA <strong>no</strong> son revisados, aprobados ni respaldados por ninguna iglesia, denominación, pastor o autoridad religiosa</li>
+                        <li>El contenido puede ocasionalmente contener inexactitudes en referencias bíblicas, hechos históricos o interpretaciones teológicas</li>
+                        <li>El contenido generado por IA debe considerarse como un complemento, no un reemplazo, del estudio bíblico personal y la adoración comunitaria</li>
+                    </ul>
+
+                    <h3>5.2 Sin Asesoramiento Profesional</h3>
+                    <p>El contenido generado por Devotion NO constituye:</p>
+                    <ul>
+                        <li>Consejería pastoral o espiritual profesional</li>
+                        <li>Asesoramiento de salud mental o terapia</li>
+                        <li>Orientación médica, legal o financiera</li>
+                        <li>Doctrina oficial o instrucción teológica</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>🚨 Recursos de Crisis:</strong> Si usted o alguien que conoce está en crisis, por favor contacte a un profesional calificado o llame a la <strong>Línea Nacional de Prevención del Suicidio 988</strong> (EE.UU.) marcando o enviando un mensaje de texto al <strong>988</strong>. Devotion no está equipada para proporcionar apoyo en crisis.
+                    </div>
+
+                    <h3>5.3 Responsabilidad del Usuario</h3>
+                    <p>Usted es el único responsable de:</p>
+                    <ul>
+                        <li>Evaluar la precisión y aplicabilidad del contenido generado</li>
+                        <li>Verificar las citas de escrituras con una traducción bíblica autorizada — la IA puede ocasionalmente parafrasear, atribuir erróneamente o combinar versículos</li>
+                        <li>Buscar orientación pastoral o profesional calificada para preocupaciones serias espirituales, emocionales o de vida</li>
+                        <li>Cualquier acción tomada basándose en el contenido generado por IA</li>
+                    </ul>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>6. Suscripciones y Compras</h2>
+
+                    <h3>6.1 Opciones de Suscripción</h3>
+                    <div class="highlight-box">
+                        <strong>📋 Nota:</strong> Las funciones de suscripción premium están planificadas para una versión futura. Los términos de esta sección se aplicarán una vez que las suscripciones estén disponibles.
+                    </div>
+                    <p>Devotion ofrece niveles de suscripción premium con funciones mejoradas:</p>
+                    <ul>
+                        <li><strong>Suscripción Mensual:</strong> Ciclo de facturación mensual con renovación automática</li>
+                        <li><strong>Suscripción Anual:</strong> Ciclo de facturación anual con renovación automática</li>
+                    </ul>
+
+                    <h3>6.2 Pago y Facturación</h3>
+                    <ul>
+                        <li>Todos los pagos se procesan a través de Apple App Store o Google Play Store</li>
+                        <li>La gestión de suscripciones es impulsada por RevenueCat</li>
+                        <li>Los precios se muestran en su moneda local al momento de la compra</li>
+                        <li>El pago se carga a su cuenta de App Store o Play Store al confirmar la compra</li>
+                    </ul>
+
+                    <h3>6.3 Renovación Automática</h3>
+                    <ul>
+                        <li>Las suscripciones se renuevan automáticamente a menos que se cancelen al menos 24 horas antes del final del período de facturación actual</li>
+                        <li>Se le cobrará la renovación dentro de las 24 horas previas al final del período actual</li>
+                        <li>El precio de renovación es el mismo que el precio original de la suscripción, salvo notificación contraria</li>
+                    </ul>
+
+                    <h3>6.4 Cancelación</h3>
+                    <ul>
+                        <li>Puede cancelar su suscripción en cualquier momento a través de la configuración de App Store o Play Store</li>
+                        <li>La cancelación entra en vigor al final del período de facturación actual</li>
+                        <li>Mantendrá acceso a las funciones premium hasta el final de su período pagado</li>
+                        <li>Cancelar no le da derecho a un reembolso por el período de facturación actual</li>
+                    </ul>
+
+                    <h3>6.5 Reembolsos</h3>
+                    <p>Las solicitudes de reembolso deben dirigirse a la plataforma donde se realizó la compra:</p>
+                    <ul>
+                        <li><strong>Apple:</strong> <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Google:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Página de reembolsos de Google Play</a></li>
+                    </ul>
+                    <p>La elegibilidad para reembolsos está determinada por las respectivas políticas de reembolso de Apple y Google.</p>
+
+                    <h3>6.6 Cambios de Precio</h3>
+                    <p>Nos reservamos el derecho de modificar los precios de suscripción. Cualquier cambio de precio:</p>
+                    <ul>
+                        <li>Se comunicará con anticipación a través de App Store o Play Store</li>
+                        <li>No afectará su período de facturación actual</li>
+                        <li>Requerirá su consentimiento antes de que el nuevo precio entre en vigor (según los requisitos de la plataforma)</li>
+                    </ul>
+                </section>
+
+                <section id="intellectual-property" class="policy-section">
+                    <h2>7. Propiedad Intelectual</h2>
+
+                    <h3>7.1 Contenido de la Aplicación</h3>
+                    <p>Todo el contenido dentro de la Aplicación, incluyendo pero no limitado a:</p>
+                    <ul>
+                        <li>Diseño de la aplicación, elementos de interfaz y activos visuales</li>
+                        <li>Nombre de marca, logotipos y marcas registradas</li>
+                        <li>Código fuente y software</li>
+                        <li>Plantillas de instrucciones y sistemas de generación de IA</li>
+                    </ul>
+                    <p>son propiedad exclusiva de Believe PR o sus licenciantes y están protegidos por las leyes de propiedad intelectual aplicables.</p>
+
+                    <h3>7.2 Contenido Generado por IA</h3>
+                    <ul>
+                        <li>El contenido devocional generado por IA se crea para su uso personal y no comercial</li>
+                        <li>Puede compartir contenido devocional con otros para propósitos personales y no comerciales</li>
+                        <li>La reproducción masiva, redistribución con fines de lucro o uso en aplicaciones competidoras está prohibida</li>
+                    </ul>
+
+                    <h3>7.3 Escrituras</h3>
+                    <p>Los versículos bíblicos y referencias escriturales incluidos en los devocionales provienen de traducciones disponibles públicamente. Los derechos de autor de traducciones específicas pertenecen a sus respectivos propietarios.</p>
+                </section>
+
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>8. Usos Prohibidos</h2>
+                    <p>Usted acepta NO usar la Aplicación para:</p>
+                    <ul>
+                        <li>Violar cualquier ley o regulación aplicable</li>
+                        <li>Intentar obtener acceso no autorizado a la Aplicación o sus sistemas</li>
+                        <li>Interferir o interrumpir la funcionalidad de la Aplicación</li>
+                        <li>Extraer o recopilar contenido de manera sistemática</li>
+                        <li>Usar la Aplicación para cualquier propósito comercial sin autorización</li>
+                        <li>Manipular o abusar del sistema de generación de contenido con IA</li>
+                        <li>Intentar generar contenido dañino, de odio o inapropiado a través del sistema de IA</li>
+                        <li>Presentar erróneamente el contenido generado por IA como asesoramiento pastoral, médico o psicológico profesional</li>
+                    </ul>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>9. Terminación</h2>
+
+                    <h3>9.1 Terminación por Usted</h3>
+                    <p>Puede dejar de usar la Aplicación en cualquier momento:</p>
+                    <ul>
+                        <li>Eliminando la Aplicación de su dispositivo</li>
+                        <li>Cancelando cualquier suscripción activa</li>
+                    </ul>
+
+                    <h3>9.2 Terminación por Nosotros</h3>
+                    <p>Podemos bloquear su acceso a las funciones de IA o discontinuar su uso de la Aplicación si:</p>
+                    <ul>
+                        <li>Viola estos Términos</li>
+                        <li>Participa en usos prohibidos</li>
+                        <li>Es requerido por ley o proceso legal</li>
+                        <li>Descontinuamos la Aplicación</li>
+                    </ul>
+
+                    <h3>9.3 Efecto de la Terminación</h3>
+                    <p>Tras la terminación:</p>
+                    <ul>
+                        <li>Su licencia para usar la Aplicación se revoca inmediatamente</li>
+                        <li>Todos los datos locales permanecerán en su dispositivo hasta que elimine la Aplicación</li>
+                        <li>Cualquier suscripción activa continuará hasta el final del período pagado (debe cancelar por separado)</li>
+                        <li>Las secciones sobre descargos de responsabilidad, responsabilidad, indemnización y ley aplicable sobreviven a la terminación</li>
+                    </ul>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>10. Descargos de Responsabilidad</h2>
+
+                    <h3>10.1 Provisión "Tal Cual"</h3>
+                    <p>LA APLICACIÓN SE PROPORCIONA "TAL CUAL" Y "SEGÚN DISPONIBILIDAD" SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS O IMPLÍCITAS, INCLUYENDO PERO NO LIMITADO A:</p>
+                    <ul>
+                        <li>Garantías implícitas de comerciabilidad</li>
+                        <li>Aptitud para un propósito particular</li>
+                        <li>No infracción</li>
+                        <li>Precisión o confiabilidad del contenido generado por IA</li>
+                        <li>Operación ininterrumpida o sin errores</li>
+                    </ul>
+
+                    <h3>10.2 Sin Respaldo Espiritual o Religioso</h3>
+                    <p>Devotion es una aplicación independiente y NO está:</p>
+                    <ul>
+                        <li>Afiliada, respaldada ni es representativa de ninguna iglesia, denominación u organización religiosa</li>
+                        <li>Es un sustituto de la adoración comunitaria, la orientación pastoral o la educación religiosa formal</li>
+                        <li>Garantizada como teológicamente precisa o integral</li>
+                    </ul>
+
+                    <h3>10.3 Limitaciones de la IA</h3>
+                    <p>La inteligencia artificial tiene limitaciones inherentes. El contenido generado por IA puede:</p>
+                    <ul>
+                        <li>Contener errores en citas de escrituras o hechos históricos</li>
+                        <li>Producir interpretaciones teológicas inconsistentes</li>
+                        <li>No reflejar las posiciones doctrinales específicas de su comunidad de fe</li>
+                        <li>No estar disponible durante interrupciones del servicio</li>
+                    </ul>
+                </section>
+
+                <section id="limitation" class="policy-section">
+                    <h2>11. Limitación de Responsabilidad</h2>
+                    <p>EN LA MEDIDA MÁXIMA PERMITIDA POR LA LEY APLICABLE:</p>
+                    <ul>
+                        <li>Believe PR NO será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos</li>
+                        <li>Esto incluye, pero no se limita a: pérdida de datos, angustia espiritual, daño emocional o cualquier daño que surja de la dependencia del contenido generado por IA</li>
+                        <li>Nuestra responsabilidad total no excederá el mayor de (a) el monto que pagó por la Aplicación en los doce (12) meses anteriores a la reclamación, o (b) cincuenta dólares estadounidenses ($50.00)</li>
+                        <li>Algunas jurisdicciones no permiten ciertas exclusiones de responsabilidad; en tales casos, la responsabilidad se limita a la medida máxima permitida por la ley</li>
+                    </ul>
+                </section>
+
+                <section id="indemnification" class="policy-section">
+                    <h2>12. Indemnización</h2>
+                    <p>Usted acepta indemnizar, defender y mantener indemne a Believe PR, su propietario Armando Jimenez y cualquier afiliado de y contra cualquier reclamación, daño, pérdida, responsabilidad, costo y gasto (incluyendo honorarios razonables de abogados) que surjan de:</p>
+                    <ul>
+                        <li>Su uso o mal uso de la Aplicación</li>
+                        <li>Su violación de estos Términos</li>
+                        <li>Su violación de cualquier ley aplicable o los derechos de un tercero</li>
+                        <li>Cualquier acción tomada basándose en contenido generado por IA</li>
+                    </ul>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>13. Ley Aplicable</h2>
+
+                    <h3>13.1 Ley Vigente</h3>
+                    <p>Estos Términos se regirán e interpretarán de acuerdo con las leyes del Estado Libre Asociado de Puerto Rico, sin tener en cuenta sus disposiciones sobre conflictos de leyes.</p>
+
+                    <h3>13.2 Resolución de Disputas</h3>
+                    <p>Cualquier disputa que surja de estos Términos o de su uso de la Aplicación se resolverá mediante:</p>
+                    <ol>
+                        <li><strong>Negociación de Buena Fe:</strong> Le animamos a contactarnos primero para resolver cualquier inquietud de manera informal</li>
+                        <li><strong>Mediación:</strong> Si la negociación falla, las disputas pueden someterse a mediación</li>
+                        <li><strong>Reclamaciones Menores:</strong> Cualquiera de las partes puede presentar una acción individual en el tribunal de reclamaciones menores de Puerto Rico si la reclamación califica</li>
+                        <li><strong>Jurisdicción:</strong> Cualquier procedimiento legal se llevará ante los tribunales de Puerto Rico</li>
+                    </ol>
+
+                    <h3>13.3 Misceláneo</h3>
+                    <ul>
+                        <li><strong>Acuerdo Completo:</strong> Estos Términos, junto con la Política de Privacidad, constituyen el acuerdo completo entre usted y Believe PR</li>
+                        <li><strong>Divisibilidad:</strong> Si alguna disposición de estos Términos se considera inválida, las disposiciones restantes continúan en pleno vigor</li>
+                        <li><strong>Renuncia:</strong> No hacer cumplir alguna disposición no constituye una renuncia a esa disposición</li>
+                        <li><strong>Cesión:</strong> Usted no puede ceder sus derechos bajo estos Términos; nosotros podemos ceder los nuestros en cualquier momento</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>14. Cambios a los Términos</h2>
+                    <p>Nos reservamos el derecho de modificar estos Términos en cualquier momento. Cuando realicemos cambios:</p>
+                    <ul>
+                        <li>Se revisará la fecha de "Última Actualización" en la parte superior de esta página</li>
+                        <li>Los cambios significativos se comunicarán a través de la Aplicación o de la tienda de aplicaciones correspondiente</li>
+                        <li>Para cambios materiales, mostraremos un aviso destacado dentro de la aplicación y, cuando lo requiera la ley aplicable, solicitaremos su consentimiento renovado</li>
+                    </ul>
+                    <p>Le recomendamos revisar estos Términos periódicamente. Si no está de acuerdo con algún cambio, su único recurso es dejar de usar la Aplicación y cancelar cualquier suscripción activa.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>15. Información de Contacto</h2>
+                    <p>Si tiene preguntas, inquietudes o comentarios sobre estos Términos, contáctenos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo Electrónico:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Sitio Web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de Respuesta</h3>
+                    <p>Responderemos a su consulta dentro de:</p>
+                    <ul>
+                        <li>30 días para consultas generales</li>
+                        <li>72 horas para asuntos urgentes</li>
+                        <li>Según lo requiera la ley aplicable</li>
+                    </ul>
+
+                    <h3>Idioma Rector</h3>
+                    <p>Estos Términos y Condiciones se proporcionan en inglés y español. En caso de conflicto o inconsistencia entre las versiones en inglés y español, prevalecerá la versión en inglés.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última Actualización:</strong> 28 de febrero de 2026</p>
+                    <p><strong>Fecha de Vigencia:</strong> 28 de febrero de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
