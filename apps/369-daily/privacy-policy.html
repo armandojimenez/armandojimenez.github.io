@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="369-daily" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace(/\.html$/, '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - 369 Daily</title>
+    <meta name="description" content="Privacy Policy for 369 Daily manifestation app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">✨</div>
+                <div class="badge-text">
+                    <div class="badge-title">369 Daily</div>
+                    <div class="badge-subtitle">Your Daily Manifestation Ritual</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: March 1, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: March 1, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#privacy-first">Privacy-First Approach</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#how-we-use">How We Use Your Information</a></li>
+                    <li><a href="#data-storage">Data Storage & Security</a></li>
+                    <li><a href="#permissions">Permissions</a></li>
+                    <li><a href="#subscriptions">Subscriptions</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#changes">Changes to Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to 369 Daily ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. We are deeply committed to protecting your privacy.</p>
+                    <p>369 Daily is a manifestation app based on the 369 method, inspired by Nikola Tesla's fascination with the numbers 3, 6, and 9. The app guides you through a daily writing ritual: write your affirmation 3 times in the morning, 6 times in the afternoon, and 9 times in the evening. All affirmations and personal data remain entirely on your device.</p>
+                    <div class="highlight-box">
+                        <strong>✨ Our Privacy Promise:</strong>
+                        <ul>
+                            <li>All your data stays on YOUR device</li>
+                            <li>We CANNOT access your affirmations or entries</li>
+                            <li>No user accounts or email required</li>
+                            <li>Your manifestation practice is completely private</li>
+                            <li>Zero analytics or tracking</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Privacy-First Approach</h2>
+                    <p>369 Daily is built on a privacy-first foundation. We believe your manifestation practice, affirmations, and personal reflections should remain entirely private. Unlike many apps, we:</p>
+                    <ul>
+                        <li>Store all data locally on your device using a local database</li>
+                        <li>Never upload your affirmations, entries, or progress to any server</li>
+                        <li>Don't require email, login, or any user account</li>
+                        <li>Use zero analytics services -- no Firebase, no Crashlytics, no tracking whatsoever</li>
+                        <li>Include no advertising of any kind</li>
+                    </ul>
+                    <p><strong>Important:</strong> If you delete the app, all your data will be permanently lost. We cannot recover it because we never had access to it.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+                    <h3>3.1 Information You Create</h3>
+                    <p>All of the following data is stored locally on your device and is NOT transmitted to any server:</p>
+                    <ul>
+                        <li><strong>Affirmations:</strong> The manifestation text you write during 3-6-9 sessions</li>
+                        <li><strong>Session Progress:</strong> Completion status for morning, afternoon, and evening writing sessions</li>
+                        <li><strong>Cycle Data:</strong> Your manifestation cycle progress (33 or 45 day cycles)</li>
+                        <li><strong>Streak & Calendar Data:</strong> Daily completion history and streak counts</li>
+                        <li><strong>Daily Reflections:</strong> Personal reflections and journal entries</li>
+                        <li><strong>Notification Preferences:</strong> Your reminder schedule and settings</li>
+                        <li><strong>Theme Preferences:</strong> Session-aware theme and appearance choices</li>
+                        <li><strong>Language Preference:</strong> Your chosen language (English or Spanish)</li>
+                    </ul>
+
+                    <h3>3.2 Information Automatically Collected</h3>
+                    <p>369 Daily does NOT automatically collect any data. We use:</p>
+                    <ul>
+                        <li><strong>No analytics services</strong> -- zero usage tracking</li>
+                        <li><strong>No crash reporting services</strong> -- no crash data is transmitted</li>
+                        <li><strong>No remote configuration</strong> -- all settings are local</li>
+                    </ul>
+
+                    <h3>3.3 Information We Do NOT Collect</h3>
+                    <p>We explicitly do NOT collect or have access to:</p>
+                    <ul>
+                        <li>Your affirmations or manifestation text</li>
+                        <li>Your session history or writing entries</li>
+                        <li>Personal identification (name, email, phone, etc.)</li>
+                        <li>Location data</li>
+                        <li>Health data</li>
+                        <li>Social media profiles or contacts</li>
+                        <li>Device usage analytics or behavioral data</li>
+                        <li>Advertising identifiers</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. How We Use Your Information</h2>
+                    <h3>4.1 App Functionality (On-Device)</h3>
+                    <p>Your data is used entirely on your device to:</p>
+                    <ul>
+                        <li>Guide you through 369 writing sessions (3x morning, 6x afternoon, 9x evening)</li>
+                        <li>Track your manifestation cycle progress (33 or 45 day cycles)</li>
+                        <li>Display your streak count and progress calendar</li>
+                        <li>Send local session reminders at your preferred times</li>
+                        <li>Apply session-aware themes (morning, afternoon, evening color palettes)</li>
+                        <li>Generate shareable affirmation images</li>
+                        <li>Show daily reflection prompts</li>
+                    </ul>
+
+                    <h3>4.2 What We Do NOT Use Your Data For</h3>
+                    <p>Because we have zero access to your data:</p>
+                    <ul>
+                        <li>We do NOT analyze your affirmations or entries</li>
+                        <li>We do NOT use your data for advertising</li>
+                        <li>We do NOT sell or share your data with anyone</li>
+                        <li>We do NOT use your data for analytics or improvement</li>
+                    </ul>
+                    <p><strong>Your affirmations and entries never leave your device.</strong></p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Data Storage & Security</h2>
+                    <p>All your personal data is stored on your device using:</p>
+                    <ul>
+                        <li><strong>Database:</strong> Local SQLite/Drift database</li>
+                        <li><strong>iOS:</strong> Secure app sandbox with iOS encryption</li>
+                        <li><strong>Android:</strong> Internal app storage with Android security</li>
+                    </ul>
+                    <ul>
+                        <li>Data remains on your device indefinitely until you delete it</li>
+                        <li>Deleting the app removes all local data permanently</li>
+                        <li>No cloud backup or sync -- your data exists solely on your device</li>
+                    </ul>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>6. Permissions</h2>
+                    <h3>6.1 Required Permissions</h3>
+
+                    <h4>Notifications</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Session reminders (morning, afternoon, evening)</li>
+                        <li><strong>Privacy:</strong> Notifications are generic and do not contain your affirmations or personal data</li>
+                        <li><strong>Control:</strong> Fully configurable -- set your own reminder schedule or disable entirely</li>
+                    </ul>
+
+                    <h4>Local Storage</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> Save app data on your device</li>
+                    </ul>
+
+                    <h3>6.2 Permissions We DON'T Request</h3>
+                    <p>369 Daily does NOT request:</p>
+                    <ul>
+                        <li>Camera</li>
+                        <li>Location/GPS</li>
+                        <li>Contacts</li>
+                        <li>Calendar</li>
+                        <li>Health data</li>
+                        <li>Microphone</li>
+                        <li>Photo library</li>
+                        <li>Bluetooth</li>
+                    </ul>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>7. Subscriptions</h2>
+                    <h3>7.1 369 Daily Pro</h3>
+                    <p>We offer a premium subscription tier called 369 Daily Pro:</p>
+                    <ul>
+                        <li><strong>Plans:</strong> Monthly, Yearly, and Lifetime options</li>
+                        <li><strong>Payment:</strong> Managed via RevenueCat + Apple App Store / Google Play Store</li>
+                        <li><strong>Free Features:</strong> 1 cycle, core 3/6/9 sessions, basic notifications, auto theme</li>
+                        <li><strong>Premium Features:</strong> Unlimited cycles, custom themes, session windows, affirmation in notifications, and more</li>
+                        <li><strong>Cancellation:</strong> Cancel anytime in App Store or Play Store settings</li>
+                    </ul>
+
+                    <h3>7.2 Refund Policy</h3>
+                    <p>Refunds are handled through:</p>
+                    <ul>
+                        <li><strong>Apple:</strong> <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Google:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play refund page</a></li>
+                    </ul>
+                    <p>Refund policies are subject to Apple and Google's terms.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>8. Third-Party Services</h2>
+                    <p>369 Daily integrates only the following third-party services:</p>
+
+                    <h3>8.1 RevenueCat</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Subscription management for 369 Daily Pro</li>
+                        <li><strong>Data Collected:</strong> Purchase tokens, subscription status</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+                    </ul>
+
+                    <h3>8.2 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> App distribution and subscription payment processing</li>
+                        <li><strong>Data Collected:</strong> Purchase history, app downloads</li>
+                        <li><strong>Privacy Policies:</strong> See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a></li>
+                    </ul>
+
+                    <h3>8.3 Services We Do NOT Use</h3>
+                    <p>369 Daily does NOT use:</p>
+                    <ul>
+                        <li><strong>No Firebase</strong> -- no analytics, no remote config, no crash reporting</li>
+                        <li><strong>No advertising services</strong> -- no ads whatsoever</li>
+                        <li><strong>No AI services</strong> -- no cloud AI processing</li>
+                        <li><strong>No social media SDKs</strong> -- no third-party social integrations</li>
+                        <li><strong>No cloud storage</strong> -- no data sync or backup services</li>
+                    </ul>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>9. Your Privacy Rights</h2>
+                    <h3>9.1 GDPR Rights (European Union)</h3>
+                    <p>If you are in the EU, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Access:</strong> Request information about data collected</li>
+                        <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
+                        <li><strong>Right to Erasure:</strong> Request deletion of your data</li>
+                        <li><strong>Right to Data Portability:</strong> Receive your data in a portable format</li>
+                        <li><strong>Right to Object:</strong> Object to data processing</li>
+                        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
+                    </ul>
+
+                    <h3>9.2 CCPA Rights (California)</h3>
+                    <p>If you are in California, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Know:</strong> Request details about collected data</li>
+                        <li><strong>Right to Delete:</strong> Request deletion of personal information</li>
+                        <li><strong>Right to Opt-Out:</strong> Opt out of data sale (we do not sell data)</li>
+                        <li><strong>Right to Non-Discrimination:</strong> Equal service regardless of privacy choices</li>
+                    </ul>
+
+                    <h3>9.3 Exercising Your Rights</h3>
+                    <p>Since all data is stored locally on your device:</p>
+                    <ul>
+                        <li><strong>Access:</strong> All your data is accessible within the app at any time</li>
+                        <li><strong>Deletion:</strong> Delete your data by uninstalling the app or clearing app data in device settings</li>
+                        <li><strong>Control:</strong> You have full control over all your data since it never leaves your device</li>
+                    </ul>
+                    <p><strong>Note:</strong> Because we do not collect or store any personal data on our servers, most privacy rights are automatically fulfilled by our privacy-first design.</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>10. Children's Privacy</h2>
+                    <p>369 Daily is intended for a general audience aged 13 and older. We do not knowingly collect personal information from children under 13.</p>
+                    <ul>
+                        <li>Minimum age: 13 years old</li>
+                        <li>Parental supervision recommended for younger users</li>
+                        <li>Since no personal data is transmitted, the app provides inherent privacy protection for all users</li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>11. International Users</h2>
+                    <h3>11.1 Data Transfers</h3>
+                    <p>Since all your personal data is stored locally on your device, there are no international data transfers of your affirmations, session data, or progress information.</p>
+                    <p>The only data that may be processed externally is subscription purchase information, which is handled by RevenueCat and the Apple App Store / Google Play Store according to their respective privacy policies.</p>
+
+                    <h3>11.2 Regional Compliance</h3>
+                    <ul>
+                        <li><strong>European Union:</strong> GDPR compliant</li>
+                        <li><strong>California:</strong> CCPA compliant</li>
+                        <li><strong>Brazil:</strong> LGPD compliant</li>
+                        <li><strong>Other Regions:</strong> We respect all applicable privacy laws</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>12. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time to reflect:</p>
+                    <ul>
+                        <li>New app features or functionality</li>
+                        <li>Changes in legal requirements</li>
+                        <li>Third-party service updates</li>
+                        <li>User feedback and privacy enhancements</li>
+                    </ul>
+
+                    <h3>12.1 Notification of Changes</h3>
+                    <p>When we make significant changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>You will receive an in-app notification</li>
+                        <li>Changes will be highlighted in the policy</li>
+                        <li>Continued use constitutes acceptance</li>
+                    </ul>
+
+                    <h3>12.2 Review Regularly</h3>
+                    <p>We encourage you to review this Privacy Policy periodically. The most current version will always be available within the app and on our website.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>13. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <p>We will respond to your inquiry within:</p>
+                    <ul>
+                        <li>30 days for general inquiries</li>
+                        <li>72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for rights requests</li>
+                    </ul>
+
+                    <h3>Complaints</h3>
+                    <p>If you believe we have not adequately addressed your privacy concerns, you have the right to lodge a complaint with your local data protection authority.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> March 1, 2026</p>
+                    <p><strong>Effective Date:</strong> March 1, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

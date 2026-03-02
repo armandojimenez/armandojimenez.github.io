@@ -1,0 +1,217 @@
+/*
+ * 369 Daily - Custom Manifestation Theme
+ * Warm amber/gold with spiritual purple accents
+ */
+
+/* ===========================
+   Custom Color Palette - Manifestation Amber
+   =========================== */
+:root {
+    /* Light Theme - Warm Amber Cream */
+    --bg-primary: #faf8f3;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f5f0e4;
+    --bg-accent: #fdf4e3;
+
+    --text-primary: #1a1610;
+    --text-secondary: #6b5f4e;
+    --text-tertiary: #9b8e7a;
+    --text-link: #c47f17;
+    --text-link-hover: #a66a0f;
+
+    --border-color: #e8dfc8;
+    --border-light: #f2ead4;
+
+    --accent-primary: #c47f17;
+    --accent-secondary: #7c5cbf;
+    --accent-success: #4d9e6e;
+    --accent-warning: #e8a050;
+    --accent-danger: #d45d5d;
+}
+
+/* Dark Theme - Deep Spiritual Night */
+[data-theme="dark"] {
+    --bg-primary: #0d0b08;
+    --bg-secondary: #171410;
+    --bg-tertiary: #1f1b15;
+    --bg-accent: #261f14;
+
+    --text-primary: #f5f0e4;
+    --text-secondary: #c4baa0;
+    --text-tertiary: #8b8270;
+    --text-link: #e0a040;
+    --text-link-hover: #f0b860;
+
+    --border-color: #2e2618;
+    --border-light: #231d12;
+
+    --accent-primary: #e0a040;
+    --accent-secondary: #9b7de0;
+    --accent-success: #5fba82;
+    --accent-warning: #ebb06a;
+    --accent-danger: #e87878;
+}
+
+/* ===========================
+   Custom Highlight Boxes
+   =========================== */
+.highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #fef9ef 100%);
+    border-left-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #1a1610 100%);
+}
+
+.highlight-box.warning {
+    background: linear-gradient(135deg, rgba(196, 127, 23, 0.15) 0%, rgba(196, 127, 23, 0.05) 100%);
+    border-left-color: var(--accent-warning);
+}
+
+/* ===========================
+   Custom App Badge
+   =========================== */
+.app-badge {
+    background: linear-gradient(135deg, #fff 0%, #fef9ef 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .app-badge {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #1a1610 100%);
+}
+
+/* ===========================
+   Custom Section Headers
+   =========================== */
+.policy-section h2 {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom-color: var(--accent-primary);
+}
+
+/* ===========================
+   Theme Toggle Custom Colors
+   =========================== */
+.theme-toggle {
+    background: linear-gradient(135deg, #fff 0%, #fef9ef 100%);
+    border-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #1a1610 100%);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 16px rgba(196, 127, 23, 0.2);
+}
+
+/* ===========================
+   Navigation Links
+   =========================== */
+.nav-link {
+    background: var(--bg-accent);
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+/* ===========================
+   Contact Card Custom Style
+   =========================== */
+.contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #fef9ef 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #1a1610 100%);
+}
+
+.contact-card h3 {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===========================
+   TOC Active State
+   =========================== */
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+/* ===========================
+   Scrollbar Custom Colors
+   =========================== */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* ===========================
+   Selection Color
+   =========================== */
+::selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* ===========================
+   Back to Top Button
+   =========================== */
+.back-to-top {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%) !important;
+}
+
+.back-to-top:hover {
+    background: var(--accent-primary) !important;
+    box-shadow: 0 8px 24px rgba(196, 127, 23, 0.3) !important;
+}
+
+/* ===========================
+   Custom Subtle Glow Animation
+   =========================== */
+@keyframes amberGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(196, 127, 23, 0.08);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(196, 127, 23, 0.15);
+    }
+}
+
+.policy-header {
+    animation: amberGlow 3s ease-in-out infinite;
+}
+
+/* ===========================
+   Link Underline Effect
+   =========================== */
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
