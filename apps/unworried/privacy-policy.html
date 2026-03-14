@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="unworried" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Unworried</title>
+    <meta name="description" content="Privacy Policy for Unworried - Peace in any moment">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">&#127807;</div>
+                <div class="badge-text">
+                    <div class="badge-title">Unworried</div>
+                    <div class="badge-subtitle">Peace in Any Moment</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: March 14, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: March 14, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#privacy-first">Privacy-First Approach</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#how-we-use">How We Use Your Information</a></li>
+                    <li><a href="#data-storage">Data Storage & Security</a></li>
+                    <li><a href="#ai-features">AI-Powered Perspectives</a></li>
+                    <li><a href="#permissions">App Permissions</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#changes">Changes to Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to Unworried ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. We are deeply committed to protecting your privacy and personal data.</p>
+                    <p>Unworried is a wellness application designed to help you build the personality trait of being cool under pressure. Describe what's on your mind, and receive an AI-generated fresh perspective to help you let go of worry and find peace in any moment.</p>
+                    <div class="highlight-box">
+                        <strong>&#127807; Our Privacy Promise:</strong>
+                        <ul>
+                            <li>All your journal entries and perspectives stay on YOUR device</li>
+                            <li>We CANNOT access your personal entries or situations</li>
+                            <li>No user accounts or sign-ups required</li>
+                            <li>No ads, no tracking, no data selling</li>
+                            <li>Your emotional wellbeing data is yours alone</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Privacy-First Approach</h2>
+                    <h3>2.1 Our Philosophy</h3>
+                    <p>Unworried is built on a privacy-first foundation. We believe your thoughts, worries, and personal reflections should remain private. Unlike many apps, we:</p>
+                    <ul>
+                        <li>&#10003; Store all data locally on your device</li>
+                        <li>&#10003; Never upload your journal entries to our servers</li>
+                        <li>&#10003; Don't require user accounts or email addresses</li>
+                        <li>&#10003; Don't display advertisements</li>
+                        <li>&#10003; Don't use analytics or tracking services</li>
+                        <li>&#10003; Can't read your situations or perspectives</li>
+                    </ul>
+
+                    <h3>2.2 What This Means for You</h3>
+                    <p>When you use Unworried:</p>
+                    <ul>
+                        <li>Your situations and perspectives remain on your phone</li>
+                        <li>Your journal entries never leave your device (except briefly for AI processing)</li>
+                        <li>Your streak data stays local</li>
+                        <li>Your favorites and preferences are stored on-device</li>
+                    </ul>
+
+                    <p><strong>Important:</strong> If you delete the app without exporting your data, all your entries will be permanently lost. We cannot recover them because we never had access to them.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+                    <h3>3.1 Information You Create</h3>
+                    <p>All of the following data is stored locally on your device and NOT stored on our servers:</p>
+                    <ul>
+                        <li><strong>Situations:</strong> The text you type describing what's on your mind (up to 2,000 characters)</li>
+                        <li><strong>Perspectives:</strong> AI-generated responses stored locally after creation</li>
+                        <li><strong>Favorites:</strong> Perspectives you mark as favorites</li>
+                        <li><strong>Streak Data:</strong> Daily activity tracking (dates and counts)</li>
+                        <li><strong>Preferences:</strong> Language choice, notification settings, reminder times</li>
+                    </ul>
+
+                    <h3>3.2 Information Processed Temporarily</h3>
+                    <p>When you request a new perspective, the following is sent temporarily to Google's Firebase AI service:</p>
+                    <ul>
+                        <li><strong>Situation Text:</strong> Your typed description is sent to generate a perspective</li>
+                        <li><strong>Language Preference:</strong> Your selected language (English or Spanish) for response generation</li>
+                    </ul>
+                    <p><strong>Note:</strong> This data is processed in real-time and is not stored on Google's servers beyond the immediate processing needed to generate the response. See Section 6 for details.</p>
+
+                    <h3>3.3 Automatically Collected Information</h3>
+                    <p>In production (release) builds only, Firebase Crashlytics may collect:</p>
+                    <ul>
+                        <li><strong>Crash Reports:</strong> Technical error data (stack traces) when the app crashes</li>
+                        <li><strong>Device Information:</strong> Device model, OS version (for debugging purposes only)</li>
+                    </ul>
+                    <p><strong>Note:</strong> Crash reports do NOT include your personal content, situations, or perspectives.</p>
+
+                    <h3>3.4 Information We Do NOT Collect</h3>
+                    <p>We explicitly do NOT collect or have access to:</p>
+                    <ul>
+                        <li>&#10007; Your situations or perspective entries</li>
+                        <li>&#10007; Personal identification information (name, email, phone, etc.)</li>
+                        <li>&#10007; Location data</li>
+                        <li>&#10007; Photos, camera, or microphone data</li>
+                        <li>&#10007; Contacts or calendar data</li>
+                        <li>&#10007; Browsing history or app usage analytics</li>
+                        <li>&#10007; Advertising identifiers</li>
+                        <li>&#10007; Health data from Apple Health or Google Fit</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. How We Use Your Information</h2>
+                    <h3>4.1 App Functionality (On-Device)</h3>
+                    <p>Your data is used entirely on your device to:</p>
+                    <ul>
+                        <li>Display your journal of past perspectives</li>
+                        <li>Track your daily streaks</li>
+                        <li>Manage your favorite perspectives</li>
+                        <li>Send you local notification reminders</li>
+                        <li>Export your journal as CSV when you choose</li>
+                        <li>Share individual perspectives when you choose</li>
+                    </ul>
+
+                    <h3>4.2 AI Perspective Generation</h3>
+                    <p>When you submit a situation:</p>
+                    <ul>
+                        <li>Your text is sent to Google's Firebase AI (Gemini) to generate a fresh perspective</li>
+                        <li>The generated perspective is returned and saved locally on your device</li>
+                        <li>Your situation text is not stored on Google's servers beyond the processing session</li>
+                    </ul>
+
+                    <h3>4.3 App Improvement</h3>
+                    <p>Anonymous crash reports (production only) help us:</p>
+                    <ul>
+                        <li>Fix bugs and improve stability</li>
+                        <li>Optimize performance</li>
+                    </ul>
+                    <p>Crash reports do NOT include your personal content or entries.</p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Data Storage & Security</h2>
+                    <h3>5.1 Local Storage</h3>
+                    <p>All your personal data is stored on your device using:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Secure app sandbox with iOS encryption</li>
+                        <li><strong>Android:</strong> Internal app storage with Android security</li>
+                        <li><strong>Database:</strong> Local SQLite database (unworried.sqlite)</li>
+                    </ul>
+
+                    <h3>5.2 Encryption</h3>
+                    <ul>
+                        <li><strong>At Rest:</strong> Your device's built-in encryption protects stored data</li>
+                        <li><strong>In Transit:</strong> All communication with Firebase services uses HTTPS/TLS encryption</li>
+                    </ul>
+
+                    <h3>5.3 Security Measures</h3>
+                    <ul>
+                        <li>No server-side storage of personal content</li>
+                        <li>Secure coding practices</li>
+                        <li>Minimal data transmission (only for AI perspective generation)</li>
+                        <li>No third-party analytics or tracking SDKs</li>
+                    </ul>
+
+                    <h3>5.4 Data Retention</h3>
+                    <ul>
+                        <li>Data remains on your device indefinitely until you delete it</li>
+                        <li>You can delete all data at any time via Settings &rarr; Delete All Data</li>
+                        <li>You can export your journal as CSV before deleting</li>
+                        <li>Deleting the app removes all local data permanently</li>
+                    </ul>
+                </section>
+
+                <section id="ai-features" class="policy-section">
+                    <h2>6. AI-Powered Perspectives</h2>
+                    <h3>6.1 How AI Works in Unworried</h3>
+                    <p>Unworried uses artificial intelligence to provide fresh perspectives on your situations:</p>
+                    <ul>
+                        <li><strong>AI Model:</strong> Google Gemini 2.5 Flash Lite via Firebase AI</li>
+                        <li><strong>Process:</strong> Your situation text is sent to Firebase AI, a perspective is generated, and the response is saved locally</li>
+                        <li><strong>Content Safety:</strong> The AI model includes built-in content safety filtering</li>
+                        <li><strong>Language:</strong> Perspectives are generated in your selected language (English or Spanish)</li>
+                    </ul>
+
+                    <h3>6.2 Privacy in AI Processing</h3>
+                    <p>Important privacy protections:</p>
+                    <ul>
+                        <li>&#10003; Situation text is sent only when you tap to generate a perspective</li>
+                        <li>&#10003; Data is processed in real-time and not stored by Google beyond the session</li>
+                        <li>&#10003; Generated perspectives are saved locally on your device only</li>
+                        <li>&#10003; No user profile or history is maintained on the server side</li>
+                        <li>&#10003; Each request is independent with no user tracking</li>
+                    </ul>
+
+                    <h3>6.3 Limitations & Disclaimers</h3>
+                    <div class="highlight-box warning">
+                        <strong>&#9888; AI Perspectives are NOT Medical or Professional Advice</strong>
+                        <p>Unworried's AI-generated perspectives are:</p>
+                        <ul>
+                            <li>For self-reflection and personal growth purposes only</li>
+                            <li>Not a substitute for professional mental health care</li>
+                            <li>Not diagnostic tools</li>
+                            <li>Generated by AI and may not always be applicable to your situation</li>
+                        </ul>
+                        <p><strong>If you are experiencing mental health concerns, please consult a licensed mental health professional.</strong></p>
+                    </div>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>7. App Permissions</h2>
+                    <h3>7.1 Required Permissions</h3>
+
+                    <h4>Notifications</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> To send you daily reminders and streak notifications</li>
+                        <li><strong>When Requested:</strong> During onboarding or when enabling reminders in Settings</li>
+                        <li><strong>What We Send:</strong> Generic reminders ("Time to unworry")</li>
+                        <li><strong>Privacy:</strong> Notifications are scheduled locally and don't contain your personal data</li>
+                    </ul>
+
+                    <h3>7.2 Permissions We DON'T Request</h3>
+                    <p>Unworried does NOT request:</p>
+                    <ul>
+                        <li>&#10007; Camera access</li>
+                        <li>&#10007; Photo library access</li>
+                        <li>&#10007; Microphone access</li>
+                        <li>&#10007; Location/GPS access</li>
+                        <li>&#10007; Contacts access</li>
+                        <li>&#10007; Calendar access</li>
+                        <li>&#10007; Health data access</li>
+                        <li>&#10007; Bluetooth access</li>
+                    </ul>
+
+                    <h3>7.3 Managing Permissions</h3>
+                    <p>You can manage notification permissions in your device settings:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Settings &rarr; Unworried &rarr; Notifications</li>
+                        <li><strong>Android:</strong> Settings &rarr; Apps &rarr; Unworried &rarr; Notifications</li>
+                    </ul>
+                    <p>Disabling notifications will not affect app functionality.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>8. Third-Party Services</h2>
+                    <p>Unworried integrates the following third-party services:</p>
+
+                    <h3>8.1 Firebase AI (Google Gemini)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Generating AI perspectives from your situation text</li>
+                        <li><strong>Data Sent:</strong> Your situation text and language preference (NOT stored server-side)</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                    </ul>
+
+                    <h3>8.2 Firebase Crashlytics</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Crash reporting for app stability (production only)</li>
+                        <li><strong>Data Collected:</strong> Stack traces, device model, OS version (NOT your personal content)</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+                    </ul>
+
+                    <h3>8.3 Firebase Remote Config</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Remote configuration of AI model selection</li>
+                        <li><strong>Data Collected:</strong> No personal data; fetches configuration values only</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+                    </ul>
+
+                    <h3>8.4 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> App distribution</li>
+                        <li><strong>Data Collected:</strong> App downloads and updates</li>
+                        <li><strong>Privacy Policies:</strong> See Apple and Google policies above</li>
+                    </ul>
+
+                    <h3>8.5 No Analytics or Advertising Services</h3>
+                    <p>We do NOT use third-party analytics services (Google Analytics, Firebase Analytics, Mixpanel, etc.) or advertising services (Google AdMob, etc.). The only data transmitted is for AI perspective generation and crash reporting.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>9. Your Privacy Rights</h2>
+                    <h3>9.1 GDPR Rights (European Union)</h3>
+                    <p>If you are in the EU, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Access:</strong> All your data is accessible within the app at any time</li>
+                        <li><strong>Right to Rectification:</strong> Edit or update your data within the app</li>
+                        <li><strong>Right to Erasure:</strong> Delete individual entries or all data via Settings</li>
+                        <li><strong>Right to Data Portability:</strong> Export your journal as CSV via Settings</li>
+                        <li><strong>Right to Object:</strong> You control all data processing through app settings</li>
+                        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time by disabling features</li>
+                    </ul>
+
+                    <h3>9.2 CCPA Rights (California)</h3>
+                    <p>If you are in California, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Know:</strong> This policy describes all data practices</li>
+                        <li><strong>Right to Delete:</strong> Delete all data via Settings &rarr; Delete All Data</li>
+                        <li><strong>Right to Opt-Out:</strong> We do not sell data</li>
+                        <li><strong>Right to Non-Discrimination:</strong> Equal service regardless of privacy choices</li>
+                    </ul>
+
+                    <h3>9.3 Exercising Your Rights</h3>
+                    <p>Since all data is stored locally on your device:</p>
+                    <ul>
+                        <li><strong>Access:</strong> Open the app to view all your data</li>
+                        <li><strong>Deletion:</strong> Settings &rarr; Delete All Data</li>
+                        <li><strong>Export:</strong> Settings &rarr; Export Journal (CSV format)</li>
+                        <li><strong>Notifications:</strong> Manage via device settings or in-app settings</li>
+                    </ul>
+
+                    <p>For questions about third-party data processing (Firebase), contact us at: <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>10. Children's Privacy</h2>
+                    <h3>10.1 Age Requirements</h3>
+                    <p>Unworried is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13.</p>
+                    <ul>
+                        <li>Minimum age: 13 years old</li>
+                        <li>Parental supervision recommended for teens</li>
+                    </ul>
+
+                    <h3>10.2 Mental Wellness Considerations</h3>
+                    <p>For young users:</p>
+                    <ul>
+                        <li>The app is designed for self-reflection, not therapy</li>
+                        <li>Parents should monitor usage</li>
+                        <li>Encourage professional help for mental health concerns</li>
+                        <li>Reminders can be disabled if they cause stress</li>
+                    </ul>
+
+                    <h3>10.3 Parental Controls</h3>
+                    <p>Parents can:</p>
+                    <ul>
+                        <li>Use device parental controls to restrict app usage</li>
+                        <li>Monitor app activity through device screen time features</li>
+                        <li>Control notification permissions</li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>11. International Users</h2>
+                    <h3>11.1 Data Transfers</h3>
+                    <p>All your personal data is stored locally on your device. The only international data transfer occurs when:</p>
+                    <ul>
+                        <li>You request an AI perspective (situation text is sent to Google's Firebase AI servers for processing)</li>
+                        <li>A crash occurs in production (anonymous crash data is sent to Firebase Crashlytics)</li>
+                    </ul>
+                    <p>Google's servers may be located in the United States or other countries. See Google's privacy policy for details on their data handling practices.</p>
+
+                    <h3>11.2 Regional Compliance</h3>
+                    <ul>
+                        <li><strong>European Union:</strong> GDPR compliant</li>
+                        <li><strong>California:</strong> CCPA compliant</li>
+                        <li><strong>Brazil:</strong> LGPD compliant</li>
+                        <li><strong>Other Regions:</strong> We respect all applicable privacy laws</li>
+                    </ul>
+
+                    <h3>11.3 Language Support</h3>
+                    <p>This Privacy Policy is available in English and Spanish. In case of conflicts, the English version shall prevail.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>12. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time to reflect:</p>
+                    <ul>
+                        <li>New app features or functionality</li>
+                        <li>Changes in legal requirements</li>
+                        <li>Third-party service updates</li>
+                        <li>User feedback and privacy enhancements</li>
+                    </ul>
+
+                    <h3>12.1 Notification of Changes</h3>
+                    <p>When we make significant changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>Changes will be highlighted in the policy</li>
+                        <li>Continued use constitutes acceptance</li>
+                    </ul>
+
+                    <h3>12.2 Review Regularly</h3>
+                    <p>We encourage you to review this Privacy Policy periodically. The most current version will always be available within the app and on our website.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>13. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <p>We will respond to your inquiry within:</p>
+                    <ul>
+                        <li>30 days for general inquiries</li>
+                        <li>72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for rights requests</li>
+                    </ul>
+
+                    <h3>Complaints</h3>
+                    <p>If you believe we have not adequately addressed your privacy concerns, you have the right to lodge a complaint with your local data protection authority.</p>
+
+                    <h3>Mental Health Resources</h3>
+                    <p>If you are experiencing a mental health crisis:</p>
+                    <ul>
+                        <li><strong>US:</strong> National Suicide Prevention Lifeline: 988</li>
+                        <li><strong>US:</strong> Crisis Text Line: Text HOME to 741741</li>
+                        <li><strong>International:</strong> Visit <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a></li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> March 14, 2026</p>
+                    <p><strong>Effective Date:</strong> March 14, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

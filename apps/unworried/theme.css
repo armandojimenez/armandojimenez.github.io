@@ -1,0 +1,217 @@
+/*
+ * Unworried - Custom Sage Green Theme
+ * Overrides for policy pages
+ */
+
+/* ===========================
+   Custom Color Palette - Sage Green / Morning Light
+   =========================== */
+:root {
+    /* Override Light Theme with Sage Green */
+    --bg-primary: #faf8f4;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e4ece4;
+    --bg-accent: #f0ece6;
+
+    --text-primary: #1e1d1a;
+    --text-secondary: #6e6a63;
+    --text-tertiary: #a09a92;
+    --text-link: #5c7c5e;
+    --text-link-hover: #4e6b50;
+
+    --border-color: #e4dfd8;
+    --border-light: #eeebe6;
+
+    --accent-primary: #5c7c5e;
+    --accent-secondary: #c4956a;
+    --accent-success: #5c7c5e;
+    --accent-warning: #c4956a;
+    --accent-danger: #b86b62;
+}
+
+/* Dark Theme with Sage Green Accents */
+[data-theme="dark"] {
+    --bg-primary: #111310;
+    --bg-secondary: #1c1f1a;
+    --bg-tertiary: #252923;
+    --bg-accent: #2e332c;
+
+    --text-primary: #faf8f4;
+    --text-secondary: #c4bfb6;
+    --text-tertiary: #8e897f;
+    --text-link: #8fb891;
+    --text-link-hover: #a8cca9;
+
+    --border-color: #3a3f37;
+    --border-light: #2e332c;
+
+    --accent-primary: #8fb891;
+    --accent-secondary: #d4a87a;
+    --accent-success: #8fb891;
+    --accent-warning: #d4a87a;
+    --accent-danger: #cc7f76;
+}
+
+/* ===========================
+   Custom Highlight Boxes
+   =========================== */
+.highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #f5f8f2 100%);
+    border-left-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #1f241e 100%);
+}
+
+.highlight-box.warning {
+    background: linear-gradient(135deg, rgba(196, 149, 106, 0.15) 0%, rgba(196, 149, 106, 0.05) 100%);
+    border-left-color: var(--accent-warning);
+}
+
+/* ===========================
+   Custom App Badge
+   =========================== */
+.app-badge {
+    background: linear-gradient(135deg, #fff 0%, #f2f6f0 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .app-badge {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #222820 100%);
+}
+
+/* ===========================
+   Custom Section Headers
+   =========================== */
+.policy-section h2 {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom-color: var(--accent-primary);
+}
+
+/* ===========================
+   Theme Toggle Custom Colors
+   =========================== */
+.theme-toggle {
+    background: linear-gradient(135deg, #fff 0%, #f4f7f2 100%);
+    border-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #262c24 100%);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 16px rgba(92, 124, 94, 0.2);
+}
+
+/* ===========================
+   Navigation Links
+   =========================== */
+.nav-link {
+    background: var(--bg-accent);
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+/* ===========================
+   Contact Card Custom Style
+   =========================== */
+.contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #f5f8f2 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #1f241e 100%);
+}
+
+.contact-card h3 {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===========================
+   TOC Active State
+   =========================== */
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+/* ===========================
+   Scrollbar Custom Colors
+   =========================== */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* ===========================
+   Selection Color
+   =========================== */
+::selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* ===========================
+   Back to Top Button (from JS)
+   =========================== */
+.back-to-top {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%) !important;
+}
+
+.back-to-top:hover {
+    background: var(--accent-primary) !important;
+    box-shadow: 0 8px 24px rgba(92, 124, 94, 0.3) !important;
+}
+
+/* ===========================
+   Custom Animations for Sage Theme
+   =========================== */
+@keyframes sageGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(92, 124, 94, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(92, 124, 94, 0.2);
+    }
+}
+
+.policy-header {
+    animation: sageGlow 3s ease-in-out infinite;
+}
+
+/* ===========================
+   Link Underline Effect
+   =========================== */
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
