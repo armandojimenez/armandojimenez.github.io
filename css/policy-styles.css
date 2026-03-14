@@ -98,6 +98,7 @@ html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 body {
@@ -213,8 +214,11 @@ body {
    =========================== */
 .container {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     padding: var(--space-lg) var(--space-md);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 @media (min-width: 768px) {
@@ -328,14 +332,14 @@ body {
    =========================== */
 .content-wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--space-xl);
     margin-top: var(--space-xl);
 }
 
 @media (min-width: 1024px) {
     .content-wrapper {
-        grid-template-columns: 280px 1fr;
+        grid-template-columns: 280px minmax(0, 1fr);
         gap: var(--space-2xl);
     }
 }
@@ -755,20 +759,25 @@ body {
     .policy-title {
         font-size: 2rem;
     }
-    
+
     .app-badge {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .policy-meta {
+        flex-direction: column;
         font-size: 0.85rem;
     }
-    
+
+    .meta-divider {
+        display: none;
+    }
+
     .table-of-contents {
         display: none;
     }
-    
+
     .theme-toggle {
         top: 1rem;
         right: 1rem;
