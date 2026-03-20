@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="curio" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Pol&iacute;tica de Privacidad - Curio</title>
+    <meta name="description" content="Pol&iacute;tica de Privacidad de Curio - Aplicaci&oacute;n de descubrimiento de datos curiosos impulsada por IA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">💡</div>
+                <div class="badge-text">
+                    <div class="badge-title">Curio</div>
+                    <div class="badge-subtitle">Escribe cualquier cosa. Aprende algo que no sabías.</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última Actualización: 20 de marzo de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha de Vigencia: 20 de marzo de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#information-collection">Información que Recopilamos</a></li>
+                    <li><a href="#how-we-use">Cómo Usamos su Información</a></li>
+                    <li><a href="#data-storage">Almacenamiento y Seguridad de Datos</a></li>
+                    <li><a href="#ai-features">Generación de Datos Curiosos con IA</a></li>
+                    <li><a href="#subscriptions">Suscripciones</a></li>
+                    <li><a href="#third-party">Servicios de Terceros</a></li>
+                    <li><a href="#your-rights">Sus Derechos de Privacidad</a></li>
+                    <li><a href="#children">Privacidad de Menores</a></li>
+                    <li><a href="#international">Usuarios Internacionales</a></li>
+                    <li><a href="#changes">Cambios a la Política</a></li>
+                    <li><a href="#contact">Contáctenos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Bienvenido a Curio ("la Aplicación"), desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Estamos comprometidos a proteger su privacidad mientras le ofrecemos una experiencia encantadora de descubrimiento de datos curiosos.</p>
+                    <p>Curio es una aplicación impulsada por inteligencia artificial que genera datos curiosos e interesantes sobre cualquier tema que escriba. Elija entre múltiples tonos — Curioso, Juguetón, Académico, Ingenioso o Poético — y descubra cosas fascinantes que no sabía.</p>
+                    <div class="highlight-box">
+                        <strong>💡 Aspectos Destacados de Privacidad:</strong>
+                        <ul>
+                            <li>Su historial de datos curiosos se almacena localmente en SU dispositivo</li>
+                            <li>Los temas que ingresa se envían a Google Gemini AI para generar datos curiosos</li>
+                            <li>Usamos Firebase Analytics para mejorar la experiencia de la aplicación</li>
+                            <li>NO mostramos publicidad</li>
+                            <li>NO requerimos cuentas de usuario ni direcciones de correo electrónico</li>
+                            <li>NO vendemos sus datos personales</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>2. Información que Recopilamos</h2>
+                    <h3>2.1 Información que Usted Proporciona</h3>
+                    <p>Cuando usa Curio, usted proporciona la siguiente información:</p>
+                    <ul>
+                        <li><strong>Temas/Consultas:</strong> El texto que escribe para solicitar datos curiosos. Estos se envían al servicio de IA Gemini de Google para su procesamiento y se almacenan localmente en su dispositivo</li>
+                        <li><strong>Preferencias de Tono:</strong> Su tono seleccionado (Curioso, Juguetón, Académico, Ingenioso o Poético) se almacena localmente</li>
+                        <li><strong>Preferencia de Tema Visual:</strong> Su elección de tema claro/oscuro/automático se almacena localmente</li>
+                    </ul>
+
+                    <h3>2.2 Información Recopilada Automáticamente</h3>
+                    <p>Recopilamos los siguientes datos automáticamente a través de servicios integrados:</p>
+
+                    <h4>Firebase Analytics</h4>
+                    <ul>
+                        <li><strong>Eventos de Uso:</strong> Solicitudes de datos curiosos (tema truncado a 100 caracteres), selecciones de tono, cambios de tema visual, vistas de historial, datos curiosos compartidos</li>
+                        <li><strong>Información del Dispositivo:</strong> Modelo del dispositivo, versión del sistema operativo, versión de la aplicación</li>
+                        <li><strong>Interacciones con la Aplicación:</strong> Vistas de pantalla y patrones de navegación</li>
+                    </ul>
+
+                    <h4>Firebase Crashlytics</h4>
+                    <ul>
+                        <li><strong>Reportes de Fallos:</strong> Datos técnicos de fallos, trazas de pila, estado del dispositivo al momento del fallo</li>
+                        <li><strong>Registros de Errores:</strong> Errores no fatales para ayudarnos a mejorar la estabilidad</li>
+                    </ul>
+                    <p><strong>Nota:</strong> Analytics y Crashlytics solo están activos en la versión de producción de la aplicación.</p>
+
+                    <h4>RevenueCat (Gestión de Suscripciones)</h4>
+                    <ul>
+                        <li><strong>Estado de Suscripción:</strong> Si tiene una suscripción gratuita o Pro</li>
+                        <li><strong>ID de Usuario Anónimo:</strong> Un identificador aleatorio para gestión de suscripciones (no vinculado a su identidad)</li>
+                    </ul>
+
+                    <h3>2.3 Propiedades de Usuario</h3>
+                    <p>Establecemos las siguientes propiedades de usuario anónimas en Firebase Analytics:</p>
+                    <ul>
+                        <li><strong>Nivel de Suscripción:</strong> "pro" o "free"</li>
+                        <li><strong>Tono Preferido:</strong> Su selección de tono predeterminado</li>
+                    </ul>
+
+                    <h3>2.4 Información que NO Recopilamos</h3>
+                    <p>Explícitamente NO recopilamos:</p>
+                    <ul>
+                        <li>❌ Información de identificación personal (nombre, correo electrónico, número de teléfono)</li>
+                        <li>❌ Datos de ubicación</li>
+                        <li>❌ Fotos, cámara o datos de micrófono</li>
+                        <li>❌ Contactos o libreta de direcciones</li>
+                        <li>❌ Datos de salud o fitness</li>
+                        <li>❌ Perfiles de redes sociales</li>
+                        <li>❌ Identificadores de publicidad (no tenemos anuncios)</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>3. Cómo Usamos su Información</h2>
+                    <h3>3.1 Funcionalidad Principal</h3>
+                    <p>Sus temas se usan para:</p>
+                    <ul>
+                        <li>Enviar a Google Gemini AI para generar datos curiosos interesantes</li>
+                        <li>Almacenar su historial de datos curiosos localmente para que pueda revisar descubrimientos anteriores</li>
+                        <li>Aplicar su tono preferido para personalizar la presentación de datos curiosos</li>
+                    </ul>
+
+                    <h3>3.2 Mejora de la Aplicación</h3>
+                    <p>Los datos de analytics nos ayudan a:</p>
+                    <ul>
+                        <li>Entender qué funciones son más populares</li>
+                        <li>Corregir errores y mejorar la estabilidad de la aplicación</li>
+                        <li>Optimizar la experiencia del usuario</li>
+                        <li>Tomar decisiones informadas sobre nuevas funciones</li>
+                    </ul>
+                    <p>Los datos de analytics son agregados y anonimizados. No los usamos para crear perfiles personales ni para dirigirnos a individuos.</p>
+
+                    <h3>3.3 Gestión de Suscripciones</h3>
+                    <p>Los datos de RevenueCat se usan para:</p>
+                    <ul>
+                        <li>Verificar su estado de suscripción (gratuita vs. Pro)</li>
+                        <li>Aplicar el límite diario de solicitudes gratuitas (5 por día)</li>
+                        <li>Proporcionar acceso ilimitado para suscriptores Pro</li>
+                    </ul>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>4. Almacenamiento y Seguridad de Datos</h2>
+                    <h3>4.1 Almacenamiento Local</h3>
+                    <p>Sus datos personales se almacenan en su dispositivo usando:</p>
+                    <ul>
+                        <li><strong>Base de Datos SQLite:</strong> Consultas de datos curiosos, respuestas, marcas de tiempo y preferencias almacenadas mediante Drift ORM</li>
+                        <li><strong>iOS:</strong> Sandbox seguro de aplicación con cifrado de iOS</li>
+                        <li><strong>Android:</strong> Almacenamiento interno de aplicación con seguridad de Android</li>
+                    </ul>
+
+                    <h3>4.2 Datos en la Nube</h3>
+                    <p>Los siguientes datos se procesan o almacenan en la nube:</p>
+                    <ul>
+                        <li><strong>Temas:</strong> Enviados a Google Gemini AI para generación de datos curiosos (procesados y no retenidos por nosotros)</li>
+                        <li><strong>Eventos de Analytics:</strong> Almacenados en Firebase Analytics (infraestructura de Google Cloud)</li>
+                        <li><strong>Reportes de Fallos:</strong> Almacenados en Firebase Crashlytics (infraestructura de Google Cloud)</li>
+                        <li><strong>Datos de Suscripción:</strong> Gestionados por RevenueCat</li>
+                    </ul>
+
+                    <h3>4.3 Medidas de Seguridad</h3>
+                    <ul>
+                        <li>Todas las comunicaciones de red usan cifrado HTTPS</li>
+                        <li>Firebase App Check ayuda a proteger contra abuso de API</li>
+                        <li>Los datos locales están protegidos por el cifrado integrado de su dispositivo</li>
+                        <li>Seguimos prácticas de codificación segura</li>
+                        <li>Las solicitudes de IA tienen un tiempo de espera de 15 segundos para prevenir conexiones colgadas</li>
+                    </ul>
+
+                    <h3>4.4 Retención de Datos</h3>
+                    <ul>
+                        <li><strong>Datos Locales:</strong> Permanecen en su dispositivo hasta que los elimine o desinstale la aplicación</li>
+                        <li><strong>Datos de Analytics:</strong> Retenidos según las políticas de retención predeterminadas de Firebase (típicamente 14 meses)</li>
+                        <li><strong>Datos de Fallos:</strong> Retenidos por 90 días en Crashlytics</li>
+                        <li><strong>Datos de Suscripción:</strong> Gestionados por RevenueCat según su política de retención</li>
+                    </ul>
+                </section>
+
+                <section id="ai-features" class="policy-section">
+                    <h2>5. Generación de Datos Curiosos con IA</h2>
+                    <h3>5.1 Cómo Funciona la IA en Curio</h3>
+                    <p>Curio usa la IA Gemini de Google (modelo: gemini-2.5-flash-lite) para generar datos curiosos. Así funciona el proceso:</p>
+                    <ul>
+                        <li><strong>Usted ingresa un tema:</strong> El texto que escribe (hasta 200 caracteres) se envía al servicio de IA Gemini de Google</li>
+                        <li><strong>La IA genera datos curiosos:</strong> Gemini procesa su tema y devuelve 1-3 datos curiosos interesantes en el tono elegido</li>
+                        <li><strong>Los datos curiosos se almacenan localmente:</strong> La respuesta se guarda en la base de datos local de su dispositivo para su historial</li>
+                    </ul>
+
+                    <h3>5.2 Privacidad en el Procesamiento de IA</h3>
+                    <div class="highlight-box">
+                        <strong>🔒 Información Importante de Privacidad de IA:</strong>
+                        <ul>
+                            <li>Los temas se envían a los servidores de Google para procesamiento de IA</li>
+                            <li>Usamos Firebase AI (Vertex AI) que procesa datos bajo los términos de procesamiento de datos de Google</li>
+                            <li>Sus temas NO son usados por Google para entrenar modelos de IA cuando se acceden a través de Firebase AI</li>
+                            <li>Las respuestas de IA se almacenan solo en su dispositivo</li>
+                            <li>No registramos ni almacenamos sus temas en nuestros propios servidores</li>
+                        </ul>
+                    </div>
+
+                    <h3>5.3 Descargo de Responsabilidad sobre Contenido de IA</h3>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ Los Datos Curiosos Generados por IA Pueden No Ser Precisos</strong>
+                        <p>Los datos curiosos generados por Curio:</p>
+                        <ul>
+                            <li>Son creados por inteligencia artificial y pueden contener inexactitudes</li>
+                            <li>Son solo para entretenimiento y conocimiento general</li>
+                            <li>No son un sustituto de fuentes verificadas y autorizadas</li>
+                            <li>No se garantiza que sean factualmente correctos o estén actualizados</li>
+                        </ul>
+                        <p><strong>Siempre verifique información importante de fuentes autorizadas antes de confiar en ella.</strong></p>
+                    </div>
+
+                    <h3>5.4 Configuración de IA</h3>
+                    <p>El modelo de IA utilizado puede actualizarse mediante Firebase Remote Config para mejorar la calidad. Esto ocurre de forma transparente y no afecta su privacidad.</p>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>6. Suscripciones</h2>
+                    <h3>6.1 Curio Pro</h3>
+                    <p>Ofrecemos una suscripción Pro con el siguiente beneficio:</p>
+                    <ul>
+                        <li>♾️ Solicitudes de datos curiosos ilimitadas (el nivel gratuito está limitado a 5 por día)</li>
+                    </ul>
+
+                    <h3>6.2 Detalles de Suscripción</h3>
+                    <ul>
+                        <li><strong>Facturación:</strong> Ciclos de facturación mensual o anual</li>
+                        <li><strong>Renovación Automática:</strong> Las suscripciones se renuevan automáticamente a menos que se cancelen</li>
+                        <li><strong>Pago:</strong> Cargado a su cuenta de Apple ID o Google Play</li>
+                        <li><strong>Cancelación:</strong> Cancele en cualquier momento en configuración de App Store o Play Store</li>
+                        <li><strong>Acceso:</strong> Funciones Pro disponibles inmediatamente tras la compra</li>
+                    </ul>
+
+                    <h3>6.3 Administración de Su Suscripción</h3>
+                    <p>Para administrar o cancelar:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Configuración &rarr; [Su Nombre] &rarr; Suscripciones &rarr; Curio</li>
+                        <li><strong>Android:</strong> Play Store &rarr; Suscripciones &rarr; Curio</li>
+                    </ul>
+                    <p>La cancelación surte efecto al final del período de facturación actual.</p>
+
+                    <h3>6.4 Prueba Gratuita (Si Se Ofrece)</h3>
+                    <p>Si hay una prueba gratuita disponible:</p>
+                    <ul>
+                        <li>La duración se indicará claramente al registrarse</li>
+                        <li>Se cobrará el precio completo de suscripción después de que termine la prueba</li>
+                        <li>Cancele durante la prueba para evitar cargos</li>
+                        <li>Una prueba gratuita por Apple ID o cuenta de Google</li>
+                    </ul>
+
+                    <h3>6.5 Política de Reembolsos</h3>
+                    <p>Las suscripciones generalmente no son reembolsables. Sin embargo, puede solicitar un reembolso a través de:</p>
+                    <ul>
+                        <li><strong>Apple:</strong> <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Google:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Página de reembolsos de Google Play</a></li>
+                    </ul>
+                    <p>Las políticas de reembolso están sujetas a los términos de Apple y Google.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>7. Servicios de Terceros</h2>
+                    <p>Curio integra los siguientes servicios de terceros:</p>
+
+                    <h3>7.1 Firebase (Google)</h3>
+                    <ul>
+                        <li><strong>Firebase AI (Vertex AI / Gemini):</strong> Generación de datos curiosos con IA</li>
+                        <li><strong>Firebase Analytics:</strong> Análisis de uso anónimo</li>
+                        <li><strong>Firebase Crashlytics:</strong> Reportes de fallos y monitoreo de estabilidad</li>
+                        <li><strong>Firebase Remote Config:</strong> Gestión de configuración de la aplicación</li>
+                        <li><strong>Firebase App Check:</strong> Prevención de abuso de API</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+                    </ul>
+
+                    <h3>7.2 RevenueCat</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Gestión de suscripciones y compras dentro de la aplicación</li>
+                        <li><strong>Datos Recopilados:</strong> ID de usuario anónimo, historial de compras, estado de suscripción</li>
+                        <li><strong>Política de Privacidad:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+                    </ul>
+
+                    <h3>7.3 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Distribución de aplicación y procesamiento de suscripciones</li>
+                        <li><strong>Datos Recopilados:</strong> Historial de compras, descargas de aplicación</li>
+                        <li><strong>Políticas de Privacidad:</strong> <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">Privacidad de Apple</a> | <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacidad de Google</a></li>
+                    </ul>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>8. Sus Derechos de Privacidad</h2>
+                    <h3>8.1 Derechos GDPR (Unión Europea)</h3>
+                    <p>Si está en la UE, tiene los siguientes derechos:</p>
+                    <ul>
+                        <li><strong>Derecho de Acceso:</strong> Solicitar información sobre los datos recopilados</li>
+                        <li><strong>Derecho de Rectificación:</strong> Corregir datos inexactos</li>
+                        <li><strong>Derecho de Eliminación:</strong> Solicitar la eliminación de sus datos</li>
+                        <li><strong>Derecho a la Portabilidad de Datos:</strong> Recibir sus datos en formato portable</li>
+                        <li><strong>Derecho de Oposición:</strong> Oponerse al procesamiento de datos</li>
+                        <li><strong>Derecho de Retirar el Consentimiento:</strong> Retirar el consentimiento en cualquier momento</li>
+                    </ul>
+
+                    <h3>8.2 Derechos CCPA (California)</h3>
+                    <p>Si está en California, tiene los siguientes derechos:</p>
+                    <ul>
+                        <li><strong>Derecho a Saber:</strong> Solicitar detalles sobre los datos recopilados</li>
+                        <li><strong>Derecho a Eliminar:</strong> Solicitar la eliminación de información personal</li>
+                        <li><strong>Derecho a Optar por No Participar:</strong> Optar por no participar en la venta de datos (no vendemos datos)</li>
+                        <li><strong>Derecho a la No Discriminación:</strong> Servicio igual independientemente de las elecciones de privacidad</li>
+                    </ul>
+
+                    <h3>8.3 Ejercicio de Sus Derechos</h3>
+                    <p>Dado que la mayoría de los datos se almacenan localmente en su dispositivo:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Su historial de datos curiosos es accesible dentro de la aplicación en cualquier momento</li>
+                        <li><strong>Eliminación:</strong> Desinstalar la aplicación elimina todos los datos locales permanentemente</li>
+                        <li><strong>Analytics:</strong> Puede deshabilitar analytics limitando el seguimiento de anuncios en su dispositivo</li>
+                    </ul>
+
+                    <p>Para preguntas sobre datos mantenidos por servicios de terceros (Firebase, RevenueCat), contáctenos en: <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>9. Privacidad de Menores</h2>
+                    <h3>9.1 Requisitos de Edad</h3>
+                    <p>Curio está destinado a usuarios de todas las edades. No recopilamos conscientemente información personal de menores de 13 años.</p>
+                    <ul>
+                        <li>La aplicación no requiere cuentas de usuario</li>
+                        <li>No se recopila identificación personal</li>
+                        <li>Los temas se procesan de forma anónima</li>
+                        <li>Se recomienda supervisión parental para usuarios más jóvenes</li>
+                    </ul>
+
+                    <h3>9.2 Controles Parentales</h3>
+                    <p>Los padres pueden:</p>
+                    <ul>
+                        <li>Usar controles parentales del dispositivo para restringir el uso de la aplicación</li>
+                        <li>Monitorear la actividad de la aplicación a través de funciones de tiempo de pantalla del dispositivo</li>
+                        <li>Desactivar compras dentro de la aplicación para evitar suscripciones accidentales</li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>10. Usuarios Internacionales</h2>
+                    <h3>10.1 Transferencias de Datos</h3>
+                    <p>Sus temas y datos de analytics pueden ser procesados en servidores ubicados fuera de su país. Específicamente:</p>
+                    <ul>
+                        <li>Google Gemini AI procesa temas en la infraestructura global de Google</li>
+                        <li>Los datos de Firebase Analytics y Crashlytics se almacenan en Google Cloud</li>
+                        <li>RevenueCat procesa datos de suscripción en sus servidores</li>
+                    </ul>
+                    <p>Todas las transferencias están protegidas por los acuerdos de procesamiento de datos y medidas de seguridad de los proveedores de servicio.</p>
+
+                    <h3>10.2 Cumplimiento Regional</h3>
+                    <ul>
+                        <li><strong>Unión Europea:</strong> Cumplimiento con GDPR</li>
+                        <li><strong>California:</strong> Cumplimiento con CCPA</li>
+                        <li><strong>Brasil:</strong> Cumplimiento con LGPD</li>
+                        <li><strong>Otras Regiones:</strong> Respetamos todas las leyes de privacidad aplicables</li>
+                    </ul>
+
+                    <h3>10.3 Soporte de Idioma</h3>
+                    <p>Esta Política de Privacidad está disponible en inglés y español. Si hay un conflicto entre traducciones, la versión en inglés prevalecerá.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>11. Cambios a Esta Política de Privacidad</h2>
+                    <p>Podemos actualizar esta Política de Privacidad de vez en cuando para reflejar:</p>
+                    <ul>
+                        <li>Nuevas funciones o funcionalidad de la aplicación</li>
+                        <li>Cambios en requisitos legales</li>
+                        <li>Actualizaciones de servicios de terceros</li>
+                        <li>Comentarios de usuarios y mejoras de privacidad</li>
+                    </ul>
+
+                    <h3>11.1 Notificación de Cambios</h3>
+                    <p>Cuando hacemos cambios significativos:</p>
+                    <ul>
+                        <li>La fecha de "Última Actualización" será revisada</li>
+                        <li>Los cambios se destacarán en la política</li>
+                        <li>El uso continuo constituye aceptación</li>
+                    </ul>
+
+                    <h3>11.2 Revisar Regularmente</h3>
+                    <p>Le recomendamos revisar esta Política de Privacidad periódicamente. La versión más actual estará siempre disponible dentro de la aplicación y en nuestro sitio web.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>12. Contáctenos</h2>
+                    <p>Si tiene alguna pregunta, inquietud o solicitud con respecto a esta Política de Privacidad o nuestras prácticas de privacidad, contáctenos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo Electrónico:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Sitio Web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de Respuesta</h3>
+                    <p>Responderemos a su consulta dentro de:</p>
+                    <ul>
+                        <li>30 días para consultas generales</li>
+                        <li>72 horas para preocupaciones urgentes de privacidad</li>
+                        <li>Según lo requiera la ley aplicable para solicitudes de derechos</li>
+                    </ul>
+
+                    <h3>Quejas</h3>
+                    <p>Si cree que no hemos abordado adecuadamente sus preocupaciones de privacidad, tiene derecho a presentar una queja ante su autoridad local de protección de datos.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última Actualización:</strong> 20 de marzo de 2026</p>
+                    <p><strong>Fecha de Vigencia:</strong> 20 de marzo de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

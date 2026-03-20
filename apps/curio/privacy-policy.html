@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="curio" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Curio</title>
+    <meta name="description" content="Privacy Policy for Curio - AI-powered fact discovery app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">💡</div>
+                <div class="badge-text">
+                    <div class="badge-title">Curio</div>
+                    <div class="badge-subtitle">Type anything. Learn something you didn't know.</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: March 20, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: March 20, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#how-we-use">How We Use Your Information</a></li>
+                    <li><a href="#data-storage">Data Storage & Security</a></li>
+                    <li><a href="#ai-features">AI-Powered Fact Generation</a></li>
+                    <li><a href="#subscriptions">Subscriptions</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#changes">Changes to Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to Curio ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. We are committed to protecting your privacy while delivering a delightful fact-discovery experience.</p>
+                    <p>Curio is an AI-powered application that generates interesting, tailored facts about any topic you type. Choose from multiple tones &mdash; Curious, Playful, Scholarly, Witty, or Poetic &mdash; and discover fascinating things you didn't know.</p>
+                    <div class="highlight-box">
+                        <strong>💡 Our Privacy Highlights:</strong>
+                        <ul>
+                            <li>Your fact history is stored locally on YOUR device</li>
+                            <li>Topics you enter are sent to Google Gemini AI to generate facts</li>
+                            <li>We use Firebase Analytics to improve the app experience</li>
+                            <li>We do NOT display advertisements</li>
+                            <li>We do NOT require user accounts or email addresses</li>
+                            <li>We do NOT sell your personal data</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>2. Information We Collect</h2>
+                    <h3>2.1 Information You Provide</h3>
+                    <p>When you use Curio, you provide the following information:</p>
+                    <ul>
+                        <li><strong>Topics/Queries:</strong> The text you type to request facts. These are sent to Google's Gemini AI service for processing and stored locally on your device</li>
+                        <li><strong>Tone Preferences:</strong> Your selected tone (Curious, Playful, Scholarly, Witty, or Poetic) is stored locally</li>
+                        <li><strong>Theme Preference:</strong> Your light/dark/auto theme choice is stored locally</li>
+                    </ul>
+
+                    <h3>2.2 Automatically Collected Information</h3>
+                    <p>We collect the following data automatically through integrated services:</p>
+
+                    <h4>Firebase Analytics</h4>
+                    <ul>
+                        <li><strong>Usage Events:</strong> Fact requests (topic truncated to 100 characters), tone selections, theme changes, history views, fact shares</li>
+                        <li><strong>Device Information:</strong> Device model, operating system version, app version</li>
+                        <li><strong>App Interactions:</strong> Screen views and navigation patterns</li>
+                    </ul>
+
+                    <h4>Firebase Crashlytics</h4>
+                    <ul>
+                        <li><strong>Crash Reports:</strong> Technical crash data, stack traces, device state at time of crash</li>
+                        <li><strong>Error Logs:</strong> Non-fatal errors to help us improve stability</li>
+                    </ul>
+                    <p><strong>Note:</strong> Analytics and Crashlytics are only active in the production version of the app.</p>
+
+                    <h4>RevenueCat (Subscription Management)</h4>
+                    <ul>
+                        <li><strong>Subscription Status:</strong> Whether you have a free or Pro subscription</li>
+                        <li><strong>Anonymous User ID:</strong> A random identifier for subscription management (not linked to your identity)</li>
+                    </ul>
+
+                    <h3>2.3 User Properties</h3>
+                    <p>We set the following anonymous user properties in Firebase Analytics:</p>
+                    <ul>
+                        <li><strong>Subscription Tier:</strong> "pro" or "free"</li>
+                        <li><strong>Preferred Tone:</strong> Your default tone selection</li>
+                    </ul>
+
+                    <h3>2.4 Information We Do NOT Collect</h3>
+                    <p>We explicitly do NOT collect:</p>
+                    <ul>
+                        <li>❌ Personal identification information (name, email, phone number)</li>
+                        <li>❌ Location data</li>
+                        <li>❌ Photos, camera, or microphone data</li>
+                        <li>❌ Contacts or address book</li>
+                        <li>❌ Health or fitness data</li>
+                        <li>❌ Social media profiles</li>
+                        <li>❌ Advertising identifiers (we have no ads)</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>3. How We Use Your Information</h2>
+                    <h3>3.1 Core Functionality</h3>
+                    <p>Your topics are used to:</p>
+                    <ul>
+                        <li>Send to Google Gemini AI to generate interesting facts</li>
+                        <li>Store your fact history locally so you can revisit past discoveries</li>
+                        <li>Apply your preferred tone to customize fact presentation</li>
+                    </ul>
+
+                    <h3>3.2 App Improvement</h3>
+                    <p>Analytics data helps us:</p>
+                    <ul>
+                        <li>Understand which features are most popular</li>
+                        <li>Fix bugs and improve app stability</li>
+                        <li>Optimize the user experience</li>
+                        <li>Make informed decisions about new features</li>
+                    </ul>
+                    <p>Analytics data is aggregated and anonymized. We do not use it to build personal profiles or target individuals.</p>
+
+                    <h3>3.3 Subscription Management</h3>
+                    <p>RevenueCat data is used to:</p>
+                    <ul>
+                        <li>Verify your subscription status (free vs. Pro)</li>
+                        <li>Enforce the daily free request limit (5 per day)</li>
+                        <li>Provide unlimited access for Pro subscribers</li>
+                    </ul>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>4. Data Storage & Security</h2>
+                    <h3>4.1 Local Storage</h3>
+                    <p>Your personal data is stored on your device using:</p>
+                    <ul>
+                        <li><strong>SQLite Database:</strong> Fact queries, responses, timestamps, and preferences stored via Drift ORM</li>
+                        <li><strong>iOS:</strong> Secure app sandbox with iOS encryption</li>
+                        <li><strong>Android:</strong> Internal app storage with Android security</li>
+                    </ul>
+
+                    <h3>4.2 Cloud Data</h3>
+                    <p>The following data is processed or stored in the cloud:</p>
+                    <ul>
+                        <li><strong>Topics:</strong> Sent to Google Gemini AI for fact generation (processed and not retained by us)</li>
+                        <li><strong>Analytics Events:</strong> Stored in Firebase Analytics (Google Cloud infrastructure)</li>
+                        <li><strong>Crash Reports:</strong> Stored in Firebase Crashlytics (Google Cloud infrastructure)</li>
+                        <li><strong>Subscription Data:</strong> Managed by RevenueCat</li>
+                    </ul>
+
+                    <h3>4.3 Security Measures</h3>
+                    <ul>
+                        <li>All network communications use HTTPS encryption</li>
+                        <li>Firebase App Check helps protect against API abuse</li>
+                        <li>Local data is protected by your device's built-in encryption</li>
+                        <li>We follow secure coding practices</li>
+                        <li>AI requests have a 15-second timeout to prevent hanging connections</li>
+                    </ul>
+
+                    <h3>4.4 Data Retention</h3>
+                    <ul>
+                        <li><strong>Local Data:</strong> Remains on your device until you delete it or uninstall the app</li>
+                        <li><strong>Analytics Data:</strong> Retained according to Firebase's default retention policies (typically 14 months)</li>
+                        <li><strong>Crash Data:</strong> Retained for 90 days in Crashlytics</li>
+                        <li><strong>Subscription Data:</strong> Managed by RevenueCat per their retention policy</li>
+                    </ul>
+                </section>
+
+                <section id="ai-features" class="policy-section">
+                    <h2>5. AI-Powered Fact Generation</h2>
+                    <h3>5.1 How AI Works in Curio</h3>
+                    <p>Curio uses Google's Gemini AI (model: gemini-2.5-flash-lite) to generate facts. Here's how the process works:</p>
+                    <ul>
+                        <li><strong>You enter a topic:</strong> Text you type (up to 200 characters) is sent to Google's Gemini AI service</li>
+                        <li><strong>AI generates facts:</strong> Gemini processes your topic and returns 1-3 interesting facts in your chosen tone</li>
+                        <li><strong>Facts are stored locally:</strong> The response is saved in your device's local database for your history</li>
+                    </ul>
+
+                    <h3>5.2 Privacy in AI Processing</h3>
+                    <div class="highlight-box">
+                        <strong>🔒 Important AI Privacy Information:</strong>
+                        <ul>
+                            <li>Topics are sent to Google's servers for AI processing</li>
+                            <li>We use Firebase AI (Vertex AI) which processes data under Google's data processing terms</li>
+                            <li>Your topics are NOT used by Google to train AI models when accessed via Firebase AI</li>
+                            <li>AI responses are stored only on your device</li>
+                            <li>We do not log or store your topics on our own servers</li>
+                        </ul>
+                    </div>
+
+                    <h3>5.3 AI Content Disclaimer</h3>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ AI-Generated Facts May Not Be Accurate</strong>
+                        <p>Facts generated by Curio are:</p>
+                        <ul>
+                            <li>Created by artificial intelligence and may contain inaccuracies</li>
+                            <li>For entertainment and general knowledge purposes only</li>
+                            <li>Not a substitute for verified, authoritative sources</li>
+                            <li>Not guaranteed to be factually correct or up to date</li>
+                        </ul>
+                        <p><strong>Always verify important information from authoritative sources before relying on it.</strong></p>
+                    </div>
+
+                    <h3>5.4 AI Configuration</h3>
+                    <p>The AI model used may be updated via Firebase Remote Config to improve quality. This happens transparently and does not affect your privacy.</p>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>6. Subscriptions</h2>
+                    <h3>6.1 Curio Pro</h3>
+                    <p>We offer a Pro subscription with the following benefit:</p>
+                    <ul>
+                        <li>♾️ Unlimited fact requests (free tier is limited to 5 per day)</li>
+                    </ul>
+
+                    <h3>6.2 Subscription Details</h3>
+                    <ul>
+                        <li><strong>Billing:</strong> Monthly or annual billing cycles</li>
+                        <li><strong>Auto-Renewal:</strong> Subscriptions auto-renew unless cancelled</li>
+                        <li><strong>Payment:</strong> Charged to your Apple ID or Google Play account</li>
+                        <li><strong>Cancellation:</strong> Cancel anytime in App Store or Play Store settings</li>
+                        <li><strong>Access:</strong> Pro features available immediately upon purchase</li>
+                    </ul>
+
+                    <h3>6.3 Managing Your Subscription</h3>
+                    <p>To manage or cancel:</p>
+                    <ul>
+                        <li><strong>iOS:</strong> Settings &rarr; [Your Name] &rarr; Subscriptions &rarr; Curio</li>
+                        <li><strong>Android:</strong> Play Store &rarr; Subscriptions &rarr; Curio</li>
+                    </ul>
+                    <p>Cancellation takes effect at the end of the current billing period.</p>
+
+                    <h3>6.4 Free Trial (If Offered)</h3>
+                    <p>If a free trial is available:</p>
+                    <ul>
+                        <li>Duration will be clearly stated at sign-up</li>
+                        <li>Full subscription price will be charged after trial ends</li>
+                        <li>Cancel during trial to avoid charges</li>
+                        <li>One free trial per Apple ID or Google account</li>
+                    </ul>
+
+                    <h3>6.5 Refund Policy</h3>
+                    <p>Subscriptions are generally non-refundable. However, you may request a refund through:</p>
+                    <ul>
+                        <li><strong>Apple:</strong> <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Google:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play refund page</a></li>
+                    </ul>
+                    <p>Refund policies are subject to Apple and Google's terms.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>7. Third-Party Services</h2>
+                    <p>Curio integrates the following third-party services:</p>
+
+                    <h3>7.1 Firebase (Google)</h3>
+                    <ul>
+                        <li><strong>Firebase AI (Vertex AI / Gemini):</strong> AI fact generation</li>
+                        <li><strong>Firebase Analytics:</strong> Anonymous usage analytics</li>
+                        <li><strong>Firebase Crashlytics:</strong> Crash reporting and stability monitoring</li>
+                        <li><strong>Firebase Remote Config:</strong> App configuration management</li>
+                        <li><strong>Firebase App Check:</strong> API abuse prevention</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+                    </ul>
+
+                    <h3>7.2 RevenueCat</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Subscription and in-app purchase management</li>
+                        <li><strong>Data Collected:</strong> Anonymous user ID, purchase history, subscription status</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+                    </ul>
+
+                    <h3>7.3 Apple App Store / Google Play Store</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> App distribution and subscription processing</li>
+                        <li><strong>Data Collected:</strong> Purchase history, app downloads</li>
+                        <li><strong>Privacy Policies:</strong> <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">Apple Privacy</a> | <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></li>
+                    </ul>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>8. Your Privacy Rights</h2>
+                    <h3>8.1 GDPR Rights (European Union)</h3>
+                    <p>If you are in the EU, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Access:</strong> Request information about data collected</li>
+                        <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
+                        <li><strong>Right to Erasure:</strong> Request deletion of your data</li>
+                        <li><strong>Right to Data Portability:</strong> Receive your data in a portable format</li>
+                        <li><strong>Right to Object:</strong> Object to data processing</li>
+                        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
+                    </ul>
+
+                    <h3>8.2 CCPA Rights (California)</h3>
+                    <p>If you are in California, you have the following rights:</p>
+                    <ul>
+                        <li><strong>Right to Know:</strong> Request details about collected data</li>
+                        <li><strong>Right to Delete:</strong> Request deletion of personal information</li>
+                        <li><strong>Right to Opt-Out:</strong> Opt out of data sale (we do not sell data)</li>
+                        <li><strong>Right to Non-Discrimination:</strong> Equal service regardless of privacy choices</li>
+                    </ul>
+
+                    <h3>8.3 Exercising Your Rights</h3>
+                    <p>Since most data is stored locally on your device:</p>
+                    <ul>
+                        <li><strong>Access:</strong> Your fact history is accessible within the app at any time</li>
+                        <li><strong>Deletion:</strong> Uninstalling the app removes all local data permanently</li>
+                        <li><strong>Analytics:</strong> You can disable analytics by limiting ad tracking on your device</li>
+                    </ul>
+
+                    <p>For questions about data held by third-party services (Firebase, RevenueCat), contact us at: <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>9. Children's Privacy</h2>
+                    <h3>9.1 Age Requirements</h3>
+                    <p>Curio is intended for users of all ages. We do not knowingly collect personal information from children under 13.</p>
+                    <ul>
+                        <li>The app does not require user accounts</li>
+                        <li>No personal identification is collected</li>
+                        <li>Topics are processed anonymously</li>
+                        <li>Parental supervision is recommended for younger users</li>
+                    </ul>
+
+                    <h3>9.2 Parental Controls</h3>
+                    <p>Parents can:</p>
+                    <ul>
+                        <li>Use device parental controls to restrict app usage</li>
+                        <li>Monitor app activity through device screen time features</li>
+                        <li>Disable in-app purchases to prevent accidental subscriptions</li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>10. International Users</h2>
+                    <h3>10.1 Data Transfers</h3>
+                    <p>Your topics and analytics data may be processed on servers located outside your country. Specifically:</p>
+                    <ul>
+                        <li>Google Gemini AI processes topics on Google's global infrastructure</li>
+                        <li>Firebase Analytics and Crashlytics data is stored on Google Cloud</li>
+                        <li>RevenueCat processes subscription data on their servers</li>
+                    </ul>
+                    <p>All transfers are protected by the service providers' data processing agreements and security measures.</p>
+
+                    <h3>10.2 Regional Compliance</h3>
+                    <ul>
+                        <li><strong>European Union:</strong> GDPR compliant</li>
+                        <li><strong>California:</strong> CCPA compliant</li>
+                        <li><strong>Brazil:</strong> LGPD compliant</li>
+                        <li><strong>Other Regions:</strong> We respect all applicable privacy laws</li>
+                    </ul>
+
+                    <h3>10.3 Language Support</h3>
+                    <p>This Privacy Policy is available in English and Spanish. If there is a conflict between translations, the English version shall prevail.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>11. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time to reflect:</p>
+                    <ul>
+                        <li>New app features or functionality</li>
+                        <li>Changes in legal requirements</li>
+                        <li>Third-party service updates</li>
+                        <li>User feedback and privacy enhancements</li>
+                    </ul>
+
+                    <h3>11.1 Notification of Changes</h3>
+                    <p>When we make significant changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>Changes will be highlighted in the policy</li>
+                        <li>Continued use constitutes acceptance</li>
+                    </ul>
+
+                    <h3>11.2 Review Regularly</h3>
+                    <p>We encourage you to review this Privacy Policy periodically. The most current version will always be available within the app and on our website.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>12. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <p>We will respond to your inquiry within:</p>
+                    <ul>
+                        <li>30 days for general inquiries</li>
+                        <li>72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for rights requests</li>
+                    </ul>
+
+                    <h3>Complaints</h3>
+                    <p>If you believe we have not adequately addressed your privacy concerns, you have the right to lodge a complaint with your local data protection authority.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> March 20, 2026</p>
+                    <p><strong>Effective Date:</strong> March 20, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* Curio - Discovery Teal Theme */
+:root[data-policy-app="curio"] {
+    --accent-primary: #0d9488;
+    --accent-secondary: #d97706;
+    --accent-primary-hover: #0f766e;
+}
+
+[data-theme="dark"][data-policy-app="curio"] {
+    --accent-primary: #2dd4bf;
+    --accent-secondary: #fbbf24;
+    --accent-primary-hover: #5eead4;
+}
+
+/* Badge icon styling */
+[data-policy-app="curio"] .badge-icon {
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="dark"][data-policy-app="curio"] .badge-icon {
+    background: linear-gradient(135deg, #2dd4bf, #5eead4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

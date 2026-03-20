@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="curio" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Términos y Condiciones - Curio</title>
+    <meta name="description" content="Términos y Condiciones de Curio - Aplicación de descubrimiento de datos curiosos impulsada por IA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">💡</div>
+                <div class="badge-text">
+                    <div class="badge-title">Curio</div>
+                    <div class="badge-subtitle">Escribe cualquier cosa. Aprende algo que no sabías.</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Términos y Condiciones</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última Actualización: 20 de marzo de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha de Vigencia: 20 de marzo de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Aceptación de Términos</a></li>
+                    <li><a href="#description">Descripción de la Aplicación</a></li>
+                    <li><a href="#license">Licencia de Uso</a></li>
+                    <li><a href="#user-obligations">Obligaciones del Usuario</a></li>
+                    <li><a href="#purchases">Compras Dentro de la Aplicación</a></li>
+                    <li><a href="#ai-content">Descargo de Responsabilidad de Contenido IA</a></li>
+                    <li><a href="#intellectual-property">Propiedad Intelectual</a></li>
+                    <li><a href="#prohibited-uses">Usos Prohibidos</a></li>
+                    <li><a href="#termination">Terminación</a></li>
+                    <li><a href="#disclaimers">Descargos de Responsabilidad</a></li>
+                    <li><a href="#limitation">Limitación de Responsabilidad</a></li>
+                    <li><a href="#indemnification">Indemnización</a></li>
+                    <li><a href="#governing-law">Ley Aplicable</a></li>
+                    <li><a href="#changes">Cambios a los Términos</a></li>
+                    <li><a href="#contact">Información de Contacto</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Aceptación de Términos</h2>
+                    <p>Bienvenido a Curio ("la Aplicación"), desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Al descargar, instalar, acceder o usar la Aplicación, usted ("Usuario", "usted" o "su") acepta estar sujeto a estos Términos y Condiciones ("Términos").</p>
+
+                    <div class="highlight-box">
+                        <strong>⚠️ Importante:</strong> Si no está de acuerdo con estos Términos, no descargue, instale ni use la Aplicación. Su uso continuo de la Aplicación constituye aceptación de estos Términos y cualquier actualización realizada a los mismos.
+                    </div>
+
+                    <h3>1.1 Acuerdo con los Términos</h3>
+                    <p>Estos Términos constituyen un acuerdo legalmente vinculante entre usted y Believe PR. Al usar la Aplicación, usted declara que:</p>
+                    <ul>
+                        <li>Tiene al menos 13 años de edad (o la edad mínima requerida en su jurisdicción)</li>
+                        <li>Tiene la capacidad legal para aceptar estos Términos</li>
+                        <li>Si es menor de 18 años, ha obtenido el consentimiento de sus padres o tutor</li>
+                        <li>Cumplirá con todas las leyes y regulaciones aplicables</li>
+                    </ul>
+
+                    <h3>1.2 Términos Adicionales</h3>
+                    <p>Además de estos Términos, su uso de la Aplicación también se rige por:</p>
+                    <ul>
+                        <li>Nuestra <a href="privacy-policy-es.html">Política de Privacidad</a></li>
+                        <li>Términos de Servicio de Apple App Store (usuarios de iOS)</li>
+                        <li>Términos de Servicio de Google Play Store (usuarios de Android)</li>
+                    </ul>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. Descripción de la Aplicación</h2>
+                    <h3>2.1 Propósito</h3>
+                    <p>Curio es una aplicación de descubrimiento de datos curiosos impulsada por IA diseñada para ayudar a los usuarios a:</p>
+                    <ul>
+                        <li>Descubrir datos curiosos interesantes sobre cualquier tema que escriban</li>
+                        <li>Elegir entre cinco tonos de presentación: Curioso, Juguetón, Académico, Ingenioso o Poético</li>
+                        <li>Navegar por su historial de descubrimientos de datos curiosos</li>
+                        <li>Compartir datos curiosos fascinantes con otros</li>
+                    </ul>
+
+                    <h3>2.2 Características Principales</h3>
+                    <ul>
+                        <li><strong>Generación de Datos Curiosos con IA:</strong> Ingrese cualquier tema y reciba 1-3 datos curiosos interesantes</li>
+                        <li><strong>Selección de Tono:</strong> Personalice cómo se presentan los datos curiosos con cinco tonos distintos</li>
+                        <li><strong>Historial de Datos Curiosos:</strong> Navegue y busque descubrimientos anteriores con agrupación por fecha</li>
+                        <li><strong>Compartir Datos Curiosos:</strong> Comparta descubrimientos interesantes con amigos y familiares</li>
+                        <li><strong>Modo Oscuro:</strong> Opciones de tema claro, oscuro y automático</li>
+                        <li><strong>Almacenamiento Local:</strong> Historial de datos curiosos almacenado privadamente en su dispositivo</li>
+                    </ul>
+
+                    <h3>2.3 Disponibilidad</h3>
+                    <ul>
+                        <li>La Aplicación está disponible para dispositivos iOS y Android</li>
+                        <li>Se requiere conexión a internet para la generación de datos curiosos</li>
+                        <li>Ciertas funciones pueden variar según la plataforma</li>
+                        <li>Nos reservamos el derecho de modificar o descontinuar funciones en cualquier momento</li>
+                    </ul>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. Licencia de Uso</h2>
+                    <h3>3.1 Concesión de Licencia</h3>
+                    <p>Sujeto a su cumplimiento con estos Términos, Believe PR le otorga una licencia limitada, no exclusiva, no transferible y revocable para:</p>
+                    <ul>
+                        <li>Descargar e instalar la Aplicación en dispositivos que posea o controle</li>
+                        <li>Acceder y usar la Aplicación para fines personales y no comerciales</li>
+                        <li>Usar todas las características y funcionalidades según lo previsto</li>
+                    </ul>
+
+                    <h3>3.2 Restricciones de Licencia</h3>
+                    <p>Usted NO puede:</p>
+                    <ul>
+                        <li>Copiar, modificar o crear obras derivadas de la Aplicación</li>
+                        <li>Realizar ingeniería inversa, descompilar o desensamblar la Aplicación</li>
+                        <li>Eliminar o modificar avisos de derechos de autor, marcas registradas o avisos propietarios</li>
+                        <li>Alquilar, arrendar, prestar, vender o sublicenciar la Aplicación</li>
+                        <li>Usar la Aplicación para cualquier propósito comercial sin permiso por escrito</li>
+                        <li>Eludir cualquier función de seguridad o restricción de acceso</li>
+                        <li>Usar herramientas automatizadas para acceder o interactuar con la Aplicación</li>
+                    </ul>
+
+                    <h3>3.3 Propiedad</h3>
+                    <p>La Aplicación y todos los derechos de propiedad intelectual siguen siendo propiedad exclusiva de Believe PR y Armando Jimenez. Esta licencia no le otorga ningún derecho de propiedad.</p>
+                </section>
+
+                <section id="user-obligations" class="policy-section">
+                    <h2>4. Obligaciones del Usuario</h2>
+                    <h3>4.1 Uso Responsable</h3>
+                    <p>Usted acepta:</p>
+                    <ul>
+                        <li>Usar la Aplicación de acuerdo con estos Términos y las leyes aplicables</li>
+                        <li>No enviar temas que sean ilegales, dañinos u ofensivos</li>
+                        <li>No intentar manipular o abusar del sistema de IA</li>
+                        <li>Mantener su dispositivo seguro y proteger sus datos guardados</li>
+                        <li>Verificar datos curiosos de fuentes autorizadas antes de confiar en ellos</li>
+                    </ul>
+
+                    <h3>4.2 Seguridad de Datos</h3>
+                    <p>Aunque la Aplicación no requiere cuentas de usuario:</p>
+                    <ul>
+                        <li>Usted es responsable de asegurar su dispositivo</li>
+                        <li>Proteja su historial de datos curiosos del acceso no autorizado</li>
+                        <li>Entienda que desinstalar la aplicación elimina permanentemente todos los datos locales</li>
+                    </ul>
+
+                    <h3>4.3 Conducta Prohibida</h3>
+                    <p>Usted acepta NO:</p>
+                    <ul>
+                        <li>Usar la Aplicación para generar contenido dañino, ilegal u ofensivo</li>
+                        <li>Compartir o distribuir la Aplicación fuera de las tiendas de aplicaciones oficiales</li>
+                        <li>Intentar obtener acceso no autorizado a funciones de la Aplicación o servicios backend</li>
+                        <li>Interferir con el funcionamiento adecuado de la Aplicación</li>
+                        <li>Cargar malware o código malicioso</li>
+                        <li>Intentar eludir el límite diario de solicitudes gratuitas</li>
+                    </ul>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>5. Compras Dentro de la Aplicación</h2>
+                    <h3>5.1 Suscripción Curio Pro</h3>
+                    <p>La Aplicación ofrece una suscripción Pro con los siguientes beneficios:</p>
+                    <ul>
+                        <li><strong>Tipo:</strong> Suscripción con renovación automática (mensual o anual)</li>
+                        <li><strong>Beneficios:</strong> Solicitudes de datos curiosos ilimitadas (nivel gratuito: 5 por día)</li>
+                        <li><strong>Facturación:</strong> Cargado a su cuenta de Apple ID o Google Play</li>
+                        <li><strong>Renovación:</strong> Se renueva automáticamente a menos que se cancele 24 horas antes de que termine el período</li>
+                        <li><strong>Cancelación:</strong> Administrar en configuración de App Store o Play Store</li>
+                    </ul>
+
+                    <h3>5.2 Procesamiento de Pagos</h3>
+                    <ul>
+                        <li>Todas las compras se procesan a través de Apple App Store o Google Play Store</li>
+                        <li>El precio se establece en su moneda local</li>
+                        <li>El pago se carga a su cuenta de App Store o Play Store</li>
+                        <li>No tenemos acceso a su información de pago</li>
+                    </ul>
+
+                    <h3>5.3 Política de Reembolsos</h3>
+                    <p><strong>Compras No Reembolsables:</strong> Todas las compras dentro de la aplicación son finales y no reembolsables, excepto según lo requiera la ley aplicable.</p>
+
+                    <h4>Excepciones:</h4>
+                    <ul>
+                        <li><strong>Problemas Técnicos:</strong> Si la compra no desbloquea funciones Pro, contáctenos para soporte</li>
+                        <li><strong>Compras Accidentales:</strong> Las solicitudes de reembolso deben hacerse a través de Apple o Google dentro de sus ventanas de reembolso</li>
+                        <li><strong>Requisitos Legales:</strong> Reembolsos según lo requieran las leyes de protección al consumidor en su jurisdicción</li>
+                    </ul>
+
+                    <h4>Cómo Solicitar Reembolsos:</h4>
+                    <ul>
+                        <li><strong>iOS:</strong> Visite <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Android:</strong> Visite la <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">página de reembolsos de Google Play</a></li>
+                        <li><strong>Nuestro Soporte:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                    </ul>
+
+                    <h3>5.4 Términos de Suscripción</h3>
+                    <p><strong>Renovación Automática:</strong> Su suscripción se renovará automáticamente al final de cada período de facturación a menos que cancele al menos 24 horas antes de que termine el período. Puede administrar la renovación automática en la configuración de su cuenta.</p>
+                    <p><strong>Cambios de Precio:</strong> Nos reservamos el derecho de cambiar los precios de suscripción con aviso previo. Los cambios solo aplican a nuevos períodos de facturación.</p>
+                    <p><strong>Acceso al Cancelar:</strong> Si cancela, conserva el acceso Pro hasta el final del período de facturación actual.</p>
+
+                    <h3>5.5 Versión Gratuita</h3>
+                    <p>La versión gratuita incluye:</p>
+                    <ul>
+                        <li>Hasta 5 solicitudes de datos curiosos por día</li>
+                        <li>Las cinco opciones de tono</li>
+                        <li>Historial completo de datos curiosos y búsqueda</li>
+                        <li>Funcionalidad de compartir</li>
+                        <li>Modo oscuro y opciones de tema visual</li>
+                    </ul>
+                </section>
+
+                <section id="ai-content" class="policy-section">
+                    <h2>6. Descargo de Responsabilidad de Contenido IA</h2>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ IMPORTANTE - LEA CUIDADOSAMENTE</strong>
+                        <p>Curio utiliza inteligencia artificial para generar datos curiosos. El contenido generado por IA puede contener errores, inexactitudes o información desactualizada. Los datos curiosos deben tratarse como entretenimiento y puntos de partida para el aprendizaje, no como fuentes verificadas y autorizadas.</p>
+                    </div>
+
+                    <h3>6.1 Sin Garantía de Precisión</h3>
+                    <p>La Aplicación NO garantiza:</p>
+                    <ul>
+                        <li>Que los datos curiosos generados por IA sean precisos, completos o actuales</li>
+                        <li>Que los datos curiosos provengan de referencias verificadas</li>
+                        <li>Que el contenido sea adecuado para uso académico, profesional o legal</li>
+                        <li>Que la IA producirá resultados consistentes para la misma consulta</li>
+                    </ul>
+
+                    <h3>6.2 Responsabilidad del Usuario</h3>
+                    <p>Usted reconoce y acepta que:</p>
+                    <ul>
+                        <li>Es responsable de verificar datos curiosos de fuentes autorizadas</li>
+                        <li>No debe confiar únicamente en Curio para decisiones importantes</li>
+                        <li>El contenido generado por IA es para entretenimiento y curiosidad general</li>
+                        <li>La Aplicación no es un sustituto de investigación profesional o asesoramiento experto</li>
+                    </ul>
+
+                    <h3>6.3 Limitaciones de la IA</h3>
+                    <p>El sistema de IA puede:</p>
+                    <ul>
+                        <li>Generar datos curiosos que suenan plausibles pero son incorrectos</li>
+                        <li>Producir resultados diferentes para el mismo tema en diferentes momentos</li>
+                        <li>Tener lagunas de conocimiento o información desactualizada</li>
+                        <li>Ocasionalmente malinterpretar temas o contexto</li>
+                        <li>No estar disponible durante interrupciones del servicio</li>
+                    </ul>
+
+                    <h3>6.4 Requisito de Internet</h3>
+                    <p>Se requiere una conexión activa a internet para la generación de datos curiosos. La Aplicación no puede generar nuevos datos curiosos sin conexión, pero puede navegar por su historial almacenado localmente.</p>
+                </section>
+
+                <section id="intellectual-property" class="policy-section">
+                    <h2>7. Propiedad Intelectual</h2>
+                    <h3>7.1 Propiedad</h3>
+                    <p>Todos los derechos de propiedad intelectual en y para la Aplicación, incluyendo pero no limitado a:</p>
+                    <ul>
+                        <li>Código fuente y software</li>
+                        <li>Interfaz de usuario y diseño</li>
+                        <li>Gráficos, logotipos e íconos</li>
+                        <li>Texto, contenido y documentación</li>
+                        <li>Prompts de IA y diseño del sistema</li>
+                        <li>Marcas registradas y nombres de marca</li>
+                    </ul>
+                    <p>...son propiedad exclusiva de Believe PR y Armando Jimenez.</p>
+
+                    <h3>7.2 Marcas Registradas</h3>
+                    <p>"Curio" y los logotipos asociados son marcas registradas de Believe PR. No puede usar estas marcas sin permiso previo por escrito.</p>
+
+                    <h3>7.3 Contenido del Usuario</h3>
+                    <p>Usted retiene la propiedad de:</p>
+                    <ul>
+                        <li>Los temas que ingresa en la Aplicación</li>
+                        <li>Su historial de datos curiosos y datos guardados</li>
+                    </ul>
+                    <p>Dado que el historial de datos curiosos se almacena localmente en su dispositivo y nunca se transmite a nuestros servidores, no reclamamos ninguna propiedad o derechos sobre su contenido almacenado.</p>
+
+                    <h3>7.4 Contenido Generado por IA</h3>
+                    <p>Los datos curiosos generados por la IA se proporcionan para su uso personal. Puede compartirlos libremente, pero no deben atribuirse como información verificada.</p>
+
+                    <h3>7.5 Infracción de Derechos de Autor</h3>
+                    <p>Si cree que algún contenido en la Aplicación infringe sus derechos de autor, contáctenos en: <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                </section>
+
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>8. Usos Prohibidos</h2>
+                    <p>Usted acepta NO usar la Aplicación para:</p>
+
+                    <h3>8.1 Contenido Dañino</h3>
+                    <ul>
+                        <li>Generar contenido que promueva violencia, odio o discriminación</li>
+                        <li>Intentar producir desinformación</li>
+                        <li>Crear contenido ilegal en su jurisdicción</li>
+                        <li>Acoso o dirigirse a individuos</li>
+                    </ul>
+
+                    <h3>8.2 Acceso No Autorizado</h3>
+                    <ul>
+                        <li>Hackear o crackear la Aplicación</li>
+                        <li>Eludir medidas de seguridad o el límite de solicitudes gratuitas</li>
+                        <li>Acceder a funciones restringidas sin autorización</li>
+                        <li>Realizar ingeniería inversa del código de la Aplicación o prompts de IA</li>
+                    </ul>
+
+                    <h3>8.3 Explotación Comercial</h3>
+                    <ul>
+                        <li>Revender o redistribuir la Aplicación</li>
+                        <li>Usar la Aplicación como parte de un servicio comercial sin permiso</li>
+                        <li>Generar contenido masivamente con fines comerciales</li>
+                        <li>Extraer o raspar contenido de la Aplicación programáticamente</li>
+                    </ul>
+
+                    <h3>8.4 Abuso del Sistema</h3>
+                    <ul>
+                        <li>Cargar malware o virus</li>
+                        <li>Sobrecargar el servicio de IA con solicitudes automatizadas</li>
+                        <li>Interferir con la experiencia de otros usuarios</li>
+                        <li>Explotar errores o vulnerabilidades</li>
+                    </ul>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>9. Terminación</h2>
+                    <h3>9.1 Terminación por Usted</h3>
+                    <p>Puede terminar este acuerdo en cualquier momento:</p>
+                    <ul>
+                        <li>Desinstalando la Aplicación de todos los dispositivos</li>
+                        <li>Cancelando su suscripción (si corresponde)</li>
+                        <li>Cesando todo uso de la Aplicación</li>
+                    </ul>
+
+                    <h3>9.2 Terminación por Nosotros</h3>
+                    <p>Nos reservamos el derecho de:</p>
+                    <ul>
+                        <li>Descontinuar la Aplicación en cualquier momento</li>
+                        <li>Bloquear el acceso si se violan los Términos</li>
+                        <li>Eliminar la Aplicación de las tiendas de aplicaciones</li>
+                        <li>Desactivar funciones o funcionalidad</li>
+                    </ul>
+
+                    <h3>9.3 Efecto de la Terminación</h3>
+                    <p>Al terminar:</p>
+                    <ul>
+                        <li>Su licencia para usar la Aplicación termina inmediatamente</li>
+                        <li>Debe cesar todo uso de la Aplicación</li>
+                        <li>Las suscripciones activas permanecen válidas hasta el final del período pagado</li>
+                        <li>Las disposiciones sobre descargos de responsabilidad, responsabilidad e indemnización sobreviven</li>
+                    </ul>
+
+                    <h3>9.4 Sin Reembolsos por Terminación</h3>
+                    <p>No estamos obligados a proporcionar reembolsos si:</p>
+                    <ul>
+                        <li>Usted desinstala voluntariamente la Aplicación</li>
+                        <li>Terminamos su acceso por violaciones de los Términos</li>
+                        <li>La Aplicación se descontinúa (a menos que lo requiera la ley)</li>
+                    </ul>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>10. Descargos de Responsabilidad</h2>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ LEA CUIDADOSAMENTE - DESCARGOS DE RESPONSABILIDAD LEGALES IMPORTANTES</strong>
+                    </div>
+
+                    <h3>10.1 "TAL CUAL" y "SEGÚN DISPONIBILIDAD"</h3>
+                    <p>LA APLICACIÓN SE PROPORCIONA "TAL CUAL" Y "SEGÚN DISPONIBILIDAD" SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS O IMPLÍCITAS, INCLUYENDO PERO NO LIMITADO A:</p>
+                    <ul>
+                        <li>GARANTÍAS DE COMERCIABILIDAD</li>
+                        <li>IDONEIDAD PARA UN PROPÓSITO PARTICULAR</li>
+                        <li>NO INFRACCIÓN</li>
+                        <li>PRECISIÓN O FIABILIDAD</li>
+                        <li>OPERACIÓN ININTERRUMPIDA O LIBRE DE ERRORES</li>
+                    </ul>
+
+                    <h3>10.2 Sin Garantía de Precisión</h3>
+                    <p>NO GARANTIZAMOS QUE:</p>
+                    <ul>
+                        <li>Los datos curiosos generados por IA serán precisos, completos o actuales</li>
+                        <li>La Aplicación cumplirá con sus requisitos específicos</li>
+                        <li>Todas las funciones funcionarán perfectamente en todo momento</li>
+                        <li>Los errores o bugs serán corregidos prontamente</li>
+                        <li>La Aplicación será compatible con todos los dispositivos</li>
+                    </ul>
+
+                    <h3>10.3 Sin Responsabilidad por Decisiones</h3>
+                    <p>NO SOMOS RESPONSABLES DE:</p>
+                    <ul>
+                        <li>Decisiones tomadas basadas en datos curiosos generados por IA</li>
+                        <li>Compartir contenido inexacto generado por IA</li>
+                        <li>Pérdida de datos o historial de datos curiosos</li>
+                        <li>Interrupciones o indisponibilidad del servicio</li>
+                        <li>Consecuencias de confiar en contenido generado por la Aplicación</li>
+                    </ul>
+
+                    <h3>10.4 Servicios de Terceros</h3>
+                    <p>NO SOMOS RESPONSABLES DE:</p>
+                    <ul>
+                        <li>Disponibilidad o precisión del servicio de IA Google Gemini</li>
+                        <li>Interrupciones del servicio Firebase</li>
+                        <li>Políticas de Apple App Store o Google Play Store</li>
+                        <li>Problemas del sistema operativo del dispositivo</li>
+                        <li>Problemas de conectividad a internet</li>
+                    </ul>
+
+                    <h3>10.5 Limitaciones Jurisdiccionales</h3>
+                    <p>Algunas jurisdicciones no permiten la exclusión de garantías implícitas. En tales jurisdicciones, las exclusiones anteriores pueden no aplicarse a usted, y puede tener derechos adicionales.</p>
+                </section>
+
+                <section id="limitation" class="policy-section">
+                    <h2>11. Limitación de Responsabilidad</h2>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ LIMITACIONES IMPORTANTES DE RESPONSABILIDAD</strong>
+                    </div>
+
+                    <h3>11.1 Responsabilidad Máxima</h3>
+                    <p>EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, EN NINGÚN CASO BELIEVE PR, ARMANDO JIMENEZ O SUS AFILIADOS SERÁN RESPONSABLES DE:</p>
+                    <ul>
+                        <li>DAÑOS INDIRECTOS, INCIDENTALES, ESPECIALES O CONSECUENTES</li>
+                        <li>PÉRDIDA DE BENEFICIOS, INGRESOS U OPORTUNIDADES</li>
+                        <li>PÉRDIDA DE DATOS O INFORMACIÓN</li>
+                        <li>COSTO DE BIENES O SERVICIOS SUSTITUTOS</li>
+                        <li>LESIONES PERSONALES O DAÑOS A LA PROPIEDAD</li>
+                    </ul>
+
+                    <h3>11.2 Límite de Responsabilidad</h3>
+                    <p>NUESTRA RESPONSABILIDAD TOTAL HACIA USTED POR TODAS LAS RECLAMACIONES DERIVADAS DE O RELACIONADAS CON LA APLICACIÓN NO EXCEDERÁ EL MAYOR DE:</p>
+                    <ul>
+                        <li>$50 USD (o equivalente en su moneda local)</li>
+                        <li>El monto que pagó por su suscripción en los últimos 12 meses</li>
+                    </ul>
+
+                    <h3>11.3 Base del Acuerdo</h3>
+                    <p>Estas limitaciones reflejan la asignación de riesgo entre las partes. La Aplicación se ofrece a un precio nominal (o gratuita), y las limitaciones son una base esencial del acuerdo.</p>
+
+                    <h3>11.4 Excepciones Jurisdiccionales</h3>
+                    <p>Algunas jurisdicciones no permiten limitaciones de responsabilidad para ciertos tipos de daños. En tales jurisdicciones, nuestra responsabilidad se limitará en la máxima medida permitida por la ley.</p>
+                </section>
+
+                <section id="indemnification" class="policy-section">
+                    <h2>12. Indemnización</h2>
+                    <h3>12.1 Su Indemnización</h3>
+                    <p>Usted acepta indemnizar, defender y mantener indemnes a Believe PR, Armando Jimenez y sus afiliados, funcionarios, empleados y agentes de y contra cualquier reclamo, responsabilidad, daño, pérdida, costo o gasto (incluyendo honorarios razonables de abogados) que surjan de:</p>
+                    <ul>
+                        <li>Su uso o mal uso de la Aplicación</li>
+                        <li>Su violación de estos Términos</li>
+                        <li>Su violación de cualquier ley o regulación aplicable</li>
+                        <li>Su violación de cualquier derecho de terceros</li>
+                        <li>Contenido que comparta generado por la Aplicación</li>
+                        <li>Cualquier decisión tomada basada en datos curiosos generados por IA</li>
+                    </ul>
+
+                    <h3>12.2 Defensa de Reclamos</h3>
+                    <p>Nos reservamos el derecho de:</p>
+                    <ul>
+                        <li>Asumir la defensa exclusiva y control de cualquier asunto sujeto a indemnización</li>
+                        <li>Cooperar con usted en la defensa de tales reclamos</li>
+                        <li>Resolver reclamos a nuestra discreción</li>
+                    </ul>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>13. Ley Aplicable y Resolución de Disputas</h2>
+                    <h3>13.1 Ley Aplicable</h3>
+                    <p>Estos Términos se regirán e interpretarán de acuerdo con las leyes de Puerto Rico, sin tener en cuenta sus disposiciones sobre conflictos de leyes.</p>
+
+                    <h3>13.2 Jurisdicción</h3>
+                    <p>Usted acepta que cualquier acción legal o procedimiento que surja de estos Términos se presentará exclusivamente en los tribunales de Puerto Rico, y usted consiente a la jurisdicción de dichos tribunales.</p>
+
+                    <h3>13.3 Resolución de Disputas</h3>
+                    <p>Antes de presentar cualquier acción legal, usted acepta intentar resolver las disputas a través de:</p>
+                    <ul>
+                        <li><strong>Negociación Informal:</strong> Contáctenos en <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                        <li><strong>Discusión de Buena Fe:</strong> Permitir 30 días para intentos de resolución</li>
+                        <li><strong>Mediación:</strong> Considerar mediación voluntaria si falla la resolución informal</li>
+                    </ul>
+
+                    <h3>13.4 Renuncia a Acción Colectiva</h3>
+                    <p>EN LA MEDIDA PERMITIDA POR LA LEY, USTED ACEPTA QUE CUALQUIER DISPUTA SE RESOLVERÁ DE FORMA INDIVIDUAL Y NO COMO ACCIÓN COLECTIVA, ACCIÓN CONSOLIDADA O ACCIÓN REPRESENTATIVA.</p>
+
+                    <h3>13.5 Derechos del Consumidor</h3>
+                    <p>Nada en estos Términos limita sus derechos estatutarios como consumidor bajo las leyes de protección al consumidor aplicables.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>14. Cambios a los Términos</h2>
+                    <h3>14.1 Derecho a Modificar</h3>
+                    <p>Nos reservamos el derecho de modificar estos Términos en cualquier momento. Los cambios pueden hacerse para reflejar:</p>
+                    <ul>
+                        <li>Nuevas funciones o funcionalidad</li>
+                        <li>Requisitos legales o regulatorios</li>
+                        <li>Cambios en prácticas comerciales</li>
+                        <li>Comentarios e inquietudes de usuarios</li>
+                    </ul>
+
+                    <h3>14.2 Aviso de Cambios</h3>
+                    <p>Cuando hacemos cambios significativos:</p>
+                    <ul>
+                        <li>La fecha de "Última Actualización" será revisada</li>
+                        <li>Los cambios materiales se destacarán</li>
+                    </ul>
+
+                    <h3>14.3 Aceptación de Cambios</h3>
+                    <p>Al continuar usando la Aplicación después de que se publiquen los cambios:</p>
+                    <ul>
+                        <li>Usted acepta los Términos modificados</li>
+                        <li>Los nuevos Términos entran en vigor inmediatamente</li>
+                        <li>Si no está de acuerdo, debe dejar de usar la Aplicación</li>
+                    </ul>
+
+                    <h3>14.4 Versiones Históricas</h3>
+                    <p>Las versiones anteriores de estos Términos están disponibles bajo solicitud. Contáctenos en: <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>15. Información de Contacto</h2>
+                    <p>Para preguntas, inquietudes o avisos con respecto a estos Términos, contáctenos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo Electrónico:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Sitio Web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>15.1 Atención al Cliente</h3>
+                    <p>Para soporte técnico o asistencia:</p>
+                    <ul>
+                        <li><strong>Correo Electrónico:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                        <li><strong>Tiempo de Respuesta:</strong> Dentro de 2-5 días hábiles</li>
+                        <li><strong>Horario de Soporte:</strong> Lunes a Viernes, 9 AM - 5 PM AST</li>
+                    </ul>
+
+                    <h3>15.2 Avisos Legales</h3>
+                    <p>Para avisos legales, servicio de proceso o comunicaciones formales:</p>
+                    <ul>
+                        <li><strong>Correo Electrónico:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></li>
+                        <li><strong>Línea de Asunto:</strong> "Aviso Legal - Curio"</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <h3>16. Disposiciones Generales</h3>
+
+                    <h4>16.1 Acuerdo Completo</h4>
+                    <p>Estos Términos, junto con nuestra Política de Privacidad, constituyen el acuerdo completo entre usted y Believe PR con respecto a la Aplicación.</p>
+
+                    <h4>16.2 Divisibilidad</h4>
+                    <p>Si alguna disposición se considera inaplicable, las disposiciones restantes permanecerán en pleno vigor y efecto.</p>
+
+                    <h4>16.3 Renuncia</h4>
+                    <p>Nuestro incumplimiento de hacer cumplir cualquier derecho o disposición no constituye una renuncia a dicho derecho o disposición.</p>
+
+                    <h4>16.4 Cesión</h4>
+                    <p>Usted no puede ceder o transferir estos Términos. Podemos ceder nuestros derechos y obligaciones sin restricción.</p>
+
+                    <h4>16.5 Supervivencia</h4>
+                    <p>Las disposiciones sobre descargos de responsabilidad, limitación de responsabilidad, indemnización y resolución de disputas sobreviven a la terminación.</p>
+
+                    <h4>16.6 Idioma</h4>
+                    <p>Estos Términos están escritos en inglés y español. Si hay un conflicto entre traducciones, la versión en inglés prevalece.</p>
+
+                    <hr class="divider">
+
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última Actualización:</strong> 20 de marzo de 2026</p>
+                    <p><strong>Fecha de Vigencia:</strong> 20 de marzo de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
