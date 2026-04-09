@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="lilia" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de Privacidad - Lilia</title>
+    <meta name="description" content="Política de Privacidad de Lilia, una compañera privada de afirmaciones para mujeres.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">🌷</div>
+                <div class="badge-text">
+                    <div class="badge-title">Lilia</div>
+                    <div class="badge-subtitle">Afirmaciones para mujeres</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última Actualización: 9 de abril de 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Fecha de Vigencia: 9 de abril de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#privacy-first">Enfoque de Privacidad Primero</a></li>
+                    <li><a href="#information-collection">Información que Recopilamos</a></li>
+                    <li><a href="#how-we-use">Cómo Usamos su Información</a></li>
+                    <li><a href="#data-storage">Almacenamiento y Seguridad</a></li>
+                    <li><a href="#lilys-lab">El Laboratorio de Lily (IA)</a></li>
+                    <li><a href="#cloud-sync">Sincronización con iCloud</a></li>
+                    <li><a href="#permissions">Permisos de la Aplicación</a></li>
+                    <li><a href="#notifications">Notificaciones y Recordatorios</a></li>
+                    <li><a href="#third-party">Servicios de Terceros</a></li>
+                    <li><a href="#your-rights">Sus Derechos de Privacidad</a></li>
+                    <li><a href="#children">Privacidad de Menores</a></li>
+                    <li><a href="#international">Usuarias Internacionales</a></li>
+                    <li><a href="#changes">Cambios a la Política</a></li>
+                    <li><a href="#contact">Contáctenos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Bienvenida a Lilia ("la Aplicación"), una compañera privada de afirmaciones para mujeres, desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Lilia se construye sobre una sola creencia: su vida interior le pertenece solo a usted. Tratamos sus datos con el mismo cuidado que le pedimos que se dé a sí misma.</p>
+                    <p>Lilia le ayuda a descubrir, plantar y revisitar afirmaciones — frases positivas escritas en primera persona — a través de una experiencia inmersiva al deslizar, categorías curadas y el Laboratorio de Lily, una función de IA que crea afirmaciones personalizadas a partir de lo que usted decida compartir en el momento.</p>
+                    <div class="highlight-box">
+                        <strong>🌷 Nuestra Promesa de Privacidad:</strong>
+                        <ul>
+                            <li>Lilia no requiere una cuenta, un correo electrónico ni una contraseña</li>
+                            <li>Su jardín de afirmaciones guardadas vive en SU dispositivo</li>
+                            <li>Si activa la sincronización con iCloud, sus datos se sincronizan a través de SU Apple ID, no de nuestros servidores</li>
+                            <li>Nunca almacenamos, leemos ni entrenamos modelos con lo que comparte en el Laboratorio de Lily</li>
+                            <li>No hay anuncios ni SDKs de rastreo</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Enfoque de Privacidad Primero</h2>
+
+                    <h3>2.1 Nuestra Filosofía</h3>
+                    <p>Lilia se construye sobre una base de privacidad primero. Las afirmaciones son íntimas por naturaleza, y creemos que una aplicación que las cuida debería pedir lo menos posible. Con Lilia:</p>
+                    <ul>
+                        <li>✅ Almacenamos todos sus datos personales localmente en su dispositivo por defecto</li>
+                        <li>✅ Sincronizamos únicamente a través de CloudKit de Apple (su iCloud), si usted lo activa</li>
+                        <li>✅ No usamos redes publicitarias, Google Analytics, Firebase ni rastreadores de terceros</li>
+                        <li>✅ No requerimos cuentas, correos electrónicos ni contraseñas</li>
+                        <li>✅ Mantenemos las solicitudes del Laboratorio de Lily anónimas — no se construye ningún perfil ni historial sobre usted</li>
+                    </ul>
+
+                    <h3>2.2 Qué Significa Esto para Usted</h3>
+                    <p>Cuando usa Lilia:</p>
+                    <ul>
+                        <li>Las afirmaciones que planta ("guarda") en su jardín permanecen en su teléfono</li>
+                        <li>Las afirmaciones que escribe usted misma permanecen en su teléfono</li>
+                        <li>Las afirmaciones que suelta ("descarta") y los elementos en Ocultos permanecen en su teléfono</li>
+                        <li>Las fotos personalizadas para temas se guardan en el almacenamiento local de Lilia y en su biblioteca de fotos</li>
+                        <li>Los horarios de recordatorios se programan localmente por iOS</li>
+                    </ul>
+
+                    <p><strong>Importante:</strong> Como nunca tenemos una copia de su jardín, eliminar Lilia sin haber activado la sincronización con iCloud borrará permanentemente sus afirmaciones guardadas. No podemos recuperarlas — nunca las tuvimos.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Información que Recopilamos</h2>
+
+                    <h3>3.1 Información que Usted Crea</h3>
+                    <p>Los siguientes datos los crea usted y se almacenan localmente en su dispositivo (y, opcionalmente, en su propio iCloud):</p>
+                    <ul>
+                        <li><strong>Jardín:</strong> Las afirmaciones que planta, la fecha en que las plantó y cualquier organización que les dé</li>
+                        <li><strong>Mis Afirmaciones:</strong> Afirmaciones que usted misma escribe</li>
+                        <li><strong>Colección del Laboratorio de Lily:</strong> Afirmaciones que guarda de las generaciones del Laboratorio de Lily</li>
+                        <li><strong>Ocultos:</strong> Afirmaciones que ha decidido no volver a ver</li>
+                        <li><strong>Historial:</strong> Un registro local de las afirmaciones que ha visto, plantado o soltado</li>
+                        <li><strong>Recordatorios:</strong> Horarios que elige para recibir notificaciones de afirmaciones diarias</li>
+                        <li><strong>Apariencia y Paleta:</strong> Su paleta de colores seleccionada y su preferencia de modo claro/oscuro/automático</li>
+                        <li><strong>Fotos personalizadas para temas:</strong> Fotos que opcionalmente elige como fondos personalizados</li>
+                    </ul>
+
+                    <h3>3.2 Lo que el Laboratorio de Lily Envía</h3>
+                    <p>El Laboratorio de Lily es la única función que se comunica con un servidor. Cuando toca "Generar," la Aplicación envía lo siguiente a nuestra Pasarela de IA para que pueda devolver afirmaciones personalizadas:</p>
+                    <ul>
+                        <li><strong>El texto que escribió</strong> en el Laboratorio de Lily para esa única solicitud</li>
+                        <li><strong>Un identificador de aplicación</strong> (<code>x-app-id: lilia</code>) y <strong>el entorno</strong> (<code>dev</code> o <code>prod</code>)</li>
+                        <li><strong>Un token de autenticación</strong> que autoriza a la Aplicación a usar la Pasarela</li>
+                        <li><strong>Su dirección IP</strong>, como es técnicamente necesario para cualquier solicitud de internet</li>
+                    </ul>
+                    <p>Esa solicitud es luego reenviada por nuestra Pasarela alojada en Cloudflare a uno de nuestros proveedores de modelos (xAI Grok, con OpenRouter como respaldo) para producir las afirmaciones que usted ve. La Pasarela nunca recibe su nombre, correo electrónico, ubicación, jardín ni ninguna otra información personal — solo ve el mensaje de esa única generación.</p>
+
+                    <h3>3.3 Información que NO Recopilamos</h3>
+                    <p>Lilia explícitamente NO recopila ni tiene acceso a:</p>
+                    <ul>
+                        <li>❌ Su nombre, correo electrónico, número de teléfono o contactos</li>
+                        <li>❌ Su ubicación precisa o datos de GPS</li>
+                        <li>❌ El contenido de su jardín, lista de ocultos o afirmaciones escritas</li>
+                        <li>❌ Ninguna foto de su biblioteca distinta a las que usted explícitamente seleccione</li>
+                        <li>❌ Datos de salud, datos de HealthKit o métricas de bienestar de cualquier otra fuente</li>
+                        <li>❌ Identidades de redes sociales, listas de amigos o datos de inicios de sesión de terceros</li>
+                        <li>❌ Identificadores de publicidad (IDFA) — Lilia no tiene publicidad</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. Cómo Usamos su Información</h2>
+
+                    <h3>4.1 Funcionalidad de la Aplicación (en el Dispositivo)</h3>
+                    <p>Sus datos de afirmaciones se usan completamente en su dispositivo para:</p>
+                    <ul>
+                        <li>Mostrar sus afirmaciones diarias y categorías curadas</li>
+                        <li>Llevar registro de qué afirmaciones ya ha visto, plantado o soltado</li>
+                        <li>Activar "Mi Jardín," Favoritas, Historial, Ocultos y Estadísticas</li>
+                        <li>Programar sus notificaciones locales de recordatorio</li>
+                        <li>Aplicar su paleta seleccionada, su apariencia y sus fotos personalizadas para temas</li>
+                    </ul>
+
+                    <h3>4.2 Generación del Laboratorio de Lily</h3>
+                    <p>El texto que envía al Laboratorio de Lily se usa únicamente para generar ese conjunto de afirmaciones y no se utiliza para ningún otro propósito. No lo retenemos para entrenar modelos, construir un perfil ni mejorar el servicio con el tiempo.</p>
+
+                    <h3>4.3 Registros Operativos</h3>
+                    <p>La Pasarela de IA mantiene registros operativos mínimos (marca de tiempo, identificador de la aplicación, entorno, código de estado) para prevención de abuso a corto plazo y limitación de tasa. Estos registros no contienen el texto del mensaje y no se vinculan a ninguna identidad de usuaria más allá de una dirección IP.</p>
+
+                    <h3>4.4 Sin Marketing, Sin Perfilado</h3>
+                    <p>No usamos ninguna parte de su información para marketing, perfilado, publicidad conductual ni para venderla a terceros. No hay publicidad en Lilia.</p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Almacenamiento y Seguridad</h2>
+
+                    <h3>5.1 Almacenamiento Local</h3>
+                    <p>Sus datos personales se almacenan en su dispositivo usando:</p>
+                    <ul>
+                        <li><strong>SwiftData / Core Data</strong> dentro del entorno aislado seguro (sandbox) de Lilia</li>
+                        <li><strong>Protección de Datos de iOS</strong> — los archivos están cifrados en reposo usando el código de su dispositivo</li>
+                        <li><strong>App Storage</strong> para preferencias (paleta, apariencia, recordatorios)</li>
+                    </ul>
+
+                    <h3>5.2 Cifrado</h3>
+                    <ul>
+                        <li><strong>En Reposo:</strong> Los datos están protegidos por el cifrado del sistema de archivos de iOS, vinculado al código de su dispositivo</li>
+                        <li><strong>En Tránsito:</strong> Todas las solicitudes del Laboratorio de Lily usan HTTPS (TLS)</li>
+                        <li><strong>Sincronización con iCloud:</strong> CloudKit cifra sus datos en tránsito y en reposo bajo su Apple ID</li>
+                    </ul>
+
+                    <h3>5.3 Prácticas de Seguridad</h3>
+                    <ul>
+                        <li>El token de autenticación del Laboratorio de Lily está ofuscado mediante XOR dentro del binario para desalentar la extracción casual</li>
+                        <li>La Pasarela aplica límites de tasa por IP para mitigar abusos</li>
+                        <li>Lilia no incluye ningún SDK de analítica, atribución o reportes de fallas</li>
+                        <li>Lilia no contiene WebViews que carguen contenido de terceros</li>
+                    </ul>
+
+                    <h3>5.4 Retención de Datos</h3>
+                    <ul>
+                        <li>Sus datos permanecen en su dispositivo mientras Lilia esté instalada</li>
+                        <li>Puede eliminar entradas individuales en cualquier momento dentro de la aplicación</li>
+                        <li>Eliminar la aplicación remueve permanentemente todos los datos almacenados localmente</li>
+                        <li>Si usó la sincronización con iCloud, la copia en iCloud permanece hasta que la elimine desde su Apple ID</li>
+                        <li>Los mensajes del Laboratorio de Lily no son retenidos por Lilia ni por la Pasarela una vez devuelta la respuesta</li>
+                    </ul>
+                </section>
+
+                <section id="lilys-lab" class="policy-section">
+                    <h2>6. El Laboratorio de Lily (Función de IA)</h2>
+
+                    <h3>6.1 Qué es el Laboratorio de Lily</h3>
+                    <p>El Laboratorio de Lily es una función opcional dentro de Lilia que convierte lo que usted decida compartir — un sentimiento, una situación, una esperanza — en un pequeño conjunto de afirmaciones escritas en primera persona. Usted decide si plantarlas en su jardín, guardarlas en su Colección del Laboratorio de Lily o soltarlas.</p>
+
+                    <h3>6.2 Cómo Funciona</h3>
+                    <ul>
+                        <li>Usted escribe un mensaje breve en la pantalla del Laboratorio de Lily</li>
+                        <li>Lilia envía ese mensaje a nuestra Pasarela de IA por HTTPS</li>
+                        <li>La Pasarela lo reenvía a un proveedor de modelos (actualmente xAI Grok, con OpenRouter como respaldo)</li>
+                        <li>El modelo devuelve un conjunto de afirmaciones, que Lilia le muestra</li>
+                        <li>El mensaje no se retiene, no se indexa ni se usa para construir un perfil</li>
+                    </ul>
+
+                    <h3>6.3 Privacidad en el Procesamiento de IA</h3>
+                    <ul>
+                        <li>✅ Ningún nombre, correo electrónico ni cuenta se adjunta a la solicitud — la Pasarela no tiene idea de quién es usted</li>
+                        <li>✅ Su jardín y su lista de ocultos NUNCA se envían</li>
+                        <li>✅ La Pasarela no registra el texto del mensaje después de devolver una respuesta</li>
+                        <li>✅ Los proveedores de modelos procesan el mensaje para generar una respuesta en tiempo real</li>
+                        <li>⚠️ Los proveedores de modelos (xAI, OpenRouter) reciben únicamente el mensaje que usted escribió; trátelo como cualquier otra entrada a un asistente de IA</li>
+                    </ul>
+
+                    <h3>6.4 Qué No Compartir</h3>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ Un recordatorio gentil</strong>
+                        <p>Como el Laboratorio de Lily envía su texto a un proveedor de IA, por favor no comparta información que no escribiría en cualquier otro asistente de IA — por ejemplo, nombres completos de otras personas, direcciones, datos financieros, números de historial médico u otros identificadores sensibles. Lilia está diseñada para escuchar sentimientos, no para recopilar documentos.</p>
+                    </div>
+
+                    <h3>6.5 No es Terapia ni Consejo Médico</h3>
+                    <p>El Laboratorio de Lily y todas las afirmaciones en Lilia son para autorreflexión e inspiración. No son un sustituto del cuidado de salud mental con licencia, la terapia ni el consejo médico. Si está atravesando un momento difícil, por favor comuníquese con un profesional calificado o con uno de los recursos listados en la sección 16.</p>
+                </section>
+
+                <section id="cloud-sync" class="policy-section">
+                    <h2>7. Sincronización con iCloud</h2>
+
+                    <h3>7.1 Cómo Funciona la Sincronización con iCloud</h3>
+                    <p>Lilia usa el marco <strong>CloudKit</strong> de Apple para que su jardín y sus preferencias puedan sincronizarse entre sus propios dispositivos Apple (por ejemplo, iPhone y iPad) que tengan la sesión iniciada en la misma cuenta de iCloud. CloudKit lo provee Apple, no nosotros. Believe PR no tiene servidores que guarden sus afirmaciones.</p>
+
+                    <h3>7.2 Qué se Sincroniza</h3>
+                    <ul>
+                        <li>Su jardín de afirmaciones plantadas</li>
+                        <li>Las afirmaciones que escribió en Mis Afirmaciones</li>
+                        <li>Las afirmaciones guardadas desde el Laboratorio de Lily</li>
+                        <li>Su lista de ocultos y su historial básico</li>
+                        <li>Su paleta, su apariencia y su configuración de recordatorios</li>
+                    </ul>
+
+                    <h3>7.3 Qué Vemos Nosotros</h3>
+                    <p>Nada. Los datos en CloudKit se almacenan bajo su Apple ID dentro de la infraestructura de Apple. Believe PR no puede leer, exportar ni descargar los datos de CloudKit de ninguna usuaria.</p>
+
+                    <h3>7.4 Cómo Desactivar la Sincronización</h3>
+                    <p>Puede dejar de usar la sincronización con iCloud en cualquier momento cerrando sesión de iCloud en su dispositivo, o desactivando Lilia desde <em>Ajustes → Apple ID → iCloud → Apps que usan iCloud</em>. Para eliminar la copia en la nube, remueva Lilia de iCloud y elimine los respaldos en iCloud de la aplicación.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>8. Permisos de la Aplicación</h2>
+
+                    <h3>8.1 Biblioteca de Fotos (Añadir)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Para que pueda guardar en su biblioteca de fotos una tarjeta de afirmación generada en Lilia, para compartirla o revisitarla</li>
+                        <li><strong>Cuándo se Solicita:</strong> La primera vez que guarda o comparte una tarjeta</li>
+                        <li><strong>A Qué Accedemos:</strong> Lilia solo escribe la imagen que usted explícitamente eligió guardar — no lee su biblioteca</li>
+                    </ul>
+
+                    <h3>8.2 Biblioteca de Fotos (Lectura, Opcional)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Para que pueda elegir una foto personal como fondo personalizado de un tema</li>
+                        <li><strong>Cuándo se Solicita:</strong> Solo si toca para elegir una foto para un tema personalizado</li>
+                        <li><strong>A Qué Accedemos:</strong> Únicamente las fotos que usted explícitamente seleccione</li>
+                    </ul>
+
+                    <h3>8.3 Cámara (Opcional)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Para que pueda tomar una foto nueva y usarla como fondo personalizado de un tema</li>
+                        <li><strong>Cuándo se Solicita:</strong> Solo si elige "Tomar Foto" en lugar de seleccionar una de la biblioteca</li>
+                        <li><strong>A Qué Accedemos:</strong> A la única foto que usted decide capturar para ese tema</li>
+                    </ul>
+
+                    <h3>8.4 Notificaciones (Opcional)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Para enviarle sus recordatorios diarios de afirmaciones a las horas que usted elija</li>
+                        <li><strong>Cuándo se Solicita:</strong> La primera vez que configura un recordatorio</li>
+                        <li><strong>Qué Enviamos:</strong> Una afirmación breve, programada localmente por iOS — nada sale de su dispositivo para entregarla</li>
+                    </ul>
+
+                    <h3>8.5 Permisos que Lilia NO Solicita</h3>
+                    <ul>
+                        <li>❌ Ubicación / GPS</li>
+                        <li>❌ Contactos</li>
+                        <li>❌ Calendario</li>
+                        <li>❌ Micrófono</li>
+                        <li>❌ HealthKit / Apple Health</li>
+                        <li>❌ Bluetooth</li>
+                        <li>❌ Teléfono o SMS</li>
+                        <li>❌ Rastreo (Lilia no usa App Tracking Transparency porque no la rastrea)</li>
+                    </ul>
+
+                    <h3>8.6 Cómo Administrar los Permisos</h3>
+                    <p>Puede administrar todos los permisos en <em>Ajustes de iOS → Lilia</em>. Revocar un permiso desactiva esa única función; el resto de la aplicación sigue funcionando.</p>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>9. Notificaciones y Recordatorios</h2>
+
+                    <h3>9.1 Solo Notificaciones Locales</h3>
+                    <p>Lilia usa <strong>notificaciones locales</strong> programadas por iOS a través del marco UserNotifications. No hay servidor de notificaciones push, ni token de APNs vinculado a una cuenta, y ningún mensaje viaja a través de la infraestructura de Believe PR para llegar a su dispositivo.</p>
+
+                    <h3>9.2 Qué Contienen las Notificaciones</h3>
+                    <ul>
+                        <li>Una afirmación breve elegida del contenido empacado o guardado en su dispositivo</li>
+                        <li>Una etiqueta de categoría opcional</li>
+                    </ul>
+
+                    <h3>9.3 Usted Siempre Tiene el Control</h3>
+                    <p>Puede establecer, editar o eliminar horarios de recordatorios en <em>Lilia → Más → Recordatorios</em>, y puede desactivar las notificaciones por completo en <em>Ajustes de iOS → Lilia → Notificaciones</em>.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>10. Servicios de Terceros</h2>
+
+                    <h3>10.1 Pasarela de IA (Cloudflare Workers)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Enrutar los mensajes del Laboratorio de Lily hacia un proveedor de modelos con limitación de tasa y filtrado de contenido</li>
+                        <li><strong>Qué Recibe:</strong> El texto de su mensaje, identificador de la aplicación, entorno, dirección IP (técnica), token de autenticación</li>
+                        <li><strong>Qué Almacena:</strong> Registros operativos mínimos a corto plazo (marcas de tiempo, códigos de estado); no el mensaje</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Política de Privacidad de Cloudflare</a></li>
+                    </ul>
+
+                    <h3>10.2 xAI (Grok) — Proveedor Principal de IA</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Generar afirmaciones a partir de los mensajes del Laboratorio de Lily</li>
+                        <li><strong>Qué Recibe:</strong> Solo el texto del mensaje pasado por la Pasarela</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://x.ai/legal/privacy-policy" target="_blank" rel="noopener">Política de Privacidad de xAI</a></li>
+                    </ul>
+
+                    <h3>10.3 OpenRouter — Proveedor de IA de Respaldo</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Funcionar como enrutador de respaldo a través de modelos alternativos si el proveedor principal no está disponible</li>
+                        <li><strong>Qué Recibe:</strong> Solo el texto del mensaje pasado por la Pasarela</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">Política de Privacidad de OpenRouter</a></li>
+                    </ul>
+
+                    <h3>10.4 Apple iCloud / CloudKit</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Sincronización opcional de su jardín y preferencias entre sus propios dispositivos Apple</li>
+                        <li><strong>Qué Almacena:</strong> Sus datos cifrados de Lilia dentro de su iCloud personal</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Política de Privacidad de Apple</a></li>
+                    </ul>
+
+                    <h3>10.5 App Store de Apple</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Distribución y cualquier futura compra dentro de la aplicación</li>
+                        <li><strong>Qué Recibe:</strong> Datos estándar de descarga y compra manejados por Apple, no por nosotros</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Política de Privacidad de Apple</a></li>
+                    </ul>
+
+                    <h3>10.6 Sin Publicidad, Sin Analítica</h3>
+                    <p>Lilia no incluye Google AdMob, Google Analytics, Firebase, Facebook SDK, Mixpanel, Amplitude, AppsFlyer, Adjust, Branch, Sentry ni ningún otro SDK de publicidad, atribución, analítica o reporte de fallas.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>11. Sus Derechos de Privacidad</h2>
+
+                    <h3>11.1 Derechos del GDPR (Unión Europea / Reino Unido)</h3>
+                    <p>Si está en la UE, EEE, Reino Unido o Suiza, tiene los siguientes derechos bajo el GDPR / UK GDPR:</p>
+                    <ul>
+                        <li><strong>Derecho de Acceso:</strong> Solicitar información sobre los datos procesados acerca de usted</li>
+                        <li><strong>Derecho de Rectificación:</strong> Corregir datos inexactos</li>
+                        <li><strong>Derecho de Supresión:</strong> Solicitar la eliminación de sus datos</li>
+                        <li><strong>Derecho a la Portabilidad de los Datos:</strong> Recibir sus datos en un formato portable</li>
+                        <li><strong>Derecho de Oposición:</strong> Oponerse al procesamiento de sus datos</li>
+                        <li><strong>Derecho a Retirar el Consentimiento:</strong> Retirar el consentimiento en cualquier momento</li>
+                        <li><strong>Derecho a Presentar una Queja:</strong> Ante su autoridad local de protección de datos</li>
+                    </ul>
+
+                    <h3>11.2 Derechos del CCPA / CPRA (California)</h3>
+                    <p>Si es residente de California, tiene los siguientes derechos:</p>
+                    <ul>
+                        <li><strong>Derecho a Saber</strong> qué categorías de información personal se recopilan</li>
+                        <li><strong>Derecho a Eliminar</strong> la información personal en poder de Believe PR</li>
+                        <li><strong>Derecho a Corregir</strong> información personal inexacta</li>
+                        <li><strong>Derecho a Optar por No Participar</strong> de la venta o intercambio de información personal</li>
+                        <li><strong>Derecho a la No Discriminación</strong> por ejercer cualquiera de estos derechos</li>
+                    </ul>
+                    <p><strong>No vendemos ni compartimos su información personal</strong> según se definen estos términos en el CPRA.</p>
+
+                    <h3>11.3 Cómo Ejercer sus Derechos</h3>
+                    <p>Como casi todos sus datos viven en su propio dispositivo:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Abra Lilia — su jardín, historial, lista de ocultos y recordatorios están visibles dentro de la aplicación en cualquier momento</li>
+                        <li><strong>Corrección y Supresión:</strong> Edite o elimine entradas directamente dentro de Lilia, o elimine la aplicación para remover todos los datos locales</li>
+                        <li><strong>iCloud:</strong> Si usó la sincronización con iCloud, administre o elimine sus datos en <em>Ajustes → Apple ID → iCloud</em></li>
+                        <li><strong>Otras Solicitudes:</strong> Escríbanos a <a href="mailto:lilia@armandojimenez.dev">lilia@armandojimenez.dev</a> con su solicitud</li>
+                    </ul>
+                    <p>Responderemos a las solicitudes formales de derechos dentro del plazo requerido por la ley aplicable (generalmente dentro de 30 días).</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>12. Privacidad de Menores</h2>
+
+                    <h3>12.1 Requisito de Edad</h3>
+                    <p>Lilia está pensada para usuarias de <strong>13 años de edad o más</strong>. No recopilamos a sabiendas información personal de menores de 13 años. Si cree que una menor de 13 años ha usado Lilia, por favor contáctenos para que podamos tomar las medidas apropiadas.</p>
+
+                    <h3>12.2 Adolescentes Menores de Edad</h3>
+                    <p>Para usuarias menores de 18 años, recomendamos la conciencia de los padres. Lilia no contiene chat con extraños, perfiles públicos, publicidad ni compras dentro de la aplicación que se puedan realizar sin controles a nivel de dispositivo.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>13. Usuarias Internacionales</h2>
+
+                    <h3>13.1 Dónde Viven los Datos</h3>
+                    <p>Sus datos personales de Lilia viven en su dispositivo. Las solicitudes del Laboratorio de Lily se enrutan a través de la red global de Cloudflare y son procesadas por proveedores de IA (xAI en los Estados Unidos, OpenRouter como respaldo) en tiempo real. La sincronización con iCloud, si está activada, almacena los datos en la infraestructura de Apple bajo su Apple ID.</p>
+
+                    <h3>13.2 Transferencias Internacionales</h3>
+                    <p>Si se encuentra fuera de los Estados Unidos, su mensaje del Laboratorio de Lily puede ser procesado en los Estados Unidos u otros países donde operan los proveedores de IA. Al usar el Laboratorio de Lily, usted consiente ese procesamiento con el propósito de devolverle una generación.</p>
+
+                    <h3>13.3 Cumplimiento Regional</h3>
+                    <ul>
+                        <li><strong>Unión Europea / Reino Unido:</strong> GDPR / UK GDPR</li>
+                        <li><strong>California:</strong> CCPA / CPRA</li>
+                        <li><strong>Brasil:</strong> LGPD</li>
+                        <li><strong>Otras Regiones:</strong> Respetamos todas las leyes de privacidad aplicables</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>14. Cambios a esta Política de Privacidad</h2>
+                    <p>Podemos actualizar esta Política de Privacidad para reflejar nuevas funciones, requisitos legales o cambios de terceros. Cuando hagamos cambios materiales:</p>
+                    <ul>
+                        <li>La fecha de "Última Actualización" en la parte superior de esta página cambiará</li>
+                        <li>Mostraremos un aviso dentro de la aplicación cuando sea apropiado</li>
+                        <li>El uso continuo de Lilia después de que el cambio entre en vigor constituye aceptación</li>
+                    </ul>
+                    <p>La versión más actual siempre está disponible en esta URL y dentro de los ajustes de Lilia.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>15. Contáctenos</h2>
+                    <p>Si tiene preguntas, inquietudes o solicitudes sobre esta Política de Privacidad o nuestras prácticas de privacidad, por favor contáctenos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo electrónico:</strong> <a href="mailto:lilia@armandojimenez.dev">lilia@armandojimenez.dev</a></p>
+                        <p><strong>Sitio web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de Respuesta</h3>
+                    <ul>
+                        <li>Dentro de 30 días para consultas generales de privacidad</li>
+                        <li>Dentro de 72 horas para inquietudes urgentes de privacidad</li>
+                        <li>Conforme a lo requerido por la ley aplicable para solicitudes formales de derechos</li>
+                    </ul>
+
+                    <h3>Recursos de Salud Mental</h3>
+                    <p>Lilia es una compañera, no una profesional de la salud. Si está en crisis, por favor busque ayuda:</p>
+                    <ul>
+                        <li><strong>EE. UU.:</strong> Llame o envíe un mensaje de texto al <strong>988</strong> — Línea de Prevención del Suicidio y Crisis</li>
+                        <li><strong>EE. UU.:</strong> Crisis Text Line — envíe HOME al <strong>741741</strong></li>
+                        <li><strong>Internacional:</strong> <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a></li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última Actualización:</strong> 9 de abril de 2026</p>
+                    <p><strong>Fecha de Vigencia:</strong> 9 de abril de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

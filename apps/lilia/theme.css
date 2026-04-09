@@ -1,0 +1,256 @@
+/*
+ * Lilia — Custom Crimson Lily Theme
+ * Overrides for policy pages.
+ *
+ * Mirrors the in-app palette: Lily Crimson on Petal Blush (light)
+ * and warm crimson on deep plum (dark). Cormorant Garamond for the
+ * editorial title moments, Lora for subheadings.
+ */
+
+/* ===========================
+   Custom Color Palette — Crimson Lily
+   =========================== */
+:root {
+    /* Light Theme — Petal Blush */
+    --bg-primary: #fdf2ee;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #fbe6e1;
+    --bg-accent: #f7d9d2;
+
+    --text-primary: #2a1218;
+    --text-secondary: #6c4148;
+    --text-tertiary: #98727a;
+    --text-link: #9c142b;
+    --text-link-hover: #7a0d20;
+
+    --border-color: #f0c7be;
+    --border-light: #f9e2dc;
+
+    --accent-primary: #9c142b;
+    --accent-secondary: #c2455d;
+    --accent-success: #8fb89a;
+    --accent-warning: #d97a5f;
+    --accent-danger: #c2455d;
+}
+
+/* Dark Theme — Deep Plum / Crimson Bloom */
+[data-theme="dark"] {
+    --bg-primary: #161320;
+    --bg-secondary: #221b2c;
+    --bg-tertiary: #2c2235;
+    --bg-accent: #3a2734;
+
+    --text-primary: #fdf2ee;
+    --text-secondary: #d9bdc4;
+    --text-tertiary: #a78793;
+    --text-link: #d4384f;
+    --text-link-hover: #e6647a;
+
+    --border-color: #43303d;
+    --border-light: #322334;
+
+    --accent-primary: #d4384f;
+    --accent-secondary: #e78fa3;
+    --accent-success: #95c2a1;
+    --accent-warning: #e08e74;
+    --accent-danger: #d4384f;
+}
+
+/* ===========================
+   Editorial Typography
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Lora:wght@400;500;600&display=swap');
+
+.policy-title {
+    font-family: 'Cormorant Garamond', 'Space Grotesk', Georgia, serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+}
+
+.badge-title {
+    font-family: 'Cormorant Garamond', 'Space Grotesk', Georgia, serif !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em;
+}
+
+.badge-subtitle {
+    font-family: 'Lora', 'Space Grotesk', Georgia, serif !important;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.policy-section h2 {
+    font-family: 'Lora', 'Space Grotesk', Georgia, serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.005em;
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: 'Lora', 'Space Grotesk', Georgia, serif !important;
+    font-weight: 600 !important;
+}
+
+/* ===========================
+   Custom Highlight Boxes
+   =========================== */
+.highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #fff5f1 100%);
+    border-left-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #2c1a26 100%);
+}
+
+.highlight-box.warning {
+    background: linear-gradient(135deg, rgba(217, 122, 95, 0.18) 0%, rgba(217, 122, 95, 0.05) 100%);
+    border-left-color: var(--accent-warning);
+}
+
+/* ===========================
+   App Badge — petal card
+   =========================== */
+.app-badge {
+    background: linear-gradient(135deg, #ffffff 0%, #fdf2ee 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .app-badge {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #2a1c2a 100%);
+}
+
+/* ===========================
+   Section header gradient
+   =========================== */
+.policy-section h2 {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom-color: var(--accent-primary);
+}
+
+/* ===========================
+   Theme Toggle
+   =========================== */
+.theme-toggle {
+    background: linear-gradient(135deg, #ffffff 0%, #fdf2ee 100%);
+    border-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #2c1c2a 100%);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 16px rgba(156, 20, 43, 0.22);
+}
+
+/* ===========================
+   Navigation Links
+   =========================== */
+.nav-link {
+    background: var(--bg-accent);
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+/* ===========================
+   Contact Card
+   =========================== */
+.contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #fff5f1 100%);
+    border: 2px solid var(--border-light);
+}
+
+[data-theme="dark"] .contact-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #2c1a26 100%);
+}
+
+.contact-card h3 {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===========================
+   TOC
+   =========================== */
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+/* ===========================
+   Scrollbar
+   =========================== */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* ===========================
+   Selection
+   =========================== */
+::selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* ===========================
+   Back to Top
+   =========================== */
+.back-to-top {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%) !important;
+}
+
+.back-to-top:hover {
+    background: var(--accent-primary) !important;
+    box-shadow: 0 8px 24px rgba(156, 20, 43, 0.32) !important;
+}
+
+/* ===========================
+   Soft petal glow on header
+   =========================== */
+@keyframes petalGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(156, 20, 43, 0.10);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(156, 20, 43, 0.18);
+    }
+}
+
+.policy-header {
+    animation: petalGlow 4s ease-in-out infinite;
+}
+
+/* ===========================
+   Link underline
+   =========================== */
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
