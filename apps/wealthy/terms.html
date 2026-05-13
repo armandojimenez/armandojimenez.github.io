@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="wealthy" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms &amp; Conditions - Wealthy</title>
+    <meta name="description" content="Terms and Conditions for Wealthy, a private affirmation companion for wealth, abundance, and money mindset.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">🪙</div>
+                <div class="badge-text">
+                    <div class="badge-title">Wealthy</div>
+                    <div class="badge-subtitle">Affirmations for wealth &amp; abundance</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms &amp; Conditions</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: May 12, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: May 12, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#description">App Description</a></li>
+                    <li><a href="#license">License to Use</a></li>
+                    <li><a href="#user-obligations">User Obligations</a></li>
+                    <li><a href="#user-content">User-Created Content</a></li>
+                    <li><a href="#mint">Mint Terms</a></li>
+                    <li><a href="#purchases">Wealthy Vault &amp; Purchases</a></li>
+                    <li><a href="#not-advice">Not Financial, Therapy, or Medical Advice</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#prohibited-uses">Prohibited Uses</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#disclaimers">Disclaimers</a></li>
+                    <li><a href="#limitation">Limitation of Liability</a></li>
+                    <li><a href="#indemnification">Indemnification</a></li>
+                    <li><a href="#governing-law">Governing Law</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>Welcome to Wealthy ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. By downloading, installing, accessing, or using the App, you ("User," "you," or "your") agree to be bound by these Terms and Conditions ("Terms").</p>
+
+                    <div class="highlight-box">
+                        <strong>⚠️ Important:</strong> If you do not agree to these Terms, do not download, install, or use Wealthy. Your continued use of Wealthy constitutes acceptance of these Terms and any updates made to them.
+                    </div>
+
+                    <h3>1.1 Agreement to Terms</h3>
+                    <p>These Terms form a legally binding agreement between you and Believe PR. By using Wealthy, you represent that:</p>
+                    <ul>
+                        <li>You are at least 13 years of age (or the minimum age required by your jurisdiction)</li>
+                        <li>You have the legal capacity to enter into these Terms</li>
+                        <li>If you are under 18, you have obtained parental or guardian consent</li>
+                        <li>You will comply with all applicable laws and regulations</li>
+                    </ul>
+
+                    <h3>1.2 Additional Terms</h3>
+                    <p>In addition to these Terms, your use of Wealthy is also governed by:</p>
+                    <ul>
+                        <li>Our <a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li>Apple Media Services Terms and Conditions</li>
+                        <li>Apple iCloud terms (if you enable iCloud sync)</li>
+                        <li>RevenueCat's terms (subscription management layer)</li>
+                        <li>The terms of any AI provider that Mint routes to (Cloudflare, xAI, OpenRouter)</li>
+                    </ul>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. App Description</h2>
+
+                    <h3>2.1 Purpose</h3>
+                    <p>Wealthy is a native iOS affirmation companion focused on wealth, abundance, and money mindset, designed to help users:</p>
+                    <ul>
+                        <li>Discover affirmations through an immersive, full-screen swipe experience</li>
+                        <li>Save favorite affirmations to a private "Vault"</li>
+                        <li>Browse curated categories of money, abundance, and wealth-identity affirmations</li>
+                        <li>Generate personalized affirmations through Mint (an AI feature)</li>
+                        <li>Write their own affirmations in My Favorites</li>
+                        <li>Receive optional daily reminder notifications</li>
+                        <li>Customize palette and appearance</li>
+                    </ul>
+
+                    <h3>2.2 Key Features</h3>
+                    <ul>
+                        <li><strong>Vault:</strong> Your private collection of saved affirmations</li>
+                        <li><strong>Categories:</strong> Curated collections of affirmations organized by theme (Daily Wealth, Abundance, Wealth Identity, Manifesting, Money Confidence, Earning Power, and more)</li>
+                        <li><strong>Mint:</strong> AI-generated affirmations from a short prompt you write</li>
+                        <li><strong>My Favorites:</strong> Affirmations you write or favorite for yourself</li>
+                        <li><strong>Reminders:</strong> Local daily notifications</li>
+                        <li><strong>Palette &amp; Appearance:</strong> Color themes and light/dark/auto support</li>
+                        <li><strong>Widget:</strong> Daily Wealth card surfaced on your Home Screen</li>
+                        <li><strong>iCloud Sync:</strong> Optional sync across your Apple devices via CloudKit</li>
+                        <li><strong>Wealthy Vault (paid tier):</strong> Optional subscription that unlocks the full library and additional Mint capacity</li>
+                    </ul>
+
+                    <h3>2.3 Availability</h3>
+                    <ul>
+                        <li>Wealthy is available on iOS for compatible Apple devices</li>
+                        <li>Certain features (such as iCloud sync, Mint, and Wealthy Vault) require an Apple ID and an internet connection</li>
+                        <li>We reserve the right to modify, add, or discontinue features at any time</li>
+                    </ul>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. License to Use</h2>
+
+                    <h3>3.1 License Grant</h3>
+                    <p>Subject to your compliance with these Terms, Believe PR grants you a limited, non-exclusive, non-transferable, revocable license to:</p>
+                    <ul>
+                        <li>Download and install Wealthy on Apple devices you own or control</li>
+                        <li>Access and use Wealthy for personal, non-commercial purposes</li>
+                        <li>Use all features and functionalities as intended, including any Wealthy Vault features you have an active subscription to</li>
+                    </ul>
+
+                    <h3>3.2 License Restrictions</h3>
+                    <p>You may NOT:</p>
+                    <ul>
+                        <li>Copy, modify, or create derivative works of the App</li>
+                        <li>Reverse engineer, decompile, or disassemble the App</li>
+                        <li>Remove or modify any copyright, trademark, or proprietary notices</li>
+                        <li>Rent, lease, lend, sell, or sublicense the App</li>
+                        <li>Use the App for any commercial purpose without written permission</li>
+                        <li>Circumvent any security features, rate limits, or entitlement checks, including those of Mint and Wealthy Vault</li>
+                        <li>Use automated tools, scripts, or bots to interact with Wealthy or Mint</li>
+                        <li>Extract the bundled affirmation content for redistribution</li>
+                    </ul>
+
+                    <h3>3.3 Ownership</h3>
+                    <p>Wealthy and all of its intellectual property rights remain the exclusive property of Believe PR and Armando Jimenez. This license does not grant you any ownership rights in Wealthy or in the bundled content.</p>
+                </section>
+
+                <section id="user-obligations" class="policy-section">
+                    <h2>4. User Obligations</h2>
+
+                    <h3>4.1 Responsible Use</h3>
+                    <p>You agree to:</p>
+                    <ul>
+                        <li>Use Wealthy in accordance with these Terms and applicable laws</li>
+                        <li>Use Mint in good faith for personal reflection on your relationship with money</li>
+                        <li>Keep your device and your Apple ID secure</li>
+                        <li>Not use Wealthy for any unlawful, harmful, or deceptive purpose</li>
+                    </ul>
+
+                    <h3>4.2 No Account, Your Responsibility</h3>
+                    <p>Wealthy does not require an account. Because all of your data lives on your device (and optionally in your iCloud), you are responsible for:</p>
+                    <ul>
+                        <li>Securing your device and Apple ID</li>
+                        <li>Maintaining your iCloud backups if you wish to preserve your Vault</li>
+                        <li>Understanding that uninstalling Wealthy without iCloud sync will permanently delete your local data</li>
+                    </ul>
+                </section>
+
+                <section id="user-content" class="policy-section">
+                    <h2>5. User-Created Content</h2>
+
+                    <h3>5.1 Your Affirmations</h3>
+                    <p>You retain full ownership of any affirmations you write yourself in My Favorites or save from Mint. Because that content lives only on your device (and optionally inside your own iCloud), Believe PR does not claim, license, or moderate it.</p>
+
+                    <h3>5.2 Custom Theme Photos</h3>
+                    <p>Photos you choose for custom theme backgrounds remain yours. Wealthy stores them locally for the purpose of rendering your selected theme and does not upload them.</p>
+
+                    <h3>5.3 Saved &amp; Shared Cards</h3>
+                    <p>You may use Wealthy to render an affirmation card and save or share it. Once you share that card outside Wealthy (for example, by saving it to Photos or sending it through another app), it becomes subject to the terms and policies of that other service.</p>
+                </section>
+
+                <section id="mint" class="policy-section">
+                    <h2>6. Mint Terms</h2>
+
+                    <h3>6.1 What Mint Is</h3>
+                    <p>Mint is an optional AI feature that generates a small set of affirmations from a short prompt you provide. Generations are routed through an AI Gateway (Cloudflare Workers) to a model provider (currently xAI Grok, with OpenRouter as fallback).</p>
+
+                    <h3>6.2 Acceptable Use of Mint</h3>
+                    <p>You agree NOT to use Mint to:</p>
+                    <ul>
+                        <li>Generate hateful, violent, sexual, harassing, or otherwise harmful content</li>
+                        <li>Generate content about other identifiable individuals without their consent</li>
+                        <li>Attempt to extract system prompts, model weights, or training data</li>
+                        <li>Probe, attack, or attempt to bypass safety filters or rate limits</li>
+                        <li>Use Mint as a substitute for emergency, medical, legal, tax, or financial advice</li>
+                        <li>Generate get-rich-quick schemes, fraudulent investment advice, or content that pressures another person into a financial decision</li>
+                        <li>Submit personally identifying information about yourself or others (full names, addresses, real bank or brokerage account numbers, credit-card numbers, medical records, etc.)</li>
+                    </ul>
+
+                    <h3>6.3 Rate Limits &amp; Fair Use</h3>
+                    <p>To keep Mint available to everyone, the AI Gateway enforces per-IP rate limits (currently around 20 requests per minute and 1,000 requests per day, subject to change). Wealthy Vault subscribers may receive higher daily limits. Excessive or abusive use may be temporarily or permanently blocked at the Gateway level.</p>
+
+                    <h3>6.4 No Guarantees on Output</h3>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ AI output is generated, not curated</strong>
+                        <p>Affirmations produced by Mint are generated by third-party language models. We do not pre-approve, fact-check, or guarantee any individual generation. Outputs may occasionally be unexpected, off-tone, or inaccurate. You are responsible for deciding whether to save, favorite, or dismiss each affirmation. If something feels wrong, simply let it go.</p>
+                    </div>
+
+                    <h3>6.5 Service Availability</h3>
+                    <p>Mint depends on third-party providers and may be temporarily unavailable due to provider outages, network issues, content filtering, or rate limits. The rest of Wealthy (your Vault, your reminders, the bundled content, your widget) continues to work without an internet connection.</p>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>7. Wealthy Vault &amp; Purchases</h2>
+
+                    <h3>7.1 Free Tier</h3>
+                    <p>Wealthy is free to download and use. The free tier includes a generous selection of affirmations, the Daily Wealth card, basic reminders, the widget, and limited Mint generations.</p>
+
+                    <h3>7.2 Wealthy Vault Subscription</h3>
+                    <p>Wealthy Vault is an optional auto-renewing subscription that unlocks:</p>
+                    <ul>
+                        <li>The full curated affirmation library</li>
+                        <li>Exclusive categories and themes</li>
+                        <li>Additional Mint capacity</li>
+                        <li>Premium appearance options</li>
+                    </ul>
+
+                    <h3>7.3 Pricing &amp; Billing</h3>
+                    <ul>
+                        <li>Pricing, billing cadence, and benefits are clearly disclosed inside the App at the point of purchase, in your local currency where supported by Apple</li>
+                        <li>All charges are made by Apple to your Apple ID</li>
+                        <li>Subscriptions auto-renew at the end of each period unless you cancel at least 24 hours before the renewal date</li>
+                        <li>Free-trial periods, if offered, convert to paid subscriptions at the end of the trial unless canceled before that time</li>
+                    </ul>
+
+                    <h3>7.4 Managing Your Subscription</h3>
+                    <p>You can manage, change, or cancel your Wealthy Vault subscription at any time in <em>Settings → Apple ID → Subscriptions</em>. Canceling stops the next renewal but leaves your access active for the remainder of the paid period.</p>
+
+                    <h3>7.5 Refunds</h3>
+                    <p>Because all transactions are processed by Apple, refund requests must be made through Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. Believe PR cannot directly issue Apple App Store refunds.</p>
+
+                    <h3>7.6 Price Changes</h3>
+                    <p>We may change subscription prices over time. Apple will notify existing subscribers of any material price increase and request consent as required by the App Store rules of your region.</p>
+                </section>
+
+                <section id="not-advice" class="policy-section">
+                    <h2>8. Not Financial, Therapy, or Medical Advice</h2>
+
+                    <div class="highlight-box warning">
+                        <strong>⚠️ IMPORTANT — READ CAREFULLY</strong>
+                        <p>Wealthy is a self-reflection and affirmation companion. It is NOT a financial advisor, a brokerage, a tax preparer, a medical device, a diagnostic tool, a therapy service, or a substitute for any kind of professional advice.</p>
+                    </div>
+
+                    <h3>8.1 What Wealthy Is Not</h3>
+                    <p>Wealthy does NOT provide:</p>
+                    <ul>
+                        <li>Personalized investment, tax, or financial-planning advice</li>
+                        <li>Recommendations to buy, sell, or hold any security, asset, or product</li>
+                        <li>Guarantees of income, returns, or any specific financial outcome</li>
+                        <li>Medical diagnosis or treatment</li>
+                        <li>Mental-health therapy or counseling</li>
+                        <li>Crisis intervention services</li>
+                        <li>Personalized clinical or legal advice from a licensed professional</li>
+                    </ul>
+
+                    <h3>8.2 Affirmations Are Inspiration, Not Predictions</h3>
+                    <p>Affirmations are statements of intention and identity. They are not predictions, forecasts, or commitments — neither by you, nor by us, nor by any third party. Wealth outcomes depend on factors entirely outside the App.</p>
+
+                    <h3>8.3 If You Are in Crisis</h3>
+                    <p>If you are experiencing a mental-health emergency, please contact a qualified professional or emergency services in your country. In the United States, you can call or text <strong>988</strong> to reach the Suicide &amp; Crisis Lifeline, or text HOME to <strong>741741</strong> for the Crisis Text Line. Internationally, visit <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a>.</p>
+
+                    <h3>8.4 User Responsibility</h3>
+                    <p>You acknowledge and agree that:</p>
+                    <ul>
+                        <li>You use Wealthy at your own discretion and risk</li>
+                        <li>Affirmations are inspirational content, not personalized advice</li>
+                        <li>You are responsible for any financial decisions you make, and for seeking appropriate professional care when needed</li>
+                    </ul>
+                </section>
+
+                <section id="intellectual-property" class="policy-section">
+                    <h2>9. Intellectual Property</h2>
+
+                    <h3>9.1 Ownership</h3>
+                    <p>All intellectual property rights in and to Wealthy, including but not limited to:</p>
+                    <ul>
+                        <li>The Wealthy source code, application binary, and design</li>
+                        <li>The Wealthy name, logo, gold-coin mark, treasury-key mark, and the "Mint" feature name</li>
+                        <li>The Wealthy visual design system, color palettes, and typography choices</li>
+                        <li>The bundled affirmation content as a curated collection</li>
+                        <li>The text of these Terms and the Privacy Policy</li>
+                    </ul>
+                    <p>...are owned exclusively by Believe PR and Armando Jimenez.</p>
+
+                    <h3>9.2 Trademarks</h3>
+                    <p>"Wealthy," "Wealthy Vault," "Mint" (as used inside Wealthy), and associated logos and marks are trademarks of Believe PR. You may not use these marks without prior written permission.</p>
+
+                    <h3>9.3 User Content</h3>
+                    <p>You retain ownership of:</p>
+                    <ul>
+                        <li>Affirmations you write yourself</li>
+                        <li>Custom theme photos you supply</li>
+                        <li>The contents of your Vault, hidden list, and history (as data on your device)</li>
+                    </ul>
+                    <p>Because this data is stored locally and never transmitted to our servers, Believe PR claims no ownership and no license over it.</p>
+
+                    <h3>9.4 Copyright Concerns</h3>
+                    <p>If you believe content in Wealthy infringes your copyright, contact us at <a href="mailto:wealthy@armandojimenez.dev">wealthy@armandojimenez.dev</a> with sufficient detail to identify the work in question.</p>
+                </section>
+
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>10. Prohibited Uses</h2>
+                    <p>You agree NOT to use Wealthy to:</p>
+
+                    <h3>10.1 Illegal or Harmful Activities</h3>
+                    <ul>
+                        <li>Engage in any activity that violates local, state, national, or international law</li>
+                        <li>Harass, stalk, threaten, or harm any other person</li>
+                        <li>Create or distribute hateful, violent, sexual, or otherwise harmful content</li>
+                        <li>Generate financial scams, fraudulent solicitations, or pyramid / multi-level recruitment material</li>
+                    </ul>
+
+                    <h3>10.2 Unauthorized Access</h3>
+                    <ul>
+                        <li>Reverse engineer, decompile, or modify the App</li>
+                        <li>Bypass security measures, content filters, rate limits, or Wealthy Vault entitlement checks</li>
+                        <li>Probe, scan, or test the AI Gateway for vulnerabilities</li>
+                    </ul>
+
+                    <h3>10.3 Commercial Misuse</h3>
+                    <ul>
+                        <li>Resell, rent, or redistribute the App, the bundled content, or Wealthy Vault access</li>
+                        <li>Use Mint as a backend for another product or service</li>
+                        <li>Scrape or extract Wealthy's content programmatically</li>
+                    </ul>
+
+                    <h3>10.4 Malicious Activity</h3>
+                    <ul>
+                        <li>Upload malware, viruses, or malicious code</li>
+                        <li>Disrupt the proper functioning of the App or AI Gateway</li>
+                        <li>Attempt to overload, throttle, or crash the AI Gateway or any provider it routes to</li>
+                    </ul>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>11. Termination</h2>
+
+                    <h3>11.1 Termination by You</h3>
+                    <p>You may stop using Wealthy at any time by:</p>
+                    <ul>
+                        <li>Uninstalling Wealthy from all of your devices</li>
+                        <li>Canceling your Wealthy Vault subscription in <em>Settings → Apple ID → Subscriptions</em></li>
+                        <li>Deleting your Wealthy data from iCloud (if iCloud sync was enabled)</li>
+                    </ul>
+
+                    <h3>11.2 Termination by Us</h3>
+                    <p>We reserve the right to:</p>
+                    <ul>
+                        <li>Discontinue Wealthy at any time</li>
+                        <li>Block access to Mint if these Terms are violated</li>
+                        <li>Revoke Wealthy Vault entitlements obtained through fraud, chargeback, or violation of these Terms</li>
+                        <li>Remove the App from the App Store</li>
+                        <li>Disable specific features or content</li>
+                    </ul>
+
+                    <h3>11.3 Effect of Termination</h3>
+                    <p>Upon termination:</p>
+                    <ul>
+                        <li>Your license to use Wealthy immediately ends</li>
+                        <li>You must stop using the App</li>
+                        <li>Any prepaid, unused portion of a Wealthy Vault subscription remains subject to Apple's refund policies</li>
+                        <li>Provisions regarding intellectual property, disclaimers, limitation of liability, indemnification, and dispute resolution survive termination</li>
+                    </ul>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>12. Disclaimers</h2>
+
+                    <div class="highlight-box warning">
+                        <strong>⚠️ READ CAREFULLY — IMPORTANT LEGAL DISCLAIMERS</strong>
+                    </div>
+
+                    <h3>12.1 "AS IS" and "AS AVAILABLE"</h3>
+                    <p>WEALTHY IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                    <ul>
+                        <li>WARRANTIES OF MERCHANTABILITY</li>
+                        <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                        <li>NON-INFRINGEMENT</li>
+                        <li>ACCURACY OR RELIABILITY</li>
+                        <li>UNINTERRUPTED OR ERROR-FREE OPERATION</li>
+                    </ul>
+
+                    <h3>12.2 No Guarantee of Outcome</h3>
+                    <p>WE DO NOT WARRANT THAT:</p>
+                    <ul>
+                        <li>Affirmations or AI generations will be accurate, complete, or appropriate for any specific situation</li>
+                        <li>Use of Wealthy will lead to any specific financial, professional, or personal outcome</li>
+                        <li>Wealthy or Mint will be available at any particular time</li>
+                        <li>Bugs or errors will be corrected</li>
+                        <li>Wealthy will be compatible with all devices or future iOS versions</li>
+                        <li>iCloud sync will be free of conflicts or data loss</li>
+                    </ul>
+
+                    <h3>12.3 Third-Party Services</h3>
+                    <p>WE ARE NOT RESPONSIBLE FOR:</p>
+                    <ul>
+                        <li>The availability or behavior of Cloudflare Workers</li>
+                        <li>The availability, output, or policies of xAI, OpenRouter, or any other AI provider</li>
+                        <li>RevenueCat's availability or its handling of subscription state</li>
+                        <li>Apple iCloud, CloudKit, StoreKit, or App Store availability</li>
+                        <li>Device operating system issues, network outages, or other infrastructure failures</li>
+                    </ul>
+
+                    <h3>12.4 Jurisdictional Limitations</h3>
+                    <p>Some jurisdictions do not allow the exclusion of implied warranties. In those jurisdictions, the above exclusions may not apply to you, and you may have additional rights.</p>
+                </section>
+
+                <section id="limitation" class="policy-section">
+                    <h2>13. Limitation of Liability</h2>
+
+                    <div class="highlight-box warning">
+                        <strong>⚠️ IMPORTANT LIABILITY LIMITATIONS</strong>
+                    </div>
+
+                    <h3>13.1 Maximum Liability</h3>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL BELIEVE PR, ARMANDO JIMENEZ, OR THEIR AFFILIATES BE LIABLE FOR:</p>
+                    <ul>
+                        <li>INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES</li>
+                        <li>LOSS OF PROFITS, REVENUE, OR BUSINESS OPPORTUNITIES</li>
+                        <li>LOSS OF DATA OR INFORMATION (INCLUDING ANY VAULT CONTENT)</li>
+                        <li>FINANCIAL LOSS OR INVESTMENT DECISIONS INFLUENCED IN ANY WAY BY AFFIRMATION CONTENT</li>
+                        <li>EMOTIONAL DISTRESS OR PERSONAL HARM ALLEGED TO ARISE FROM AFFIRMATION CONTENT</li>
+                        <li>COST OF SUBSTITUTE GOODS OR SERVICES</li>
+                    </ul>
+
+                    <h3>13.2 Cap on Liability</h3>
+                    <p>OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO WEALTHY SHALL NOT EXCEED THE GREATER OF:</p>
+                    <ul>
+                        <li>USD $50</li>
+                        <li>The total amount you have paid to use Wealthy in the twelve (12) months preceding the claim</li>
+                    </ul>
+
+                    <h3>13.3 Basis of the Bargain</h3>
+                    <p>These limitations reflect the allocation of risk between you and Believe PR and are an essential basis of this agreement, which would not be offered without them.</p>
+
+                    <h3>13.4 Jurisdictional Exceptions</h3>
+                    <p>Some jurisdictions do not allow limitations on liability for certain types of damages. In those jurisdictions, our liability is limited to the maximum extent permitted by law.</p>
+                </section>
+
+                <section id="indemnification" class="policy-section">
+                    <h2>14. Indemnification</h2>
+
+                    <h3>14.1 Your Indemnification</h3>
+                    <p>You agree to indemnify, defend, and hold harmless Believe PR, Armando Jimenez, and their affiliates, officers, employees, and agents from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:</p>
+                    <ul>
+                        <li>Your use or misuse of Wealthy or Mint</li>
+                        <li>Your violation of these Terms</li>
+                        <li>Your violation of any applicable laws or regulations</li>
+                        <li>Your violation of the rights of any third party (including content you submit to Mint)</li>
+                        <li>Any financial decision you make based, in whole or in part, on content shown by Wealthy</li>
+                    </ul>
+
+                    <h3>14.2 Defense of Claims</h3>
+                    <p>We reserve the right to assume exclusive defense and control of any matter subject to indemnification. You agree to cooperate with us in defending such claims.</p>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>15. Governing Law and Dispute Resolution</h2>
+
+                    <h3>15.1 Governing Law</h3>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of the Commonwealth of Puerto Rico, without regard to its conflict of law provisions.</p>
+
+                    <h3>15.2 Jurisdiction</h3>
+                    <p>You agree that any legal action or proceeding arising from these Terms shall be brought exclusively in the courts of the Commonwealth of Puerto Rico, and you consent to the personal jurisdiction of such courts.</p>
+
+                    <h3>15.3 Informal Resolution First</h3>
+                    <p>Before filing any legal action, you agree to attempt to resolve disputes informally by emailing <a href="mailto:wealthy@armandojimenez.dev">wealthy@armandojimenez.dev</a> and allowing 30 days for a good-faith response.</p>
+
+                    <h3>15.4 Class Action Waiver</h3>
+                    <p>TO THE EXTENT PERMITTED BY LAW, YOU AGREE THAT ANY DISPUTE SHALL BE RESOLVED ON AN INDIVIDUAL BASIS AND NOT AS A CLASS ACTION, CONSOLIDATED ACTION, OR REPRESENTATIVE ACTION.</p>
+
+                    <h3>15.5 Consumer Rights</h3>
+                    <p>Nothing in these Terms limits your statutory rights as a consumer under applicable consumer protection laws.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>16. Changes to Terms</h2>
+
+                    <h3>16.1 Right to Modify</h3>
+                    <p>We reserve the right to modify these Terms at any time to reflect new features, legal requirements, or changes in business practices.</p>
+
+                    <h3>16.2 Notice of Changes</h3>
+                    <p>When we make material changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>You may receive an in-app notice the next time you open Wealthy</li>
+                    </ul>
+
+                    <h3>16.3 Acceptance of Changes</h3>
+                    <p>By continuing to use Wealthy after changes are posted, you accept the modified Terms. If you disagree with any change, you must stop using Wealthy.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>17. Contact Information</h2>
+                    <p>For questions, concerns, or notices regarding these Terms, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:wealthy@armandojimenez.dev">wealthy@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>17.1 Customer Support</h3>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:wealthy@armandojimenez.dev">wealthy@armandojimenez.dev</a></li>
+                        <li><strong>Response Time:</strong> Within 2–5 business days</li>
+                    </ul>
+
+                    <h3>17.2 Legal Notices</h3>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:wealthy@armandojimenez.dev">wealthy@armandojimenez.dev</a></li>
+                        <li><strong>Subject Line:</strong> "Legal Notice — Wealthy"</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <h3>18. Miscellaneous</h3>
+
+                    <h4>18.1 Entire Agreement</h4>
+                    <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Believe PR regarding Wealthy.</p>
+
+                    <h4>18.2 Severability</h4>
+                    <p>If any provision is found to be unenforceable, the remaining provisions will remain in full effect.</p>
+
+                    <h4>18.3 Waiver</h4>
+                    <p>Our failure to enforce any right or provision does not constitute a waiver of such right or provision.</p>
+
+                    <h4>18.4 Assignment</h4>
+                    <p>You may not assign or transfer these Terms. We may assign our rights and obligations without restriction.</p>
+
+                    <h4>18.5 Survival</h4>
+                    <p>Provisions regarding intellectual property, disclaimers, limitation of liability, indemnification, and dispute resolution survive termination.</p>
+
+                    <h4>18.6 Language</h4>
+                    <p>These Terms are written in English. Any translations are for convenience only; the English version controls in case of conflicts.</p>
+
+                    <hr class="divider">
+
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> May 12, 2026</p>
+                    <p><strong>Effective Date:</strong> May 12, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
