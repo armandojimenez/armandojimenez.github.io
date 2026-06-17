@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="dear-cosmos" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de Privacidad - Dear Cosmos</title>
+    <meta name="description" content="Política de Privacidad de Dear Cosmos, un oráculo cósmico privado que responde tus preguntas con su propia voz. Tus reflexiones se quedan en tu dispositivo.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/dear-cosmos/privacy-policy-es.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">&#10022;</div>
+                <div class="badge-text">
+                    <div class="badge-title">Dear Cosmos</div>
+                    <div class="badge-subtitle">Pregúntale algo al universo</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 17 de junio de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha de vigencia: 17 de junio de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#privacy-first">Enfoque de privacidad primero</a></li>
+                    <li><a href="#information-collection">Información que recopilamos</a></li>
+                    <li><a href="#how-we-use">Cómo usamos tu información</a></li>
+                    <li><a href="#data-storage">Almacenamiento y seguridad</a></li>
+                    <li><a href="#ai">La IA detrás de tus respuestas</a></li>
+                    <li><a href="#notifications-widget">Notificaciones y widget</a></li>
+                    <li><a href="#permissions">Permisos de la aplicación</a></li>
+                    <li><a href="#third-party">Servicios de terceros</a></li>
+                    <li><a href="#monetization">Monetización futura</a></li>
+                    <li><a href="#your-rights">Tus derechos de privacidad</a></li>
+                    <li><a href="#children">Privacidad de menores</a></li>
+                    <li><a href="#international">Personas usuarias internacionales</a></li>
+                    <li><a href="#changes">Cambios a la política</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                    <li><a href="#resources">Recursos de apoyo</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Te damos la bienvenida a Dear Cosmos ("la Aplicación"), un oráculo cósmico privado desarrollado y operado por Believe PR, propiedad de Armando Jimenez. Dear Cosmos te permite hacerle una pregunta al universo y recibir una respuesta con su propia voz, una respuesta en primera persona escrita en el tono que elijas, acompañada de un cosmos vivo que reacciona a ese tono y de una pequeña señal cósmica para llevar contigo.</p>
+                    <p>Dear Cosmos se construye sobre una creencia silenciosa: las preguntas que traes son solo tuyas. Cuidamos lo que preguntas con el mismo cariño con el que esperamos que te responda.</p>
+                    <div class="highlight-box">
+                        <strong>&#10022; Nuestra promesa de privacidad:</strong>
+                        <ul>
+                            <li>Dear Cosmos no requiere una cuenta, un correo electrónico ni una contraseña</li>
+                            <li>Tus preguntas y respuestas viven en TU dispositivo, en "Tu Cosmos"</li>
+                            <li>No hay cuenta en la nube ni copia de tu diario en ningún servidor</li>
+                            <li>Para componer una respuesta, solo se envía el texto de esa única pregunta y la voz que elegiste</li>
+                            <li>No hay anuncios, ni analíticas, ni SDK de rastreo</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Enfoque de privacidad primero</h2>
+                    <h3>2.1 Nuestra filosofía</h3>
+                    <p>Lo que cada quien le pregunta al universo es algo personal, así que Dear Cosmos está hecho para pedir lo menos posible. Con Dear Cosmos:</p>
+                    <ul>
+                        <li>&#10003; Guardamos todos tus datos personales localmente en tu dispositivo de forma predeterminada</li>
+                        <li>&#10003; No usamos redes de anuncios, ni Google Analytics, ni Firebase, ni rastreadores de terceros</li>
+                        <li>&#10003; No requerimos cuentas, correos electrónicos ni contraseñas</li>
+                        <li>&#10003; Solo enviamos la pregunta que haces (y la voz que elegiste) cuando pides una respuesta, sin construir ningún perfil ni historial sobre ti</li>
+                        <li>&#10003; No guardamos ninguna copia de tu diario, tus respuestas ni tus ajustes en un servidor</li>
+                    </ul>
+
+                    <h3>2.2 Qué significa esto para ti</h3>
+                    <p>Cuando usas Dear Cosmos:</p>
+                    <ul>
+                        <li>Las preguntas que haces y las respuestas que recibes se quedan en tu teléfono, en "Tu Cosmos"</li>
+                        <li>Las respuestas que destacas o vuelves a ver se quedan en tu teléfono</li>
+                        <li>La voz que elegiste, tu tema y tu preferencia de recordatorio se quedan en tu teléfono</li>
+                        <li>Un mensaje diario, si lo activas, lo programa tu propio dispositivo de forma local</li>
+                    </ul>
+
+                    <p><strong>Importante:</strong> como nunca guardamos una copia de tu diario, borrar Dear Cosmos eliminará de forma permanente tus preguntas y respuestas guardadas. No podemos recuperarlas, porque nunca las tuvimos.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Información que recopilamos</h2>
+
+                    <h3>3.1 Información que tú creas (guardada en tu dispositivo)</h3>
+                    <p>Los siguientes datos los creas tú y se guardan localmente en tu dispositivo:</p>
+                    <ul>
+                        <li><strong>Tu Cosmos (diario):</strong> Las preguntas que haces, las respuestas que devuelve el universo, la señal cósmica de cada una y la fecha</li>
+                        <li><strong>Destacados:</strong> Las respuestas que marcas para volver a encontrar</li>
+                        <li><strong>Tu voz:</strong> El tono más reciente que seleccionaste (por ejemplo, Espiritual, Poético, Estoico)</li>
+                        <li><strong>Apariencia:</strong> Tu preferencia de tema (Sistema, Deep Void o Daybreak)</li>
+                        <li><strong>Mensaje diario:</strong> Si activaste el recordatorio diario suave</li>
+                        <li><strong>Estado de primer uso:</strong> Si completaste la introducción</li>
+                    </ul>
+
+                    <h3>3.2 Qué envía una pregunta</h3>
+                    <p>Hacerle una pregunta al universo es la única acción que contacta a un servidor. Cuando envías una pregunta, la Aplicación envía lo siguiente a nuestro AI Gateway para que pueda devolver una respuesta:</p>
+                    <ul>
+                        <li><strong>El texto de esa única pregunta</strong> y <strong>la voz (tono)</strong> que seleccionaste</li>
+                        <li><strong>Un identificador de dispositivo aleatorio</strong> (una cadena generada en tu dispositivo, no tu nombre, correo ni cuenta) que se usa solo para aplicar límites de uso justo</li>
+                        <li><strong>Un identificador de aplicación y entorno</strong> (por ejemplo, <code>dev</code> o <code>prod</code>) y <strong>un token</strong> que autoriza a la Aplicación a usar el Gateway</li>
+                        <li><strong>Tu dirección IP</strong>, como es técnicamente necesario para cualquier solicitud por internet</li>
+                    </ul>
+                    <p>El Gateway, alojado en Cloudflare Workers, reenvía tu pregunta a un proveedor de modelo (actualmente OpenRouter, dirigiendo al modelo DeepSeek V4 Flash) para componer la respuesta que lees. El Gateway nunca recibe tu nombre, correo, ubicación, diario ni ninguna otra información personal. Solo ve la pregunta de esa única respuesta.</p>
+
+                    <h3>3.3 Información que NO recopilamos</h3>
+                    <p>Dear Cosmos explícitamente NO recopila ni tiene acceso a:</p>
+                    <ul>
+                        <li>&#10007; Tu nombre, correo electrónico, número de teléfono ni contactos</li>
+                        <li>&#10007; Tu ubicación precisa ni datos de GPS</li>
+                        <li>&#10007; Una copia en un servidor de tu diario, tus destacados ni tus ajustes</li>
+                        <li>&#10007; Tus fotos, cámara, micrófono ni archivos</li>
+                        <li>&#10007; Datos de salud ni métricas de bienestar de ninguna fuente</li>
+                        <li>&#10007; Datos financieros reales: Dear Cosmos no se conecta a bancos ni a ninguna cuenta</li>
+                        <li>&#10007; Identidades de redes sociales, listas de amistades ni datos de inicio de sesión de terceros</li>
+                        <li>&#10007; Identificadores de publicidad (IDFA o Google Advertising ID): Dear Cosmos no tiene publicidad</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. Cómo usamos tu información</h2>
+
+                    <h3>4.1 Funcionalidad de la app (en el dispositivo)</h3>
+                    <p>Tus datos se usan por completo en tu dispositivo para:</p>
+                    <ul>
+                        <li>Mostrar la respuesta y la señal cósmica de cada pregunta que haces</li>
+                        <li>Mantener "Tu Cosmos", tu diario de preguntas y respuestas pasadas</li>
+                        <li>Recordar cuáles respuestas destacaste</li>
+                        <li>Aplicar tu voz, tema y apariencia seleccionados</li>
+                        <li>Programar tu mensaje diario local, si lo activaste</li>
+                        <li>Mostrar la señal más reciente en el widget de pantalla de inicio, si agregaste uno</li>
+                    </ul>
+
+                    <h3>4.2 Componer una respuesta</h3>
+                    <p>La pregunta que envías se usa únicamente para componer esa única respuesta y no se usa para ningún otro fin. No la conservamos para entrenar modelos, construir un perfil ni mejorar el servicio con el tiempo.</p>
+
+                    <h3>4.3 Registros operativos</h3>
+                    <p>El AI Gateway mantiene registros operativos mínimos (fecha y hora, identificador de aplicación, entorno, código de estado) para la prevención de abuso a corto plazo y la limitación de uso. Estos registros no están vinculados a ninguna identidad de persona usuaria más allá de una dirección IP y el identificador de dispositivo aleatorio.</p>
+
+                    <h3>4.4 Sin marketing, sin perfiles</h3>
+                    <p>No usamos tu información para marketing, perfiles, publicidad conductual ni para venderla a terceros. No hay publicidad en Dear Cosmos.</p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Almacenamiento y seguridad</h2>
+
+                    <h3>5.1 Almacenamiento local</h3>
+                    <p>Tus datos personales se guardan en tu dispositivo usando:</p>
+                    <ul>
+                        <li>Una <strong>base de datos local</strong> dentro del almacenamiento privado de la Aplicación, para tu diario y tus destacados</li>
+                        <li><strong>Almacenamiento de clave-valor del dispositivo</strong> para las preferencias (voz, tema, mensaje diario, introducción)</li>
+                        <li>La protección de datos del sistema operativo, que cifra los archivos de la app en reposo en los dispositivos iOS y Android modernos</li>
+                    </ul>
+
+                    <h3>5.2 Cifrado</h3>
+                    <ul>
+                        <li><strong>En reposo:</strong> Los datos están protegidos por el cifrado del sistema de archivos de tu dispositivo, vinculado a tu código o bloqueo de pantalla</li>
+                        <li><strong>En tránsito:</strong> Cada solicitud para hacerle una pregunta al universo usa HTTPS (TLS)</li>
+                    </ul>
+
+                    <h3>5.3 Prácticas de seguridad</h3>
+                    <ul>
+                        <li>El Gateway aplica límites de uso por dispositivo y por IP para mitigar el abuso</li>
+                        <li>Dear Cosmos no incluye ningún SDK de analíticas, atribución ni reporte de fallos</li>
+                        <li>Dear Cosmos no incrusta vistas web de terceros que carguen contenido externo dentro de la experiencia</li>
+                    </ul>
+
+                    <h3>5.4 Retención de datos</h3>
+                    <ul>
+                        <li>Tus datos permanecen en tu dispositivo mientras Dear Cosmos esté instalado</li>
+                        <li>Puedes borrar entradas individuales en cualquier momento dentro de la Aplicación</li>
+                        <li>Borrar la Aplicación elimina de forma permanente todos los datos guardados localmente</li>
+                        <li>Tu pregunta no es conservada por Dear Cosmos ni por el Gateway después de que se devuelve la respuesta</li>
+                    </ul>
+                </section>
+
+                <section id="ai" class="policy-section">
+                    <h2>6. La IA detrás de tus respuestas</h2>
+
+                    <h3>6.1 Qué es</h3>
+                    <p>Cuando le haces una pregunta al universo, la respuesta la compone un modelo de lenguaje grande, escrita en primera persona y moldeada por la voz que elegiste. Tú decides si guardas cada respuesta en "Tu Cosmos", la destacas, la compartes o la dejas ir.</p>
+
+                    <h3>6.2 Cómo funciona</h3>
+                    <ul>
+                        <li>Escribes una pregunta y eliges una voz en la Aplicación</li>
+                        <li>Dear Cosmos envía esa pregunta y esa voz a nuestro AI Gateway por HTTPS</li>
+                        <li>El Gateway (Cloudflare Workers) la reenvía a un proveedor de modelo (actualmente OpenRouter, dirigiendo a DeepSeek V4 Flash)</li>
+                        <li>El modelo devuelve una respuesta y una señal cósmica, que Dear Cosmos te muestra</li>
+                        <li>La pregunta no se conserva, ni se indexa, ni se usa para construir un perfil</li>
+                    </ul>
+
+                    <h3>6.3 Privacidad en el procesamiento de IA</h3>
+                    <ul>
+                        <li>&#10003; No se adjunta ningún nombre, correo ni cuenta a la solicitud. El Gateway no tiene idea de quién eres</li>
+                        <li>&#10003; Tu diario y tus destacados NUNCA se envían</li>
+                        <li>&#10003; El Gateway no conserva el texto de la pregunta después de devolver una respuesta</li>
+                        <li>&#10003; Los proveedores de modelo procesan la pregunta para generar una respuesta en tiempo real</li>
+                        <li>&#9888; El proveedor de modelo recibe solo la pregunta que escribiste y la voz que elegiste. Trátalo como cualquier otra entrada a un asistente de IA</li>
+                    </ul>
+
+                    <h3>6.4 Qué no compartir</h3>
+                    <div class="highlight-box warning">
+                        <strong>&#9888; Un recordatorio amable</strong>
+                        <p>Como tu pregunta se envía a un proveedor de IA para ser respondida, por favor no incluyas información que no escribirías en cualquier otro asistente de IA, por ejemplo nombres completos de otras personas, direcciones de casa, números de banco o tarjeta, identificaciones oficiales o números de expediente médico. Dear Cosmos está aquí para escuchar lo que llevas en el corazón, no para recopilar documentos.</p>
+                    </div>
+
+                    <h3>6.5 No es asesoría profesional</h3>
+                    <p>Dear Cosmos es para la reflexión, el aliento y un momento de asombro. Es una compañía creativa, no un sustituto de la asesoría profesional. Sus respuestas y señales no son predicciones, adivinación, astrología, ni asesoría médica, de salud mental, legal o financiera. Si enfrentas una decisión real o un momento difícil, por favor acude a una persona profesional calificada o a uno de los recursos que aparecen en la sección 16.</p>
+                </section>
+
+                <section id="notifications-widget" class="policy-section">
+                    <h2>7. Notificaciones y widget</h2>
+
+                    <h3>7.1 El mensaje diario (solo local)</h3>
+                    <p>Dear Cosmos puede enviarte un mensaje diario suave si decides activarlo. Estas son <strong>notificaciones locales</strong> programadas por tu dispositivo. No hay servidor de notificaciones push, ni token vinculado a una cuenta, ni mensaje que viaje por la infraestructura de Believe PR para llegar a tu dispositivo.</p>
+
+                    <h3>7.2 El widget de pantalla de inicio</h3>
+                    <p>Si agregas el widget de Dear Cosmos a tu pantalla de inicio, muestra tu señal cósmica más reciente o una invitación tranquila para volver a preguntar. El widget lee una pequeña instantánea guardada localmente en tu dispositivo. No hace sus propias solicitudes de red y no transmite nada fuera de tu dispositivo.</p>
+
+                    <h3>7.3 Siempre tienes el control</h3>
+                    <p>Puedes activar o desactivar el mensaje diario dentro de Dear Cosmos, y puedes desactivar las notificaciones por completo en los ajustes del sistema de tu dispositivo para la Aplicación. Puedes quitar el widget en cualquier momento desde tu pantalla de inicio.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>8. Permisos de la aplicación</h2>
+
+                    <h3>8.1 Notificaciones (opcional)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Enviarte tu único mensaje diario suave en un momento tranquilo</li>
+                        <li><strong>Cuándo se solicita:</strong> Solo cuando activas el mensaje diario, después de una breve explicación dentro de la app</li>
+                        <li><strong>Qué enviamos:</strong> Un mensaje breve, programado localmente por tu dispositivo. Nada sale de tu dispositivo para entregarlo</li>
+                    </ul>
+
+                    <h3>8.2 Permisos que Dear Cosmos NO solicita</h3>
+                    <ul>
+                        <li>&#10007; Ubicación o GPS</li>
+                        <li>&#10007; Contactos</li>
+                        <li>&#10007; Calendario</li>
+                        <li>&#10007; Cámara o micrófono</li>
+                        <li>&#10007; Galería de fotos (la App compone sus propias imágenes para compartir)</li>
+                        <li>&#10007; Salud o Apple Health / Health Connect</li>
+                        <li>&#10007; Bluetooth</li>
+                        <li>&#10007; Teléfono o SMS</li>
+                        <li>&#10007; Rastreo (no se usa App Tracking Transparency, porque Dear Cosmos no te rastrea)</li>
+                    </ul>
+
+                    <h3>8.3 Gestión de permisos</h3>
+                    <p>Puedes gestionar todos los permisos en los ajustes del sistema de tu dispositivo para Dear Cosmos. Revocar el permiso de notificaciones desactiva el mensaje diario; el resto de la App sigue funcionando.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>9. Servicios de terceros</h2>
+
+                    <h3>9.1 AI Gateway (Cloudflare Workers)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Dirigir tu pregunta a un proveedor de modelo con límites de uso y manejo básico de seguridad</li>
+                        <li><strong>Qué recibe:</strong> El texto de tu pregunta, la voz elegida, el identificador de aplicación, el entorno, un identificador de dispositivo aleatorio, la dirección IP (técnica) y un token de autorización</li>
+                        <li><strong>Qué almacena:</strong> Registros operativos mínimos a corto plazo (fechas, códigos de estado), no el texto de tu pregunta después de devolver la respuesta</li>
+                        <li><strong>Privacidad del proveedor:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Política de Privacidad de Cloudflare</a></li>
+                    </ul>
+
+                    <h3>9.2 OpenRouter (proveedor de modelo)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Dirigir la pregunta a un modelo de lenguaje (actualmente DeepSeek V4 Flash) para componer la respuesta</li>
+                        <li><strong>Qué recibe:</strong> Solo el texto de la pregunta y la voz elegida que pasa el Gateway</li>
+                        <li><strong>Privacidad del proveedor:</strong> <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de OpenRouter</a></li>
+                    </ul>
+
+                    <h3>9.3 App Store de Apple / Google Play</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Distribución de la App y manejo estándar de descargas</li>
+                        <li><strong>Qué reciben:</strong> Datos estándar de descarga y de dispositivo manejados por Apple o Google, no por nosotros</li>
+                        <li><strong>Privacidad del proveedor:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Política de Privacidad de Apple</a> y <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a></li>
+                    </ul>
+
+                    <h3>9.4 Sin publicidad, sin analíticas</h3>
+                    <p>Dear Cosmos no incluye Google AdMob, Google Analytics, Firebase, el SDK de Facebook, Mixpanel, Amplitude, AppsFlyer, Adjust, Branch, Sentry, ni ningún otro SDK de publicidad, atribución, analíticas o reporte de fallos.</p>
+                </section>
+
+                <section id="monetization" class="policy-section">
+                    <h2>10. Monetización futura</h2>
+                    <p>Dear Cosmos es actualmente gratuito y no contiene compras, suscripciones ni publicidad. Si en el futuro se introduce una función de pago opcional:</p>
+                    <ul>
+                        <li>Cualquier compra la procesaría la <strong>App Store de Apple</strong> o <strong>Google Play</strong>, no Believe PR, y los datos de tu tarjeta se quedarían con ellos</li>
+                        <li>Esta Política de Privacidad se actualizaría para describir qué se procesa, si acaso algo, antes de que la función se lance</li>
+                        <li>La base de privacidad primero descrita arriba (almacenamiento local, sin analíticas, sin cuentas) es nuestra intención predeterminada</li>
+                    </ul>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>11. Tus derechos de privacidad</h2>
+
+                    <h3>11.1 Derechos del RGPD (Unión Europea / Reino Unido)</h3>
+                    <p>Si te encuentras en la UE, el EEE, el Reino Unido o Suiza, tienes los siguientes derechos bajo el RGPD y el RGPD del Reino Unido:</p>
+                    <ul>
+                        <li><strong>Derecho de acceso:</strong> Solicitar información sobre los datos que se procesan sobre ti</li>
+                        <li><strong>Derecho de rectificación:</strong> Corregir datos inexactos</li>
+                        <li><strong>Derecho de supresión:</strong> Solicitar la eliminación de tus datos</li>
+                        <li><strong>Derecho de portabilidad:</strong> Recibir tus datos en un formato portable</li>
+                        <li><strong>Derecho de oposición:</strong> Oponerte al procesamiento de tus datos</li>
+                        <li><strong>Derecho a presentar una reclamación:</strong> Ante tu autoridad local de protección de datos</li>
+                    </ul>
+
+                    <h3>11.2 Derechos de CCPA / CPRA (California)</h3>
+                    <p>Si resides en California, tienes derecho a saber, eliminar y corregir tu información personal, y derecho a optar por no participar en la venta o el intercambio de información personal. <strong>No vendemos ni compartimos tu información personal</strong> tal como se definen esos términos bajo la CPRA.</p>
+
+                    <h3>11.3 Cómo ejercer tus derechos</h3>
+                    <p>Como casi todos tus datos viven en tu propio dispositivo:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Abre Dear Cosmos. Tu diario y tus destacados están visibles dentro de la App en todo momento</li>
+                        <li><strong>Corrección y supresión:</strong> Borra entradas directamente dentro de la App, o borra la App para eliminar todos los datos locales</li>
+                        <li><strong>Otras solicitudes:</strong> Escribe a <a href="mailto:dearcosmos@armandojimenez.dev">dearcosmos@armandojimenez.dev</a> con tu solicitud</li>
+                    </ul>
+                    <p>Responderemos a las solicitudes formales de derechos dentro del plazo que exija la ley aplicable (por lo general, dentro de 30 días).</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>12. Privacidad de menores</h2>
+
+                    <h3>12.1 Requisito de edad</h3>
+                    <p>Dear Cosmos está destinado a personas de <strong>13 años de edad o más</strong>. No recopilamos a sabiendas información personal de menores de 13 años. Si crees que un menor de 13 años ha usado Dear Cosmos, por favor contáctanos para que podamos tomar las medidas apropiadas.</p>
+
+                    <h3>12.2 Adolescentes más jóvenes</h3>
+                    <p>Para personas menores de 18 años, recomendamos la supervisión de madres, padres o tutores. Dear Cosmos no tiene chat con desconocidos, ni perfil público, ni publicidad.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>13. Personas usuarias internacionales</h2>
+
+                    <h3>13.1 Dónde viven los datos</h3>
+                    <p>Tus datos personales de Dear Cosmos viven en tu dispositivo. Cuando haces una pregunta, esta se dirige a través de la red global de Cloudflare y la procesa un proveedor de modelo en tiempo real. Believe PR opera desde el Estado Libre Asociado de Puerto Rico (Estados Unidos).</p>
+
+                    <h3>13.2 Transferencias internacionales</h3>
+                    <p>Si te encuentras fuera de los Estados Unidos, la pregunta que envías puede procesarse en los Estados Unidos u otros países donde opera el proveedor de IA. Al hacer una pregunta, consientes ese procesamiento con el fin de devolver una respuesta.</p>
+
+                    <h3>13.3 Cumplimiento regional</h3>
+                    <ul>
+                        <li><strong>Unión Europea / Reino Unido:</strong> RGPD y RGPD del Reino Unido</li>
+                        <li><strong>California:</strong> CCPA y CPRA</li>
+                        <li><strong>Brasil:</strong> LGPD</li>
+                        <li><strong>Otras regiones:</strong> Respetamos todas las leyes de privacidad aplicables</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>14. Cambios a esta Política de Privacidad</h2>
+                    <p>Podemos actualizar esta Política de Privacidad para reflejar nuevas funciones, requisitos legales o cambios de terceros. Cuando hagamos cambios sustanciales:</p>
+                    <ul>
+                        <li>La fecha de "Última actualización" en la parte superior de esta página cambiará</li>
+                        <li>Mostraremos un aviso dentro de la App cuando sea apropiado</li>
+                        <li>Tu uso continuo de Dear Cosmos después de que el cambio entre en vigor constituye aceptación</li>
+                    </ul>
+                    <p>La versión más reciente siempre está disponible en esta dirección y desde los ajustes de Dear Cosmos.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>15. Contáctanos</h2>
+                    <p>Si tienes preguntas, inquietudes o solicitudes sobre esta Política de Privacidad o nuestras prácticas de privacidad, por favor contáctanos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo:</strong> <a href="mailto:dearcosmos@armandojimenez.dev">dearcosmos@armandojimenez.dev</a></p>
+                        <p><strong>Sitio web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener noreferrer">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de respuesta</h3>
+                    <ul>
+                        <li>Dentro de 30 días para consultas generales de privacidad</li>
+                        <li>Dentro de 72 horas para inquietudes urgentes de privacidad</li>
+                        <li>Según lo exija la ley aplicable para solicitudes formales de derechos</li>
+                    </ul>
+                </section>
+
+                <section id="resources" class="policy-section">
+                    <h2>16. Recursos de apoyo</h2>
+                    <p>Dear Cosmos es una compañía reflexiva, no una persona terapeuta, clínica ni un servicio de emergencia. Si estás en angustia o en crisis, por favor busca a una persona capacitada:</p>
+                    <ul>
+                        <li><strong>Encuentra una línea de ayuda en cualquier parte del mundo:</strong> <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">findahelpline.com</a> lista líneas de apoyo gratuitas y confidenciales por país</li>
+                        <li><strong>En una emergencia:</strong> Contacta de inmediato a los servicios de emergencia de tu localidad</li>
+                    </ul>
+                    <p>Mereces apoyo real y humano, y pedirlo es una señal de fortaleza.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 17 de junio de 2026</p>
+                    <p><strong>Fecha de vigencia:</strong> 17 de junio de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
