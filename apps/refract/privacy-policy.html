@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="refract" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Refract</title>
+    <meta name="description" content="Privacy Policy for Refract, a daily light companion that refracts what you're carrying into the message you needed. Your messages stay on your device.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/refract/privacy-policy.html">
+    <meta property="og:title" content="Privacy Policy - Refract">
+    <meta property="og:description" content="How Refract protects your privacy: local-first data, no accounts, no analytics.">
+    <meta property="og:url" content="https://armandojimenez.dev/apps/refract/privacy-policy.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">&#10022;</div>
+                <div class="badge-text">
+                    <div class="badge-title">Refract</div>
+                    <div class="badge-subtitle">Catch the light you need</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: June 21, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: June 21, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#privacy-first">Privacy-First Approach</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#how-we-use">How We Use Your Information</a></li>
+                    <li><a href="#data-storage">Data Storage &amp; Security</a></li>
+                    <li><a href="#ai">The AI Behind Your Light</a></li>
+                    <li><a href="#subscriptions">Subscriptions &amp; Payments</a></li>
+                    <li><a href="#notifications-widgets">Notifications &amp; Widgets</a></li>
+                    <li><a href="#permissions">App Permissions</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#changes">Changes to Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#resources">Support Resources</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to Refract ("the App"), a daily light companion developed and operated by Believe PR, owned by Armando Jimenez. You bring Refract a mood, a topic, or a few words, and the prism refracts what you're carrying into the message you needed, delivered in one of six wavelengths (registers of care) and saved, if you wish, in your own collection.</p>
+                    <p>Refract is built around a quiet belief: what you're carrying is yours alone. We treat what you bring with the same care we hope it gives back to you.</p>
+                    <div class="highlight-box">
+                        <strong>&#10022; Our Privacy Promise:</strong>
+                        <ul>
+                            <li>Refract does not require an account, an email, or a password</li>
+                            <li>Your messages, your Future Self letters, and your settings live on YOUR device</li>
+                            <li>There is no cloud account and no server copy of your collection</li>
+                            <li>To compose a message, only the text of that one request and your chosen wavelength are sent to our AI Gateway</li>
+                            <li>There are no advertisements, no analytics, and no tracking SDKs</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Privacy-First Approach</h2>
+                    <h3>2.1 Our Philosophy</h3>
+                    <p>The things people bring to Refract are personal, so Refract is built to ask for as little as possible. With Refract we:</p>
+                    <ul>
+                        <li>&#10003; Store all of your personal data locally on your device by default</li>
+                        <li>&#10003; Use no advertising networks, no Google Analytics, no Firebase, and no third-party trackers</li>
+                        <li>&#10003; Do not require user accounts, email addresses, or passwords</li>
+                        <li>&#10003; Send only the request you make (and the wavelength you picked) when you ask for a message, with no profile or history built about you</li>
+                        <li>&#10003; Keep no server-side copy of your collection, your Future Self letters, or your settings</li>
+                    </ul>
+
+                    <h3>2.2 What This Means for You</h3>
+                    <p>When you use Refract:</p>
+                    <ul>
+                        <li>The requests you make and the messages you receive stay on your phone</li>
+                        <li>The messages you keep, and the Future Self letters you seal, stay on your phone</li>
+                        <li>Your theme, language, and reminder preferences stay on your phone</li>
+                        <li>A daily reminder, if you turn it on, is scheduled locally by your device</li>
+                    </ul>
+
+                    <p><strong>Important:</strong> Because we never keep a copy of your collection, deleting Refract will permanently remove your kept messages and Future Self letters. We cannot recover them, because we never had them. Refract includes a free manual backup so you can export your own data and keep it safe (see section 5.5).</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+
+                    <h3>3.1 Information You Create (Stored On Your Device)</h3>
+                    <p>The following data is created by you and stored locally on your device:</p>
+                    <ul>
+                        <li><strong>Your collection (Keep):</strong> The messages you choose to keep, each with its wavelength and date</li>
+                        <li><strong>Future Self:</strong> The letters you write to your future self and seal for a chosen delivery date</li>
+                        <li><strong>Your own lines:</strong> Messages you write yourself with "Create your own"</li>
+                        <li><strong>Appearance &amp; language:</strong> Your theme preference (System, Morning Light, or Quiet Evening) and language</li>
+                        <li><strong>Daily reminder:</strong> Whether you have turned on the gentle daily reminder, and at what time</li>
+                        <li><strong>Your light (streak &amp; counts):</strong> Local counts such as your "days lit" streak, kept only on your device</li>
+                        <li><strong>First-run state:</strong> Whether you have completed onboarding</li>
+                    </ul>
+
+                    <h3>3.2 What a Request Sends</h3>
+                    <p>Asking the prism for a message is the only action that contacts a server. When you make a request, the App sends the following to our AI Gateway so it can compose a message:</p>
+                    <ul>
+                        <li><strong>The text of that one request</strong> (your mood, topic, or words) and <strong>the wavelength</strong> you selected (or that the prism chose)</li>
+                        <li><strong>A random device identifier</strong> (a string generated on your device, not your name, email, or any account) used only to apply fair-use rate limits</li>
+                        <li><strong>An app identifier and environment</strong> (for example, <code>refract</code> and <code>prod</code>) and <strong>a token</strong> that authorizes the App to use the Gateway</li>
+                        <li><strong>Your IP address</strong>, as is technically necessary for any internet request</li>
+                    </ul>
+                    <p>The Gateway, hosted on Cloudflare Workers, forwards your request to a third-party AI model provider to compose the message you read. The provider and model are configured on the server side (currently the Qwen family of large language models) and may change to maintain quality, without an app update. The Gateway never receives your name, email, location, collection, Future Self letters, or any other personal information. It only sees the request for that one message.</p>
+
+                    <h3>3.3 Information We Do NOT Collect</h3>
+                    <p>Refract explicitly does NOT collect or have access to:</p>
+                    <ul>
+                        <li>&#10007; Your name, email address, phone number, or contacts</li>
+                        <li>&#10007; Your precise location or GPS data</li>
+                        <li>&#10007; A server-side copy of your collection, your Future Self letters, or your settings</li>
+                        <li>&#10007; Your photos, camera, microphone, or files (Refract can add a share image you create to your gallery, but never reads your photo library)</li>
+                        <li>&#10007; Health data or wellness metrics from any source</li>
+                        <li>&#10007; Real-world financial data: Refract does not connect to banks or any account</li>
+                        <li>&#10007; Social media identities, friend lists, or third-party login data</li>
+                        <li>&#10007; Advertising identifiers (IDFA or Google Advertising ID): Refract has no advertising</li>
+                        <li>&#10007; Analytics, behavioral, or usage-tracking data of any kind</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. How We Use Your Information</h2>
+
+                    <h3>4.1 App Functionality (On-Device)</h3>
+                    <p>Your data is used entirely on your device to:</p>
+                    <ul>
+                        <li>Show the message for each request you make</li>
+                        <li>Keep your collection of messages you chose to save</li>
+                        <li>Hold your sealed Future Self letters until their delivery date</li>
+                        <li>Apply your selected theme, language, and appearance</li>
+                        <li>Schedule your local daily reminder, if you enabled it</li>
+                        <li>Show today's light on the home-screen widget, if you added one</li>
+                        <li>Count your "days lit" streak and gentle stats, on your device</li>
+                    </ul>
+
+                    <h3>4.2 Composing a Message</h3>
+                    <p>The request you submit is used solely to compose that one message and is not used for any other purpose. We do not retain it to train models, build a profile, or improve the service over time.</p>
+
+                    <h3>4.3 Operational Logs</h3>
+                    <p>The AI Gateway keeps minimal operational logs (timestamp, app identifier, environment, status code) for short-term abuse prevention and rate limiting. These logs are not linked to any user identity beyond an IP address and the random device identifier.</p>
+
+                    <h3>4.4 No Marketing, No Profiling</h3>
+                    <p>We do not use any of your information for marketing, profiling, behavioral advertising, or selling to third parties. There is no advertising in Refract.</p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Data Storage &amp; Security</h2>
+
+                    <h3>5.1 Local Storage</h3>
+                    <p>Your personal data is stored on your device using:</p>
+                    <ul>
+                        <li>A <strong>local database</strong> inside the App's private storage sandbox, for your collection and Future Self letters</li>
+                        <li><strong>Device key-value storage</strong> for preferences (theme, language, daily reminder, onboarding)</li>
+                        <li>Operating-system data protection, which encrypts app files at rest on modern iOS and Android devices</li>
+                    </ul>
+
+                    <h3>5.2 Encryption</h3>
+                    <ul>
+                        <li><strong>At Rest:</strong> Data is protected by your device's file-system encryption, tied to your device passcode or lock</li>
+                        <li><strong>In Transit:</strong> Every request to compose a message uses HTTPS (TLS)</li>
+                    </ul>
+
+                    <h3>5.3 Security Practices</h3>
+                    <ul>
+                        <li>The Gateway enforces per-device and per-IP rate limits to mitigate abuse</li>
+                        <li>Refract does not include any analytics, attribution, or crash-reporting SDKs</li>
+                        <li>Refract does not embed third-party web views that load outside content into the experience</li>
+                    </ul>
+
+                    <h3>5.4 Data Retention</h3>
+                    <ul>
+                        <li>Your data remains on your device for as long as Refract is installed</li>
+                        <li>You can delete individual messages and letters at any time inside the App</li>
+                        <li>Deleting the App removes all locally stored data permanently</li>
+                        <li>Your request is not retained by Refract or by the Gateway after the message is returned</li>
+                    </ul>
+
+                    <h3>5.5 Backup &amp; Export (You Are In Control)</h3>
+                    <p>Refract includes a <strong>free</strong> manual backup. You can export your kept messages, your Future Self letters, and your settings to a portable file (a <code>.refract</code> JSON file) and import it back later or on another device. This export is created and shared by you, through your device. We never receive it, and it is never uploaded to us.</p>
+                </section>
+
+                <section id="ai" class="policy-section">
+                    <h2>6. The AI Behind Your Light</h2>
+
+                    <h3>6.1 What It Is</h3>
+                    <p>When you make a request, the message is composed by a large language model and shaped by the wavelength you chose. You decide whether to keep each message, share it, or let it go. Future Self letters and your own lines can be gently polished by the same model if you ask for it.</p>
+
+                    <h3>6.2 How It Works</h3>
+                    <ul>
+                        <li>You bring a mood, a topic, or a few words, and pick a wavelength in the App</li>
+                        <li>Refract sends that request and wavelength to our AI Gateway over HTTPS</li>
+                        <li>The Gateway (Cloudflare Workers) forwards it to a third-party AI model provider (currently the Qwen family of models, configured server-side)</li>
+                        <li>The model returns a message, which Refract displays to you</li>
+                        <li>The request is not retained, indexed, or used to build a profile</li>
+                    </ul>
+
+                    <h3>6.3 A Safety Net That Stays On Your Device</h3>
+                    <p>Before any request is sent, Refract runs a small <strong>on-device check</strong> for signs of crisis or self-harm. This check runs entirely on your phone. If it is triggered, Refract does <em>not</em> send your text to the Gateway; instead it shows supportive, human help resources (see section 16). In other words, text that looks like a crisis never leaves your device.</p>
+
+                    <h3>6.4 Privacy in AI Processing</h3>
+                    <ul>
+                        <li>&#10003; No name, email, or account is attached to the request. The Gateway has no idea who you are</li>
+                        <li>&#10003; Your collection and Future Self letters are NEVER sent</li>
+                        <li>&#10003; The Gateway does not retain prompt text after a response is returned</li>
+                        <li>&#10003; The model provider processes the request to generate a response in real time</li>
+                        <li>&#9888; The model provider receives only the request you typed and the wavelength you chose. Treat it like any other AI assistant input</li>
+                    </ul>
+
+                    <h3>6.5 What Not to Share</h3>
+                    <div class="highlight-box warning">
+                        <strong>&#9888; A gentle reminder</strong>
+                        <p>Because your request is sent to an AI provider to compose your message, please do not include information you would not type into any other AI assistant, for example full names of other people, home addresses, bank or card numbers, government IDs, or medical record numbers. Refract is here to listen to what is on your heart, not to collect documents.</p>
+                    </div>
+
+                    <h3>6.6 Not Professional Advice</h3>
+                    <p>Refract is for reflection, encouragement, and a moment of light. It is a creative companion, not a substitute for professional advice. Its messages are not predictions, fortune-telling, or medical, mental-health, legal, or financial advice. If you are facing a real decision or a hard moment, please reach out to a qualified professional or one of the resources listed in section 16.</p>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>7. Subscriptions &amp; Payments</h2>
+
+                    <h3>7.1 Refract Premium</h3>
+                    <p>Refract is free to use, with a generous free tier. <strong>Refract Premium</strong> is an optional subscription that unlocks unlimited refractions, an unlimited collection, a longer Future Self horizon, wallpaper exports, and other premium touches. Free dark mode and the free manual backup are never gated.</p>
+
+                    <h3>7.2 How Billing Works</h3>
+                    <ul>
+                        <li><strong>The store handles payment.</strong> All purchases are processed by the <strong>Apple App Store</strong> or <strong>Google Play</strong>. Believe PR never sees or stores your card or payment details</li>
+                        <li><strong>RevenueCat manages entitlements.</strong> We use <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat</a> to check whether your subscription is active. RevenueCat receives an anonymous subscriber identifier and the receipt the store provides; it does not receive your name, email, or your in-app content</li>
+                        <li><strong>No account needed.</strong> Premium is tied to your store account (Apple ID or Google account) through the store's "Restore Purchases" mechanism, not to a Refract account</li>
+                    </ul>
+
+                    <h3>7.3 Prices, Trial &amp; Renewal</h3>
+                    <ul>
+                        <li><strong>Refract Premium</strong> is offered as a monthly or yearly plan, with an optional free trial on the yearly plan. The exact, localized price and any trial length are always shown in the App and at checkout, may change over time, and may vary by region</li>
+                        <li>Subscriptions renew automatically until cancelled. You can manage or cancel anytime in your device's store subscription settings; the App links you there</li>
+                        <li>Refunds are handled by Apple or Google under their policies, not by Believe PR</li>
+                    </ul>
+                </section>
+
+                <section id="notifications-widgets" class="policy-section">
+                    <h2>8. Notifications &amp; Widgets</h2>
+
+                    <h3>8.1 The Daily Reminder (Local Only)</h3>
+                    <p>Refract can send a gentle daily reminder if you choose to turn it on. These are <strong>local notifications</strong> scheduled by your device. There is no push-notification server, no token tied to an account, and no message travels through Believe PR's infrastructure to reach your device.</p>
+
+                    <h3>8.2 Future Self Delivery (Local Only)</h3>
+                    <p>When a Future Self letter reaches its delivery date, Refract notifies you with a local notification scheduled by your device. The letter itself was on your device the whole time; nothing is sent to or from a server to deliver it.</p>
+
+                    <h3>8.3 The Home-Screen Widget</h3>
+                    <p>If you add the Refract widget to your home screen, it shows today's light or a quiet prompt to refract again. The widget reads a small snapshot stored locally on your device. It does not make its own network requests and does not transmit anything off your device.</p>
+
+                    <h3>8.4 You Are Always In Control</h3>
+                    <p>You can turn the daily reminder on or off inside Refract, and you can disable notifications entirely in your device's system settings for the App. You can remove the widget at any time from your home screen.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>9. App Permissions</h2>
+
+                    <h3>9.1 Notifications (Optional)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> To send your daily reminder and to deliver Future Self letters at the right time</li>
+                        <li><strong>When Requested:</strong> Only when you turn the daily reminder on or seal a Future Self letter, after a short in-app explanation</li>
+                        <li><strong>What We Send:</strong> A short message, scheduled locally by your device. Nothing leaves your device to deliver it</li>
+                    </ul>
+
+                    <h3>9.2 Save to Photos / Gallery (Optional, Add-Only)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> To let you save a share card you create to your device's Photos or Gallery</li>
+                        <li><strong>When Requested:</strong> Only when you tap "Save" on a share card</li>
+                        <li><strong>Add-Only:</strong> Refract can only <em>add</em> an image you made. It cannot read, browse, or import your existing photos</li>
+                    </ul>
+
+                    <h3>9.3 Permissions Refract Does NOT Request</h3>
+                    <ul>
+                        <li>&#10007; Location or GPS</li>
+                        <li>&#10007; Contacts</li>
+                        <li>&#10007; Calendar</li>
+                        <li>&#10007; Camera or Microphone</li>
+                        <li>&#10007; Reading your photo library (Refract composes its own share images)</li>
+                        <li>&#10007; Health or Apple Health / Health Connect</li>
+                        <li>&#10007; Bluetooth</li>
+                        <li>&#10007; Phone or SMS</li>
+                        <li>&#10007; Tracking (App Tracking Transparency is not used, because Refract does not track you)</li>
+                    </ul>
+
+                    <h3>9.4 Managing Permissions</h3>
+                    <p>You can manage all permissions in your device's system settings for Refract. Revoking the notifications permission turns off reminders and Future Self alerts; the rest of the App continues to work.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>10. Third-Party Services</h2>
+
+                    <h3>10.1 AI Gateway (Cloudflare Workers)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Routes your request to an AI model provider with rate limiting and basic safety handling</li>
+                        <li><strong>What It Receives:</strong> Your request text, chosen wavelength, app identifier, environment, a random device identifier, IP address (technical), and an authorization token</li>
+                        <li><strong>What It Stores:</strong> Minimal short-term operational logs (timestamps, status codes), not your request text after the message is returned</li>
+                        <li><strong>Provider Privacy:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare Privacy Policy</a></li>
+                    </ul>
+
+                    <h3>10.2 AI Model Provider</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Composes your message from the request (currently the Qwen family of models; the provider and model are configured server-side and may change to maintain quality)</li>
+                        <li><strong>What It Receives:</strong> Only the request text and chosen wavelength passed by the Gateway</li>
+                        <li><strong>What It Does Not Receive:</strong> Your name, email, account, collection, Future Self letters, or settings</li>
+                    </ul>
+
+                    <h3>10.3 RevenueCat (Subscription Management)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Verifies whether your Refract Premium subscription is active, across platforms</li>
+                        <li><strong>What It Receives:</strong> An anonymous subscriber identifier and the store receipt; not your name, email, or in-app content</li>
+                        <li><strong>Provider Privacy:</strong> <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a></li>
+                    </ul>
+
+                    <h3>10.4 Apple App Store / Google Play</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Distribution of the App, and processing of any subscription purchase</li>
+                        <li><strong>What They Receive:</strong> Standard download data, and your payment details for any purchase, handled by Apple or Google, not by us</li>
+                        <li><strong>Provider Privacy:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                    </ul>
+
+                    <h3>10.5 No Advertising, No Analytics</h3>
+                    <p>Refract does not include Google AdMob, Google Analytics, Firebase, the Facebook SDK, Mixpanel, Amplitude, AppsFlyer, Adjust, Branch, Sentry, or any other advertising, attribution, analytics, or crash-reporting SDK.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>11. Your Privacy Rights</h2>
+
+                    <h3>11.1 GDPR Rights (European Union / UK)</h3>
+                    <p>If you are in the EU, EEA, UK, or Switzerland, you have the following rights under the GDPR and UK GDPR:</p>
+                    <ul>
+                        <li><strong>Right to Access:</strong> Request information about data processed about you</li>
+                        <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
+                        <li><strong>Right to Erasure:</strong> Request deletion of your data</li>
+                        <li><strong>Right to Data Portability:</strong> Receive your data in a portable format (the App's free export already provides this)</li>
+                        <li><strong>Right to Object:</strong> Object to the processing of your data</li>
+                        <li><strong>Right to Lodge a Complaint:</strong> With your local data-protection authority</li>
+                    </ul>
+
+                    <h3>11.2 CCPA / CPRA Rights (California)</h3>
+                    <p>If you are a California resident, you have the right to know, delete, and correct personal information, and the right to opt out of the sale or sharing of personal information. <strong>We do not sell or share your personal information</strong> as those terms are defined under the CPRA.</p>
+
+                    <h3>11.3 How to Exercise Your Rights</h3>
+                    <p>Because almost all of your data lives on your own device:</p>
+                    <ul>
+                        <li><strong>Access &amp; Portability:</strong> Open Refract. Your collection and letters are visible inside the App at any time, and you can export them to a file</li>
+                        <li><strong>Correction &amp; Erasure:</strong> Delete messages and letters directly inside the App, or delete the App to remove all local data</li>
+                        <li><strong>Other Requests:</strong> Email <a href="mailto:refract@armandojimenez.dev">refract@armandojimenez.dev</a> with your request</li>
+                    </ul>
+                    <p>We will respond to formal rights requests within the timeframe required by applicable law (generally within 30 days).</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>12. Children's Privacy</h2>
+
+                    <h3>12.1 Age Requirement</h3>
+                    <p>Refract is intended for users <strong>13 years of age or older</strong>. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used Refract, please contact us so we can take appropriate steps.</p>
+
+                    <h3>12.2 Younger Teens</h3>
+                    <p>For users under 18, we recommend parental awareness. Refract contains no chat with strangers, no public profile, and no advertising.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>13. International Users</h2>
+
+                    <h3>13.1 Where Data Lives</h3>
+                    <p>Your personal Refract data lives on your device. When you make a request, it is routed through Cloudflare's global network and processed by a model provider in real time. Believe PR operates from the Commonwealth of Puerto Rico (United States).</p>
+
+                    <h3>13.2 International Transfers</h3>
+                    <p>If you are located outside the United States, the request you submit may be processed in the United States or other countries where the AI provider operates. By making a request, you consent to that processing for the purpose of composing your message.</p>
+
+                    <h3>13.3 Regional Compliance</h3>
+                    <ul>
+                        <li><strong>European Union / UK:</strong> GDPR and UK GDPR</li>
+                        <li><strong>California:</strong> CCPA and CPRA</li>
+                        <li><strong>Brazil:</strong> LGPD</li>
+                        <li><strong>Other Regions:</strong> We respect all applicable privacy laws</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>14. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy to reflect new features, legal requirements, or third-party changes. When we make material changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date at the top of this page will change</li>
+                        <li>We will surface a notice inside the App where appropriate</li>
+                        <li>Your continued use of Refract after the change becomes effective constitutes acceptance</li>
+                    </ul>
+                    <p>The most current version is always available at this URL and from the Refract settings.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>15. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:refract@armandojimenez.dev">refract@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener noreferrer">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <ul>
+                        <li>Within 30 days for general privacy inquiries</li>
+                        <li>Within 72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for formal rights requests</li>
+                    </ul>
+                </section>
+
+                <section id="resources" class="policy-section">
+                    <h2>16. Support Resources</h2>
+                    <p>Refract is a reflective companion, not a therapist, clinician, or emergency service. If you are in distress or crisis, please reach out to a trained human:</p>
+                    <ul>
+                        <li><strong>Find a helpline anywhere in the world:</strong> <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">findahelpline.com</a> lists free, confidential support lines by country</li>
+                        <li><strong>In an emergency:</strong> Contact your local emergency services right away</li>
+                    </ul>
+                    <p>You deserve real, human support, and reaching out for it is a sign of strength.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> June 21, 2026</p>
+                    <p><strong>Effective Date:</strong> June 21, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
