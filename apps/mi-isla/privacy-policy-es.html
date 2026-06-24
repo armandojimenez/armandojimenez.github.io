@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="mi-isla" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de Privacidad - Mi Isla</title>
+    <meta name="description" content="Política de Privacidad de Mi Isla - El tiempo y los avisos de Puerto Rico, en un solo lugar. Sin cuentas, sin analítica, sin rastreo.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/mi-isla/privacy-policy-es.html">
+    <meta property="og:title" content="Política de Privacidad - Mi Isla">
+    <meta property="og:description" content="Sin cuentas, sin analítica, sin rastreo. Lee cómo Mi Isla maneja tus datos.">
+    <meta property="og:url" content="https://armandojimenez.dev/apps/mi-isla/privacy-policy-es.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">☀️</div>
+                <div class="badge-text">
+                    <div class="badge-title">Mi Isla</div>
+                    <div class="badge-subtitle">El tiempo y los avisos de Puerto Rico, en un solo lugar.</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 24 de junio de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha de vigencia: 24 de junio de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Contenido</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#information-collection">Información que recopilamos</a></li>
+                    <li><a href="#how-we-use">Cómo usamos tu información</a></li>
+                    <li><a href="#location">Datos de ubicación</a></li>
+                    <li><a href="#data-storage">Almacenamiento y seguridad</a></li>
+                    <li><a href="#data-sources">Fuentes de datos públicas</a></li>
+                    <li><a href="#subscriptions">Suscripciones</a></li>
+                    <li><a href="#notifications">Notificaciones</a></li>
+                    <li><a href="#your-rights">Tus derechos de privacidad</a></li>
+                    <li><a href="#children">Privacidad de menores</a></li>
+                    <li><a href="#international">Usuarios internacionales</a></li>
+                    <li><a href="#changes">Cambios a esta política</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Bienvenido a Mi Isla ("la App"), desarrollada y operada por Believe PR, propiedad de Armando Jimenez. Mi Isla es el lugar boricua para ver lo que está pasando en Puerto Rico: el tiempo, avisos oficiales, temblores, polvo del Sahara, calidad del aire, el mar y las playas, ríos e inundaciones, y radar de lluvia &mdash; en español e inglés, gratis en su esencia.</p>
+                    <p>Hicimos a Mi Isla para que sea útil sin ser entrometida. La App no tiene cuentas y no pide información personal. Esta Política de Privacidad explica con exactitud qué hace y qué no hace la App con los datos.</p>
+                    <div class="highlight-box">
+                        <strong>☀️ Lo esencial de tu privacidad:</strong>
+                        <ul>
+                            <li>Sin cuentas. Nunca te pedimos tu nombre, correo electrónico ni teléfono.</li>
+                            <li>Sin analítica, sin reportes de fallos, sin publicidad, sin rastreadores de terceros.</li>
+                            <li>Tus preferencias y el tiempo en caché se guardan localmente en TU dispositivo.</li>
+                            <li>La ubicación se usa solo para mostrarte el tiempo y los avisos de tu zona. Nunca se guarda en nuestros servidores ni se asocia con tu identidad.</li>
+                            <li>NO vendemos tus datos. No tenemos datos sobre ti para vender.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>2. Información que recopilamos</h2>
+                    <p>Mi Isla está diseñada para recopilar lo menos posible. No operamos un servidor que guarde tu información y no mantenemos un perfil sobre ti.</p>
+
+                    <h3>2.1 Información que tú provees</h3>
+                    <p>Todo lo siguiente se guarda únicamente en tu dispositivo:</p>
+                    <ul>
+                        <li><strong>Tu municipio:</strong> Si eliges tu pueblo manualmente (o confirmas el detectado por tu ubicación), esa elección se guarda localmente para enfocar el tiempo y los avisos que ves.</li>
+                        <li><strong>Preferencias:</strong> Tu idioma (español/inglés), tema (claro/oscuro/sistema), unidades (temperatura, viento, altura de olas) y tus elecciones de notificaciones se guardan localmente.</li>
+                        <li><strong>Actividad para el aviso de reseña:</strong> Un sencillo contador en el dispositivo de interacciones tranquilas, usado solo para decidir cuándo preguntarte amablemente si quieres dejar una reseña. Nunca sale de tu dispositivo.</li>
+                    </ul>
+
+                    <h3>2.2 Información recopilada automáticamente</h3>
+                    <ul>
+                        <li><strong>Ubicación aproximada (solo con tu permiso):</strong> Si concedes acceso a la ubicación, la App lee la ubicación de tu dispositivo <em>mientras la usas</em> para encontrar tu zona. Lee la sección <a href="#location">Datos de ubicación</a> para el detalle completo.</li>
+                        <li><strong>Datos en caché:</strong> Las respuestas de tiempo y avisos para tu zona se guardan en caché en tu dispositivo para que la App funcione rápido y sin conexión.</li>
+                    </ul>
+
+                    <h3>2.3 Información de suscripción (RevenueCat)</h3>
+                    <p>Si compras Mi Isla Premium, nuestro proveedor de pagos RevenueCat procesa:</p>
+                    <ul>
+                        <li><strong>ID de usuario anónimo:</strong> Un identificador aleatorio para administrar tu compra. No está vinculado a tu nombre ni a tu identidad.</li>
+                        <li><strong>Estado de la suscripción:</strong> Si tienes una membresía premium activa, para desbloquear las funciones premium.</li>
+                    </ul>
+
+                    <h3>2.4 Información que NO recopilamos</h3>
+                    <p>Explícitamente NO recopilamos:</p>
+                    <ul>
+                        <li>&#10060; Identificación personal (nombre, correo, teléfono, dirección)</li>
+                        <li>&#10060; Analítica de uso o rastreo de comportamiento de ningún tipo</li>
+                        <li>&#10060; Reportes de fallos o diagnóstico enviados a nosotros</li>
+                        <li>&#10060; Identificadores de publicidad (la App no tiene anuncios)</li>
+                        <li>&#10060; Historial de ubicación guardado en nuestros servidores</li>
+                        <li>&#10060; Contactos, fotos, cámara o micrófono</li>
+                        <li>&#10060; Datos de salud o estado físico</li>
+                        <li>&#10060; Perfiles o inicios de sesión de redes sociales</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>3. Cómo usamos tu información</h2>
+                    <h3>3.1 Funcionamiento principal</h3>
+                    <ul>
+                        <li>Determinar en qué municipio de Puerto Rico estás (o cerca de cuál) para mostrarte el tiempo, los avisos, el mar, los ríos, el aire, el polvo, los temblores y el radar correctos.</li>
+                        <li>Solicitar esa información pública a servicios meteorológicos oficiales y públicos para tu zona.</li>
+                        <li>Recordar tu municipio, unidades, idioma y tema para que la App se sienta tuya.</li>
+                    </ul>
+
+                    <h3>3.2 El parte del día</h3>
+                    <p>Mi Isla puede resumir el día en lenguaje sencillo. Hoy ese resumen se compone <strong>completamente en tu dispositivo</strong> a partir de las lecturas del tiempo que la App ya obtuvo para tu zona &mdash; no se envía ningún dato personal adicional para crearlo.</p>
+                    <p>Una versión futura podría usar un servicio de inteligencia artificial para ayudar a componer ese resumen. Si eso llegara a activarse, solo se enviaría contexto meteorológico no identificable de tu zona para generar el texto, nunca tu identidad, y esta política y la App se actualizarían para describirlo antes de lanzarlo.</p>
+
+                    <h3>3.3 Administración de la suscripción</h3>
+                    <ul>
+                        <li>Verificar si tienes Mi Isla Premium para desbloquear las funciones premium (bucle e historial del radar, pronóstico por hora extendido, desglose completo del oleaje, historial de ríos, varias ubicaciones guardadas).</li>
+                        <li>Restaurar tu compra entre tus dispositivos cuando lo pidas.</li>
+                    </ul>
+                    <p>No usamos ninguna información para crear un perfil tuyo, para mostrarte anuncios ni para rastrearte entre apps o sitios web. No podemos &mdash; no la recopilamos.</p>
+                </section>
+
+                <section id="location" class="policy-section">
+                    <h2>4. Datos de ubicación</h2>
+                    <p>La ubicación es el único permiso sensible que pide Mi Isla, así que queremos ser totalmente claros al respecto.</p>
+                    <div class="highlight-box">
+                        <strong>📍 Cómo usa Mi Isla la ubicación:</strong>
+                        <ul>
+                            <li><strong>Opcional:</strong> La ubicación nunca es obligatoria. Puedes omitirla y elegir tu municipio de una lista, y todo sigue funcionando.</li>
+                            <li><strong>Solo mientras la usas:</strong> La App solo lee la ubicación mientras la estás usando. No te rastrea en segundo plano.</li>
+                            <li><strong>Resuelta en tu dispositivo:</strong> Tus coordenadas se comparan en tu dispositivo con el más cercano de los 78 municipios de Puerto Rico. No necesitamos ni usamos un servicio de geocodificación inversa para esto.</li>
+                            <li><strong>Para obtener datos públicos del tiempo:</strong> Tu ubicación aproximada (coordenadas o zona) se envía a servicios meteorológicos públicos para que devuelvan el pronóstico, los avisos y las condiciones de donde estás.</li>
+                            <li><strong>Nunca guardada por nosotros, nunca ligada a tu identidad:</strong> No guardamos copia de tu ubicación en ningún servidor, y nunca se conecta a un nombre o cuenta porque no existen.</li>
+                            <li><strong>Nunca compartida con anunciantes:</strong> La App no tiene anuncios ni socios publicitarios.</li>
+                        </ul>
+                    </div>
+                    <h3>4.1 Desactivar la ubicación</h3>
+                    <p>Puedes revocar el acceso a la ubicación en cualquier momento en los ajustes de tu dispositivo (iOS: Ajustes &rarr; Mi Isla &rarr; Ubicación; Android: Ajustes &rarr; Aplicaciones &rarr; Mi Isla &rarr; Permisos). Mi Isla simplemente usará el municipio que elijas manualmente.</p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Almacenamiento y seguridad</h2>
+                    <h3>5.1 Almacenamiento local</h3>
+                    <p>Tus datos viven en tu dispositivo:</p>
+                    <ul>
+                        <li><strong>Base de datos en el dispositivo (Drift / SQLite):</strong> Respuestas en caché de tiempo, avisos y condiciones, más un pequeño registro de consultas.</li>
+                        <li><strong>Preferencias del dispositivo:</strong> Tu municipio, unidades, idioma, tema y elecciones de notificaciones.</li>
+                        <li><strong>iOS:</strong> Guardado en el entorno seguro (sandbox) de la App con el cifrado de iOS.</li>
+                        <li><strong>Android:</strong> Guardado en el almacenamiento interno privado de la App.</li>
+                    </ul>
+
+                    <h3>5.2 Comunicación por red</h3>
+                    <ul>
+                        <li>Todas las solicitudes a las fuentes de datos usan cifrado HTTPS.</li>
+                        <li>Algunos servicios públicos (por ejemplo el Servicio Meteorológico Nacional de EE. UU. y OpenStreetMap) piden que las apps se identifiquen con una cadena de contacto. Mi Isla envía un identificador descriptivo &mdash; el nombre de la app, la versión y un correo de contacto &mdash; que no contiene <strong>ninguna información sobre ti</strong>.</li>
+                        <li>No operamos servidores propios de analítica, registro ni rastreo.</li>
+                    </ul>
+
+                    <h3>5.3 Retención de datos</h3>
+                    <ul>
+                        <li><strong>Datos locales:</strong> Permanecen en tu dispositivo hasta que borres el caché de la App o la desinstales. No tenemos copia en servidor que retener.</li>
+                        <li><strong>Datos de suscripción:</strong> Retenidos por RevenueCat y las tiendas de apps según sus propias políticas.</li>
+                    </ul>
+                </section>
+
+                <section id="data-sources" class="policy-section">
+                    <h2>6. Fuentes de datos públicas</h2>
+                    <p>Mi Isla reúne información de servicios meteorológicos y geofísicos oficiales y públicos. Cuando la App solicita datos para tu zona, tu ubicación aproximada (coordenadas o zona) se envía al servicio correspondiente para que pueda responder &mdash; pero nunca tu nombre ni tu identidad, porque la App no tiene ninguna que enviar.</p>
+
+                    <h3>6.1 Servicio Meteorológico Nacional de EE. UU. (NWS / weather.gov)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Vigilancias, advertencias, avisos oficiales y pronósticos marinos.</li>
+                        <li><strong>Política de privacidad:</strong> <a href="https://www.weather.gov/privacy" target="_blank" rel="noopener">https://www.weather.gov/privacy</a></li>
+                    </ul>
+
+                    <h3>6.2 Servicio Geológico de EE. UU. (USGS)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Datos de terremotos y niveles de los ríos.</li>
+                        <li><strong>Política de privacidad:</strong> <a href="https://www.doi.gov/privacy" target="_blank" rel="noopener">https://www.doi.gov/privacy</a> (Departamento del Interior de EE. UU., del que USGS forma parte)</li>
+                    </ul>
+
+                    <h3>6.3 Centro de Avisos de Tsunami de NOAA (tsunami.gov)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Estado y mensajes de tsunami.</li>
+                        <li><strong>Política de privacidad:</strong> <a href="https://www.noaa.gov/protecting-your-privacy" target="_blank" rel="noopener">https://www.noaa.gov/protecting-your-privacy</a></li>
+                    </ul>
+
+                    <h3>6.4 Open-Meteo</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Pronóstico, calidad del aire, marino y datos de inundación.</li>
+                        <li><strong>Privacidad / Términos:</strong> <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a></li>
+                    </ul>
+
+                    <h3>6.5 RainViewer</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Cuadros del radar de precipitación.</li>
+                        <li><strong>Política de privacidad:</strong> <a href="https://www.rainviewer.com/privacy.html" target="_blank" rel="noopener">https://www.rainviewer.com/privacy.html</a></li>
+                    </ul>
+
+                    <h3>6.6 OpenStreetMap</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Mapa base bajo el radar. Datos del mapa &copy; colaboradores de OpenStreetMap.</li>
+                        <li><strong>Política de privacidad:</strong> <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
+                    </ul>
+
+                    <h3>6.7 RevenueCat (pagos)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Administración de suscripciones y compras dentro de la app.</li>
+                        <li><strong>Datos:</strong> ID de usuario anónimo, estado de compra y suscripción.</li>
+                        <li><strong>Política de privacidad:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+                    </ul>
+
+                    <h3>6.8 App Store de Apple / Google Play</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Distribución de la app y procesamiento del pago de tu suscripción.</li>
+                        <li><strong>Políticas de privacidad:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacidad de Apple</a> &middot; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacidad de Google</a></li>
+                    </ul>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>7. Suscripciones</h2>
+                    <h3>7.1 Mi Isla Premium</h3>
+                    <p>Mi Isla es gratis en su esencia. Una suscripción Premium opcional desbloquea extras como el bucle e historial del radar animado, el pronóstico por hora extendido, el desglose completo del oleaje, el historial de ríos y varias ubicaciones guardadas.</p>
+
+                    <h3>7.2 Detalles de la suscripción</h3>
+                    <ul>
+                        <li><strong>Planes:</strong> Mensual, anual o una compra única de por vida, según se muestre en la App.</li>
+                        <li><strong>Renovación automática:</strong> Las suscripciones mensuales y anuales se renuevan automáticamente hasta que las canceles.</li>
+                        <li><strong>Pago:</strong> Se cobra a tu cuenta de Apple ID o Google Play.</li>
+                        <li><strong>Cancelación:</strong> Cancela cuando quieras en los ajustes de tu cuenta del App Store o Play Store.</li>
+                    </ul>
+
+                    <h3>7.3 Administrar tu suscripción</h3>
+                    <ul>
+                        <li><strong>iOS:</strong> Ajustes &rarr; [Tu nombre] &rarr; Suscripciones &rarr; Mi Isla</li>
+                        <li><strong>Android:</strong> Play Store &rarr; Suscripciones &rarr; Mi Isla</li>
+                    </ul>
+                    <p>La cancelación surte efecto al final del período de facturación vigente.</p>
+
+                    <h3>7.4 Prueba gratis (si se ofrece)</h3>
+                    <ul>
+                        <li>La duración se indica claramente antes de que te comprometas.</li>
+                        <li>El precio de la suscripción se cobra al terminar la prueba a menos que canceles antes.</li>
+                        <li>La elegibilidad para la prueba es una por Apple ID o cuenta de Google.</li>
+                    </ul>
+
+                    <h3>7.5 Reembolsos</h3>
+                    <p>Las compras por lo general no son reembolsables, pero puedes solicitar un reembolso a través de la tienda:</p>
+                    <ul>
+                        <li><strong>Apple:</strong> <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
+                        <li><strong>Google:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">página de reembolsos de Google Play</a></li>
+                    </ul>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>8. Notificaciones</h2>
+                    <p>Con tu permiso, Mi Isla puede enviar notificaciones locales, en la medida de lo posible, sobre condiciones importantes para tu zona, como una advertencia activa, polvo del Sahara denso o un temblor notable.</p>
+                    <ul>
+                        <li>Las notificaciones se generan en tu dispositivo a partir de las mismas fuentes de datos públicas. No operamos un servidor de notificaciones push y no te escribimos para mercadeo.</li>
+                        <li>Puedes activar o desactivar las notificaciones cuando quieras en los ajustes de la App o de tu dispositivo.</li>
+                        <li>Como la entrega depende del sistema operativo y de los límites en segundo plano, las notificaciones se entregan en la medida de lo posible y nunca deben ser tu única fuente para información de seguridad. Confía siempre en las autoridades oficiales.</li>
+                    </ul>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>9. Tus derechos de privacidad</h2>
+                    <h3>9.1 Derechos del RGPD (Unión Europea)</h3>
+                    <ul>
+                        <li><strong>Derecho de acceso:</strong> Solicitar información sobre el tratamiento de datos.</li>
+                        <li><strong>Derecho de rectificación:</strong> Corregir datos inexactos.</li>
+                        <li><strong>Derecho de supresión:</strong> Solicitar la eliminación de datos.</li>
+                        <li><strong>Derecho a la portabilidad:</strong> Recibir los datos en un formato portátil.</li>
+                        <li><strong>Derecho de oposición / retirar consentimiento:</strong> Oponerte o retirar el consentimiento al tratamiento (por ejemplo, revocando el permiso de ubicación).</li>
+                    </ul>
+
+                    <h3>9.2 Derechos de la CCPA (California)</h3>
+                    <ul>
+                        <li><strong>Derecho a saber, eliminar y no venta:</strong> No vendemos información personal y no tenemos ninguna en nuestros servidores que divulgar o eliminar.</li>
+                        <li><strong>Derecho a la no discriminación:</strong> Recibes la misma App sin importar tus decisiones de privacidad.</li>
+                    </ul>
+
+                    <h3>9.3 Cómo ejercer tus derechos</h3>
+                    <p>Como Mi Isla mantiene tus datos en tu dispositivo y no guarda identidad, la mayoría de los derechos son inmediatos:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Tus ajustes y datos en caché son visibles dentro de la App.</li>
+                        <li><strong>Eliminación:</strong> Borrar el caché de la App o desinstalarla elimina todos los datos locales de forma permanente.</li>
+                        <li><strong>Ubicación:</strong> Revoca el permiso de ubicación en los ajustes de tu dispositivo cuando quieras.</li>
+                    </ul>
+                    <p>Para preguntas, o sobre los datos que tengan RevenueCat o las tiendas de apps, contáctanos en <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a>.</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>10. Privacidad de menores</h2>
+                    <p>Mi Isla es una app del tiempo para público general y es apta para personas de todas las edades. No requiere cuentas y no recopila a sabiendas información personal de nadie, incluyendo menores de 13 años.</p>
+                    <ul>
+                        <li>No se recopilan cuentas ni identificación personal.</li>
+                        <li>Los padres pueden usar los controles parentales del dispositivo y desactivar las compras dentro de la app.</li>
+                    </ul>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>11. Usuarios internacionales</h2>
+                    <h3>11.1 Lugar de procesamiento de datos</h3>
+                    <p>Mi Isla se enfoca en Puerto Rico. Los servicios meteorológicos públicos que consulta, y RevenueCat, pueden procesar las solicitudes en servidores ubicados en Estados Unidos o en otros lugares. Estas solicitudes contienen solo la información de zona necesaria para devolver datos del tiempo, nunca tu identidad.</p>
+
+                    <h3>11.2 Cumplimiento regional</h3>
+                    <ul>
+                        <li><strong>Unión Europea:</strong> Se respetan los principios del RGPD.</li>
+                        <li><strong>California:</strong> Se respetan los principios de la CCPA.</li>
+                        <li><strong>Otras regiones:</strong> Respetamos las leyes de privacidad aplicables.</li>
+                    </ul>
+
+                    <h3>11.3 Idioma</h3>
+                    <p>Esta Política de Privacidad está disponible en inglés y español. Si hay algún conflicto entre las dos versiones, prevalece la versión en inglés.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>12. Cambios a esta Política de Privacidad</h2>
+                    <p>Podemos actualizar esta Política de Privacidad para reflejar nuevas funciones, requisitos legales o cambios en los servicios de los que depende Mi Isla.</p>
+                    <ul>
+                        <li>Se actualizará la fecha de "Última actualización".</li>
+                        <li>Los cambios importantes &mdash; en especial cualquier cambio sobre cómo se usa la ubicación o los datos &mdash; se describirán antes de que entren en vigor.</li>
+                        <li>El uso continuado tras una actualización constituye aceptación.</li>
+                    </ul>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>13. Contáctanos</h2>
+                    <p>Si tienes preguntas, inquietudes o solicitudes sobre esta Política de Privacidad, contáctanos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                        <p><strong>Correo:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Sitio web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de respuesta</h3>
+                    <ul>
+                        <li>En un plazo de 30 días para consultas generales</li>
+                        <li>En un plazo de 72 horas para inquietudes urgentes de privacidad</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 24 de junio de 2026</p>
+                    <p><strong>Fecha de vigencia:</strong> 24 de junio de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

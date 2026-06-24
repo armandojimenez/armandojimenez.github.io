@@ -1,0 +1,15 @@
+/* Mi Isla - Sol Taino Theme (la bandera: navy structure + bandera red) */
+/* Brand values lifted from the app's design system (app_palette.dart):       */
+/* light = Sol Brillante, dark = Sol de Medianoche.                            */
+
+:root[data-policy-app="mi-isla"] {
+    --accent-primary: #0A2A66;        /* navy - brand structure, links */
+    --accent-secondary: #CE1126;      /* la bandera red - the sun, alerts */
+    --accent-primary-hover: #002B7F;  /* navy2 - deeper accent */
+}
+
+[data-theme="dark"][data-policy-app="mi-isla"] {
+    --accent-primary: #3E6FCB;        /* navy on night (light blue) */
+    --accent-secondary: #FF3D4F;      /* la bandera red on night */
+    --accent-primary-hover: #5683DA;  /* navy3 - brighter structural accent */
+}

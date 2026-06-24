@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="mi-isla" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms & Conditions - Mi Isla</title>
+    <meta name="description" content="Terms & Conditions for Mi Isla - Puerto Rico's weather and alerts, all in one place.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/mi-isla/terms.html">
+    <meta property="og:title" content="Terms & Conditions - Mi Isla">
+    <meta property="og:description" content="Read the terms of use for Mi Isla.">
+    <meta property="og:url" content="https://armandojimenez.dev/apps/mi-isla/terms.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">☀️</div>
+                <div class="badge-text">
+                    <div class="badge-title">Mi Isla</div>
+                    <div class="badge-subtitle">Puerto Rico's weather and alerts, all in one place.</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms & Conditions</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: June 24, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: June 24, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#description">App Description</a></li>
+                    <li><a href="#license">License to Use</a></li>
+                    <li><a href="#obligations">User Obligations</a></li>
+                    <li><a href="#safety">Weather & Safety Disclaimer</a></li>
+                    <li><a href="#subscriptions">Subscriptions & Payments</a></li>
+                    <li><a href="#ip">Intellectual Property</a></li>
+                    <li><a href="#disclaimers">Disclaimers</a></li>
+                    <li><a href="#liability">Limitation of Liability</a></li>
+                    <li><a href="#indemnification">Indemnification</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#governing-law">Governing Law</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>These Terms & Conditions ("Terms") govern your use of Mi Isla ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, please do not use the App.</p>
+                    <p>You must be at least 13 years old, or the minimum age required to form a binding agreement in your jurisdiction, to use the App.</p>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. App Description</h2>
+                    <p>Mi Isla is a boricua-first app that brings together what is happening in Puerto Rico in one place: weather, official alerts, earthquakes and tsunami status, Sahara dust, air quality, the sea and beaches, rivers and flooding, and precipitation radar. It is bilingual (Spanish and English) and free at its core, with an optional Premium subscription.</p>
+                    <ul>
+                        <li><strong>Platforms:</strong> iOS and Android.</li>
+                        <li><strong>Availability:</strong> Provided on an "as available" basis. Features depend on the public data services the App relies on.</li>
+                    </ul>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. License to Use</h2>
+                    <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to install and use the App for your personal, non-commercial use.</p>
+                    <p>You may NOT:</p>
+                    <ul>
+                        <li>Copy, modify, or create derivative works of the App</li>
+                        <li>Reverse engineer, decompile, or disassemble the App, except where permitted by law</li>
+                        <li>Rent, lease, sell, sublicense, or redistribute the App</li>
+                        <li>Use the App to systematically scrape or redistribute the underlying data services</li>
+                        <li>Remove or alter any proprietary notices or attributions</li>
+                    </ul>
+                </section>
+
+                <section id="obligations" class="policy-section">
+                    <h2>4. User Obligations</h2>
+                    <p>When using Mi Isla, you agree to:</p>
+                    <ul>
+                        <li>Use the App in compliance with all applicable laws</li>
+                        <li>Not interfere with or disrupt the App or the services it depends on</li>
+                        <li>Not attempt to gain unauthorized access to any system or data</li>
+                        <li>Use weather and safety information responsibly, as described below</li>
+                    </ul>
+                </section>
+
+                <section id="safety" class="policy-section">
+                    <h2>5. Weather & Safety Disclaimer</h2>
+                    <div class="highlight-box warning">
+                        <strong>⚠️ Mi Isla is an informational tool, not an official warning system.</strong>
+                        <p>Mi Isla gathers and presents information from official and public sources (such as the U.S. National Weather Service, USGS, and NOAA), but the App itself is not an official source and is not affiliated with, endorsed by, or operated by any government agency.</p>
+                    </div>
+                    <p>You acknowledge and agree that:</p>
+                    <ul>
+                        <li><strong>Information may be delayed, incomplete, or unavailable.</strong> Data depends on third-party services that can change, fail, or be interrupted, and on your device's connectivity and operating-system limits.</li>
+                        <li><strong>Notifications are best-effort.</strong> Delivery is not guaranteed and is subject to operating-system and background-execution limits. Do not rely on the App's notifications as your only alert mechanism.</li>
+                        <li><strong>The App is not a substitute for official guidance.</strong> For decisions affecting life, health, property, or safety, always follow the instructions of official authorities &mdash; the National Weather Service, the Puerto Rico Bureau for Emergency Management and Disaster Administration (NMEAD), local emergency management, and emergency services (9-1-1).</li>
+                        <li><strong>In an emergency, contact the authorities directly.</strong> Do not depend on the App during a hurricane, flood, earthquake, tsunami, or other emergency.</li>
+                    </ul>
+                    <p>To the fullest extent permitted by law, Believe PR is not responsible for any decision made, or action taken or not taken, in reliance on information presented by the App.</p>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>6. Subscriptions & Payments</h2>
+                    <h3>6.1 Mi Isla Premium</h3>
+                    <p>The App offers an optional Premium subscription that unlocks additional features. The current plans, prices, and benefits are shown in the App at the time of purchase.</p>
+
+                    <h3>6.2 Billing & Auto-Renewal</h3>
+                    <ul>
+                        <li>Payment is charged to your Apple ID or Google Play account at confirmation of purchase.</li>
+                        <li>Monthly and yearly subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period.</li>
+                        <li>Your account is charged for renewal within 24 hours prior to the end of the current period.</li>
+                        <li>A lifetime option, where offered, is a one-time purchase and does not renew.</li>
+                    </ul>
+
+                    <h3>6.3 Free Trial</h3>
+                    <ul>
+                        <li>If a free trial is offered, its duration is disclosed before purchase.</li>
+                        <li>Any unused portion of a free trial is forfeited when you purchase a subscription.</li>
+                        <li>You will be charged the subscription price when the trial ends unless you cancel beforehand.</li>
+                    </ul>
+
+                    <h3>6.4 Cancellation & Refunds</h3>
+                    <ul>
+                        <li>Manage or cancel your subscription in your App Store or Play Store account settings. Cancellation takes effect at the end of the current billing period.</li>
+                        <li>Purchases are generally non-refundable except where required by law or store policy. Refund requests are handled by Apple or Google: <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">Apple</a> &middot; <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google</a>.</li>
+                    </ul>
+
+                    <h3>6.5 Price Changes</h3>
+                    <p>We may change subscription prices. Any change applies to future billing periods, and where required, we will notify you and obtain consent in accordance with the app stores' rules.</p>
+                </section>
+
+                <section id="ip" class="policy-section">
+                    <h2>7. Intellectual Property</h2>
+                    <p>The App, including its design, the Sol Taíno mark and other branding, code, and original content, is owned by Believe PR and protected by intellectual property laws. These Terms do not transfer any ownership to you.</p>
+                    <p>The weather and geophysical data displayed in the App belongs to its respective providers and is used under their terms:</p>
+                    <ul>
+                        <li>U.S. government data (NWS, USGS, NOAA) is generally in the public domain.</li>
+                        <li>Map data is &copy; OpenStreetMap contributors, available under the Open Database License.</li>
+                        <li>Other data is provided by Open-Meteo and RainViewer under their respective terms.</li>
+                    </ul>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>8. Disclaimers</h2>
+                    <h3>8.1 "As Is" and "As Available"</h3>
+                    <p>The App is provided "as is" and "as available" without warranties of any kind, whether express or implied, including but not limited to merchantability, fitness for a particular purpose, accuracy, and non-infringement. We do not warrant that the App will be uninterrupted, error-free, or that information will be accurate or current.</p>
+
+                    <h3>8.2 No Professional Advice</h3>
+                    <p>Information in the App is for general informational purposes only and is not professional, emergency, medical, or safety advice. Always exercise your own judgment and consult official authorities.</p>
+                </section>
+
+                <section id="liability" class="policy-section">
+                    <h2>9. Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by law, Believe PR and Armando Jimenez shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or goodwill, arising out of or related to your use of, or inability to use, the App &mdash; including any reliance on weather, alert, or safety information.</p>
+                    <p>To the extent liability cannot be excluded, it is limited to the amount you paid for the App in the 12 months before the claim, or USD $10, whichever is greater. Some jurisdictions do not allow certain limitations, so some of the above may not apply to you.</p>
+                </section>
+
+                <section id="indemnification" class="policy-section">
+                    <h2>10. Indemnification</h2>
+                    <p>You agree to indemnify and hold harmless Believe PR and Armando Jimenez from any claims, damages, losses, or expenses (including reasonable legal fees) arising from your misuse of the App or your violation of these Terms.</p>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>11. Termination</h2>
+                    <ul>
+                        <li><strong>By you:</strong> You may stop using the App and uninstall it at any time.</li>
+                        <li><strong>By us:</strong> We may suspend or terminate your access if you violate these Terms or misuse the App.</li>
+                        <li><strong>Effect:</strong> Provisions that by their nature should survive termination &mdash; including intellectual property, disclaimers, limitation of liability, and indemnification &mdash; survive.</li>
+                    </ul>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>12. Governing Law</h2>
+                    <p>These Terms are governed by the laws of the Commonwealth of Puerto Rico and the applicable laws of the United States, without regard to conflict-of-law principles. Any dispute shall be resolved in the courts located in Puerto Rico, unless applicable law requires otherwise. Your use of the App is also subject to the terms of the Apple App Store or Google Play, as applicable.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>13. Changes to These Terms</h2>
+                    <p>We may update these Terms from time to time. When we make material changes, we will revise the "Last Updated" date. Your continued use of the App after changes take effect constitutes acceptance of the updated Terms.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>14. Contact</h2>
+                    <p>If you have questions about these Terms, please contact us:</p>
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Developer:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:armando.jimenez.dev@gmail.com">armando.jimenez.dev@gmail.com</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> June 24, 2026</p>
+                    <p><strong>Effective Date:</strong> June 24, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
