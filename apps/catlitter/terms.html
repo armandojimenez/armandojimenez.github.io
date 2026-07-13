@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="catlitter" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms &amp; Conditions - CatLitter</title>
+    <meta name="description" content="Terms and Conditions for CatLitter, the calm, local-first cat litter-box reminder and freshness tracker.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/catlitter/terms.html">
+    <meta property="og:title" content="Terms &amp; Conditions - CatLitter">
+    <meta property="og:description" content="The terms for using CatLitter.">
+    <meta property="og:url" content="https://armandojimenez.dev/apps/catlitter/terms.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">&#128062;</div>
+                <div class="badge-text">
+                    <div class="badge-title">CatLitter</div>
+                    <div class="badge-subtitle">The litter reminder that actually shows up</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms &amp; Conditions</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: July 12, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Effective Date: July 12, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#description">App Description</a></li>
+                    <li><a href="#license">License to Use</a></li>
+                    <li><a href="#user-obligations">User Obligations</a></li>
+                    <li><a href="#user-content">Your Cats &amp; Notes</a></li>
+                    <li><a href="#purchase">The One-Time Unlock</a></li>
+                    <li><a href="#not-advice">Not Veterinary or Professional Advice</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#prohibited-uses">Prohibited Uses</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#disclaimers">Disclaimers</a></li>
+                    <li><a href="#limitation">Limitation of Liability</a></li>
+                    <li><a href="#indemnification">Indemnification</a></li>
+                    <li><a href="#governing-law">Governing Law</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>Welcome to CatLitter ("the App"), developed and operated by Believe PR, owned by Armando Jimenez. By downloading, installing, accessing, or using the App, you ("User," "you," or "your") agree to be bound by these Terms and Conditions ("Terms").</p>
+
+                    <div class="highlight-box">
+                        <strong>&#128062; Important:</strong> If you do not agree to these Terms, do not download, install, or use CatLitter. Your continued use of the App constitutes acceptance of these Terms and any updates made to them.
+                    </div>
+
+                    <h3>1.1 Agreement to Terms</h3>
+                    <p>These Terms form a legally binding agreement between you and Believe PR. By using CatLitter, you represent that:</p>
+                    <ul>
+                        <li>You are the age of majority in your jurisdiction, or you are using the App with the involvement of a parent or guardian</li>
+                        <li>You have the legal capacity to enter into these Terms</li>
+                        <li>You will comply with all applicable laws and regulations</li>
+                    </ul>
+
+                    <h3>1.2 Additional Terms</h3>
+                    <p>In addition to these Terms, your use of CatLitter is also governed by:</p>
+                    <ul>
+                        <li>Our <a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li>The Apple App Store or Google Play terms for your platform</li>
+                        <li>RevenueCat's terms (purchase management)</li>
+                    </ul>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. App Description</h2>
+
+                    <h3>2.1 Purpose</h3>
+                    <p>CatLitter is a cross-platform (iOS and Android) cat litter-box reminder and freshness tracker that helps you:</p>
+                    <ul>
+                        <li>See at a glance, through a warm freshness ring, which box needs attention</li>
+                        <li>Log a scoop or a full change with a single tap, and keep a days-fresh streak</li>
+                        <li>Receive a gentle daily reminder and a full-change reminder</li>
+                        <li>Keep your cats, their photos, and optional health and vet-visit notes</li>
+                        <li>Check freshness from a home-screen widget without opening the App</li>
+                    </ul>
+
+                    <h3>2.2 Key Features</h3>
+                    <ul>
+                        <li><strong>Freshness Ring:</strong> Know whether a box needs you without reading a word</li>
+                        <li><strong>One-Tap Scoop:</strong> Log the whole house in a single tap, with a small warm reward</li>
+                        <li><strong>Daily &amp; Full-Change Reminders:</strong> Gentle local reminders so nothing is forgotten</li>
+                        <li><strong>Cats &amp; Photos:</strong> Give each cat a name and a photo</li>
+                        <li><strong>Health &amp; Vet Notes:</strong> A calm place to jot how each cat is doing and their last vet visit</li>
+                        <li><strong>Home-Screen Widgets:</strong> A glanceable freshness ring on your home screen</li>
+                        <li><strong>Local-First &amp; Private:</strong> No account, no cloud, no ads</li>
+                    </ul>
+
+                    <h3>2.3 Data Storage</h3>
+                    <ul>
+                        <li>All of your data is stored locally on your device only</li>
+                        <li>No user account is required to use the App</li>
+                        <li>Your cats, photos, history, and notes never leave your device</li>
+                        <li>CatLitter is local-only and does not provide cloud backup or export; local data may be lost if the App is uninstalled</li>
+                    </ul>
+
+                    <h3>2.4 Availability</h3>
+                    <ul>
+                        <li>CatLitter is available on iOS and Android</li>
+                        <li>The App works offline; an internet connection is only used for the anonymous services described in the Privacy Policy</li>
+                        <li>We reserve the right to modify, add, or discontinue features at any time</li>
+                    </ul>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. License to Use</h2>
+
+                    <h3>3.1 License Grant</h3>
+                    <p>Subject to your compliance with these Terms, Believe PR grants you a limited, non-exclusive, non-transferable, revocable license to:</p>
+                    <ul>
+                        <li>Download and install CatLitter on devices you own or control</li>
+                        <li>Access and use CatLitter for personal, non-commercial purposes</li>
+                        <li>Use all features and functionalities as intended</li>
+                    </ul>
+
+                    <h3>3.2 License Restrictions</h3>
+                    <p>You may NOT:</p>
+                    <ul>
+                        <li>Copy, modify, or create derivative works of the App</li>
+                        <li>Reverse engineer, decompile, or disassemble the App</li>
+                        <li>Remove or modify any copyright, trademark, or proprietary notices</li>
+                        <li>Rent, lease, lend, sell, or sublicense the App</li>
+                        <li>Use the App for any commercial purpose without written permission</li>
+                        <li>Circumvent the one-time unlock or access premium features without purchasing them</li>
+                        <li>Use automated tools, scripts, or bots to interact with CatLitter</li>
+                    </ul>
+
+                    <h3>3.3 Ownership</h3>
+                    <p>CatLitter and all of its intellectual property rights remain the exclusive property of Believe PR and Armando Jimenez. This license does not grant you any ownership rights in the App.</p>
+                </section>
+
+                <section id="user-obligations" class="policy-section">
+                    <h2>4. User Obligations</h2>
+
+                    <h3>4.1 Responsible Use</h3>
+                    <p>You agree to:</p>
+                    <ul>
+                        <li>Use CatLitter in accordance with these Terms and applicable laws</li>
+                        <li>Keep your device secure</li>
+                        <li>Not use CatLitter for any unlawful, harmful, or deceptive purpose</li>
+                    </ul>
+
+                    <h3>4.2 No Account, Your Responsibility</h3>
+                    <p>CatLitter does not require an account. Because all of your data lives on your device, you are responsible for:</p>
+                    <ul>
+                        <li>Securing your device and the data on it</li>
+                        <li>Understanding that uninstalling CatLitter permanently deletes your local cats, photos, history, and notes, as there is no cloud backup or export</li>
+                    </ul>
+                </section>
+
+                <section id="user-content" class="policy-section">
+                    <h2>5. Your Cats &amp; Notes</h2>
+
+                    <h3>5.1 Your Content</h3>
+                    <p>You retain full ownership of everything you create in CatLitter: your cats' names and photos, your litter-box history, and your health and vet-visit notes. Because that content lives only on your device, Believe PR does not claim, license, moderate, or receive a copy of it.</p>
+
+                    <h3>5.2 Photos You Choose</h3>
+                    <p>When you give a cat a photo, the image you pick is copied into the App's private storage on your device. You are responsible for having the right to use any image you add. The photo is never uploaded to us or to anyone else.</p>
+                </section>
+
+                <section id="purchase" class="policy-section">
+                    <h2>6. The One-Time Unlock</h2>
+
+                    <h3>6.1 Free Tier &amp; the One-Time Purchase</h3>
+                    <p>CatLitter is free to use, with a genuinely useful free tier: one cat and one box, the daily and full-change reminders, one-tap scoop, the freshness ring, streaks, per-cat photos, and home-screen widgets, all with zero ads.</p>
+                    <p>For households with more than one cat, CatLitter offers a single <strong>one-time purchase</strong> that unlocks:</p>
+                    <ul>
+                        <li>Unlimited cats and litter boxes</li>
+                        <li>Gentle health notes and a vet-visit log</li>
+                        <li>Your full care history</li>
+                    </ul>
+
+                    <div class="highlight-box warning">
+                        <strong>&#128062; One-time purchase. No subscription, ever.</strong>
+                        <p>The unlock is a one-time, non-consumable purchase. There is no subscription, no free trial, and no auto-renewal. You pay once and keep it.</p>
+                    </div>
+
+                    <h3>6.2 Pricing &amp; Billing</h3>
+                    <ul>
+                        <li>The exact price is shown inside the App at the point of purchase, in your local currency where the store supports it. The price may change over time and may vary by region; the price shown in the App always governs</li>
+                        <li>Payment is charged by the <strong>Apple App Store</strong> or <strong>Google Play</strong> to your store account. Believe PR never sees or stores your card or payment details</li>
+                        <li>We use <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat</a> to confirm your unlock; payment is always handled by the store, not by RevenueCat or Believe PR</li>
+                    </ul>
+
+                    <h3>6.3 Restoring Your Purchase</h3>
+                    <p>Because the unlock is tied to your store account, you can restore it on a new device or after reinstalling by using "Restore" in the App. There is nothing to cancel, because there is no subscription.</p>
+
+                    <h3>6.4 Refunds</h3>
+                    <p>All purchases are processed by the store, so refund requests must be made through the store: Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>, or Google Play through its <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">refund page</a>. Believe PR cannot directly issue App Store or Google Play refunds. If a purchase does not unlock as expected, contact us and we will help.</p>
+                </section>
+
+                <section id="not-advice" class="policy-section">
+                    <h2>7. Not Veterinary or Professional Advice</h2>
+
+                    <div class="highlight-box warning">
+                        <strong>&#128062; Please read this</strong>
+                        <p>CatLitter is a reminder and tracking tool for litter-box upkeep. It is NOT a veterinary service, a medical device, or a substitute for professional care for your cat.</p>
+                    </div>
+
+                    <h3>7.1 The Health Note Is a Personal Jotting</h3>
+                    <p>The optional "health note" and vet-visit record in CatLitter are free-text notes for your own convenience. They are not a medical chart, they make no medical claims, and the App does not diagnose, treat, or monitor any condition.</p>
+
+                    <h3>7.2 Your Cat's Care Comes First</h3>
+                    <p>CatLitter's reminders and freshness states are conveniences, not guarantees. If your cat shows any change in litter-box habits or signs of illness, please consult a qualified veterinarian. Do not rely on the App in place of professional veterinary care.</p>
+                </section>
+
+                <section id="intellectual-property" class="policy-section">
+                    <h2>8. Intellectual Property</h2>
+
+                    <h3>8.1 Ownership</h3>
+                    <p>All intellectual property rights in and to CatLitter, including but not limited to:</p>
+                    <ul>
+                        <li>The CatLitter source code, application binary, and design</li>
+                        <li>The CatLitter name, wordmark, and the freshness-ring visual system</li>
+                        <li>The color palette, typography choices, and illustrations</li>
+                        <li>The text of these Terms and the Privacy Policy</li>
+                    </ul>
+                    <p>...are owned exclusively by Believe PR and Armando Jimenez.</p>
+
+                    <h3>8.2 Trademarks</h3>
+                    <p>"CatLitter" and associated logos and marks are trademarks of Believe PR. You may not use these marks without prior written permission.</p>
+
+                    <h3>8.3 Your Content</h3>
+                    <p>You retain ownership of your cats' names and photos and your notes. Because this data is stored locally and never transmitted to our servers, Believe PR claims no ownership and no license over it.</p>
+
+                    <h3>8.4 Copyright Concerns</h3>
+                    <p>If you believe content in CatLitter infringes your copyright, contact us at <a href="mailto:catlitter@armandojimenez.dev">catlitter@armandojimenez.dev</a> with sufficient detail to identify the work in question.</p>
+                </section>
+
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>9. Prohibited Uses</h2>
+                    <p>You agree NOT to use CatLitter to:</p>
+
+                    <h3>9.1 Illegal or Harmful Activities</h3>
+                    <ul>
+                        <li>Engage in any activity that violates local, state, national, or international law</li>
+                        <li>Harm, harass, or infringe the rights of any person</li>
+                    </ul>
+
+                    <h3>9.2 Unauthorized Access</h3>
+                    <ul>
+                        <li>Reverse engineer, decompile, or modify the App</li>
+                        <li>Bypass the one-time unlock or access premium features without purchasing them</li>
+                    </ul>
+
+                    <h3>9.3 Commercial Misuse</h3>
+                    <ul>
+                        <li>Resell, rent, or redistribute the App</li>
+                        <li>Scrape or extract the App's content programmatically</li>
+                    </ul>
+
+                    <h3>9.4 Malicious Activity</h3>
+                    <ul>
+                        <li>Upload malware, viruses, or malicious code</li>
+                        <li>Disrupt the proper functioning of the App</li>
+                    </ul>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>10. Termination</h2>
+
+                    <h3>10.1 Termination by You</h3>
+                    <p>You may stop using CatLitter at any time by uninstalling it from all of your devices. This permanently removes your local data. Because the unlock is a one-time purchase, there is no subscription to cancel.</p>
+
+                    <h3>10.2 Termination by Us</h3>
+                    <p>We reserve the right to:</p>
+                    <ul>
+                        <li>Discontinue CatLitter at any time</li>
+                        <li>Block access if these Terms are violated</li>
+                        <li>Remove the App from the App Store or Google Play</li>
+                        <li>Disable specific features or content</li>
+                    </ul>
+
+                    <h3>10.3 Effect of Termination</h3>
+                    <ul>
+                        <li>Your license to use CatLitter immediately ends</li>
+                        <li>You must stop using the App</li>
+                        <li>Provisions regarding intellectual property, disclaimers, limitation of liability, indemnification, and dispute resolution survive termination</li>
+                    </ul>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>11. Disclaimers</h2>
+
+                    <div class="highlight-box warning">
+                        <strong>&#128062; READ CAREFULLY, IMPORTANT LEGAL DISCLAIMERS</strong>
+                    </div>
+
+                    <h3>11.1 "AS IS" and "AS AVAILABLE"</h3>
+                    <p>CATLITTER IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                    <ul>
+                        <li>WARRANTIES OF MERCHANTABILITY</li>
+                        <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                        <li>NON-INFRINGEMENT</li>
+                        <li>ACCURACY OR RELIABILITY</li>
+                        <li>UNINTERRUPTED OR ERROR-FREE OPERATION</li>
+                    </ul>
+
+                    <h3>11.2 No Guarantee</h3>
+                    <p>WE DO NOT WARRANT THAT:</p>
+                    <ul>
+                        <li>Reminders will always be delivered on time, as delivery depends on your device and its settings</li>
+                        <li>The App will meet your specific requirements or expectations</li>
+                        <li>The App or its features will be available at any particular time</li>
+                        <li>Bugs or errors will be corrected</li>
+                        <li>CatLitter will be compatible with all devices or future operating-system versions</li>
+                    </ul>
+
+                    <h3>11.3 Third-Party Services</h3>
+                    <p>WE ARE NOT RESPONSIBLE FOR:</p>
+                    <ul>
+                        <li>The availability or behavior of Firebase (Google), RevenueCat, the Apple App Store, or Google Play</li>
+                        <li>Device operating-system issues, network outages, or other infrastructure failures</li>
+                    </ul>
+
+                    <h3>11.4 Jurisdictional Limitations</h3>
+                    <p>Some jurisdictions do not allow the exclusion of implied warranties. In those jurisdictions, the above exclusions may not apply to you, and you may have additional rights.</p>
+                </section>
+
+                <section id="limitation" class="policy-section">
+                    <h2>12. Limitation of Liability</h2>
+
+                    <div class="highlight-box warning">
+                        <strong>&#128062; IMPORTANT LIABILITY LIMITATIONS</strong>
+                    </div>
+
+                    <h3>12.1 Maximum Liability</h3>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL BELIEVE PR, ARMANDO JIMENEZ, OR THEIR AFFILIATES BE LIABLE FOR:</p>
+                    <ul>
+                        <li>INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES</li>
+                        <li>LOSS OF PROFITS, REVENUE, OR BUSINESS OPPORTUNITIES</li>
+                        <li>LOSS OF DATA OR INFORMATION (INCLUDING ANY CAT, PHOTO, HISTORY, OR NOTE CONTENT)</li>
+                        <li>ANY MATTER RELATING TO THE HEALTH OR CARE OF AN ANIMAL</li>
+                        <li>COST OF SUBSTITUTE GOODS OR SERVICES</li>
+                    </ul>
+
+                    <h3>12.2 Cap on Liability</h3>
+                    <p>OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO CATLITTER SHALL NOT EXCEED THE GREATER OF:</p>
+                    <ul>
+                        <li>USD $50</li>
+                        <li>The total amount you have paid for CatLitter</li>
+                    </ul>
+
+                    <h3>12.3 Basis of the Bargain</h3>
+                    <p>These limitations reflect the allocation of risk between you and Believe PR and are an essential basis of this agreement, which would not be offered without them.</p>
+
+                    <h3>12.4 Jurisdictional Exceptions</h3>
+                    <p>Some jurisdictions do not allow limitations on liability for certain types of damages. In those jurisdictions, our liability is limited to the maximum extent permitted by law.</p>
+                </section>
+
+                <section id="indemnification" class="policy-section">
+                    <h2>13. Indemnification</h2>
+
+                    <h3>13.1 Your Indemnification</h3>
+                    <p>You agree to indemnify, defend, and hold harmless Believe PR, Armando Jimenez, and their affiliates, officers, employees, and agents from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:</p>
+                    <ul>
+                        <li>Your use or misuse of CatLitter</li>
+                        <li>Your violation of these Terms</li>
+                        <li>Your violation of any applicable laws or regulations</li>
+                        <li>Your violation of the rights of any third party (including any image you add)</li>
+                    </ul>
+
+                    <h3>13.2 Defense of Claims</h3>
+                    <p>We reserve the right to assume exclusive defense and control of any matter subject to indemnification. You agree to cooperate with us in defending such claims.</p>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>14. Governing Law and Dispute Resolution</h2>
+
+                    <h3>14.1 Governing Law</h3>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of the Commonwealth of Puerto Rico, without regard to its conflict of law provisions.</p>
+
+                    <h3>14.2 Jurisdiction</h3>
+                    <p>You agree that any legal action or proceeding arising from these Terms shall be brought exclusively in the courts of the Commonwealth of Puerto Rico, and you consent to the personal jurisdiction of such courts.</p>
+
+                    <h3>14.3 Informal Resolution First</h3>
+                    <p>Before filing any legal action, you agree to attempt to resolve disputes informally by emailing <a href="mailto:catlitter@armandojimenez.dev">catlitter@armandojimenez.dev</a> and allowing 30 days for a good-faith response.</p>
+
+                    <h3>14.4 Class Action Waiver</h3>
+                    <p>TO THE EXTENT PERMITTED BY LAW, YOU AGREE THAT ANY DISPUTE SHALL BE RESOLVED ON AN INDIVIDUAL BASIS AND NOT AS A CLASS ACTION, CONSOLIDATED ACTION, OR REPRESENTATIVE ACTION.</p>
+
+                    <h3>14.5 Consumer Rights</h3>
+                    <p>Nothing in these Terms limits your statutory rights as a consumer under applicable consumer-protection laws.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>15. Changes to Terms</h2>
+
+                    <h3>15.1 Right to Modify</h3>
+                    <p>We reserve the right to modify these Terms at any time to reflect new features, legal requirements, or changes in business practices.</p>
+
+                    <h3>15.2 Notice of Changes</h3>
+                    <p>When we make material changes:</p>
+                    <ul>
+                        <li>The "Last Updated" date will be revised</li>
+                        <li>You may receive an in-app notice the next time you open CatLitter</li>
+                    </ul>
+
+                    <h3>15.3 Acceptance of Changes</h3>
+                    <p>By continuing to use CatLitter after changes are posted, you accept the modified Terms. If you disagree with any change, you must stop using the App.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>16. Contact Information</h2>
+                    <p>For questions, concerns, or notices regarding these Terms, please contact us:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:catlitter@armandojimenez.dev">catlitter@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener noreferrer">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>16.1 Customer Support</h3>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:catlitter@armandojimenez.dev">catlitter@armandojimenez.dev</a></li>
+                        <li><strong>Response Time:</strong> Within 2 to 5 business days</li>
+                    </ul>
+
+                    <h3>16.2 Legal Notices</h3>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:catlitter@armandojimenez.dev">catlitter@armandojimenez.dev</a></li>
+                        <li><strong>Subject Line:</strong> "Legal Notice, CatLitter"</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <h3>17. Miscellaneous</h3>
+
+                    <h4>17.1 Entire Agreement</h4>
+                    <p>These Terms, together with our <a href="privacy-policy.html">Privacy Policy</a>, constitute the entire agreement between you and Believe PR regarding CatLitter.</p>
+
+                    <h4>17.2 Severability</h4>
+                    <p>If any provision is found to be unenforceable, the remaining provisions will remain in full effect.</p>
+
+                    <h4>17.3 Waiver</h4>
+                    <p>Our failure to enforce any right or provision does not constitute a waiver of such right or provision.</p>
+
+                    <h4>17.4 Assignment</h4>
+                    <p>You may not assign or transfer these Terms. We may assign our rights and obligations without restriction.</p>
+
+                    <h4>17.5 Survival</h4>
+                    <p>Provisions regarding intellectual property, disclaimers, limitation of liability, indemnification, and dispute resolution survive termination.</p>
+
+                    <h4>17.6 Language</h4>
+                    <p>These Terms are written in English. Any translations are provided for convenience only. In case of conflict, the English version controls.</p>
+
+                    <hr class="divider">
+
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> July 12, 2026</p>
+                    <p><strong>Effective Date:</strong> July 12, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                    <p><em>Made with love from Puerto Rico.</em></p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

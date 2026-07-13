@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="catlitter" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - redirect to English if requested
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en') {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de Privacidad - CatLitter</title>
+    <meta name="description" content="Política de Privacidad de CatLitter, el recordatorio tranquilo de la caja de arena que funciona primero en tu dispositivo. Tus gatos, notas y fotos permanecen en tu dispositivo. Sin cuenta, sin nube, sin anuncios.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/catlitter/privacy-policy-es.html">
+    <meta property="og:title" content="Política de Privacidad - CatLitter">
+    <meta property="og:description" content="Cómo CatLitter protege tu privacidad: datos primero en tu dispositivo, sin cuentas, sin nube, sin anuncios.">
+    <meta property="og:url" content="https://armandojimenez.dev/apps/catlitter/privacy-policy-es.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">&#128062;</div>
+                <div class="badge-text">
+                    <div class="badge-title">CatLitter</div>
+                    <div class="badge-subtitle">El recordatorio de arena que de verdad aparece</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de Privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 12 de julio de 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Fecha de entrada en vigor: 12 de julio de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Tabla de Contenidos</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#privacy-first">Enfoque de Privacidad Primero</a></li>
+                    <li><a href="#information-collection">Información que Recopilamos</a></li>
+                    <li><a href="#how-we-use">Cómo Usamos tu Información</a></li>
+                    <li><a href="#data-storage">Almacenamiento y Seguridad</a></li>
+                    <li><a href="#your-choices">Tus Opciones y Controles</a></li>
+                    <li><a href="#purchase">La Compra Única</a></li>
+                    <li><a href="#notifications">Notificaciones y Widgets</a></li>
+                    <li><a href="#permissions">Permisos de la Aplicación</a></li>
+                    <li><a href="#third-party">Servicios de Terceros</a></li>
+                    <li><a href="#your-rights">Tus Derechos de Privacidad</a></li>
+                    <li><a href="#children">Privacidad de los Menores</a></li>
+                    <li><a href="#international">Usuarios Internacionales</a></li>
+                    <li><a href="#changes">Cambios a la Política</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Bienvenido a CatLitter ("la Aplicación"), un recordatorio tranquilo y rastreador de frescura para la caja de arena, desarrollado y operado por Believe PR, propiedad de Armando Jimenez. CatLitter te muestra de un vistazo si una caja necesita atención, te permite registrar una limpieza con un solo toque y te envía un recordatorio suave cada noche para que la caja nunca se olvide.</p>
+                    <p>CatLitter se construye sobre una idea sencilla: tu hogar y tus gatos son tuyos. Lo que guardas en la Aplicación, los nombres de tus gatos, sus fotos, el historial de la caja de arena y las notas de salud, permanece en tu dispositivo.</p>
+                    <div class="highlight-box">
+                        <strong>&#128062; Nuestra Promesa de Privacidad:</strong>
+                        <ul>
+                            <li>CatLitter no requiere una cuenta, un correo electrónico ni una contraseña</li>
+                            <li>Tus gatos, fotos, historial de la caja de arena y notas viven en TU dispositivo</li>
+                            <li>No existe una cuenta en la nube ni una copia en servidor de tu contenido</li>
+                            <li>Lo único que sale de tu dispositivo son estadísticas de uso anónimas y agregadas, diagnósticos de fallos y el registro de tu compra, nada de ello vinculado a tu nombre</li>
+                            <li>No hay anuncios, no hay venta de datos y no hay inteligencia artificial en ninguna parte de la Aplicación</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="privacy-first" class="policy-section">
+                    <h2>2. Enfoque de Privacidad Primero</h2>
+                    <h3>2.1 Nuestra Filosofía</h3>
+                    <p>El cuidado de la caja de arena es algo privado y doméstico, por eso CatLitter está diseñado para pedir lo menos posible. Con CatLitter:</p>
+                    <ul>
+                        <li>&#10003; Almacenamos todos los datos de tus gatos y de la caja de arena localmente en tu dispositivo de forma predeterminada</li>
+                        <li>&#10003; Nunca requerimos una cuenta de usuario, una dirección de correo electrónico ni una contraseña</li>
+                        <li>&#10003; No guardamos ninguna copia en servidor de tus gatos, tus fotos, tu historial ni tus notas</li>
+                        <li>&#10003; No usamos redes publicitarias ni ningún tipo de rastreo entre aplicaciones</li>
+                        <li>&#10003; Solo enviamos estadísticas de uso anónimas y agregadas, nunca nada que te identifique</li>
+                    </ul>
+
+                    <h3>2.2 Qué Significa Esto para Ti</h3>
+                    <p>Cuando usas CatLitter:</p>
+                    <ul>
+                        <li>Los nombres y las fotos de tus gatos permanecen en tu teléfono</li>
+                        <li>Qué caja se limpió, cuándo se hizo el último cambio completo y tu racha de días frescos permanecen en tu teléfono</li>
+                        <li>Las notas de salud y los registros de visitas al veterinario permanecen en tu teléfono</li>
+                        <li>Tus horarios de recordatorio, tu tema y tus preferencias de idioma permanecen en tu teléfono</li>
+                        <li>Tus recordatorios son programados localmente por tu dispositivo, no por ningún servidor que operemos</li>
+                    </ul>
+
+                    <p><strong>Importante:</strong> Como nunca guardamos una copia de tu contenido, eliminar CatLitter borra de forma permanente tus gatos, fotos, historial y notas de tu dispositivo. No podemos recuperarlos, porque nunca los tuvimos. CatLitter es local por diseño y no ofrece copia de seguridad en la nube ni exportación.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Información que Recopilamos</h2>
+
+                    <h3>3.1 Información que Tú Creas (Almacenada en tu Dispositivo)</h3>
+                    <p>Los siguientes datos son creados por ti y se almacenan localmente en tu dispositivo. Nunca se transmiten a nosotros ni a nadie más:</p>
+                    <ul>
+                        <li><strong>Tus gatos:</strong> Los nombres que les das a tus gatos y cualquier foto que elijas para cada uno</li>
+                        <li><strong>Cajas de arena:</strong> Las cajas que configuras y su estado de frescura actual</li>
+                        <li><strong>Historial de cuidado:</strong> Tu registro de limpiezas, tu historial de cambios completos y tus rachas de días frescos</li>
+                        <li><strong>Notas de salud y visitas al veterinario:</strong> Cualquier nota de salud en texto libre o registro de la última visita al veterinario que anotes para un gato</li>
+                        <li><strong>Recordatorios:</strong> Los horarios de recordatorio de limpieza diaria y de cambio completo que configuras</li>
+                        <li><strong>Preferencias:</strong> Tu tema (Luz de Día o Tarde Tranquila), idioma y otros ajustes de la Aplicación</li>
+                        <li><strong>Estado de la compra:</strong> Si has adquirido la compra única premium</li>
+                    </ul>
+
+                    <h3>3.2 Información Recopilada Automáticamente (Sale del Dispositivo)</h3>
+                    <p>Una pequeña cantidad de datos no personales y anónimos sale de tu dispositivo para mantener la Aplicación sana y para procesar una compra. Nada de ello está vinculado a tu identidad y nada se usa para rastrearte.</p>
+                    <ul>
+                        <li><strong>Firebase Analytics:</strong> Eventos de uso del producto anónimos y agregados, como qué pantallas se abren y qué funciones se usan. Son solo valores escalares (conteos, interruptores de activado/desactivado, opciones de una lista fija y duraciones). Nunca incluyen los nombres de tus gatos, tus notas ni tus fotos, y no están vinculados a tu identidad, no se venden ni se comparten, y no se usan para publicidad ni rastreo entre aplicaciones. La recopilación de identificadores publicitarios y las señales de personalización de anuncios están desactivadas, por lo que la Aplicación no recopila ningún identificador publicitario (ni IDFA ni ID de Publicidad de Google). Las analíticas se recopilan solo en la versión de producción de la Aplicación (ver la sección 6).</li>
+                        <li><strong>Firebase Crashlytics:</strong> Informes de fallos y diagnósticos de rendimiento (por ejemplo, el rastro de un fallo e información básica del dispositivo) para que podamos corregir errores y mantener la Aplicación estable. Esto nunca incluye tus gatos, notas ni fotos.</li>
+                        <li><strong>Firebase Remote Config:</strong> La Aplicación obtiene indicadores de configuración no personales (pequeños interruptores y ajustes). No envía ningún contenido del usuario; la Aplicación funciona por completo sin conexión y se comporta igual haya ocurrido o no una descarga de configuración.</li>
+                        <li><strong>Registro de compra (RevenueCat + la tienda de aplicaciones):</strong> Cuando compras el desbloqueo único, la tienda y RevenueCat registran la compra frente a un identificador anónimo para que la Aplicación pueda confirmar tu desbloqueo y restaurarlo más tarde. Esto nunca incluye tu nombre, correo electrónico ni contenido dentro de la Aplicación (ver las secciones 7 y 10).</li>
+                    </ul>
+
+                    <h3>3.3 Información que NO Recopilamos</h3>
+                    <p>CatLitter explícitamente NO recopila ni tiene acceso a:</p>
+                    <ul>
+                        <li>&#10007; Tu nombre, correo electrónico, número de teléfono o contactos</li>
+                        <li>&#10007; Los nombres, fotos, notas de salud o registros veterinarios de tus gatos (nunca salen de tu dispositivo)</li>
+                        <li>&#10007; Tu historial de la caja de arena, tu registro de limpiezas o tus rachas (nunca salen de tu dispositivo)</li>
+                        <li>&#10007; Tu ubicación precisa o datos de GPS</li>
+                        <li>&#10007; Tu biblioteca de fotos: CatLitter puede recibir una foto que elijas, pero nunca lee ni navega tu biblioteca</li>
+                        <li>&#10007; Identificadores publicitarios (IDFA o ID de Publicidad de Google): CatLitter no tiene publicidad</li>
+                        <li>&#10007; Datos de salud de Apple Health, Health Connect o cualquier otra fuente</li>
+                        <li>&#10007; Ningún dato usado para rastreo entre aplicaciones o sitios</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use" class="policy-section">
+                    <h2>4. Cómo Usamos tu Información</h2>
+
+                    <h3>4.1 Funcionamiento de la Aplicación (En el Dispositivo)</h3>
+                    <p>Tus datos se usan por completo en tu dispositivo para:</p>
+                    <ul>
+                        <li>Mostrar el anillo de frescura y destacar la caja que necesita atención</li>
+                        <li>Registrar tus limpiezas y cambios completos, y llevar tu racha de días frescos</li>
+                        <li>Guardar tus gatos, sus fotos y sus notas de salud y de visitas al veterinario</li>
+                        <li>Programar tus recordatorios de limpieza diaria y de cambio completo</li>
+                        <li>Mostrar la frescura de hoy en el widget de la pantalla de inicio, si agregaste uno</li>
+                        <li>Aplicar tu tema e idioma seleccionados</li>
+                    </ul>
+
+                    <h3>4.2 Mantener la Aplicación Sana</h3>
+                    <p>Los datos anónimos y agregados nos ayudan a:</p>
+                    <ul>
+                        <li>Corregir fallos y mejorar la estabilidad (Crashlytics)</li>
+                        <li>Entender qué funciones se usan, para poder mejorar CatLitter (Analytics)</li>
+                    </ul>
+                    <p><strong>Tus gatos, fotos y notas NUNCA se usan para analíticas, y nunca se venden.</strong></p>
+
+                    <h3>4.3 Sin Marketing, sin Perfiles, sin Anuncios, sin IA</h3>
+                    <p>No usamos tu información para marketing, elaboración de perfiles ni publicidad conductual, y no la vendemos ni la compartimos. No hay publicidad en CatLitter, y la Aplicación no contiene funciones de inteligencia artificial.</p>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2>5. Almacenamiento y Seguridad</h2>
+
+                    <h3>5.1 Almacenamiento Local</h3>
+                    <p>Tus datos personales se almacenan en tu dispositivo usando:</p>
+                    <ul>
+                        <li>Una <strong>base de datos local</strong> dentro del espacio de almacenamiento privado de la Aplicación, para tus gatos, cajas, historial y notas</li>
+                        <li><strong>Almacenamiento privado de fotos en el dispositivo</strong>, donde cada foto de gato que eliges se copia dentro del propio espacio de la Aplicación (tu foto original nunca se sube)</li>
+                        <li><strong>Almacenamiento de clave-valor del dispositivo</strong> para las preferencias (tema, idioma, recordatorios, estado del desbloqueo)</li>
+                        <li>Protección de datos del sistema operativo, que cifra los archivos de la aplicación en reposo en los dispositivos iOS y Android modernos</li>
+                    </ul>
+
+                    <h3>5.2 Cifrado</h3>
+                    <ul>
+                        <li><strong>En Reposo:</strong> Tus datos están protegidos por el cifrado del sistema de archivos de tu dispositivo, ligado a tu código o bloqueo de pantalla</li>
+                        <li><strong>En Tránsito:</strong> Los pocos datos anónimos que sí salen del dispositivo (analíticas, diagnósticos de fallos, descargas de configuración y verificación de la compra) viajan por HTTPS (TLS)</li>
+                    </ul>
+
+                    <h3>5.3 Prácticas de Seguridad</h3>
+                    <ul>
+                        <li>CatLitter no incluye SDK de publicidad ni SDK de rastreo entre aplicaciones</li>
+                        <li>Las analíticas y los diagnósticos de fallos son anónimos y no están vinculados a tu identidad</li>
+                        <li>La Aplicación no incrusta vistas web de terceros que carguen contenido externo en la experiencia</li>
+                    </ul>
+
+                    <h3>5.4 Retención de Datos</h3>
+                    <ul>
+                        <li>Tus datos permanecen en tu dispositivo mientras CatLitter esté instalado</li>
+                        <li>Puedes eliminar gatos, cajas y notas individuales en cualquier momento dentro de la Aplicación</li>
+                        <li>Eliminar la Aplicación borra todos los datos almacenados localmente de forma permanente</li>
+                        <li>Las analíticas anónimas y los diagnósticos de fallos son retenidos por Google (Firebase) bajo sus propias políticas de retención</li>
+                    </ul>
+
+                    <h3>5.5 Sin Nube, sin Copia de Seguridad, sin Exportación</h3>
+                    <p>CatLitter es local por diseño. No hay cuenta en la nube, no hay servidor que reciba tu contenido y no hay función de copia de seguridad ni de exportación integrada. Esto mantiene tus datos privados, y también significa que tu contenido vive junto con tu dispositivo. Si cambias de teléfono o desinstalas la Aplicación, tus datos de CatLitter no viajan contigo.</p>
+                </section>
+
+                <section id="your-choices" class="policy-section">
+                    <h2>6. Tus Opciones y Controles</h2>
+
+                    <h3>6.1 Datos de Uso Anónimos</h3>
+                    <p>CatLitter usa <strong>Firebase Analytics</strong> para recopilar datos de uso anónimos y agregados, como qué pantallas se usan y con qué frecuencia se toca una función. Son solo eventos escalares y nos ayudan a mejorar la Aplicación.</p>
+                    <ul>
+                        <li>Estos datos no están vinculados a tu identidad, y nunca se venden, se comparten ni se usan para publicidad o rastreo entre aplicaciones</li>
+                        <li>La recopilación de identificadores publicitarios y las señales de personalización de anuncios están desactivadas, por lo que la Aplicación no recopila ningún identificador publicitario</li>
+                        <li>Como los datos son anónimos y no contienen información personal, no hay un interruptor de exclusión dentro de la App, ni hace falta; tus gatos, tus notas y tus fotos nunca salen de tu dispositivo</li>
+                    </ul>
+
+                    <h3>6.2 Notificaciones</h3>
+                    <p>Puedes activar o desactivar el recordatorio de limpieza diaria y el recordatorio de cambio completo dentro de CatLitter, y puedes desactivar las notificaciones por completo en los ajustes del sistema de tu dispositivo para la Aplicación.</p>
+
+                    <h3>6.3 Eliminar tus Datos</h3>
+                    <p>Como tus datos viven en tu dispositivo, siempre tienes el control: elimina gatos, cajas y notas individuales dentro de la Aplicación, o elimina la Aplicación para borrarlo todo de una vez.</p>
+                </section>
+
+                <section id="purchase" class="policy-section">
+                    <h2>7. La Compra Única</h2>
+
+                    <h3>7.1 Una Sola Compra, sin Suscripción</h3>
+                    <p>CatLitter es gratis, con un nivel gratuito realmente útil (un gato y una caja, los recordatorios diario y de cambio completo, la limpieza con un toque, el anillo de frescura, las rachas, las fotos por gato y los widgets de la pantalla de inicio, todo sin anuncios). Para hogares con más de un gato, CatLitter ofrece una única <strong>compra única</strong> que desbloquea gatos y cajas ilimitados, notas de salud suaves y un registro de visitas al veterinario, y tu historial completo de cuidado.</p>
+                    <div class="highlight-box">
+                        <strong>&#128062; Compra única. Sin suscripción, nunca.</strong>
+                        <p>El desbloqueo es una compra única, no consumible. No hay suscripción, no hay prueba gratuita y no hay cobros recurrentes. Pagas una vez y lo conservas. El precio exacto se muestra en la Aplicación al momento de la compra, en tu moneda local donde la tienda lo permita, y puede variar según la región.</p>
+                    </div>
+
+                    <h3>7.2 Cómo Funciona el Cobro</h3>
+                    <ul>
+                        <li><strong>La tienda gestiona el pago.</strong> Tu compra es procesada por la <strong>App Store de Apple</strong> o <strong>Google Play</strong>. Believe PR nunca ve ni almacena los datos de tu tarjeta o pago.</li>
+                        <li><strong>RevenueCat confirma tu desbloqueo.</strong> Usamos <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat</a> para comprobar si tu desbloqueo único está activo. RevenueCat recibe un identificador anónimo de usuario de la aplicación y el recibo que proporciona la tienda; no recibe tu nombre, correo electrónico ni ningún contenido de la Aplicación.</li>
+                        <li><strong>No hace falta una cuenta.</strong> Tu desbloqueo se vincula a tu cuenta de la tienda (Apple ID o cuenta de Google) mediante el mecanismo de "Restaurar Compras" de la tienda, no a una cuenta de CatLitter.</li>
+                    </ul>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>8. Notificaciones y Widgets</h2>
+
+                    <h3>8.1 Los Recordatorios Son Solo Locales</h3>
+                    <p>El recordatorio de limpieza diaria y el recordatorio de cambio completo de CatLitter son <strong>notificaciones locales</strong> programadas por tu dispositivo. No hay servidor de notificaciones push, no hay un token vinculado a una cuenta y ningún recordatorio viaja a través de infraestructura alguna de Believe PR para llegar a ti.</p>
+
+                    <h3>8.2 El Widget de la Pantalla de Inicio</h3>
+                    <p>Si agregas el widget de CatLitter a tu pantalla de inicio, muestra la frescura de hoy de un vistazo. El widget lee una pequeña instantánea almacenada localmente en tu dispositivo. No hace solicitudes de red propias y no transmite nada fuera de tu dispositivo.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>9. Permisos de la Aplicación</h2>
+
+                    <h3>9.1 Notificaciones (Opcional)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Enviar tu recordatorio de limpieza diaria y tu recordatorio de cambio completo</li>
+                        <li><strong>Cuándo se Solicita:</strong> Cuando activas un recordatorio por primera vez</li>
+                        <li><strong>Qué Enviamos:</strong> Un recordatorio corto y genérico programado localmente por tu dispositivo. Nunca contiene los nombres de tus gatos ni tus notas, y nada sale de tu dispositivo para entregarlo</li>
+                    </ul>
+
+                    <h3>9.2 Elegir una Foto de Gato (Opcional, Solo Selección)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Permitirte darle una foto a un gato</li>
+                        <li><strong>Cuándo se Solicita:</strong> Solo cuando tocas para agregar la foto de un gato</li>
+                        <li><strong>Solo Selección:</strong> CatLitter usa el selector de fotos estándar de tu dispositivo, que le entrega a la Aplicación únicamente la imagen que elijas. CatLitter no solicita permiso a tu biblioteca de fotos y no puede leer, navegar ni importar tus demás fotos. La imagen que eliges se copia en el almacenamiento privado de la Aplicación y nunca se sube</li>
+                    </ul>
+
+                    <h3>9.3 Permisos que CatLitter NO Solicita</h3>
+                    <ul>
+                        <li>&#10007; Ubicación o GPS</li>
+                        <li>&#10007; Contactos</li>
+                        <li>&#10007; Calendario</li>
+                        <li>&#10007; Cámara o Micrófono</li>
+                        <li>&#10007; Acceso completo a la biblioteca de fotos (CatLitter usa el selector de solo selección)</li>
+                        <li>&#10007; Salud, Apple Health o Health Connect</li>
+                        <li>&#10007; Bluetooth</li>
+                        <li>&#10007; Teléfono o SMS</li>
+                        <li>&#10007; Rastreo (no se usa la Transparencia de Seguimiento de Apps, porque CatLitter no te rastrea)</li>
+                    </ul>
+
+                    <h3>9.4 Gestionar los Permisos</h3>
+                    <p>Puedes gestionar todos los permisos en los ajustes del sistema de tu dispositivo para CatLitter. Revocar el permiso de notificaciones desactiva los recordatorios; el resto de la Aplicación sigue funcionando.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>10. Servicios de Terceros</h2>
+                    <p>CatLitter integra un pequeño número de servicios de terceros. Cada uno recibe únicamente lo que se describe a continuación, y ninguno de ellos recibe tus gatos, fotos, notas o historial.</p>
+
+                    <h3>10.1 Firebase Analytics (Google)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Medición anónima del uso del producto (vistas de pantalla, uso de funciones)</li>
+                        <li><strong>Qué Recibe:</strong> Eventos de uso anónimos y escalares. Sin información personal identificable, sin identificador publicitario</li>
+                        <li><strong>Sin Rastreo:</strong> Anónimos, no vinculados a tu identidad, y nunca usados para publicidad ni rastreo entre aplicaciones (sección 6)</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a></li>
+                    </ul>
+
+                    <h3>10.2 Firebase Crashlytics (Google)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Informes de fallos y diagnósticos de rendimiento para la estabilidad</li>
+                        <li><strong>Qué Recibe:</strong> Rastros de fallos e información básica del dispositivo, no tu contenido personal</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a></li>
+                    </ul>
+
+                    <h3>10.3 Firebase Remote Config (Google)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Entrega indicadores de configuración no personales a la Aplicación</li>
+                        <li><strong>Qué Recibe:</strong> Ningún contenido del usuario; la Aplicación solo obtiene valores de configuración</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a></li>
+                    </ul>
+
+                    <h3>10.4 RevenueCat (Gestión de Compras)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Confirma si tu desbloqueo único está activo y apoya su restauración</li>
+                        <li><strong>Qué Recibe:</strong> Un identificador anónimo de usuario de la aplicación y el recibo de la tienda; no tu nombre, correo electrónico ni contenido de la Aplicación</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">Política de Privacidad de RevenueCat</a></li>
+                    </ul>
+
+                    <h3>10.5 App Store de Apple / Google Play</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Distribución de la Aplicación y procesamiento de la compra única</li>
+                        <li><strong>Qué Reciben:</strong> Datos estándar de descarga, y los datos de tu pago para la compra, gestionados por Apple o Google, no por nosotros</li>
+                        <li><strong>Privacidad del Proveedor:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Política de Privacidad de Apple</a> y <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a></li>
+                    </ul>
+
+                    <h3>10.6 Sin Publicidad, sin IA</h3>
+                    <p>CatLitter no incluye Google AdMob, el SDK de Facebook ni ningún SDK de publicidad, atribución o red publicitaria, y no usa ningún servicio de inteligencia artificial. No hay anuncios en la Aplicación.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>11. Tus Derechos de Privacidad</h2>
+
+                    <h3>11.1 Derechos del RGPD (Unión Europea / Reino Unido)</h3>
+                    <p>Si te encuentras en la UE, el EEE, el Reino Unido o Suiza, tienes los siguientes derechos bajo el RGPD y el RGPD del Reino Unido:</p>
+                    <ul>
+                        <li><strong>Derecho de Acceso:</strong> Solicitar información sobre los datos que se procesan sobre ti</li>
+                        <li><strong>Derecho de Rectificación:</strong> Corregir datos inexactos</li>
+                        <li><strong>Derecho de Supresión:</strong> Solicitar la eliminación de tus datos</li>
+                        <li><strong>Derecho a Limitar u Oponerte:</strong> Oponerte al limitado procesamiento anónimo aquí descrito</li>
+                        <li><strong>Derecho a Retirar el Consentimiento:</strong> Las analíticas que salen del dispositivo son anónimas y no están vinculadas a ti, por lo que no hay un procesamiento de datos personales basado en el consentimiento que retirar</li>
+                        <li><strong>Derecho a Presentar una Reclamación:</strong> Ante tu autoridad local de protección de datos</li>
+                    </ul>
+
+                    <h3>11.2 Derechos de la CCPA / CPRA (California)</h3>
+                    <p>Si eres residente de California, tienes derecho a saber, eliminar y corregir tu información personal, y derecho a rechazar la venta o el intercambio de información personal. <strong>No vendemos ni compartimos tu información personal</strong> según se definen esos términos bajo la CPRA.</p>
+
+                    <h3>11.3 Cómo Ejercer tus Derechos</h3>
+                    <p>Como tus datos de CatLitter viven en tu propio dispositivo:</p>
+                    <ul>
+                        <li><strong>Acceso:</strong> Tus gatos, cajas, historial y notas están visibles dentro de la Aplicación en todo momento</li>
+                        <li><strong>Corrección y Supresión:</strong> Edita o elimina gatos, cajas y notas directamente dentro de la Aplicación, o elimina la Aplicación para borrar todos los datos locales</li>
+                        <li><strong>Analíticas:</strong> Las analíticas de uso que salen del dispositivo son anónimas y no están vinculadas a ti, y nunca se venden ni se comparten</li>
+                        <li><strong>Otras Solicitudes:</strong> Escribe a <a href="mailto:catlitter@armandojimenez.dev">catlitter@armandojimenez.dev</a></li>
+                    </ul>
+                    <p>Responderemos a las solicitudes formales de derechos dentro del plazo requerido por la ley aplicable (generalmente dentro de 30 días).</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>12. Privacidad de los Menores</h2>
+                    <p>CatLitter es una utilidad para público general (con clasificación 4+ en la App Store y Todos en Google Play). <strong>No está dirigida a menores</strong> y no recopila a sabiendas información personal de menores. La Aplicación no recopila información personal de nadie: lo único que sale del dispositivo son diagnósticos anónimos de uso y de fallos no vinculados a ninguna identidad. Si crees que un menor ha proporcionado información de una manera que te preocupa, contáctanos y te ayudaremos.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>13. Usuarios Internacionales</h2>
+
+                    <h3>13.1 Dónde Viven los Datos</h3>
+                    <p>Tus datos personales de CatLitter viven en tu dispositivo. Los pocos datos anónimos que sí salen del dispositivo (analíticas, diagnósticos de fallos, descargas de configuración y verificación de la compra) son procesados por Google, RevenueCat y las tiendas de aplicaciones en su infraestructura global. Believe PR opera desde Carolina, en el Estado Libre Asociado de Puerto Rico (Estados Unidos).</p>
+
+                    <h3>13.2 Transferencias Internacionales</h3>
+                    <p>Si te encuentras fuera de los Estados Unidos, estos datos anónimos pueden procesarse en los Estados Unidos u otros países donde operen estos proveedores, bajo sus propias salvaguardas.</p>
+
+                    <h3>13.3 Cumplimiento Regional</h3>
+                    <ul>
+                        <li><strong>Unión Europea / Reino Unido:</strong> RGPD y RGPD del Reino Unido</li>
+                        <li><strong>California:</strong> CCPA y CPRA</li>
+                        <li><strong>Brasil:</strong> LGPD</li>
+                        <li><strong>Otras Regiones:</strong> Respetamos todas las leyes de privacidad aplicables</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>14. Cambios a esta Política de Privacidad</h2>
+                    <p>Podemos actualizar esta Política de Privacidad para reflejar nuevas funciones, requisitos legales o cambios de terceros. Cuando hagamos cambios sustanciales:</p>
+                    <ul>
+                        <li>La fecha de "Última actualización" en la parte superior de esta página cambiará</li>
+                        <li>Mostraremos un aviso dentro de la Aplicación cuando corresponda</li>
+                        <li>Tu uso continuado de CatLitter después de que el cambio entre en vigor constituye aceptación</li>
+                    </ul>
+                    <p>La versión más actual siempre está disponible en esta URL y desde los ajustes de CatLitter.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>15. Contáctanos</h2>
+                    <p>Si tienes preguntas, inquietudes o solicitudes sobre esta Política de Privacidad o nuestras prácticas de privacidad, contáctanos:</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo electrónico:</strong> <a href="mailto:catlitter@armandojimenez.dev">catlitter@armandojimenez.dev</a></p>
+                        <p><strong>Sitio web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener noreferrer">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de Respuesta</h3>
+                    <ul>
+                        <li>Dentro de 30 días para consultas generales de privacidad</li>
+                        <li>Dentro de 72 horas para inquietudes urgentes de privacidad</li>
+                        <li>Según lo requiera la ley aplicable para solicitudes formales de derechos</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad Legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 12 de julio de 2026</p>
+                    <p><strong>Fecha de entrada en vigor:</strong> 12 de julio de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                    <p><em>Hecho con amor desde Puerto Rico.</em></p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">&copy; 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

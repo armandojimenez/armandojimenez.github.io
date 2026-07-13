@@ -1,0 +1,288 @@
+/*
+ * CatLitter — Milk & Cat-Eye Gold Theme
+ * Overrides for the policy pages.
+ *
+ * Mirrors the in-app palette: warm milk paper with tuxedo-charcoal ink (Daylight,
+ * the default idiom) and a warm dark (Quiet Evening). Fredoka for the rounded,
+ * friendly title moments, DM Sans for body and subheadings — the app's bundled
+ * font set. Section headers carry a quiet gold-to-amber sweep (the freshness ring).
+ *
+ * Brand rule, honored here: no red exists in the palette; the ring never leaves
+ * gold to amber. Even the "warning" boxes are amber, never alarm-red.
+ */
+
+/* ===========================
+   Typography — the app's bundled faces
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+/* ===========================
+   Custom Color Palette — Milk & Cat-Eye Gold
+   Daylight (light) is the default :root; Quiet Evening (dark) overrides.
+   =========================== */
+:root {
+    /* Daylight — warm milk paper */
+    --bg-primary: #faf6ef;
+    --bg-secondary: #fffdf8;
+    --bg-tertiary: #faf1dc;
+    --bg-accent: #fffefb;
+
+    --text-primary: #2c2a2b;
+    --text-secondary: #4a443c;
+    --text-tertiary: #6b6157;
+    /* Link ink is the app's accessibility-cleared warm gold (8C6A27): gold on
+       cream fails AA at the bright hex, so body links use the darkened value
+       that clears 4.5:1 on the milk background. */
+    --text-link: #8c6a27;
+    --text-link-hover: #6f5420;
+
+    --border-color: #eadfce;
+    --border-light: #f0e6d6;
+
+    --accent-primary: #e0a43a;
+    --accent-secondary: #d98a34;
+    --accent-success: #569672;
+    --accent-warning: #b4741f;
+    --accent-danger: #b4741f;
+
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Quiet Evening — the warm dark idiom */
+[data-theme="dark"] {
+    --bg-primary: #1f1d1e;
+    --bg-secondary: #2c2a2b;
+    --bg-tertiary: #26221f;
+    --bg-accent: #3a332c;
+
+    --text-primary: #faf6ef;
+    --text-secondary: #d8cfc2;
+    --text-tertiary: #a89b8c;
+    --text-link: #edb84a;
+    --text-link-hover: #f2cb6e;
+
+    --border-color: #3a352e;
+    --border-light: #322d27;
+
+    --accent-primary: #edb84a;
+    --accent-secondary: #e0a055;
+    --accent-success: #7fb894;
+    --accent-warning: #e0a055;
+    --accent-danger: #e0a055;
+}
+
+/* A faint warm wash behind each theme, so the page reads as litter-warm light
+   rather than flat paper or flat black. Mirrors the app's page gradient. */
+body {
+    background:
+        radial-gradient(120% 80% at 50% -10%, #fdf7ef 0%, #faf6ef 55%, #f8f0e3 100%);
+    background-attachment: fixed;
+}
+
+[data-theme="dark"] body {
+    background:
+        radial-gradient(120% 80% at 50% -10%, #2a2620 0%, #211f20 55%, #1a1819 100%);
+    background-attachment: fixed;
+}
+
+/* ===========================
+   Title + heading faces
+   =========================== */
+.policy-title,
+.badge-title {
+    font-family: 'Fredoka', -apple-system, 'Segoe UI', sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.005em;
+}
+
+.policy-title {
+    font-weight: 700 !important;
+}
+
+.badge-subtitle {
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.policy-section h2 {
+    font-family: 'Fredoka', sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.003em;
+    /* Freshness-ring section headers — a warm gold-to-amber sweep. Light-mode
+       stops are darkened so the lightest end still clears large-text AA (3:1)
+       on cream; dark mode uses the bright ring golds. */
+    background: linear-gradient(135deg, #8c6a27 0%, #b4741f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .policy-section h2 {
+    background: linear-gradient(135deg, #edb84a 0%, #e0a055 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom-color: var(--border-color);
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 600 !important;
+    color: var(--text-primary);
+}
+
+/* ===========================
+   App badge — a milk medallion ringed in a hairline
+   =========================== */
+.app-badge {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-accent) 100%);
+    border: 1px solid var(--border-color);
+}
+
+.badge-icon {
+    color: var(--accent-primary);
+    text-shadow: 0 0 18px rgba(224, 164, 58, 0.35);
+}
+
+/* ===========================
+   Highlight boxes
+   =========================== */
+.highlight-box {
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, rgba(224, 164, 58, 0.07) 100%);
+    border-left-color: var(--accent-primary);
+}
+
+[data-theme="dark"] .highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, rgba(237, 184, 74, 0.08) 100%);
+    border-left-color: var(--accent-primary);
+}
+
+/* Warning boxes stay amber — no red anywhere in CatLitter. */
+.highlight-box.warning {
+    background: linear-gradient(135deg, rgba(217, 138, 52, 0.14) 0%, rgba(217, 138, 52, 0.04) 100%);
+    border-left-color: var(--accent-secondary);
+}
+
+[data-theme="dark"] .highlight-box.warning {
+    background: linear-gradient(135deg, rgba(224, 160, 85, 0.16) 0%, rgba(224, 160, 85, 0.05) 100%);
+    border-left-color: var(--accent-secondary);
+}
+
+/* ===========================
+   Theme toggle
+   =========================== */
+.theme-toggle {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-accent) 100%);
+    border-color: var(--accent-primary);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 18px rgba(224, 164, 58, 0.28);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    box-shadow: 0 4px 18px rgba(237, 184, 74, 0.30);
+}
+
+/* ===========================
+   Contact card
+   =========================== */
+.contact-card {
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+    border: 1px solid var(--border-color);
+}
+
+.contact-card h3 {
+    font-family: 'Fredoka', sans-serif !important;
+    background: linear-gradient(135deg, #8c6a27 0%, #b4741f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="dark"] .contact-card h3 {
+    background: linear-gradient(135deg, #edb84a 0%, #e0a055 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===========================
+   Table of contents
+   =========================== */
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+/* ===========================
+   Links — gold hairline underline on hover
+   =========================== */
+.policy-section a {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
+
+/* ===========================
+   Scrollbar + selection
+   =========================== */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #e0a43a 0%, #d98a34 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+::selection {
+    background: var(--accent-primary);
+    color: #2c2a2b;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: #2c2a2b;
+}
+
+/* ===========================
+   Back to top
+   =========================== */
+.back-to-top {
+    background: linear-gradient(135deg, #e0a43a 0%, #d98a34 100%) !important;
+    color: #2c2a2b !important;
+}
+
+.back-to-top:hover {
+    box-shadow: 0 8px 24px rgba(224, 164, 58, 0.36) !important;
+}
+
+[data-theme="dark"] .back-to-top:hover {
+    box-shadow: 0 8px 24px rgba(237, 184, 74, 0.34) !important;
+}
+
+/* ===========================
+   Header — a soft, slow warm breath
+   =========================== */
+@keyframes freshGlow {
+    0%, 100% { box-shadow: 0 0 22px rgba(224, 164, 58, 0.08); }
+    50%      { box-shadow: 0 0 34px rgba(217, 138, 52, 0.12); }
+}
+
+.policy-header {
+    animation: freshGlow 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .policy-header { animation: none; }
+}
