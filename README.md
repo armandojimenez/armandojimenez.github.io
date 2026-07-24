@@ -1,130 +1,49 @@
-# Armando Jimenez - Web Portfolio
+# armandojimenez.dev
 
-A modern, responsive personal portfolio website showcasing my work and experience. Built with clean HTML, SCSS, and JavaScript for optimal performance and user experience.
+Personal site of Armando Jiménez: software engineer and independent app maker in Puerto Rico.
+Live at [armandojimenez.dev](https://armandojimenez.dev), with a Spanish version at
+[armandojimenez.dev/es](https://armandojimenez.dev/es/).
 
-Currently live at: [armandojimenez.dev](https://armandojimenez.dev)
+## What it is
 
+A single hand-written page, in two languages, showcasing 16 published mobile apps with live store
+links, plus experience, skills, and contact. No framework, no build step, no tracking.
 
+- Pure white, neutral black, and no decorative color: every drop of color on the page comes from
+  the real app icons and the memoji.
+- Typography: [Cabinet Grotesk](https://www.fontshare.com/fonts/cabinet-grotesk) and
+  [Switzer](https://www.fontshare.com/fonts/switzer), self-hosted.
+- Vanilla JavaScript only: one page-load moment, gentle one-time scroll reveals, and a memoji that
+  peeks over the apps section (tap him).
+- Accessible by default: semantic HTML, keyboard focus styles, `prefers-reduced-motion` support,
+  and full content without JavaScript.
 
-## ✨ Features
+## Structure
 
-- **Single-page application** with smooth scrolling navigation
-- **Responsive design** that works beautifully on all devices
-- **Dark mode support** for comfortable viewing
-- **Interactive animations** including scroll-triggered effects and custom gradients
-- **Mouse spotlight effect** in the hero section for enhanced interactivity
-- **Timeline components** for experience and education sections
- 
-- **Modern build system** with automated SCSS compilation and JS minification
+```
+├── index.html          # English page
+├── es/index.html       # Spanish page (hreflang alternates, language toggle in the nav)
+├── css/home.css        # The only stylesheet the home pages use
+├── js/home.js          # Vanilla JS interactions
+├── fonts/              # Self-hosted woff2
+├── images/apps/        # App icons (self-hosted)
+├── images/web/         # Thumbnails for web projects
+├── resume/             # Resume PDF
+├── docs/               # Maintenance playbooks
+└── apps/               # Privacy/terms pages for each published app
+```
 
-## 🛠️ Technologies Used
+Legacy assets from the previous version of the site (`scss/`, `css/styles.css`, `js/scripts.js`,
+`libs/`) are kept for compatibility; the npm scripts in `package.json` compile them.
 
-- **HTML5** - Semantic markup and structure
-- **SCSS/Sass** - Modular styling with variables and mixins
-- **JavaScript/jQuery** - Interactive functionality and DOM manipulation
-- **Bootstrap** - Responsive grid system and components
-- **Font Awesome** - Icon library for UI elements
-- **AOS (Animate On Scroll)** - Scroll-triggered animations
-- **Google Fonts** - Custom typography (Varela Round)
+## Running locally
 
-## 🚀 Quick Start
+It's a static site. Serve the root with anything:
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/armandojimenez/armandojimenez.github.io.git
-cd armandojimenez.github.io
+python3 -m http.server 8000
 ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+## License
 
-3. Start development server:
-```bash
-npm run dev
-```
-
-This will automatically compile SCSS and JS files and watch for changes.
-
- 
-
-### Build Commands
-
-- `npm run dev` - Start development with auto-compilation
-- `npm run build:css` - Compile SCSS to compressed CSS
-- `npm run build:js` - Transpile and minify JavaScript
-- `npm run build` - Build all assets for production
-
-## 📁 Project Structure
-
-```
-├── index.html              # Main HTML file
-├── scss/
-│   └── styles.scss         # Main SCSS stylesheet
-├── js/
-│   ├── scripts.js          # Main JavaScript file
-│   └── scripts.min.js      # Minified JavaScript
-├── css/
-│   └── styles.css          # Compiled CSS
-├── images/                 # Image assets
-├── libs/                   # Third-party libraries
-├── resume/                 # Resume PDF
-└── .github/
-    └── copilot-instructions.md  # Development guidelines
-```
-
-## 🎨 Customization
-
-### Colors
-Modify color variables in `scss/styles.scss`:
-```scss
-$base-color: #2a1818;  // Primary color
-// Add dark mode variants as needed
-```
-
-### Animations
-- Gradient animations are defined with keyframes for smooth color transitions
-- Mouse spotlight effect uses radial gradients for interactive highlighting
-- AOS library handles scroll animations with data attributes
-
-### Content
-Update personal information in `index.html`:
-- Hero section with name and title
-- About section content
-- Experience and education timelines
-- Projects showcase
-- Skills and contact information
-
-## 🌐 Deployment
-
-This is a static site hosted on GitHub Pages. The build process compiles SCSS and JS, so deployment only requires pushing the compiled assets.
-
-### GitHub Pages Setup
-1. Ensure `index.html` is in the root directory
-2. Go to repository Settings > Pages
-3. Select "Deploy from a branch" and choose `master` branch
-4. The site will be available at `https://armandojimenez.github.io`
-
-## 📝 Development Notes
-
-- Uses modern npx-based build tools for ARM64 compatibility
-- SCSS compiled with compressed output for production
-- JavaScript transpiled with Babel for browser compatibility
-- All third-party libraries kept in `libs/` directory
-- Responsive design tested across multiple breakpoints
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-*Built with ❤️ using modern web technologies*
-
+Code is MIT. Content, app icons, and images are © Armando Jiménez.

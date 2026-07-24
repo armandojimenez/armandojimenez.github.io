@@ -2,57 +2,50 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Build Commands
+## What this repo is
 
-```bash
-npm install          # Install dependencies
-npm run dev          # Start development with auto-compilation (SCSS + JS watch)
-npm run build:css    # Compile SCSS to compressed CSS using dart-sass
-npm run build:js     # Transpile and minify JS using Babel
-```
+Static personal site for Armando Jiménez, hosted on GitHub Pages at armandojimenez.dev.
+The home page was fully redesigned in July 2026; it is plain HTML/CSS/vanilla JS with no framework
+and no build step.
 
-The build system uses npx-based commands (migrated from Gulp for ARM64 compatibility).
+**Home page (redesigned):**
+- `index.html` (English) and `es/index.html` (Spanish) — always edit both; they mirror each other
+- `css/home.css` — the only stylesheet the home pages use (design tokens at the top)
+- `js/home.js` — vanilla JS: scroll reveals, memoji peek, copy-email button. No dependencies
+- `fonts/` — self-hosted Cabinet Grotesk + Switzer (woff2)
+- `images/apps/` — self-hosted app icons; `images/me.png` is the memoji (the site's signature)
 
-## Architecture
+**Legacy assets (do not delete):** `scss/`, `css/styles.css`, `js/scripts.js`/`scripts.min.js`,
+`libs/` belong to the pre-2026 site. The `npm run` scripts in package.json compile them. Nothing in
+this repo references them anymore, but sibling GitHub Pages repos and old links may.
 
-This is a static single-page portfolio website hosted on GitHub Pages at armandojimenez.dev.
+**Sibling pages (never touch from here):** `/apps/<app>/` privacy/terms pages have their own
+`theme.css`. Per-app landing pages are separate repos served at `armandojimenez.dev/<slug>/`.
 
-**Core Files:**
-- `index.html` - All content with smooth-scrolling navigation between sections
-- `scss/styles.scss` - Main stylesheet (compiles to `css/styles.css`)
-- `js/scripts.js` - jQuery-based interactions (compiles to `js/scripts.min.js`)
+## Design rules for the home page
 
-**Key Sections:** About, Experience (timeline), Projects, Education, Skills, Certifications, Hobbies, Contact
+- Pure white `#FFFFFF` page, neutral black `#0E0F11` type. NO decorative color anywhere: all color
+  comes from the memoji and the real app icons. No gradients, no accent colors, no ivory/cream.
+- Type: Cabinet Grotesk (display, weights 500/700/800) + Switzer (body, 400/500/600), self-hosted.
+- Copy: plain, first person, one honest sentence at a time. **No em dashes** (restructure the
+  sentence instead). No hype words. Date ranges use en dashes.
+- Motion: one load moment for the hero, gentle one-time scroll reveals, hover micro-interactions,
+  the memoji peek/duck easter egg, and the navbar handoff (the hero name and memoji rise into the
+  bar once their large versions scroll beneath it; on narrow screens the empty brand row stays
+  collapsed until then). Nothing loops, nothing animates on every scroll.
+  `prefers-reduced-motion` and no-JS must always show full content.
+- The employer is never mentioned in the hero. Identity framing: AI engineer + indie app maker
+  first, full-stack depth beneath it; employers are entries in Experience only.
+- Both language pages must stay in sync (structure, order, anchors: #projects, #web, #about,
+  #experience, #skills, #education, #certs, #hobbies, #contact).
 
-**Dependencies:**
-- jQuery for DOM manipulation
-- Bootstrap for grid/layout
-- AOS (Animate On Scroll) for scroll-triggered animations
-- Font Awesome for icons
-- Google Fonts (Varela Round)
+## Updating the apps section
 
-## Key Conventions
+Read `docs/APPS-PLAYBOOK.md` and follow it exactly. Key law: **displayed ratings, review counts,
+download counts, and star scores never go down.** They are high-water marks; a lower fetched value
+is never a reason to lower a displayed one.
 
-**Styling:**
-- Color variables defined in SCSS (e.g., `$base-color: #2a1818;`) with dark mode variants
-- Dark mode toggle uses `data-theme` attribute on `<body>`
-- AOS animations via data attributes (e.g., `data-aos="fade-up"`)
+## Resume
 
-**JavaScript Patterns:**
-- Timeline component dynamically wraps content in `.vtimeline-point` structure
-- Mouse spotlight effect in hero section using radial gradients and physics-based animations
-- Interactive about image with invert toggle (hover, focus, keyboard accessible)
-- Theme preference persisted in localStorage
-
-**Interactive Effects:**
-- Background shapes in `#lead` use antigravity physics responding to mouse movement
-- Confetti magic button using canvas-confetti library
-
-## Frontend Design Skill
-
-When creating UI components, follow these principles:
-- Commit to a bold aesthetic direction (avoid generic "AI slop" aesthetics)
-- Choose distinctive fonts (not Arial/Inter), unexpected color palettes
-- Use purposeful animations at high-impact moments (page load, scroll triggers, hovers)
-- Apply creative backgrounds (gradients, textures, geometric patterns)
-- Match implementation complexity to the vision - minimalist designs need restraint and precision
+`resume/Armando_Jimenez_Resume.pdf` is generated from HTML printed via headless Chrome. Keep it one
+page, black text only.

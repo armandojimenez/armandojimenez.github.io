@@ -1,7 +1,7 @@
 {
   "name": "mywebportfolio",
-  "version": "1.2.2",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Personal site of Armando Jimenez (armandojimenez.dev)",
   "main": "js/scripts.js",
   "scripts": {
     "watch": "npm run build:css && npm run build:js && echo 'Build complete. Use: npm run dev'",
@@ -22,8 +22,9 @@
   "author": "Armando Jimenez",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0"
-  },
-  "dependencies": {}
+    "@babel/cli": "^7.29.7",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "sass": "^1.101.7"
+  }
 }
