@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://armandojimenez.dev/sitemap.xml
+Sitemap: https://armandojimenez.dev/motiv/sitemap-index.xml
