@@ -1,226 +1,31 @@
-/* Holy policy pages: quiet scripture-reader design, using the app's teal palette. */
-
-@font-face {
-    font-family: "Switzer";
-    src: url("../../fonts/switzer-400.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Switzer";
-    src: url("../../fonts/switzer-600.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cabinet Grotesk";
-    src: url("../../fonts/cabinet-grotesk-700.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
+/* Holy - Teal and Faith Green Theme */
+/* Uses the shared policy-page design with Holy's in-app accent colors. */
 
 :root[data-policy-app="holy"] {
-    --bg-primary: #eef7f5;
-    --bg-secondary: #ffffff;
-    --bg-tertiary: #dcece8;
-    --bg-accent: #e8f3ef;
-    --text-primary: #133c3d;
-    --text-secondary: #2d5050;
-    --text-tertiary: #587271;
-    --text-link: #14696c;
-    --text-link-hover: #0d4e50;
-    --border-color: #a9c9c3;
-    --border-light: #d0e4df;
-    --accent-primary: #16767a;
-    --accent-secondary: #287b3e;
-    --accent-primary-hover: #12585b;
-    --accent-warning: #a46f13;
-    --shadow-sm: 0 2px 6px rgba(18, 88, 91, 0.06);
-    --shadow-md: 0 12px 34px rgba(18, 88, 91, 0.10);
-    --shadow-lg: 0 20px 48px rgba(18, 88, 91, 0.16);
-    --font-sans: "Switzer", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-mono: "Switzer", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --accent-primary: #16767A;
+    --accent-secondary: #287B3E;
+    --accent-primary-hover: #12585B;
 }
 
 [data-theme="dark"][data-policy-app="holy"] {
-    --bg-primary: #101b1b;
-    --bg-secondary: #172625;
-    --bg-tertiary: #223633;
-    --bg-accent: #1d302e;
-    --text-primary: #f0f8f5;
-    --text-secondary: #c5d9d4;
-    --text-tertiary: #9bb7b1;
-    --text-link: #7cd2d3;
-    --text-link-hover: #a8e7e3;
-    --border-color: #3b5b56;
-    --border-light: #29423e;
-    --accent-primary: #62c2c4;
-    --accent-secondary: #76c48b;
-    --accent-primary-hover: #8bd7d8;
-    --accent-warning: #e3b85c;
+    --accent-primary: #62C2C4;
+    --accent-secondary: #76C48B;
+    --accent-primary-hover: #8BD7D8;
 }
 
-[data-policy-app="holy"] body {
-    background:
-        linear-gradient(90deg, transparent 0 7.5%, rgba(49, 153, 157, 0.06) 7.5% calc(7.5% + 1px), transparent calc(7.5% + 1px)),
-        var(--bg-primary);
-}
-
+/* Keep the accessibility shortcut out of the visual flow until focused. */
 [data-policy-app="holy"] .skip-link {
     position: fixed;
     top: 0.75rem;
     left: 0.75rem;
     z-index: 2000;
     padding: 0.75rem 1rem;
-    color: #ffffff;
-    background: #12585b;
-    border-radius: 6px;
+    color: #FFFFFF;
+    background: #12585B;
+    border-radius: var(--radius-md);
     transform: translateY(-180%);
 }
 
 [data-policy-app="holy"] .skip-link:focus {
     transform: translateY(0);
-}
-
-[data-policy-app="holy"] .policy-header {
-    position: relative;
-    padding-top: 5rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-[data-policy-app="holy"] .policy-header::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -4px;
-    width: min(15rem, 60vw);
-    height: 7px;
-    transform: translateX(-50%);
-    border-top: 1px solid var(--accent-secondary);
-    border-bottom: 1px solid var(--accent-secondary);
-}
-
-[data-policy-app="holy"] .app-badge {
-    border-radius: 999px;
-    border-color: var(--border-color);
-}
-
-[data-policy-app="holy"] .badge-icon {
-    display: grid;
-    place-items: center;
-    width: 2.75rem;
-    height: 2.75rem;
-    color: #ffffff;
-    background: linear-gradient(145deg, #31999d, #12585b);
-    border-radius: 50%;
-    font-family: Georgia, serif;
-    font-size: 1.5rem;
-}
-
-[data-policy-app="holy"] .badge-title,
-[data-policy-app="holy"] .policy-title {
-    font-family: "Cabinet Grotesk", "Switzer", sans-serif;
-}
-
-[data-policy-app="holy"] .policy-title {
-    color: var(--text-primary);
-}
-
-[data-policy-app="holy"] .policy-kicker {
-    margin: 0 auto 0.5rem;
-    color: var(--accent-secondary);
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-}
-
-[data-policy-app="holy"] .policy-content,
-[data-policy-app="holy"] .table-of-contents {
-    border-color: var(--border-color);
-}
-
-[data-policy-app="holy"] .policy-content {
-    position: relative;
-    overflow: hidden;
-}
-
-[data-policy-app="holy"] .policy-content::before {
-    content: "";
-    position: absolute;
-    inset: 0 auto 0 0;
-    width: 5px;
-    background: linear-gradient(var(--accent-primary), var(--accent-secondary));
-}
-
-[data-policy-app="holy"] .policy-section {
-    animation: none;
-}
-
-[data-policy-app="holy"] .policy-section h2 {
-    display: block;
-    border-bottom: 1px solid var(--border-color);
-    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    font-weight: 600;
-}
-
-[data-policy-app="holy"] .policy-section h2::before {
-    content: "§";
-    margin-right: 0.55rem;
-    color: var(--accent-secondary);
-    font-size: 0.8em;
-}
-
-[data-policy-app="holy"] .policy-section h3 {
-    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-}
-
-[data-policy-app="holy"] .highlight-box {
-    background: var(--bg-accent);
-    border-left-color: var(--accent-secondary);
-    box-shadow: none;
-}
-
-[data-policy-app="holy"] .highlight-box.warning {
-    background: color-mix(in srgb, var(--accent-warning) 10%, var(--bg-secondary));
-    border-left-color: var(--accent-warning);
-}
-
-[data-policy-app="holy"] .theme-toggle,
-[data-policy-app="holy"] .lang-button {
-    border-color: var(--border-color);
-}
-
-[data-policy-app="holy"] .theme-toggle {
-    color: var(--text-primary);
-}
-
-[data-policy-app="holy"] .policy-footer {
-    border-top: 1px solid var(--border-color);
-}
-
-@media (max-width: 767px) {
-    [data-policy-app="holy"] .policy-header {
-        padding-top: 8.5rem;
-    }
-
-    [data-policy-app="holy"] .policy-content::before {
-        width: 3px;
-    }
-}
-
-@media print {
-    [data-policy-app="holy"] body {
-        background: #ffffff;
-    }
-
-    [data-policy-app="holy"] .skip-link,
-    [data-policy-app="holy"] .language-switcher {
-        display: none;
-    }
 }
