@@ -12,7 +12,7 @@
     const SUPPORTED_LANGUAGES = ['en', 'es'];
     const DEFAULT_LANGUAGE = 'en';
     
-    // Get language from URL parameter or default to English
+    // Get language from URL, then from the canonical page itself.
     function getLanguage() {
         const urlParams = new URLSearchParams(window.location.search);
         const lang = urlParams.get('lang');
@@ -20,6 +20,15 @@
         // If language is supported, use it; otherwise default to English
         if (lang && SUPPORTED_LANGUAGES.includes(lang.toLowerCase())) {
             return lang.toLowerCase();
+        }
+
+        const documentLanguage = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+        if (SUPPORTED_LANGUAGES.includes(documentLanguage)) {
+            return documentLanguage;
+        }
+
+        if (window.location.pathname.endsWith('-es.html')) {
+            return 'es';
         }
         
         return DEFAULT_LANGUAGE;
@@ -166,7 +175,7 @@
         backToTopButton = document.createElement('button');
         backToTopButton.innerHTML = '↑';
         backToTopButton.className = 'back-to-top';
-        backToTopButton.setAttribute('aria-label', 'Back to top');
+        backToTopButton.setAttribute('aria-label', currentLanguage === 'es' ? 'Volver arriba' : 'Back to top');
         backToTopButton.style.cssText = `
             position: fixed;
             bottom: 2rem;

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="holy" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            if ((params.get("lang") || "").toLowerCase() === "es" && !window.location.pathname.endsWith("-es.html")) {
+                params.delete("lang");
+                const query = params.toString();
+                window.location.replace(window.location.pathname.replace(".html", "-es.html") + (query ? "?" + query : ""));
+            }
+        })();
+    </script>
+    <title>Privacy Policy | Holy - Daily Bible Verses</title>
+    <meta name="description" content="Privacy Policy for Holy - Daily Bible Verses, including local content, analytics, crash reporting, purchases, sharing, permissions, retention, and privacy rights.">
+    <link rel="canonical" href="https://armandojimenez.dev/apps/holy/privacy-policy.html">
+    <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/holy/privacy-policy.html">
+    <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/holy/privacy-policy-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://armandojimenez.dev/apps/holy/privacy-policy.html">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to policy content</a>
+    <div id="languageSwitcher" class="language-switcher" aria-label="Policy language"></div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch light or dark theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon" aria-hidden="true">✞</div>
+                <div class="badge-text">
+                    <div class="badge-title">Holy</div>
+                    <div class="badge-subtitle">Daily Bible Verses</div>
+                </div>
+            </div>
+            <p class="policy-kicker">Read with clarity. Reflect with trust.</p>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Effective: July 29, 2026</span>
+                <span class="meta-divider">&bull;</span>
+                <span class="meta-item">Version 1.0</span>
+            </div>
+            <nav class="policy-nav" aria-label="Legal pages">
+                <a class="nav-link" href="privacy-policy.html" aria-current="page">Privacy</a>
+                <a class="nav-link" href="terms.html">Terms</a>
+                <a class="nav-link" href="https://armandojimenez.dev/holy_landing/">Holy website</a>
+            </nav>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">On this page</h2>
+                <ol class="toc-list">
+                    <li><a href="#introduction">Who we are</a></li>
+                    <li><a href="#summary">Privacy at a glance</a></li>
+                    <li><a href="#local-data">Data on your device</a></li>
+                    <li><a href="#network-data">Data handled by services</a></li>
+                    <li><a href="#permissions">Permissions</a></li>
+                    <li><a href="#use">How data is used</a></li>
+                    <li><a href="#sharing">When data is shared</a></li>
+                    <li><a href="#tracking">Ads, sale, and tracking</a></li>
+                    <li><a href="#storage">Storage and security</a></li>
+                    <li><a href="#retention">Retention and deletion</a></li>
+                    <li><a href="#rights">Your rights and choices</a></li>
+                    <li><a href="#children">Children</a></li>
+                    <li><a href="#international">International transfers</a></li>
+                    <li><a href="#changes">Changes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+            </aside>
+
+            <main class="policy-content" id="main-content" tabindex="-1">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Who We Are and What This Covers</h2>
+                    <p>This Privacy Policy applies to Holy - Daily Bible Verses (the “App”) and these Holy legal pages. Holy is developed and operated by Believe PR, owned by Armando Jimenez (“Holy,” “we,” “us,” or “our”). This policy explains what information is processed when you read verses, create personal content, set reminders, personalize backgrounds, share content, contact support, or make an in-app purchase.</p>
+                    <p>Holy does not require an account. Some information stays only on your device, while selected service providers process technical, analytics, crash, purchase, media-request, or sharing information as described below.</p>
+                </section>
+
+                <section id="summary" class="policy-section">
+                    <h2>2. Privacy at a Glance</h2>
+                    <div class="highlight-box">
+                        <strong>Important points</strong>
+                        <ul>
+                            <li>Your custom prayers, quotes, favorites, gratitude entries, preferences, and reminders are stored locally by the App. We do not operate a Holy account database.</li>
+                            <li>Firebase Analytics and Firebase Crashlytics process usage and diagnostic information. RevenueCat and the app stores process purchase and entitlement information.</li>
+                            <li>Camera and photo access is optional and used for backgrounds or user-requested saves. Holy does not intentionally use your location.</li>
+                            <li>Holy does not display third-party advertising, and we do not sell personal information for money.</li>
+                            <li>The iOS build includes Meta/Facebook sharing components whose declared practices may involve device identifiers, analytics, crash data, and tracking. See Section 8.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="local-data" class="policy-section">
+                    <h2>3. Information Stored on Your Device</h2>
+                    <p>Holy stores the following in the App’s private local storage so its features work:</p>
+                    <ul>
+                        <li><strong>Spiritual and personal content:</strong> custom prayers and quotes, gratitude entries, favorites, hidden or disliked items, reading history, and selected categories.</li>
+                        <li><strong>Preferences:</strong> language, theme, font and display choices, reminder settings, notification choices, onboarding state, and premium-feature settings.</li>
+                        <li><strong>Custom media:</strong> photos you select or take for custom backgrounds, including resized copies saved in the App’s documents area.</li>
+                        <li><strong>Widget content:</strong> selected verse or quote information shared between the App and its home-screen widget on your device.</li>
+                    </ul>
+                    <p>Holy does not send the text of your custom prayers, quotes, or gratitude entries to our analytics service. Analytics may record that you added, edited, or deleted an item, but not the item’s text.</p>
+                    <h3>Backups, exports, and restores</h3>
+                    <p>You can export favorites or custom content to a JSON file and restore from a file you choose. You control the destination. A file provider, cloud drive, or operating-system backup you select may receive or retain that file under its own terms. Your device may also include Holy’s local app data in system backups. Delete exported files and backups separately if you no longer want them.</p>
+                </section>
+
+                <section id="network-data" class="policy-section">
+                    <h2>4. Information Processed by Services</h2>
+                    <h3>Firebase Analytics</h3>
+                    <p>We use Google Firebase Analytics to understand how features perform. It may process app-instance or installation identifiers, device and app information, approximate region derived by the provider, interaction events, and feature choices. Events can include favorite or sharing actions, paywall views, purchase outcomes, reminder changes, searches performed, or settings actions. Holy does not intentionally send search text or custom prayer and quote text in these events.</p>
+                    <h3>Firebase Crashlytics</h3>
+                    <p>We use Firebase Crashlytics in production to diagnose crashes and service failures. It may process crash traces, diagnostic logs, app and operating-system details, device model, installation identifiers, and the state needed to identify an error. A diagnostic record could include a product identifier or internal content/category identifier relevant to the failure, but it is not intended to contain your custom content.</p>
+                    <h3>RevenueCat, Apple, and Google</h3>
+                    <p>Purchases are processed by Apple App Store or Google Play and managed in the App through RevenueCat. These parties may process an anonymous RevenueCat app-user identifier, product identifiers, purchase and subscription history, entitlement status, Apple receipt or Google purchase token, country or locale, and technical device information. We do not receive your full payment card or bank details.</p>
+                    <h3>GIPHY and Unsplash</h3>
+                    <p>If you search for a GIF or browse/select online imagery, GIPHY or Unsplash receives the request needed to return content. This can include your search text, IP address, browser or app request information, and technical identifiers handled under that provider’s policy.</p>
+                    <h3>Support and policy website</h3>
+                    <p>If you email support, we receive your email address, message, and anything you attach. The notification troubleshooting flow can prepare a draft containing Android brand/model, operating-system version, app version, notification permission state, and premium status. You can review or remove that information before sending. When you visit these static legal pages, the hosting infrastructure may process ordinary web-request information such as IP address, browser type, requested page, and timestamp for delivery and security. These pages do not add advertising or analytics scripts.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>5. Device Permissions</h2>
+                    <ul>
+                        <li><strong>Notifications:</strong> to schedule daily or selected local reminders. Reminder content and schedules are created on your device. You can disable notifications in Holy or system settings.</li>
+                        <li><strong>Camera and photos/media:</strong> to take or choose a custom background and to save a rendered quote or verse image when you ask. Selected images are copied into the App’s local storage as needed.</li>
+                        <li><strong>Files:</strong> to let you choose an export destination or a backup file to restore.</li>
+                    </ul>
+                    <p>Permissions are optional except where necessary for the feature you request. Holy does not intentionally request or use device geolocation. Photo files can contain metadata, but Holy does not intentionally use precise location metadata from your photos.</p>
+                </section>
+
+                <section id="use" class="policy-section">
+                    <h2>6. How We Use Information</h2>
+                    <p>We process information to provide and personalize Holy, remember your choices, schedule reminders, render and share images, restore purchases, unlock paid features, maintain the widget, measure feature reliability, diagnose crashes, respond to support, prevent abuse or fraud, comply with law, and protect the App and its users.</p>
+                    <p>Where required, our legal bases include performing the service you request, our legitimate interests in operating and improving Holy, your consent for optional permissions or legally required processing, and compliance with legal obligations.</p>
+                </section>
+
+                <section id="sharing" class="policy-section">
+                    <h2>7. When Information Is Shared</h2>
+                    <p>We disclose information only as needed for the purposes in this policy:</p>
+                    <ul>
+                        <li><strong>Service providers:</strong> Google Firebase for analytics and crash reporting; RevenueCat, Apple, and Google for purchases; GIPHY and Unsplash for requested media; and hosting/email providers for this website and support.</li>
+                        <li><strong>User-directed sharing:</strong> when you choose Facebook, Instagram, WhatsApp, X/Twitter, a gallery, or the system share sheet, the selected text or rendered image is sent to the destination you chose. That third party applies its own policy.</li>
+                        <li><strong>Legal and safety:</strong> when reasonably necessary to comply with law, legal process, or enforceable requests, or to protect rights, safety, security, and prevent fraud or abuse.</li>
+                        <li><strong>Business change:</strong> in a merger, financing, acquisition, reorganization, or transfer of the App, subject to appropriate protections and notice where required.</li>
+                    </ul>
+                    <p>We do not operate a server that receives your custom prayer, quote, or gratitude text merely because you create it. It leaves your device only when you direct an export, backup, email, or share action, or when your operating system backs up the App.</p>
+                </section>
+
+                <section id="tracking" class="policy-section">
+                    <h2>8. Advertising, Sale, and Tracking</h2>
+                    <p>Holy does not display third-party ads, and we do not sell personal information for money. However, “sale,” “sharing,” and “tracking” have specific legal and platform meanings that can include transfers without monetary payment.</p>
+                    <div class="highlight-box warning">
+                        <strong>Meta/Facebook sharing components on iOS</strong>
+                        <p>Holy’s iOS dependency graph includes Meta/Facebook sharing SDK components. Meta’s bundled privacy declaration identifies practices that can include a device identifier linked to you for app functionality, analytics, third-party advertising, and tracking, plus product interaction, crash, and other data. These components support social sharing; Holy does not offer Facebook login or show Facebook ads. Depending on initialization, configuration, your choices, and applicable law, Meta may receive information and the transfer may be considered cross-context behavioral advertising, “sharing,” or tracking.</p>
+                    </div>
+                    <p>You can avoid Facebook-directed sharing, limit app tracking in iOS settings where available, restrict optional permissions, and contact us about an applicable opt-out request. Firebase uses installation identifiers for analytics and diagnostics, but we do not use Firebase to serve ads in Holy.</p>
+                </section>
+
+                <section id="storage" class="policy-section">
+                    <h2>9. Storage and Security</h2>
+                    <p>Local data is kept in Holy’s app sandbox and protected by the security controls of your device and operating system. Network communications with supported providers use HTTPS/TLS where available. We limit access to provider dashboards and support information to people who need it to operate Holy.</p>
+                    <p>No storage or transmission method is completely secure. Protect your device, use its lock and backup controls, review files before sharing, and avoid placing information in Holy that you would not want exposed if your device or selected destination is compromised.</p>
+                </section>
+
+                <section id="retention" class="policy-section">
+                    <h2>10. Retention and Deletion</h2>
+                    <ul>
+                        <li><strong>Local content:</strong> remains until you delete it in Holy, clear app storage, or uninstall the App. System backups and exported files remain until you delete them from their separate locations.</li>
+                        <li><strong>Crashlytics:</strong> Google states that Crashlytics data is retained for 90 days before the removal process begins.</li>
+                        <li><strong>Analytics:</strong> retained according to the retention settings in our Firebase project and Google’s applicable policies.</li>
+                        <li><strong>Purchase records:</strong> retained by RevenueCat and the stores as needed to manage entitlements, restores, fraud prevention, tax, accounting, legal obligations, and their policies.</li>
+                        <li><strong>Support:</strong> retained as long as reasonably needed to answer the request, maintain support history, protect the service, and meet legal obligations.</li>
+                    </ul>
+                    <p>Because Holy has no account, there is no single “delete account” control. Delete local items in the App, uninstall or clear app storage, and delete exports or cloud/device backups separately. For provider-side or support information associated with you, email us. We may need an installation/anonymous identifier or purchase information to locate a record, and some records may be retained when law or legitimate fraud, security, or transaction needs require it.</p>
+                </section>
+
+                <section id="rights" class="policy-section">
+                    <h2>11. Your Rights and Choices</h2>
+                    <p>Depending on where you live, you may have rights to know or access personal information, correct it, delete it, obtain a portable copy, restrict or object to processing, withdraw consent, opt out of certain sale/sharing or targeted advertising, and appeal or complain to a regulator. We will not discriminate against you for exercising an applicable right.</p>
+                    <p>Use Holy and system settings for permissions, reminders, and tracking choices. For a privacy request, email <a href="mailto:helpholy@believeaffirmations.com">helpholy@believeaffirmations.com</a>. State your country or U.S. state and the right you want to exercise. We may verify your request and may deny or limit it where an exception applies. Authorized agents may submit requests where local law permits, subject to verification.</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>12. Children’s Privacy</h2>
+                    <p>Holy is not directed to children under 13, and we do not knowingly collect personal information from a child under 13 through a Holy account because the App has no accounts. The store’s 4+ content rating describes content suitability and does not mean the App is designed to collect children’s information. A parent or guardian who believes a child sent personal information to support or a provider should contact us so we can investigate and take appropriate action.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>13. International Data Transfers</h2>
+                    <p>Holy is operated from Puerto Rico, United States. Our providers may process information in the United States and other countries, which may have different data-protection laws. Where required, providers and we rely on recognized safeguards such as adequacy decisions or contractual protections.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>14. Changes to This Policy</h2>
+                    <p>We may update this policy when Holy’s features, providers, or legal requirements change. We will post the revised policy here, change the effective date, and provide additional notice in the App when required. Material changes apply prospectively unless law allows otherwise.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>15. Contact Us</h2>
+                    <div class="contact-card">
+                        <h3>Holy Privacy</h3>
+                        <p><strong>Controller:</strong> Believe PR, owned by Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:helpholy@believeaffirmations.com">helpholy@believeaffirmations.com</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev">armandojimenez.dev</a></p>
+                    </div>
+                    <p>You may also contact your local data-protection authority. European Economic Area and United Kingdom users may complain to the supervisory authority where they live or work.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Provider notices:</strong> Review <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase privacy and security</a>, <a href="https://www.revenuecat.com/privacy-policy" target="_blank">RevenueCat’s Privacy Policy</a>, <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy</a>, <a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a>, <a href="https://developers.giphy.com/docs/terms/" target="_blank">GIPHY terms</a>, <a href="https://unsplash.com/privacy" target="_blank">Unsplash Privacy</a>, and <a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta Privacy</a>.</p>
+                </div>
+            </main>
+        </div>
+
+        <footer class="policy-footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy</a><span aria-hidden="true">&middot;</span>
+                    <a href="terms.html">Terms</a><span aria-hidden="true">&middot;</span>
+                    <a href="../">All app policies</a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Believe PR. Holy is developed by Armando Jimenez.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
