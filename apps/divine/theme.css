@@ -1,0 +1,31 @@
+/* Divine - Gold and Burgundy Theme */
+/* Uses the shared policy-page design with Divine's in-app accent colors. */
+
+:root[data-policy-app="divine"] {
+    --accent-primary: #807248;
+    --accent-secondary: #6D0B2F;
+    --accent-primary-hover: #6D0B2F;
+}
+
+[data-theme="dark"][data-policy-app="divine"] {
+    --accent-primary: #D4C58F;
+    --accent-secondary: #F080A8;
+    --accent-primary-hover: #F0E4B8;
+}
+
+/* Keep the accessibility shortcut out of the visual flow until focused. */
+[data-policy-app="divine"] .skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 2000;
+    padding: 0.75rem 1rem;
+    color: #FFFFFF;
+    background: #6D0B2F;
+    border-radius: var(--radius-md);
+    transform: translateY(-180%);
+}
+
+[data-policy-app="divine"] .skip-link:focus {
+    transform: translateY(0);
+}
