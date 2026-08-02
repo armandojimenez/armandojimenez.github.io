@@ -5,3 +5,4 @@ Sitemap: https://armandojimenez.dev/sitemap.xml
 Sitemap: https://armandojimenez.dev/holy/sitemap-index.xml
 Sitemap: https://armandojimenez.dev/motiv/sitemap-index.xml
 Sitemap: https://armandojimenez.dev/unique/sitemap-index.xml
+Sitemap: https://armandojimenez.dev/divine/sitemap-index.xml
