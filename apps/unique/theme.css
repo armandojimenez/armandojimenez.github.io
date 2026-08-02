@@ -1,0 +1,31 @@
+/* Unique - Raspberry and Teal Theme */
+/* Uses the shared policy-page design with Unique's established app colors. */
+
+:root[data-policy-app="unique"] {
+    --accent-primary: #A5124A;
+    --accent-secondary: #12585B;
+    --accent-primary-hover: #7C0E36;
+}
+
+[data-theme="dark"][data-policy-app="unique"] {
+    --accent-primary: #EB4582;
+    --accent-secondary: #D6B56D;
+    --accent-primary-hover: #F9D8E4;
+}
+
+/* Keep the accessibility shortcut out of the visual flow until focused. */
+[data-policy-app="unique"] .skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 2000;
+    padding: 0.75rem 1rem;
+    color: #FFFFFF;
+    background: #12585B;
+    border-radius: var(--radius-md);
+    transform: translateY(-180%);
+}
+
+[data-policy-app="unique"] .skip-link:focus {
+    transform: translateY(0);
+}
