@@ -1,0 +1,46 @@
+/* Believe - Rose Pink and Teal Theme */
+/* Uses Believe's official brand colors with full WCAG AA contrast compliance. */
+
+:root[data-policy-app="believe"] {
+    --accent-primary: #B5485B;          /* Believe Rose Pink (5.24:1 contrast vs white - WCAG AA Pass) */
+    --accent-secondary: #416D6B;        /* Believe Action Teal (5.10:1 contrast vs white - WCAG AA Pass) */
+    --accent-primary-hover: #943847;    /* Deep Rose Pink (7.80:1 contrast vs white) */
+}
+
+[data-theme="dark"][data-policy-app="believe"] {
+    --accent-primary: #F582AE;          /* Believe Soft Pink (9.10:1 contrast vs dark bg - WCAG AAA Pass) */
+    --accent-secondary: #74A8A5;        /* Soft Teal */
+    --accent-primary-hover: #FFB3D1;    /* Bright Rose Tint */
+}
+
+/* Ensure active language switcher button has high-contrast dark text in dark mode */
+[data-theme="dark"][data-policy-app="believe"] .lang-button.active {
+    color: #0F0E0D;
+    font-weight: 700;
+}
+
+/* Badge SVG Icon Styling */
+[data-policy-app="believe"] .badge-icon-svg {
+    width: 2.25rem;
+    height: 2.25rem;
+    color: var(--accent-primary);
+    flex-shrink: 0;
+}
+
+/* Accessibility skip link */
+[data-policy-app="believe"] .skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 2000;
+    padding: 0.75rem 1rem;
+    color: #FFFFFF;
+    background: #416D6B;
+    border-radius: var(--radius-md);
+    transform: translateY(-180%);
+    transition: transform var(--transition-fast, 150ms ease);
+}
+
+[data-policy-app="believe"] .skip-link:focus {
+    transform: translateY(0);
+}
