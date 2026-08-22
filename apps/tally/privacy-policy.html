@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="tally" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Tally</title>
+    <meta name="description" content="Privacy Policy for Tally, a one-button tap counter. Tally has no accounts, no analytics, and no tracking. Everything you count stays on your device.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg viewBox="0 0 72.5 56.5" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linecap="round" aria-hidden="true">
+                        <g transform="translate(-15.75,-21.75)">
+                            <path d="M28 26v48M44 26v48M60 26v48M76 26v48"></path>
+                            <path d="M20 70L84 30"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Tally</div>
+                    <div class="badge-subtitle">Count by feel</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: August 22, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: August 22, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#the-short-version">The Short Version</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#on-your-device">What Lives on Your Device</a></li>
+                    <li><a href="#no-analytics">No Analytics, No Tracking, No Ads</a></li>
+                    <li><a href="#purchases">Tally Pro &amp; Purchases</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#permissions">App Permissions</a></li>
+                    <li><a href="#backups">Backups &amp; Device Transfer</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#deleting">Deleting Your Data</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#changes">Changes to This Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Tally ("the App") is a one-button tap counter, developed and operated by Believe PR, owned by Armando Jimenez ("Tally," "we," "us," or "our"). Tally is published on the Apple App Store for iPhone and iPad and on Google Play for Android.</p>
+                    <p>You open Tally, you tap a big surface, and a number goes up. It clicks in your hand while you do it. That is the whole product. There is very little to say about your data here, and this policy is short for the best possible reason: Tally is built so that there is almost nothing to collect.</p>
+                    <div class="highlight-box">
+                        <strong>Our privacy promise</strong>
+                        <ul>
+                            <li>Tally has no accounts. No email, no password, no sign-in, ever.</li>
+                            <li>Your counters, counts, names, themes and settings live on YOUR device.</li>
+                            <li>There is no Tally server. We have nowhere to put your data even if we wanted it.</li>
+                            <li>Tally contains no analytics SDK and no crash-reporting SDK. We do not measure how you use the App.</li>
+                            <li>There are no advertisements, no advertising identifier, and no tracking of any kind.</li>
+                            <li>The App never asks for your camera, photos, microphone, contacts, location, or notifications.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="the-short-version" class="policy-section">
+                    <h2>2. The Short Version</h2>
+                    <p>If you read nothing else, read this.</p>
+                    <p>Tally collects no personal information. The App makes exactly one kind of network request, and only if you open the paywall or buy Tally Pro: a request to our payment provider, RevenueCat, so it can tell us whether this device owns the one-time unlock. Everything else happens on your device, offline, and stays there.</p>
+                    <p>We do not know how many times you have tapped. We do not know what you named your counters. We do not know which theme you picked, whether you finished onboarding, or whether you open the App daily or once a year. None of that reaches us, because the App never sends it.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+
+                    <h3>3.1 Information you give us directly</h3>
+                    <p><strong>None.</strong> Tally has no registration, no profile, no sign-in and no forms. There is no field in the App where you can type an email address, a name, or any other personal detail, so there is none for us to receive.</p>
+                    <p>The only way you can send us anything is by choosing to email us at the address in section 16. If you do, we receive whatever you write in that email, and we use it only to answer you.</p>
+
+                    <h3>3.2 Information collected automatically</h3>
+                    <p><strong>None by us.</strong> Tally contains no analytics, telemetry, attribution, advertising or crash-reporting library. No usage event, session, screen view, tap count, identifier or diagnostic report is generated or transmitted by the App.</p>
+
+                    <h3>3.3 Information our payment provider processes</h3>
+                    <p>To sell and restore the one-time Tally Pro unlock, the App talks to RevenueCat, which acts as our payments infrastructure provider. This is described in full in <a href="#purchases">section 6</a>. In summary, RevenueCat receives an anonymous identifier that it generates itself, your store receipt, and basic device and platform information. It never receives your name, your email address, or anything you count in the App.</p>
+
+                    <h3>3.4 Information the App stores on your device</h3>
+                    <p>Tally saves your counters and preferences locally so the App is where you left it. This never leaves the device except through your own operating system backup. See <a href="#on-your-device">section 4</a>.</p>
+                </section>
+
+                <section id="on-your-device" class="policy-section">
+                    <h2>4. What Lives on Your Device</h2>
+                    <p>Tally keeps a single small file on your device. It holds:</p>
+                    <ul>
+                        <li>Your counters: their names, their current counts, and their order</li>
+                        <li>Which counter is active, and whether multi-count is on</li>
+                        <li>Your chosen theme and, on Tally Pro, your custom colors</li>
+                        <li>Your sound, silent mode, click intensity, volume-key and keep-screen-awake settings</li>
+                        <li>Your chosen language and light or dark preference</li>
+                        <li>Whether you have finished onboarding, and a small counter used to decide when to offer you the review prompt</li>
+                        <li>Whether this device owns Tally Pro, cached so the App opens instantly without waiting on the network</li>
+                    </ul>
+                    <p>On iPhone and iPad this file is kept in an app group container so the Tally home screen widgets can read the same numbers. On Android it is kept in the App's own private storage. In both cases the operating system prevents other apps from reading it.</p>
+                    <p>We never receive this file. It is not uploaded, synced to us, or backed up to any server we control. There is no Tally account it could be attached to.</p>
+                </section>
+
+                <section id="no-analytics" class="policy-section">
+                    <h2>5. No Analytics, No Tracking, No Ads</h2>
+                    <p>We want to be specific here, because "we respect your privacy" is easy to write and hard to verify.</p>
+                    <ul>
+                        <li><strong>No analytics.</strong> Tally ships with no analytics SDK. Earlier development builds of Tally included Google Analytics for Firebase; it was removed before release, together with the advertising-identifier permissions it brought with it. The shipping App contains neither.</li>
+                        <li><strong>No crash reporting.</strong> Tally ships with no crash-reporting SDK. If the App crashes, we do not find out unless you tell us.</li>
+                        <li><strong>No advertising.</strong> Tally shows no ads, contains no ad network, and does not read the iOS Identifier for Advertisers or the Android Advertising ID.</li>
+                        <li><strong>No tracking.</strong> Tally does not track you across apps or websites, does not build a profile of you, and does not share or sell data for advertising. On iPhone and iPad you will never see the "Ask App not to Track" prompt, because there is nothing for Tally to ask about.</li>
+                        <li><strong>No fingerprinting.</strong> Tally does not derive a device fingerprint or a persistent identifier of its own.</li>
+                    </ul>
+                    <p>There is no analytics opt-out setting in the App. That is not an omission. There is nothing to opt out of.</p>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>6. Tally Pro &amp; Purchases</h2>
+                    <p>Tally is free to use. Tally Pro is a single one-time purchase that unlocks the extra themes, custom colors, multi-count, the light and heavy click, and setting a counter to an exact number. It is not a subscription and it does not renew.</p>
+
+                    <h3>6.1 How the purchase is handled</h3>
+                    <p>The purchase itself is made by Apple or Google, not by us. Your payment method, billing address and transaction details are handled entirely by the App Store or Google Play under their own privacy policies. <strong>We never see your payment information.</strong></p>
+
+                    <h3>6.2 What RevenueCat receives</h3>
+                    <p>We use RevenueCat to check whether this device owns Tally Pro and to make "Restore purchase" work. When the App opens the paywall, completes a purchase, or restores one, RevenueCat receives:</p>
+                    <ul>
+                        <li>An anonymous identifier that RevenueCat generates on the device. Tally never sets a user identifier, so this identifier is not linked to a name, an email address, or any account.</li>
+                        <li>The purchase receipt issued by the App Store or Google Play, which RevenueCat validates with the store.</li>
+                        <li>Basic device and platform information, such as the operating system version and the App version.</li>
+                        <li>The IP address the request comes from, which is inherent to any internet request and is used in part to determine your country so the App can show the correct local price.</li>
+                    </ul>
+                    <p>RevenueCat does not receive your counters, your counts, your counter names, your theme, or any of your settings. Those are never sent anywhere.</p>
+
+                    <h3>6.3 Family Sharing</h3>
+                    <p>Tally Pro is enabled for Family Sharing on the App Store. If you share it with your family group, Apple manages that sharing. We receive no information about the members of your family group.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>7. Third-Party Services</h2>
+                    <p>This is the complete list of third parties involved in running Tally.</p>
+
+                    <h3>7.1 RevenueCat</h3>
+                    <p>Purchase and entitlement infrastructure, as described in section 6. RevenueCat's privacy policy is at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+
+                    <h3>7.2 Apple App Store and Google Play</h3>
+                    <p>They distribute the App and process purchases under their own terms and privacy policies. They may make aggregate, anonymized information available to us as the developer, such as how many people downloaded the App or which countries they are in. We cannot identify individual users from it, and it comes from the store, not from anything Tally sends.</p>
+
+                    <h3>7.3 Features that use your operating system, not a third party</h3>
+                    <ul>
+                        <li><strong>"Rate Tally"</strong> asks your operating system to show its own review prompt. Your review, if you leave one, goes to Apple or Google. We never see who wrote what.</li>
+                        <li><strong>"Share Tally"</strong> opens your system share sheet with a short message and a link to the App. Where you send it is entirely your choice, and we are not told.</li>
+                        <li><strong>Terms and Privacy links</strong> open this website in your browser or an in-app browser view. This site is served by GitHub Pages, which may log standard web server information such as IP addresses. That is a visit to a web page, not something the App reports.</li>
+                    </ul>
+
+                    <h3>7.4 Things Tally does not use</h3>
+                    <p>No advertising networks. No social media SDKs. No attribution or install-referrer services. No A/B testing or remote configuration service. No cloud database. No third-party fonts fetched at runtime: every typeface Tally uses is bundled inside the App.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>8. App Permissions</h2>
+                    <p>Tally asks for no runtime permissions at all. You should never see a permission prompt from this App.</p>
+
+                    <h3>8.1 iPhone and iPad</h3>
+                    <p>Tally declares no permission usage descriptions, which means it cannot request access to your camera, photo library, microphone, contacts, calendars, location, health data, Bluetooth, or notifications. It also does not request App Tracking Transparency.</p>
+
+                    <h3>8.2 Android</h3>
+                    <p>Tally declares only these, and none of them show a prompt:</p>
+                    <ul>
+                        <li><strong>INTERNET</strong> and <strong>ACCESS_NETWORK_STATE</strong>, so the App can reach RevenueCat and the Play billing service for the Tally Pro unlock</li>
+                        <li><strong>com.android.vending.BILLING</strong>, which is what Google Play requires in order to sell the one-time unlock</li>
+                    </ul>
+                    <p>Tally requests no storage, camera, microphone, location, contacts, notification or advertising-ID permission on Android.</p>
+
+                    <h3>8.3 Hardware Tally uses without a permission</h3>
+                    <ul>
+                        <li><strong>Haptics.</strong> The click you feel is the standard system haptic. It reads nothing.</li>
+                        <li><strong>Sound.</strong> The click sounds are short audio files bundled in the App and played through your speaker. Tally never records audio and has no microphone access. Audio is mixed with other apps so your music keeps playing.</li>
+                        <li><strong>Keeping the screen awake.</strong> When enabled in Settings, Tally asks the system to keep the screen on while the counting surface is open.</li>
+                        <li><strong>Volume keys.</strong> On Android, you can optionally count with the volume keys. This only observes key presses while Tally is the app in front of you.</li>
+                    </ul>
+                </section>
+
+                <section id="backups" class="policy-section">
+                    <h2>9. Backups &amp; Device Transfer</h2>
+                    <p>Your operating system may include Tally's local file in its own device backup. On iPhone and iPad this can mean iCloud Backup; on Android it can mean Google's backup service. Those backups belong to your Apple or Google account, are governed by their privacy policies, and are not visible to us.</p>
+                    <p>If you restore a new device from such a backup, your counters may come back with it. If you do not use device backups, your counters live only on the device you made them on.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>10. Your Privacy Rights</h2>
+                    <p>Privacy laws including the GDPR in the European Economic Area and the United Kingdom, the CCPA and CPRA in California, and similar laws elsewhere give you rights over personal information a company holds about you.</p>
+                    <div class="highlight-box">
+                        <strong>We hold no personal information about you.</strong>
+                        <p>Because Tally has no accounts and sends us nothing, there is no profile, record, or file about you on our side to access, correct, export, restrict, or delete. A request to exercise those rights would return nothing, because there is nothing.</p>
+                    </div>
+                    <p>Some specifics, stated plainly:</p>
+                    <ul>
+                        <li><strong>Right of access and portability.</strong> Everything Tally holds about you is already on your device and already yours.</li>
+                        <li><strong>Right to erasure.</strong> Deleting the App deletes the data. See <a href="#deleting">section 11</a>.</li>
+                        <li><strong>Sale or sharing of personal information.</strong> We do not sell or share personal information, and we never have. Under the CCPA and CPRA there is nothing to opt out of.</li>
+                        <li><strong>Automated decision-making.</strong> Tally does none.</li>
+                        <li><strong>Legal basis for processing (GDPR).</strong> The only processing that occurs is what is strictly necessary to sell you Tally Pro and to keep it unlocked, which is the performance of a contract with you, plus our legitimate interest in preventing fraudulent purchases.</li>
+                        <li><strong>Right to complain.</strong> You may lodge a complaint with your local data protection authority.</li>
+                    </ul>
+                    <p>If you want to exercise a right regarding data held by RevenueCat, Apple or Google, contact us and we will help you direct it to the right place.</p>
+                </section>
+
+                <section id="deleting" class="policy-section">
+                    <h2>11. Deleting Your Data</h2>
+                    <p>Delete the App. That is the whole procedure.</p>
+                    <p>Uninstalling Tally removes its local file along with it, which erases your counters, counts, names, themes and settings from the device. There is no account left behind and no copy for us to remove, because we never had one.</p>
+                    <p>Two things survive deletion, and neither is ours to erase:</p>
+                    <ul>
+                        <li>Your purchase of Tally Pro remains attached to your App Store or Google Play account, which is what makes "Restore purchase" work if you reinstall. To be forgotten by our payment provider, contact us and we will pass the request to RevenueCat.</li>
+                        <li>Any device backup you made before deleting still belongs to your Apple or Google account, and you manage it there.</li>
+                    </ul>
+                    <p>You can also clear your counts without deleting the App, using "Reset all counts" in Settings.</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>12. Children's Privacy</h2>
+                    <p>Tally is rated for ages 4 and up and is safe for children to use. It contains no ads, no user-generated content shown to anyone else, no chat, no links to social networks, and no content that would be unsuitable for a child.</p>
+                    <p>Tally does not knowingly collect personal information from anyone, including children under 13, because it does not collect personal information at all. We believe this places the App outside the collection provisions of COPPA and the equivalent rules elsewhere.</p>
+                    <p>Purchases should be made by, or with the consent of, the account holder. Parents can restrict purchases with Screen Time on Apple devices or parental controls on Google Play.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>13. International Users</h2>
+                    <p>Tally is available worldwide and is localized into 45 languages. The App works entirely offline apart from the purchase check, so using it does not move your data across any border.</p>
+                    <p>The limited purchase data described in section 6 is processed by RevenueCat, which operates in the United States, and by Apple or Google, which operate globally. Those transfers are covered by the providers' own safeguards and privacy policies.</p>
+                </section>
+
+                <section id="security" class="policy-section">
+                    <h2>14. Security</h2>
+                    <p>The strongest security measure in Tally is that there is nothing to steal. There is no server holding your data, no database of users, and no account credentials, so there is no breach of ours that could expose your counting.</p>
+                    <p>On your device, Tally's file is stored in the App's protected storage, isolated by the operating system from other apps. Purchase traffic to RevenueCat and the stores uses encrypted HTTPS connections.</p>
+                    <p>No method of electronic storage or transmission is perfectly secure. We keep the App's dependencies current and keep its data footprint as close to nothing as we can.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>15. Changes to This Policy</h2>
+                    <p>We may update this Privacy Policy to reflect changes to the App or to legal requirements. When we do:</p>
+                    <ul>
+                        <li>The "Last Updated" date at the top of this page will change</li>
+                        <li>Material changes, in particular any change to what the App collects, will be described in the App's release notes</li>
+                        <li>Continued use of Tally after a change takes effect means you accept the updated policy</li>
+                    </ul>
+                    <p>The current version is always available at this address and from the About section of the App's Settings.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>16. Contact Us</h2>
+                    <p>If you have a question, a concern, or a request about this Privacy Policy, write to us. A real person reads it.</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:tally@armandojimenez.dev">tally@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <ul>
+                        <li>Within 30 days for general privacy inquiries</li>
+                        <li>Within 72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for formal rights requests</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> August 22, 2026</p>
+                    <p><strong>Effective Date:</strong> August 22, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

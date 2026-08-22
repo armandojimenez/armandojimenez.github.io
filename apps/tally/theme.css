@@ -1,0 +1,218 @@
+/*
+ * Tally — Sand & Tangerine Theme
+ * Overrides for policy pages.
+ *
+ * Every value here is lifted from the app's own `lib/theme/tokens.dart`
+ * (TallyPalette + AppColors.light / AppColors.dark), so the page a user lands
+ * on from the paywall's fine print is painted in the app they just left.
+ * Space Grotesk is the app's own display face; Space Mono is its label face.
+ */
+
+/* ===========================
+   Custom Color Palette — Sand & Tangerine
+   =========================== */
+:root {
+    /* Light — the sand ramp, exactly as AppColors.light uses it */
+    --bg-primary: #f2f1ed;      /* sand 100  — the chrome field */
+    --bg-secondary: #ffffff;    /* sand 0    — cards */
+    --bg-tertiary: #fbfaf7;     /* sand 50   — sheets */
+    --bg-accent: #fff1ec;       /* tangerine 50 — the accent wash */
+
+    --text-primary: #16151a;    /* sand 900  — ink */
+    --text-secondary: #45443e;  /* sand 700  — ink soft */
+    --text-tertiary: #6b6b63;   /* sand 600  — muted */
+    --text-link: #be340c;       /* tangerine 700 — the app's accentText */
+    --text-link-hover: #932a0e; /* tangerine 800 */
+
+    --border-color: #e9e7e1;    /* sand 200 */
+    --border-light: #f2f1ed;    /* sand 100 */
+
+    --accent-primary: #ff5b2e;  /* tangerine 500 — the brand primary */
+    --accent-secondary: #ff7a4d;/* tangerine 400 */
+    --accent-success: #1f8a5b;  /* the app's switch-on green */
+    --accent-warning: #f2c14e;
+    --accent-danger: #c92a30;
+}
+
+/* Dark — the same ramp inverted, as AppColors.dark does it: ink 900 becomes
+   the field, cards step up to 800, and the tangerine lifts to 400 so it
+   clears AA against the dark field. */
+[data-theme="dark"] {
+    --bg-primary: #16151a;      /* sand 900 */
+    --bg-secondary: #2a2822;    /* sand 800 */
+    --bg-tertiary: #34322b;     /* the surfaceInset step */
+    --bg-accent: #3a2b23;       /* the accentWash, flattened onto sand 800 */
+
+    --text-primary: #f2f1ed;    /* sand 100 */
+    --text-secondary: #d9d6cc;  /* sand 300 */
+    --text-tertiary: #b4b0a4;   /* sand 400 */
+    --text-link: #ff9166;       /* tangerine 300 */
+    --text-link-hover: #ffbb9e; /* tangerine 200 */
+
+    --border-color: #34322b;
+    --border-light: #2a2822;
+
+    --accent-primary: #ff7a4d;  /* tangerine 400 */
+    --accent-secondary: #ff9166;/* tangerine 300 */
+    --accent-success: #34c759;
+    --accent-warning: #f2c14e;
+    --accent-danger: #f2696d;
+}
+
+/* ===========================
+   Typography — the app's own faces
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+.policy-title,
+.badge-title,
+.policy-section h2 {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+}
+
+/* The app sets its small labels in Space Mono, uppercase, widely tracked —
+   the same treatment the Settings group headers get. */
+.badge-subtitle,
+.policy-meta {
+    font-family: 'Space Mono', ui-monospace, monospace !important;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.toc-title {
+    font-family: 'Space Mono', ui-monospace, monospace !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+}
+
+/* ===========================
+   The mark
+   =========================== */
+.badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-primary);
+}
+
+.badge-icon svg {
+    width: 2.25rem;
+    height: auto;
+    display: block;
+}
+
+/* ===========================
+   Surfaces
+   =========================== */
+.app-badge {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.highlight-box {
+    background: var(--bg-accent);
+    border-left-color: var(--accent-primary);
+}
+
+.highlight-box.warning {
+    background: rgba(242, 193, 78, 0.14);
+    border-left-color: var(--accent-warning);
+}
+
+.contact-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+/* Flat, not gradient-filled. The app's headings are solid ink; a gradient
+   wash would be a flourish the design does not have anywhere. */
+.policy-section h2 {
+    color: var(--text-primary);
+    border-bottom-color: var(--border-color);
+}
+
+.contact-card h3 {
+    color: var(--text-primary);
+}
+
+/* ===========================
+   Controls
+   =========================== */
+.theme-toggle {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 16px rgba(255, 91, 46, 0.22);
+}
+
+.nav-link {
+    background: var(--bg-secondary);
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: #16151a;
+    border-color: var(--accent-primary);
+}
+
+.back-to-top {
+    background: var(--accent-primary) !important;
+    color: #16151a !important;
+}
+
+.back-to-top:hover {
+    box-shadow: 0 8px 24px rgba(255, 91, 46, 0.34) !important;
+}
+
+/* ===========================
+   TOC + links
+   =========================== */
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
+
+/* ===========================
+   Chrome
+   =========================== */
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+}
+
+/* Ink on tangerine, not white: 4.5:1 the right way round. The app makes the
+   same call for its CTA label, and the contrast gate pins it. */
+::selection {
+    background: var(--accent-primary);
+    color: #16151a;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: #16151a;
+}

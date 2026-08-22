@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="tally" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms &amp; Conditions - Tally</title>
+    <meta name="description" content="Terms and Conditions for Tally, a one-button tap counter with a one-time Tally Pro unlock.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg viewBox="0 0 72.5 56.5" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linecap="round" aria-hidden="true">
+                        <g transform="translate(-15.75,-21.75)">
+                            <path d="M28 26v48M44 26v48M60 26v48M76 26v48"></path>
+                            <path d="M20 70L84 30"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Tally</div>
+                    <div class="badge-subtitle">Count by feel</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms &amp; Conditions</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: August 22, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: August 22, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#description">What Tally Is</a></li>
+                    <li><a href="#license">License to Use</a></li>
+                    <li><a href="#your-data">Your Counters Are Yours</a></li>
+                    <li><a href="#purchases">Tally Pro &amp; Purchases</a></li>
+                    <li><a href="#obligations">Your Responsibilities</a></li>
+                    <li><a href="#safe-use">Using Tally Safely</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#prohibited-uses">Prohibited Uses</a></li>
+                    <li><a href="#availability">Availability &amp; Changes</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#disclaimers">Disclaimers</a></li>
+                    <li><a href="#limitation">Limitation of Liability</a></li>
+                    <li><a href="#indemnification">Indemnification</a></li>
+                    <li><a href="#governing-law">Governing Law &amp; Disputes</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>These Terms and Conditions ("Terms") govern your use of Tally ("the App"), developed and operated by Believe PR, owned by Armando Jimenez ("we," "us," or "our").</p>
+                    <p>By downloading, installing, or using Tally, you agree to these Terms. If you do not agree, please do not use the App and delete it from your device.</p>
+                    <p>You must be able to form a binding contract where you live in order to accept these Terms. If you are a minor, a parent or guardian must accept them on your behalf.</p>
+                    <p>These Terms are between you and Believe PR. They are not between you and Apple or Google, who are not responsible for the App or for supporting it.</p>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. What Tally Is</h2>
+                    <p>Tally is a tap counter. You tap a large surface and a number goes up. It gives you a haptic click and an optional sound each time, so you can count without looking at the screen.</p>
+                    <p>The App includes:</p>
+                    <ul>
+                        <li>A full-screen counting surface with undo and reset</li>
+                        <li>Counter naming, and setting a counter to an exact number</li>
+                        <li>Eight counting themes, one free and seven included with Tally Pro</li>
+                        <li>Custom colors for the background, number, and button, with Tally Pro</li>
+                        <li>Up to five counters at once, with Tally Pro</li>
+                        <li>Sound and haptic controls, a silent mode, and three click intensities</li>
+                        <li>Optional volume-key counting on Android</li>
+                        <li>An option to keep the screen awake while counting</li>
+                        <li>Home screen widgets</li>
+                        <li>45 languages, including full right-to-left support</li>
+                    </ul>
+                    <p>Tally works offline. It does not require an account and it never asks you to create one.</p>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. License to Use</h2>
+
+                    <h3>3.1 Grant</h3>
+                    <p>Subject to these Terms, we grant you a personal, limited, non-exclusive, non-transferable, revocable license to download and use Tally on devices you own or control, for your own personal or internal business use.</p>
+
+                    <h3>3.2 Store Rules Apply</h3>
+                    <p>Your license is also subject to the terms of the store you installed from. Where those store terms are stricter than these Terms, the store terms apply.</p>
+
+                    <h3>3.3 Restrictions</h3>
+                    <p>You may not:</p>
+                    <ul>
+                        <li>Copy, sell, rent, sublicense, or redistribute the App</li>
+                        <li>Reverse engineer, decompile, or disassemble the App, except where that right cannot be excluded by law</li>
+                        <li>Remove or alter any copyright, trademark, or other proprietary notice</li>
+                        <li>Circumvent, disable, or interfere with the Tally Pro purchase check, or use the App with a modified or unofficial build intended to unlock paid features without paying for them</li>
+                        <li>Use the App in a way that breaks any applicable law</li>
+                    </ul>
+                </section>
+
+                <section id="your-data" class="policy-section">
+                    <h2>4. Your Counters Are Yours</h2>
+                    <p>Everything you create in Tally, including your counters, their names, their counts, and your themes and settings, belongs to you. We claim no ownership of it and no license over it.</p>
+                    <p>It is also stored only on your device. We do not receive it, host it, or back it up. That has two consequences worth being clear about:</p>
+                    <ul>
+                        <li>We cannot recover your counts for you. If you delete the App, reset a counter, or lose the device, we have no copy to restore.</li>
+                        <li>Keeping your device backed up is your responsibility. Your operating system's own backup, if you use it, is what protects your counts.</li>
+                    </ul>
+                    <p>Tally is not a record-keeping system of legal or regulatory record. Do not rely on it as the only copy of a number that matters.</p>
+                    <p>How your information is handled is described in full in our <a href="privacy-policy.html">Privacy Policy</a>, which forms part of these Terms.</p>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>5. Tally Pro &amp; Purchases</h2>
+
+                    <h3>5.1 Free Tier</h3>
+                    <p>Tally is free to download and use. The free tier includes one counter, the Modern theme, tapping, undo, reset, sound, silent mode, and the medium click. It is not time limited and it is not a trial.</p>
+
+                    <h3>5.2 Tally Pro</h3>
+                    <p>Tally Pro is an optional <strong>one-time purchase</strong>. It is <strong>not a subscription</strong>, it does not auto-renew, and there is nothing to cancel. It unlocks:</p>
+                    <ul>
+                        <li>All eight counting themes</li>
+                        <li>Custom colors for the background, number, and button</li>
+                        <li>Multi-count, for up to five counters at once</li>
+                        <li>The light and heavy click intensities</li>
+                        <li>Setting a counter to an exact number by typing it</li>
+                    </ul>
+
+                    <h3>5.3 Pricing &amp; Billing</h3>
+                    <ul>
+                        <li>The price is shown inside the App at the point of purchase, in your local currency where the store supports it, and always comes from the store rather than being fixed in the App</li>
+                        <li>Prices vary by country. We use purchasing-power-based pricing, so the amount in your region may differ from the amount elsewhere</li>
+                        <li>All charges are made by Apple to your Apple Account, or by Google to your Google account</li>
+                        <li>We never see or handle your payment details</li>
+                    </ul>
+
+                    <h3>5.4 Restoring Your Purchase</h3>
+                    <p>Your purchase is tied to the store account you bought it with. If you reinstall Tally or set up a new device, use "Restore purchase" in Settings or on the Tally Pro screen. Restoring requires an internet connection.</p>
+
+                    <h3>5.5 Family Sharing</h3>
+                    <p>Tally Pro is enabled for Family Sharing on the App Store, as stated on the purchase screen. Availability and behavior of Family Sharing are controlled by Apple.</p>
+
+                    <h3>5.6 Refunds</h3>
+                    <p>Because all transactions are processed by the store, refund requests must be made through Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> or through Google Play support. Believe PR cannot directly issue App Store or Google Play refunds.</p>
+
+                    <h3>5.7 Price Changes</h3>
+                    <p>We may change the price of Tally Pro over time. Because it is a one-time purchase, a later price change does not affect a purchase you have already made.</p>
+
+                    <h3>5.8 If a Purchase Fails</h3>
+                    <p>Purchases require the store to be reachable. If the network or the store is unavailable, the App will say so and nothing will be charged. A purchase that the store has not confirmed does not unlock Tally Pro.</p>
+                </section>
+
+                <section id="obligations" class="policy-section">
+                    <h2>6. Your Responsibilities</h2>
+                    <p>When using Tally, you agree to:</p>
+                    <ul>
+                        <li>Use the App lawfully, and in line with these Terms</li>
+                        <li>Keep the device and store account you purchase with secure</li>
+                        <li>Take responsibility for the accuracy of what you count</li>
+                        <li>Maintain your own backups of anything you need to keep</li>
+                    </ul>
+                </section>
+
+                <section id="safe-use" class="policy-section">
+                    <h2>7. Using Tally Safely</h2>
+                    <div class="highlight-box warning">
+                        <strong>Pay attention to where you are.</strong>
+                        <p>Tally is designed so you can count without looking at your phone. That is useful, and it also means you are holding a device while your attention is elsewhere.</p>
+                    </div>
+                    <p>Do not use Tally while driving, operating machinery, or doing anything else that requires your full attention. Be aware of your surroundings, especially when counting in public, at work, or while moving.</p>
+                    <p>Tally is a counter and nothing more. It is not a medical, scientific, safety, industrial, financial, or legal instrument. It performs no measurement of its own and makes no claim about the accuracy of any count, which depends entirely on your taps. Do not use it where an error would put anyone at risk or where a certified counting or measuring device is required.</p>
+                    <p>If you count repetitively for long periods, take breaks. Repetitive tapping can be uncomfortable over time.</p>
+                </section>
+
+                <section id="intellectual-property" class="policy-section">
+                    <h2>8. Intellectual Property</h2>
+
+                    <h3>8.1 Our Property</h3>
+                    <p>The App and everything in it, including its name, the tally mark logo, its themes, its interface design, its icons, its sounds, its copy and its code, is owned by Believe PR or its licensors and is protected by copyright, trademark, and other intellectual property laws.</p>
+
+                    <h3>8.2 Fonts</h3>
+                    <p>The typefaces bundled with Tally are used under the SIL Open Font License, Version 1.1. Their licenses are listed inside the App under the standard licenses screen.</p>
+
+                    <h3>8.3 Feedback</h3>
+                    <p>If you send us an idea or a suggestion, we may use it to improve Tally without obligation or compensation to you. We will not publish your name or your message without your permission.</p>
+                </section>
+
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>9. Prohibited Uses</h2>
+                    <p>You may not:</p>
+                    <ul>
+                        <li>Use the App for anything illegal, or to help anyone else do so</li>
+                        <li>Attempt to gain unauthorized access to the App, our systems, or our payment provider</li>
+                        <li>Tamper with, spoof, or replay purchase receipts, or otherwise obtain Tally Pro without paying for it</li>
+                        <li>Distribute a modified version of the App, or present it as your own</li>
+                        <li>Use automated means to interact with the App at a scale that is not ordinary human use</li>
+                        <li>Use our name, logo, or branding in a way that suggests we endorse you</li>
+                    </ul>
+                </section>
+
+                <section id="availability" class="policy-section">
+                    <h2>10. Availability &amp; Changes</h2>
+                    <p>We may add, change, or remove features of Tally over time, and we may stop distributing or supporting the App entirely. Where a change materially removes something Tally Pro unlocked at the time you bought it, we will say so in the App's release notes.</p>
+                    <p>Tally works offline, so the App keeps counting even if our payment provider or the store is unreachable. We do not guarantee that the App is free from interruption or error, or that it will remain compatible with every future version of your operating system.</p>
+                    <p>Availability of the App and of Tally Pro varies by country and is subject to the stores' own regional rules.</p>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>11. Termination</h2>
+
+                    <h3>11.1 By You</h3>
+                    <p>You may stop using Tally at any time by deleting it. Deleting the App removes its data from your device. Your Tally Pro purchase remains attached to your store account.</p>
+
+                    <h3>11.2 By Us</h3>
+                    <p>We may terminate your license if you materially breach these Terms, in particular by circumventing the Tally Pro purchase check or by distributing a modified build.</p>
+
+                    <h3>11.3 What Survives</h3>
+                    <p>Sections 8, 9, 12, 13, 14 and 15 survive termination.</p>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>12. Disclaimers</h2>
+
+                    <div class="highlight-box warning">
+                        <strong>READ CAREFULLY. IMPORTANT LEGAL DISCLAIMERS.</strong>
+                    </div>
+
+                    <h3>12.1 "AS IS" and "AS AVAILABLE"</h3>
+                    <p>TALLY IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                    <ul>
+                        <li>WARRANTIES OF MERCHANTABILITY</li>
+                        <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                        <li>NON-INFRINGEMENT</li>
+                        <li>ACCURACY OR RELIABILITY</li>
+                        <li>UNINTERRUPTED OR ERROR-FREE OPERATION</li>
+                    </ul>
+
+                    <h3>12.2 No Guarantee of Accuracy</h3>
+                    <p>WE DO NOT WARRANT THAT:</p>
+                    <ul>
+                        <li>Any count recorded in the App is accurate, complete, or fit for any particular purpose</li>
+                        <li>Every tap will be registered on every device, in every condition</li>
+                        <li>The App will be free of defects, or that defects will be corrected</li>
+                        <li>Your counts will survive a device failure, an operating system update, an uninstall, or a restore</li>
+                    </ul>
+                    <p>The count is produced by your taps. Tally records them. It cannot know what you meant to count.</p>
+
+                    <h3>12.3 Not a Certified Instrument</h3>
+                    <p>Tally is not a certified, calibrated, or regulated counting or measuring device, and must not be relied upon where one is required by law, by a standard, or by a safety requirement.</p>
+
+                    <h3>12.4 Third-Party Services</h3>
+                    <p>We are not responsible for the availability or behavior of the App Store, Google Play, or our payment provider, or for changes they make to their platforms.</p>
+
+                    <h3>12.5 Consumer Rights</h3>
+                    <p>Some jurisdictions do not allow the exclusion of certain warranties. Where that is the case, the exclusions above apply only to the extent permitted, and nothing here limits your non-waivable statutory rights as a consumer.</p>
+                </section>
+
+                <section id="limitation" class="policy-section">
+                    <h2>13. Limitation of Liability</h2>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, BELIEVE PR AND ARMANDO JIMENEZ SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, COUNTS, PROFITS, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF, OR INABILITY TO USE, THE APP. THIS INCLUDES ANY DECISION MADE, ACTION TAKEN, OR LOSS SUFFERED IN RELIANCE ON A COUNT RECORDED IN THE APP.</p>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THE APP SHALL NOT EXCEED THE GREATER OF THE AMOUNT YOU PAID US FOR TALLY PRO IN THE TWELVE MONTHS PRECEDING THE CLAIM, OR TEN UNITED STATES DOLLARS.</p>
+                    <p>Some jurisdictions do not allow the exclusion or limitation of certain damages. Where that is the case, the limitations above apply only to the extent permitted.</p>
+                </section>
+
+                <section id="indemnification" class="policy-section">
+                    <h2>14. Indemnification</h2>
+                    <p>You agree to indemnify and hold harmless Believe PR and Armando Jimenez from any claims, damages, losses, or expenses, including reasonable legal fees, arising from your misuse of the App, your violation of these Terms, or your reliance on a count recorded in the App.</p>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>15. Governing Law &amp; Disputes</h2>
+
+                    <h3>15.1 Governing Law</h3>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of the Commonwealth of Puerto Rico, without regard to its conflict of law provisions.</p>
+
+                    <h3>15.2 Jurisdiction</h3>
+                    <p>You agree that any legal action or proceeding arising from these Terms shall be brought exclusively in the courts of the Commonwealth of Puerto Rico, and you consent to the personal jurisdiction of such courts.</p>
+
+                    <h3>15.3 Informal Resolution First</h3>
+                    <p>Before filing any legal action, you agree to attempt to resolve disputes informally by emailing <a href="mailto:tally@armandojimenez.dev">tally@armandojimenez.dev</a> and allowing 30 days for a good-faith response.</p>
+
+                    <h3>15.4 Class Action Waiver</h3>
+                    <p>TO THE EXTENT PERMITTED BY LAW, YOU AGREE THAT ANY DISPUTE SHALL BE RESOLVED ON AN INDIVIDUAL BASIS AND NOT AS A CLASS ACTION, CONSOLIDATED ACTION, OR REPRESENTATIVE ACTION.</p>
+
+                    <h3>15.5 Consumer Rights</h3>
+                    <p>Nothing in these Terms limits your statutory rights as a consumer under applicable consumer protection laws.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>16. Changes to Terms</h2>
+                    <p>We may update these Terms from time to time. When we do:</p>
+                    <ul>
+                        <li>The "Last Updated" date at the top of this page will change</li>
+                        <li>Material changes will be described in the App's release notes</li>
+                        <li>Continued use of Tally after a change takes effect means you accept the updated Terms</li>
+                    </ul>
+                    <p>The current version is always available at this address and from the About section of the App's Settings.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>17. Contact Information</h2>
+                    <p>Questions about these Terms are welcome. A real person reads them.</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:tally@armandojimenez.dev">tally@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Related</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> August 22, 2026</p>
+                    <p><strong>Effective Date:</strong> August 22, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
