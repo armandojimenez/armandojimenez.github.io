@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="myplants" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms &amp; Conditions - MyPlants</title>
+    <meta name="description" content="Terms and Conditions for MyPlants, an offline-first plant-care tracker with a lifetime or monthly Premium unlock.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Hanken+Grotesk:wght@400;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <!-- The app's own seedling glyph, from lib/ui/icons.dart. -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 21V10"></path>
+                        <path d="M12 13C12 9.7 9.5 7 6 7c0 3.3 2.5 6 6 6z"></path>
+                        <path d="M12 11c0-3.3 2.5-6 6-6 0 3.3-2.5 6-6 6z"></path>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">MyPlants</div>
+                    <div class="badge-subtitle">Grow plants, not guilt</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms &amp; Conditions</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: August 29, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: August 29, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#description">What MyPlants Is</a></li>
+                    <li><a href="#license">License to Use</a></li>
+                    <li><a href="#your-data">Your Garden Is Yours</a></li>
+                    <li><a href="#purchases">MyPlants Premium &amp; Purchases</a></li>
+                    <li><a href="#reminders">Reminders</a></li>
+                    <li><a href="#obligations">Your Responsibilities</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#prohibited-uses">Prohibited Uses</a></li>
+                    <li><a href="#availability">Availability &amp; Changes</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#disclaimers">Disclaimers</a></li>
+                    <li><a href="#limitation">Limitation of Liability</a></li>
+                    <li><a href="#indemnification">Indemnification</a></li>
+                    <li><a href="#third-parties">Third-Party Services and Stores</a></li>
+                    <li><a href="#governing-law">Governing Law &amp; Disputes</a></li>
+                    <li><a href="#changes">Changes to These Terms</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of Terms</h2>
+
+                    <p>These Terms and Conditions ("Terms") govern your use of MyPlants ("the App"), developed and operated by Believe PR, owned by Armando Jimenez ("we," "us," or "our").</p>
+                    <p>By downloading, installing, or using MyPlants, you agree to these Terms. If you do not agree, please do not use the App and delete it from your device.</p>
+                    <p>If you buy MyPlants Premium, the store you bought it from also applies its own terms to that transaction. Where a store rule and these Terms disagree about the purchase itself, the store's rule wins.</p>
+                </section>
+                <section id="description" class="policy-section">
+                    <h2>2. What MyPlants Is</h2>
+
+                    <p>MyPlants is a plant-care tracker. You add a plant, give it a sticker or a photo, and say how often it drinks. The App keeps the schedule, shows you what is thirsty, records what you have done, and sends you a local reminder when a pot is due.</p>
+                    <p>It runs on your device and needs no account and no internet connection to do any of that.</p>
+                    <div class="highlight-box">
+                        <strong>MyPlants is not horticultural advice.</strong>
+                        <p>The App reminds you of a rhythm YOU chose. It does not diagnose a sick plant, does not know your light, your soil, your humidity or your season, and its species suggestions are starting points, not prescriptions. Watering on a schedule can be wrong for a particular plant in a particular place. Use your judgement, and the finger test.</p>
+                    </div>
+                </section>
+                <section id="license" class="policy-section">
+                    <h2>3. License to Use</h2>
+
+                    <p>We grant you a personal, non-exclusive, non-transferable, revocable licence to use MyPlants on devices you own or control, for your own non-commercial use, subject to these Terms and to your store's rules.</p>
+                    <p>You may not copy, modify, reverse engineer, decompile, rent, resell or redistribute the App, remove or alter its notices, or use it in any way these Terms do not allow.</p>
+                </section>
+                <section id="your-data" class="policy-section">
+                    <h2>4. Your Garden Is Yours</h2>
+
+                    <p>Everything you put into MyPlants belongs to you: your plants, their names and species, your photos, your notes, and your whole care history.</p>
+                    <p>We claim no ownership of it and no licence over it. We could not use it if we wanted to, because it never leaves your device. See the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                    <p>Because the App has no server and no account, <strong>you are responsible for your own backups.</strong> Your operating system's device backup is the mechanism. If you delete the App, reset your phone, or lose it without a backup, your garden is gone and we cannot restore it.</p>
+                </section>
+                <section id="purchases" class="policy-section">
+                    <h2>5. MyPlants Premium &amp; Purchases</h2>
+
+                    <p>MyPlants is free to use for up to five plants, including every reminder those plants need, for as long as you keep them.</p>
+                    <p><strong>MyPlants Premium</strong> lifts that cap and unlocks photo timelines, care notes, the full sticker garden, every app icon and every theme. It is sold two ways:</p>
+                    <ul>
+                        <li><strong>Lifetime.</strong> A one-time purchase. It does not renew, and there is nothing to cancel.</li>
+                        <li><strong>Monthly.</strong> An auto-renewing subscription. It renews every month until you cancel it.</li>
+                    </ul>
+
+                    <h3>5.1 Prices</h3>
+                    <p>Prices are set per country and are shown by your store, in your currency, at the moment you look. The App never prints a price of its own. Prices may change; a change never applies to a purchase you have already made, and a subscription price change is notified by your store under its own rules.</p>
+
+                    <h3>5.2 Cancelling a subscription</h3>
+                    <p>You cancel in your App Store or Google Play account settings, not in the App. Cancel at least 24 hours before the period ends to avoid the next charge. Cancelling stops future renewals; the current period runs to its end. <strong>Deleting the App does not cancel a subscription.</strong></p>
+
+                    <h3>5.3 Refunds</h3>
+                    <p>Refunds are handled by Apple or Google under their own policies, not by us, and we cannot issue one. If you believe a charge was a mistake, contact your store. If something in the App went wrong, write to us as well and we will help however we can.</p>
+
+                    <h3>5.4 Restoring</h3>
+                    <p>The paywall has a Restore control that re-checks your store account and re-enables Premium on a reinstall or a new device signed into the same account.</p>
+
+                    <h3>5.5 What happens if Premium lapses</h3>
+                    <p>Nothing is deleted. A lapsed subscription re-locks the Premium features, and any plants over the free limit become read-only rather than disappearing: you keep them, their history and their photos, and they come back the moment Premium does.</p>
+                </section>
+                <section id="reminders" class="policy-section">
+                    <h2>6. Reminders</h2>
+
+                    <p>Reminders are scheduled by your device's operating system from the rhythms you set. They are local notifications: no server sends them, and we cannot see them.</p>
+                    <p><strong>We cannot promise a reminder will arrive.</strong> An operating system may delay, batch or drop a scheduled notification, and battery savers, focus modes, notification settings, force-quitting the App, a device that is off, and a clock or time-zone change can all affect one. MyPlants re-checks and re-queues its reminders whenever you open it. Please do not rely on the App alone for a plant whose life depends on it.</p>
+                </section>
+                <section id="obligations" class="policy-section">
+                    <h2>7. Your Responsibilities</h2>
+
+                    <ul>
+                        <li>Use MyPlants lawfully, and only on devices you own or control.</li>
+                        <li>Keep your own backups, as described in section 4.</li>
+                        <li>Add only photos you have the right to add.</li>
+                        <li>Look after your store account and any purchase made through it.</li>
+                        <li>Use your own judgement about your plants. The App reminds; it does not know.</li>
+                    </ul>
+                </section>
+                <section id="intellectual-property" class="policy-section">
+                    <h2>8. Intellectual Property</h2>
+
+                    <p>MyPlants, its name, its design, its illustrations, its code and its copy are owned by Believe PR and protected by copyright and other laws. These Terms grant you a licence to use the App, not any ownership of it.</p>
+                    <p>The plant stickers are from <a href="https://openmoji.org" target="_blank" rel="noopener">OpenMoji</a> and are used under the CC BY-SA 4.0 licence, which the App credits in its You tab. The bundled typefaces are used under the SIL Open Font License; their licence text ships inside the App.</p>
+                    <p>Your own content remains entirely yours (section 4).</p>
+                </section>
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>9. Prohibited Uses</h2>
+
+                    <p>You may not:</p>
+                    <ul>
+                        <li>Reverse engineer, decompile or disassemble the App, except where law expressly allows it</li>
+                        <li>Circumvent, disable or interfere with the Premium entitlement or any security feature</li>
+                        <li>Distribute modified copies of the App, or redistribute it outside the official stores</li>
+                        <li>Use the App to break a law, or to infringe anyone's rights</li>
+                        <li>Automate, scrape or stress the App or the services it talks to</li>
+                        <li>Represent the App as your own, or use our name or marks without permission</li>
+                    </ul>
+                </section>
+                <section id="availability" class="policy-section">
+                    <h2>10. Availability &amp; Changes</h2>
+
+                    <p>We may update, change or discontinue MyPlants, or any part of it, at any time. We may add, alter or remove features, including features currently behind Premium, though we will not knowingly take away something you have paid a lifetime price for.</p>
+                    <p>The App is provided as it is at the time you install it. We do not promise a particular update schedule, and an operating system upgrade can break something we then have to fix.</p>
+                    <p>The App keeps working offline. The purchase check depends on RevenueCat and your store; if those are unreachable, the App keeps running with the entitlement it last knew about.</p>
+                </section>
+                <section id="termination" class="policy-section">
+                    <h2>11. Termination</h2>
+
+                    <p>You may stop using MyPlants at any time by deleting it. That ends this licence and, as section 4 explains, removes your garden from the device.</p>
+                    <p>We may terminate this licence if you materially breach these Terms. Sections that by their nature should survive termination do survive it, including intellectual property, disclaimers, limitation of liability and governing law.</p>
+                </section>
+                <section id="disclaimers" class="policy-section">
+                    <h2>12. Disclaimers</h2>
+
+                    <p>MyPlants is provided "AS IS" and "AS AVAILABLE", without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, and non-infringement, to the fullest extent the law allows.</p>
+                    <p>We do not warrant that the App will be uninterrupted or error-free, that reminders will always arrive (see section 6), that its species suggestions suit your plant, your climate or your home, or that your plant will live. Keeping plants alive is your work; the App is a notebook that nudges.</p>
+                    <p>Some jurisdictions do not allow the exclusion of certain warranties, so parts of this section may not apply to you.</p>
+                </section>
+                <section id="limitation" class="policy-section">
+                    <h2>13. Limitation of Liability</h2>
+
+                    <p>To the fullest extent permitted by law, Believe PR and Armando Jimenez are not liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, loss of plants, or loss of profits, arising out of your use of, or inability to use, MyPlants.</p>
+                    <p>Our total liability for any claim relating to the App will not exceed the greater of the amount you paid us for it in the twelve months before the claim, or ten United States dollars.</p>
+                    <p>Nothing here limits liability that cannot lawfully be limited, including for death or personal injury caused by negligence, or for fraud. Some jurisdictions do not allow certain limitations, so parts of this section may not apply to you.</p>
+                </section>
+                <section id="indemnification" class="policy-section">
+                    <h2>14. Indemnification</h2>
+
+                    <p>You agree to indemnify and hold harmless Believe PR and Armando Jimenez from any claim, loss or expense, including reasonable legal fees, arising out of your misuse of the App, your breach of these Terms, or your infringement of anyone's rights, including in a photo you add.</p>
+                </section>
+                <section id="third-parties" class="policy-section">
+                    <h2>15. Third-Party Services and Stores</h2>
+
+                    <p>MyPlants relies on RevenueCat for purchases and Sentry for crash reports, and is distributed by Apple and Google. Each has its own terms and privacy policy, and we are not responsible for their services.</p>
+                    <p><strong>Apple.</strong> These Terms are between you and us, not with Apple. Apple has no obligation to support the App, and in the event the App fails to conform to any warranty, you may notify Apple and Apple will refund the purchase price; to the extent the law allows, Apple has no other warranty obligation. Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</p>
+                    <p><strong>Google.</strong> Google is not a party to these Terms and has no responsibility for the App.</p>
+                </section>
+                <section id="governing-law" class="policy-section">
+                    <h2>16. Governing Law &amp; Disputes</h2>
+
+                    <p>These Terms are governed by the laws of the Commonwealth of Puerto Rico and the United States, without regard to conflict-of-law rules. If you live elsewhere, you keep any mandatory protections of your own country's law.</p>
+                    <p>Before anything formal, please write to us. Almost everything is solved by an email, and we would rather fix the problem.</p>
+                    <p>Any dispute not resolved that way will be brought in the courts of Puerto Rico, and you and we each submit to their jurisdiction.</p>
+                </section>
+                <section id="changes" class="policy-section">
+                    <h2>17. Changes to These Terms</h2>
+
+                    <p>We may update these Terms. When we do, the "Last Updated" date at the top changes, and material changes are described in the App's release notes. Continued use after a change takes effect means you accept the updated Terms. If you do not, delete the App.</p>
+                </section>
+                <section id="contact" class="policy-section">
+                    <h2>18. Contact Information</h2>
+
+                    <p>Questions about these Terms are answered by a person, not a form.</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:myplants@armandojimenez.dev">myplants@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> August 29, 2026</p>
+                    <p><strong>Effective Date:</strong> August 29, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

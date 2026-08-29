@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="myplants" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - MyPlants</title>
+    <meta name="description" content="Privacy Policy for MyPlants, an offline-first plant-care tracker. No accounts, no analytics, no tracking. Your plants and photos stay on your device.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Hanken+Grotesk:wght@400;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <!-- The app's own seedling glyph, from lib/ui/icons.dart. -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 21V10"></path>
+                        <path d="M12 13C12 9.7 9.5 7 6 7c0 3.3 2.5 6 6 6z"></path>
+                        <path d="M12 11c0-3.3 2.5-6 6-6 0 3.3-2.5 6-6 6z"></path>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">MyPlants</div>
+                    <div class="badge-subtitle">Grow plants, not guilt</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: August 29, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: August 29, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#short-version">The Short Version</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#on-your-device">What Lives on Your Device</a></li>
+                    <li><a href="#crash-reports">Crash Reports</a></li>
+                    <li><a href="#no-tracking">No Analytics, No Tracking, No Ads</a></li>
+                    <li><a href="#purchases">MyPlants Premium &amp; Purchases</a></li>
+                    <li><a href="#permissions">App Permissions</a></li>
+                    <li><a href="#backups">Backups &amp; Device Transfer</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#deleting">Deleting Your Data</a></li>
+                    <li><a href="#children">Children&rsquo;s Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#changes">Changes to This Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+
+                    <p>MyPlants ("the App") is an offline-first plant-care tracker, developed and operated by Believe PR, owned by Armando Jimenez ("MyPlants," "we," "us," or "our"). MyPlants is published on the Apple App Store for iPhone and iPad and on Google Play for Android.</p>
+                    <p>You add a plant, set how often it drinks, and the App nudges you when a pot gets thirsty. That is the whole product, and it runs on your device. This policy is short for the best possible reason: MyPlants is built so that there is almost nothing to collect.</p>
+                    <div class="highlight-box">
+                        <strong>Our privacy promise</strong>
+                        <ul>
+                            <li>MyPlants has no accounts. No email, no password, no sign-in, ever.</li>
+                            <li>Your plants, photos, notes, reminders and settings live on YOUR device.</li>
+                            <li>There is no MyPlants server. We have nowhere to put your garden even if we wanted it.</li>
+                            <li>The App contains no analytics SDK, no advertising, and no tracking of any kind.</li>
+                            <li>It does send anonymous crash reports, and section 5 says exactly what is in one.</li>
+                            <li>Photos you add never leave the device. They are not uploaded, scanned, or looked at by us.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="short-version" class="policy-section">
+                    <h2>2. The Short Version</h2>
+
+                    <p>If you read nothing else, read this.</p>
+                    <p>MyPlants collects no personal information. The App makes exactly two kinds of network request. The first happens only if you open the paywall or buy MyPlants Premium: a request to our payment provider, RevenueCat, so it can tell us whether this device owns Premium. The second happens only if the App crashes: an anonymous report to Sentry so the bug can be fixed.</p>
+                    <p>Everything else happens on your device, offline, and stays there. We do not know how many plants you keep, what you named them, which photos you took, what you wrote in a note, or whether you open the App daily or once a year. None of that reaches us, because the App never sends it.</p>
+                </section>
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+
+                    <h3>3.1 Information you give us directly</h3>
+                    <p><strong>None.</strong> MyPlants has no registration, no profile, no sign-in and no forms. There is no field in the App where you can type an email address, a name, or any other personal detail, so there is none for us to receive.</p>
+                    <p>The only way you can send us anything is by choosing to email us from the Contact us page, or from the address in section 16. If you do, we receive whatever you write in that email and we use it only to answer you. Nothing about your garden is attached to it.</p>
+
+                    <h3>3.2 Information collected automatically</h3>
+                    <p><strong>No analytics, no telemetry, no advertising, no attribution.</strong> MyPlants contains no analytics library. No usage event, session, screen view, plant count, identifier or profile is generated or transmitted.</p>
+                    <p>The one exception is crash reporting, described in full in <a href="#crash-reports">section 5</a>. It is the only automatic transmission the App makes, it happens only when the App has actually crashed, and it contains no personal information.</p>
+
+                    <h3>3.3 Information our payment provider processes</h3>
+                    <p>To sell and restore MyPlants Premium, the App talks to RevenueCat, our payments infrastructure provider. This is described in full in <a href="#purchases">section 7</a>. In summary, RevenueCat receives an anonymous identifier that it generates itself, your store receipt, and basic device and platform information. It never receives your name, your email address, your plants, or your photos.</p>
+
+                    <h3>3.4 Information the App stores on your device</h3>
+                    <p>MyPlants saves your whole garden locally so the App is where you left it. This never leaves the device except through your own operating system backup. See <a href="#on-your-device">section 4</a>.</p>
+                </section>
+                <section id="on-your-device" class="policy-section">
+                    <h2>4. What Lives on Your Device</h2>
+
+                    <p>MyPlants keeps three things on your device, all inside the App's own protected storage:</p>
+                    <ul>
+                        <li><strong>A small database.</strong> Your plants: their names, species, watering rhythms, stickers or photo covers, the order you arranged them in, and every care event you have logged, including waterings, feedings, repottings, notes and photo entries with their dates.</li>
+                        <li><strong>Your photos.</strong> Every picture you take or pick for a plant is copied into the App's private folder as an ordinary image file. The original stays wherever it was.</li>
+                        <li><strong>A settings file.</strong> Your theme, app icon, light or dark preference, language, whether reminders are on and at what time, whether you have finished the welcome, and two small counters used to decide when to offer you the review prompt.</li>
+                    </ul>
+                    <p>On iPhone and iPad these live in the App's Application Support directory; on Android in the App's private storage. In both cases the operating system prevents other apps from reading them.</p>
+                    <p>We never receive any of it. It is not uploaded, synced to us, or backed up to any server we control. There is no MyPlants account it could be attached to.</p>
+                </section>
+                <section id="crash-reports" class="policy-section">
+                    <h2>5. Crash Reports</h2>
+
+                    <p>MyPlants sends anonymous crash reports to <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a>. This is the only telemetry in the App, and we want to be exact about it rather than bury it.</p>
+
+                    <h3>5.1 When a report is sent</h3>
+                    <p>Only when the App actually crashes or hits an unhandled error. There is no periodic reporting, no heartbeat, and no report on a normal run. Nothing is sent while the App is working.</p>
+
+                    <h3>5.2 What is in one</h3>
+                    <ul>
+                        <li>The error and its stack trace, which is a list of the App's own function names</li>
+                        <li>The App version and build, and which build channel it is</li>
+                        <li>The device model, the operating system version, the locale, and the screen size</li>
+                        <li>A short trail of app events immediately before the crash, generated by the SDK</li>
+                        <li>An installation identifier generated on the device by the Sentry SDK, which lets two crashes be recognised as coming from the same install. It is not linked to you, your email, or any account.</li>
+                    </ul>
+
+                    <h3>5.3 What is NOT in one</h3>
+                    <p>Every setting that would add more is switched off in the App's source, and a unit test fails the build if an SDK update ever flips one back on:</p>
+                    <ul>
+                        <li><strong>No personal information.</strong> The SDK's "send default PII" option is off, so no IP address, username or device name is attached to the report.</li>
+                        <li><strong>No screenshots.</strong> Screenshot attachment is off, so a picture of your garden can never ride along with a crash.</li>
+                        <li><strong>No performance or usage tracing.</strong> Sampling is zero. No sessions, no app-hang reports, no frame or metric telemetry, no user-interaction tracing, no failed-request capture.</li>
+                        <li><strong>Nothing about your plants.</strong> Names, species, notes, photos and dates are never read into a report.</li>
+                    </ul>
+                    <p>The request reaches Sentry over the internet like any other, so their servers see the connection it came from; the SDK does not attach it to the report itself. Sentry's privacy policy is at <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">sentry.io/privacy</a>.</p>
+                </section>
+                <section id="no-tracking" class="policy-section">
+                    <h2>6. No Analytics, No Tracking, No Ads</h2>
+
+                    <p>Being specific here matters, because "we respect your privacy" is easy to write and hard to verify.</p>
+                    <ul>
+                        <li><strong>No analytics.</strong> MyPlants ships with no analytics SDK and no Firebase SDK. Firebase App Distribution is used to deliver test builds to the developer's own phone before release; it is a delivery pipe outside the binary, and the shipping App contains none of it. A release check greps the built App to keep it that way.</li>
+                        <li><strong>No advertising.</strong> No ads, no ad network, and the App does not read the iOS Identifier for Advertisers or the Android Advertising ID.</li>
+                        <li><strong>No tracking.</strong> MyPlants does not track you across apps or websites, does not build a profile of you, and does not share or sell data for advertising. On iPhone and iPad you will never see the "Ask App not to Track" prompt, because there is nothing for the App to ask about.</li>
+                        <li><strong>No fingerprinting.</strong> The App derives no device fingerprint of its own.</li>
+                        <li><strong>No remote configuration and no A/B testing.</strong> The App you install is the App you run.</li>
+                        <li><strong>No fonts fetched at runtime.</strong> Every typeface is bundled inside the App.</li>
+                    </ul>
+                </section>
+                <section id="purchases" class="policy-section">
+                    <h2>7. MyPlants Premium &amp; Purchases</h2>
+
+                    <p>MyPlants is free to use for up to five plants, with every reminder those plants need. MyPlants Premium lifts that cap and adds photo timelines, care notes, the full sticker garden, every app icon and every theme.</p>
+                    <p>Premium is sold two ways, and they are different products: a <strong>lifetime</strong> one-time purchase that does not renew, and a <strong>monthly subscription</strong> that renews until you cancel. The App shows both, side by side, with the price your store quotes.</p>
+
+                    <h3>7.1 How the purchase is handled</h3>
+                    <p>The purchase itself is made by Apple or Google, not by us. Your payment method, billing address and transaction details are handled entirely by the App Store or Google Play under their own privacy policies. <strong>We never see your payment information.</strong></p>
+
+                    <h3>7.2 What RevenueCat receives</h3>
+                    <p>We use RevenueCat to check whether this device owns Premium and to make "Restore" work. When the App opens the paywall, completes a purchase, or restores one, RevenueCat receives:</p>
+                    <ul>
+                        <li>An anonymous identifier that RevenueCat generates on the device. MyPlants never sets a user identifier, so it is not linked to a name, an email address, or any account.</li>
+                        <li>The purchase receipt issued by the App Store or Google Play, which RevenueCat validates with the store.</li>
+                        <li>Basic device and platform information, such as the operating system version and the App version.</li>
+                        <li>The IP address the request comes from, which is inherent to any internet request and is used in part to determine your country so the App can show the correct local price.</li>
+                    </ul>
+                    <p>RevenueCat does not receive your plants, your photos, your notes, or any of your settings. Those are never sent anywhere. RevenueCat's privacy policy is at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+
+                    <h3>7.3 Managing a subscription</h3>
+                    <p>A monthly subscription renews automatically until you cancel it, and you cancel it in your App Store or Google Play account settings, not in the App. Deleting the App does not cancel a subscription.</p>
+
+                    <h3>7.4 Family Sharing</h3>
+                    <p>Where the store supports it, Premium may be shared with your family group. Apple or Google manages that sharing. We receive no information about the members of your family group.</p>
+                </section>
+                <section id="permissions" class="policy-section">
+                    <h2>8. App Permissions</h2>
+
+                    <p>MyPlants asks for three things, all optional, all only at the moment you reach for the feature that needs them. Refusing any of them leaves the App working.</p>
+
+                    <h3>8.1 Photos and camera</h3>
+                    <p>Asked only when you choose to give a plant a photo, either as its portrait or as a glow-up entry in its timeline. The App receives the single image you pick. It does not read your photo library, does not scan it, and never uploads anything. If you refuse, the App says so and offers you a sticker instead.</p>
+
+                    <h3>8.2 Notifications</h3>
+                    <p>Asked only when you turn watering reminders on. The reminders are scheduled by your own operating system, on your device, from the rhythms you set. Nothing about them is sent anywhere, and no push server is involved: the App has no push token and cannot receive a message from us. On Android the App also declares the exact-alarm and boot-completed permissions so a reminder survives a restart and arrives at the time you chose.</p>
+
+                    <h3>8.3 What the App never asks for</h3>
+                    <p>No location, no contacts, no calendar, no microphone, no health data, no Bluetooth, and no App Tracking Transparency prompt.</p>
+
+                    <h3>8.4 Network</h3>
+                    <p>On Android the App declares INTERNET, ACCESS_NETWORK_STATE and com.android.vending.BILLING. None of them shows a prompt, and the only traffic is the purchase check in section 7, the crash report in section 5, and any link you deliberately open.</p>
+                </section>
+                <section id="backups" class="policy-section">
+                    <h2>9. Backups &amp; Device Transfer</h2>
+
+                    <p>Your operating system may include the App's local files, photos included, in its own device backup. On iPhone and iPad this can mean iCloud Backup; on Android it can mean Google's backup service. Those backups belong to your Apple or Google account, are governed by their privacy policies, and are not visible to us.</p>
+                    <p>If you restore a new device from such a backup, your garden may come back with it. If you do not use device backups, your garden lives only on the device you grew it on.</p>
+                </section>
+                <section id="your-rights" class="policy-section">
+                    <h2>10. Your Privacy Rights</h2>
+
+                    <p>Privacy laws including the GDPR in the European Economic Area and the United Kingdom, the CCPA and CPRA in California, and similar laws elsewhere give you rights over personal information a company holds about you.</p>
+                    <div class="highlight-box">
+                        <strong>We hold no personal information about you.</strong>
+                        <p>MyPlants has no accounts and sends us nothing about you or your garden, so there is no profile, record or file on our side to access, correct, export, restrict or delete. A request to exercise those rights would return nothing, because there is nothing.</p>
+                    </div>
+                    <p>Some specifics, stated plainly:</p>
+                    <ul>
+                        <li><strong>Right of access and portability.</strong> Everything MyPlants holds about you is already on your device and already yours.</li>
+                        <li><strong>Right to erasure.</strong> Deleting the App deletes the data. See <a href="#deleting">section 11</a>.</li>
+                        <li><strong>Sale or sharing of personal information.</strong> We do not sell or share personal information, and we never have. Under the CCPA and CPRA there is nothing to opt out of.</li>
+                        <li><strong>Automated decision-making.</strong> MyPlants does none.</li>
+                        <li><strong>Legal basis for processing (GDPR).</strong> The purchase check is the performance of a contract with you. The crash reports rest on our legitimate interest in keeping the App from crashing, and they carry no personal data.</li>
+                        <li><strong>Right to complain.</strong> You may lodge a complaint with your local data protection authority.</li>
+                    </ul>
+                    <p>If you want to exercise a right regarding data held by RevenueCat, Sentry, Apple or Google, contact us and we will help you direct it to the right place.</p>
+                </section>
+                <section id="deleting" class="policy-section">
+                    <h2>11. Deleting Your Data</h2>
+
+                    <p>Delete the App. That is the whole procedure.</p>
+                    <p>Uninstalling MyPlants removes its database, its photo folder and its settings file along with it, which erases your entire garden from the device. There is no account left behind and no copy for us to remove, because we never had one.</p>
+                    <p>Three things survive deletion, and none is ours to erase:</p>
+                    <ul>
+                        <li>Your purchase of Premium remains attached to your App Store or Google Play account, which is what makes "Restore" work if you reinstall. A monthly subscription must also be cancelled in your store account. To be forgotten by our payment provider, contact us and we will pass the request to RevenueCat.</li>
+                        <li>Any crash report already sent stays in Sentry until it ages out. It contains no personal information; if you would like the install identifier on it removed, write to us with the date and we will ask Sentry to delete it.</li>
+                        <li>Any device backup you made before deleting still belongs to your Apple or Google account, and you manage it there.</li>
+                    </ul>
+                    <p>You can also remove a single plant, with its whole history, from inside the App at any time.</p>
+                </section>
+                <section id="children" class="policy-section">
+                    <h2>12. Children&rsquo;s Privacy</h2>
+
+                    <p>MyPlants is suitable for all ages. It contains no ads, no user-generated content shown to anyone else, no chat, no social features, no links to social networks, and nothing unsuitable for a child.</p>
+                    <p>MyPlants does not knowingly collect personal information from anyone, including children under 13, because it does not collect personal information at all. We believe this places the App outside the collection provisions of COPPA and the equivalent rules elsewhere.</p>
+                    <p>Purchases should be made by, or with the consent of, the account holder. Parents can restrict purchases with Screen Time on Apple devices or parental controls on Google Play.</p>
+                </section>
+                <section id="international" class="policy-section">
+                    <h2>13. International Users</h2>
+
+                    <p>MyPlants is available worldwide and is localized into 45 languages. The App works entirely offline apart from the purchase check and crash reports, so ordinary use does not move your data across any border.</p>
+                    <p>The limited data described in sections 5 and 7 is processed by Sentry and RevenueCat, which operate in the United States, and by Apple or Google, which operate globally. Those transfers are covered by the providers' own safeguards and privacy policies.</p>
+                </section>
+                <section id="security" class="policy-section">
+                    <h2>14. Security</h2>
+
+                    <p>The strongest security measure in MyPlants is that there is nothing to steal. There is no server holding your garden, no database of users, and no account credentials, so there is no breach of ours that could expose your plants or your photos.</p>
+                    <p>On your device, the App's database, photos and settings sit in its protected storage, isolated by the operating system from other apps. Traffic to RevenueCat, to the stores, and to Sentry uses encrypted HTTPS connections.</p>
+                    <p>No method of electronic storage or transmission is perfectly secure. We keep the App's dependencies current and keep its data footprint as close to nothing as we can.</p>
+                </section>
+                <section id="changes" class="policy-section">
+                    <h2>15. Changes to This Policy</h2>
+
+                    <p>We may update this Privacy Policy to reflect changes to the App or to legal requirements. When we do:</p>
+                    <ul>
+                        <li>The "Last Updated" date at the top of this page will change</li>
+                        <li>Material changes, in particular any change to what the App collects, will be described in the App's release notes</li>
+                        <li>Continued use of MyPlants after a change takes effect means you accept the updated policy</li>
+                    </ul>
+                    <p>The current version is always available at this address and from the About &amp; support section of the App's You tab.</p>
+                </section>
+                <section id="contact" class="policy-section">
+                    <h2>16. Contact Us</h2>
+
+                    <p>If you have a question, a concern, or a request about this Privacy Policy, write to us. A real person reads it.</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:myplants@armandojimenez.dev">myplants@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Response Time</h3>
+                    <ul>
+                        <li>Within 30 days for general privacy inquiries</li>
+                        <li>Within 72 hours for urgent privacy concerns</li>
+                        <li>As required by applicable law for formal rights requests</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> August 29, 2026</p>
+                    <p><strong>Effective Date:</strong> August 29, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

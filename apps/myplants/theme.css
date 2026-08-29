@@ -1,0 +1,155 @@
+/*
+ * MyPlants — Peace Lily Theme
+ * Overrides for policy pages.
+ *
+ * Every value here is lifted from the app's own `lib/theme/plant_themes.dart`
+ * (PlantThemeId.lily, the default theme) and `lib/theme/type_scale.dart`, so
+ * the page a reader lands on from the paywall's fine print is painted in the
+ * app they just left. Bricolage Grotesque is the app's display face, Hanken
+ * Grotesk its text face, and Instrument Serif its one italic wink.
+ */
+
+/* MUST be first: an @import after any rule is invalid CSS and is dropped. */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+/* ===========================
+   Custom Color Palette — Peace Lily
+   =========================== */
+:root {
+    /* Light — MpPalette lily.light */
+    --bg-primary: #f4f0e6;      /* paper */
+    --bg-secondary: #ffffff;    /* card */
+    --bg-tertiary: #fbf7ee;     /* card2 */
+    --bg-accent: #e4f0e2;       /* leafTint — the section wash */
+
+    --text-primary: #18251c;    /* ink */
+    --text-secondary: #3d4c41;  /* ink2 */
+    --text-tertiary: #626e64;   /* ink3 */
+    --text-link: #2e6b4a;       /* pine */
+    --text-link-hover: #1d4632; /* pineDeep */
+
+    --border-color: #e2ddd0;    /* line (0.10 ink) flattened onto paper */
+    --border-light: #ece7db;
+
+    --accent-primary: #2e6b4a;  /* pine — the brand primary */
+    --accent-secondary: #4ba35d;/* leaf */
+    --accent-success: #4ba35d;
+    --accent-warning: #e0a83c;
+    --accent-danger: #b35c38;   /* accentFill, the app's own terracotta */
+}
+
+/* Dark — MpPalette lily.dark, the board's own drawn treatment. */
+[data-theme="dark"] {
+    --bg-primary: #11170e;      /* paper */
+    --bg-secondary: #1b231a;    /* card */
+    --bg-tertiary: #232d20;     /* card2 */
+    --bg-accent: #22331f;       /* leafTint */
+
+    --text-primary: #edf3e6;    /* ink */
+    --text-secondary: #b7c6b0;  /* ink2 */
+    --text-tertiary: #89997f;   /* ink3 */
+    --text-link: #5fb77f;       /* pine */
+    --text-link-hover: #7fd79b; /* leafInkStrong */
+
+    --border-color: #2b352a;    /* line (0.10 white) flattened onto card */
+    --border-light: #232d20;
+
+    --accent-primary: #5fb77f;
+    --accent-secondary: #5fbe74;
+    --accent-success: #5fbe74;
+    --accent-warning: #e8c266;
+    --accent-danger: #e0855c;
+}
+
+/* ===========================
+   Typography — the app's own faces
+   =========================== */
+
+.policy-title,
+.badge-title,
+.policy-section h2 {
+    font-family: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em;
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em;
+}
+
+body,
+.policy-section p,
+.policy-section li {
+    font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* The app sets its small labels in Hanken 700, upper-cased and widely
+   tracked — the treatment S12's Settings group headers get. */
+.badge-subtitle,
+.policy-meta,
+/* The shared sheet sets --font-mono on .meta-item specifically; MyPlants has
+   no mono face, so the date line takes the app's own caption treatment. */
+.policy-meta .meta-item {
+    font-family: 'Hanken Grotesk', -apple-system, sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.toc-title {
+    font-family: 'Hanken Grotesk', -apple-system, sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+}
+
+/* The app's one italic, used the way the app uses it: a single quiet line,
+   never a paragraph. */
+.policy-wink {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.35;
+    color: var(--text-primary);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* ===========================
+   The mark
+   =========================== */
+.badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-primary);
+}
+
+.badge-icon svg {
+    width: 2.25rem;
+    height: auto;
+    display: block;
+}
+
+/* ===========================
+   Surfaces — the app's 22px card radius
+   =========================== */
+.app-badge {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+}
+
+.highlight-box,
+.table-of-contents,
+.policy-content {
+    border-radius: 22px;
+}
+
+.highlight-box {
+    background: var(--bg-accent);
+    border-left: 3px solid var(--accent-secondary);
+}
