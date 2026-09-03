@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="deload" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en' && window.location.pathname.endsWith('-es.html')) {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Términos de uso - Deload</title>
+    <meta name="description" content="Términos de uso de Deload, inteligencia de recuperación muscular para quienes entrenan con pesas. Términos de suscripción y los límites de lo que es una estimación de recuperación.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg width="30" height="30" viewBox="0 0 48 48" fill="currentColor" aria-hidden="true">
+                        <path d="M23,9 L9,13 L12,23 L23,25 Z"></path>
+                        <path d="M25,9 L39,13 L36,23 L25,25 Z"></path>
+                        <path d="M8,13 L4.5,16.5 L6.5,22 L11.5,22.6 Z"></path>
+                        <path d="M40,13 L43.5,16.5 L41.5,22 L36.5,22.6 Z"></path>
+                        <path d="M23,27 L14,25.5 L16,40 L23,42 Z"></path>
+                        <path d="M25,27 L34,25.5 L32,40 L25,42 Z"></path>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Deload</div>
+                    <div class="badge-subtitle">Sabe qué entrenar hoy</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Términos de uso</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 3 de septiembre de 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Fecha de entrada en vigor: 3 de septiembre de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Contenido</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Aceptación de estos términos</a></li>
+                    <li><a href="#what-it-is">Qué es Deload</a></li>
+                    <li><a href="#not-advice">No es consejo médico</a></li>
+                    <li><a href="#eligibility">Elegibilidad</a></li>
+                    <li><a href="#licence">Tu licencia de uso</a></li>
+                    <li><a href="#your-log">Tu registro de entrenamiento</a></li>
+                    <li><a href="#acceptable-use">Uso aceptable</a></li>
+                    <li><a href="#subscriptions">Deload Pro: suscripciones y facturación</a></li>
+                    <li><a href="#trials">Pruebas gratuitas y ofertas introductorias</a></li>
+                    <li><a href="#refunds">Reembolsos</a></li>
+                    <li><a href="#notifications">Notificaciones</a></li>
+                    <li><a href="#availability">Disponibilidad y cambios</a></li>
+                    <li><a href="#ip">Propiedad intelectual</a></li>
+                    <li><a href="#third-party">Servicios de terceros y tiendas</a></li>
+                    <li><a href="#privacy">Privacidad</a></li>
+                    <li><a href="#warranties">Exención de garantías</a></li>
+                    <li><a href="#liability">Limitación de responsabilidad</a></li>
+                    <li><a href="#indemnity">Indemnización</a></li>
+                    <li><a href="#termination">Terminación</a></li>
+                    <li><a href="#law">Ley aplicable y disputas</a></li>
+                    <li><a href="#changes">Cambios a estos términos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Aceptación de estos términos</h2>
+                    <p>Estos Términos de uso ("Términos") son un acuerdo entre tú y Armando Jimenez ("nosotros") que rige tu uso de la aplicación móvil Deload ("la App"). Al descargar, instalar o usar la App aceptas estos Términos. Si no los aceptas, no uses la App.</p>
+                    <p>La App se distribuye a través de la App Store de Apple y de Google Play. Tu uso también está sujeto a los términos propios de esas tiendas, que se aplican junto con estos.</p>
+                </section>
+
+                <section id="what-it-is" class="policy-section">
+                    <h2>2. Qué es Deload</h2>
+                    <p>Deload es una app de recuperación muscular. Registras qué músculos entrenaste y con qué intensidad, y un motor determinista que corre en tu propio dispositivo estima qué tan recuperado está cada músculo ahora, predice cuándo estará listo cada uno y sugiere qué entrenar hoy.</p>
+                    <p>Es una estimación, producida por aritmética sobre las sesiones que registraste, seis respuestas de perfil autoreportadas y el tiempo transcurrido. No es una medición de tu cuerpo, no lee ningún sensor y no puede saber nada que no le hayas dicho.</p>
+                </section>
+
+                <section id="not-advice" class="policy-section">
+                    <h2>3. No es consejo médico</h2>
+                    <div class="highlight-box">
+                        <strong>Lee esta.</strong>
+                        <ul>
+                            <li>Deload no es un dispositivo médico, ni un servicio de salud, ni una herramienta de diagnóstico.</li>
+                            <li>No diagnostica, trata, cura ni previene ninguna condición ni lesión.</li>
+                            <li>No puede detectar una lesión, una enfermedad, un síndrome de sobreentrenamiento ni ningún otro estado médico.</li>
+                            <li>Nada de lo que muestra es consejo médico, fisioterapéutico, de rehabilitación ni nutricional.</li>
+                        </ul>
+                    </div>
+                    <p>Entrenar conlleva riesgo de lesión. Tú eres responsable de tus decisiones de entrenamiento y de juzgar si alguna sugerencia de la App es apropiada para ti en un día dado. Si estás lesionado, con dolor, embarazada, recuperándote de una enfermedad o cirugía, o gestionando cualquier condición médica, consulta a un profesional cualificado y sigue sus indicaciones por encima de cualquier cosa que diga la App.</p>
+                    <p>Consulta a un médico antes de comenzar cualquier programa de ejercicio. Detente y busca atención médica si sientes dolor, mareo, falta de aire o cualquier otro síntoma preocupante. Que la App diga que un músculo está "fresco" nunca es una autorización para entrenar, y que diga que está "quemado" nunca es un diagnóstico.</p>
+                </section>
+
+                <section id="eligibility" class="policy-section">
+                    <h2>4. Elegibilidad</h2>
+                    <p>Debes tener al menos 13 años, y edad suficiente para celebrar un contrato vinculante donde vives, para usar la App. Si eres menor de edad en tu jurisdicción, puedes usar la App únicamente con el consentimiento y la supervisión de un padre, madre o tutor, que acepta estos Términos en tu nombre.</p>
+                    <p>La App está diseñada para adultos que entrenan con pesas. No está destinada a niños.</p>
+                </section>
+
+                <section id="licence" class="policy-section">
+                    <h2>5. Tu licencia de uso</h2>
+                    <p>Te concedemos una licencia personal, limitada, no exclusiva, intransferible y revocable para instalar y usar una copia de la App en dispositivos que poseas o controles, para tu uso personal no comercial, conforme a estos Términos y a las reglas de tu tienda.</p>
+                    <p>No puedes copiar, modificar, traducir, aplicar ingeniería inversa, descompilar, desensamblar ni crear obras derivadas de la App, salvo en la medida en que la ley aplicable lo permita expresamente pese a esta restricción. No puedes vender, alquilar, sublicenciar, arrendar ni redistribuir la App, ni retirar de ella ningún aviso de propiedad.</p>
+                </section>
+
+                <section id="your-log" class="policy-section">
+                    <h2>6. Tu registro de entrenamiento</h2>
+                    <p>Todo lo que registras sigue siendo tuyo y se queda en tu dispositivo. No reclamamos ninguna propiedad sobre ello, no lo recibimos y no podríamos usarlo aunque quisiéramos: la App no tiene ningún servidor al que enviarlo.</p>
+                    <p>Como tu registro vive solo en tu dispositivo, conservarlo es tu responsabilidad. Borrar la App lo borra. No podemos recuperarlo por ti, restaurarlo en un teléfono nuevo ni exportarlo en tu nombre. La copia de seguridad de tu propio teléfono (Copia en iCloud o Copia de Android) es lo único que lo lleva adelante, y solo si la tienes activada.</p>
+                </section>
+
+                <section id="acceptable-use" class="policy-section">
+                    <h2>7. Uso aceptable</h2>
+                    <p>Aceptas no:</p>
+                    <ul>
+                        <li>Usar la App con ningún fin ilícito, ni en violación de estos Términos.</li>
+                        <li>Interferir con el funcionamiento de la App, ni intentar obtener acceso no autorizado a ninguna parte de ella ni a ningún sistema con el que se comunique.</li>
+                        <li>Eludir, desactivar ni manipular las comprobaciones de acceso que protegen las funciones de pago.</li>
+                        <li>Usar medios automatizados para acceder a la App a escala.</li>
+                    </ul>
+                </section>
+
+                <section id="subscriptions" class="policy-section">
+                    <h2>8. Deload Pro: suscripciones y facturación</h2>
+                    <p>La App es gratuita de descargar y su núcleo es gratuito de usar: registrar incluyendo cardio, el cuerpo de recuperación y su leyenda, la puntuación Ready, lo básico de la ficha de cada músculo, la gráfica semanal de balance, el temporizador de descanso y el indicador de días inteligentes. Un nivel de pago opcional, Deload Pro, desbloquea el resto.</p>
+                    <h3>8.1 Planes</h3>
+                    <p>Deload Pro se ofrece como una suscripción mensual de renovación automática y una suscripción anual de renovación automática. Qué planes están disponibles, en qué moneda y a qué precio lo determina tu tienda de apps para tu región, y las condiciones vigentes se muestran siempre en la App en la pantalla de compra antes de que compres. No publicamos precios en esta página, porque la cifra de la tienda es la única correcta.</p>
+                    <h3>8.2 Pago</h3>
+                    <p>El pago se carga a tu cuenta de la App Store de Apple o de Google Play cuando confirmas la compra. Toda la facturación la realiza la tienda. Nosotros nunca recibimos, manejamos ni guardamos tus datos de pago.</p>
+                    <h3>8.3 Renovación automática</h3>
+                    <p>Una suscripción se renueva por el mismo periodo al precio vigente en ese momento a menos que la canceles al menos 24 horas antes del final del periodo actual. Se cobra a tu cuenta la renovación dentro de las 24 horas previas al fin del periodo.</p>
+                    <h3>8.4 Cancelar</h3>
+                    <p>Cancelas una suscripción en los ajustes de tu cuenta de la tienda (App Store: Ajustes, tu nombre, Suscripciones. Google Play: Play Store, Pagos y suscripciones). <strong>Borrar la App no cancela una suscripción.</strong> Tras cancelar conservas el acceso hasta el final del periodo que ya pagaste.</p>
+                    <h3>8.5 Qué pasa cuando termina el acceso</h3>
+                    <p>Si una suscripción caduca, <strong>no se borra nada de lo que registraste</strong>. Cada sesión se queda exactamente donde está. Las pantallas de pago simplemente se bloquean de nuevo, y todo vuelve exactamente como estaba si te suscribes otra vez. Cancelar nunca te cuesta tu historial de entrenamiento.</p>
+                    <h3>8.6 Cambios de precio</h3>
+                    <p>Si un precio cambia, tu tienda te lo notificará y, donde la ley lo exija, pedirá tu consentimiento antes de cobrar el nuevo importe. Siempre puedes cancelar en su lugar.</p>
+                </section>
+
+                <section id="trials" class="policy-section">
+                    <h2>9. Pruebas gratuitas y ofertas introductorias</h2>
+                    <p>Puede ofrecerse una prueba gratuita en algunos planes, en algunas regiones, a clientes que no hayan usado una antes. Si eres elegible lo decide tu tienda de apps, no nosotros, y la App muestra la duración exacta de la prueba en la pantalla de compra cuando aplica. Donde no hay prueba disponible, la App no menciona ninguna.</p>
+                    <p>A menos que canceles al menos 24 horas antes de que termine una prueba gratuita, esta se convierte en una suscripción de pago y se cobra a tu cuenta. Cancelar durante la prueba la termina sin cargo; cualquier parte no usada de una prueba se pierde al suscribirse.</p>
+                </section>
+
+                <section id="refunds" class="policy-section">
+                    <h2>10. Reembolsos</h2>
+                    <p>Todas las compras las procesan Apple y Google, y <strong>todos los reembolsos los gestionan ellos bajo sus propias políticas</strong>. No podemos emitir, aprobar ni revertir un reembolso, porque nunca recibimos el pago.</p>
+                    <p>En iOS, solicita un reembolso en <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. En Android, solicítalo a través de Google Play. Los consumidores de la Unión Europea, el Reino Unido y otras jurisdicciones con derecho legal de desistimiento conservan esos derechos íntegramente, y la tienda los administra.</p>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>11. Notificaciones</h2>
+                    <p>La App puede enviarte un aviso al día a la hora que elijas, y una alerta cuando termina un temporizador de descanso. Los programa y los entrega tu propio dispositivo; nosotros no operamos ningún servicio de push y no podemos enviarte nada.</p>
+                    <p>La entrega depende de tu teléfono. Los ahorradores de batería, los modos de concentración, los ajustes de notificaciones, los límites del propio sistema operativo sobre cuántas notificaciones puede retener una app y, en Android, las alarmas deliberadamente inexactas que la App usa para el aviso diario para no mantener tu batería despierta, pueden retrasar o suprimir una notificación. <strong>No garantizamos que ninguna notificación se entregue a una hora exacta, ni que se entregue.</strong> No dependas de la App para nada crítico en el tiempo.</p>
+                </section>
+
+                <section id="availability" class="policy-section">
+                    <h2>12. Disponibilidad y cambios</h2>
+                    <p>Podemos cambiar, suspender o discontinuar la App, o cualquier función de ella, en cualquier momento. También podemos dejar de dar soporte a versiones antiguas del sistema operativo. Cuando un cambio elimine algo por lo que estés pagando, aplican las reglas de reembolso y cancelación de tu tienda.</p>
+                    <p>La App se proporciona tal como está en el momento en que la instalas. No prometemos que ninguna función en particular exista para siempre.</p>
+                </section>
+
+                <section id="ip" class="policy-section">
+                    <h2>13. Propiedad intelectual</h2>
+                    <p>La App, su nombre, su ícono, su interfaz, sus ilustraciones y el motor de recuperación que lleva dentro son de nuestra propiedad y están protegidos por derechos de autor y otras leyes. Estos Términos te conceden una licencia para usar la App, y nada más.</p>
+                    <p>La App incluye las tipografías Barlow y Barlow Condensed, y tipografías adicionales para los sistemas de escritura que aquellas no cubren, cada una bajo la SIL Open Font License. Sus avisos están disponibles dentro de la App a través del listado estándar de licencias de tu dispositivo.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>14. Servicios de terceros y tiendas</h2>
+                    <p>La App depende de Apple o Google para la distribución y el pago, de RevenueCat para comprobar el estado de la suscripción, y de Sentry para recibir informes de fallos. Sus propios términos y políticas de privacidad rigen lo que hacen.</p>
+                    <p>Apple y Google no son partes de estos Términos y no tienen responsabilidad alguna sobre la App. Donde las reglas de Apple lo exigen: Apple no tiene obligación de prestar mantenimiento ni soporte para la App; en caso de que la App no cumpla alguna garantía aplicable, puedes notificar a Apple y Apple te reembolsará el precio de compra, y en la máxima medida permitida por la ley Apple no tiene ninguna otra obligación de garantía; Apple no es responsable de atender ninguna reclamación relativa a la App; y Apple y sus filiales son terceros beneficiarios de estos Términos y pueden hacerlos valer frente a ti.</p>
+                </section>
+
+                <section id="privacy" class="policy-section">
+                    <h2>15. Privacidad</h2>
+                    <p>Nuestra <a href="privacy-policy-es.html">Política de privacidad</a> explica qué recopila y qué no recopila la App. La versión corta es que tu registro de entrenamiento nunca sale de tu dispositivo, no hay cuentas y no hay analítica de ningún tipo.</p>
+                </section>
+
+                <section id="warranties" class="policy-section">
+                    <h2>16. Exención de garantías</h2>
+                    <p>La App se proporciona "tal cual" y "según disponibilidad", sin garantía de ningún tipo, expresa o implícita, incluida cualquier garantía implícita de comerciabilidad, idoneidad para un fin determinado, exactitud o no infracción.</p>
+                    <p>No garantizamos que la App vaya a funcionar sin interrupciones, sin errores ni que esté disponible en un momento determinado; que sus estimaciones de recuperación, previsiones o sugerencias de entrenamiento sean exactas, completas o adecuadas para ti; ni que seguirlas produzca ningún resultado concreto o evite ninguna lesión.</p>
+                    <p>Algunas jurisdicciones no permiten la exclusión de garantías implícitas, de modo que parte de lo anterior puede no aplicarte, y puedes tener otros derechos que varían según la jurisdicción.</p>
+                </section>
+
+                <section id="liability" class="policy-section">
+                    <h2>17. Limitación de responsabilidad</h2>
+                    <p>En la máxima medida permitida por la ley, no somos responsables de ningún daño indirecto, incidental, especial, consecuente o punitivo, ni de ninguna pérdida de datos, beneficios o reputación, derivados de o relacionados con tu uso de la App, incluida cualquier lesión, agravamiento de una lesión o resultado de entrenamiento relacionado con una sugerencia que la App haya hecho.</p>
+                    <p>Nuestra responsabilidad total por todas las reclamaciones relacionadas con la App se limita a la mayor de (a) la cantidad que nos hayas pagado por la App en los doce meses anteriores al surgimiento de la reclamación, o (b) diez dólares estadounidenses.</p>
+                    <p>Nada en estos Términos excluye ni limita la responsabilidad que no puede excluirse ni limitarse por ley, incluida la responsabilidad por muerte o daños personales causados por negligencia, o por fraude.</p>
+                </section>
+
+                <section id="indemnity" class="policy-section">
+                    <h2>18. Indemnización</h2>
+                    <p>Aceptas indemnizarnos y mantenernos indemnes frente a cualquier reclamación, demanda, pérdida o gasto (incluidos honorarios legales razonables) derivados de tu uso indebido de la App o de tu incumplimiento de estos Términos.</p>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>19. Terminación</h2>
+                    <p>Puedes poner fin a este acuerdo en cualquier momento borrando la App. Nosotros podemos suspender o terminar tu licencia si incumples materialmente estos Términos.</p>
+                    <p>Las secciones 3, 6 y de la 13 a la 20 sobreviven a la terminación.</p>
+                </section>
+
+                <section id="law" class="policy-section">
+                    <h2>20. Ley aplicable y disputas</h2>
+                    <p>Estos Términos se rigen por las leyes del Estado Libre Asociado de Puerto Rico y de Estados Unidos, sin atender a las normas de conflicto de leyes. Los tribunales de Puerto Rico tienen jurisdicción exclusiva sobre cualquier disputa, salvo cuando la legislación imperativa de protección al consumidor de tu país de residencia te dé derecho a interponer una reclamación ante tus propios tribunales locales, en cuyo caso ese derecho no se ve afectado.</p>
+                    <p>Si eres consumidor en la Unión Europea o el Reino Unido, conservas las protecciones de la legislación imperativa de tu país de residencia, y nada de lo aquí escrito las elimina.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>21. Cambios a estos términos</h2>
+                    <p>Si estos Términos cambian, la versión actualizada se publica en esta dirección con una fecha nueva arriba. Los cambios importantes también se anunciarán en la App. Seguir usando la App después de un cambio significa que aceptas los Términos actualizados.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>22. Contacto</h2>
+                    <p>Preguntas sobre estos Términos: <a href="mailto:deload@armandojimenez.dev">deload@armandojimenez.dev</a>.</p>
+                    <p>Una sola persona lee ese buzón y responde cada mensaje que puede.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 3 de septiembre de 2026</p>
+                    <p><strong>Fecha de entrada en vigor:</strong> 3 de septiembre de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Armando Jimenez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

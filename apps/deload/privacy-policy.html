@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="deload" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Deload</title>
+    <meta name="description" content="Privacy Policy for Deload, muscle-recovery intelligence for people who lift. No accounts, no analytics, no tracking. Your training log lives on your device.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg width="30" height="30" viewBox="0 0 48 48" fill="currentColor" aria-hidden="true">
+                        <path d="M23,9 L9,13 L12,23 L23,25 Z"></path>
+                        <path d="M25,9 L39,13 L36,23 L25,25 Z"></path>
+                        <path d="M8,13 L4.5,16.5 L6.5,22 L11.5,22.6 Z"></path>
+                        <path d="M40,13 L43.5,16.5 L41.5,22 L36.5,22.6 Z"></path>
+                        <path d="M23,27 L14,25.5 L16,40 L23,42 Z"></path>
+                        <path d="M25,27 L34,25.5 L32,40 L25,42 Z"></path>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Deload</div>
+                    <div class="badge-subtitle">Know what to train today</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: September 3, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: September 3, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#short-version">The Short Version</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#on-your-device">What Lives on Your Device</a></li>
+                    <li><a href="#health">Your Training Log Is Not Sent Anywhere</a></li>
+                    <li><a href="#notifications">Notifications</a></li>
+                    <li><a href="#widgets">Home-Screen Widgets</a></li>
+                    <li><a href="#crash-reports">Crash Reports</a></li>
+                    <li><a href="#no-analytics">No Analytics, No Tracking, No Ads</a></li>
+                    <li><a href="#purchases">Deload Pro and Purchases</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#permissions">App Permissions</a></li>
+                    <li><a href="#sharing">Sharing Deload</a></li>
+                    <li><a href="#backups">Backups and Device Transfer</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#deleting">Deleting Your Data</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#not-advice">Not Medical Advice</a></li>
+                    <li><a href="#changes">Changes to This Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Deload ("the App") is a muscle-recovery app for people who lift, developed and operated by Armando Jimenez ("Deload," "we," "us," or "our"). Deload is published on the Apple App Store for iPhone and on Google Play for Android.</p>
+                    <p>You tap the muscles you trained on a body diagram, you pick how hard it was, and you are done in about ten seconds. The App turns that into how recovered each muscle is right now and tells you what to train today. That is the whole product. This policy is short for the best possible reason: Deload is built so that there is almost nothing to collect.</p>
+                    <div class="highlight-box">
+                        <strong>Our privacy promise</strong>
+                        <ul>
+                            <li>Deload has no accounts. No email, no password, no sign-in, ever.</li>
+                            <li>Your training log — every session, every muscle, every date — lives on YOUR device.</li>
+                            <li>There is no Deload server. We have nowhere to put your training history even if we wanted it.</li>
+                            <li>The App contains no analytics SDK. We do not measure how you use it, what you train, or how often you open it.</li>
+                            <li>There are no advertisements, no advertising identifier, and no tracking of any kind.</li>
+                            <li>The recovery engine runs entirely on your phone. It is arithmetic, not a service, and it works in airplane mode.</li>
+                            <li>The one thing that ever leaves your device is an anonymous crash report, and only when the App breaks.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="short-version" class="policy-section">
+                    <h2>2. The Short Version</h2>
+                    <p>If you read nothing else, read this.</p>
+                    <p>Deload collects no personal information and has no user accounts. The App makes network requests in exactly two situations: when it has crashed and is sending the diagnostic report described in section 8, and, if you open the paywall or subscribe, when it asks our payment provider whether this device has an active subscription. Everything else happens on your device, offline, and stays there.</p>
+                    <p>We do not know which muscles you trained, how hard, how often, what your recovery profile says, whether you are subscribed to notifications, or whether you open the App daily or once a year. None of that reaches us, because the App never sends it.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+                    <h3>3.1 Information you give us directly</h3>
+                    <p><strong>None.</strong> Deload has no registration, no profile, no sign-in and no forms. The onboarding asks you six questions — how often you train, how long you have been training, your age band, how much you sleep, how sore you usually get, and what you are here for — and every one of those answers is stored on your device and nowhere else. There is no field in the App that sends anything you enter to us.</p>
+                    <p>The only way you can send us anything is by choosing to email us at the address in section 22. If you do, we receive whatever you write in that email, and we use it only to answer you.</p>
+                    <h3>3.2 Information collected automatically</h3>
+                    <p><strong>No usage information.</strong> Deload contains no analytics, telemetry, attribution or advertising library. No usage event, session, screen view, muscle tap, workout, identifier or behavioural profile is generated or transmitted by the App.</p>
+                    <p><strong>Crash diagnostics only.</strong> When the App crashes it sends a technical report so the crash can be fixed. Section 8 describes exactly what that report contains and what it deliberately does not.</p>
+                    <h3>3.3 Information our payment provider processes</h3>
+                    <p>If you open the subscription screen or subscribe, our payment provider RevenueCat receives a pseudonymous device identifier and the receipt your app store issued, so it can tell the App whether this device currently has access. It receives no name, no email address, nothing about your training, and nothing about how you use the App. We never receive your payment card details: those go to Apple or Google and never touch us or the App.</p>
+                </section>
+
+                <section id="on-your-device" class="policy-section">
+                    <h2>4. What Lives on Your Device</h2>
+                    <p>All of the following is stored locally, in the App's own private storage area, which other apps on your phone cannot read:</p>
+                    <ul>
+                        <li>Every session you have logged: when it happened, whether it was lifting or conditioning, how hard it was, and which muscles it worked.</li>
+                        <li>For conditioning sessions, the kind (run, bike, row, swim, walk) and how many minutes it lasted.</li>
+                        <li>Your recovery profile — the six onboarding answers — and any change you make to it later in Me.</li>
+                        <li>Your settings: theme, language, whether notifications are on and the hour you chose for the daily call.</li>
+                        <li>Whether the App has an active subscription, cached so the right screen paints on the first frame.</li>
+                        <li>A small counter the App uses to decide whether it has earned the right to ask you for an App Store review. It holds a number of points and a date, and nothing about what you trained.</li>
+                    </ul>
+                    <p>None of this is transmitted anywhere. Deleting the App deletes all of it.</p>
+                </section>
+
+                <section id="health" class="policy-section">
+                    <h2>5. Your Training Log Is Not Sent Anywhere</h2>
+                    <p>This deserves its own section, because a fitness app is exactly the kind of app people reasonably assume is uploading something.</p>
+                    <p><strong>Deload is not.</strong> The recovery engine is a piece of arithmetic that runs on your phone. It takes three inputs — the sessions you logged, your six profile answers, and the current time — and produces every number the App shows. There is no model to call, no server to ask and no account to sync to. You can log a session, read your whole-body readiness, open the twelve-week view and get your daily call with the phone in airplane mode, and the answers are identical.</p>
+                    <p>Deload does not read from or write to Apple Health or Google Fit, and it does not ask for permission to. It has no access to your steps, your heart rate, your weight, your workouts from other apps, your location, your contacts, your camera, your microphone or your photos.</p>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>6. Notifications</h2>
+                    <p>Deload can send you one nudge a day at an hour you choose: either that a muscle group has recovered, or the day's call. It is worth being precise about how they work, because notifications are the part of an app people most often assume involves a server.</p>
+                    <p><strong>They do not.</strong> Deload uses <em>local</em> notifications only. The App works out the coming week's nudges on your device, from your own log, and hands the finished notifications to your phone's operating system, which holds them and shows them at the right moment. There is no push server, there is no push token, and no notification is ever sent to us or through us. The App can schedule your entire week in airplane mode.</p>
+                    <p>Because the text is written into your phone's notification queue in advance, it may briefly appear in the notification history that your operating system keeps. That history belongs to your phone, not to us.</p>
+                    <p>The App asks for notification permission at one designed moment during onboarding, where it explains why first, and from the switch in Me. It never asks on launch. If you refuse, the App keeps working; only the nudges stop. You can grant or revoke the permission at any time in your phone's Settings.</p>
+                    <p>The rest timer's "rest is over" alert is the same kind of local notification and follows the same rules.</p>
+                </section>
+
+                <section id="widgets" class="policy-section">
+                    <h2>7. Home-Screen Widgets</h2>
+                    <p>Deload can place a widget on your home screen showing your readiness. The widget is drawn by your phone from a small document the App writes into its own private storage — on iOS into the App's App Group container, on Android into the App's own preferences file. Nothing about the widget is fetched from a network, and nothing about it is reported anywhere.</p>
+                    <p>The document holds the same numbers the App itself shows, precomputed a couple of days ahead so the widget stays correct without waking the App. It is readable only by Deload and by Deload's own widget extension on your device.</p>
+                </section>
+
+                <section id="crash-reports" class="policy-section">
+                    <h2>8. Crash Reports</h2>
+                    <p>Deload uses <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a> to receive automatic crash reports. This is the only telemetry in the App, and it is deliberately configured to be the narrowest possible version of itself.</p>
+                    <h3>8.1 What a crash report contains</h3>
+                    <ul>
+                        <li>The error and the stack trace: which line of code failed.</li>
+                        <li>The App version, the operating system version and the device model.</li>
+                        <li>A random installation identifier, so two reports from the same crash loop can be recognised as one problem.</li>
+                    </ul>
+                    <h3>8.2 What it deliberately does not contain</h3>
+                    <ul>
+                        <li>Performance tracing, profiling and session replay are all switched OFF. Sentry can record what a user did before a crash; in this App it does not.</li>
+                        <li>Session tracking is switched off, so the App does not report that it was opened.</li>
+                        <li>App-hang reporting, failed-request capture and frame metrics are all switched off. Several of those are ON by default in the SDK; the App turns each one off explicitly.</li>
+                        <li>The option that would attach personally identifiable information to a report is explicitly set to false.</li>
+                        <li>No session you logged, no muscle, no date, no profile answer and no subscription state is attached to a report.</li>
+                    </ul>
+                    <p>A unit test asserts this exact configuration on every build, so it cannot quietly widen when the SDK changes a default. Sentry acts as our data processor, stores reports for a limited retention period and does not use them for its own purposes.</p>
+                </section>
+
+                <section id="no-analytics" class="policy-section">
+                    <h2>9. No Analytics, No Tracking, No Ads</h2>
+                    <p>Deload contains no analytics SDK of any kind. There is no Firebase Analytics, no Google Analytics, no Meta SDK, no attribution SDK and no advertising SDK inside the App. A test checks the shipped binaries for the Firebase SDK on both platforms, because Firebase is used only as a private pipe for delivering pre-release builds to the developer's own phone and must never become a toehold in the App itself.</p>
+                    <p>There is no advertising identifier in use. On iOS, the App never presents the App Tracking Transparency prompt, because it has nothing to track you with and nothing to link to a third party. Under Apple's definition, Deload does not track you.</p>
+                    <p>There are no advertisements in the App, and there never will be. There is no analytics opt-out setting because there is nothing to opt out of.</p>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>10. Deload Pro and Purchases</h2>
+                    <p>Deload is free to use. A subscription called Deload Pro unlocks the daily call, the seven-day forecast, exact-hour recovery times and curves, your session history, the twelve-week symmetry view, notifications, home-screen widgets and recovery-profile tuning. Everything else — logging, the readiness body, the Ready score, the weekly balance chart and the rest timer — is free and stays free.</p>
+                    <p>Purchases are handled entirely by Apple or Google. We never see, receive or store your payment card, your billing address or your store account.</p>
+                    <p>We use <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat</a> to check whether a device has an active subscription and to restore one you already bought. RevenueCat assigns your install an anonymous identifier and reads the vendor identifier your operating system gives the App, so a purchase can be attached to an install. It receives no name, no email address and nothing about your training. RevenueCat acts as our data processor.</p>
+                    <p>If a subscription lapses, the paid screens lock again and <strong>not one row of your training log is touched</strong>. Cancelling never costs you your history.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>11. Third-Party Services</h2>
+                    <p>These are the only third parties involved in the App, and this is everything each one receives:</p>
+                    <ul>
+                        <li><strong>Apple / Google</strong> — process your purchase and your subscription. Governed by their own privacy policies.</li>
+                        <li><strong>RevenueCat</strong> — receives a pseudonymous install identifier and your store receipt, in order to answer "does this device have Pro?".</li>
+                        <li><strong>Sentry</strong> — receives the crash report described in section 8, and only when the App crashes.</li>
+                    </ul>
+                    <p>There is no fourth. No content delivery network, no font server, no remote configuration service, no A/B testing service and no push provider is contacted by the App. The fonts and every image the App draws are compiled into the binary.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>12. App Permissions</h2>
+                    <p>Deload asks for exactly one permission, and only when you ask it to:</p>
+                    <ul>
+                        <li><strong>Notifications</strong> — requested at one designed moment during onboarding, and from the switch in Me. Nowhere else, and never on launch. Refusing it costs you nothing but the nudges.</li>
+                    </ul>
+                    <p>The App does not request location, contacts, camera, microphone, photos, calendar, motion, Bluetooth, health data or the advertising identifier. It does not request the ability to schedule exact alarms on Android; the daily nudges are deliberately inexact so that permission is never needed.</p>
+                </section>
+
+                <section id="sharing" class="policy-section">
+                    <h2>13. Sharing Deload</h2>
+                    <p>Me has a "Share Deload" row that opens your phone's own share sheet with a link to the App. What that sheet does next is between you and whichever app you pick. Deload does not learn who you shared with, whether you shared at all, or whether anyone followed the link.</p>
+                    <p>The Contact screen can open your email app with our address filled in, and the Terms and Privacy rows open this site in your browser. Nothing about your log travels with any of them.</p>
+                </section>
+
+                <section id="backups" class="policy-section">
+                    <h2>14. Backups and Device Transfer</h2>
+                    <p>Because everything lives in the App's private storage, your training log is included in whatever backup your phone already makes — iCloud Backup on iOS, Android Backup on Android — if you have those switched on. Those backups belong to you and to Apple or Google under their terms; they never pass through us and we cannot read them.</p>
+                    <p>Restoring a phone from a backup restores your log with it. Installing Deload on a second phone without a backup starts an empty log, because there is no account to sync from. If you buy Pro on one device, "Restore purchases" on the paywall re-establishes the subscription on another device signed into the same store account.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>15. Your Privacy Rights</h2>
+                    <p>Privacy law gives you rights over personal data a company holds about you — access, correction, deletion, portability, objection, and the right not to be discriminated against for exercising them. This includes the GDPR in the UK and the European Economic Area, and the CCPA and CPRA in California.</p>
+                    <p>Those rights are fully available to you, and in Deload's case they are unusually simple to satisfy: <strong>we hold no personal data about you</strong>. There is no account, no profile and no record on any server that could be looked up, exported or corrected. The training log a rights request would normally be about is on your device, under your control, and can be exported by your own phone's backup or destroyed by deleting the App.</p>
+                    <p>We do not sell or share personal information, and never have. There is no "Do Not Sell or Share My Personal Information" control because there is nothing being sold or shared.</p>
+                    <p>Where a crash report is processed, our lawful basis under the GDPR is legitimate interest: fixing crashes in software you are using. You may object to that processing by emailing us, and you can prevent it entirely by not using the App.</p>
+                </section>
+
+                <section id="deleting" class="policy-section">
+                    <h2>16. Deleting Your Data</h2>
+                    <p>Delete the App. That is the whole procedure, and it is complete: your sessions, your recovery profile, your settings and the cached subscription flag are all inside the App's private storage and go with it.</p>
+                    <p>If you also want the crash reports that may exist for your installation removed, email us at the address in section 22 and we will ask Sentry to delete them. They are not linked to you by name, so tell us roughly when the crashes happened and on which platform.</p>
+                    <p>Deleting the App does not cancel a subscription. Subscriptions are managed in your Apple or Google account; the Pro banner in Me links straight to the right page on the right store.</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>17. Children's Privacy</h2>
+                    <p>Deload is not directed at children and is not designed for them. It is rated for general audiences because it contains nothing objectionable, but it is a training tool for adults who lift.</p>
+                    <p>We do not knowingly collect personal information from anyone, of any age, because we do not collect personal information at all. The App has no accounts, no social features, no messaging, no user-generated content that anyone else can see and no way for one user to reach another.</p>
+                    <p>If you believe a child has somehow provided us with personal information, contact us and we will delete it.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>18. International Users</h2>
+                    <p>Deload is available worldwide and is translated into sixteen languages. The App itself sends nothing across a border because it sends almost nothing at all.</p>
+                    <p>The two exceptions are the crash reports and the subscription check described above, which are processed by Sentry and RevenueCat on infrastructure that may be located in the United States. Both act as our data processors under contract.</p>
+                </section>
+
+                <section id="security" class="policy-section">
+                    <h2>19. Security</h2>
+                    <p>Your training log is stored in the App's own private storage area, which the operating system isolates from other apps and which is covered by your device's own encryption when you have a passcode set.</p>
+                    <p>Every network request the App makes — the two of them — uses HTTPS. Release builds are compiled with the symbol names obfuscated.</p>
+                    <p>No system is perfectly secure. What we can honestly say is that the surface is very small: there is no server holding your data, no account to compromise and no credential to steal, because none of those exist.</p>
+                </section>
+
+                <section id="not-advice" class="policy-section">
+                    <h2>20. Not Medical Advice</h2>
+                    <p>Deload is a training tool, not a medical device and not a healthcare service. It estimates muscle recovery from what you tell it and from time elapsed, and it makes training suggestions on that basis.</p>
+                    <p>It does not diagnose, treat, cure or prevent anything. It cannot detect an injury, and it does not know about one unless you stop logging. Nothing it says is medical, physiotherapeutic or rehabilitation advice, and it should never be used in place of a qualified professional. If you are injured, in pain, or managing a condition, talk to a doctor or a physiotherapist and follow what they tell you over what the App says.</p>
+                    <p>The recovery windows the App uses are population estimates tuned by six self-reported answers. They are a useful default, not a measurement of your body.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>21. Changes to This Policy</h2>
+                    <p>If this policy changes, the updated version is posted at this address with a new date at the top. Material changes will also be announced in the App. Continuing to use the App after a change means you accept the updated policy.</p>
+                    <p>This page is the authoritative version. The App links to it rather than printing its own copy, so the two can never disagree.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>22. Contact Us</h2>
+                    <p>Questions about this policy, about your data, or about the App: <a href="mailto:deload@armandojimenez.dev">deload@armandojimenez.dev</a>.</p>
+                    <p>One person reads that mailbox and answers every message he can.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> September 3, 2026</p>
+                    <p><strong>Effective Date:</strong> September 3, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Armando Jimenez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/*
+ * Deload — the readiness palette.
+ * Overrides for the policy pages.
+ *
+ * Every value here is lifted from the app's own `lib/theme/palette.dart`
+ * (kDlDark and kDlLight, WITH the accessibility overrides the app's
+ * `make contrast` gate holds against 200 pairs), so the page a reader lands on
+ * from Me or from the paywall's fine print is painted in the app they just
+ * left. Barlow Condensed is Deload's display face, Barlow its UI face — the
+ * same two the binary bundles.
+ */
+
+/* ===========================
+   Light — the day palette (kDlLight)
+   =========================== */
+:root {
+    --bg-primary: #f1f2f6;      /* bg — the page ground */
+    --bg-secondary: #ffffff;    /* ground/card — every surface is white in v2 */
+    --bg-tertiary: #e4e9f1;     /* neutral — callouts and sheets */
+    --bg-accent: #e8e5fb;       /* accentSoft — the accent wash */
+
+    --text-primary: #171b23;    /* tx */
+    --text-secondary: #59626f;  /* sub */
+    --text-tertiary: #5e6674;   /* faint — the a11y override, 4.53:1 on card */
+    --text-link: #6553cb;       /* accentInk — accent is a HUE, ink carries text */
+    --text-link-hover: #171b23;
+
+    --border-color: #d3dae6;    /* plate */
+    --border-light: #e4e9f1;    /* neutral */
+
+    --accent-primary: #6553cb;  /* accentInk */
+    --accent-secondary: #166c7d;/* pullInk — the cardio cyan, as TEXT */
+    --accent-success: #0a734c;  /* freshInk */
+    --accent-warning: #8a5d12;  /* recoveringInk */
+    --accent-danger: #b73a2f;   /* cookedInk */
+}
+
+/* ===========================
+   Dark — the night palette (kDlDark)
+   =========================== */
+[data-theme="dark"] {
+    --bg-primary: #0b0e14;      /* bg */
+    --bg-secondary: #131728;    /* ground */
+    --bg-tertiary: #1a2029;     /* plate */
+    --bg-accent: #1d1b33;       /* the accent wash over the night ground */
+
+    --text-primary: #f1f4f9;    /* tx */
+    --text-secondary: #99a3b4;  /* sub */
+    --text-tertiary: #7d8a9e;   /* faint */
+    --text-link: #9b8cff;       /* accent — its own ink in dark */
+    --text-link-hover: #f1f4f9;
+
+    --border-color: #212a39;    /* plateSel */
+    --border-light: #171c27;    /* card2 */
+
+    --accent-primary: #9b8cff;  /* accent */
+    --accent-secondary: #56cfe4;/* pull */
+    --accent-success: #3fd99b;  /* fresh */
+    --accent-warning: #edac3f;  /* recovering */
+    --accent-danger: #f1584a;   /* cookedInk */
+}
+
+/* ===========================
+   Typography — the app's own two faces
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Condensed is the display face: the READY numeral, the call's headline, the
+   wordmark. Everything that announces rather than explains. */
+.policy-title,
+.badge-title,
+.policy-section h2 {
+    font-family: 'Barlow Condensed', 'Barlow', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 0;
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: 'Barlow', -apple-system, sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+}
+
+/* The eyebrow voice: tracked, small, uppercase — the app tracks HARD on every
+   label it draws, and this is the one place these pages do the same. */
+.badge-subtitle {
+    font-family: 'Barlow', -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 0.82em;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.highlight-box strong {
+    font-family: 'Barlow', -apple-system, sans-serif;
+    font-weight: 700;
+}
+
+/* The mark and the words read as one lockup, the way the app's own header
+   does: the body on the left, both lines ranged against it. */
+.badge-text {
+    text-align: left;
+}
+
+/* ===========================
+   The mark's own chrome
+   =========================== */
+/* The shared stylesheet sizes this box as TEXT (font-size: 2rem), which leaves
+   an inline SVG with no width at all. The body gets a real box — and the
+   accent bloom the app paints under its own stage. */
+.badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    flex: 0 0 auto;
+    background: radial-gradient(circle at 50% 45%, #e8e5fb 0%, #f1f2f6 72%);
+    color: #6553cb;
+    border-radius: 16px;
+}
+
+[data-theme="dark"] .badge-icon {
+    background: radial-gradient(circle at 50% 45%, #1d1b33 0%, #131728 72%);
+    color: #9b8cff;
+}
+
+.back-to-top {
+    background: var(--accent-primary) !important;
+    color: #0c0e15 !important;   /* onAccent — the app's own label on accent */
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: #0c0e15;
+    border-color: var(--accent-primary);
+}
+
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+}
+
+/* Night ink on accent, not white: the app's own CTA label is `onAccent`, and
+   its contrast gate pins that pair. */
+::selection {
+    background: var(--accent-primary);
+    color: #0c0e15;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: #0c0e15;
+}
