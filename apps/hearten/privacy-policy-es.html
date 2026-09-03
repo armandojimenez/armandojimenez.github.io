@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="hearten" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de privacidad - Hearten</title>
+    <meta name="description" content="Política de privacidad de Hearten, un libro de días más luminosos. Hearten no tiene cuentas ni analítica: las páginas que guardas, escribes y escondes se quedan en tu dispositivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="60" cy="60" r="44" stroke-width="1.6"></circle>
+                        <circle cx="60" cy="60" r="38" stroke-width="0.9" opacity="0.6"></circle>
+                        <path d="M60 34c-7 9-19 11.5-19 24a19 19 0 0 0 38 0c0-12.5-12-15-19-24Z" stroke-width="2"></path>
+                        <path d="M60 71a9.5 9.5 0 0 1-9.5-9.5" stroke-width="1.6"></path>
+                        <path d="M60 16v8M60 96v8M16 60h8M96 60h8" stroke-width="1.4" opacity="0.7"></path>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Hearten</div>
+                    <div class="badge-subtitle">Un libro de días más luminosos</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 3 de septiembre de 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Fecha de entrada en vigor: 3 de septiembre de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Índice</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#the-short-version">La versión corta</a></li>
+                    <li><a href="#information-collection">Información que recopilamos</a></li>
+                    <li><a href="#on-your-device">Lo que vive en tu dispositivo</a></li>
+                    <li><a href="#crash-reports">Informes de errores</a></li>
+                    <li><a href="#no-analytics">Sin analítica, sin rastreo, sin anuncios</a></li>
+                    <li><a href="#purchases">La edición Gilded y las compras</a></li>
+                    <li><a href="#notifications">Lecturas diarias</a></li>
+                    <li><a href="#photographs">Tus fotografías</a></li>
+                    <li><a href="#permissions">Permisos de la App</a></li>
+                    <li><a href="#backups">Copias de seguridad y cambio de dispositivo</a></li>
+                    <li><a href="#your-rights">Tus derechos de privacidad</a></li>
+                    <li><a href="#deleting">Borrar tus datos</a></li>
+                    <li><a href="#children">Privacidad de los menores</a></li>
+                    <li><a href="#international">Usuarios internacionales</a></li>
+                    <li><a href="#security">Seguridad</a></li>
+                    <li><a href="#changes">Cambios en esta política</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Hearten ("la App") es un libro de días más luminosos: afirmaciones que pasas como las páginas de un libro encuadernado en tela. La desarrolla y opera Believe PR, propiedad de Armando Jimenez ("Hearten", "nosotros"), y se publica en la App Store de Apple para iPhone y en Google Play para Android.</p>
+                    <p>Esta política es corta por la mejor razón posible. Hearten no tiene cuentas, no tiene servidor propio y no tiene nada que ganar sabiendo quién eres. El libro que guardas se guarda en tu teléfono.</p>
+                    <div class="highlight-box">
+                        <strong>Nuestra promesa de privacidad</strong>
+                        <ul>
+                            <li>Hearten no tiene cuentas. Nunca un correo, una contraseña ni un inicio de sesión.</li>
+                            <li>Las páginas que escribes, las que guardas o escondes, tus lecturas, tus encuadernados y tu nombre viven en TU dispositivo.</li>
+                            <li>No existe un servidor de Hearten. No tendríamos dónde poner tu libro aunque quisiéramos.</li>
+                            <li>No hay biblioteca de analítica, ni publicidad, ni identificador publicitario, ni ningún perfil tuyo en ninguna parte.</li>
+                            <li>La App envía un solo tipo de informe, y solo cuando falla: un informe de errores, sin ninguna palabra de tus páginas y sin tu nombre.</li>
+                            <li>La fotografía con la que encuadernas una portada se copia a la carpeta privada de la App en tu teléfono. Nunca sale de ahí.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="the-short-version" class="policy-section">
+                    <h2>2. La versión corta</h2>
+                    <p>Si no lees nada más, lee esto.</p>
+                    <p>Hearten no recopila información personal. La App hace dos tipos de conexión en toda su vida: una a nuestro proveedor de pagos, RevenueCat, para saber si esta cuenta de la tienda tiene la edición Gilded; y otra a Sentry, nuestro proveedor de informes de errores, si la App deja de funcionar. Todo lo demás ocurre en tu dispositivo, sin conexión, y ahí se queda.</p>
+                    <p>No sabemos qué páginas guardaste, qué escribiste, qué libros abriste ni si leíste esta mañana. Nada de eso nos llega, porque la App nunca lo envía.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Información que recopilamos</h2>
+                    <h3>3.1 Información que nos das directamente</h3>
+                    <p><strong>Ninguna.</strong> Hearten no tiene registro, ni perfil en ningún servidor, ni inicio de sesión. La App te pregunta tu nombre la primera vez que la abres, solo para que tu libro lo lleve en la portada; ese nombre se escribe en tu dispositivo y nunca se transmite.</p>
+                    <p>La única forma de enviarnos algo es escribirnos a la dirección de la última sección. Si lo haces, recibimos lo que escribas y lo usamos únicamente para responderte.</p>
+                    <h3>3.2 Información recopilada automáticamente</h3>
+                    <p><strong>Ningún dato de uso, de ningún tipo.</strong> Hearten no incluye ninguna biblioteca de analítica, telemetría, atribución o publicidad. No se genera ni se transmite ninguna vista de pantalla, sesión, toque, página leída o identificador con fines de medición. La App no le pide permiso a iOS para rastrearte, porque no tiene con qué hacerlo.</p>
+                    <p>La única excepción es el informe de errores que describe la <a href="#crash-reports">sección 5</a>, y solo se produce cuando la App falla.</p>
+                    <h3>3.3 Información que procesa nuestro proveedor de pagos</h3>
+                    <p>Para vender, restaurar y comprobar la suscripción Gilded, la App se comunica con RevenueCat, que actúa como nuestro proveedor de infraestructura de pagos. Se explica por completo en la <a href="#purchases">sección 7</a>.</p>
+                    <h3>3.4 Información que la App guarda en tu dispositivo</h3>
+                    <p>Hearten guarda tu libro localmente para que esté donde lo dejaste. Eso nunca sale del dispositivo, salvo por la copia de seguridad de tu propio sistema operativo. Ver la <a href="#on-your-device">sección 4</a>.</p>
+                </section>
+
+                <section id="on-your-device" class="policy-section">
+                    <h2>4. Lo que vive en tu dispositivo</h2>
+                    <p>Hearten guarda una pequeña base de datos y algunos archivos de preferencias en su almacenamiento privado. Entre todos contienen:</p>
+                    <ul>
+                        <li>las páginas que has guardado y las que has escondido;</li>
+                        <li>las páginas que has escrito, con la firma que les hayas puesto;</li>
+                        <li>qué páginas has leído y cuándo, para que el libro sepa qué mostrarte después;</li>
+                        <li>tus lecturas diarias: sus horas, sus días y el libro del que toma cada una;</li>
+                        <li>tu encuadernado, tus capítulos elegidos, tu nombre y tu idioma;</li>
+                        <li>cualquier fotografía que hayas importado para encuadernar una portada, copiada a la carpeta privada de la App.</li>
+                    </ul>
+                    <p>Nada de esto se sube a ningún sitio, y no podemos leer nada de ello. Borrar la App lo borra todo.</p>
+                </section>
+
+                <section id="crash-reports" class="policy-section">
+                    <h2>5. Informes de errores</h2>
+                    <p>Los informes de errores son la única telemetría de Hearten, y existen para que una falla se pueda reparar en vez de adivinar. Los provee <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> (Functional Software, Inc.), que actúa como encargado del tratamiento.</p>
+                    <h3>5.1 Qué contiene un informe</h3>
+                    <ul>
+                        <li>el error y la traza que lo produjo;</li>
+                        <li>el modelo del dispositivo, la versión del sistema operativo y la versión de la App;</li>
+                        <li>un rastro corto de los eventos de la propia App antes de la falla (una pantalla que se abrió, una página que se pasó), registrado solo dentro de un informe de error.</li>
+                    </ul>
+                    <h3>5.2 Qué no contiene nunca</h3>
+                    <ul>
+                        <li>el texto de ninguna página que hayas leído, guardado o escrito;</li>
+                        <li>tu nombre, tu correo ni ninguna cuenta;</li>
+                        <li>tu dirección IP ni ningún identificador publicitario: la App desactiva la recopilación de datos personales que el SDK trae por defecto;</li>
+                        <li>capturas de pantalla, grabaciones de sesión, trazas de rendimiento ni informes de bloqueo: todas esas funciones están apagadas en la configuración de la App, y una prueba automática en su código las mantiene apagadas.</li>
+                    </ul>
+                    <p>Sentry conserva los informes durante un periodo limitado según la configuración de nuestro proyecto, y solo se usan para arreglar la falla que describen.</p>
+                </section>
+
+                <section id="no-analytics" class="policy-section">
+                    <h2>6. Sin analítica, sin rastreo, sin anuncios</h2>
+                    <p>Hearten no contiene ningún SDK de analítica, de publicidad, de atribución ni de redes sociales. No hay anuncios en la App y nunca los habrá. No hay identificador publicitario, ni huella digital, ni ningún perfil tuyo construido por nosotros ni por nadie en nuestro nombre.</p>
+                    <p>Por eso tampoco hay un interruptor de privacidad para apagarlo: no hay nada detrás del interruptor. Las propias comprobaciones de publicación de la App verifican que no haya ninguna biblioteca de analítica en el binario.</p>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>7. La edición Gilded y las compras</h2>
+                    <p>Hearten se lee gratis. La edición Gilded es una suscripción de renovación automática que abre toda la Biblioteca, el Taller, páginas propias sin límite, más lecturas diarias y los widgets de la pantalla de inicio.</p>
+                    <h3>7.1 Quién procesa qué</h3>
+                    <p>El cobro lo hace por completo Apple o Google. Nunca vemos tu tarjeta, tu dirección de facturación ni el nombre de tu cuenta.</p>
+                    <p>Para saber si este dispositivo tiene la suscripción, la App usa a RevenueCat, Inc. como proveedor de infraestructura de pagos. RevenueCat recibe:</p>
+                    <ul>
+                        <li>un identificador anónimo que genera él mismo para esta instalación;</li>
+                        <li>el recibo o token de compra de la suscripción;</li>
+                        <li>información básica del dispositivo, la plataforma, el país y la versión de la App.</li>
+                    </ul>
+                    <p>RevenueCat nunca recibe tu nombre, tu correo ni nada de lo que leas o escribas en la App. Su política de privacidad está en <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+                    <h3>7.2 Restaurar</h3>
+                    <p>"Restaurar compras" le pregunta a la tienda, a través de RevenueCat, qué tiene ya esta cuenta. No envía nada tuyo que la tienda no tenga.</p>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>8. Lecturas diarias</h2>
+                    <p>Una lectura es una notificación que la App programa en tu propio dispositivo, a través del sistema operativo, a las horas que elegiste. No hay servidor de notificaciones, ni token del dispositivo, ni mensaje nuestro.</p>
+                    <p>Las palabras de una lectura se componen en el teléfono con los libros que ya están dentro de la App. No se transmite nada sobre tus lecturas, y apagar las notificaciones en los ajustes del sistema las detiene sin afectar nada de lo que hayas guardado.</p>
+                </section>
+
+                <section id="photographs" class="policy-section">
+                    <h2>9. Tus fotografías</h2>
+                    <p>El Taller te deja encuadernar un libro con tu propia fotografía. Cuando eliges una, el sistema operativo le entrega a la App solo esa imagen; la App la copia a su carpeta privada para que tu portada perdure, y nunca toca el resto de tu galería.</p>
+                    <p>La copia se guarda únicamente en tu dispositivo. No se sube, no se analiza y no se comparte. Borrar el libro encuadernado borra la copia, y borrar la App las borra todas.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>10. Permisos de la App</h2>
+                    <ul>
+                        <li><strong>Notificaciones</strong> — opcional. Se pide solo cuando configuras una lectura diaria. Negarlo deja el resto de la App intacto.</li>
+                        <li><strong>Galería o cámara</strong> — opcional. Se pide solo cuando encuadernas una portada con tu propia foto.</li>
+                    </ul>
+                    <p>Hearten nunca pide tus contactos, tu ubicación, tu micrófono, tus datos de salud ni tu calendario, y no contiene código que pudiera usarlos.</p>
+                </section>
+
+                <section id="backups" class="policy-section">
+                    <h2>11. Copias de seguridad y cambio de dispositivo</h2>
+                    <p>La copia de seguridad de tu dispositivo (iCloud en iOS, Google One en Android) puede incluir los datos locales de Hearten, igual que con tus otras apps. Esas copias las hace y las cifra Apple o Google bajo sus propios términos; no tenemos acceso a ellas ni forma de leerlas.</p>
+                    <p>Restaurar un dispositivo desde una copia así restaura tu libro con él.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>12. Tus derechos de privacidad</h2>
+                    <p>Según dónde vivas, puedes tener derechos bajo el RGPD, el RGPD del Reino Unido, la CCPA/CPRA o leyes similares: saber qué datos personales se tienen sobre ti, obtener una copia, corregirlos, borrarlos y no sufrir discriminación por ejercer cualquiera de ellos.</p>
+                    <p>Aquí son fáciles de satisfacer, porque casi no tenemos nada. No tenemos una cuenta tuya, ni un perfil, ni forma de identificarte. Los informes de errores de la sección 5 no llevan identidad; el identificador de pagos de la sección 7 lo genera RevenueCat y no está ligado a tu nombre.</p>
+                    <p>No vendemos ni compartimos información personal, y nunca lo hemos hecho. Hearten no hace publicidad conductual de ningún tipo. Si quieres ejercer un derecho, escríbenos a la dirección de abajo y te responderemos.</p>
+                </section>
+
+                <section id="deleting" class="policy-section">
+                    <h2>13. Borrar tus datos</h2>
+                    <ul>
+                        <li><strong>Una página</strong> — quítala desde el escritorio de escritura, o recupérala desde las páginas escondidas, dentro de la App.</li>
+                        <li><strong>Todo</strong> — borra la App. Su base de datos, sus preferencias y todas las fotografías importadas se van con ella.</li>
+                        <li><strong>Tu suscripción</strong> — se cancela donde se compró: en los ajustes de tu cuenta de App Store o Google Play. Cancelar no borra nada de lo que hayas creado.</li>
+                        <li><strong>Un informe de error</strong> — escríbenos con la fecha y el dispositivo y borraremos cualquier informe de ese periodo.</li>
+                    </ul>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>14. Privacidad de los menores</h2>
+                    <p>Hearten es una app para público general y no está dirigida a menores de 13 años (o la edad mínima equivalente donde vivas). No recopilamos a sabiendas información personal de menores; de hecho, no recopilamos información personal de nadie.</p>
+                    <p>Si crees que un menor nos ha enviado algo a la dirección de contacto, escríbenos y lo borraremos.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>15. Usuarios internacionales</h2>
+                    <p>Hearten se opera desde Estados Unidos. Los dos encargados del tratamiento nombrados en esta política, Sentry y RevenueCat, también tratan datos en Estados Unidos. Cuando ocurre una transferencia de datos personales fuera del Espacio Económico Europeo o del Reino Unido, se realiza bajo las Cláusulas Contractuales Tipo de la Comisión Europea, incorporadas en nuestros acuerdos con esos encargados.</p>
+                    <p>Como la App guarda tu libro en tu propio dispositivo, usar Hearten en otro país no transfiere nada.</p>
+                </section>
+
+                <section id="security" class="policy-section">
+                    <h2>16. Seguridad</h2>
+                    <p>Tu libro se guarda en el almacenamiento privado de la App, protegido por el cifrado y el código de tu propio dispositivo. No hay cuenta de Hearten que vulnerar ni base de datos de Hearten que filtrar.</p>
+                    <p>Las dos conexiones que hace la App van por TLS. Ningún método de transmisión o almacenamiento es perfectamente seguro, pero el dato más seguro es el que nadie recopila, y ese es el diseño.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>17. Cambios en esta política</h2>
+                    <p>Podemos actualizar esta política. Cuando lo hagamos, cambiará la fecha de "Última actualización" al inicio de esta página, y un cambio importante se describirá en las notas de la versión de la App. La versión vigente siempre está en esta dirección, y la página de Términos y privacidad de la App enlaza a ella.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>18. Contacto</h2>
+                    <p>Las preguntas sobre privacidad son bienvenidas. Las lee una persona de verdad.</p>
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo:</strong> <a href="mailto:hearten@armandojimenez.dev">hearten@armandojimenez.dev</a></p>
+                        <p><strong>Sitio web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+                    <h3>Relacionado</h3>
+                    <ul>
+                        <li><a href="terms-es.html">Términos y condiciones</a></li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 3 de septiembre de 2026</p>
+                    <p><strong>Fecha de entrada en vigor:</strong> 3 de septiembre de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

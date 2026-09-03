@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="hearten" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Términos y condiciones - Hearten</title>
+    <meta name="description" content="Términos y condiciones de Hearten, un libro de días más luminosos, y de la suscripción a la edición Gilded.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="60" cy="60" r="44" stroke-width="1.6"></circle>
+                        <circle cx="60" cy="60" r="38" stroke-width="0.9" opacity="0.6"></circle>
+                        <path d="M60 34c-7 9-19 11.5-19 24a19 19 0 0 0 38 0c0-12.5-12-15-19-24Z" stroke-width="2"></path>
+                        <path d="M60 71a9.5 9.5 0 0 1-9.5-9.5" stroke-width="1.6"></path>
+                        <path d="M60 16v8M60 96v8M16 60h8M96 60h8" stroke-width="1.4" opacity="0.7"></path>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Hearten</div>
+                    <div class="badge-subtitle">Un libro de días más luminosos</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Términos y condiciones</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 3 de septiembre de 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Fecha de entrada en vigor: 3 de septiembre de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Índice</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Aceptación de los términos</a></li>
+                    <li><a href="#description">Qué es Hearten</a></li>
+                    <li><a href="#license">Licencia de uso</a></li>
+                    <li><a href="#your-book">Tu libro es tuyo</a></li>
+                    <li><a href="#purchases">La edición Gilded y las suscripciones</a></li>
+                    <li><a href="#obligations">Tus responsabilidades</a></li>
+                    <li><a href="#safe-use">Usar Hearten con calma</a></li>
+                    <li><a href="#intellectual-property">Propiedad intelectual</a></li>
+                    <li><a href="#prohibited-uses">Usos prohibidos</a></li>
+                    <li><a href="#availability">Disponibilidad y cambios</a></li>
+                    <li><a href="#termination">Terminación</a></li>
+                    <li><a href="#disclaimers">Exenciones de garantía</a></li>
+                    <li><a href="#limitation">Limitación de responsabilidad</a></li>
+                    <li><a href="#indemnification">Indemnización</a></li>
+                    <li><a href="#governing-law">Ley aplicable y controversias</a></li>
+                    <li><a href="#changes">Cambios en los términos</a></li>
+                    <li><a href="#contact">Información de contacto</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Aceptación de los términos</h2>
+                    <p>Estos Términos y condiciones rigen tu uso de Hearten ("la App"), publicada por Believe PR, propiedad de Armando Jimenez ("nosotros"). Al descargar, abrir o usar la App los aceptas. Si no los aceptas, por favor no uses la App.</p>
+                    <p>Tu uso de la App también está sujeto a los términos de la tienda desde la que la instalaste. Para las suscripciones compradas en la App Store de Apple aplica el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Contrato de licencia de usuario final estándar</a> de Apple y, cuando entre en conflicto con estos Términos, prevalece.</p>
+                </section>
+
+                <section id="description" class="policy-section">
+                    <h2>2. Qué es Hearten</h2>
+                    <p>Hearten es un libro de días más luminosos: una colección de afirmaciones que lees de página en página, guardas, escondes, en la que escribes las tuyas y que se te lee a las horas que elijas. Es una app de lectura.</p>
+                    <div class="highlight-box warning">
+                        <strong>Hearten no es atención médica ni de salud mental</strong>
+                        <p>La App es para el bienestar general y la reflexión. No diagnostica, trata, cura ni previene ninguna condición, y no sustituye el consejo profesional, la terapia ni la atención de un profesional cualificado. Nunca ignores un consejo profesional, ni retrases buscarlo, por algo que hayas leído en Hearten.</p>
+                        <p>Si estás en crisis o crees que puedes estar en peligro, llama de inmediato al número de emergencias de tu país o a una línea de crisis. Hearten no puede ayudar en una emergencia.</p>
+                    </div>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>3. Licencia de uso</h2>
+                    <p>Te concedemos una licencia personal, limitada, no exclusiva, intransferible y revocable para instalar y usar la App en dispositivos que poseas o controles, para tu uso personal y no comercial, conforme a estos Términos y a las reglas de la tienda desde la que la instalaste.</p>
+                    <p>No puedes copiar, vender, sublicenciar, alquilar, aplicar ingeniería inversa ni intentar obtener el código fuente de la App, salvo cuando la ley prohíba esa restricción.</p>
+                </section>
+
+                <section id="your-book" class="policy-section">
+                    <h2>4. Tu libro es tuyo</h2>
+                    <p>Las páginas que escribes, las portadas que encuadernas con tus fotografías y las decisiones que tomas en la App son tuyas. No reclamamos su propiedad ni ninguna licencia sobre ellas.</p>
+                    <p>Tampoco nos llegan: como explica nuestra <a href="privacy-policy-es.html">Política de privacidad</a>, todo lo que creas en Hearten se guarda en tu propio dispositivo. Eso significa que no podemos recuperarlo por ti si borras la App o pierdes el dispositivo, y es tu responsabilidad mantener una copia de seguridad si la quieres.</p>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>5. La edición Gilded y las suscripciones</h2>
+                    <p>Hearten se lee gratis. La edición Gilded es una suscripción opcional de renovación automática que abre todos los libros de la Biblioteca, el Taller, páginas propias sin límite, más lecturas diarias y los widgets de la pantalla de inicio.</p>
+                    <h3>5.1 Precio, periodo y prueba</h3>
+                    <p>El precio, el periodo de facturación y cualquier prueba gratuita se muestran en la App antes de comprar, en tu moneda y con el formato de tu tienda. Cuando se ofrece una prueba gratuita, se concede una vez por cuenta de la tienda: si ya la usaste, la App no vuelve a ofrecerla y lo dice.</p>
+                    <h3>5.2 Renovación y cancelación</h3>
+                    <ul>
+                        <li>La suscripción se renueva automáticamente al final de cada periodo, salvo que se cancele al menos 24 horas antes de que termine.</li>
+                        <li>El cobro de la renovación se hace dentro de las 24 horas previas al fin del periodo vigente.</li>
+                        <li>Cuando se ofrece una prueba gratuita, la parte no usada se pierde si compras la suscripción antes de que termine.</li>
+                        <li>Se cancela en los ajustes de tu cuenta de la tienda, no en la App: <strong>Ajustes &rarr; tu nombre &rarr; Suscripciones</strong> en iOS, o <strong>Play Store &rarr; Pagos y suscripciones</strong> en Android.</li>
+                        <li>Borrar la App no cancela una suscripción.</li>
+                    </ul>
+                    <h3>5.3 Reembolsos</h3>
+                    <p>Todas las compras las procesan Apple o Google, y los reembolsos les corresponden a ellos según sus políticas. Nosotros no podemos emitirlos. Escríbenos igualmente si algo salió mal: te ayudaremos a llegar al lugar correcto.</p>
+                    <h3>5.4 Si caduca</h3>
+                    <p>Nada de lo que creaste se borra cuando termina una suscripción. Tus páginas, tus libros encuadernados, tus lecturas y tus encuadernados se quedan exactamente donde están, y vuelven a leerse en cuanto la edición se abra otra vez.</p>
+                    <h3>5.5 Cambios de precio</h3>
+                    <p>Si el precio de una suscripción cambia, la tienda te avisa y te pide tu consentimiento cuando sus reglas lo exigen. Un cambio nunca se aplica a un periodo que ya pagaste.</p>
+                </section>
+
+                <section id="obligations" class="policy-section">
+                    <h2>6. Tus responsabilidades</h2>
+                    <ul>
+                        <li>Usar la App conforme a la ley y solo como permiten estos Términos.</li>
+                        <li>Mantener seguros tu dispositivo y tu cuenta de la tienda.</li>
+                        <li>Guardar una copia de seguridad si las páginas que escribes te importan: nosotros no tenemos copia.</li>
+                        <li>Encuadernar portadas solo con fotografías que tengas derecho a usar.</li>
+                    </ul>
+                </section>
+
+                <section id="safe-use" class="policy-section">
+                    <h2>7. Usar Hearten con calma</h2>
+                    <p>Hearten está pensada para ser una parte pequeña y tranquila del día: una página por la mañana, una lectura por la noche. No está diseñada para usarse sin parar, y nada en ella te premia por hacerlo.</p>
+                    <p>Si leer afirmaciones te hace sentir peor en lugar de mejor, para y habla con alguien cualificado. Si algún contenido de la App te angustia, esconde la página o escríbenos, y lo revisaremos.</p>
+                </section>
+
+                <section id="intellectual-property" class="policy-section">
+                    <h2>8. Propiedad intelectual</h2>
+                    <p>La App, su diseño, su tipografía, sus ilustraciones, su nombre y la colección de afirmaciones que incluye son propiedad de Believe PR y están protegidos por las leyes de derechos de autor y otras.</p>
+                    <p>Puedes compartir una página de la App con otra persona mediante el control de compartir de la propia App. No puedes extraer, republicar ni redistribuir la colección, entera o en parte sustancial, con ningún fin.</p>
+                </section>
+
+                <section id="prohibited-uses" class="policy-section">
+                    <h2>9. Usos prohibidos</h2>
+                    <p>No puedes:</p>
+                    <ul>
+                        <li>copiar, extraer o redistribuir el contenido de la App como colección;</li>
+                        <li>modificar, descompilar o aplicar ingeniería inversa a la App, salvo lo que permita la ley;</li>
+                        <li>eludir la edición Gilded ni ninguna medida técnica de la App;</li>
+                        <li>usar la App para infringir la ley, o para dañar u hostigar a alguien;</li>
+                        <li>revender, alquilar o explotar comercialmente la App o su contenido.</li>
+                    </ul>
+                </section>
+
+                <section id="availability" class="policy-section">
+                    <h2>10. Disponibilidad y cambios</h2>
+                    <p>Trabajamos para que Hearten esté disponible y sea agradable de usar, pero no prometemos que funcione sin interrupciones ni sin errores. Podemos cambiar, añadir o quitar funciones, y podemos dejar de dar soporte a sistemas operativos antiguos, según avancen las plataformas.</p>
+                    <p>La App funciona sin conexión; no necesita nuestros servidores para abrir tu libro.</p>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>11. Terminación</h2>
+                    <p>Puedes dejar de usar Hearten cuando quieras borrándola. Nosotros podemos suspender o terminar tu licencia si incumples estos Términos de una forma que dañe la App o a otra persona.</p>
+                    <p>Las secciones que por su naturaleza sobreviven a la terminación —propiedad intelectual, exenciones, limitación de responsabilidad, indemnización y ley aplicable— siguen vigentes.</p>
+                </section>
+
+                <section id="disclaimers" class="policy-section">
+                    <h2>12. Exenciones de garantía</h2>
+                    <p>LA APP SE PROPORCIONA "TAL CUAL" Y "SEGÚN DISPONIBILIDAD", SIN GARANTÍAS DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS, INCLUIDAS ENTRE OTRAS LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN FIN DETERMINADO Y NO INFRACCIÓN.</p>
+                    <p>No garantizamos que la App cumpla tus requisitos, que funcione sin interrupciones, ni que se corrija cualquier defecto. Algunas jurisdicciones no permiten excluir las garantías implícitas, así que parte de lo anterior puede no aplicarte.</p>
+                </section>
+
+                <section id="limitation" class="policy-section">
+                    <h2>13. Limitación de responsabilidad</h2>
+                    <p>EN LA MÁXIMA MEDIDA QUE PERMITA LA LEY, BELIEVE PR Y ARMANDO JIMENEZ NO SERÁN RESPONSABLES DE DAÑOS INDIRECTOS, INCIDENTALES, ESPECIALES, CONSECUENTES O PUNITIVOS, NI DE NINGUNA PÉRDIDA DE DATOS, DERIVADOS DE TU USO DE LA APP.</p>
+                    <p>Nuestra responsabilidad total por cualquier reclamación relacionada con la App no excederá la mayor de estas dos cantidades: lo que nos hayas pagado por ella en los doce meses anteriores a la reclamación, o veinticinco dólares estadounidenses.</p>
+                    <p>Algunas jurisdicciones no permiten estas limitaciones, así que puede que algunas no te apliquen. Nada aquí limita una responsabilidad que la ley no permita limitar.</p>
+                </section>
+
+                <section id="indemnification" class="policy-section">
+                    <h2>14. Indemnización</h2>
+                    <p>Aceptas indemnizar y mantener indemnes a Believe PR y a Armando Jimenez frente a cualquier reclamación o demanda, incluidos honorarios legales razonables, derivada de tu incumplimiento de estos Términos, del mal uso de la App, o de tu infracción de cualquier ley o de los derechos de otra persona.</p>
+                </section>
+
+                <section id="governing-law" class="policy-section">
+                    <h2>15. Ley aplicable y controversias</h2>
+                    <p>Estos Términos se rigen por las leyes del Estado Libre Asociado de Puerto Rico y de los Estados Unidos de América, sin atender a las normas sobre conflicto de leyes. Cualquier controversia se presentará ante los tribunales de San Juan, Puerto Rico, y tanto tú como nosotros aceptamos su jurisdicción.</p>
+                    <p>Si eres consumidor con residencia en la Unión Europea o el Reino Unido, esto no te priva de la protección de las normas imperativas del país donde vives, ni de tu derecho a acudir a sus tribunales.</p>
+                    <p>Antes de cualquier paso formal, por favor escríbenos. Casi todo se resuelve con un correo.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>16. Cambios en los términos</h2>
+                    <p>Podemos actualizar estos Términos de vez en cuando. Cuando lo hagamos:</p>
+                    <ul>
+                        <li>cambiará la fecha de "Última actualización" al inicio de esta página;</li>
+                        <li>un cambio importante se describirá en las notas de la versión de la App;</li>
+                        <li>seguir usando la App después de que un cambio entre en vigor significa que aceptas los Términos actualizados.</li>
+                    </ul>
+                    <p>La versión vigente siempre está en esta dirección, y la página de Términos y privacidad de la App enlaza a ella.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>17. Información de contacto</h2>
+                    <p>Las preguntas sobre estos Términos son bienvenidas. Las lee una persona de verdad.</p>
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo:</strong> <a href="mailto:hearten@armandojimenez.dev">hearten@armandojimenez.dev</a></p>
+                        <p><strong>Sitio web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+                    <h3>Relacionado</h3>
+                    <ul>
+                        <li><a href="privacy-policy-es.html">Política de privacidad</a></li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 3 de septiembre de 2026</p>
+                    <p><strong>Fecha de entrada en vigor:</strong> 3 de septiembre de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

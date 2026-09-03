@@ -1,0 +1,225 @@
+/*
+ * Hearten — Morning Light Theme
+ * Overrides for policy pages.
+ *
+ * Every value here is lifted from the app's own `lib/theme/tokens.dart`
+ * (the paper ramp, the ink scale, clay, sage and gold), so the page a reader
+ * lands on from the paywall's fine print is painted in the book they just
+ * left. Cormorant Garamond is the app's display face; EB Garamond is
+ * everything else. The app itself is one light theme by design; the dark
+ * palette below is this page's own candlelight, for a reader whose browser
+ * asks for one.
+ */
+
+/* ===========================
+   Custom Color Palette — Morning Light
+   =========================== */
+:root {
+    /* Light — the paper ramp, exactly as the app uses it */
+    --bg-primary: #fbf7ed;      /* paper-1  — the ground */
+    --bg-secondary: #fdfaf2;    /* paper-0  — cards */
+    --bg-tertiary: #f6efdf;     /* paper-2  — sheets */
+    --bg-accent: #f2e7cd;       /* the gilded wash */
+
+    --text-primary: #43392b;    /* ink-1 */
+    --text-secondary: #55482f;  /* ink-2 */
+    --text-tertiary: #74654c;   /* the metadata ink (the app's AA override) */
+    --text-link: #8a5637;       /* clay-ink */
+    --text-link-hover: #9c5f3e; /* clay-2 */
+
+    --border-color: #efe5cf;    /* paper-3 */
+    --border-light: #f6efdf;    /* paper-2 */
+
+    --accent-primary: #ab7a55;  /* clay-soft */
+    --accent-secondary: #b0714f;/* clay-1 */
+    --accent-success: #5c6b50;  /* sage-ink */
+    --accent-warning: #b98a4e;  /* gold — Gilded's alone */
+    --accent-danger: #9c5f3e;
+}
+
+/* Candlelight — the book read after dark. The same warm hues on a deep ink
+   ground, lifted until they clear AA against it. */
+[data-theme="dark"] {
+    --bg-primary: #2b241a;
+    --bg-secondary: #362e22;
+    --bg-tertiary: #40372a;
+    --bg-accent: #453723;
+
+    --text-primary: #fbf7ed;
+    --text-secondary: #e6dcc6;
+    --text-tertiary: #c2b295;
+    --text-link: #dfa878;
+    --text-link-hover: #f0c49b;
+
+    --border-color: #4a4032;
+    --border-light: #40372a;
+
+    --accent-primary: #dfa878;
+    --accent-secondary: #e8bf95;
+    --accent-success: #9db28e;
+    --accent-warning: #d8ad72;
+    --accent-danger: #e0a07e;
+}
+
+/* ===========================
+   Typography — the app's own two serifs, and no third face
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+body,
+.policy-section p,
+.policy-section li {
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif !important;
+}
+
+.policy-title,
+.badge-title,
+.policy-section h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    font-weight: 600 !important;
+    letter-spacing: 0;
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    font-weight: 500 !important;
+}
+
+/* The app sets its small labels letterspaced, in the body face — the same
+   treatment the page anatomy gives a category name. */
+.badge-subtitle,
+.policy-meta {
+    font-family: 'EB Garamond', Georgia, serif !important;
+    font-style: italic;
+    letter-spacing: 0.04em;
+}
+
+.toc-title {
+    font-family: 'EB Garamond', Georgia, serif !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.72rem;
+}
+
+/* ===========================
+   The mark
+   =========================== */
+.badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-primary);
+}
+
+.badge-icon svg {
+    width: 2.5rem;
+    height: auto;
+    display: block;
+}
+
+/* ===========================
+   Surfaces — warm paper, never a cool grey
+   =========================== */
+.app-badge {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.highlight-box {
+    background: var(--bg-tertiary);
+    border-left-color: var(--accent-primary);
+}
+
+.highlight-box.warning {
+    background: rgba(185, 138, 78, 0.14);
+    border-left-color: var(--accent-warning);
+}
+
+.contact-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+/* Flat, not gradient-filled: the app's headings are solid ink, and a
+   gradient wash is a flourish the design does not have anywhere. */
+.policy-section h2 {
+    color: var(--text-primary);
+    border-bottom-color: var(--border-color);
+}
+
+.contact-card h3 {
+    color: var(--text-primary);
+}
+
+/* ===========================
+   Controls
+   =========================== */
+.theme-toggle {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 16px rgba(138, 90, 50, 0.22);
+}
+
+.nav-link {
+    background: var(--bg-secondary);
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: #fdf9ee;
+    border-color: var(--accent-primary);
+}
+
+.back-to-top {
+    background: var(--accent-primary) !important;
+    color: #fdf9ee !important;
+}
+
+.back-to-top:hover {
+    box-shadow: 0 8px 24px rgba(138, 90, 50, 0.34) !important;
+}
+
+/* ===========================
+   TOC + links
+   =========================== */
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+.policy-section a {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
+
+/* ===========================
+   Chrome
+   =========================== */
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+}
+
+/* Cream on clay, not the other way round: the app's own CTA makes the same
+   call, and its contrast gate pins it. */
+::selection {
+    background: var(--accent-primary);
+    color: #fdf9ee;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: #fdf9ee;
+}
