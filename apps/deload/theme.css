@@ -173,3 +173,18 @@ body {
     background: var(--accent-primary);
     color: #0c0e15;
 }
+
+/* ===========================
+   Mobile: the switcher and the badge stop sharing a corner
+   =========================== */
+/* On a phone the shared stylesheet stacks the language buttons into a column
+   pinned at `top: 5.5rem`, and stacks the badge into a column that starts at
+   roughly the same place — so English/Español land ON TOP of the app name.
+   Every app on this site does it; Deload does not have to. The header simply
+   starts below the switcher, which needs one number and no change to the
+   shared sheet. */
+@media (max-width: 767px) {
+    .policy-header {
+        padding-top: 7.5rem;
+    }
+}
