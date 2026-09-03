@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="manifestation" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms of Use - Manifestation</title>
+    <meta name="description" content="Terms of Use for Manifestation, a deck of daily manifestation commands. Subscription terms, content licence, and the limits of what a motivational app is.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg width="26" height="33" viewBox="0 0 44 56" fill="none" aria-hidden="true">
+                        <path d="M22 3C11.5 3 5 10.5 5 21v32h34V21C39 10.5 32.5 3 22 3Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                        <path d="M22 14l1.9 7.6L31.5 23.5 23.9 25.4 22 33l-1.9-7.6L12.5 23.5l7.6-1.9Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Manifestation</div>
+                    <div class="badge-subtitle">Stop asking. Start assuming.</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms of Use</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: September 3, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: September 3, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of These Terms</a></li>
+                    <li><a href="#what-it-is">What Manifestation Is</a></li>
+                    <li><a href="#not-advice">Not Medical or Professional Advice</a></li>
+                    <li><a href="#eligibility">Eligibility</a></li>
+                    <li><a href="#licence">Your Licence to Use the App</a></li>
+                    <li><a href="#your-content">The Commands You Write</a></li>
+                    <li><a href="#acceptable-use">Acceptable Use</a></li>
+                    <li><a href="#subscriptions">The Gold Door: Subscriptions and Billing</a></li>
+                    <li><a href="#trials">Free Trials and Introductory Offers</a></li>
+                    <li><a href="#refunds">Refunds</a></li>
+                    <li><a href="#notifications">Notifications</a></li>
+                    <li><a href="#availability">Availability and Changes</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#third-party">Third-Party Services and Stores</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+                    <li><a href="#liability">Limitation of Liability</a></li>
+                    <li><a href="#indemnity">Indemnity</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#governing-law">Governing Law and Disputes</a></li>
+                    <li><a href="#changes">Changes to These Terms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of These Terms</h2>
+                    <p>These Terms of Use ("Terms") are an agreement between you and Believe PR, owned by Armando Jimenez ("we," "us," or "our"), governing your use of the Manifestation mobile application ("the App").</p>
+                    <p>By downloading, installing or using the App, you accept these Terms. If you do not accept them, do not use the App.</p>
+                    <div class="highlight-box">
+                        <strong>The short version</strong>
+                        <ul>
+                            <li>The App gives you short commanding messages. It is motivational content, not therapy and not advice.</li>
+                            <li>What you write inside the App is yours. We never see it; it stays on your device.</li>
+                            <li>The Gold Door is an optional subscription. Prices are shown in the App and billed by your app store.</li>
+                            <li>Subscriptions renew until you cancel, and you cancel in your store account, not in the App.</li>
+                            <li>Refunds are handled by Apple or Google under their policies, not by us.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="what-it-is" class="policy-section">
+                    <h2>2. What Manifestation Is</h2>
+                    <p>Manifestation is a deck of short written messages, which the App calls commands, organised into categories. You choose the categories that feed your deck, read the cards, save the ones that land, hide the ones that do not, and can write your own. You can also set up to five notification profiles, which the App calls strikes, so that commands reach you at times of your choosing during the day.</p>
+                    <p>The App keeps everything on your device. It requires no account and works offline.</p>
+                </section>
+                <section id="not-advice" class="policy-section">
+                    <h2>3. Not Medical or Professional Advice</h2>
+                    <p><strong>This is the most important clause in this document. Please read it.</strong></p>
+                    <p>Manifestation provides general motivational and mindset content for personal reflection. It is not medical advice, mental-health treatment, psychotherapy, counselling, diagnosis, or financial, legal or professional advice of any kind, and it does not create a professional relationship of any kind between you and us.</p>
+                    <p>The content makes no promise about outcomes. Reading a command will not by itself change your health, your relationships, your income or your circumstances, and nothing in the App should be understood as a guarantee that it will.</p>
+                    <p>Never disregard professional advice, or delay seeking it, because of something you read in the App. If you are experiencing a mental-health crisis or considering harming yourself, stop reading and contact your local emergency services or a crisis line immediately.</p>
+                    <p>If you have a medical or psychological condition, consult a qualified professional before relying on any practice suggested by content in the App.</p>
+                </section>
+                <section id="eligibility" class="policy-section">
+                    <h2>4. Eligibility</h2>
+                    <p>You must be at least 13 years old to use the App, or at least 16 where your local law sets that minimum for using an online service. If you are under the age of majority where you live, you may use the App only with the involvement of a parent or guardian, and only they may make a purchase.</p>
+                    <p>By using the App you confirm that you meet these requirements and that you are not barred from using it under any applicable law.</p>
+                </section>
+                <section id="licence" class="policy-section">
+                    <h2>5. Your Licence to Use the App</h2>
+                    <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable licence to install and use the App on devices you own or control, for your own non-commercial use, in accordance with these Terms and with your app store's own rules.</p>
+                    <p>You may not: copy, redistribute, sell, sublicense, rent or lease the App; reverse-engineer, decompile or disassemble it except to the extent your local law expressly permits; remove or alter any notice in it; use it to build a competing product; or extract its content in bulk for republication or for training a machine-learning model.</p>
+                </section>
+                <section id="your-content" class="policy-section">
+                    <h2>6. The Commands You Write</h2>
+                    <p>The App lets you write your own commands and give yourself a name. That text is <strong>yours</strong>. It is stored on your device, it is never transmitted to us, and we claim no ownership of it and no licence over it.</p>
+                    <p>Because it never leaves your device, we cannot recover it for you. If you delete the App, uninstall it, reset your phone, or lose your device, that text is gone unless your phone's own backup happens to hold it. Keep a copy elsewhere if it matters to you.</p>
+                    <p>You are responsible for what you write, and for making sure you have the right to write it.</p>
+                </section>
+                <section id="acceptable-use" class="policy-section">
+                    <h2>7. Acceptable Use</h2>
+                    <p>You agree not to use the App to break the law, to infringe anyone's rights, to interfere with the App's operation or security, to circumvent any payment or access mechanism, or to attempt to access parts of the service you are not entitled to.</p>
+                    <p>The App has no social features, no comments and no shared content, so there is no other user for you to affect. Content you share out of the App becomes subject to the terms of wherever you share it.</p>
+                </section>
+                <section id="subscriptions" class="policy-section">
+                    <h2>8. The Gold Door: Subscriptions and Billing</h2>
+                    <p>The App is free to download and includes free content. An optional paid tier, the Gold Door, unlocks additional features.</p>
+                    <h3>8.1 Plans</h3>
+                    <p>The Gold Door is offered as an auto-renewing monthly subscription, an auto-renewing annual subscription, and a one-time lifetime purchase. Which plans are available, in which currency, and at what price, is determined by your app store for your region, and the current terms are always displayed in the App on the purchase screen before you buy. We do not publish prices on this page, because the store's figure is the only correct one.</p>
+                    <h3>8.2 Payment</h3>
+                    <p>Payment is charged to your Apple App Store or Google Play account when you confirm the purchase. All billing is performed by the store. We never receive, handle or store your payment details.</p>
+                    <h3>8.3 Automatic renewal</h3>
+                    <p>An auto-renewing subscription renews for the same period at the then-current price unless you cancel it at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the period ends. A lifetime purchase does not renew.</p>
+                    <h3>8.4 Cancelling</h3>
+                    <p>You cancel a subscription in your store account settings (App Store: Settings, your name, Subscriptions. Google Play: Play Store, Payments and subscriptions). <strong>Deleting the App does not cancel a subscription.</strong> After cancelling you keep access until the end of the period you already paid for.</p>
+                    <h3>8.5 What happens when access ends</h3>
+                    <p>If a subscription lapses, nothing you created is deleted. Commands you saved stay saved and readable, commands you wrote stay stored and visible, and hidden commands stay hidden. Features that require the Gold Door simply become unavailable, and everything returns exactly as it was if you subscribe again.</p>
+                    <h3>8.6 Price changes</h3>
+                    <p>If a price changes, your store will notify you and, where the law requires it, ask for your consent before charging the new amount. You can always cancel instead.</p>
+                </section>
+                <section id="trials" class="policy-section">
+                    <h2>9. Free Trials and Introductory Offers</h2>
+                    <p>A free trial may be offered on some plans, in some regions, to customers who have not used one before. Whether you are eligible is decided by your app store, not by us, and the App shows the exact trial length on the purchase screen when one applies.</p>
+                    <p>Unless you cancel at least 24 hours before a free trial ends, it converts into a paid subscription and your account is charged. Cancelling during the trial ends it without a charge; any unused part of a trial is forfeited when you subscribe.</p>
+                </section>
+                <section id="refunds" class="policy-section">
+                    <h2>10. Refunds</h2>
+                    <p>All purchases are processed by Apple and Google, and <strong>all refunds are handled by them under their own policies</strong>. We cannot issue, approve or reverse a refund, because we never receive the payment.</p>
+                    <p>On iOS, request a refund at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. On Android, request one through Google Play. Consumers in the European Union, the United Kingdom and other jurisdictions with statutory withdrawal rights keep those rights in full, and the store administers them.</p>
+                </section>
+                <section id="notifications" class="policy-section">
+                    <h2>11. Notifications</h2>
+                    <p>The App can send you notifications at times you configure. They are scheduled and delivered by your own device; we do not operate a push service and cannot send you anything.</p>
+                    <p>Delivery depends on your phone. Battery savers, focus modes, notification settings, the operating system's own limits on how many notifications an app may hold, and, on Android, the deliberately inexact alarms the App uses so it does not hold your battery awake, can all delay or suppress a notification. <strong>We do not guarantee that any notification will be delivered at an exact time, or at all.</strong> Do not rely on the App for anything time-critical.</p>
+                </section>
+                <section id="availability" class="policy-section">
+                    <h2>12. Availability and Changes</h2>
+                    <p>We may add, change, or remove features, categories, content or plans at any time, and we may stop distributing or supporting the App. We will give reasonable notice of a material change where we can.</p>
+                    <p>The App is provided as-is and we do not promise uninterrupted availability. A subscription you have already paid for will be honoured for its paid period, or refunded through the store, if we discontinue the App.</p>
+                </section>
+                <section id="intellectual-property" class="policy-section">
+                    <h2>13. Intellectual Property</h2>
+                    <p>The App, its name, its design, its artwork, its icons and all of its written commands are owned by Believe PR and protected by copyright and other laws. Nothing in these Terms transfers any of that to you.</p>
+                    <p>You may share individual cards from the App, as the App itself offers, for personal non-commercial use. You may not reproduce the content collection in whole or in substantial part, republish it, sell it, or use it to train a machine-learning model.</p>
+                    <p>The App bundles open-source fonts and software components under their own licences; those notices are registered inside the App and viewable through your device.</p>
+                </section>
+                <section id="third-party" class="policy-section">
+                    <h2>14. Third-Party Services and Stores</h2>
+                    <p>Your use of the App is also subject to the terms of the app store you obtained it from. Where those terms conflict with these, the store's terms govern the relationship between you and the store.</p>
+                    <p><strong>Apple:</strong> if you obtained the App from the App Store, you acknowledge that these Terms are between you and us and not with Apple; that Apple has no obligation to provide maintenance or support for the App; that in the event of any failure of the App to conform to a warranty, you may notify Apple and Apple will refund the purchase price, and that to the maximum extent permitted by law Apple has no other warranty obligation; that Apple is not responsible for addressing any claim relating to the App; and that Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</p>
+                    <p>The App communicates with Sentry for crash reports and RevenueCat for subscription status, as described in the <a href="privacy-policy.html">Privacy Policy</a>. Those services operate under their own terms.</p>
+                </section>
+                <section id="privacy" class="policy-section">
+                    <h2>15. Privacy</h2>
+                    <p>Our <a href="privacy-policy.html">Privacy Policy</a> explains what the App does and does not collect. It forms part of these Terms. In short: no accounts, no analytics, no tracking, and everything you create stays on your device.</p>
+                </section>
+                <section id="disclaimer" class="policy-section">
+                    <h2>16. Disclaimer of Warranties</h2>
+                    <p>To the fullest extent permitted by law, the App and its content are provided "as is" and "as available", without warranties of any kind, whether express, implied or statutory, including any implied warranty of merchantability, fitness for a particular purpose, title, or non-infringement.</p>
+                    <p>We do not warrant that the App will be uninterrupted, timely, secure or error-free, that notifications will arrive, that defects will be corrected, or that the content will produce any particular result for you.</p>
+                    <p>Some jurisdictions do not allow the exclusion of implied warranties, so parts of this section may not apply to you. Nothing here limits any non-excludable statutory consumer right you have.</p>
+                </section>
+                <section id="liability" class="policy-section">
+                    <h2>17. Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by law, we are not liable for any indirect, incidental, special, consequential, exemplary or punitive damages, or for any loss of profits, revenue, data, goodwill or opportunity, arising out of or in connection with your use of or inability to use the App, whether based on contract, tort, negligence, strict liability or otherwise, and whether or not we were advised of the possibility.</p>
+                    <p>To the fullest extent permitted by law, our total aggregate liability arising out of or relating to the App is limited to the greater of the amount you actually paid us for the App in the twelve months before the claim, or twenty-five United States dollars.</p>
+                    <p>Nothing in these Terms excludes or limits liability for death or personal injury caused by negligence, for fraud or fraudulent misrepresentation, or for anything else that cannot lawfully be excluded. Some jurisdictions do not allow these limitations, so parts of this section may not apply to you.</p>
+                </section>
+                <section id="indemnity" class="policy-section">
+                    <h2>18. Indemnity</h2>
+                    <p>You agree to indemnify and hold harmless Believe PR and Armando Jimenez from any claim, demand, loss or expense, including reasonable legal fees, arising from your misuse of the App, your breach of these Terms, or your violation of any law or of anyone's rights.</p>
+                </section>
+                <section id="termination" class="policy-section">
+                    <h2>19. Termination</h2>
+                    <p>You may stop using the App at any time by deleting it. We may suspend or terminate your licence if you materially breach these Terms, in particular by attempting to circumvent payment or by extracting the content in bulk.</p>
+                    <p>Sections 3, 6, 13 and 16 through 20 survive termination.</p>
+                </section>
+                <section id="governing-law" class="policy-section">
+                    <h2>20. Governing Law and Disputes</h2>
+                    <p>These Terms are governed by the laws of the Commonwealth of Puerto Rico and the United States of America, without regard to conflict-of-law rules. Consumers keep the protection of the mandatory laws of their own country of residence, and may bring proceedings there.</p>
+                    <p>If a dispute arises, please write to us first: nearly everything is resolved by a single email. Where a dispute cannot be resolved informally, the courts of Puerto Rico have jurisdiction, subject to the consumer rights above.</p>
+                    <p>If any provision of these Terms is held unenforceable, the rest remains in force.</p>
+                </section>
+                <section id="changes" class="policy-section">
+                    <h2>21. Changes to These Terms</h2>
+                    <p>We may update these Terms. The current version is always at this address with its date at the top, and material changes will be announced in the App. Continuing to use the App after a change means you accept it. If you do not accept it, stop using the App and cancel any subscription.</p>
+                </section>
+                <section id="contact" class="policy-section">
+                    <h2>22. Contact</h2>
+                    <p>Questions about these Terms: <a href="mailto:manifestation@armandojimenez.dev">manifestation@armandojimenez.dev</a>.</p>
+                    <p>Believe PR, Carolina, Puerto Rico.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> September 3, 2026</p>
+                    <p><strong>Effective Date:</strong> September 3, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

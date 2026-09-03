@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="manifestation" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Privacy Policy - Manifestation</title>
+    <meta name="description" content="Privacy Policy for Manifestation, a deck of daily manifestation commands. No accounts, no analytics and no tracking. Everything you save, write and schedule stays on your device.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg width="26" height="33" viewBox="0 0 44 56" fill="none" aria-hidden="true">
+                        <path d="M22 3C11.5 3 5 10.5 5 21v32h34V21C39 10.5 32.5 3 22 3Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                        <path d="M22 14l1.9 7.6L31.5 23.5 23.9 25.4 22 33l-1.9-7.6L12.5 23.5l7.6-1.9Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Manifestation</div>
+                    <div class="badge-subtitle">Stop asking. Start assuming.</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: September 3, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: September 3, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#short-version">The Short Version</a></li>
+                    <li><a href="#information-collection">Information We Collect</a></li>
+                    <li><a href="#on-your-device">What Lives on Your Device</a></li>
+                    <li><a href="#notifications">Strikes and Notifications</a></li>
+                    <li><a href="#crash-reports">Crash Reports</a></li>
+                    <li><a href="#no-analytics">No Analytics, No Tracking, No Ads</a></li>
+                    <li><a href="#purchases">The Gold Door and Purchases</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#permissions">App Permissions</a></li>
+                    <li><a href="#sharing">Sharing a Card</a></li>
+                    <li><a href="#backups">Backups and Device Transfer</a></li>
+                    <li><a href="#your-rights">Your Privacy Rights</a></li>
+                    <li><a href="#deleting">Deleting Your Data</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Users</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#not-advice">Not Medical or Professional Advice</a></li>
+                    <li><a href="#changes">Changes to This Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introduction</h2>
+                    <p>Manifestation ("the App") is a deck of short commanding manifestation messages, developed and operated by Believe PR, owned by Armando Jimenez ("Manifestation," "we," "us," or "our"). Manifestation is published on the Apple App Store for iPhone and on Google Play for Android.</p>
+                    <p>You open the App, you read one line, you swipe. Through the day the App can send you more of them at times you set. That is the whole product. This policy is short for the best possible reason: Manifestation is built so that there is almost nothing to collect.</p>
+                    <div class="highlight-box">
+                        <strong>Our privacy promise</strong>
+                        <ul>
+                            <li>Manifestation has no accounts. No email, no password, no sign-in, ever.</li>
+                            <li>What you save, what you write, what you hide and every setting you choose live on YOUR device.</li>
+                            <li>There is no Manifestation server. We have nowhere to put your reading even if we wanted it.</li>
+                            <li>The App contains no analytics SDK. We do not measure how you use it, which commands you read, or how long you held one.</li>
+                            <li>There are no advertisements, no advertising identifier, and no tracking of any kind.</li>
+                            <li>Notifications are scheduled by your own phone, on your phone. Nothing about them is sent to us.</li>
+                            <li>The one thing that ever leaves your device is an anonymous crash report, and only when the App breaks.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="short-version" class="policy-section">
+                    <h2>2. The Short Version</h2>
+                    <p>If you read nothing else, read this.</p>
+                    <p>Manifestation collects no personal information and has no user accounts. The App makes network requests in exactly two situations: when it has crashed and is sending the diagnostic report described in section 6, and, if you open the paywall or subscribe, when it asks our payment provider whether this device has an active subscription. Everything else happens on your device, offline, and stays there.</p>
+                    <p>We do not know which categories you chose, which commands you kept, which ones you hid, what you wrote for yourself, when your strikes are set for, or whether you open the App daily or once a year. None of that reaches us, because the App never sends it.</p>
+                </section>
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Information We Collect</h2>
+                    <h3>3.1 Information you give us directly</h3>
+                    <p><strong>None.</strong> Manifestation has no registration, no profile, no sign-in and no forms. You can type a name during onboarding and you can write your own commands, and both of those are stored on your device and nowhere else. There is no field in the App that sends anything you type to us.</p>
+                    <p>The only way you can send us anything is by choosing to email us at the address in section 20. If you do, we receive whatever you write in that email, and we use it only to answer you.</p>
+                    <h3>3.2 Information collected automatically</h3>
+                    <p><strong>No usage information.</strong> Manifestation contains no analytics, telemetry, attribution or advertising library. No usage event, session, screen view, card read, swipe, identifier or behavioural profile is generated or transmitted by the App.</p>
+                    <p><strong>Crash diagnostics only.</strong> When the App crashes it sends a technical report so the crash can be fixed. Section 6 describes exactly what that report contains and what it deliberately does not.</p>
+                    <h3>3.3 Information our payment provider processes</h3>
+                    <p>If you open the subscription screen or subscribe, our payment provider RevenueCat receives a pseudonymous device identifier and the receipt your app store issued, so it can tell the App whether this device currently has access. It receives no name, no email address and nothing about how you use the App. We never receive your payment card details: those go to Apple or Google and never touch us or the App.</p>
+                </section>
+                <section id="on-your-device" class="policy-section">
+                    <h2>4. What Lives on Your Device</h2>
+                    <p>All of the following is stored locally, in the App's own private storage area, which other apps on your phone cannot read:</p>
+                    <ul>
+                        <li>The categories you chose to be dealt from, and your deck theme, app theme and night-mode setting.</li>
+                        <li>The commands you saved to the Vault, and the ones you hid.</li>
+                        <li>The commands you wrote yourself, exactly as you typed them.</li>
+                        <li>A log of which commands you have already been shown, so the deck can lead with what you have not seen. It stores an identifier, a date and a time. It never stores the text.</li>
+                        <li>Your strike profiles: their names, days, dosages, time windows and chosen categories, plus your quiet hours.</li>
+                        <li>A record of the strikes that landed, including the text each one carried, so Past strikes can show you what your phone actually said.</li>
+                        <li>The name you gave during onboarding, if you gave one, and your answers to the onboarding questions.</li>
+                    </ul>
+                    <p>None of this is transmitted anywhere. Deleting the App deletes all of it.</p>
+                </section>
+                <section id="notifications" class="policy-section">
+                    <h2>5. Strikes and Notifications</h2>
+                    <p>A "strike" is a notification the App sends you during the day. It is worth being precise about how they work, because notifications are the part of an app people most often assume involves a server.</p>
+                    <p><strong>They do not.</strong> Manifestation uses <em>local</em> notifications only. When you save a strike profile, the App picks the commands and the times on your device and hands the finished notifications to your phone's own operating system, which holds them and shows them at the right moment. There is no push server, there is no push token, and no notification is ever sent to us or through us. The App can schedule your entire day in airplane mode.</p>
+                    <p>Because the text is written into your phone's notification queue in advance, it may briefly appear in the notification history that your operating system keeps. That history belongs to your phone, not to us.</p>
+                    <p>The App asks for notification permission once, at a moment where it explains why. If you refuse, the App keeps working; only the strikes stop. You can grant or revoke the permission at any time in your phone's Settings.</p>
+                </section>
+                <section id="crash-reports" class="policy-section">
+                    <h2>6. Crash Reports</h2>
+                    <p>Manifestation uses <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a> to receive automatic crash reports. This is the only telemetry in the App, and it is deliberately configured to be the narrowest possible version of itself.</p>
+                    <h3>6.1 What a crash report contains</h3>
+                    <ul>
+                        <li>The error and the stack trace: which line of code failed.</li>
+                        <li>The App version, the operating system version and the device model.</li>
+                        <li>A random installation identifier, so two reports from the same crash loop can be recognised as one problem.</li>
+                    </ul>
+                    <h3>6.2 What it deliberately does not contain</h3>
+                    <ul>
+                        <li>Performance tracing, profiling and session replay are all switched OFF. Sentry can record what a user did before a crash; in this App it does not.</li>
+                        <li>Session tracking is switched off, so the App does not report that it was opened.</li>
+                        <li>The option that would attach personally identifiable information to a report is explicitly set to false.</li>
+                        <li>No command text, no name you entered, no category choice, no strike schedule and no vault contents are attached to a report.</li>
+                    </ul>
+                    <p>The App is tested against this configuration on every build, so it cannot quietly widen. Sentry acts as our data processor, stores reports for a limited retention period and does not use them for its own purposes.</p>
+                </section>
+                <section id="no-analytics" class="policy-section">
+                    <h2>7. No Analytics, No Tracking, No Ads</h2>
+                    <p>Manifestation contains no analytics SDK of any kind. There is no Firebase Analytics, no Google Analytics, no Meta SDK, no attribution SDK and no advertising SDK inside the App.</p>
+                    <p>There is no advertising identifier in use. On iOS, the App never presents the App Tracking Transparency prompt, because it has nothing to track you with and nothing to link to a third party. Under Apple's definition, Manifestation does not track you.</p>
+                    <p>There are no advertisements in the App, and there never will be. There is no analytics opt-out setting because there is nothing to opt out of.</p>
+                </section>
+                <section id="purchases" class="policy-section">
+                    <h2>8. The Gold Door and Purchases</h2>
+                    <p>Manifestation offers an optional paid subscription, the Gold Door, with a monthly plan, an annual plan and a one-time lifetime option. The exact prices, the currency and any free-trial length are always shown in the App at the moment of purchase, and they are set by your app store for your region.</p>
+                    <p>Purchases are processed entirely by Apple or Google. Your payment card, billing address and store account never reach us and never enter the App. We receive no payment information at all.</p>
+                    <p>Subscriptions renew automatically until cancelled. You manage or cancel a subscription in your own App Store or Google Play account settings, not in the App. Section 8 of the <a href="terms.html">Terms of Use</a> describes the billing terms in full.</p>
+                    <p>We use RevenueCat to check with the stores whether this device has access. RevenueCat receives a pseudonymous identifier and the store receipt, and nothing else.</p>
+                </section>
+                <section id="third-party" class="policy-section">
+                    <h2>9. Third-Party Services</h2>
+                    <p>These are every service the App can communicate with. There are no others.</p>
+                    <ul>
+                        <li><strong>Sentry</strong> (crash reports only, as described in section 6). <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Privacy policy</a>.</li>
+                        <li><strong>RevenueCat</strong> (subscription status only, as described in section 8). <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
+                        <li><strong>Apple App Store</strong> and <strong>Google Play</strong> (payment processing and app delivery, under their own terms).</li>
+                    </ul>
+                    <p>The App bundles its own fonts and all of its content. It does not load fonts, images, advertising or commands from the network at runtime. Opening a link from the App, such as this page or the maker's website, opens it in a browser view; from that point the site you have opened applies its own policy.</p>
+                </section>
+                <section id="permissions" class="policy-section">
+                    <h2>10. App Permissions</h2>
+                    <p>Manifestation asks for as little as an app can:</p>
+                    <ul>
+                        <li><strong>Notifications.</strong> Asked once, so it can send you strikes. Refusing costs you nothing but the strikes.</li>
+                        <li><strong>Exact or inexact alarms (Android).</strong> The App deliberately uses <em>inexact</em> alarms, which need no special permission, so your battery is never held awake for a notification.</li>
+                        <li><strong>Add to photo library (only if you use it).</strong> If you choose to save a shared card as an image, the App asks for permission to add that one image to your photo library. It is an add-only permission: the App cannot read your photos, and never asks to.</li>
+                    </ul>
+                    <p>The App never asks for your camera, microphone, contacts, calendar, location, health data, or the ability to read your photos or files.</p>
+                </section>
+                <section id="sharing" class="policy-section">
+                    <h2>11. Sharing a Card</h2>
+                    <p>You can share a command as an image or as text. The image is drawn on your device and written to a temporary folder that the App clears on its next launch. Where the image goes next is your choice, made in your phone's own share sheet, and the app you send it to applies its own policy from there. Nothing about a share is reported to us.</p>
+                </section>
+                <section id="backups" class="policy-section">
+                    <h2>12. Backups and Device Transfer</h2>
+                    <p>If you have iCloud Backup or Google's backup service switched on, your phone may include the App's local data in its own encrypted device backup. That backup is between you and Apple or Google under their policies; it does not pass through us and we cannot read it.</p>
+                    <p>Manifestation has no cloud sync of its own. Your reading does not follow you to a new phone unless your phone's own backup carries it.</p>
+                </section>
+                <section id="your-rights" class="policy-section">
+                    <h2>13. Your Privacy Rights</h2>
+                    <p>Privacy laws including the GDPR (Europe and the UK), the CCPA and CPRA (California) and similar laws elsewhere give you rights over personal data held about you: access, correction, deletion, portability, and objection to processing.</p>
+                    <p>These rights are unusually simple to satisfy here, because we hold almost nothing. We have no account for you, no profile and no way to identify you. The data the App creates is on your device and under your control; you can see it, change it and delete it inside the App itself at any time.</p>
+                    <p>The one category of data we could be said to hold is the anonymous crash reports in section 6. They carry no name, no email and no content you entered. If you want a crash report associated with your device removed, write to us with the approximate date and the device model and we will locate and delete it.</p>
+                    <p>We do not sell or share personal information, and we never have. Under the CCPA and CPRA there is nothing to opt out of, because no sale or sharing takes place.</p>
+                </section>
+                <section id="deleting" class="policy-section">
+                    <h2>14. Deleting Your Data</h2>
+                    <p>Everything the App holds is on your phone. Inside the App you can let go of any saved command, unhide anything you hid, and delete anything you wrote. To remove all of it at once, delete the App: your phone erases its private storage with it, and nothing is left behind on any server, because there is no server.</p>
+                    <p>Deleting the App does not cancel a subscription. Cancel that in your App Store or Google Play account settings.</p>
+                </section>
+                <section id="children" class="policy-section">
+                    <h2>15. Children's Privacy</h2>
+                    <p>Manifestation is not directed to children. It is rated for teens and adults, and it is not intended for anyone under 13 (or under 16 where local law sets that age). We do not knowingly collect personal information from children, and given that the App collects no personal information from anyone, there is nothing for us to have collected.</p>
+                    <p>If you believe a child has sent us information by email, write to us and we will delete it.</p>
+                </section>
+                <section id="international" class="policy-section">
+                    <h2>16. International Users</h2>
+                    <p>The App is available worldwide and its interface and content are being translated into eleven languages. Because the App keeps your reading on your own device, using it from anywhere in the world involves no international transfer of your data by us.</p>
+                    <p>The crash reports in section 6 and the subscription checks in section 8 are processed by our providers on servers that may be in the United States or the European Union. Both providers offer contractual safeguards for international transfers, and neither receives personal information from this App.</p>
+                    <p>For users in the European Economic Area and the United Kingdom, our lawful basis for processing crash reports is our legitimate interest in keeping the App from breaking, and for subscription checks it is the performance of the contract you entered into when you subscribed.</p>
+                </section>
+                <section id="security" class="policy-section">
+                    <h2>17. Security</h2>
+                    <p>Your data sits in the App's private storage area, protected by your phone's own operating system and by your device passcode or biometric lock. Connections to our two providers use TLS.</p>
+                    <p>The strongest security property of this App is architectural rather than technical: there is no central database of readers to breach, because we never built one.</p>
+                </section>
+                <section id="not-advice" class="policy-section">
+                    <h2>18. Not Medical or Professional Advice</h2>
+                    <p>Manifestation offers short motivational and mindset messages. It is not therapy, not medical advice, not psychological treatment and not financial advice, and it is not a substitute for care from a qualified professional. If you are struggling, please speak to someone who can help. In an emergency, contact your local emergency services.</p>
+                </section>
+                <section id="changes" class="policy-section">
+                    <h2>19. Changes to This Policy</h2>
+                    <p>If this policy changes, the updated version is posted at this address with a new date at the top. Material changes will also be announced in the App. Continuing to use the App after a change means you accept the updated policy.</p>
+                    <p>This page is the authoritative version. The App links to it rather than printing its own copy, so the two can never disagree.</p>
+                </section>
+                <section id="contact" class="policy-section">
+                    <h2>20. Contact Us</h2>
+                    <p>Questions about this policy, about your data, or about the App: <a href="mailto:manifestation@armandojimenez.dev">manifestation@armandojimenez.dev</a>.</p>
+                    <p>One person reads that mailbox and answers every message he can.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> September 3, 2026</p>
+                    <p><strong>Effective Date:</strong> September 3, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

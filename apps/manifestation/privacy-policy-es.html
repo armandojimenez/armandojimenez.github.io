@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="manifestation" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en' && window.location.pathname.endsWith('-es.html')) {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de privacidad - Manifestation</title>
+    <meta name="description" content="Política de privacidad de Manifestation, un mazo de comandos diarios de manifestación. Sin cuentas, sin analítica y sin rastreo. Lo que guardas, escribes y programas se queda en tu dispositivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg width="26" height="33" viewBox="0 0 44 56" fill="none" aria-hidden="true">
+                        <path d="M22 3C11.5 3 5 10.5 5 21v32h34V21C39 10.5 32.5 3 22 3Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                        <path d="M22 14l1.9 7.6L31.5 23.5 23.9 25.4 22 33l-1.9-7.6L12.5 23.5l7.6-1.9Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">Manifestation</div>
+                    <div class="badge-subtitle">Deja de pedir. Empieza a dar por hecho.</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 3 de septiembre de 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Fecha de vigencia: 3 de septiembre de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Contenido</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#short-version">La versión corta</a></li>
+                    <li><a href="#information-collection">Qué información recogemos</a></li>
+                    <li><a href="#on-your-device">Qué vive en tu dispositivo</a></li>
+                    <li><a href="#notifications">Impactos y notificaciones</a></li>
+                    <li><a href="#crash-reports">Informes de fallos</a></li>
+                    <li><a href="#no-analytics">Sin analítica, sin rastreo, sin anuncios</a></li>
+                    <li><a href="#purchases">La Puerta Dorada y las compras</a></li>
+                    <li><a href="#third-party">Servicios de terceros</a></li>
+                    <li><a href="#permissions">Permisos de la app</a></li>
+                    <li><a href="#sharing">Compartir una carta</a></li>
+                    <li><a href="#backups">Copias de seguridad y cambio de teléfono</a></li>
+                    <li><a href="#your-rights">Tus derechos de privacidad</a></li>
+                    <li><a href="#deleting">Cómo borrar tus datos</a></li>
+                    <li><a href="#children">Privacidad de menores</a></li>
+                    <li><a href="#international">Personas usuarias internacionales</a></li>
+                    <li><a href="#security">Seguridad</a></li>
+                    <li><a href="#not-advice">No es asesoramiento médico ni profesional</a></li>
+                    <li><a href="#changes">Cambios en esta política</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>Manifestation («la app») es un mazo de mensajes breves de manifestación en tono de mandato, desarrollado y operado por Believe PR, propiedad de Armando Jimenez («Manifestation», «nosotros» o «nuestro»). Manifestation se publica en la App Store de Apple para iPhone y en Google Play para Android.</p>
+                    <p>Abres la app, lees una línea y deslizas. Durante el día la app puede enviarte más a las horas que tú marques. Ese es todo el producto. Esta política es corta por la mejor razón posible: Manifestation está hecha para que casi no haya nada que recoger.</p>
+                    <div class="highlight-box">
+                        <strong>Nuestra promesa de privacidad</strong>
+                        <ul>
+                            <li>Manifestation no tiene cuentas. Ni correo, ni contraseña, ni inicio de sesión, nunca.</li>
+                            <li>Lo que guardas, lo que escribes, lo que ocultas y cada ajuste que eliges viven en TU dispositivo.</li>
+                            <li>No hay un servidor de Manifestation. No tendríamos dónde poner tu lectura ni aunque la quisiéramos.</li>
+                            <li>La app no lleva ningún SDK de analítica. No medimos cómo la usas, qué comandos lees ni cuánto tiempo sostuviste uno.</li>
+                            <li>No hay anuncios, ni identificador publicitario, ni rastreo de ningún tipo.</li>
+                            <li>Las notificaciones las programa tu propio teléfono, en tu teléfono. No nos llega nada sobre ellas.</li>
+                            <li>Lo único que sale alguna vez de tu dispositivo es un informe de fallo anónimo, y solo cuando la app se rompe.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="short-version" class="policy-section">
+                    <h2>2. La versión corta</h2>
+                    <p>Si no lees nada más, lee esto.</p>
+                    <p>Manifestation no recoge información personal y no tiene cuentas. La app hace peticiones de red exactamente en dos situaciones: cuando se ha caído y envía el informe de diagnóstico de la sección 6 y, si abres la pantalla de suscripción o te suscribes, cuando le pregunta a nuestro proveedor de pagos si este dispositivo tiene acceso activo. Todo lo demás ocurre en tu dispositivo, sin conexión, y ahí se queda.</p>
+                    <p>No sabemos qué categorías elegiste, qué comandos guardaste, cuáles ocultaste, qué escribiste para ti, a qué hora tienes puestos tus impactos, ni si abres la app a diario o una vez al año. Nada de eso nos llega, porque la app no lo envía.</p>
+                </section>
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Qué información recogemos</h2>
+                    <h3>3.1 Información que nos das directamente</h3>
+                    <p><strong>Ninguna.</strong> Manifestation no tiene registro, ni perfil, ni inicio de sesión, ni formularios. Puedes escribir un nombre durante la bienvenida y puedes escribir tus propios comandos, y ambas cosas se guardan en tu dispositivo y en ningún otro sitio. No hay ningún campo en la app que nos envíe lo que escribes.</p>
+                    <p>La única forma de enviarnos algo es escribirnos por correo a la dirección de la sección 20. Si lo haces, recibimos lo que escribas en ese correo y lo usamos solo para responderte.</p>
+                    <h3>3.2 Información recogida automáticamente</h3>
+                    <p><strong>Ninguna sobre tu uso.</strong> Manifestation no lleva ninguna librería de analítica, telemetría, atribución ni publicidad. La app no genera ni transmite ningún evento de uso, sesión, vista de pantalla, carta leída, deslizamiento, identificador ni perfil de comportamiento.</p>
+                    <p><strong>Solo diagnóstico de fallos.</strong> Cuando la app se cae envía un informe técnico para que el fallo pueda arreglarse. La sección 6 describe exactamente qué contiene ese informe y qué deliberadamente no contiene.</p>
+                    <h3>3.3 Información que procesa nuestro proveedor de pagos</h3>
+                    <p>Si abres la pantalla de suscripción o te suscribes, nuestro proveedor de pagos RevenueCat recibe un identificador seudónimo del dispositivo y el recibo que emitió tu tienda, para poder decirle a la app si este dispositivo tiene acceso ahora mismo. No recibe ningún nombre, ninguna dirección de correo ni nada sobre cómo usas la app. Nosotros nunca recibimos los datos de tu tarjeta: esos van a Apple o a Google y no pasan por nosotros ni por la app.</p>
+                </section>
+                <section id="on-your-device" class="policy-section">
+                    <h2>4. Qué vive en tu dispositivo</h2>
+                    <p>Todo lo siguiente se guarda localmente, en el almacenamiento privado de la app, que las demás apps de tu teléfono no pueden leer:</p>
+                    <ul>
+                        <li>Las categorías que elegiste para que te alimenten, y tu tema de mazo, tu cielo y el modo noche.</li>
+                        <li>Los comandos que guardaste en la Bóveda y los que ocultaste.</li>
+                        <li>Los comandos que escribiste tú, tal como los escribiste.</li>
+                        <li>Un registro de qué comandos ya viste, para que el mazo empiece por lo que no has visto. Guarda un identificador, una fecha y una hora. Nunca guarda el texto.</li>
+                        <li>Tus perfiles de impacto: sus nombres, días, dosis, ventanas horarias y categorías, además de tus horas de silencio.</li>
+                        <li>Un registro de los impactos que cayeron, con el texto que llevaba cada uno, para que Impactos pasados pueda mostrarte lo que tu teléfono dijo realmente.</li>
+                        <li>El nombre que diste en la bienvenida, si diste alguno, y tus respuestas a las preguntas de la bienvenida.</li>
+                    </ul>
+                    <p>Nada de esto se transmite a ninguna parte. Borrar la app lo borra todo.</p>
+                </section>
+                <section id="notifications" class="policy-section">
+                    <h2>5. Impactos y notificaciones</h2>
+                    <p>Un «impacto» es una notificación que la app te envía durante el día. Merece la pena ser preciso sobre cómo funcionan, porque las notificaciones son la parte de una app en la que más se da por hecho que hay un servidor detrás.</p>
+                    <p><strong>No lo hay.</strong> Manifestation usa únicamente notificaciones <em>locales</em>. Cuando guardas un perfil de impacto, la app elige los comandos y las horas en tu dispositivo y entrega las notificaciones ya listas al sistema operativo de tu teléfono, que las sostiene y las muestra en el momento correcto. No hay servidor de push, no hay token de push y ninguna notificación se nos envía a nosotros ni pasa por nosotros. La app puede programarte el día entero en modo avión.</p>
+                    <p>Como el texto se escribe por adelantado en la cola de notificaciones de tu teléfono, puede aparecer brevemente en el historial de notificaciones que guarda tu sistema operativo. Ese historial es de tu teléfono, no nuestro.</p>
+                    <p>La app pide permiso de notificaciones una sola vez, en un momento en el que explica por qué. Si lo rechazas, la app sigue funcionando; solo se detienen los impactos. Puedes conceder o revocar el permiso cuando quieras en los Ajustes de tu teléfono.</p>
+                </section>
+                <section id="crash-reports" class="policy-section">
+                    <h2>6. Informes de fallos</h2>
+                    <p>Manifestation usa <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a> para recibir informes automáticos de fallos. Es la única telemetría de la app, y está configurada a propósito para ser la versión más estrecha posible de sí misma.</p>
+                    <h3>6.1 Qué contiene un informe de fallo</h3>
+                    <ul>
+                        <li>El error y su traza: qué línea de código falló.</li>
+                        <li>La versión de la app, la versión del sistema operativo y el modelo del dispositivo.</li>
+                        <li>Un identificador aleatorio de instalación, para reconocer que dos informes del mismo bucle de fallo son un solo problema.</li>
+                    </ul>
+                    <h3>6.2 Qué no contiene, a propósito</h3>
+                    <ul>
+                        <li>El trazado de rendimiento, el perfilado y la repetición de sesión están DESACTIVADOS. Sentry puede grabar lo que hizo una persona antes de un fallo; en esta app no lo hace.</li>
+                        <li>El seguimiento de sesiones está desactivado, así que la app no informa de que se abrió.</li>
+                        <li>La opción que adjuntaría información personal identificable a un informe está puesta explícitamente en falso.</li>
+                        <li>A un informe no se adjunta ningún texto de comando, ni el nombre que escribiste, ni tus categorías, ni tus horarios de impacto, ni el contenido de tu Bóveda.</li>
+                    </ul>
+                    <p>La app se somete a una prueba de esta configuración en cada compilación, así que no puede ampliarse en silencio. Sentry actúa como encargado del tratamiento, conserva los informes durante un periodo limitado y no los usa para fines propios.</p>
+                </section>
+                <section id="no-analytics" class="policy-section">
+                    <h2>7. Sin analítica, sin rastreo, sin anuncios</h2>
+                    <p>Manifestation no lleva ningún SDK de analítica. Dentro de la app no hay Firebase Analytics, ni Google Analytics, ni SDK de Meta, ni SDK de atribución, ni SDK publicitario.</p>
+                    <p>No se usa ningún identificador publicitario. En iOS la app nunca muestra el aviso de App Tracking Transparency, porque no tiene con qué rastrearte ni nada que enlazar con un tercero. Según la definición de Apple, Manifestation no te rastrea.</p>
+                    <p>No hay anuncios en la app, y nunca los habrá. No hay un ajuste para desactivar la analítica porque no hay nada que desactivar.</p>
+                </section>
+                <section id="purchases" class="policy-section">
+                    <h2>8. La Puerta Dorada y las compras</h2>
+                    <p>Manifestation ofrece una suscripción de pago opcional, la Puerta Dorada, con un plan mensual, un plan anual y una opción de por vida de pago único. Los precios exactos, la moneda y la duración de cualquier prueba gratuita se muestran siempre en la app en el momento de la compra, y los fija tu tienda para tu región.</p>
+                    <p>Las compras las procesan íntegramente Apple o Google. Tu tarjeta, tu dirección de facturación y tu cuenta de la tienda nunca nos llegan ni entran en la app. No recibimos ninguna información de pago.</p>
+                    <p>Las suscripciones se renuevan automáticamente hasta que las canceles. Se gestionan o se cancelan en los ajustes de tu cuenta de App Store o Google Play, no en la app. La sección 8 de los <a href="terms-es.html">Términos de uso</a> describe las condiciones de facturación completas.</p>
+                    <p>Usamos RevenueCat para consultar a las tiendas si este dispositivo tiene acceso. RevenueCat recibe un identificador seudónimo y el recibo de la tienda, y nada más.</p>
+                </section>
+                <section id="third-party" class="policy-section">
+                    <h2>9. Servicios de terceros</h2>
+                    <p>Estos son todos los servicios con los que la app puede comunicarse. No hay otros.</p>
+                    <ul>
+                        <li><strong>Sentry</strong> (solo informes de fallos, como describe la sección 6). <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Política de privacidad</a>.</li>
+                        <li><strong>RevenueCat</strong> (solo estado de la suscripción, como describe la sección 8). <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Política de privacidad</a>.</li>
+                        <li><strong>App Store de Apple</strong> y <strong>Google Play</strong> (procesamiento de pagos y distribución, bajo sus propias condiciones).</li>
+                    </ul>
+                    <p>La app incluye sus propias tipografías y todo su contenido. No carga tipografías, imágenes, publicidad ni comandos desde la red durante su uso. Abrir un enlace desde la app, como esta página o el sitio del creador, lo abre en una vista de navegador; a partir de ahí se aplica la política del sitio que has abierto.</p>
+                </section>
+                <section id="permissions" class="policy-section">
+                    <h2>10. Permisos de la app</h2>
+                    <p>Manifestation pide lo mínimo que una app puede pedir:</p>
+                    <ul>
+                        <li><strong>Notificaciones.</strong> Se pide una vez, para poder enviarte impactos. Rechazarlo no te cuesta nada más que los impactos.</li>
+                        <li><strong>Alarmas exactas o inexactas (Android).</strong> La app usa a propósito alarmas <em>inexactas</em>, que no requieren ningún permiso especial, para que tu batería nunca se mantenga despierta por una notificación.</li>
+                        <li><strong>Añadir a la fototeca (solo si lo usas).</strong> Si eliges guardar una carta compartida como imagen, la app pide permiso para añadir esa imagen a tu fototeca. Es un permiso solo de añadir: la app no puede leer tus fotos, y nunca lo pide.</li>
+                    </ul>
+                    <p>La app nunca pide tu cámara, tu micrófono, tus contactos, tu calendario, tu ubicación, tus datos de salud, ni la capacidad de leer tus fotos o tus archivos.</p>
+                </section>
+                <section id="sharing" class="policy-section">
+                    <h2>11. Compartir una carta</h2>
+                    <p>Puedes compartir un comando como imagen o como texto. La imagen se dibuja en tu dispositivo y se escribe en una carpeta temporal que la app vacía en el siguiente arranque. A dónde va después es decisión tuya, tomada en la hoja de compartir de tu propio teléfono, y la app a la que la envíes aplica su política desde ese momento. No se nos informa de nada sobre lo que compartes.</p>
+                </section>
+                <section id="backups" class="policy-section">
+                    <h2>12. Copias de seguridad y cambio de teléfono</h2>
+                    <p>Si tienes activada la copia de seguridad de iCloud o la de Google, tu teléfono puede incluir los datos locales de la app en su propia copia cifrada. Esa copia es entre tú y Apple o Google bajo sus políticas; no pasa por nosotros y no podemos leerla.</p>
+                    <p>Manifestation no tiene sincronización en la nube propia. Tu lectura no te sigue a un teléfono nuevo salvo que la copia de seguridad de tu propio teléfono la lleve.</p>
+                </section>
+                <section id="your-rights" class="policy-section">
+                    <h2>13. Tus derechos de privacidad</h2>
+                    <p>Las leyes de privacidad, incluidos el RGPD (Europa y el Reino Unido), la CCPA y la CPRA (California) y leyes similares en otros lugares, te dan derechos sobre los datos personales que se tengan sobre ti: acceso, rectificación, supresión, portabilidad y oposición al tratamiento.</p>
+                    <p>Aquí esos derechos son insólitamente fáciles de satisfacer, porque no tenemos casi nada. No tenemos una cuenta tuya, ni un perfil, ni forma alguna de identificarte. Los datos que crea la app están en tu dispositivo y bajo tu control; puedes verlos, cambiarlos y borrarlos dentro de la propia app cuando quieras.</p>
+                    <p>La única categoría de datos que podría decirse que tenemos son los informes anónimos de fallo de la sección 6. No llevan nombre, ni correo, ni nada que hayas escrito. Si quieres que eliminemos un informe asociado a tu dispositivo, escríbenos con la fecha aproximada y el modelo del dispositivo y lo localizamos y lo borramos.</p>
+                    <p>No vendemos ni compartimos información personal, y nunca lo hemos hecho. Bajo la CCPA y la CPRA no hay nada de lo que desistir, porque no se produce ninguna venta ni cesión.</p>
+                </section>
+                <section id="deleting" class="policy-section">
+                    <h2>14. Cómo borrar tus datos</h2>
+                    <p>Todo lo que la app tiene está en tu teléfono. Dentro de la app puedes soltar cualquier comando guardado, volver a mostrar lo que ocultaste y borrar lo que escribiste. Para eliminarlo todo de una vez, borra la app: tu teléfono elimina con ella su almacenamiento privado, y no queda nada en ningún servidor, porque no hay servidor.</p>
+                    <p>Borrar la app no cancela una suscripción. Eso se cancela en los ajustes de tu cuenta de App Store o Google Play.</p>
+                </section>
+                <section id="children" class="policy-section">
+                    <h2>15. Privacidad de menores</h2>
+                    <p>Manifestation no está dirigida a menores. Su clasificación es para adolescentes y personas adultas, y no está pensada para menores de 13 años (o de 16 donde la ley local fije esa edad). No recogemos a sabiendas información personal de menores y, dado que la app no recoge información personal de nadie, no hay nada que hayamos podido recoger.</p>
+                    <p>Si crees que un menor nos ha enviado información por correo, escríbenos y la borraremos.</p>
+                </section>
+                <section id="international" class="policy-section">
+                    <h2>16. Personas usuarias internacionales</h2>
+                    <p>La app está disponible en todo el mundo y su interfaz y su contenido se están traduciendo a once idiomas. Como la app mantiene tu lectura en tu propio dispositivo, usarla desde cualquier parte del mundo no implica ninguna transferencia internacional de tus datos por nuestra parte.</p>
+                    <p>Los informes de fallo de la sección 6 y las comprobaciones de suscripción de la sección 8 los procesan nuestros proveedores en servidores que pueden estar en Estados Unidos o en la Unión Europea. Ambos proveedores ofrecen garantías contractuales para transferencias internacionales, y ninguno recibe información personal desde esta app.</p>
+                    <p>Para quienes están en el Espacio Económico Europeo y el Reino Unido, nuestra base legal para tratar los informes de fallo es nuestro interés legítimo en que la app no se rompa, y para las comprobaciones de suscripción es la ejecución del contrato que aceptaste al suscribirte.</p>
+                </section>
+                <section id="security" class="policy-section">
+                    <h2>17. Seguridad</h2>
+                    <p>Tus datos están en el área de almacenamiento privado de la app, protegida por el propio sistema operativo de tu teléfono y por tu código o tu bloqueo biométrico. Las conexiones con nuestros dos proveedores usan TLS.</p>
+                    <p>La propiedad de seguridad más fuerte de esta app es arquitectónica antes que técnica: no hay una base de datos central de lectores que vulnerar, porque nunca la construimos.</p>
+                </section>
+                <section id="not-advice" class="policy-section">
+                    <h2>18. No es asesoramiento médico ni profesional</h2>
+                    <p>Manifestation ofrece mensajes breves de motivación y de mentalidad. No es terapia, ni consejo médico, ni tratamiento psicológico, ni asesoramiento financiero, y no sustituye la atención de una persona profesional cualificada. Si lo estás pasando mal, por favor habla con alguien que pueda ayudarte. En una emergencia, contacta con los servicios de emergencia de tu zona.</p>
+                </section>
+                <section id="changes" class="policy-section">
+                    <h2>19. Cambios en esta política</h2>
+                    <p>Si esta política cambia, la versión actualizada se publica en esta dirección con una fecha nueva arriba. Los cambios importantes también se anuncian en la app. Seguir usando la app después de un cambio significa que aceptas la política actualizada.</p>
+                    <p>Esta página es la versión que manda. La app enlaza a ella en vez de imprimir su propia copia, para que las dos no puedan contradecirse.</p>
+                </section>
+                <section id="contact" class="policy-section">
+                    <h2>20. Contacto</h2>
+                    <p>Preguntas sobre esta política, sobre tus datos o sobre la app: <a href="mailto:manifestation@armandojimenez.dev">manifestation@armandojimenez.dev</a>.</p>
+                    <p>Una sola persona lee ese buzón y contesta todos los mensajes que puede.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 3 de septiembre de 2026</p>
+                    <p><strong>Fecha de vigencia:</strong> 3 de septiembre de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

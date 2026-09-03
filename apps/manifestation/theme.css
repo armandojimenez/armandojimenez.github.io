@@ -1,0 +1,179 @@
+/*
+ * Manifestation — Dawn Parchment & Midnight Ink
+ * Overrides for the policy pages.
+ *
+ * Every value here is lifted from the app's own `lib/theme/tokens.dart`
+ * (MfTokens.forSky(dawn) and forSky(midnight), with the same accessibility
+ * overrides the app's `make contrast` gate holds), so the page a reader lands
+ * on from More or from the paywall's fine print is painted in the app they
+ * just left. Prata is the app's display face, Cormorant Garamond its voice,
+ * Manrope its UI face.
+ */
+
+/* ===========================
+   Dawn Parchment — the light sky
+   =========================== */
+:root {
+    --bg-primary: #f6f0e4;      /* parchment — the Dawn ground */
+    --bg-secondary: #fbf7ee;    /* cream — cards */
+    --bg-tertiary: #f2e5c9;     /* the cream plate — sheets and callouts */
+    --bg-accent: #e8def2;       /* the lilac plate — the accent wash */
+
+    --text-primary: #3a3050;    /* ink violet */
+    --text-secondary: #574c73;  /* ink violet 2 */
+    --text-tertiary: #685f52;   /* the sand tier's a11y override, 4.5:1 */
+    --text-link: #655987;       /* the link violet's a11y override */
+    --text-link-hover: #3a3050;
+
+    --border-color: #e3dccd;
+    --border-light: #efe8da;
+
+    --accent-primary: #c8a45c;  /* gold */
+    --accent-secondary: #e5b96f;/* gold light */
+    --accent-success: #1f8a5b;
+    --accent-warning: #c8a45c;
+    --accent-danger: #8c5044;   /* the rose tier's a11y override */
+}
+
+/* ===========================
+   Midnight Ink — the dark sky, the app's own
+   =========================== */
+[data-theme="dark"] {
+    --bg-primary: #221c35;      /* night ink */
+    --bg-secondary: #2e2647;    /* night raised — cards */
+    --bg-tertiary: #3d3458;     /* night lilac — callouts */
+    --bg-accent: #3d3458;
+
+    --text-primary: #f2ecdc;    /* night text */
+    --text-secondary: #ccf2ecdc;
+    --text-secondary: rgba(242, 236, 220, 0.8);
+    --text-tertiary: rgba(242, 236, 220, 0.65);
+    --text-link: #968db3;       /* the night link tier */
+    --text-link-hover: #f2ecdc;
+
+    --border-color: #3d3458;
+    --border-light: #2e2647;
+
+    --accent-primary: #e5b96f;  /* gold light: gold dims too far on night ink */
+    --accent-secondary: #c8a45c;
+    --accent-success: #34c759;
+    --accent-warning: #e5b96f;
+    --accent-danger: #cf8a7c;
+}
+
+/* ===========================
+   Typography — the app's own faces
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.policy-title,
+.badge-title,
+.policy-section h2 {
+    font-family: 'Prata', Georgia, serif !important;
+    font-weight: 400 !important;
+    letter-spacing: 0;
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: 'Manrope', -apple-system, sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em;
+}
+
+/* The app's voice: the one place on these pages that speaks the way a
+   command does. */
+.badge-subtitle,
+.highlight-box strong {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.badge-subtitle {
+    font-size: 1.05em;
+}
+
+/* The mark and the words read as one lockup, the way the app's own wordmark
+   does: the door on the left, both lines ranged against it. */
+.badge-text {
+    text-align: left;
+}
+
+/* ===========================
+   The gold door's own chrome
+   =========================== */
+/* The shared stylesheet sizes this box as TEXT (font-size: 2rem), which
+   leaves an inline SVG with no width at all. The door gets a real box. */
+.badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 52px;
+    flex: 0 0 auto;
+    background: linear-gradient(180deg, #c9d8ee 0%, #e4d9ec 46%, #f2d4cf 72%, #f4e3cd 100%);
+    color: #3a3050;
+    border-radius: 26px 26px 6px 6px;
+}
+
+[data-theme="dark"] /* The shared stylesheet sizes this box as TEXT (font-size: 2rem), which
+   leaves an inline SVG with no width at all. The door gets a real box. */
+.badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 52px;
+    flex: 0 0 auto;
+    background: linear-gradient(180deg, #3d3458 0%, #6b5f8f 100%);
+    color: #f2ecdc;
+}
+
+.back-to-top {
+    background: var(--accent-primary) !important;
+    color: #221c35 !important;
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: #221c35;
+    border-color: var(--accent-primary);
+}
+
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list a:hover {
+    color: var(--accent-primary);
+}
+
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+}
+
+/* Night ink on gold, not parchment: the app makes the same call for its gold
+   CTA label, and its contrast gate pins the pair. */
+::selection {
+    background: var(--accent-primary);
+    color: #221c35;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: #221c35;
+}
