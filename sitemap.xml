@@ -16,6 +16,9 @@
     <loc>https://armandojimenez.dev/dear-cosmos/sitemap.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://armandojimenez.dev/deload/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://armandojimenez.dev/divine/sitemap-0.xml</loc>
   </sitemap>
   <sitemap>
@@ -32,6 +35,12 @@
   </sitemap>
   <sitemap>
     <loc>https://armandojimenez.dev/motiv/sitemap-0.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://armandojimenez.dev/myplants/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://armandojimenez.dev/tally/sitemap.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://armandojimenez.dev/unique/sitemap-0.xml</loc>
