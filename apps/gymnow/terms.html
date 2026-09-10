@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="gymnow" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms of Use - GymNow!</title>
+    <meta name="description" content="Terms of Use for GymNow!, the anti-excuse gym attendance app. How GymNow! Pro is sold and billed, and the limits of what a reminder app is.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg viewBox="0 0 120 120" aria-hidden="true">
+                        <defs>
+                            <radialGradient id="gnPlate" cx="0.22" cy="0.12" r="0.95">
+                                <stop offset="0" stop-color="#26242e"></stop>
+                                <stop offset="0.62" stop-color="#131216"></stop>
+                            </radialGradient>
+                        </defs>
+                        <rect width="120" height="120" fill="url(#gnPlate)"></rect>
+                        <g fill="#ff4a2e" transform="translate(60 60) skewX(-8) translate(-60 -60)">
+                            <rect x="48.5" y="17" width="23" height="52" rx="11"></rect>
+                            <circle cx="60" cy="91.5" r="11.5"></circle>
+                        </g>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">GymNow<span class="badge-bang">!</span></div>
+                    <div class="badge-subtitle">It's gym o'clock</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms of Use</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: September 10, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: September 10, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of These Terms</a></li>
+                    <li><a href="#what-it-is">What GymNow! Is</a></li>
+                    <li><a href="#not-advice">Not Medical or Fitness Advice</a></li>
+                    <li><a href="#eligibility">Eligibility</a></li>
+                    <li><a href="#license">Your License to Use the App</a></li>
+                    <li><a href="#your-record">Your Record</a></li>
+                    <li><a href="#acceptable-use">Acceptable Use</a></li>
+                    <li><a href="#pro">GymNow! Pro: Purchases and Billing</a></li>
+                    <li><a href="#refunds">Refunds</a></li>
+                    <li><a href="#notifications">Notifications and Timing</a></li>
+                    <li><a href="#availability">Availability and Changes</a></li>
+                    <li><a href="#ip">Intellectual Property</a></li>
+                    <li><a href="#third-party">Third-Party Services and Stores</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#warranties">Disclaimer of Warranties</a></li>
+                    <li><a href="#liability">Limitation of Liability</a></li>
+                    <li><a href="#indemnity">Indemnity</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#law">Governing Law and Disputes</a></li>
+                    <li><a href="#changes">Changes to These Terms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of These Terms</h2>
+                    <p>These Terms of Use ("Terms") are an agreement between you and Armando Jimenez ("we," "us," "our") governing your use of the GymNow! mobile application ("the App"). By downloading, installing or using the App you accept these Terms. If you do not accept them, do not use the App.</p>
+                    <p>The App is distributed through the Apple App Store and Google Play. Your use is also subject to those stores' own terms, which apply alongside these.</p>
+                </section>
+
+                <section id="what-it-is" class="policy-section">
+                    <h2>2. What GymNow! Is</h2>
+                    <p>GymNow! is a gym attendance app. You set the days you go to the gym and the time you go. At that time the App fires an alarm-style notification carrying your own words. An hour later it asks whether you went, and your answer, went or skipped, goes on your own record, with an optional 1 to 10 score for how it felt. Rest days get their own quiet reminders.</p>
+                    <p>The App counts attendance, streaks and an honesty percentage. It does not track reps, weight, calories, location or health data, and everything it holds is stored on your device.</p>
+                </section>
+
+                <section id="not-advice" class="policy-section">
+                    <h2>3. Not Medical or Fitness Advice</h2>
+                    <div class="highlight-box">
+                        <strong>Read this one.</strong>
+                        <ul>
+                            <li>GymNow! is a motivation and attendance tool. It is not a medical device, a healthcare service or a coach.</li>
+                            <li>Nothing it shows is medical, fitness or health advice.</li>
+                            <li>It does not know what you do at the gym, how hard you train, or how your body is responding.</li>
+                        </ul>
+                    </div>
+                    <p>Exercise carries a risk of injury. Consult a physician or another qualified professional before starting an exercise program, and follow their guidance over anything the App says. You are responsible for your own activity and your own safety, at the gym and on the way there.</p>
+                    <p>Stop and seek medical attention if you experience pain, dizziness, shortness of breath or any other symptom of concern. The App's job is to hold you to the plan you made. It cannot tell a reason from an excuse, and an alarm is never a reason to train when you are injured, ill, or have been told by a professional not to.</p>
+                </section>
+
+                <section id="eligibility" class="policy-section">
+                    <h2>4. Eligibility</h2>
+                    <p>You must be at least 13 years old, and old enough to enter a binding contract where you live, to use the App. If you are under the age of majority in your jurisdiction, you may use the App only with the consent and supervision of a parent or guardian, who accepts these Terms on your behalf.</p>
+                    <p>The App is not directed to children under 13.</p>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>5. Your License to Use the App</h2>
+                    <p>We grant you a personal, limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for your own non-commercial use, in accordance with these Terms and your store's rules.</p>
+                    <p>You may not copy, modify, translate, reverse-engineer, decompile, disassemble, or create derivative works of the App, except to the extent that applicable law expressly permits it despite this restriction. You may not sell, rent, sublicense, lease or redistribute the App, or remove any proprietary notice from it.</p>
+                </section>
+
+                <section id="your-record" class="policy-section">
+                    <h2>6. Your Record</h2>
+                    <p>Everything you enter stays yours and stays on your device: your schedule, your times, the words you write, your check-ins and your mood scores. We claim no ownership of it, we do not receive it, and we could not use it if we wanted to: the App has no server to send it to.</p>
+                    <p>Because your record lives only on your device, keeping it is your responsibility. Deleting the App deletes it. We cannot recover it for you, restore it to a new device, or export it on your behalf. Your phone's own backup, if you use one, is the only thing that can carry it forward.</p>
+                    <p>You are responsible for what you write in the App.</p>
+                </section>
+
+                <section id="acceptable-use" class="policy-section">
+                    <h2>7. Acceptable Use</h2>
+                    <p>You agree not to:</p>
+                    <ul>
+                        <li>Use the App for any unlawful purpose, or in violation of these Terms.</li>
+                        <li>Interfere with the App's operation, or attempt to gain unauthorized access to any part of it or to any system it talks to.</li>
+                        <li>Circumvent, disable or tamper with the checks that gate GymNow! Pro, or tamper with, spoof or replay purchase receipts.</li>
+                        <li>Use automated means to access the App at scale.</li>
+                    </ul>
+                </section>
+
+                <section id="pro" class="policy-section">
+                    <h2>8. GymNow! Pro: Purchases and Billing</h2>
+                    <p>The App is free to download and its core is free to use. An optional paid upgrade, GymNow! Pro, unlocks the full schedule (unlimited gym days, with a time for each day), rest-day reminders, your own words in the voice bank, deep custom emergency messages, and lifetime history with mood trends.</p>
+                    <h3>8.1 Two ways to buy Pro</h3>
+                    <p>GymNow! Pro is offered as a one-time lifetime purchase and as a monthly subscription that renews automatically. Both unlock the same features. What each option costs in your region is set by your app store and is always shown in the App on the purchase screen before you buy.</p>
+                    <h3>8.2 Payment</h3>
+                    <p>Payment is charged to your Apple App Store or Google Play account when you confirm the purchase. All billing is performed by the store. We never receive, handle or store your payment details.</p>
+                    <h3>8.3 The lifetime purchase</h3>
+                    <p>The lifetime purchase is a single payment. It does not renew, there is nothing to cancel, and it stays attached to the store account you bought it with.</p>
+                    <h3>8.4 Automatic renewal</h3>
+                    <p>The monthly subscription renews automatically at the end of each period unless automatic renewal is turned off at least 24 hours before the end of the current period. Your account is charged for the renewal within the 24 hours before the current period ends.</p>
+                    <h3>8.5 Managing and cancelling</h3>
+                    <p>You manage or cancel the subscription in your store account settings (App Store: Settings, your name, Subscriptions. Google Play: Play Store, Payments and subscriptions). <strong>Deleting the App does not cancel a subscription.</strong> After cancelling you keep access until the end of the period you already paid for.</p>
+                    <h3>8.6 If the subscription lapses</h3>
+                    <p>If the monthly subscription lapses, <strong>you keep everything you created</strong>. Features beyond the free tier become read-only, and nothing is deleted. Subscribe again, or buy the lifetime option, and everything opens back up exactly as it was.</p>
+                    <h3>8.7 Changes to what a renewal costs</h3>
+                    <p>If the cost of the monthly subscription changes, your store will notify you and, where the law requires it, ask for your consent before charging the new amount. You can always cancel instead. A change never affects a lifetime purchase you have already made.</p>
+                    <h3>8.8 Restoring purchases</h3>
+                    <p>Your purchase is tied to the store account you bought it with. If you reinstall GymNow! or set up a new device, use "Restore purchases" in the App while signed in to the same App Store or Google Play account. Restoring needs an internet connection.</p>
+                    <h3>8.9 Family Sharing</h3>
+                    <p>The lifetime purchase is eligible for Family Sharing on the App Store. Availability and behavior of Family Sharing are controlled by Apple.</p>
+                </section>
+
+                <section id="refunds" class="policy-section">
+                    <h2>9. Refunds</h2>
+                    <p>All purchases are processed by Apple and Google, and <strong>all refunds are handled by them under their own policies</strong>. We cannot issue, approve or reverse a refund, because we never receive the payment.</p>
+                    <p>On iOS, request a refund at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. On Android, request one through Google Play. Consumers in the European Union, the United Kingdom and other jurisdictions with statutory withdrawal rights keep those rights in full, and the store administers them.</p>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>10. Notifications and Timing</h2>
+                    <p>The App's alarms, its "did you go?" question and its rest-day reminders are local notifications, scheduled and delivered by your own device. We do not operate a push service and cannot send you anything.</p>
+                    <p>Notification timing depends on your operating system and is not guaranteed to the minute. On Android, the system may deliver alarms inexactly to save battery. Battery savers, focus modes, notification settings and the operating system's own limits can also delay or suppress a notification. <strong>We do not guarantee that any notification will be delivered at an exact time, or at all.</strong> Do not rely on the App as your only alarm for anything time-critical.</p>
+                </section>
+
+                <section id="availability" class="policy-section">
+                    <h2>11. Availability and Changes</h2>
+                    <p>We may change, suspend or discontinue the App, or any feature of it, at any time. We may also stop supporting older operating system versions. Where a change removes something you are paying for, your store's refund and cancellation rules apply.</p>
+                    <p>The App is provided as it is at the time you install it. We do not promise that any particular feature will exist forever.</p>
+                </section>
+
+                <section id="ip" class="policy-section">
+                    <h2>12. Intellectual Property</h2>
+                    <p>The App, its name, its mark, its interface, its copy and its code are owned by us and protected by copyright and other laws. These Terms grant you a license to use the App, and nothing else.</p>
+                    <p>The App includes open-source typefaces and software components, each used under its own license.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>13. Third-Party Services and Stores</h2>
+                    <p>The App relies on Apple or Google for distribution and payment, on RevenueCat to process purchases and verify GymNow! Pro, and on Sentry to receive crash reports, as described in the <a href="privacy-policy.html">Privacy Policy</a>. Their own terms and privacy policies govern what they do.</p>
+                    <p>Apple and Google are not parties to these Terms and have no responsibility for the App. Where Apple's rules require it: Apple has no obligation to furnish maintenance or support for the App; in the event of any failure of the App to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price, and to the maximum extent permitted by law Apple has no other warranty obligation whatsoever; Apple is not responsible for addressing any claim relating to the App; and Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</p>
+                </section>
+
+                <section id="privacy" class="policy-section">
+                    <h2>14. Privacy</h2>
+                    <p>Our <a href="privacy-policy.html">Privacy Policy</a> explains what the App does and does not collect. The short version is that your record never leaves your device, there are no accounts and there is no analytics of any kind.</p>
+                </section>
+
+                <section id="warranties" class="policy-section">
+                    <h2>15. Disclaimer of Warranties</h2>
+                    <p>The App is provided "as is" and "as available", without warranty of any kind, express or implied, including any implied warranty of merchantability, fitness for a particular purpose, accuracy or non-infringement.</p>
+                    <p>We do not warrant that the App will be uninterrupted, error-free, or available at any particular time; that its alarms and reminders will be delivered on time; or that using it will produce any particular result or prevent any injury.</p>
+                    <p>Some jurisdictions do not allow the exclusion of implied warranties, so some of the above may not apply to you, and you may have other rights that vary by jurisdiction.</p>
+                </section>
+
+                <section id="liability" class="policy-section">
+                    <h2>16. Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, profits or goodwill, arising out of or relating to your use of the App, including any injury connected with exercise you chose to do, or a reminder that arrived late or not at all.</p>
+                    <p>To the maximum extent permitted by law, our total liability for all claims relating to the App is limited to the amount you paid for GymNow! Pro in the twelve months before the claim arose.</p>
+                    <p>Nothing in these Terms excludes or limits liability that cannot be excluded or limited by law, including liability for death or personal injury caused by negligence, or for fraud.</p>
+                </section>
+
+                <section id="indemnity" class="policy-section">
+                    <h2>17. Indemnity</h2>
+                    <p>You agree to indemnify and hold us harmless from any claim, demand, loss or expense (including reasonable legal fees) arising from your misuse of the App or your breach of these Terms.</p>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>18. Termination</h2>
+                    <p>You may end this agreement at any time by deleting the App. We may suspend or terminate your license if you materially breach these Terms.</p>
+                    <p>Sections 3, 6 and 12 to 19 survive termination.</p>
+                </section>
+
+                <section id="law" class="policy-section">
+                    <h2>19. Governing Law and Disputes</h2>
+                    <p>These Terms are governed by the laws of the Commonwealth of Puerto Rico and the United States, without regard to conflict-of-laws rules. The courts of Puerto Rico have exclusive jurisdiction over any dispute, except where mandatory consumer-protection law in your country of residence gives you the right to bring a claim in your own local courts, in which case that right is unaffected.</p>
+                    <p>If you are a consumer in the European Union or the United Kingdom, you keep the protections of the mandatory law of your country of residence, and nothing here removes them.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>20. Changes to These Terms</h2>
+                    <p>If these Terms change, the updated version is posted at this address with a new date at the top. Material changes will also be described in the App's release notes. Continuing to use the App after a change means you accept the updated Terms.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>21. Contact</h2>
+                    <p>Questions about these Terms: <a href="mailto:gymnow@armandojimenez.dev">gymnow@armandojimenez.dev</a>.</p>
+                    <p>One person reads that mailbox and answers every message he can.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> September 10, 2026</p>
+                    <p><strong>Effective Date:</strong> September 10, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Armando Jimenez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

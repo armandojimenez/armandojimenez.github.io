@@ -1,0 +1,241 @@
+/*
+ * GymNow! : Paper, Push and Ember.
+ * Overrides for the policy pages.
+ *
+ * Every value is lifted from the app's own lib/theme (tokens.dart, accents.dart
+ * and ink.dart), WITH the accessibility overrides its `make contrast` gate
+ * holds, so the page a reader lands on from the app is painted in the app they
+ * just left. The app has no global dark mode on purpose: it assigns light and
+ * dark by screen role. Light here is the paper role (every teaching and list
+ * surface), dark is the push role (the near-black surfaces that fire the alarm).
+ * Archivo at 800 and 900, roman and italic, is the display voice; UI text is
+ * the platform face, exactly as in the app.
+ *
+ * The @import sits first on purpose: an @import after any other rule is
+ * dropped by the browser.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;0,900;1,800;1,900&display=swap');
+
+/* ===========================
+   Paper: the light role
+   =========================== */
+:root {
+    --bg-primary: #f5f4f1;      /* paper */
+    --bg-secondary: #ffffff;    /* card */
+    --bg-tertiary: #f1eee8;     /* paperDeep */
+    --bg-accent: #f6dfd9;       /* Ember's accTint (0x1F) composited on paper */
+
+    --text-primary: #131216;                /* ink, 16.96:1 on paper */
+    --text-secondary: rgba(19, 18, 22, 0.8);  /* the body rung: 9.51 paper, 10.13 card */
+    --text-tertiary: rgba(19, 18, 22, 0.62);  /* the secondary rung: 5.04 paper, 5.22 card, 4.79 tint */
+
+    /* accDeep. The board draws #d93a20, which is 4.17:1 on paper and 3.60 on
+       the tint; the app raises it to #c42202 (5.34 paper, 5.87 card, 4.61
+       tint), and text on a light ground is always this one. */
+    --text-link: #c42202;
+    --text-link-hover: #131216;
+
+    --border-color: #d1d0ce;    /* ink at .16 over paper: the outline hairline */
+    --border-light: #e1e0dd;    /* ink at .09 over paper: the divider hairline */
+
+    --accent-primary: #ff4a2e;  /* Ember, the fill. Never text on light. */
+    --accent-secondary: #c42202;
+    /* The app has one signal colour; the shared sheet's status slots take it. */
+    --accent-success: #131216;
+    --accent-warning: #ff4a2e;
+    --accent-danger: #c42202;
+
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ===========================
+   Push: the dark role
+   =========================== */
+[data-theme="dark"] {
+    --bg-primary: #0d0d10;      /* push */
+    --bg-secondary: #131216;    /* ink, the plate */
+    --bg-tertiary: #1f1e26;     /* pushLift */
+    --bg-accent: #2a1414;       /* Ember's accTint composited on push */
+
+    --text-primary: #f5f4f1;                    /* paper, never pure white: 17.64:1 on push */
+    --text-secondary: rgba(245, 244, 241, 0.8);   /* the body rung: 11.37 push, 11.04 ink */
+    --text-tertiary: rgba(245, 244, 241, 0.55);   /* the secondary rung: 5.79 push, 5.71 ink, 5.47 pushLift */
+
+    /* accOnDark. The fill is 4.57 on the hero bloom, so the app lifts Ember by
+       two OKLCH steps for text and marks on dark: 5.62 ink, 4.98 pushLift. */
+    --text-link: #ff4c30;
+    --text-link-hover: #f5f4f1;
+
+    --border-color: #373738;    /* paper at .18 over push */
+    --border-light: #201f22;    /* paper at .08 over push */
+
+    --accent-primary: #ff4a2e;
+    --accent-secondary: #ff4c30;
+    --accent-success: #f5f4f1;
+    --accent-warning: #ff4a2e;
+    --accent-danger: #ff4c30;
+}
+
+/* ===========================
+   Typography: the display voice
+   =========================== */
+/* The loud cut: the wordmark and the headline, 900 italic, as the board sets
+   the alarm's own face. */
+.policy-title,
+.badge-title {
+    font-family: 'Archivo', var(--font-sans) !important;
+    font-weight: 900 !important;
+    font-style: italic;
+    letter-spacing: -0.03em;
+}
+
+.badge-title {
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+/* The wordmark's "!" is the accent, as the board draws it. It is text on a
+   light ground, so it takes the text accent, not the fill. */
+.badge-bang {
+    color: var(--text-link);
+}
+
+.policy-section h2 {
+    font-family: 'Archivo', var(--font-sans) !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em;
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: var(--font-sans) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em;
+}
+
+.badge-subtitle {
+    font-family: 'Archivo', var(--font-sans);
+    font-weight: 800;
+    font-style: italic;
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+}
+
+.meta-item {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.highlight-box strong {
+    font-family: var(--font-sans);
+    font-weight: 700;
+}
+
+/* ===========================
+   The 1a Signal mark
+   =========================== */
+/* The shared stylesheet sizes this box as TEXT (font-size: 2rem), which leaves
+   an inline SVG with no box at all. The plate gets the app icon's own corner:
+   27 on a 120 plate. The hairline keeps the ink plate from dissolving into the
+   ink badge on the dark role. */
+.badge-icon {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    flex: 0 0 auto;
+    border-radius: 22.5%;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px var(--border-light), 0 1px 2px rgba(19, 18, 22, 0.06);
+}
+
+.badge-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===========================
+   Controls on the Ember fill
+   =========================== */
+/* White on Ember is 3.35:1. The app's accInk, a warm near-black, is 5.62:1,
+   and it is the only ink the app ever puts on its own fill. */
+.lang-button.active {
+    color: #17100c;
+}
+
+.back-to-top {
+    background: var(--accent-primary) !important;
+    color: #17100c !important;
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: #17100c;
+    border-color: var(--accent-primary);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 26px rgba(255, 74, 46, 0.3);
+}
+
+.highlight-box {
+    border-left-color: var(--accent-primary);
+}
+
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+/* A hovered TOC entry is text, so it takes the text accent. */
+.toc-list a:hover {
+    color: var(--text-link);
+}
+
+.policy-section a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.policy-section a:hover {
+    border-bottom-color: var(--accent-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+}
+
+::selection {
+    background: var(--accent-primary);
+    color: #17100c;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: #17100c;
+}
+
+/* ===========================
+   Layout
+   =========================== */
+/* On a phone the shared stylesheet pins the language buttons in a column at
+   top: 5.5rem and stacks the badge into a column that starts at roughly the
+   same place, so English/Español land on the app name. The header starts below
+   the switcher instead: one number, no change to the shared sheet. */
+@media (max-width: 767px) {
+    .policy-header {
+        padding-top: 7.5rem;
+    }
+}
+
+/* The mark and the words read as one lockup where they sit side by side. On a
+   phone the badge stacks, and centred text belongs under a centred mark. */
+@media (min-width: 768px) {
+    .badge-text {
+        text-align: left;
+    }
+}

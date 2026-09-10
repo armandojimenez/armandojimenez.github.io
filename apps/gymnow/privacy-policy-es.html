@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="gymnow" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en' && window.location.pathname.endsWith('-es.html')) {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de privacidad - GymNow!</title>
+    <meta name="description" content="Política de privacidad de GymNow!, la app de asistencia al gimnasio contra las excusas. Sin cuentas, sin analítica y sin rastreo. Tu horario, tus palabras y tu registro se quedan en tu dispositivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg viewBox="0 0 120 120" aria-hidden="true">
+                        <defs>
+                            <radialGradient id="gnPlate" cx="0.22" cy="0.12" r="0.95">
+                                <stop offset="0" stop-color="#26242e"></stop>
+                                <stop offset="0.62" stop-color="#131216"></stop>
+                            </radialGradient>
+                        </defs>
+                        <rect width="120" height="120" fill="url(#gnPlate)"></rect>
+                        <g fill="#ff4a2e" transform="translate(60 60) skewX(-8) translate(-60 -60)">
+                            <rect x="48.5" y="17" width="23" height="52" rx="11"></rect>
+                            <circle cx="60" cy="91.5" r="11.5"></circle>
+                        </g>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">GymNow<span class="badge-bang">!</span></div>
+                    <div class="badge-subtitle">Es hora de gym</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 10 de septiembre de 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Fecha de entrada en vigor: 10 de septiembre de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Contenido</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#short-version">La versión corta</a></li>
+                    <li><a href="#information-collection">Qué información recopilamos</a></li>
+                    <li><a href="#on-your-device">Qué vive en tu dispositivo</a></li>
+                    <li><a href="#your-record">Tu registro no se envía a ninguna parte</a></li>
+                    <li><a href="#notifications">Notificaciones</a></li>
+                    <li><a href="#crash-reports">Informes de fallos</a></li>
+                    <li><a href="#no-analytics">Sin analítica, sin rastreo, sin anuncios</a></li>
+                    <li><a href="#purchases">GymNow! Pro y las compras</a></li>
+                    <li><a href="#third-party">Servicios de terceros</a></li>
+                    <li><a href="#permissions">Permisos de la app</a></li>
+                    <li><a href="#backups">Copias de seguridad y cambio de dispositivo</a></li>
+                    <li><a href="#your-rights">Tus derechos de privacidad</a></li>
+                    <li><a href="#deleting">Cómo borrar tus datos</a></li>
+                    <li><a href="#children">Privacidad de menores</a></li>
+                    <li><a href="#international">Usuarios internacionales</a></li>
+                    <li><a href="#security">Seguridad</a></li>
+                    <li><a href="#not-advice">No es consejo médico ni de entrenamiento</a></li>
+                    <li><a href="#changes">Cambios a esta política</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>GymNow! ("la App") es una app de asistencia al gimnasio, desarrollada y operada por Armando Jimenez ("GymNow!", "nosotros"). GymNow! se publica en la App Store de Apple para iPhone y iPad y en Google Play para teléfonos y tabletas Android.</p>
+                    <p>Tú eliges qué días vas al gimnasio y a qué hora. A esa hora suena una alarma con tus propias palabras. Una hora después, la App te hace una sola pregunta: ¿fuiste? Tu respuesta queda en tu registro, haya sido cual haya sido. La App cuenta asistencia, no repeticiones, peso ni calorías. Esta política es corta por la mejor razón posible: GymNow! está construida para que casi no haya nada que recopilar.</p>
+                    <div class="highlight-box">
+                        <strong>Nuestra promesa de privacidad</strong>
+                        <ul>
+                            <li>GymNow! no tiene cuentas. Ni correo, ni contraseña, ni inicio de sesión, nunca.</li>
+                            <li>Tu horario, tus horas, las palabras que escribes, tus respuestas y tus puntuaciones de ánimo viven en TU dispositivo.</li>
+                            <li>No existe un servidor de GymNow! ni sincronización en la nube. No tendríamos dónde guardar tu registro aunque quisiéramos.</li>
+                            <li>La App no contiene ningún SDK de analítica. No medimos cómo la usas, cuándo vas ni si te lo saltaste.</li>
+                            <li>No hay anuncios, no hay identificador publicitario y no hay rastreo de ningún tipo. Nada se vende ni se comparte con fines de marketing.</li>
+                            <li>Tus alarmas y recordatorios los programa tu propio teléfono, en tu teléfono. No hay servidor de push.</li>
+                            <li>Solo dos cosas pueden salir alguna vez de tu dispositivo: un informe de fallo anónimo cuando la App se rompe, y la verificación de compra cuando compras o restauras GymNow! Pro.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="short-version" class="policy-section">
+                    <h2>2. La versión corta</h2>
+                    <p>Si no lees nada más, lee esto.</p>
+                    <p>GymNow! no recopila información personal y no tiene cuentas de usuario. La App hace peticiones de red en exactamente dos situaciones: cuando se ha caído y envía el informe de diagnóstico descrito en la sección 7, y cuando le pregunta a nuestro proveedor de pagos si GymNow! Pro está activo en este dispositivo, o completa una compra o una restauración. Todo lo demás ocurre en tu dispositivo, sin conexión, y ahí se queda.</p>
+                    <p>No sabemos qué días entrenas, a qué hora está puesta tu alarma, qué te escribiste, si fuiste o te lo saltaste, cómo te sentiste ni cuánto dura tu racha. Nada de eso nos llega, porque la App nunca lo envía.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Qué información recopilamos</h2>
+                    <h3>3.1 Información que nos das directamente</h3>
+                    <p><strong>Ninguna.</strong> GymNow! no te pide darte de alta, ni tiene perfil, ni inicio de sesión, ni formularios que envíen nada a ninguna parte. Lo que introduces en la App, como tu horario, tus horas y tus propias palabras de motivación, se guarda en tu dispositivo y en ningún otro lugar.</p>
+                    <p>La única forma en que puedes enviarnos algo es eligiendo escribirnos a la dirección de la sección 20. Si lo haces, recibimos lo que escribas en ese correo y lo usamos únicamente para responderte.</p>
+                    <h3>3.2 Información recopilada automáticamente</h3>
+                    <p><strong>Ninguna información de uso.</strong> GymNow! no contiene ninguna librería de analítica, telemetría, atribución ni publicidad. La App no genera ni transmite ningún evento de uso, sesión, vista de pantalla, respuesta, identificador ni perfil de comportamiento.</p>
+                    <p><strong>Solo diagnóstico de fallos.</strong> Cuando la App se cae, envía un informe técnico para que el fallo pueda arreglarse. La sección 7 describe exactamente qué contiene ese informe y qué no contiene.</p>
+                    <h3>3.3 Información que procesa nuestro proveedor de pagos</h3>
+                    <p>Cuando compras o restauras GymNow! Pro, o cuando la App verifica si Pro está activo, nuestro proveedor de pagos RevenueCat recibe un identificador de usuario anónimo generado en tu dispositivo y los datos de la transacción y del recibo que emitió tu tienda de apps. No recibe ningún nombre, ninguna dirección de correo ni nada sobre tu horario, tus palabras o tu registro. Nosotros nunca recibimos tus datos de pago: esos van a Apple o a Google y jamás pasan por nosotros ni por la App.</p>
+                </section>
+
+                <section id="on-your-device" class="policy-section">
+                    <h2>4. Qué vive en tu dispositivo</h2>
+                    <p>Todo lo siguiente se guarda en una base de datos local dentro del área de almacenamiento privado de la App, que las demás apps de tu teléfono no pueden leer:</p>
+                    <ul>
+                        <li>Tu horario: qué días son de gimnasio, cuáles son de descanso y la hora que pusiste para cada día de gimnasio.</li>
+                        <li>Las palabras que escribes para tus alarmas, tu Banco de voz y tus mensajes de emergencia, tal como las escribiste.</li>
+                        <li>Cada respuesta: el día, si fuiste o te lo saltaste, y la puntuación opcional del 1 al 10 de cómo te sentiste.</li>
+                        <li>Tus recordatorios de los días de descanso (estirar, agua, apagar las luces).</li>
+                        <li>Tus rachas y tu porcentaje de honestidad, que la App calcula en tu dispositivo a partir de tus propias respuestas.</li>
+                        <li>Tus ajustes.</li>
+                    </ul>
+                    <p>Nada de esto se transmite a ninguna parte. Borrar la App lo borra todo.</p>
+                </section>
+
+                <section id="your-record" class="policy-section">
+                    <h2>5. Tu registro no se envía a ninguna parte</h2>
+                    <p>Esto merece su propia sección, porque una app de gimnasio es exactamente el tipo de app que la gente razonablemente supone que está subiendo algo.</p>
+                    <p><strong>GymNow! no lo hace.</strong> La App lleva un solo tipo de registro: si fuiste los días que dijiste que irías. No registra repeticiones, peso, calorías, ubicación ni datos de salud. Tus rachas y tu porcentaje de honestidad son aritmética sobre tus propias respuestas, hecha en tu teléfono, y no hay ninguna cuenta con la que sincronizarlos.</p>
+                    <p>GymNow! no lee ni escribe en Salud de Apple (HealthKit) ni en Google Fit, y no pide permiso para hacerlo. No tiene acceso a tu ubicación, tus contactos, tu cámara, tu micrófono ni tus fotos.</p>
+                    <p>La puntuación de ánimo que le das a una sesión es tuya. Se queda en la misma base de datos local que el resto de tu registro y nunca se envía a ninguna parte.</p>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>6. Notificaciones</h2>
+                    <p>GymNow! te envía una alarma a la hora que pusiste para cada día de gimnasio, con tus propias palabras. Una hora después te pregunta si fuiste. Los días de descanso envía en su lugar sus propios recordatorios tranquilos: estirar, agua, apagar las luces.</p>
+                    <p><strong>Todas son notificaciones locales.</strong> La App las programa en tu dispositivo y se las entrega al sistema operativo de tu teléfono, que las guarda y las muestra en el momento correcto. No hay servidor de push, no hay token de push y ninguna notificación se nos envía ni pasa por nosotros.</p>
+                    <p>Como el texto se escribe por adelantado en la cola de notificaciones de tu teléfono, puede aparecer en el historial de notificaciones que guarda tu sistema operativo. Ese historial pertenece a tu teléfono, no a nosotros.</p>
+                    <p>La App pide el permiso de notificaciones una sola vez, durante la introducción. Si lo rechazas, la App sigue funcionando; solo se detienen las alarmas y los recordatorios. Puedes conceder o revocar el permiso en cualquier momento en los Ajustes de tu teléfono.</p>
+                    <p>Cuándo aparece una notificación lo decide tu sistema operativo, y no está garantizado al minuto. En Android, el sistema puede entregar las alarmas de forma inexacta para ahorrar batería. Los <a href="terms-es.html">Términos de uso</a> explican más sobre los horarios.</p>
+                </section>
+
+                <section id="crash-reports" class="policy-section">
+                    <h2>7. Informes de fallos</h2>
+                    <p>GymNow! usa <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a> para recibir informes automáticos de fallos. Esta es la única telemetría de la App, y está configurada para ser la versión más estrecha posible de sí misma.</p>
+                    <h3>7.1 Qué contiene un informe de fallo</h3>
+                    <ul>
+                        <li>El error y la traza: qué línea de código falló.</li>
+                        <li>La versión de la App, la versión del sistema operativo y el modelo del dispositivo.</li>
+                        <li>Un identificador de instalación aleatorio creado por el sistema de informes, para que varios informes del mismo fallo se reconozcan como un solo problema. No está vinculado a tu nombre ni a nada que hayas introducido.</li>
+                    </ul>
+                    <h3>7.2 Qué no contiene</h3>
+                    <ul>
+                        <li>Ninguna información personal. La opción que adjuntaría información personal identificable a un informe está desactivada.</li>
+                        <li>Ningún seguimiento de sesiones, así que la App no reporta que se abrió.</li>
+                        <li>Ningún trazado de rendimiento, así que la App no registra qué estabas haciendo ni cuánto tardó una pantalla.</li>
+                        <li>Ninguna captura de pantalla. Un informe de fallo nunca incluye una imagen de tu pantalla.</li>
+                        <li>Nada de lo que introdujiste: ni horario, ni horas, ni palabras, ni respuestas, ni puntuaciones de ánimo, ni ajustes.</li>
+                    </ul>
+                    <h3>7.3 No hay un interruptor en la App</h3>
+                    <p>GymNow! no tiene un ajuste para desactivar los informes de fallos. Lo que se envía es solo lo que se describe arriba, y solo cuando la App se cae. Puedes oponerte a este tratamiento escribiéndonos a la dirección de la sección 20, y puedes impedirlo por completo borrando la App.</p>
+                    <p>Sentry actúa como nuestro encargado del tratamiento, guarda los informes durante un periodo de retención limitado y no los usa para sus propios fines.</p>
+                </section>
+
+                <section id="no-analytics" class="policy-section">
+                    <h2>8. Sin analítica, sin rastreo, sin anuncios</h2>
+                    <p>GymNow! no contiene ningún SDK de analítica de ningún tipo. No hay Firebase Analytics, ni Google Analytics, ni SDK de Meta, ni SDK de atribución, ni SDK de publicidad dentro de la App.</p>
+                    <p>No se usa ningún identificador publicitario. En iOS, la App nunca muestra el aviso de App Tracking Transparency, porque no tiene nada con qué rastrearte ni nada que enlazar a un tercero. Bajo la definición de Apple, GymNow! no te rastrea.</p>
+                    <p>No hay anuncios en la App. No vendemos tus datos ni los compartimos con fines de marketing, y no hay un ajuste para desactivar la analítica porque no hay nada que desactivar.</p>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>9. GymNow! Pro y las compras</h2>
+                    <p>El núcleo de GymNow! es gratis. GymNow! Pro desbloquea el horario completo (días de gimnasio ilimitados, con una hora para cada día), los recordatorios de los días de descanso, tus propias palabras en el Banco de voz, mensajes de emergencia personalizados a fondo y el historial de por vida con la tendencia de tu ánimo. Pro se vende de dos formas: una compra única de por vida o una suscripción mensual que se renueva automáticamente. Los <a href="terms-es.html">Términos de uso</a> describen las condiciones de facturación completas.</p>
+                    <p>Las compras las procesan enteramente Apple o Google. Nosotros nunca vemos, recibimos ni guardamos tu tarjeta, tu dirección de facturación ni tu cuenta de la tienda.</p>
+                    <p>Usamos <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a> para procesar las compras, verificar que Pro está activo en este dispositivo y restaurar una compra que ya hiciste. RevenueCat recibe un identificador de usuario anónimo generado en tu dispositivo, junto con los datos de la transacción y del recibo de tu tienda. Como cualquier petición por internet, también ve la dirección IP desde la que llega. No recibe ningún nombre, ninguna dirección de correo ni nada sobre tu horario, tus palabras o tu registro.</p>
+                    <p>La compra de por vida es elegible para Compartir en familia en la App Store. Si la compartes con tu grupo familiar, Apple administra ese uso compartido, y nosotros no recibimos ninguna información sobre los miembros de tu grupo familiar.</p>
+                    <p>Si una suscripción mensual caduca, <strong>conservas todo lo que creaste</strong>. Las funciones que van más allá del nivel gratuito pasan a ser de solo lectura, y no se borra nada.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>10. Servicios de terceros</h2>
+                    <p>Estos son los únicos terceros involucrados en la App, y esto es todo lo que recibe cada uno:</p>
+                    <ul>
+                        <li><strong>Sentry</strong> (solo informes de fallos, como describe la sección 7). <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Política de privacidad</a>.</li>
+                        <li><strong>RevenueCat</strong> (solo compras y estado de Pro, como describe la sección 9). <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Política de privacidad</a>.</li>
+                        <li><strong>App Store de Apple</strong> y <strong>Google Play</strong> (distribución de la App y procesamiento de pagos, bajo sus propios términos y políticas de privacidad).</li>
+                    </ul>
+                    <p>No hay otros. La App no contacta ningún proveedor de push, ningún servicio de analítica, ninguna red publicitaria ni ningún servidor nuestro.</p>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>11. Permisos de la app</h2>
+                    <p>GymNow! pide exactamente un permiso:</p>
+                    <ul>
+                        <li><strong>Notificaciones</strong> (se solicita una sola vez, durante la introducción), para que la App pueda entregarte tus alarmas, su pregunta "¿Fuiste?" y tus recordatorios de los días de descanso. Rechazarlo te cuesta los recordatorios y nada más.</li>
+                    </ul>
+                    <p>La App no solicita tu cámara, tu micrófono, tus contactos, tu ubicación ni tus fotos. No solicita datos de salud ni el identificador publicitario.</p>
+                </section>
+
+                <section id="backups" class="policy-section">
+                    <h2>12. Copias de seguridad y cambio de dispositivo</h2>
+                    <p>La copia de seguridad de tu propio teléfono, como la copia en iCloud en iPhone y iPad o el servicio de copia de seguridad de Google en Android, puede incluir la base de datos local de la App si la tienes activada. Esas copias pertenecen a tu cuenta de Apple o de Google y se rigen por sus políticas de privacidad. Nunca pasan por nosotros y no podemos leerlas.</p>
+                    <p>GymNow! no tiene sincronización en la nube propia. Tu registro no te sigue a un dispositivo nuevo salvo que la copia de seguridad de tu propio teléfono lo lleve. Tu compra de GymNow! Pro está vinculada a tu cuenta de la tienda: en un dispositivo nuevo con la misma cuenta, usa "Restaurar compras" en la App.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>13. Tus derechos de privacidad</h2>
+                    <p>La ley de privacidad te da derechos sobre los datos personales que una empresa tenga sobre ti: acceso, rectificación, supresión, portabilidad, oposición y el derecho a no sufrir discriminación por ejercerlos. Esto incluye el RGPD en el Espacio Económico Europeo y el Reino Unido, y la CCPA y la CPRA en California.</p>
+                    <p>Esos derechos están plenamente a tu disposición y, en el caso de GymNow!, son inusualmente fáciles de satisfacer: <strong>no tenemos ningún dato personal sobre ti</strong>. No hay cuenta, ni perfil, ni registro en ningún servidor que pudiera consultarse, exportarse o corregirse. Tu registro está en tu dispositivo, bajo tu control.</p>
+                    <p>No vendemos ni compartimos información personal, y nunca lo hemos hecho. No hay un control de "No vender ni compartir mi información personal" porque no hay nada que se venda ni se comparta.</p>
+                    <p>Cuando se procesa un informe de fallo, nuestra base legal bajo el RGPD es el interés legítimo: arreglar fallos en el software que estás usando. Cuando se verifica una compra, es la ejecución del contrato que aceptaste al comprar GymNow! Pro. Puedes oponerte a los informes de fallos escribiéndonos, y puedes presentar una reclamación ante tu autoridad local de protección de datos.</p>
+                    <p>Si quieres ejercer un derecho sobre datos en poder de RevenueCat, Apple o Google, contáctanos y te ayudaremos a dirigirlo al lugar correcto.</p>
+                </section>
+
+                <section id="deleting" class="policy-section">
+                    <h2>14. Cómo borrar tus datos</h2>
+                    <p>Borra la App. Ese es todo el procedimiento: tu horario, tus palabras, tus respuestas, tus puntuaciones de ánimo y tus ajustes viven en la base de datos local de la App, y se van con ella. No hay nada que borrar en un servidor nuestro, porque no hay servidor.</p>
+                    <p>Dos cosas se guardan fuera de tu dispositivo, y a nosotros no nos corresponde borrar ninguna:</p>
+                    <ul>
+                        <li>Tu compra sigue vinculada a tu cuenta de App Store o Google Play, y RevenueCat conserva su registro anónimo de la compra como parte de esa transacción de la tienda. Eso es lo que hace funcionar "Restaurar compras" si vuelves a instalar. Si quieres que RevenueCat borre ese registro, contáctanos y le trasladaremos la solicitud.</li>
+                        <li>Cualquier copia de seguridad del dispositivo que hayas hecho antes de borrar la App pertenece a tu cuenta de Apple o de Google, y la administras allí.</li>
+                    </ul>
+                    <p>Si además quieres que se eliminen los informes de fallo que puedan existir para tu instalación, escríbenos a la dirección de la sección 20 y le pediremos a Sentry que los borre. No están vinculados a ti por nombre, así que dinos aproximadamente cuándo ocurrieron los fallos y en qué plataforma.</p>
+                    <p>Borrar la App no cancela una suscripción. Cancélala en los ajustes de tu cuenta de App Store o Google Play.</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>15. Privacidad de menores</h2>
+                    <p>GymNow! no está dirigida a menores de 13 años ni diseñada para ellos. Es una herramienta de asistencia al gimnasio para quienes entrenan.</p>
+                    <p>No recopilamos conscientemente información personal de nadie, de ninguna edad, porque no recopilamos información personal en absoluto. La App no tiene cuentas, ni funciones sociales, ni mensajería, ni contenido generado por el usuario que otros puedan ver, ni forma alguna de que un usuario contacte a otro.</p>
+                    <p>Si crees que un menor nos ha proporcionado información personal de algún modo, contáctanos y la borraremos.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>16. Usuarios internacionales</h2>
+                    <p>GymNow! puede usarse en cualquier lugar donde la App Store y Google Play la ofrezcan. La App en sí casi no envía nada a través de una frontera porque casi no envía nada en absoluto.</p>
+                    <p>Las dos excepciones son los informes de fallo y las verificaciones de compra descritos arriba, procesados por Sentry y RevenueCat en infraestructura que puede estar ubicada en Estados Unidos. Ambos actúan como nuestros encargados del tratamiento bajo contrato y ofrecen garantías contractuales para las transferencias internacionales.</p>
+                </section>
+
+                <section id="security" class="policy-section">
+                    <h2>17. Seguridad</h2>
+                    <p>Tu registro se guarda en el área de almacenamiento privado de la App, que el sistema operativo aísla de otras apps y que queda cubierta por el cifrado de tu propio dispositivo cuando tienes un código configurado.</p>
+                    <p>Las peticiones de red de la App, a Sentry y a RevenueCat, usan conexiones HTTPS cifradas.</p>
+                    <p>Ningún sistema es perfectamente seguro. Lo que sí podemos decir honestamente es que la superficie es muy pequeña: no hay servidor que guarde tus datos, ni cuenta que comprometer, ni credencial que robar, porque nada de eso existe.</p>
+                </section>
+
+                <section id="not-advice" class="policy-section">
+                    <h2>18. No es consejo médico ni de entrenamiento</h2>
+                    <p>GymNow! es una herramienta de motivación y de asistencia. No es un dispositivo médico, ni un servicio de salud, ni una fuente de consejo médico, de entrenamiento o de salud. Te pregunta si fuiste; no sabe qué hiciste allí, qué tan duro entrenaste ni cómo está respondiendo tu cuerpo.</p>
+                    <p>Consulta a un médico o a otro profesional cualificado antes de comenzar un programa de ejercicio. Tú eres responsable de tu propia actividad y de tu propia seguridad. Los <a href="terms-es.html">Términos de uso</a> explican más.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>19. Cambios a esta política</h2>
+                    <p>Si esta política cambia, la versión actualizada se publica en esta dirección con una fecha nueva arriba. Los cambios importantes, en particular cualquier cambio en lo que la App recopila, también se describirán en las notas de la versión de la App. Seguir usando la App después de un cambio significa que aceptas la política actualizada.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>20. Contáctanos</h2>
+                    <p>Preguntas sobre esta política, sobre tus datos o sobre la App: <a href="mailto:gymnow@armandojimenez.dev">gymnow@armandojimenez.dev</a>.</p>
+                    <p>Una sola persona lee ese buzón y responde cada mensaje que puede.</p>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 10 de septiembre de 2026</p>
+                    <p><strong>Fecha de entrada en vigor:</strong> 10 de septiembre de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Armando Jimenez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
