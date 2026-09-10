@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+
 /*
  * Wealthy — Treasury Gold Theme
  * Overrides for policy pages.
@@ -60,7 +62,6 @@
 /* ===========================
    Editorial Typography
    =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap');
 
 .policy-title {
     font-family: 'Fraunces', 'Space Grotesk', Georgia, serif !important;

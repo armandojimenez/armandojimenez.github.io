@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap');
+
 /*
  * Deload — the readiness palette.
  * Overrides for the policy pages.
@@ -63,7 +65,6 @@
 /* ===========================
    Typography — the app's own two faces
    =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap');
 
 body {
     font-family: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;

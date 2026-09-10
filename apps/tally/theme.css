@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
 /*
  * Tally — Sand & Tangerine Theme
  * Overrides for policy pages.
@@ -62,7 +64,6 @@
 /* ===========================
    Typography — the app's own faces
    =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
 .policy-title,
 .badge-title,
