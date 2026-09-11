@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="purrplay" data-policy-type="privacy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'en' && window.location.pathname.endsWith('-es.html')) {
+                const englishPath = window.location.pathname.replace('-es.html', '.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(englishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Política de privacidad - PurrPlay</title>
+    <meta name="description" content="Política de privacidad de PurrPlay, la app de recordatorios y diario de juego para tu gato. Sin cuentas, sin analítica y sin rastreo. Tus gatos, tus sesiones y tus fotos se quedan en tu dispositivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg viewBox="-7 -8 62 62" aria-hidden="true">
+                        <defs>
+                            <clipPath id="ppHead">
+                                <path d="M10 18 L7 3 L20 10 C22.5 9.3 25.5 9.3 28 10 L41 3 L38 18 C40.5 21 42 24.8 42 28 C42 37 34 43 24 43 C14 43 6 37 6 28 C6 24.8 7.5 21 10 18 Z"></path>
+                            </clipPath>
+                        </defs>
+                        <rect x="-7" y="-8" width="62" height="62" fill="#FAF3E7"></rect>
+                        <path d="M10 18 L7 3 L20 10 C22.5 9.3 25.5 9.3 28 10 L41 3 L38 18 C40.5 21 42 24.8 42 28 C42 37 34 43 24 43 C14 43 6 37 6 28 C6 24.8 7.5 21 10 18 Z" fill="#FFFFFF"></path>
+                        <g clip-path="url(#ppHead)">
+                            <circle cx="11" cy="9" r="12" fill="#E8863D"></circle>
+                            <circle cx="38.5" cy="9.5" r="11" fill="#3B342C"></circle>
+                        </g>
+                        <path d="M10 18 L7 3 L20 10 C22.5 9.3 25.5 9.3 28 10 L41 3 L38 18 C40.5 21 42 24.8 42 28 C42 37 34 43 24 43 C14 43 6 37 6 28 C6 24.8 7.5 21 10 18 Z" fill="none" stroke="#35302A" stroke-width="2" stroke-linejoin="round"></path>
+                        <circle cx="17" cy="27" r="2.2" fill="#35302A"></circle>
+                        <circle cx="31" cy="27" r="2.2" fill="#35302A"></circle>
+                        <path d="M21.5 33 h5 l-2.5 3.2z" fill="#E8863D"></path>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">PurrPlay</div>
+                    <div class="badge-subtitle">Ratitos de juego, ronroneos gigantes</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Política de privacidad</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Última actualización: 11 de septiembre de 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Fecha de entrada en vigor: 11 de septiembre de 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Contenido</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#short-version">La versión corta</a></li>
+                    <li><a href="#information-collection">Qué información recopilamos</a></li>
+                    <li><a href="#on-your-device">Qué vive en tu dispositivo</a></li>
+                    <li><a href="#photos-pdf">Las fotos y el PDF del diario</a></li>
+                    <li><a href="#notifications">Recordatorios y notificaciones</a></li>
+                    <li><a href="#crash-reports">Informes de fallos</a></li>
+                    <li><a href="#no-analytics">Sin analítica, sin rastreo, sin anuncios</a></li>
+                    <li><a href="#purchases">PurrPlay Lifetime y las compras</a></li>
+                    <li><a href="#third-party">Servicios de terceros</a></li>
+                    <li><a href="#permissions">Permisos de la app</a></li>
+                    <li><a href="#backups">Copias de seguridad y cambio de dispositivo</a></li>
+                    <li><a href="#your-rights">Tus derechos de privacidad</a></li>
+                    <li><a href="#deleting">Cómo borrar tus datos</a></li>
+                    <li><a href="#children">Privacidad de menores</a></li>
+                    <li><a href="#international">Usuarios internacionales</a></li>
+                    <li><a href="#security">Seguridad</a></li>
+                    <li><a href="#changes">Cambios a esta política</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2>1. Introducción</h2>
+                    <p>PurrPlay ("la App") es una aplicación de recordatorios de juego y diario de juego para gatos, desarrollada y operada por Believe PR, propiedad de Armando Jimenez ("PurrPlay", "nosotros"). PurrPlay se publica en la App Store de Apple para iPhone y iPad y en Google Play para teléfonos y tabletas Android.</p>
+                    <p>Tú planificas ratos de juego alrededor de tu día, PurrPlay te avisa cuando llega la hora y, al terminar, anotas lo que pasó: cuánto jugaron, con qué juguete, cómo se veía tu gato y, si quieres, una foto y una nota. La App lleva tu racha, te da stickers, te muestra tus estadísticas y puede convertir tu diario en un PDF. Esta política es corta por la mejor razón posible: PurrPlay está hecha para que casi no haya nada que recopilar.</p>
+                    <div class="highlight-box">
+                        <strong>Nuestra promesa de privacidad</strong>
+                        <ul>
+                            <li>PurrPlay no tiene cuentas. Ni correo, ni contraseña, ni inicio de sesión, nunca.</li>
+                            <li>Tus gatos, tus sesiones, tus recordatorios, tus fotos, tus notas y tus ajustes viven en TU dispositivo.</li>
+                            <li>No existe un servidor de PurrPlay ni sincronización en la nube. No tendríamos dónde guardar tus datos aunque quisiéramos.</li>
+                            <li>La App no contiene ningún SDK de analítica. No medimos cómo la usas, cuándo juegas ni cuánto dura tu racha.</li>
+                            <li>No hay anuncios, ni identificador publicitario, ni rastreo de ningún tipo. Nada se vende ni se comparte con fines publicitarios.</li>
+                            <li>Tus recordatorios los programa tu propio teléfono, en tu teléfono. No hay servidor de notificaciones push.</li>
+                            <li>Solo dos cosas salen de tu dispositivo sin que tú mismo las envíes: un informe de fallo cuando la App se rompe, y la verificación de compra de PurrPlay Lifetime.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="short-version" class="policy-section">
+                    <h2>2. La versión corta</h2>
+                    <p>Si no lees nada más, lee esto.</p>
+                    <p>PurrPlay no recopila información personal y no tiene cuentas de usuario. La App hace peticiones de red en exactamente dos situaciones: cuando se ha cerrado por un fallo y envía el informe de diagnóstico descrito en la sección 7, y cuando le pregunta a nuestro proveedor de pagos si PurrPlay Lifetime está activo en este dispositivo, o completa una compra o una restauración. Todo lo demás ocurre en tu dispositivo, sin conexión, y ahí se queda.</p>
+                    <p>No sabemos cómo se llaman tus gatos, cuándo juegan, cuál es su juguete favorito, qué escribiste ni qué hay en tus fotos. Nada de eso nos llega, porque la App nunca lo envía.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2>3. Qué información recopilamos</h2>
+                    <h3>3.1 Información que nos das directamente</h3>
+                    <p><strong>Ninguna.</strong> PurrPlay no te pide registrarte, ni tiene perfil, ni inicio de sesión, ni formularios que envíen nada a ninguna parte. Lo que introduces en la App, como los perfiles de tus gatos, el nombre con el que te saluda, tus sesiones, tus notas y tus fotos, se guarda en tu dispositivo y en ningún otro lugar.</p>
+                    <p>La única forma en que puedes enviarnos algo es escribiéndonos a la dirección de la sección 19. Si lo haces, recibimos lo que escribas en ese correo y lo usamos únicamente para responderte.</p>
+                    <h3>3.2 Información recopilada automáticamente</h3>
+                    <p><strong>Ninguna información de uso.</strong> PurrPlay no contiene ninguna librería de analítica, telemetría, atribución ni publicidad. La App no genera ni transmite ningún evento de uso, sesión, vista de pantalla, identificador ni perfil de comportamiento.</p>
+                    <p><strong>Solo diagnóstico de fallos.</strong> Cuando la App se cierra por un fallo, envía un informe técnico para que el problema pueda arreglarse. La sección 7 describe exactamente qué contiene ese informe y qué no contiene.</p>
+                    <h3>3.3 Información que procesa nuestro proveedor de pagos</h3>
+                    <p>Cuando compras o restauras PurrPlay Lifetime, o cuando la App verifica si está activo, nuestro proveedor de pagos RevenueCat recibe un identificador de usuario anónimo, el registro de compra de tu tienda de apps, el producto que compraste, tu plataforma y la versión de la App. No recibe ningún nombre, ninguna dirección de correo ni nada sobre tus gatos o tu diario. La sección 9 da los detalles. Nosotros nunca recibimos tus datos de pago: esos van a Apple o a Google y jamás pasan por nosotros ni por la App.</p>
+                </section>
+
+                <section id="on-your-device" class="policy-section">
+                    <h2>4. Qué vive en tu dispositivo</h2>
+                    <p>Todo lo siguiente se guarda dentro del almacenamiento privado de la App en tu dispositivo, que las demás apps de tu teléfono no pueden leer:</p>
+                    <ul>
+                        <li>Los perfiles de tus gatos: el nombre de cada uno, su paleta de colores, su nivel de energía y, si lo añadiste, su año de nacimiento.</li>
+                        <li>Tus sesiones de juego: cuándo ocurrieron, cuánto duraron, qué juguete usaste, el ánimo de tu gato y la nota que escribiste, si escribiste alguna.</li>
+                        <li>Las fotos que añadiste a tus sesiones (sección 5).</li>
+                        <li>Tus horarios de juego planificados y tus recordatorios.</li>
+                        <li>El nombre con el que la App te saluda, si le diste uno.</li>
+                        <li>Tu racha, tus stickers y tus estadísticas, que la App calcula en tu dispositivo a partir de tus propias sesiones.</li>
+                        <li>Tus ajustes, como tus sonidos y tus horas de silencio.</li>
+                        <li>Si este dispositivo tiene PurrPlay Lifetime, guardado para que la App abra sin esperar a la red.</li>
+                    </ul>
+                    <p>La App no transmite nada de esto a ninguna parte. Borrar la App lo borra todo.</p>
+                </section>
+
+                <section id="photos-pdf" class="policy-section">
+                    <h2>5. Las fotos y el PDF del diario</h2>
+                    <p>Añadir una foto a una sesión es opcional. Cuando eliges una de tu galería de fotos, PurrPlay copia esa única imagen a su propio almacenamiento privado en tu dispositivo y la une a la sesión. No explora tu galería, no lee ninguna otra foto y nunca sube nada.</p>
+                    <p>El PDF del diario se crea en tu dispositivo. Se queda ahí a menos que decidas enviarlo a algún lugar con la opción de compartir de tu teléfono, y a dónde va entonces lo decides solo tú. No se nos informa y nunca recibimos una copia.</p>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>6. Recordatorios y notificaciones</h2>
+                    <p>PurrPlay te avisa cuando llega un rato de juego planificado. <strong>Cada recordatorio es una notificación local.</strong> La App lo programa en tu dispositivo y se lo entrega al sistema operativo de tu teléfono, que lo guarda y lo muestra en el momento indicado. No hay servidor de push, no hay token de push y ninguna notificación se nos envía ni pasa por nosotros.</p>
+                    <p>Como el texto se escribe por adelantado en la cola de notificaciones de tu teléfono, puede aparecer en el historial de notificaciones que guarda tu sistema operativo. Ese historial pertenece a tu teléfono, no a nosotros.</p>
+                    <p>Si rechazas el permiso de notificaciones, la App sigue funcionando; solo se detienen los recordatorios. Puedes conceder o revocar el permiso cuando quieras en los Ajustes de tu teléfono.</p>
+                    <p>En Android, PurrPlay puede usar el permiso de alarmas exactas del sistema para que los recordatorios lleguen a tiempo. En algunas versiones de Android ese permiso está desactivado hasta que lo permitas. Sin él, los recordatorios igual llegan, pero el sistema puede entregarlos más tarde de la hora que pusiste. Los <a href="terms-es.html">Términos de uso</a> explican más sobre los horarios.</p>
+                </section>
+
+                <section id="crash-reports" class="policy-section">
+                    <h2>7. Informes de fallos</h2>
+                    <p>PurrPlay usa <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a>, un servicio de Functional Software, Inc., para recibir informes automáticos de fallos. Es la única telemetría de la App, y está configurada para ser la versión más limitada posible de sí misma.</p>
+                    <h3>7.1 Qué contiene un informe de fallo</h3>
+                    <ul>
+                        <li>El error y la traza: qué parte del código falló.</li>
+                        <li>Detalles técnicos del dispositivo y de la App en ese momento: el modelo del dispositivo, el sistema operativo y su versión, la versión y compilación de la App, y el estado general del dispositivo, como la memoria y el tamaño de pantalla.</li>
+                        <li>Una etiqueta que indica qué tipo de compilación lo envió, como una versión de prueba o la versión de la tienda.</li>
+                        <li>Un breve rastro de eventos técnicos de justo antes del fallo, como que la App pasó a segundo plano.</li>
+                        <li>Un identificador de instalación aleatorio creado por el sistema de informes, para que varios informes del mismo fallo se reconozcan como un solo problema. No está vinculado a tu nombre ni a nada que hayas introducido.</li>
+                    </ul>
+                    <h3>7.2 Qué no contiene</h3>
+                    <ul>
+                        <li>Ninguna información personal. La opción que adjuntaría información personal identificable a un informe está desactivada.</li>
+                        <li>Ningún seguimiento de sesiones, así que la App no reporta que se abrió.</li>
+                        <li>Ningún seguimiento de rendimiento ni de uso, así que la App no registra qué estabas haciendo ni cuánto tardó una pantalla.</li>
+                        <li>Ninguna captura de pantalla. Un informe de fallo nunca incluye una imagen de tu pantalla.</li>
+                        <li>Nada de lo que introdujiste: ni nombres o perfiles de gatos, ni sesiones, ni notas, ni fotos, ni recordatorios, ni ajustes.</li>
+                    </ul>
+                    <h3>7.3 Cuándo se envían</h3>
+                    <p>Solo cuando la App se cierra por un fallo o se topa con un error del que no puede recuperarse. Las versiones de desarrollo de la App no envían nada.</p>
+                    <p>PurrPlay no tiene un ajuste para desactivar los informes de fallos. Lo que se envía es solo lo que se describe arriba. Puedes oponerte a este tratamiento escribiéndonos a la dirección de la sección 19, y puedes impedirlo por completo borrando la App.</p>
+                    <p>Sentry actúa como nuestro encargado del tratamiento, guarda los informes durante un periodo de retención limitado y no los usa para sus propios fines.</p>
+                </section>
+
+                <section id="no-analytics" class="policy-section">
+                    <h2>8. Sin analítica, sin rastreo, sin anuncios</h2>
+                    <p>PurrPlay no contiene ningún SDK de analítica de ningún tipo. No hay Firebase Analytics, ni Google Analytics, ni SDK de Meta, ni SDK de atribución, ni SDK de publicidad dentro de la App.</p>
+                    <p>No se usa ningún identificador publicitario. En iPhone y iPad, la App nunca muestra el aviso de App Tracking Transparency, porque no tiene nada con qué rastrearte ni nada que enlazar a un tercero. Según la definición de Apple, PurrPlay no te rastrea entre apps ni sitios web.</p>
+                    <p>No hay anuncios en la App. No vendemos tus datos, no los compartimos con fines publicitarios y no trabajamos con intermediarios de datos. No hay un ajuste para desactivar la analítica porque no hay nada que desactivar.</p>
+                </section>
+
+                <section id="purchases" class="policy-section">
+                    <h2>9. PurrPlay Lifetime y las compras</h2>
+                    <p>El núcleo de PurrPlay es gratis. PurrPlay Lifetime, el acceso de por vida, es una sola compra opcional y única que desbloquea todo en la App. No es una suscripción y nunca se renueva. PurrPlay no tiene suscripciones de ningún tipo. Los <a href="terms-es.html">Términos de uso</a> describen la compra por completo.</p>
+                    <h3>9.1 Cómo se procesa la compra</h3>
+                    <p>La compra la realiza Apple o Google, no nosotros. Tu método de pago, tu dirección de facturación y los detalles de la transacción los maneja por completo la App Store o Google Play bajo sus propias políticas de privacidad. <strong>Nosotros nunca vemos tu información de pago.</strong></p>
+                    <h3>9.2 Qué recibe RevenueCat</h3>
+                    <p>Usamos <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a>, un servicio de RevenueCat, Inc., para validar la compra, verificar si PurrPlay Lifetime está activo en este dispositivo y restaurarlo. RevenueCat recibe:</p>
+                    <ul>
+                        <li>Un identificador de usuario anónimo que genera RevenueCat. PurrPlay nunca establece uno propio, así que ese identificador no está vinculado a un nombre, a un correo ni a ninguna cuenta.</li>
+                        <li>El registro de compra, o recibo, que emite la App Store o Google Play, y que RevenueCat valida con la tienda.</li>
+                        <li>El identificador del producto que compraste.</li>
+                        <li>Tu plataforma (iOS o Android) y la versión de la App.</li>
+                        <li>Como en cualquier petición por internet, la dirección IP desde la que llega.</li>
+                    </ul>
+                    <p>RevenueCat no recibe nada sobre tus gatos, tus sesiones, tus notas, tus fotos ni tus ajustes. Nada de eso se envía a ninguna parte.</p>
+                    <h3>9.3 Restaurar y Compartir en familia</h3>
+                    <p>Tu compra está vinculada a tu cuenta de App Store o Google Play, y restaurarla funciona a través de esa cuenta. PurrPlay Lifetime está habilitado para Compartir en familia en la App Store. Si lo compartes con tu grupo familiar, Apple administra ese uso compartido, y nosotros no recibimos ninguna información sobre los miembros de tu grupo familiar.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>10. Servicios de terceros</h2>
+                    <p>Estos son los únicos terceros involucrados en la App, y esto es todo lo que recibe cada uno:</p>
+                    <ul>
+                        <li><strong>Sentry</strong>, de Functional Software, Inc. (solo informes de fallos, como describe la sección 7). <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Política de privacidad</a>.</li>
+                        <li><strong>RevenueCat</strong>, de RevenueCat, Inc. (solo la compra de PurrPlay Lifetime, como describe la sección 9). <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Política de privacidad</a>.</li>
+                        <li><strong>App Store de Apple</strong> y <strong>Google Play</strong> (distribución de la App y procesamiento de pagos, bajo sus propios términos y políticas de privacidad). Pueden mostrarnos cifras agregadas y anónimas, como cuántas personas descargaron la App. No podemos identificar a nadie con ellas, y vienen de la tienda, no de algo que PurrPlay envíe.</li>
+                    </ul>
+                    <p>No hay otros. La App no contacta ningún proveedor de push, ningún servicio de analítica, ninguna red publicitaria ni ningún servidor nuestro. Todas las tipografías que usa PurrPlay vienen dentro de la App, así que no se descarga ninguna fuente mientras la usas.</p>
+                    <h3>10.1 Funciones que usan tu teléfono, no un tercero</h3>
+                    <ul>
+                        <li><strong>Los recordatorios</strong> los entrega el propio sistema de notificaciones de tu teléfono (sección 6).</li>
+                        <li><strong>Compartir el PDF de tu diario</strong> usa la opción de compartir de tu teléfono. A dónde lo envías es decisión tuya, y no se nos informa.</li>
+                        <li><strong>Calificar PurrPlay</strong> le pide a tu teléfono que muestre su propio aviso de reseña o abre la página de la tienda. Tu reseña, si dejas una, va a Apple o a Google.</li>
+                        <li><strong>Los enlaces a los Términos y a la Privacidad</strong> abren este sitio web, que se sirve con GitHub Pages y puede registrar información estándar de servidor web, como direcciones IP. Eso es una visita a una página web, no algo que la App reporte.</li>
+                    </ul>
+                </section>
+
+                <section id="permissions" class="policy-section">
+                    <h2>11. Permisos de la app</h2>
+                    <h3>11.1 iPhone y iPad</h3>
+                    <ul>
+                        <li><strong>Notificaciones</strong>, que se piden durante la configuración inicial, para que la App pueda entregarte tus recordatorios. Rechazarlo te cuesta los recordatorios y nada más.</li>
+                        <li><strong>Fotos</strong>, solo cuando decides añadir una foto a una sesión. El selector de fotos del sistema le entrega a PurrPlay solo la imagen que eliges, y se queda en tu teléfono. PurrPlay nunca abre la cámara.</li>
+                    </ul>
+                    <p>PurrPlay no pide tu ubicación, tus contactos, tu micrófono, tus calendarios, tus datos de salud ni Bluetooth, y no solicita el identificador publicitario ni App Tracking Transparency.</p>
+                    <h3>11.2 Android</h3>
+                    <ul>
+                        <li><strong>Notificaciones</strong>, para que la App pueda entregarte tus recordatorios.</li>
+                        <li><strong>Alarmas y recordatorios</strong> (alarmas exactas), para que los recordatorios suenen a la hora que pusiste (sección 6).</li>
+                    </ul>
+                    <p>PurrPlay también declara algunos permisos que nunca muestran un aviso: acceso a internet, para los informes de fallos y la verificación de compra; vibración, para los recordatorios; ejecutarse después de que el teléfono se reinicia, para volver a poner tus recordatorios en su sitio; y el permiso de facturación de Google Play, que la tienda exige para poder vender PurrPlay Lifetime.</p>
+                    <p>Cuando añades una foto en Android, el selector de fotos del propio sistema le entrega a PurrPlay solo la imagen que elegiste, así que la App no necesita permiso de almacenamiento ni de cámara. PurrPlay no solicita en Android permisos de ubicación, contactos, micrófono, almacenamiento ni del identificador publicitario.</p>
+                </section>
+
+                <section id="backups" class="policy-section">
+                    <h2>12. Copias de seguridad y cambio de dispositivo</h2>
+                    <p>La copia de seguridad de tu propio teléfono, como la copia en iCloud en iPhone y iPad o el servicio de copia de seguridad de Google en Android, puede incluir los datos locales de la App, tus fotos entre ellos, si la tienes activada. Esas copias pertenecen a tu cuenta de Apple o de Google y se rigen por sus políticas de privacidad. Nunca pasan por nosotros y no podemos leerlas.</p>
+                    <p>PurrPlay no tiene sincronización en la nube propia. Tu diario no te sigue a un dispositivo nuevo a menos que la copia de seguridad de tu propio teléfono lo lleve. Tu compra de PurrPlay Lifetime está vinculada a tu cuenta de la tienda: en un dispositivo nuevo con la misma cuenta, restáurala desde la App.</p>
+                </section>
+
+                <section id="your-rights" class="policy-section">
+                    <h2>13. Tus derechos de privacidad</h2>
+                    <p>Las leyes de privacidad, entre ellas el RGPD en el Espacio Económico Europeo y el Reino Unido, la CCPA y la CPRA en California, y leyes similares en otros lugares, te dan derechos sobre la información personal que una empresa tenga sobre ti: acceso, rectificación, supresión, portabilidad, oposición y el derecho a no ser discriminado por ejercerlos.</p>
+                    <div class="highlight-box">
+                        <strong>No hay ningún perfil tuyo que consultar.</strong>
+                        <p>PurrPlay no tiene cuentas y tu diario nunca sale de tu dispositivo, así que de nuestro lado no existe ningún perfil, registro ni archivo sobre ti al que acceder, que corregir, exportar o borrar. Tus datos están en tu dispositivo, bajo tu control.</p>
+                    </div>
+                    <p>Algunos detalles, dichos con claridad:</p>
+                    <ul>
+                        <li><strong>Acceso y portabilidad.</strong> Todo lo que PurrPlay tiene sobre ti ya está en tu dispositivo y ya es tuyo.</li>
+                        <li><strong>Supresión.</strong> Borrar la App borra los datos. Mira la <a href="#deleting">sección 14</a>.</li>
+                        <li><strong>Venta o intercambio de información personal.</strong> No vendemos ni compartimos información personal, y nunca lo hemos hecho. No hay un control de "No vender ni compartir mi información personal" porque no hay nada que se venda ni se comparta.</li>
+                        <li><strong>Decisiones automatizadas.</strong> PurrPlay no toma ninguna.</li>
+                        <li><strong>Base legal del tratamiento (RGPD).</strong> Cuando se procesa un informe de fallo, nuestra base es el interés legítimo: arreglar fallos en el software que estás usando. Cuando se verifica una compra, es la ejecución del contrato que aceptaste al comprar PurrPlay Lifetime.</li>
+                        <li><strong>Oposición y reclamaciones.</strong> Puedes oponerte a los informes de fallos escribiéndonos, y puedes presentar una reclamación ante tu autoridad local de protección de datos.</li>
+                    </ul>
+                    <p>Si quieres ejercer un derecho sobre los informes de fallos o los registros de compra anónimos descritos en las secciones 7 y 9, o sobre datos en poder de Apple o Google, contáctanos y te ayudaremos a dirigirlo al lugar correcto.</p>
+                </section>
+
+                <section id="deleting" class="policy-section">
+                    <h2>14. Cómo borrar tus datos</h2>
+                    <p>Borra la App. Ese es todo el procedimiento: los perfiles de tus gatos, tus sesiones, tus notas, tus fotos, tus recordatorios y tus ajustes viven en el almacenamiento privado de la App, y se van con ella. No hay nada que borrar en un servidor nuestro, porque no hay servidor.</p>
+                    <p>Algunas cosas se guardan fuera de tu dispositivo, y no nos corresponde borrar ninguna:</p>
+                    <ul>
+                        <li>Tu compra sigue vinculada a tu cuenta de App Store o Google Play, y RevenueCat conserva su registro anónimo de la compra como parte de esa transacción de la tienda. Eso es lo que permite restaurarla si vuelves a instalar la App. Si quieres que RevenueCat borre ese registro, contáctanos y le trasladaremos la solicitud.</li>
+                        <li>Cualquier copia de seguridad del dispositivo que hayas hecho antes de borrar la App pertenece a tu cuenta de Apple o de Google, y la administras allí.</li>
+                        <li>Cualquier PDF del diario que hayas compartido está donde lo enviaste.</li>
+                    </ul>
+                    <p>Si además quieres que se eliminen los informes de fallo que puedan existir para tu instalación, escríbenos a la dirección de la sección 19 y le pediremos a Sentry que los borre. No están vinculados a ti por nombre, así que dinos aproximadamente cuándo ocurrieron los fallos y en qué plataforma.</p>
+                </section>
+
+                <section id="children" class="policy-section">
+                    <h2>15. Privacidad de menores</h2>
+                    <p>PurrPlay no está dirigida a menores de 13 años ni diseñada para ellos. Es una herramienta para planificar y llevar un diario, pensada para quienes cuidan gatos.</p>
+                    <p>No recopilamos conscientemente información personal de nadie, de ninguna edad, porque no recopilamos información personal en absoluto. La App no tiene cuentas, ni funciones sociales, ni mensajería, ni contenido generado por el usuario que otros puedan ver, ni forma alguna de que un usuario contacte a otro.</p>
+                    <p>Las compras deben hacerlas el titular de la cuenta de la tienda o hacerse con su consentimiento. Los padres pueden restringir las compras con Tiempo en pantalla en dispositivos Apple o con los controles parentales de Google Play. Si crees que un menor nos ha proporcionado información personal de algún modo, contáctanos y la borraremos.</p>
+                </section>
+
+                <section id="international" class="policy-section">
+                    <h2>16. Usuarios internacionales</h2>
+                    <p>PurrPlay puede usarse en cualquier lugar donde la App Store y Google Play la ofrezcan, en inglés y en español. La App en sí casi no envía nada a través de una frontera porque casi no envía nada en absoluto.</p>
+                    <p>Las dos excepciones son los informes de fallo y las verificaciones de compra descritos arriba, que procesan Sentry y RevenueCat en infraestructura que puede estar ubicada en Estados Unidos, y Apple o Google, que operan en todo el mundo. Sentry y RevenueCat actúan como nuestros encargados del tratamiento bajo contrato y ofrecen garantías contractuales para las transferencias internacionales.</p>
+                </section>
+
+                <section id="security" class="policy-section">
+                    <h2>17. Seguridad</h2>
+                    <p>Tu diario y tus fotos se guardan en el área de almacenamiento privado de la App, que el sistema operativo aísla de otras apps y que queda cubierta por el cifrado de tu propio dispositivo cuando tienes un código configurado.</p>
+                    <p>Las peticiones de red de la App, a Sentry y a RevenueCat, usan conexiones HTTPS cifradas.</p>
+                    <p>Ningún sistema es perfectamente seguro. Lo que sí podemos decir con honestidad es que la superficie es muy pequeña: no hay servidor que guarde tus datos, ni cuenta que comprometer, ni credencial que robar, porque nada de eso existe.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>18. Cambios a esta política</h2>
+                    <p>Podemos actualizar esta Política de privacidad para reflejar cambios en la App o en los requisitos legales. Cuando lo hagamos:</p>
+                    <ul>
+                        <li>Cambiará la fecha de "Última actualización" al inicio de esta página</li>
+                        <li>Los cambios importantes, en particular cualquier cambio en lo que la App recopila, se describirán en las notas de la versión de la App</li>
+                        <li>Seguir usando PurrPlay después de que un cambio entre en vigor significa que aceptas la política actualizada</li>
+                    </ul>
+                    <p>La versión vigente siempre está disponible en esta dirección y desde los Ajustes de la App.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>19. Contáctanos</h2>
+                    <p>Si tienes una pregunta, una inquietud o una solicitud sobre esta Política de privacidad, escríbenos. La lee una persona de verdad.</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Propietario:</strong> Armando Jimenez</p>
+                        <p><strong>Correo electrónico:</strong> <a href="mailto:purrplay@armandojimenez.dev">purrplay@armandojimenez.dev</a></p>
+                        <p><strong>Sitio web:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Tiempo de respuesta</h3>
+                    <ul>
+                        <li>Dentro de 30 días para consultas generales de privacidad</li>
+                        <li>Dentro de 72 horas para asuntos urgentes de privacidad</li>
+                        <li>Según lo exija la ley aplicable para solicitudes formales de derechos</li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Entidad legal:</strong> Believe PR</p>
+                    <p><strong>Desarrollador:</strong> Armando Jimenez</p>
+                    <p><strong>Última actualización:</strong> 11 de septiembre de 2026</p>
+                    <p><strong>Fecha de entrada en vigor:</strong> 11 de septiembre de 2026</p>
+                    <p><strong>Versión:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>

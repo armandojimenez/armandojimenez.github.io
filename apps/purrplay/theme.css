@@ -1,0 +1,292 @@
+/*
+ * PurrPlay: Cream, Ink and Orange.
+ * Overrides for the policy pages.
+ *
+ * The light role is PurrPlay's own tokens (lib/app/tokens.dart) with the rules
+ * its contrast gate holds: orange is a fill and never text, anything drawn on
+ * orange is ink (4.92:1, where white would be 2.66), and orange-tinted text is
+ * orangeDeep (5.08 on cream, 5.60 on white, 4.52 on peach). The app has no dark
+ * mode, so the dark role is the same tokens turned over: ink is the page,
+ * inkSoft the card, cream the type. Varela Round is the display face and Nunito
+ * the body face, the two families the app bundles. Varela Round ships a single
+ * weight, so it is always set at 400: any bolder weight would be faked.
+ *
+ * The @import sits first on purpose: an @import after any other rule is
+ * dropped by the browser.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Varela+Round&display=swap');
+
+/* ===========================
+   Cream: the light role
+   =========================== */
+:root {
+    --bg-primary: #faf3e7;      /* cream, the app's ground */
+    --bg-secondary: #ffffff;    /* white, the app's cards */
+    --bg-tertiary: #efe3d0;     /* sand */
+    --bg-accent: #fbe3cc;       /* peach, the app's chips and callouts */
+
+    --text-primary: #35302a;                   /* ink: 11.84 cream, 13.06 white, 10.55 peach */
+    --text-secondary: rgba(53, 48, 42, 0.88);  /* the body rung: 8.30 cream, 8.93 white, 7.59 peach */
+    --text-tertiary: #6e6355;                  /* sub: 5.32 cream, 5.87 white, 4.74 peach */
+
+    --text-link: #a64f14;       /* orangeDeep: 5.08 cream, 5.60 white, 4.52 peach */
+    --text-link-hover: #35302a;
+
+    --border-color: #efe3d0;                  /* sand, the app's border */
+    --border-light: rgba(53, 48, 42, 0.07);   /* the app's hairline */
+
+    --accent-primary: #e8863d;  /* orange, the fill: 2.41 on cream, so never text */
+    --accent-secondary: #a64f14;
+    --accent-success: #35302a;
+    --accent-warning: #e8863d;
+    --accent-danger: #a64f14;
+
+    /* The app's shadows are warm brown (#503719), never grey. */
+    --shadow-sm: 0 2px 6px rgba(80, 55, 25, 0.07);
+    --shadow-md: 0 6px 18px rgba(80, 55, 25, 0.07);
+    --shadow-lg: 0 14px 34px rgba(80, 55, 25, 0.1);
+
+    --radius-lg: 20px;          /* radiusCard */
+    --radius-xl: 24px;          /* radiusHeroCard */
+
+    --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Varela Round', 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===========================
+   Ink: the dark role
+   =========================== */
+[data-theme="dark"] {
+    --bg-primary: #35302a;      /* ink */
+    --bg-secondary: #3b342c;    /* inkSoft, the card */
+    --bg-tertiary: #463f37;     /* cream at .06 on inkSoft */
+    --bg-accent: #533f2e;       /* orange at .14 (the app's ripple) on inkSoft */
+
+    --text-primary: #faf3e7;                     /* cream: 11.84 ink, 11.11 inkSoft, 8.99 wash */
+    --text-secondary: rgba(250, 243, 231, 0.86); /* 9.21 ink, 8.66 inkSoft, 7.16 wash */
+    --text-tertiary: rgba(250, 243, 231, 0.66);  /* 6.13 ink, 5.83 inkSoft, 4.97 wash */
+
+    /* Orange reads as text on this role: 4.92 on ink, 4.62 on inkSoft. It is
+       3.73 on the wash, so no link sits inside a washed box. */
+    --text-link: #e8863d;
+    --text-link-hover: #fbe3cc; /* peach: 10.55 ink, 9.90 inkSoft */
+
+    --border-color: #554f48;    /* cream at .16 on ink */
+    --border-light: #454039;    /* cream at .08 on ink */
+
+    --accent-primary: #e8863d;
+    --accent-secondary: #fbe3cc;
+    --accent-success: #faf3e7;
+    --accent-warning: #e8863d;
+    --accent-danger: #e8863d;
+
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 14px 34px rgba(0, 0, 0, 0.4);
+}
+
+/* ===========================
+   Typography: the app's two faces
+   =========================== */
+.policy-title,
+.badge-title,
+.policy-section h2,
+.toc-title {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.badge-title {
+    font-size: 1.25rem;
+}
+
+.policy-section h3,
+.policy-section h4 {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.contact-card h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+/* The app writes its lines in sentence case and never cases translated text
+   at draw time; the shared sheet's uppercase labels would do exactly that. */
+.badge-subtitle,
+.toc-title {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.badge-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+}
+
+.toc-title {
+    font-size: 1.15rem;
+}
+
+.meta-item {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.highlight-box strong {
+    font-weight: 800;
+}
+
+.lang-button {
+    font-weight: 700;
+}
+
+/* ===========================
+   The mark
+   =========================== */
+/* The shared stylesheet sizes this box as TEXT (font-size: 2rem), which leaves
+   an inline SVG with no box at all. The plate gets the app icon's own corner. */
+.badge-icon {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    flex: 0 0 auto;
+    border-radius: 22.5%;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px var(--border-light), 0 1px 2px rgba(80, 55, 25, 0.08);
+}
+
+.badge-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===========================
+   Surfaces
+   =========================== */
+.app-badge {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+}
+
+/* Flat peach, not the shared peach-to-sand gradient: the ratios above are
+   measured on peach, and sand would pull links under 4.5:1. */
+.highlight-box,
+.highlight-box.warning {
+    background: var(--bg-accent);
+    border-left-color: var(--accent-primary);
+}
+
+.contact-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+/* ===========================
+   Controls on the orange fill
+   =========================== */
+/* Ink on orange in both roles, as the app does for every label it puts on its
+   own fill: 4.92:1, where the shared white is 2.66. */
+.lang-button.active {
+    color: #35302a;
+}
+
+.back-to-top {
+    background: var(--accent-primary) !important;
+    color: #35302a !important;
+}
+
+.nav-link:hover {
+    background: var(--accent-primary);
+    color: #35302a;
+    border-color: var(--accent-primary);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 22px rgba(200, 100, 30, 0.25);
+}
+
+/* ===========================
+   Text accents
+   =========================== */
+/* A hovered or active TOC entry is text, so it takes the text accent. The
+   shared script paints the active entry with --accent-primary as an inline
+   style; this attribute selector catches it, because orange on white is 2.66. */
+.toc-list a:hover,
+.toc-list a[style*="--accent-primary"] {
+    color: var(--text-link) !important;
+}
+
+.toc-list li:hover {
+    border-left-color: var(--accent-primary);
+}
+
+/* orangeDeep and the body ink sit 2.3:1 apart, under the 3:1 that lets colour
+   alone mark a link, so links keep an underline. */
+.policy-section a {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+.policy-section a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/* The shared ring is orange, 2.66:1 on white; the text accent clears 3:1 in
+   both roles (5.60 on white, 4.92 on ink). */
+:focus-visible {
+    outline: 2px solid var(--text-link);
+    outline-offset: 2px;
+}
+
+/* ===========================
+   Chrome
+   =========================== */
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+::selection {
+    background: var(--accent-primary);
+    color: #35302a;
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: #35302a;
+}
+
+/* ===========================
+   Layout
+   =========================== */
+/* On a phone the shared stylesheet pins the language buttons in a column at
+   top: 5.5rem and stacks the badge into a column that starts at roughly the
+   same place, so English/Español land on the app name. The header starts below
+   the switcher instead: one number, no change to the shared sheet. Measured at
+   375 wide, the Nunito buttons end at 161px; 9.25rem starts the badge at 180. */
+@media (max-width: 767px) {
+    .policy-header {
+        padding-top: 9.25rem;
+    }
+}
+
+/* The mark and the words read as one lockup where they sit side by side. On a
+   phone the badge stacks, and centred text belongs under a centred mark. */
+@media (min-width: 768px) {
+    .badge-text {
+        text-align: left;
+    }
+}

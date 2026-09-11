@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="purrplay" data-policy-type="terms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // IMMEDIATE language redirect - executes before page loads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            if (lang === 'es' && !window.location.pathname.endsWith('-es.html')) {
+                const spanishPath = window.location.pathname.replace('.html', '-es.html');
+                urlParams.delete('lang');
+                const queryString = urlParams.toString();
+                window.location.replace(spanishPath + (queryString ? '?' + queryString : ''));
+            }
+        })();
+    </script>
+    <title>Terms of Use - PurrPlay</title>
+    <meta name="description" content="Terms of Use for PurrPlay, the cat playtime reminder and play journal. How the one-time PurrPlay Lifetime purchase works, and the limits of what a reminder app is.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../css/policy-styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <div class="language-switcher" id="languageSwitcher"></div>
+
+    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header class="policy-header">
+            <div class="app-badge">
+                <div class="badge-icon">
+                    <svg viewBox="-7 -8 62 62" aria-hidden="true">
+                        <defs>
+                            <clipPath id="ppHead">
+                                <path d="M10 18 L7 3 L20 10 C22.5 9.3 25.5 9.3 28 10 L41 3 L38 18 C40.5 21 42 24.8 42 28 C42 37 34 43 24 43 C14 43 6 37 6 28 C6 24.8 7.5 21 10 18 Z"></path>
+                            </clipPath>
+                        </defs>
+                        <rect x="-7" y="-8" width="62" height="62" fill="#FAF3E7"></rect>
+                        <path d="M10 18 L7 3 L20 10 C22.5 9.3 25.5 9.3 28 10 L41 3 L38 18 C40.5 21 42 24.8 42 28 C42 37 34 43 24 43 C14 43 6 37 6 28 C6 24.8 7.5 21 10 18 Z" fill="#FFFFFF"></path>
+                        <g clip-path="url(#ppHead)">
+                            <circle cx="11" cy="9" r="12" fill="#E8863D"></circle>
+                            <circle cx="38.5" cy="9.5" r="11" fill="#3B342C"></circle>
+                        </g>
+                        <path d="M10 18 L7 3 L20 10 C22.5 9.3 25.5 9.3 28 10 L41 3 L38 18 C40.5 21 42 24.8 42 28 C42 37 34 43 24 43 C14 43 6 37 6 28 C6 24.8 7.5 21 10 18 Z" fill="none" stroke="#35302A" stroke-width="2" stroke-linejoin="round"></path>
+                        <circle cx="17" cy="27" r="2.2" fill="#35302A"></circle>
+                        <circle cx="31" cy="27" r="2.2" fill="#35302A"></circle>
+                        <path d="M21.5 33 h5 l-2.5 3.2z" fill="#E8863D"></path>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <div class="badge-title">PurrPlay</div>
+                    <div class="badge-subtitle">Little play sessions, big purrs</div>
+                </div>
+            </div>
+            <h1 class="policy-title">Terms of Use</h1>
+            <div class="policy-meta">
+                <span class="meta-item">Last Updated: September 11, 2026</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Effective Date: September 11, 2026</span>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">Acceptance of These Terms</a></li>
+                    <li><a href="#what-it-is">What PurrPlay Is</a></li>
+                    <li><a href="#not-advice">Not Veterinary Advice</a></li>
+                    <li><a href="#eligibility">Eligibility</a></li>
+                    <li><a href="#license">Your License to Use the App</a></li>
+                    <li><a href="#your-journal">Your Journal Is Yours</a></li>
+                    <li><a href="#acceptable-use">Acceptable Use</a></li>
+                    <li><a href="#lifetime">PurrPlay Lifetime and Purchases</a></li>
+                    <li><a href="#refunds">Refunds</a></li>
+                    <li><a href="#notifications">Reminders and Timing</a></li>
+                    <li><a href="#availability">Availability and Changes</a></li>
+                    <li><a href="#ip">Intellectual Property</a></li>
+                    <li><a href="#third-party">Third-Party Services and Stores</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#warranties">Disclaimer of Warranties</a></li>
+                    <li><a href="#liability">Limitation of Liability</a></li>
+                    <li><a href="#indemnity">Indemnity</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#law">Governing Law and Disputes</a></li>
+                    <li><a href="#changes">Changes to These Terms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </aside>
+
+            <main class="policy-content">
+                <section id="acceptance" class="policy-section">
+                    <h2>1. Acceptance of These Terms</h2>
+                    <p>These Terms of Use ("Terms") govern your use of PurrPlay ("the App"), developed and operated by Believe PR, owned by Armando Jimenez ("we," "us," or "our").</p>
+                    <p>By downloading, installing or using PurrPlay, you agree to these Terms. If you do not agree, please do not use the App and delete it from your device.</p>
+                    <p>These Terms are between you and Believe PR. The App is distributed through the Apple App Store and Google Play, and your use of it is also subject to their terms, which apply alongside these. Where a store's terms are stricter than these Terms, the store's terms apply.</p>
+                </section>
+
+                <section id="what-it-is" class="policy-section">
+                    <h2>2. What PurrPlay Is</h2>
+                    <p>PurrPlay is a playtime reminder and play journal for cats. You plan play sessions around your routine, the App reminds you when it is time, and afterwards you log what happened.</p>
+                    <p>The App includes:</p>
+                    <ul>
+                        <li>Planned play sessions, with reminders that your own device delivers</li>
+                        <li>A play journal: how long you played, which toy, your cat's mood, and an optional photo and note for each session</li>
+                        <li>A profile for each cat: name, color palette, energy level and an optional birth year</li>
+                        <li>A play streak, a sticker book and stats</li>
+                        <li>An export of your journal as a PDF</li>
+                    </ul>
+                    <p>PurrPlay does not require an account and never asks you to create one. Everything it holds is stored on your device.</p>
+                </section>
+
+                <section id="not-advice" class="policy-section">
+                    <h2>3. Not Veterinary Advice</h2>
+                    <div class="highlight-box">
+                        <strong>Your vet knows your cat. PurrPlay knows your calendar.</strong>
+                        <ul>
+                            <li>PurrPlay is a reminder and a journal. It is not a veterinary service, and nothing it shows is veterinary or medical advice.</li>
+                            <li>It does not diagnose, treat or monitor your cat's health. The mood and energy level you record are your own notes, not an assessment.</li>
+                            <li>It cannot see your cat, so it cannot tell a playful day from a day your cat needs rest.</li>
+                        </ul>
+                    </div>
+                    <p>How much play is right depends on your cat's age, health and temperament. If your cat is unwell, injured, recovering, elderly, or behaving in a way that worries you, ask a veterinarian before changing their routine, and follow their advice over anything the App says.</p>
+                    <p>You are responsible for your cat's safety during play, including the toys you choose and how you use them. A reminder is a nudge, never a reason to play with a cat that needs rest.</p>
+                </section>
+
+                <section id="eligibility" class="policy-section">
+                    <h2>4. Eligibility</h2>
+                    <p>You must be at least 13 years old, and old enough to enter a binding contract where you live, to use the App. If you are under the age of majority in your jurisdiction, you may use the App only with the consent and supervision of a parent or guardian, who accepts these Terms on your behalf.</p>
+                    <p>The App is not directed to children under 13.</p>
+                </section>
+
+                <section id="license" class="policy-section">
+                    <h2>5. Your License to Use the App</h2>
+                    <h3>5.1 Grant</h3>
+                    <p>Subject to these Terms, we grant you a personal, limited, non-exclusive, non-transferable, revocable license to download and use PurrPlay on devices you own or control, for your own personal, non-commercial use.</p>
+                    <h3>5.2 Restrictions</h3>
+                    <p>You may not:</p>
+                    <ul>
+                        <li>Copy, sell, rent, lease, sublicense or redistribute the App</li>
+                        <li>Modify, translate, reverse engineer, decompile or disassemble the App, or create derivative works of it, except where that right cannot be excluded by law</li>
+                        <li>Remove or alter any copyright, trademark or other proprietary notice</li>
+                        <li>Use the App in a way that breaks any applicable law</li>
+                    </ul>
+                </section>
+
+                <section id="your-journal" class="policy-section">
+                    <h2>6. Your Journal Is Yours</h2>
+                    <p>Everything you create in PurrPlay, including your cats' profiles, your planned sessions and reminders, your journal entries, your notes and your photos, belongs to you. We claim no ownership of it and no license over it.</p>
+                    <p>It is also stored only on your device. We do not receive it, host it or back it up. That has two consequences worth being clear about:</p>
+                    <ul>
+                        <li>We cannot recover your journal for you. If you delete the App or lose the device, we have no copy to restore.</li>
+                        <li>Keeping a copy is your responsibility. Your phone's own backup, if you use one, is what protects it. With PurrPlay Lifetime you can also export your journal as a PDF and keep that file wherever you like.</li>
+                    </ul>
+                    <p>You are responsible for what you write in the App and for the photos you add to it.</p>
+                    <p>How your information is handled is described in full in our <a href="privacy-policy.html">Privacy Policy</a>, which forms part of these Terms.</p>
+                </section>
+
+                <section id="acceptable-use" class="policy-section">
+                    <h2>7. Acceptable Use</h2>
+                    <p>You agree not to:</p>
+                    <ul>
+                        <li>Use the App for any unlawful purpose, or help anyone else do so</li>
+                        <li>Interfere with the App's operation, or attempt to gain unauthorized access to any part of it or to any system it talks to, including our payment provider</li>
+                        <li>Circumvent, disable or tamper with the check that unlocks PurrPlay Lifetime, tamper with, spoof or replay purchase receipts, or use a modified or unofficial build to unlock paid features without paying for them</li>
+                        <li>Distribute a modified version of the App, or present it as your own</li>
+                        <li>Use automated means to interact with the App at a scale that is not ordinary human use</li>
+                        <li>Use our name, logo or branding in a way that suggests we endorse you</li>
+                    </ul>
+                </section>
+
+                <section id="lifetime" class="policy-section">
+                    <h2>8. PurrPlay Lifetime and Purchases</h2>
+                    <h3>8.1 The free core</h3>
+                    <p>PurrPlay is free to download, and its core is free to use: one cat, one active reminder, full session logging, your streak, and the last seven days of your journal. It is not time limited and it is not a trial.</p>
+                    <h3>8.2 PurrPlay Lifetime</h3>
+                    <p>PurrPlay Lifetime is an optional <strong>one-time purchase</strong> that unlocks everything in the App. It is <strong>not a subscription</strong>, it does not renew, and there is nothing to cancel. PurrPlay offers no subscription of any kind. It unlocks:</p>
+                    <ul>
+                        <li>More cats and more active reminders</li>
+                        <li>Your whole journal history</li>
+                        <li>Stats and the sticker book</li>
+                        <li>The journal PDF export</li>
+                    </ul>
+                    <p>Choosing not to buy never deletes anything you have created. Sessions older than seven days are kept on your device, and PurrPlay Lifetime shows them.</p>
+                    <h3>8.3 Price and payment</h3>
+                    <ul>
+                        <li>The price is set per country by your app store and is always shown in the App, on the purchase screen, before you buy. It comes from the store, not from the App.</li>
+                        <li>Payment is charged by Apple to your Apple Account, or by Google to your Google account, when you confirm the purchase.</li>
+                        <li>We never see or handle your payment details.</li>
+                    </ul>
+                    <h3>8.4 Restoring your purchase</h3>
+                    <p>Your purchase is tied to the store account you bought it with. If you reinstall PurrPlay or set up a new device, use the restore option in Settings or on the purchase screen while signed in to the same App Store or Google Play account. Restoring needs an internet connection.</p>
+                    <h3>8.5 Family Sharing</h3>
+                    <p>PurrPlay Lifetime is enabled for Family Sharing on the App Store. Availability and behavior of Family Sharing are controlled by Apple.</p>
+                    <h3>8.6 Price changes</h3>
+                    <p>We may change the price of PurrPlay Lifetime over time. Because it is a one-time purchase, a later price change never affects a purchase you have already made.</p>
+                    <h3>8.7 If a purchase fails</h3>
+                    <p>Purchases require the store to be reachable. If the network or the store is unavailable, the App will say so and nothing will be charged. A purchase that the store has not confirmed does not unlock PurrPlay Lifetime.</p>
+                </section>
+
+                <section id="refunds" class="policy-section">
+                    <h2>9. Refunds</h2>
+                    <p>All purchases are processed by Apple and Google, and <strong>all refunds are handled by them under their own policies</strong>. Believe PR cannot issue, approve or reverse an App Store or Google Play refund, because we never receive the payment.</p>
+                    <p>On iPhone and iPad, request a refund at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. On Android, request one through Google Play. Consumers in the European Union, the United Kingdom and other jurisdictions with statutory withdrawal rights keep those rights in full, and the store administers them.</p>
+                </section>
+
+                <section id="notifications" class="policy-section">
+                    <h2>10. Reminders and Timing</h2>
+                    <p>PurrPlay's reminders are local notifications, scheduled and delivered by your own device. We do not operate a push service and cannot send you anything.</p>
+                    <p>Notification timing depends on your operating system and is not guaranteed to the minute. On Android, reminders arrive on time only while the system's exact alarm permission is allowed; without it, the system may deliver them later. Battery savers, focus modes, notification settings and the operating system's own limits can also delay or suppress a notification. <strong>We do not guarantee that any reminder will be delivered at an exact time, or at all.</strong></p>
+                    <p>Do not rely on the App as your only reminder for anything that matters to your cat's health, such as feeding or medication.</p>
+                </section>
+
+                <section id="availability" class="policy-section">
+                    <h2>11. Availability and Changes</h2>
+                    <p>We may add, change or remove features of PurrPlay over time, and we may stop distributing or supporting the App entirely. We may also stop supporting older operating system versions. Where a change materially removes something PurrPlay Lifetime unlocked at the time you bought it, we will say so in the App's release notes.</p>
+                    <p>The journal and your reminders work offline, so the App keeps working even when our payment provider or the store is unreachable. We do not guarantee that the App is free from interruption or error, or that it will remain compatible with every future version of your operating system.</p>
+                    <p>Availability of the App and of PurrPlay Lifetime varies by country and is subject to the stores' own regional rules.</p>
+                </section>
+
+                <section id="ip" class="policy-section">
+                    <h2>12. Intellectual Property</h2>
+                    <h3>12.1 Our property</h3>
+                    <p>The App and everything in it, including its name, the cat mark, its stickers, its interface design, its icons, its sounds, its copy and its code, is owned by Believe PR or its licensors and is protected by copyright, trademark and other intellectual property laws. These Terms grant you a license to use the App, and nothing else.</p>
+                    <h3>12.2 Fonts and open-source components</h3>
+                    <p>The typefaces bundled with PurrPlay are used under the SIL Open Font License, Version 1.1. The App also includes open-source software components, each used under its own license.</p>
+                    <h3>12.3 Feedback</h3>
+                    <p>If you send us an idea or a suggestion, we may use it to improve PurrPlay without obligation or compensation to you. We will not publish your name or your message without your permission.</p>
+                </section>
+
+                <section id="third-party" class="policy-section">
+                    <h2>13. Third-Party Services and Stores</h2>
+                    <p>The App relies on Apple or Google for distribution and payment, on RevenueCat to validate and restore PurrPlay Lifetime, and on Sentry to receive crash reports, as described in the <a href="privacy-policy.html">Privacy Policy</a>. Their own terms and privacy policies govern what they do. We are not responsible for their availability or behavior, or for changes they make to their platforms.</p>
+                    <p>Apple and Google are not parties to these Terms and have no responsibility for the App. Where Apple's rules require it: Apple has no obligation to furnish maintenance or support for the App; in the event of any failure of the App to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price, and to the maximum extent permitted by law Apple has no other warranty obligation whatsoever; Apple is not responsible for addressing any claim relating to the App; and Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</p>
+                </section>
+
+                <section id="privacy" class="policy-section">
+                    <h2>14. Privacy</h2>
+                    <p>Our <a href="privacy-policy.html">Privacy Policy</a> explains what the App does and does not collect. The short version is that your journal never leaves your device, there are no accounts and there is no analytics of any kind.</p>
+                </section>
+
+                <section id="warranties" class="policy-section">
+                    <h2>15. Disclaimer of Warranties</h2>
+                    <div class="highlight-box warning">
+                        <strong>READ CAREFULLY. IMPORTANT LEGAL DISCLAIMERS.</strong>
+                    </div>
+                    <h3>15.1 "As is" and "as available"</h3>
+                    <p>PURRPLAY IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                    <ul>
+                        <li>WARRANTIES OF MERCHANTABILITY</li>
+                        <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                        <li>NON-INFRINGEMENT</li>
+                        <li>ACCURACY OR RELIABILITY</li>
+                        <li>UNINTERRUPTED OR ERROR-FREE OPERATION</li>
+                    </ul>
+                    <h3>15.2 No guarantee of results</h3>
+                    <p>WE DO NOT WARRANT THAT:</p>
+                    <ul>
+                        <li>Any reminder will be delivered on time, or at all</li>
+                        <li>Your journal, your photos or your stats will survive a device failure, an operating system update, an uninstall or a restore</li>
+                        <li>The App will be free of defects, or that defects will be corrected</li>
+                        <li>Using the App will produce any particular result for you or your cat</li>
+                    </ul>
+                    <h3>15.3 Not a veterinary service</h3>
+                    <p>As section 3 explains, PurrPlay is not a veterinary or medical service, and nothing in it replaces the judgment of a veterinarian.</p>
+                    <h3>15.4 Consumer rights</h3>
+                    <p>Some jurisdictions do not allow the exclusion of certain warranties. Where that is the case, the exclusions above apply only to the extent permitted, and nothing here limits your non-waivable statutory rights as a consumer.</p>
+                </section>
+
+                <section id="liability" class="policy-section">
+                    <h2>16. Limitation of Liability</h2>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, BELIEVE PR AND ARMANDO JIMENEZ SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, JOURNAL ENTRIES, PHOTOS, PROFITS OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF, OR INABILITY TO USE, THE APP. THIS INCLUDES A REMINDER THAT ARRIVED LATE OR NOT AT ALL, AND ANY DECISION ABOUT YOUR CAT'S CARE MADE IN RELIANCE ON THE APP.</p>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THE APP SHALL NOT EXCEED THE AMOUNT YOU PAID FOR PURRPLAY LIFETIME IN THE TWELVE MONTHS BEFORE THE CLAIM AROSE.</p>
+                    <p>Nothing in these Terms excludes or limits liability that cannot be excluded or limited by law, including liability for death or personal injury caused by negligence, or for fraud.</p>
+                </section>
+
+                <section id="indemnity" class="policy-section">
+                    <h2>17. Indemnity</h2>
+                    <p>You agree to indemnify and hold harmless Believe PR and Armando Jimenez from any claims, damages, losses or expenses, including reasonable legal fees, arising from your misuse of the App or your violation of these Terms.</p>
+                </section>
+
+                <section id="termination" class="policy-section">
+                    <h2>18. Termination</h2>
+                    <h3>18.1 By you</h3>
+                    <p>You may stop using PurrPlay at any time by deleting it. Deleting the App removes its data from your device. Your PurrPlay Lifetime purchase remains attached to your store account.</p>
+                    <h3>18.2 By us</h3>
+                    <p>We may terminate your license if you materially breach these Terms, in particular by circumventing the PurrPlay Lifetime purchase check or by distributing a modified build.</p>
+                    <h3>18.3 What survives</h3>
+                    <p>Sections 3, 6, 12, 15, 16, 17 and 19 survive termination.</p>
+                </section>
+
+                <section id="law" class="policy-section">
+                    <h2>19. Governing Law and Disputes</h2>
+                    <h3>19.1 Governing law</h3>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of the Commonwealth of Puerto Rico, without regard to its conflict of law provisions.</p>
+                    <h3>19.2 Jurisdiction</h3>
+                    <p>You agree that any legal action or proceeding arising from these Terms shall be brought exclusively in the courts of the Commonwealth of Puerto Rico, and you consent to the personal jurisdiction of those courts, except where mandatory consumer protection law in your country of residence gives you the right to bring a claim in your own local courts, in which case that right is unaffected.</p>
+                    <h3>19.3 Informal resolution first</h3>
+                    <p>Before filing any legal action, you agree to try to resolve the dispute informally by emailing <a href="mailto:purrplay@armandojimenez.dev">purrplay@armandojimenez.dev</a> and allowing 30 days for a good-faith response.</p>
+                    <h3>19.4 Class action waiver</h3>
+                    <p>TO THE EXTENT PERMITTED BY LAW, YOU AGREE THAT ANY DISPUTE SHALL BE RESOLVED ON AN INDIVIDUAL BASIS AND NOT AS A CLASS ACTION, CONSOLIDATED ACTION OR REPRESENTATIVE ACTION.</p>
+                    <h3>19.5 Consumer rights</h3>
+                    <p>If you are a consumer in the European Union or the United Kingdom, you keep the protections of the mandatory law of your country of residence. Nothing in these Terms limits your statutory rights as a consumer under applicable consumer protection laws.</p>
+                </section>
+
+                <section id="changes" class="policy-section">
+                    <h2>20. Changes to These Terms</h2>
+                    <p>We may update these Terms from time to time. When we do:</p>
+                    <ul>
+                        <li>The "Last Updated" date at the top of this page will change</li>
+                        <li>Material changes will be described in the App's release notes</li>
+                        <li>Continued use of PurrPlay after a change takes effect means you accept the updated Terms</li>
+                    </ul>
+                    <p>The current version is always available at this address and from the App's Settings.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2>21. Contact</h2>
+                    <p>Questions about these Terms are welcome. A real person reads them.</p>
+
+                    <div class="contact-card">
+                        <h3>Believe PR</h3>
+                        <p><strong>Owner:</strong> Armando Jimenez</p>
+                        <p><strong>Email:</strong> <a href="mailto:purrplay@armandojimenez.dev">purrplay@armandojimenez.dev</a></p>
+                        <p><strong>Website:</strong> <a href="https://armandojimenez.dev" target="_blank" rel="noopener">https://armandojimenez.dev</a></p>
+                    </div>
+
+                    <h3>Related</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </section>
+
+                <div class="policy-footer-note">
+                    <p><strong>Legal Entity:</strong> Believe PR</p>
+                    <p><strong>Developer:</strong> Armando Jimenez</p>
+                    <p><strong>Last Updated:</strong> September 11, 2026</p>
+                    <p><strong>Effective Date:</strong> September 11, 2026</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="policy-footer">
+        <div class="footer-content">
+            <p class="footer-copyright">© 2026 Believe PR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/policy-scripts.js"></script>
+</body>
+</html>
