@@ -9,7 +9,14 @@
     // ===========================
     // Localization Management - IMMEDIATE EXECUTION
     // ===========================
-    const SUPPORTED_LANGUAGES = ['en', 'es'];
+    // A page published in more languages lists them on
+    // <html data-policy-langs="en,es,de,...">. Pages without the attribute
+    // are the original English/Spanish pair.
+    const DECLARED_LANGUAGES = (document.documentElement.getAttribute('data-policy-langs') || '')
+        .split(',')
+        .map((code) => code.trim().toLowerCase())
+        .filter(Boolean);
+    const SUPPORTED_LANGUAGES = DECLARED_LANGUAGES.length ? DECLARED_LANGUAGES : ['en', 'es'];
     const DEFAULT_LANGUAGE = 'en';
     
     // Get language from URL, then from the canonical page itself.
@@ -175,7 +182,11 @@
         backToTopButton = document.createElement('button');
         backToTopButton.innerHTML = '↑';
         backToTopButton.className = 'back-to-top';
-        backToTopButton.setAttribute('aria-label', currentLanguage === 'es' ? 'Volver arriba' : 'Back to top');
+        backToTopButton.setAttribute(
+            'aria-label',
+            document.documentElement.getAttribute('data-back-to-top')
+                || (currentLanguage === 'es' ? 'Volver arriba' : 'Back to top')
+        );
         backToTopButton.style.cssText = `
             position: fixed;
             bottom: 2rem;
@@ -290,7 +301,9 @@
     function createLanguageSwitcher() {
         const languageSwitcher = document.getElementById('languageSwitcher');
         if (!languageSwitcher) return;
-        
+        // Pages published in more than two languages ship their own switcher.
+        if (languageSwitcher.childElementCount) return;
+
         const languages = {
             'en': 'English',
             'es': 'Español'
