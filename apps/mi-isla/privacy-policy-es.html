@@ -60,9 +60,9 @@
             </div>
             <h1 class="policy-title">Política de Privacidad</h1>
             <div class="policy-meta">
-                <span class="meta-item">Última actualización: 3 de octubre de 2026</span>
+                <span class="meta-item">Última actualización: 4 de octubre de 2026</span>
                 <span class="meta-divider">&bull;</span>
-                <span class="meta-item">Fecha de vigencia: 24 de junio de 2026</span>
+                <span class="meta-item">Fecha de vigencia: 4 de octubre de 2026</span>
             </div>
         </header>
 
@@ -152,8 +152,9 @@
                     </ul>
 
                     <h3>3.2 El parte del día</h3>
-                    <p>Mi Isla puede resumir el día en lenguaje sencillo. Hoy ese resumen se compone <strong>completamente en tu dispositivo</strong> a partir de las lecturas del tiempo que la App ya obtuvo para tu zona &mdash; no se envía ningún dato personal adicional para crearlo.</p>
-                    <p>Una versión futura podría usar un servicio de inteligencia artificial para ayudar a componer ese resumen. Si eso llegara a activarse, solo se enviaría contexto meteorológico no identificable de tu zona para generar el texto, nunca tu identidad, y esta política y la App se actualizarían para describirlo antes de lanzarlo.</p>
+                    <p>Con Mi Isla Premium, la pantalla principal de la App puede escribir con IA un resumen sencillo de tu día en la isla. Solo se crea cuando tocas <strong>Generar el parte</strong>, y se guarda en tu dispositivo por el resto del día.</p>
+                    <p>Para escribirlo, la App le envía a nuestra pasarela de IA (un servicio pequeño que operamos en Cloudflare) el contexto que el resumen necesita: el nombre de tu municipio, la hora del día, tu idioma y tus unidades, y las lecturas del día que la App ya te muestra (el tiempo, la calidad del aire y el polvo del Sahara, el mar y los ríos, las alertas activas, el estado de tsunami y los temblores recientes). La pasarela le pasa esa solicitud, a través de OpenRouter, a un proveedor de modelos de IA (hoy, un modelo de DeepSeek) y devuelve el texto. <strong>Nada en la solicitud te identifica:</strong> ni tu nombre, ni una cuenta, ni tu ubicación precisa, ni un identificador del dispositivo.</p>
+                    <p>Nuestra pasarela no guarda la solicitud ni el resumen. Como cualquier servicio web, ve tu dirección IP mientras atiende la solicitud, y la usa solo para limitar el abuso. OpenRouter y el proveedor del modelo procesan la solicitud según sus propias políticas de privacidad. Si no eres premium, o nunca tocas Generar el parte, no se envía nada.</p>
 
                     <h3>3.3 Administración de la suscripción</h3>
                     <ul>
@@ -197,12 +198,14 @@
                         <li>Todas las solicitudes a las fuentes de datos usan cifrado HTTPS.</li>
                         <li>Algunos servicios públicos (por ejemplo el Servicio Meteorológico Nacional de EE. UU. y NOAA) piden que las apps se identifiquen con una cadena de contacto. Mi Isla envía un identificador descriptivo &mdash; el nombre de la app, la versión y un correo de contacto &mdash; que no contiene <strong>ninguna información sobre ti</strong>.</li>
                         <li>No operamos servidores propios de analítica, registro ni rastreo.</li>
+                        <li>El único servidor que sí operamos es la pasarela de IA del parte premium (sección 3.2). No guarda ni registra las solicitudes que atiende.</li>
                     </ul>
 
                     <h3>5.3 Retención de datos</h3>
                     <ul>
                         <li><strong>Datos locales:</strong> Permanecen en tu dispositivo hasta que borres el caché de la App o la desinstales. No tenemos copia en servidor que retener.</li>
                         <li><strong>Datos de suscripción:</strong> Retenidos por RevenueCat y las tiendas de apps según sus propias políticas.</li>
+                        <li><strong>El parte premium:</strong> Se guarda en tu dispositivo por el día. Nuestra pasarela de IA no guarda copia; OpenRouter y el proveedor del modelo de IA retienen datos según sus propias políticas.</li>
                     </ul>
                 </section>
 
@@ -252,6 +255,14 @@
                         <li><strong>Propósito:</strong> Distribución de la app y procesamiento del pago de tu suscripción.</li>
                         <li><strong>Políticas de privacidad:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacidad de Apple</a> &middot; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacidad de Google</a></li>
                     </ul>
+
+                    <h3>6.8 Servicios de IA (parte premium)</h3>
+                    <ul>
+                        <li><strong>Propósito:</strong> Escribir El parte del día para los usuarios premium que tocan Generar el parte.</li>
+                        <li><strong>Datos:</strong> El nombre de tu municipio, la hora, tu idioma y tus unidades, y las lecturas del día (ver la sección 3.2). Nunca tu identidad, tu ubicación precisa ni un identificador del dispositivo.</li>
+                        <li><strong>Recorrido:</strong> Nuestra pasarela de IA en Cloudflare y luego OpenRouter, que dirige la solicitud al modelo de IA (hoy, un modelo de DeepSeek).</li>
+                        <li><strong>Políticas de privacidad:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a> &middot; <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter</a></li>
+                    </ul>
                 </section>
 
                 <section id="subscriptions" class="policy-section">
@@ -291,11 +302,11 @@
 
                 <section id="notifications" class="policy-section">
                     <h2>8. Notificaciones</h2>
-                    <p>Con tu permiso, Mi Isla puede enviar notificaciones locales, en la medida de lo posible, sobre condiciones importantes para tu zona, como una advertencia activa, polvo del Sahara denso o un temblor notable.</p>
+                    <p>Con tu permiso, Mi Isla puede enviarte un recordatorio diario, a la hora que tú escojas, para darle un vistazo a la isla. La App no vigila alertas en segundo plano para avisarte.</p>
                     <ul>
-                        <li>Las notificaciones se generan en tu dispositivo a partir de las mismas fuentes de datos públicas. No operamos un servidor de notificaciones push y no te escribimos para mercadeo.</li>
-                        <li>Puedes activar o desactivar las notificaciones cuando quieras en los ajustes de la App o de tu dispositivo.</li>
-                        <li>Como la entrega depende del sistema operativo y de los límites en segundo plano, las notificaciones se entregan en la medida de lo posible y nunca deben ser tu única fuente para información de seguridad. Confía siempre en las autoridades oficiales.</li>
+                        <li>El recordatorio se programa en tu dispositivo. No operamos un servidor de notificaciones push y no te escribimos para mercadeo.</li>
+                        <li>Puedes apagar el recordatorio, o cambiarle la hora, cuando quieras en los ajustes de la App o de tu dispositivo.</li>
+                        <li>Mi Isla no envía alertas de seguridad. Como la entrega depende del sistema operativo, el recordatorio llega en la medida de lo posible y nunca debe ser tu fuente de información de seguridad. Confía siempre en las autoridades oficiales.</li>
                     </ul>
                 </section>
 
@@ -338,7 +349,7 @@
                 <section id="international" class="policy-section">
                     <h2>11. Usuarios internacionales</h2>
                     <h3>11.1 Lugar de procesamiento de datos</h3>
-                    <p>Mi Isla se enfoca en Puerto Rico. Los servicios meteorológicos públicos que consulta, y RevenueCat, pueden procesar las solicitudes en servidores ubicados en Estados Unidos o en otros lugares. Estas solicitudes contienen solo la información de zona necesaria para devolver datos del tiempo, nunca tu identidad.</p>
+                    <p>Mi Isla se enfoca en Puerto Rico. Los servicios meteorológicos públicos que consulta, RevenueCat y, para el parte premium, Cloudflare, OpenRouter y el proveedor del modelo de IA pueden procesar las solicitudes en servidores ubicados en Estados Unidos o en otros lugares. Estas solicitudes contienen solo la información de zona y las lecturas que necesitan, nunca tu identidad.</p>
 
                     <h3>11.2 Cumplimiento regional</h3>
                     <ul>

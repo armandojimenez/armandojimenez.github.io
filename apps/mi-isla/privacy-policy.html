@@ -61,9 +61,9 @@
             </div>
             <h1 class="policy-title">Privacy Policy</h1>
             <div class="policy-meta">
-                <span class="meta-item">Last Updated: June 24, 2026</span>
+                <span class="meta-item">Last Updated: October 4, 2026</span>
                 <span class="meta-divider">&bull;</span>
-                <span class="meta-item">Effective Date: October 3, 2026</span>
+                <span class="meta-item">Effective Date: October 4, 2026</span>
             </div>
         </header>
 
@@ -153,8 +153,9 @@
                     </ul>
 
                     <h3>3.2 The Daily Briefing ("El parte del día")</h3>
-                    <p>Mi Isla can summarize the day in plain language. Today this summary is composed <strong>entirely on your device</strong> from the weather readings the App already retrieved for your area &mdash; no additional personal data is sent to create it.</p>
-                    <p>A future version may use an AI service to help compose this summary. If that is ever enabled, only non-identifying weather context for your area would be sent to generate the text, never your identity, and this policy and the App would be updated to describe it before it ships.</p>
+                    <p>With Mi Isla Premium, the App's home screen can write a plain-language summary of your day on the island with AI. It is only created when you tap <strong>Generate the report</strong>, and it is saved on your device for the rest of the day.</p>
+                    <p>To write it, the App sends our AI gateway (a small service we run on Cloudflare) the context the summary needs: your municipio's name, the hour of the day, your language and units, and the day's readings the App already shows you (weather, air quality and Saharan dust, the sea and rivers, active alerts, tsunami status, and recent earthquakes). The gateway passes that request through OpenRouter to an AI model provider (currently a DeepSeek model) and returns the text. <strong>Nothing in the request identifies you:</strong> no name, account, precise location, or device identifier.</p>
+                    <p>Our gateway does not store the request or the summary. Like any web service, it sees your IP address while handling the request, and uses it only to limit abuse. OpenRouter and the model provider process the request under their own privacy policies. If you are not a premium reader, or never tap Generate the report, nothing is sent.</p>
 
                     <h3>3.3 Subscription Management</h3>
                     <ul>
@@ -198,12 +199,14 @@
                         <li>All requests to data sources use HTTPS encryption.</li>
                         <li>Some public services (for example the U.S. National Weather Service and NOAA) ask apps to identify themselves with a contact string. Mi Isla sends a descriptive identifier &mdash; the app name, version, and a contact email &mdash; that contains <strong>no information about you</strong>.</li>
                         <li>We do not run our own analytics, logging, or tracking servers.</li>
+                        <li>The one server we do run is the AI gateway for the premium parte (section 3.2). It does not store or log the requests it handles.</li>
                     </ul>
 
                     <h3>5.3 Data Retention</h3>
                     <ul>
                         <li><strong>Local data:</strong> Stays on your device until you clear the App's cache or uninstall the App. We hold no server-side copy to retain.</li>
                         <li><strong>Subscription data:</strong> Retained by RevenueCat and the app stores per their own retention policies.</li>
+                        <li><strong>The premium parte:</strong> Saved on your device for the day. Our AI gateway keeps no copy; OpenRouter and the AI model provider retain data per their own policies.</li>
                     </ul>
                 </section>
 
@@ -253,6 +256,14 @@
                         <li><strong>Purpose:</strong> App distribution and processing your subscription payment.</li>
                         <li><strong>Privacy Policies:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy</a> &middot; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></li>
                     </ul>
+
+                    <h3>6.8 AI services (premium parte)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Writing El parte del día for premium readers who tap Generate the report.</li>
+                        <li><strong>Data:</strong> Your municipio's name, the hour, your language and units, and the day's readings (see section 3.2). Never your identity, precise location, or a device identifier.</li>
+                        <li><strong>Path:</strong> Our AI gateway on Cloudflare, then OpenRouter, which routes the request to the AI model (currently a DeepSeek model).</li>
+                        <li><strong>Privacy Policies:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a> &middot; <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter</a></li>
+                    </ul>
                 </section>
 
                 <section id="subscriptions" class="policy-section">
@@ -292,11 +303,11 @@
 
                 <section id="notifications" class="policy-section">
                     <h2>8. Notifications</h2>
-                    <p>With your permission, Mi Isla can send best-effort local notifications about significant conditions for your area, such as an active warning, heavy Sahara dust, or a notable earthquake.</p>
+                    <p>With your permission, Mi Isla can send you one daily reminder, at the time you choose, to check in on the island. The App does not watch for alerts in the background to notify you.</p>
                     <ul>
-                        <li>Notifications are generated on your device from the same public data sources. We do not run a push server, and we do not message you for marketing.</li>
-                        <li>You can turn notifications on or off at any time in the App's settings or in your device settings.</li>
-                        <li>Because delivery depends on the operating system and background limits, notifications are best-effort and should never be your only source for life-safety information. Always rely on official authorities.</li>
+                        <li>The reminder is scheduled on your device. We do not run a push server, and we do not message you for marketing.</li>
+                        <li>You can turn the reminder off, or change its time, at any time in the App's settings or in your device settings.</li>
+                        <li>Mi Isla does not send safety alerts. Because delivery depends on the operating system, the reminder is best-effort and should never be your source for life-safety information. Always rely on official authorities.</li>
                     </ul>
                 </section>
 
@@ -339,7 +350,7 @@
                 <section id="international" class="policy-section">
                     <h2>11. International Users</h2>
                     <h3>11.1 Data Processing Location</h3>
-                    <p>Mi Isla is focused on Puerto Rico. The public weather services it queries, and RevenueCat, may process requests on servers located in the United States or elsewhere. These requests contain only the area information needed to return weather data, never your identity.</p>
+                    <p>Mi Isla is focused on Puerto Rico. The public weather services it queries, RevenueCat, and, for the premium parte, Cloudflare, OpenRouter, and the AI model provider may process requests on servers located in the United States or elsewhere. These requests contain only the area information and readings they need, never your identity.</p>
 
                     <h3>11.2 Regional Compliance</h3>
                     <ul>
