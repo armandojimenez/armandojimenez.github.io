@@ -63,7 +63,7 @@
             <div class="policy-meta">
                 <span class="meta-item">Last Updated: June 24, 2026</span>
                 <span class="meta-divider">&bull;</span>
-                <span class="meta-item">Effective Date: June 24, 2026</span>
+                <span class="meta-item">Effective Date: October 3, 2026</span>
             </div>
         </header>
 
@@ -196,7 +196,7 @@
                     <h3>5.2 Network Communication</h3>
                     <ul>
                         <li>All requests to data sources use HTTPS encryption.</li>
-                        <li>Some public services (for example the U.S. National Weather Service and OpenStreetMap) ask apps to identify themselves with a contact string. Mi Isla sends a descriptive identifier &mdash; the app name, version, and a contact email &mdash; that contains <strong>no information about you</strong>.</li>
+                        <li>Some public services (for example the U.S. National Weather Service and NOAA) ask apps to identify themselves with a contact string. Mi Isla sends a descriptive identifier &mdash; the app name, version, and a contact email &mdash; that contains <strong>no information about you</strong>.</li>
                         <li>We do not run our own analytics, logging, or tracking servers.</li>
                     </ul>
 
@@ -213,48 +213,42 @@
 
                     <h3>6.1 U.S. National Weather Service (NWS / weather.gov)</h3>
                     <ul>
-                        <li><strong>Purpose:</strong> Official watches, warnings, advisories, and marine forecasts.</li>
+                        <li><strong>Purpose:</strong> The forecast for your area (temperature, feels-like, rain chances, wind, highs and lows) from NWS San Juan, plus official watches, warnings, and advisories.</li>
                         <li><strong>Privacy Policy:</strong> <a href="https://www.weather.gov/privacy" target="_blank" rel="noopener">https://www.weather.gov/privacy</a></li>
                     </ul>
 
-                    <h3>6.2 U.S. Geological Survey (USGS)</h3>
+                    <h3>6.2 NOAA (radar, rivers, tsunami.gov)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Radar images from the NWS San Juan radar (opengeo.ncep.noaa.gov), river flow forecasts from the National Water Model (water.noaa.gov), and tsunami status and messages (tsunami.gov).</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://www.noaa.gov/protecting-your-privacy" target="_blank" rel="noopener">https://www.noaa.gov/protecting-your-privacy</a></li>
+                    </ul>
+
+                    <h3>6.3 U.S. Geological Survey (USGS)</h3>
                     <ul>
                         <li><strong>Purpose:</strong> Earthquake data and river gauge levels.</li>
                         <li><strong>Privacy Policy:</strong> <a href="https://www.doi.gov/privacy" target="_blank" rel="noopener">https://www.doi.gov/privacy</a> (U.S. Department of the Interior, USGS's parent department)</li>
                     </ul>
 
-                    <h3>6.3 NOAA Tsunami Warning Center (tsunami.gov)</h3>
+                    <h3>6.4 U.S. Environmental Protection Agency (EPA)</h3>
                     <ul>
-                        <li><strong>Purpose:</strong> Tsunami status and messages.</li>
-                        <li><strong>Privacy Policy:</strong> <a href="https://www.noaa.gov/protecting-your-privacy" target="_blank" rel="noopener">https://www.noaa.gov/protecting-your-privacy</a></li>
+                        <li><strong>Purpose:</strong> The UV Index forecast, requested with your municipio's ZIP code (data.epa.gov).</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://www.epa.gov/privacy" target="_blank" rel="noopener">https://www.epa.gov/privacy</a></li>
                     </ul>
 
-                    <h3>6.4 Open-Meteo</h3>
+                    <h3>6.5 Mi Isla data files (GitHub Pages)</h3>
                     <ul>
-                        <li><strong>Purpose:</strong> Forecast, air quality, marine, and flood data.</li>
-                        <li><strong>Privacy / Terms:</strong> <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a></li>
+                        <li><strong>Purpose:</strong> Air quality, Saharan dust, and wave forecasts, published as small public files at armandojimenez.dev/mi-isla-data and hosted on GitHub Pages. They are built from the Copernicus Atmosphere Monitoring Service (CAMS) and NOAA GFS-Wave forecasts, as processed by Open-Meteo.com. Each file covers all of Puerto Rico, so the request carries <strong>no location</strong>; your device picks your area itself.</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub General Privacy Statement</a></li>
                     </ul>
 
-                    <h3>6.5 RainViewer</h3>
-                    <ul>
-                        <li><strong>Purpose:</strong> Precipitation radar frames.</li>
-                        <li><strong>Privacy Policy:</strong> <a href="https://www.rainviewer.com/privacy.html" target="_blank" rel="noopener">https://www.rainviewer.com/privacy.html</a></li>
-                    </ul>
-
-                    <h3>6.6 OpenStreetMap</h3>
-                    <ul>
-                        <li><strong>Purpose:</strong> Base map tiles under the radar. Map data &copy; OpenStreetMap contributors.</li>
-                        <li><strong>Privacy Policy:</strong> <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
-                    </ul>
-
-                    <h3>6.7 RevenueCat (Payments)</h3>
+                    <h3>6.6 RevenueCat (Payments)</h3>
                     <ul>
                         <li><strong>Purpose:</strong> Subscription and in-app purchase management.</li>
                         <li><strong>Data:</strong> Anonymous app user ID, purchase and subscription status.</li>
                         <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
                     </ul>
 
-                    <h3>6.8 Apple App Store / Google Play</h3>
+                    <h3>6.7 Apple App Store / Google Play</h3>
                     <ul>
                         <li><strong>Purpose:</strong> App distribution and processing your subscription payment.</li>
                         <li><strong>Privacy Policies:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy</a> &middot; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></li>
@@ -390,7 +384,7 @@
                     <p><strong>Legal Entity:</strong> Believe PR</p>
                     <p><strong>Developer:</strong> Armando Jimenez</p>
                     <p><strong>Last Updated:</strong> June 24, 2026</p>
-                    <p><strong>Effective Date:</strong> June 24, 2026</p>
+                    <p><strong>Effective Date:</strong> October 3, 2026</p>
                     <p><strong>Version:</strong> 1.0</p>
                 </div>
             </main>
