@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" data-policy-app="universe-shop" data-policy-type="privacy" data-policy-langs="en,es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function() {
+ const q=new URLSearchParams(location.search), requested=q.get('lang');
+ const target=requested==='es'?'es':requested?'en':document.documentElement.lang;
+ const base=location.pathname.replace(/-es\.html$/,'.html');
+ const path=target==='es'?base.replace(/\.html$/,'-es.html'):base;
+ if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
+ const theme=q.get('theme');
+ if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;
+})();
+</script>
+<title>Política de privacidad - Tienda del Universo: Manifiéstalo Todo</title>
+<meta name="description" content="Política de privacidad · Tienda del Universo: Manifiéstalo Todo · Armando Jimenez">
+<link rel="canonical" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-es.html">
+<link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
+<link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-es.html">
+<link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
+</head><body>
+<div class="language-switcher" id="languageSwitcher"></div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+
+<div class="container"><header class="policy-header">
+<div class="app-badge"><div class="badge-icon"><img class="mark-light" src="mark-light.png" width="52" height="52" alt=""><img class="mark-dark" src="mark-dark.png" width="52" height="52" alt=""></div><div class="badge-text"><div class="badge-title">Tienda del Universo: Manifiéstalo Todo</div><div class="badge-subtitle">Tu universo imaginario</div></div></div>
+<h1 class="policy-title">Política de privacidad</h1><div class="policy-meta"><span class="meta-item">Actualizado / Vigente: 5 de octubre de 2026</span></div>
+</header><div class="content-wrapper"><aside class="table-of-contents"><h2 class="toc-title">Contenido</h2><ul class="toc-list"><li><a href="#section-1">Introducción</a></li>
+<li><a href="#section-2">Tu universo es local</a></li>
+<li><a href="#section-3">Diagnóstico de fallos</a></li>
+<li><a href="#section-4">Membresía opcional</a></li>
+<li><a href="#section-5">Fotos, recordatorios y widgets</a></li>
+<li><a href="#section-6">Compartir, soporte y reseñas</a></li>
+<li><a href="#section-7">Conservar y borrar tu universo</a></li>
+<li><a href="#section-8">Tus opciones y contacto</a></li>
+<li><a href="#section-9">Cambios y políticas de servicios</a></li>
+<li><a href="#section-10">Uso y protección de información</a></li>
+<li><a href="#section-11">Derechos de privacidad y base legal</a></li>
+<li><a href="#section-12">Conservación</a></li>
+<li><a href="#section-13">Esta página web</a></li></ul></aside>
+<main class="policy-content"><section id="section-1" class="policy-section"><h2>1. Introducción</h2><p>Tienda del Universo: Manifiéstalo Todo es una app de Armando Jimenez, en Puerto Rico. Tu universo personal permanece en tu dispositivo. Esta política explica los servicios limitados para fallos, membresías y acciones que tú eliges.</p></section>
+<section id="section-2" class="policy-section"><h2>2. Tu universo es local</h2><p>Tu perfil, fotos importadas, saldos y monedas simuladas, pedidos, direcciones, sentimientos, afirmaciones, creaciones, historias, pruebas y preferencias se guardan localmente. El catálogo y las fotografías vienen incluidos. No hay cuentas de la app, servidor para tu contenido personal, sincronización en la nube, publicidad ni analítica de uso. Los compradores, reseñas, seguidores, ventas y estadísticas de Mi Tienda son una simulación sin conexión; no son personas reales ni telemetría.</p></section>
+<section id="section-3" class="policy-section"><h2>3. Diagnóstico de fallos</h2><p>Las versiones privadas y de producción usan Sentry para recibir informes mínimos de fallos no controlados y corregir errores. Incluyen el tipo técnico de fallo, traza depurada, versión de la app, momento del fallo e información para identificar el código. Se excluyen nombres, notas, direcciones, búsquedas, fotos, rutas de archivos, mensajes y texto de excepciones. No se habilitan analítica, trazas, perfiles de rendimiento, seguimiento de sesiones, capturas, grabaciones, registros ni historial de acciones. Sentry recibe una solicitud de red y puede procesar información de conexión, como la dirección IP, según su política; la app no la adjunta como identificador de usuario. Los informes pueden procesarse fuera de tu país y se conservan según el periodo configurado en Sentry.</p></section>
+<section id="section-4" class="policy-section"><h2>4. Membresía opcional</h2><p>Apple o Google gestionan los pagos reales. RevenueCat verifica la membresía con un ID anónimo de la app, identificadores de productos y compras, información de transacciones y acceso, y datos técnicos de la app y plataforma. La recopilación automática de identificadores publicitarios o del dispositivo y los diagnósticos están desactivados. La app no recibe los datos de tu tarjeta ni envía tu contenido de manifestación a RevenueCat. La verificación y los precios pueden usar la red incluso en la versión gratuita. Los registros de las tiendas y RevenueCat se rigen por sus políticas y pueden procesarse fuera de tu país. Restaurar compras no recupera un universo local borrado ni lo sincroniza entre dispositivos.</p></section>
+<section id="section-5" class="policy-section"><h2>5. Fotos, recordatorios y widgets</h2><p>La selección de fotos y las copias importadas permanecen locales. La app solicita acceso solo cuando una función lo necesita; puedes cambiar los permisos en Ajustes. Los recordatorios se programan localmente con permiso de notificaciones. Los widgets leen una copia local de tu universo seleccionado y pueden mostrar cantidades, fotos y datos de la tienda a quien vea tu pantalla. La app no sube ese contenido. El sistema controla los tiempos de notificaciones y actualización de widgets.</p></section>
+<section id="section-6" class="policy-section"><h2>6. Compartir, soporte y reseñas</h2><p>Las exportaciones salen de la app solo por el destino que tú eliges. Contactar abre tu app de correo con una plantilla visible y editable; soporte recibe solo el texto y los adjuntos que decides enviar. Las plantillas de errores pueden incluir versión visible, plataforma e idioma, nunca registros personales ni archivos automáticos. Los servicios de correo procesan los mensajes según sus políticas. Apple o Google gestionan las solicitudes nativas de reseña y los enlaces; la app no conoce ni registra tu puntuación. Abrir enlaces externos de políticas o del creador envía una solicitud normal del navegador a ese sitio.</p></section>
+<section id="section-7" class="policy-section"><h2>7. Conservar y borrar tu universo</h2><p>El creador no tiene una copia de tu universo para recuperarlo. Los datos gestionados por la app se excluyen de las copias de seguridad donde el sistema lo permite. Eliminar la app borra sus datos locales, según el comportamiento del sistema; las exportaciones y mensajes guardados fuera permanecen allí. Empezar una nueva línea temporal, cuando esté disponible, programa el reinicio para la próxima medianoche local y permite cancelarlo antes de aplicarse; borra registros personales, borradores, fotos y contenido asociado de notificaciones y widgets. Se conservan idioma, apariencia, preferencias de accesibilidad y membresía de la tienda. Desinstalar o reiniciar no cancela una suscripción. La cancelación se gestiona en la tienda. Los registros de compras, RevenueCat, fallos y correos enviados son independientes del borrado local.</p></section>
+<section id="section-8" class="policy-section"><h2>8. Tus opciones y contacto</h2><p>Puedes usar la tienda gratuita sin conexión, rechazar permisos opcionales, decidir si compartes y gestionar suscripciones en Apple o Google. Escribe a hello@armandojimenez.dev para preguntas de privacidad o solicitudes sobre información que enviaste a soporte. No podemos acceder ni borrar remotamente tu universo local. No solicitamos deliberadamente datos personales de menores. Si un menor envía información a soporte, contáctanos para pedir su eliminación. No vendemos información personal ni la usamos para publicidad. Conservas tus derechos de privacidad aplicables; no pedimos documentos de identidad innecesarios para consultas habituales.</p></section>
+<section id="section-9" class="policy-section"><h2>9. Cambios y políticas de servicios</h2><p>La fecha indicada identifica esta versión. Los cambios sustanciales aparecerán en esta página oficial y se describirán en la app cuando corresponda. Consulta sentry.io/privacy, revenuecat.com/privacy, apple.com/legal/privacy y policies.google.com/privacy para detalles de los servicios. Cada uno tiene sus propios plazos y obligaciones legales; aquí no se promete un plazo fijo ni el borrado inmediato por terceros.</p></section>
+<section id="section-10" class="policy-section"><h2>10. Uso y protección de información</h2><p>Los registros locales permiten las funciones que eliges; los diagnósticos sirven para corregir fallos, las compras para ofrecer y restaurar membresía, y los mensajes para responder consultas. Los archivos usan el almacenamiento aislado de la app y la seguridad de tu dispositivo; la app no cifra su base de datos con una contraseña independiente. Las solicitudes a servicios usan HTTPS cifrado. Podemos divulgar registros limitados de servicios o soporte cuando la ley lo exija o para proteger derechos. Tu universo local no se sube con estos fines. Ningún sistema de seguridad es perfecto.</p></section>
+<section id="section-11" class="policy-section"><h2>11. Derechos de privacidad y base legal</h2><p>Cuando apliquen leyes de privacidad, puedes pedir acceso, corrección, eliminación o copia portable de información que tengamos; oponerte o solicitar restricción del tratamiento; retirar consentimiento cuando sea la base; y presentar una queja ante tu autoridad local. Las personas de California mantienen los derechos aplicables de conocer, corregir y borrar información y recibir trato no discriminatorio. No vendemos ni compartimos datos para publicidad entre contextos. Procesamos registros limitados de fallos para mantener fiabilidad, compras para prestar la membresía y cumplir obligaciones legales, y mensajes voluntarios para responderte, conforme a la base legal aplicable. Contáctanos para ejercer derechos; respondemos dentro de los plazos legales y explicamos excepciones legítimas. No podemos acceder a registros que solo están en tu dispositivo; puedes gestionarlos localmente.</p></section>
+<section id="section-12" class="policy-section"><h2>12. Conservación</h2><p>Los registros locales permanecen hasta que los eliminas, desinstalas o aplicas un reinicio. Los fallos siguen la retención configurada en Sentry. Tiendas y RevenueCat conservan compras según necesidades de verificación, contabilidad y obligaciones legales. Los mensajes de soporte se conservan según lo necesario para resolver la consulta y cumplir la ley, y puedes solicitar su eliminación. No prometemos borrar registros que una tienda o servicio deba conservar legalmente.</p></section>
+<section id="section-13" class="policy-section"><h2>13. Esta página web</h2><p>La política publicada usa los controles compartidos de idioma y apariencia del sitio del creador, que pueden guardar la apariencia en el almacenamiento local del navegador. Leer una página alojada envía solicitudes normales al servidor y a recursos tipográficos; esto es independiente de tu universo local. No se añade publicidad ni analítica a estas páginas.</p></section>
+<section class="policy-section"><h2>Servicios y contacto</h2><p><a href="https://sentry.io/privacy/">Sentry</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://policies.google.com/privacy">Google</a></p><p>Armando Jimenez · Puerto Rico · <a href="mailto:hello@armandojimenez.dev">hello@armandojimenez.dev</a></p></section>
+<div class="policy-footer-note"><p>Actualizado / Vigente: 5 de octubre de 2026 · v1.0</p></div></main></div></div>
+<footer class="policy-footer"><div class="footer-content"><p class="footer-copyright">© 2026 Armando Jimenez.</p></div></footer>
+<script src="policy-scripts.js"></script>
+<script>
+const toggle=document.getElementById('themeToggle');
+toggle.setAttribute('aria-label',document.documentElement.lang==='es'?'Cambiar apariencia':'Change appearance');
+</script>
+</body></html>

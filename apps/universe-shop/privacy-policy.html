@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-policy-app="universe-shop" data-policy-type="privacy" data-policy-langs="en,es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function() {
+ const q=new URLSearchParams(location.search), requested=q.get('lang');
+ const target=requested==='es'?'es':requested?'en':document.documentElement.lang;
+ const base=location.pathname.replace(/-es\.html$/,'.html');
+ const path=target==='es'?base.replace(/\.html$/,'-es.html'):base;
+ if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
+ const theme=q.get('theme');
+ if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;
+})();
+</script>
+<title>Privacy policy - Universe Shop: Manifest It All</title>
+<meta name="description" content="Privacy policy · Universe Shop: Manifest It All · Armando Jimenez">
+<link rel="canonical" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
+<link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
+<link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-es.html">
+<link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
+</head><body>
+<div class="language-switcher" id="languageSwitcher"></div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+
+<div class="container"><header class="policy-header">
+<div class="app-badge"><div class="badge-icon"><img class="mark-light" src="mark-light.png" width="52" height="52" alt=""><img class="mark-dark" src="mark-dark.png" width="52" height="52" alt=""></div><div class="badge-text"><div class="badge-title">Universe Shop: Manifest It All</div><div class="badge-subtitle">Your imaginary universe</div></div></div>
+<h1 class="policy-title">Privacy policy</h1><div class="policy-meta"><span class="meta-item">Updated / Effective: October 5, 2026</span></div>
+</header><div class="content-wrapper"><aside class="table-of-contents"><h2 class="toc-title">Table of Contents</h2><ul class="toc-list"><li><a href="#section-1">Introduction</a></li>
+<li><a href="#section-2">Your universe is local</a></li>
+<li><a href="#section-3">Crash diagnostics</a></li>
+<li><a href="#section-4">Optional membership</a></li>
+<li><a href="#section-5">Photos, reminders, and widgets</a></li>
+<li><a href="#section-6">Sharing, support, and reviews</a></li>
+<li><a href="#section-7">Keeping and deleting your universe</a></li>
+<li><a href="#section-8">Your choices and contact</a></li>
+<li><a href="#section-9">Updates and service policies</a></li>
+<li><a href="#section-10">How information is used and protected</a></li>
+<li><a href="#section-11">Privacy rights and legal basis</a></li>
+<li><a href="#section-12">Retention</a></li>
+<li><a href="#section-13">This policy webpage</a></li></ul></aside>
+<main class="policy-content"><section id="section-1" class="policy-section"><h2>1. Introduction</h2><p>Universe Shop: Manifest It All is made by Armando Jimenez in Puerto Rico. Your personal universe stays on your device. This policy explains the limited services used for crashes, memberships, and actions you choose to take.</p></section>
+<section id="section-2" class="policy-section"><h2>2. Your universe is local</h2><p>Your profile, imported photos, simulated balances and currencies, orders, addresses, feelings, affirmations, creations, stories, proof, and preferences are stored locally. The catalogue and app photography are bundled. There is no app account, server for your personal content, cloud sync, advertising, or app analytics. My Store buyers, reviews, followers, sales, and statistics are an offline simulation; they are not real people or telemetry.</p></section>
+<section id="section-3" class="policy-section"><h2>3. Crash diagnostics</h2><p>Private preview and production builds use Sentry to receive minimal unhandled crash reports so defects can be fixed. Reports contain technical crash type, redacted stack frames, app release/build, crash time, and symbolication information. Personal names, notes, addresses, search words, photos, file paths, messages, and exception text are excluded. No analytics, tracing, profiling, session tracking, screenshots, replay, logs, or breadcrumbs are enabled. Sentry receives a network request and may process connection information such as the IP address under its own service policy; the app does not attach it as a user identifier. Reports may be processed outside your country and are kept according to the configured Sentry retention period.</p></section>
+<section id="section-4" class="policy-section"><h2>4. Optional membership</h2><p>Apple or Google handles real payments. RevenueCat verifies membership using an anonymous app user ID, purchase/product identifiers, transaction and entitlement information, and technical app/platform information. Automatic advertising/device identifier collection and diagnostics are disabled. The app does not receive your payment card details or send RevenueCat your manifestation content. Membership verification and offering prices may use the network even when you use the free app. Store and RevenueCat records are governed by their service policies and may be processed outside your country. Restoring purchases does not restore a deleted local universe or sync it between devices.</p></section>
+<section id="section-5" class="policy-section"><h2>5. Photos, reminders, and widgets</h2><p>Photo selection and imported copies stay local. The app asks for access only when a feature needs it; you can change permissions in device Settings. Reminders are scheduled locally with notification permission. Home Screen widgets read a local projection of your chosen universe and may display amounts, item photos, and shop facts to someone who can see your screen. The app does not upload widget content. Your OS controls notification and widget refresh timing.</p></section>
+<section id="section-6" class="policy-section"><h2>6. Sharing, support, and reviews</h2><p>Exports leave the app only through the destination you choose. Contact actions open your email app with a visible editable template; only the text and attachments you decide to send reach support. Bug templates can include the visible app version/build, platform, and language; they never automatically attach personal records or logs. Email services process those messages under their policies. Native store review requests and links are handled by Apple or Google; the app does not learn or record your rating. Opening external policy or developer links sends a normal browser request to that website.</p></section>
+<section id="section-7" class="policy-section"><h2>7. Keeping and deleting your universe</h2><p>There is no developer copy of your personal universe to recover. App-managed data is excluded from cloud/device backup where supported. Removing the app removes its local app-managed data, subject to OS behavior; exports and messages you saved elsewhere remain there. A Start a new timeline reset, when available, is scheduled for the next local midnight and can be cancelled before it applies; it removes personal universe records, drafts, media, and associated local notification/widget content. Language, appearance/accessibility choices and store membership are kept. Uninstalling or resetting does not cancel a paid subscription. Manage cancellation in the store. Store, RevenueCat, crash-service, and sent-email records are separate from local deletion.</p></section>
+<section id="section-8" class="policy-section"><h2>8. Your choices and contact</h2><p>Use the free shop offline, decline optional photo/notification permissions, choose whether to share, and manage subscriptions in Apple or Google. Contact hello@armandojimenez.dev for privacy questions or requests concerning information you sent to support. We cannot access or remotely erase your on-device universe. We do not knowingly request personal information from children. If a child sends information to support, contact us to request its removal. We do not sell personal information or use it for advertising. Applicable privacy rights remain yours; we do not require unnecessary identity documents for routine questions.</p></section>
+<section id="section-9" class="policy-section"><h2>9. Updates and service policies</h2><p>The date above identifies this version. Material changes will be reflected on this authoritative webpage and described in the app as appropriate. Service details are available at sentry.io/privacy, revenuecat.com/privacy, apple.com/legal/privacy, and policies.google.com/privacy. These services have their own retention and legal obligations; no fixed retention period or immediate third-party deletion is promised here.</p></section>
+<section id="section-10" class="policy-section"><h2>10. How information is used and protected</h2><p>Local records support the features you choose; diagnostic information is used to fix crashes, purchase information to deliver and restore membership, and support messages to answer your request. Local files use the app’s OS-isolated storage, protected by your device’s security; the database is not separately password-encrypted by the app. Network service requests use encrypted HTTPS. We may disclose limited service or support records where legally required or necessary to protect rights. We do not upload your local universe for these purposes. No security system is perfect.</p></section>
+<section id="section-11" class="policy-section"><h2>11. Privacy rights and legal basis</h2><p>Where privacy laws apply, you may request access, correction, deletion, or a portable copy of information held by us; object to or request restriction of processing; withdraw consent where consent is the basis; and complain to your local supervisory authority. California residents retain applicable rights to know, correct and delete information and to receive non-discriminatory treatment. We do not sell or share personal information for cross-context advertising. We process limited crash records to maintain reliability, purchase records to perform the membership service and meet legal obligations, and voluntary support messages to respond to you, using the applicable legal basis. Contact us to exercise these rights; we respond within applicable legal deadlines and explain any lawful exception. We cannot access device-only records, which you can manage locally.</p></section>
+<section id="section-12" class="policy-section"><h2>12. Retention</h2><p>Local universe records stay until you remove them, uninstall, or apply a reset. Crash records follow the project’s configured Sentry retention. Purchase records are retained by stores and RevenueCat as needed for subscription verification, accounting, and legal obligations. Support messages are kept as needed to resolve the request and meet legal obligations, and can be the subject of a deletion request. We do not promise deletion of records that a store or service must lawfully retain.</p></section>
+<section id="section-13" class="policy-section"><h2>13. This policy webpage</h2><p>The published policy uses the developer website’s shared language and theme controls, which can store a theme preference in browser local storage. Reading a hosted webpage sends normal connection requests to the host and its font resources; that is separate from the app’s local universe. No advertising or analytics script is added to these pages.</p></section>
+<section class="policy-section"><h2>Service references and contact</h2><p><a href="https://sentry.io/privacy/">Sentry</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://policies.google.com/privacy">Google</a></p><p>Armando Jimenez · Puerto Rico · <a href="mailto:hello@armandojimenez.dev">hello@armandojimenez.dev</a></p></section>
+<div class="policy-footer-note"><p>Updated / Effective: October 5, 2026 · v1.0</p></div></main></div></div>
+<footer class="policy-footer"><div class="footer-content"><p class="footer-copyright">© 2026 Armando Jimenez.</p></div></footer>
+<script src="policy-scripts.js"></script>
+<script>
+const toggle=document.getElementById('themeToggle');
+toggle.setAttribute('aria-label',document.documentElement.lang==='es'?'Cambiar apariencia':'Change appearance');
+</script>
+</body></html>
