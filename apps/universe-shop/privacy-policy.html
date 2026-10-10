@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-policy-app="universe-shop" data-policy-type="privacy" data-policy-langs="en,es">
+<html lang="en" data-policy-app="universe-shop" data-policy-type="privacy" data-policy-langs="en,es,pt-BR" data-back-to-top="Back to top">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 (function() {
  const q=new URLSearchParams(location.search), requested=q.get('lang');
- const target=requested==='es'?'es':requested?'en':document.documentElement.lang;
- const base=location.pathname.replace(/-es\.html$/,'.html');
- const path=target==='es'?base.replace(/\.html$/,'-es.html'):base;
+ const routes={"en": "privacy-policy.html", "es": "privacy-policy-es.html", "pt-br": "privacy-policy-pt-BR.html"}, key=(requested||document.documentElement.lang).toLowerCase();
+ const target=routes[key]||routes.en;
+ const path=location.pathname.slice(0,location.pathname.lastIndexOf('/')+1)+target;
  if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
  const theme=q.get('theme');
  if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;
@@ -18,9 +18,10 @@
 <link rel="canonical" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
 <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
 <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-es.html">
+<link rel="alternate" hreflang="pt-BR" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-pt-BR.html">
 <link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
 </head><body>
-<div class="language-switcher" id="languageSwitcher"></div>
+<div class="language-switcher" id="languageSwitcher" role="group" aria-label="Language"><button type="button" class="lang-button active" data-lang="en" aria-pressed="true">English</button><button type="button" class="lang-button" data-lang="es" aria-pressed="false">Español</button><button type="button" class="lang-button" data-lang="pt-BR" aria-pressed="false">Português (Brasil)</button></div>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
@@ -74,6 +75,12 @@
 <script src="policy-scripts.js"></script>
 <script>
 const toggle=document.getElementById('themeToggle');
-toggle.setAttribute('aria-label',document.documentElement.lang==='es'?'Cambiar apariencia':'Change appearance');
+toggle.setAttribute('aria-label',"Change appearance");
+document.querySelectorAll('#languageSwitcher [data-lang]').forEach(button=>button.addEventListener('click',()=>{
+ const q=new URLSearchParams(location.search);
+ q.set('lang',button.dataset.lang);
+ q.set('theme',document.documentElement.dataset.theme);
+ location.search=q.toString();
+}));
 </script>
 </body></html>
