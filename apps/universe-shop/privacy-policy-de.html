@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de" data-policy-app="universe-shop" data-policy-type="privacy" data-policy-langs="en,es,pt-BR,de" data-back-to-top="Nach oben">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function() {
+ const q=new URLSearchParams(location.search), requested=q.get('lang');
+ const routes={"en": "privacy-policy.html", "es": "privacy-policy-es.html", "pt-br": "privacy-policy-pt-BR.html", "de": "privacy-policy-de.html"}, key=(requested||document.documentElement.lang).toLowerCase();
+ const target=routes[key]||routes.en;
+ const path=location.pathname.slice(0,location.pathname.lastIndexOf('/')+1)+target;
+ if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
+ const theme=q.get('theme');
+ if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;
+})();
+</script>
+<title>Datenschutzerklärung - Universum-Shop: Manifestieren</title>
+<meta name="description" content="Datenschutzerklärung · Universum-Shop: Manifestieren · Armando Jimenez">
+<link rel="canonical" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-de.html">
+<link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
+<link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-es.html">
+<link rel="alternate" hreflang="pt-BR" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-pt-BR.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-de.html">
+<link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
+</head><body>
+<div class="language-switcher" id="languageSwitcher" role="group" aria-label="Sprache"><button type="button" class="lang-button" data-lang="en" aria-pressed="false">English</button><button type="button" class="lang-button" data-lang="es" aria-pressed="false">Español</button><button type="button" class="lang-button" data-lang="pt-BR" aria-pressed="false">Português (Brasil)</button><button type="button" class="lang-button active" data-lang="de" aria-pressed="true">Deutsch</button></div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+
+<div class="container"><header class="policy-header">
+<div class="app-badge"><div class="badge-icon"><img class="mark-light" src="mark-light.png" width="52" height="52" alt=""><img class="mark-dark" src="mark-dark.png" width="52" height="52" alt=""></div><div class="badge-text"><div class="badge-title">Universum-Shop: Manifestieren</div><div class="badge-subtitle">Dein vorgestelltes Universum</div></div></div>
+<h1 class="policy-title">Datenschutzerklärung</h1><div class="policy-meta"><span class="meta-item">Aktualisiert / Gültig ab: 5. Oktober 2026</span></div>
+</header><div class="content-wrapper"><aside class="table-of-contents"><h2 class="toc-title">Inhaltsverzeichnis</h2><ul class="toc-list"><li><a href="#section-1">Einführung</a></li>
+<li><a href="#section-2">Dein Universum bleibt lokal</a></li>
+<li><a href="#section-3">Absturzdiagnosen</a></li>
+<li><a href="#section-4">Optionale Mitgliedschaft</a></li>
+<li><a href="#section-5">Fotos, Erinnerungen und Widgets</a></li>
+<li><a href="#section-6">Teilen, Support und Bewertungen</a></li>
+<li><a href="#section-7">Dein Universum behalten und löschen</a></li>
+<li><a href="#section-8">Deine Wahlmöglichkeiten und Kontakt</a></li>
+<li><a href="#section-9">Aktualisierungen und Dienstrichtlinien</a></li>
+<li><a href="#section-10">Verwendung und Schutz von Informationen</a></li>
+<li><a href="#section-11">Datenschutzrechte und Rechtsgrundlage</a></li>
+<li><a href="#section-12">Aufbewahrung</a></li>
+<li><a href="#section-13">Diese Datenschutzerklärungs-Webseite</a></li></ul></aside>
+<main class="policy-content"><section id="section-1" class="policy-section"><h2>1. Einführung</h2><p>Universum-Shop: Manifestieren wird von Armando Jimenez in Puerto Rico entwickelt. Dein persönliches Universum bleibt auf deinem Gerät. Diese Richtlinie erläutert die begrenzten Dienste für Absturzberichte, Mitgliedschaften und von dir gewählte Aktionen.</p></section>
+<section id="section-2" class="policy-section"><h2>2. Dein Universum bleibt lokal</h2><p>Dein Profil, importierte Fotos, simulierte Guthaben und Währungen, Bestellungen, Adressen, Gefühle, Affirmationen, Kreationen, Geschichten, Beweise und Einstellungen werden lokal gespeichert. Katalog und App-Fotos sind mit der App gebündelt. Es gibt kein App-Konto, keinen Server für deine persönlichen Inhalte, keine Cloud-Synchronisierung, Werbung oder App-Analytics. Käufer, Bewertungen, Follower, Verkäufe und Statistiken in „Mein Shop“ sind eine Offline-Simulation; dahinter stehen weder echte Personen noch Telemetriedaten.</p></section>
+<section id="section-3" class="policy-section"><h2>3. Absturzdiagnosen</h2><p>Private Vorschau- und Produktionsversionen verwenden Sentry, um minimale Berichte über unbehandelte Abstürze zu empfangen und Fehler beheben zu können. Die Berichte enthalten den technischen Absturztyp, bereinigte Stack-Frames, App-Version und Build, Absturzzeitpunkt sowie Symbolisierungsinformationen. Persönliche Namen, Notizen, Adressen, Suchbegriffe, Fotos, Dateipfade, Nachrichten und Ausnahme-Texte werden ausgeschlossen. Analytics, Tracing, Profiling, Sitzungsverfolgung, Screenshots, Replay, Logs und Breadcrumbs sind nicht aktiviert. Sentry erhält eine Netzwerkanfrage und kann Verbindungsdaten wie die IP-Adresse gemäß seiner eigenen Dienst-Richtlinie verarbeiten; die App verwendet sie nicht als Nutzerkennung. Berichte können außerhalb deines Landes verarbeitet und entsprechend der für Sentry konfigurierten Aufbewahrungsdauer gespeichert werden.</p></section>
+<section id="section-4" class="policy-section"><h2>4. Optionale Mitgliedschaft</h2><p>Apple oder Google wickelt echte Zahlungen ab. RevenueCat prüft die Mitgliedschaft anhand einer anonymen App-Nutzer-ID, Kauf- und Produktkennungen, Transaktions- und Entitlement-Informationen sowie technischer App- und Plattformdaten. Automatische Erfassung von Werbe- oder Gerätekennungen und Diagnosen sind deaktiviert. Die App erhält weder deine Kartendaten noch sendet sie RevenueCat Inhalte deiner Manifestationen. Die Mitgliedschaftsprüfung und Angebotspreise können eine Netzwerkverbindung verwenden, auch wenn du die kostenlose App nutzt. Store- und RevenueCat-Daten unterliegen den jeweiligen Dienstrichtlinien und können außerhalb deines Landes verarbeitet werden. Käufe wiederherzustellen stellt kein gelöschtes lokales Universum wieder her und synchronisiert es nicht zwischen Geräten.</p></section>
+<section id="section-5" class="policy-section"><h2>5. Fotos, Erinnerungen und Widgets</h2><p>Fotoauswahl und importierte Kopien bleiben lokal. Die App fragt erst dann nach Zugriff, wenn eine Funktion ihn benötigt; Berechtigungen kannst du in den Geräteeinstellungen ändern. Erinnerungen werden lokal und mit Benachrichtigungsberechtigung geplant. Home-Bildschirm-Widgets lesen eine lokale Darstellung des von dir gewählten Universums und können Beträge, Artikelbilder und Shop-Angaben für Personen sichtbar anzeigen, die deinen Bildschirm sehen. Die App lädt keine Widget-Inhalte hoch. Dein Betriebssystem bestimmt den Zeitpunkt der Aktualisierung von Benachrichtigungen und Widgets.</p></section>
+<section id="section-6" class="policy-section"><h2>6. Teilen, Support und Bewertungen</h2><p>Exporte verlassen die App nur über das von dir gewählte Ziel. Kontaktaktionen öffnen deine E-Mail-App mit einer sichtbaren, bearbeitbaren Vorlage; nur der Text und die Anhänge, die du selbst sendest, erreichen den Support. Fehlervorlagen können die sichtbare App-Version und den Build, die Plattform und die Sprache enthalten; persönliche Datensätze oder Logs werden nie automatisch angehängt. E-Mail-Dienste verarbeiten diese Nachrichten gemäß ihren Richtlinien. Native Bewertungsanfragen und Links werden von Apple oder Google verwaltet; die App erfährt oder speichert deine Bewertung nicht. Beim Öffnen externer Richtlinien- oder Entwickler-Links wird eine normale Browseranfrage an die jeweilige Website gesendet.</p></section>
+<section id="section-7" class="policy-section"><h2>7. Dein Universum behalten und löschen</h2><p>Es gibt keine Entwicklerkopie deines persönlichen Universums, die wiederhergestellt werden kann. Von der App verwaltete Daten werden, soweit unterstützt, von Cloud- und Geräte-Backups ausgeschlossen. Wenn du die App entfernst, werden ihre lokal verwalteten App-Daten gemäß dem Verhalten des Betriebssystems entfernt; Exporte und Nachrichten, die du anderswo gespeichert hast, bleiben dort. Ein Zurücksetzen über „Neue Zeitlinie beginnen“ wird, sofern verfügbar, für die nächste lokale Mitternacht geplant und kann vor der Durchführung abgebrochen werden; dabei werden persönliche Universumsdaten, Entwürfe, Medien sowie zugehörige lokale Inhalte von Benachrichtigungen und Widgets entfernt. Sprache, Erscheinungsbild und Bedienungshilfen sowie die Store-Mitgliedschaft bleiben erhalten. Deinstallation oder Zurücksetzen kündigen kein kostenpflichtiges Abo. Verwalte die Kündigung im Store. Daten bei Store, RevenueCat, Absturz-Dienst und gesendete E-Mails sind von der lokalen Löschung getrennt.</p></section>
+<section id="section-8" class="policy-section"><h2>8. Deine Wahlmöglichkeiten und Kontakt</h2><p>Nutze den kostenlosen Shop offline, lehne optionale Foto- oder Benachrichtigungsberechtigungen ab, entscheide selbst, ob du etwas teilst, und verwalte Abos bei Apple oder Google. Wende dich mit Datenschutzfragen oder Anfragen zu Informationen, die du an den Support gesendet hast, an hello@armandojimenez.dev. Wir können nicht auf dein nur auf dem Gerät gespeichertes Universum zugreifen und es auch nicht aus der Ferne löschen. Wir fragen Kinder wissentlich nicht nach persönlichen Informationen. Wenn ein Kind Informationen an den Support sendet, kontaktiere uns, um deren Löschung zu beantragen. Wir verkaufen keine personenbezogenen Informationen und verwenden sie nicht für Werbung. Deine anwendbaren Datenschutzrechte bleiben bestehen; für gewöhnliche Anfragen verlangen wir keine unnötigen Identitätsnachweise.</p></section>
+<section id="section-9" class="policy-section"><h2>9. Aktualisierungen und Dienstrichtlinien</h2><p>Das oben angegebene Datum kennzeichnet diese Version. Wesentliche Änderungen werden auf dieser maßgeblichen Webseite aktualisiert und gegebenenfalls in der App beschrieben. Informationen zu den Diensten findest du unter sentry.io/privacy, revenuecat.com/privacy, apple.com/legal/privacy und policies.google.com/privacy. Für diese Dienste gelten eigene Aufbewahrungsfristen und gesetzliche Pflichten; hier wird weder eine feste Aufbewahrungsdauer noch eine sofortige Löschung durch Dritte zugesagt.</p></section>
+<section id="section-10" class="policy-section"><h2>10. Verwendung und Schutz von Informationen</h2><p>Lokale Datensätze unterstützen die von dir gewählten Funktionen; Diagnoseinformationen dienen der Behebung von Abstürzen, Kaufinformationen der Bereitstellung und Wiederherstellung der Mitgliedschaft und Support-Nachrichten der Beantwortung deiner Anfrage. Lokale Dateien werden im vom Betriebssystem isolierten, durch die Gerätesicherheit geschützten Speicher der App abgelegt; die App verschlüsselt die Datenbank nicht zusätzlich mit einem eigenen Passwort. Netzwerkanfragen an Dienste verwenden verschlüsseltes HTTPS. Wir können begrenzte Dienst- oder Support-Datensätze offenlegen, wenn dies gesetzlich vorgeschrieben oder zum Schutz von Rechten erforderlich ist. Für diese Zwecke laden wir dein lokales Universum nicht hoch. Kein Sicherheitssystem ist vollkommen.</p></section>
+<section id="section-11" class="policy-section"><h2>11. Datenschutzrechte und Rechtsgrundlage</h2><p>Soweit Datenschutzgesetze gelten, kannst du Auskunft, Berichtigung, Löschung oder eine übertragbare Kopie der von uns gespeicherten Informationen verlangen, der Verarbeitung widersprechen oder ihre Einschränkung beantragen, eine Einwilligung widerrufen, wenn sie die Grundlage ist, und dich bei deiner örtlichen Aufsichtsbehörde beschweren. Einwohner Kaliforniens behalten die jeweils geltenden Rechte auf Auskunft, Berichtigung und Löschung sowie auf nichtdiskriminierende Behandlung. Wir verkaufen oder teilen keine personenbezogenen Informationen für kontextübergreifende Werbung. Begrenzte Absturzdaten verarbeiten wir zur Aufrechterhaltung der Zuverlässigkeit, Kaufdaten zur Erbringung der Mitgliedschaft und Erfüllung gesetzlicher Pflichten sowie freiwillige Support-Nachrichten zur Beantwortung deiner Anfrage – jeweils auf der anwendbaren Rechtsgrundlage. Kontaktiere uns, um diese Rechte auszuüben; wir antworten innerhalb der geltenden gesetzlichen Fristen und erläutern etwaige rechtmäßige Ausnahmen. Auf nur auf deinem Gerät gespeicherte Daten können wir nicht zugreifen; du kannst sie lokal verwalten.</p></section>
+<section id="section-12" class="policy-section"><h2>12. Aufbewahrung</h2><p>Lokale Universumsdaten bleiben erhalten, bis du sie entfernst, die App deinstallierst oder einen Reset ausführst. Absturzdaten folgen der für das Projekt konfigurierten Sentry-Aufbewahrung. Stores und RevenueCat speichern Kaufdaten, soweit dies zur Prüfung der Mitgliedschaft, für Abrechnungszwecke und zur Erfüllung gesetzlicher Pflichten erforderlich ist. Support-Nachrichten werden so lange aufbewahrt, wie es zur Bearbeitung der Anfrage und Erfüllung gesetzlicher Pflichten erforderlich ist; du kannst ihre Löschung beantragen. Für Daten, die ein Store oder Dienst gesetzlich aufbewahren muss, sagen wir keine Löschung zu.</p></section>
+<section id="section-13" class="policy-section"><h2>13. Diese Datenschutzerklärungs-Webseite</h2><p>Die veröffentlichte Richtlinie verwendet die gemeinsamen Sprach- und Design-Einstellungen der Entwickler-Website; diese können eine Designpräferenz im lokalen Speicher des Browsers ablegen. Beim Lesen einer gehosteten Webseite werden normale Verbindungsanfragen an den Host und seine Schriftressourcen gesendet; das ist vom lokalen Universum in der App getrennt. Diese Seiten enthalten keine Werbe- oder Analytics-Skripte.</p></section>
+<section class="policy-section"><h2>Dienste und Kontakt</h2><p><a href="https://sentry.io/privacy/">Sentry</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://policies.google.com/privacy">Google</a></p><p>Armando Jimenez · Puerto Rico · <a href="mailto:hello@armandojimenez.dev">hello@armandojimenez.dev</a></p></section>
+<div class="policy-footer-note"><p>Aktualisiert / Gültig ab: 5. Oktober 2026 · v1.0</p></div></main></div></div>
+<footer class="policy-footer"><div class="footer-content"><p class="footer-copyright">© 2026 Armando Jimenez.</p></div></footer>
+<script src="policy-scripts.js"></script>
+<script>
+const toggle=document.getElementById('themeToggle');
+toggle.setAttribute('aria-label',"Erscheinungsbild \u00e4ndern");
+document.querySelectorAll('#languageSwitcher [data-lang]').forEach(button=>button.addEventListener('click',()=>{
+ const q=new URLSearchParams(location.search);
+ q.set('lang',button.dataset.lang);
+ q.set('theme',document.documentElement.dataset.theme);
+ location.search=q.toString();
+}));
+</script>
+</body></html>

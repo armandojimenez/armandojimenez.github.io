@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-policy-app="universe-shop" data-policy-type="terms" data-policy-langs="en,es,pt-BR" data-back-to-top="Voltar ao topo">
+<html lang="pt-BR" data-policy-app="universe-shop" data-policy-type="terms" data-policy-langs="en,es,pt-BR,de" data-back-to-top="Voltar ao topo">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 (function() {
  const q=new URLSearchParams(location.search), requested=q.get('lang');
- const routes={"en": "terms.html", "es": "terms-es.html", "pt-br": "terms-pt-BR.html"}, key=(requested||document.documentElement.lang).toLowerCase();
+ const routes={"en": "terms.html", "es": "terms-es.html", "pt-br": "terms-pt-BR.html", "de": "terms-de.html"}, key=(requested||document.documentElement.lang).toLowerCase();
  const target=routes[key]||routes.en;
  const path=location.pathname.slice(0,location.pathname.lastIndexOf('/')+1)+target;
  if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
@@ -19,9 +19,10 @@
 <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/terms.html">
 <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/terms-es.html">
 <link rel="alternate" hreflang="pt-BR" href="https://armandojimenez.dev/apps/universe-shop/terms-pt-BR.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/universe-shop/terms-de.html">
 <link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
 </head><body>
-<div class="language-switcher" id="languageSwitcher" role="group" aria-label="Idioma"><button type="button" class="lang-button" data-lang="en" aria-pressed="false">English</button><button type="button" class="lang-button" data-lang="es" aria-pressed="false">Español</button><button type="button" class="lang-button active" data-lang="pt-BR" aria-pressed="true">Português (Brasil)</button></div>
+<div class="language-switcher" id="languageSwitcher" role="group" aria-label="Idioma"><button type="button" class="lang-button" data-lang="en" aria-pressed="false">English</button><button type="button" class="lang-button" data-lang="es" aria-pressed="false">Español</button><button type="button" class="lang-button active" data-lang="pt-BR" aria-pressed="true">Português (Brasil)</button><button type="button" class="lang-button" data-lang="de" aria-pressed="false">Deutsch</button></div>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
