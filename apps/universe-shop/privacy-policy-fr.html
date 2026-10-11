@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr" data-policy-app="universe-shop" data-policy-type="privacy" data-policy-langs="en,es,pt-BR,de,fr" data-back-to-top="Retour en haut">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function() {
+ const q=new URLSearchParams(location.search), requested=q.get('lang');
+ const routes={"en": "privacy-policy.html", "es": "privacy-policy-es.html", "pt-br": "privacy-policy-pt-BR.html", "de": "privacy-policy-de.html", "fr": "privacy-policy-fr.html"}, key=(requested||document.documentElement.lang).toLowerCase();
+ const target=routes[key]||routes.en;
+ const path=location.pathname.slice(0,location.pathname.lastIndexOf('/')+1)+target;
+ if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
+ const theme=q.get('theme');
+ if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;
+})();
+</script>
+<title>Politique de confidentialité - Boutique de l’Univers : manifeste tous tes désirs</title>
+<meta name="description" content="Politique de confidentialité · Boutique de l’Univers : manifeste tous tes désirs · Armando Jimenez">
+<link rel="canonical" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-fr.html">
+<link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
+<link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-es.html">
+<link rel="alternate" hreflang="pt-BR" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-pt-BR.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-de.html">
+<link rel="alternate" hreflang="fr" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-fr.html">
+<link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
+</head><body>
+<div class="language-switcher" id="languageSwitcher" role="group" aria-label="Langue"><button type="button" class="lang-button" data-lang="en" aria-pressed="false">English</button><button type="button" class="lang-button" data-lang="es" aria-pressed="false">Español</button><button type="button" class="lang-button" data-lang="pt-BR" aria-pressed="false">Português (Brasil)</button><button type="button" class="lang-button" data-lang="de" aria-pressed="false">Deutsch</button><button type="button" class="lang-button active" data-lang="fr" aria-pressed="true">Français</button></div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+
+<div class="container"><header class="policy-header">
+<div class="app-badge"><div class="badge-icon"><img class="mark-light" src="mark-light.png" width="52" height="52" alt=""><img class="mark-dark" src="mark-dark.png" width="52" height="52" alt=""></div><div class="badge-text"><div class="badge-title">Boutique de l’Univers : manifeste tous tes désirs</div><div class="badge-subtitle">Ton univers imaginaire</div></div></div>
+<h1 class="policy-title">Politique de confidentialité</h1><div class="policy-meta"><span class="meta-item">Mise à jour / En vigueur : 5 octobre 2026</span></div>
+</header><div class="content-wrapper"><aside class="table-of-contents"><h2 class="toc-title">Table des matières</h2><ul class="toc-list"><li><a href="#section-1">Introduction</a></li>
+<li><a href="#section-2">Ton univers reste local</a></li>
+<li><a href="#section-3">Diagnostics de plantage</a></li>
+<li><a href="#section-4">Abonnement facultatif</a></li>
+<li><a href="#section-5">Photos, rappels et widgets</a></li>
+<li><a href="#section-6">Partage, assistance et avis</a></li>
+<li><a href="#section-7">Conserver et supprimer ton univers</a></li>
+<li><a href="#section-8">Tes choix et contact</a></li>
+<li><a href="#section-9">Mises à jour et politiques des services</a></li>
+<li><a href="#section-10">Utilisation et protection des informations</a></li>
+<li><a href="#section-11">Droits à la vie privée et base juridique</a></li>
+<li><a href="#section-12">Conservation</a></li>
+<li><a href="#section-13">Cette page de politique</a></li></ul></aside>
+<main class="policy-content"><section id="section-1" class="policy-section"><h2>1. Introduction</h2><p>L’app Boutique de l’Univers : manifeste tous tes désirs est créée par Armando Jimenez à Porto Rico. Ton univers personnel reste sur ton appareil. Cette politique explique les services limités utilisés pour les plantages, les abonnements et les actions que tu choisis d’effectuer.</p></section>
+<section id="section-2" class="policy-section"><h2>2. Ton univers reste local</h2><p>Ton profil, les photos importées, les soldes et devises simulés, commandes, adresses, sensations, affirmations, créations, histoires, preuves et préférences sont conservés localement. Le catalogue et les photos de l’app sont inclus dans l’app. Il n’y a ni compte d’app, ni serveur pour ton contenu personnel, ni synchronisation cloud, ni publicité, ni analyse d’utilisation dans l’app. Les acheteurs, avis, abonnés, ventes et statistiques de Ma boutique sont une simulation hors ligne ; ce ne sont ni de vraies personnes ni des données de télémétrie.</p></section>
+<section id="section-3" class="policy-section"><h2>3. Diagnostics de plantage</h2><p>Les versions d’aperçu privé et de production utilisent Sentry pour recevoir des rapports minimaux sur les plantages non gérés, afin de corriger les défauts. Les rapports contiennent le type technique du plantage, des extraits de pile expurgés, la version et le numéro de build de l’app, l’heure du plantage et des informations de symbolication. Les noms personnels, notes, adresses, mots recherchés, photos, chemins de fichiers, messages et texte des exceptions sont exclus. Aucune analyse d’utilisation, aucun traçage ni profilage, aucun suivi de session, aucune capture d’écran ni relecture de session, aucun journal ni fil d’Ariane n’est activé. Sentry reçoit une requête réseau et peut traiter des informations de connexion telles que l’adresse IP selon sa propre politique de service ; l’app ne la joint pas en tant qu’identifiant utilisateur. Les rapports peuvent être traités hors de ton pays et sont conservés selon la durée configurée dans Sentry.</p></section>
+<section id="section-4" class="policy-section"><h2>4. Abonnement facultatif</h2><p>Apple ou Google gère les paiements réels. RevenueCat vérifie l’abonnement au moyen d’un identifiant anonyme d’utilisateur de l’app, d’identifiants d’achat et de produit, d’informations de transaction et de droits, ainsi que d’informations techniques sur l’app et la plateforme. La collecte automatique des identifiants publicitaires/de l’appareil et les diagnostics sont désactivés. L’app ne reçoit pas les informations de ta carte de paiement et n’envoie pas à RevenueCat le contenu de tes manifestations. La vérification de l’abonnement et les prix des offres peuvent nécessiter le réseau, même si tu utilises l’app gratuite. Les données des boutiques et de RevenueCat sont régies par leurs politiques de service et peuvent être traitées hors de ton pays. Restaurer tes achats ne restaure pas un univers local supprimé et ne le synchronise pas entre appareils.</p></section>
+<section id="section-5" class="policy-section"><h2>5. Photos, rappels et widgets</h2><p>La sélection de photos et les copies importées restent locales. L’app ne demande l’accès que lorsqu’une fonctionnalité en a besoin ; tu peux modifier les autorisations dans les Réglages de l’appareil. Les rappels sont programmés localement avec l’autorisation de notification. Les widgets de l’écran d’accueil lisent une représentation locale de l’univers que tu as choisi et peuvent afficher des montants, des photos d’articles et des informations de boutique visibles par toute personne qui voit ton écran. L’app ne téléverse pas le contenu des widgets. Ton système d’exploitation détermine le moment des notifications et de l’actualisation des widgets.</p></section>
+<section id="section-6" class="policy-section"><h2>6. Partage, assistance et avis</h2><p>Les exports quittent l’app uniquement par la destination que tu choisis. Les actions de contact ouvrent ton app de messagerie avec un modèle visible et modifiable ; seuls le texte et les pièces jointes que tu décides d’envoyer parviennent à l’assistance. Les modèles de signalement de problème peuvent inclure la version et le numéro de build visibles de l’app, la plateforme et la langue ; ils ne joignent jamais automatiquement des données personnelles ni des journaux. Les services de messagerie traitent ces messages selon leurs politiques. Les demandes et liens d’avis natifs sont gérés par Apple ou Google ; l’app ne reçoit ni n’enregistre ta note. Ouvrir des liens externes vers les politiques ou le site du développeur envoie une requête normale à ce site depuis ton navigateur.</p></section>
+<section id="section-7" class="policy-section"><h2>7. Conserver et supprimer ton univers</h2><p>Le développeur ne conserve aucune copie de ton univers personnel à restaurer. Dans la mesure où le système le permet, les données gérées par l’app sont exclues de la sauvegarde cloud/de l’appareil. Supprimer l’app supprime ses données locales, sous réserve du comportement du système d’exploitation ; les exports et messages enregistrés ailleurs y restent. La réinitialisation « Commencer un nouvel historique », lorsqu’elle est disponible, est programmée au prochain minuit local et peut être annulée avant son application ; elle supprime les données personnelles de l’univers, les brouillons, médias et contenus locaux associés aux notifications/widgets. La langue, l’apparence, les choix d’accessibilité et l’abonnement à la boutique d’applications sont conservés. Désinstaller ou réinitialiser l’app n’annule pas un abonnement payant. Gère sa résiliation dans la boutique d’applications. Les données des boutiques, de RevenueCat, du service de plantage et des e-mails envoyés sont distinctes de la suppression locale.</p></section>
+<section id="section-8" class="policy-section"><h2>8. Tes choix et contact</h2><p>Utilise la boutique gratuite hors ligne, refuse si tu le souhaites les autorisations facultatives pour les photos et les notifications, choisis si tu veux partager et gère tes abonnements dans Apple ou Google. Écris à hello@armandojimenez.dev pour toute question de confidentialité ou demande portant sur des informations que tu as envoyées à l’assistance. Nous ne pouvons pas accéder à ton univers sur l’appareil ni l’effacer à distance. Nous ne demandons pas sciemment d’informations personnelles aux enfants. Si un enfant envoie des informations à l’assistance, contacte-nous pour en demander la suppression. Nous ne vendons pas les informations personnelles et ne les utilisons pas à des fins publicitaires. Les droits à la vie privée prévus par les lois applicables restent les tiens ; nous n’exigeons pas de documents d’identité inutiles pour les demandes courantes.</p></section>
+<section id="section-9" class="policy-section"><h2>9. Mises à jour et politiques des services</h2><p>La date ci-dessus identifie cette version. Les changements importants seront indiqués sur cette page Web faisant autorité et décrits dans l’app si nécessaire. Les détails des services sont disponibles sur sentry.io/privacy, revenuecat.com/privacy, apple.com/legal/privacy et policies.google.com/privacy. Ces services ont leurs propres obligations de conservation et obligations légales ; nous ne promettons ni durée de conservation fixe ni suppression immédiate par des tiers.</p></section>
+<section id="section-10" class="policy-section"><h2>10. Utilisation et protection des informations</h2><p>Les données locales permettent les fonctionnalités que tu choisis ; les informations de diagnostic servent à corriger les plantages, les informations d’achat à fournir et restaurer l’abonnement, et les messages d’assistance à répondre à ta demande. Les fichiers locaux utilisent le stockage isolé de l’app par le système d’exploitation, protégé par la sécurité de ton appareil ; l’app ne chiffre pas séparément la base de données par mot de passe. Les requêtes aux services réseau utilisent HTTPS chiffré. Nous pouvons divulguer des données limitées de service ou d’assistance si la loi l’exige ou pour protéger des droits. Nous ne téléversons pas ton univers local à ces fins. Aucun système de sécurité n’est infaillible.</p></section>
+<section id="section-11" class="policy-section"><h2>11. Droits à la vie privée et base juridique</h2><p>Lorsque les lois sur la vie privée s’appliquent, tu peux demander l’accès, la rectification, la suppression ou une copie portable des informations que nous détenons ; t’opposer au traitement ou en demander la limitation ; retirer ton consentement lorsqu’il constitue la base du traitement ; et déposer une plainte auprès de ton autorité de contrôle locale. Les résidents de Californie conservent les droits applicables de connaître, corriger et supprimer les informations et de bénéficier d’un traitement non discriminatoire. Nous ne vendons ni ne partageons les informations personnelles à des fins de publicité intercontextuelle. Nous traitons les données limitées de plantage pour maintenir la fiabilité, les données d’achat pour fournir l’abonnement et respecter les obligations légales, et les messages d’assistance volontaires pour te répondre, sur la base juridique applicable. Contacte-nous pour exercer ces droits ; nous répondons dans les délais légaux applicables et expliquons toute exception prévue par la loi. Nous ne pouvons pas accéder aux données présentes uniquement sur ton appareil, que tu peux gérer localement.</p></section>
+<section id="section-12" class="policy-section"><h2>12. Conservation</h2><p>Les données locales de l’univers restent jusqu’à leur suppression, la désinstallation de l’app ou l’application d’une réinitialisation. Les données de plantage suivent la durée de conservation Sentry configurée pour le projet. Les boutiques et RevenueCat conservent les données d’achat selon les besoins de vérification d’abonnement, de comptabilité et d’obligations légales. Les messages d’assistance sont conservés le temps de traiter la demande et de respecter les obligations légales ; tu peux en demander la suppression. Nous ne promettons pas la suppression des données qu’une boutique ou un service doit conserver légalement.</p></section>
+<section id="section-13" class="policy-section"><h2>13. Cette page de politique</h2><p>La politique publiée utilise les commandes de langue et de thème communes du site du développeur, qui peuvent conserver une préférence de thème dans le stockage local du navigateur. Lire une page Web hébergée envoie des requêtes de connexion normales à l’hôte et à ses ressources de polices ; cela est distinct de l’univers local de l’app. Aucun script publicitaire ou d’analyse d’utilisation n’est ajouté à ces pages.</p></section>
+<section class="policy-section"><h2>Références des services et contact</h2><p><a href="https://sentry.io/privacy/">Sentry</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://policies.google.com/privacy">Google</a></p><p>Armando Jimenez · Puerto Rico · <a href="mailto:hello@armandojimenez.dev">hello@armandojimenez.dev</a></p></section>
+<div class="policy-footer-note"><p>Mise à jour / En vigueur : 5 octobre 2026 · v1.0</p></div></main></div></div>
+<footer class="policy-footer"><div class="footer-content"><p class="footer-copyright">© 2026 Armando Jimenez.</p></div></footer>
+<script src="policy-scripts.js"></script>
+<script>
+const toggle=document.getElementById('themeToggle');
+toggle.setAttribute('aria-label',"Changer l\u2019apparence");
+document.querySelectorAll('#languageSwitcher [data-lang]').forEach(button=>button.addEventListener('click',()=>{
+ const q=new URLSearchParams(location.search);
+ q.set('lang',button.dataset.lang);
+ q.set('theme',document.documentElement.dataset.theme);
+ location.search=q.toString();
+}));
+</script>
+</body></html>
