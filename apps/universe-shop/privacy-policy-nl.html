@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl" data-policy-app="universe-shop" data-policy-type="privacy" data-policy-langs="en,es,pt-BR,de,fr,it,nl" data-back-to-top="Terug naar boven">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function() {
+ const q=new URLSearchParams(location.search), requested=q.get('lang');
+ const routes={"en": "privacy-policy.html", "es": "privacy-policy-es.html", "pt-br": "privacy-policy-pt-BR.html", "de": "privacy-policy-de.html", "fr": "privacy-policy-fr.html", "it": "privacy-policy-it.html", "nl": "privacy-policy-nl.html"}, key=(requested||document.documentElement.lang).toLowerCase();
+ const target=routes[key]||routes.en;
+ const path=location.pathname.slice(0,location.pathname.lastIndexOf('/')+1)+target;
+ if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
+ const theme=q.get('theme');
+ if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;
+})();
+</script>
+<title>Privacybeleid - Universumwinkel: manifesteer alles</title>
+<meta name="description" content="Privacybeleid · Universumwinkel: manifesteer alles · Armando Jimenez">
+<link rel="canonical" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-nl.html">
+<link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
+<link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-es.html">
+<link rel="alternate" hreflang="pt-BR" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-pt-BR.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-de.html">
+<link rel="alternate" hreflang="fr" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-fr.html">
+<link rel="alternate" hreflang="it" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-it.html">
+<link rel="alternate" hreflang="nl" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-nl.html">
+<link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
+</head><body>
+<div class="language-switcher" id="languageSwitcher" role="group" aria-label="Taal"><button type="button" class="lang-button" data-lang="en" aria-pressed="false">English</button><button type="button" class="lang-button" data-lang="es" aria-pressed="false">Español</button><button type="button" class="lang-button" data-lang="pt-BR" aria-pressed="false">Português (Brasil)</button><button type="button" class="lang-button" data-lang="de" aria-pressed="false">Deutsch</button><button type="button" class="lang-button" data-lang="fr" aria-pressed="false">Français</button><button type="button" class="lang-button" data-lang="it" aria-pressed="false">Italiano</button><button type="button" class="lang-button active" data-lang="nl" aria-pressed="true">Nederlands</button></div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+
+<div class="container"><header class="policy-header">
+<div class="app-badge"><div class="badge-icon"><img class="mark-light" src="mark-light.png" width="52" height="52" alt=""><img class="mark-dark" src="mark-dark.png" width="52" height="52" alt=""></div><div class="badge-text"><div class="badge-title">Universumwinkel: manifesteer alles</div><div class="badge-subtitle">Jouw ingebeelde universum</div></div></div>
+<h1 class="policy-title">Privacybeleid</h1><div class="policy-meta"><span class="meta-item">Bijgewerkt / van kracht: 5 oktober 2026</span></div>
+</header><div class="content-wrapper"><aside class="table-of-contents"><h2 class="toc-title">Inhoudsopgave</h2><ul class="toc-list"><li><a href="#section-1">Inleiding</a></li>
+<li><a href="#section-2">Jouw universum blijft lokaal</a></li>
+<li><a href="#section-3">Crashdiagnostiek</a></li>
+<li><a href="#section-4">Optioneel lidmaatschap</a></li>
+<li><a href="#section-5">Foto’s, herinneringen en widgets</a></li>
+<li><a href="#section-6">Delen, ondersteuning en beoordelingen</a></li>
+<li><a href="#section-7">Je universum bewaren en verwijderen</a></li>
+<li><a href="#section-8">Jouw keuzes en contact</a></li>
+<li><a href="#section-9">Updates en servicebeleid</a></li>
+<li><a href="#section-10">Hoe informatie wordt gebruikt en beschermd</a></li>
+<li><a href="#section-11">Privacyrechten en rechtsgrond</a></li>
+<li><a href="#section-12">Bewaartermijn</a></li>
+<li><a href="#section-13">Deze beleidspagina</a></li></ul></aside>
+<main class="policy-content"><section id="section-1" class="policy-section"><h2>1. Inleiding</h2><p>Universumwinkel: manifesteer alles is gemaakt door Armando Jimenez in Puerto Rico. Jouw persoonlijke universum blijft op je apparaat. Dit beleid legt uit welke beperkte diensten worden gebruikt voor crashes, lidmaatschappen en acties die jij kiest.</p></section>
+<section id="section-2" class="policy-section"><h2>2. Jouw universum blijft lokaal</h2><p>Je profiel, geïmporteerde foto’s, gesimuleerde saldi en valuta’s, bestellingen, adressen, gevoelens, affirmaties, creaties, verhalen, bewijs en voorkeuren worden lokaal opgeslagen. De catalogus en appfoto’s zijn meegeleverd. Er is geen appaccount, server voor je persoonlijke inhoud, cloudsynchronisatie, reclame of gebruiksanalyses van de app. Kopers, beoordelingen, volgers, verkopen en statistieken in Mijn winkel zijn een offline simulatie; het zijn geen echte mensen en geen telemetrie.</p></section>
+<section id="section-3" class="policy-section"><h2>3. Crashdiagnostiek</h2><p>Privépreview- en productieversies gebruiken Sentry om minimale rapporten over niet-afgevangen crashes te ontvangen, zodat fouten kunnen worden opgelost. Rapporten bevatten het technische type crash, stackframes waarin gevoelige gegevens zijn weggelaten, appversie/build, crashtijd en symbolisatiegegevens. Persoonlijke namen, notities, adressen, zoekwoorden, foto’s, bestandspaden, berichten en uitzonderingstekst worden uitgesloten. Analyse, tracing, profilering, sessietracking, schermafbeeldingen, replay, logs en breadcrumbs zijn niet ingeschakeld. Sentry ontvangt een netwerkverzoek en kan verbindingsgegevens zoals het IP-adres verwerken volgens het eigen servicebeleid; de app voegt het IP-adres niet als gebruikers-ID toe. Rapporten kunnen buiten je land worden verwerkt en worden bewaard volgens de ingestelde bewaartermijn van Sentry.</p></section>
+<section id="section-4" class="policy-section"><h2>4. Optioneel lidmaatschap</h2><p>Apple of Google verwerkt echte betalingen. RevenueCat controleert het lidmaatschap met een anonieme appgebruikers-ID, aankoop- en product-ID’s, transactie- en entitlementgegevens en technische app- en platformgegevens. Automatische verzameling van advertentie- of apparaat-ID’s en diagnostiek zijn uitgeschakeld. De app ontvangt je betaalkaartgegevens niet en stuurt je manifestatie-inhoud niet naar RevenueCat. Lidmaatschapscontrole en prijzen van abonnementsopties kunnen het netwerk gebruiken, ook wanneer je de gratis app gebruikt. Gegevens bij de appwinkels en RevenueCat vallen onder hun servicebeleid en kunnen buiten je land worden verwerkt. Aankopen herstellen herstelt geen verwijderd lokaal universum en synchroniseert dit niet tussen apparaten.</p></section>
+<section id="section-5" class="policy-section"><h2>5. Foto’s, herinneringen en widgets</h2><p>Fotoselectie en geïmporteerde kopieën blijven lokaal. De app vraagt alleen om toegang wanneer een functie die nodig heeft; je kunt machtigingen wijzigen bij Instellingen op je apparaat. Herinneringen worden lokaal gepland met toestemming voor meldingen. Widgets op het beginscherm lezen een lokale weergave van het door jou gekozen universum en kunnen bedragen, itemfoto’s en winkelfeiten tonen aan iedereen die je scherm kan zien. De app uploadt geen widgetinhoud. Je besturingssysteem bepaalt wanneer meldingen worden bezorgd en widgets worden vernieuwd.</p></section>
+<section id="section-6" class="policy-section"><h2>6. Delen, ondersteuning en beoordelingen</h2><p>Exports verlaten de app alleen via de bestemming die jij kiest. Contactacties openen je e-mailapp met een zichtbare, bewerkbare sjabloontekst; alleen de tekst en bijlagen die jij besluit te versturen, bereiken de ondersteuning. Foutmeldingssjablonen kunnen de zichtbare appversie/build, het platform en de taal bevatten; ze voegen nooit automatisch persoonlijke gegevens of logs toe. E-maildiensten verwerken die berichten volgens hun beleid. Verzoeken om beoordelingen en links in de app worden door Apple of Google afgehandeld; de app ontvangt of registreert je beoordeling niet. Het openen van externe beleids- of ontwikkelaarslinks stuurt een normaal browserverzoek naar die website.</p></section>
+<section id="section-7" class="policy-section"><h2>7. Je universum bewaren en verwijderen</h2><p>Er bestaat geen kopie van je persoonlijke universum bij de ontwikkelaar om te herstellen. Door de app beheerde gegevens worden waar ondersteund uitgesloten van cloud- en apparaatback-ups. Als je de app verwijdert, worden de lokaal door de app beheerde gegevens verwijderd, afhankelijk van het gedrag van het besturingssysteem; exports en berichten die je elders hebt opgeslagen blijven daar staan. Wanneer beschikbaar, wordt de reset Nieuwe tijdlijn gepland voor de volgende lokale middernacht en kan die worden geannuleerd voordat deze wordt toegepast; de reset verwijdert persoonlijke universumgegevens, concepten, media en gekoppelde lokale meldings- en widgetinhoud. Taal, weergave- en toegankelijkheidskeuzes en het abonnement bij de appwinkel blijven behouden. De app verwijderen of resetten zegt een betaald abonnement niet op. Beheer de opzegging in de appwinkel. Gegevens bij appwinkels, RevenueCat, de crashdienst en verzonden e-mail staan los van lokale verwijdering.</p></section>
+<section id="section-8" class="policy-section"><h2>8. Jouw keuzes en contact</h2><p>Gebruik de gratis winkel offline, weiger optionele foto- of meldingsmachtigingen, kies zelf of je deelt en beheer abonnementen via Apple of Google. Neem voor privacyvragen of verzoeken over informatie die je naar de ondersteuning hebt gestuurd contact op via hello@armandojimenez.dev. We kunnen je universum op je apparaat niet bekijken of op afstand wissen. We vragen kinderen niet bewust om persoonlijke informatie. Als een kind informatie naar de ondersteuning stuurt, neem dan contact op om verwijdering aan te vragen. We verkopen geen persoonlijke informatie en gebruiken die niet voor reclame. Je toepasselijke privacyrechten blijven van kracht; voor gewone vragen vragen we geen onnodige identiteitsdocumenten.</p></section>
+<section id="section-9" class="policy-section"><h2>9. Updates en servicebeleid</h2><p>De datum hierboven geeft deze versie aan. Belangrijke wijzigingen worden op deze gezaghebbende webpagina verwerkt en waar passend in de app beschreven. Servicegegevens vind je op sentry.io/privacy, revenuecat.com/privacy, apple.com/legal/privacy en policies.google.com/privacy. Deze diensten hebben eigen bewaartermijnen en wettelijke verplichtingen; hier wordt geen vaste bewaartermijn of onmiddellijke verwijdering door derden beloofd.</p></section>
+<section id="section-10" class="policy-section"><h2>10. Hoe informatie wordt gebruikt en beschermd</h2><p>Lokale gegevens ondersteunen de functies die je kiest; diagnostische informatie wordt gebruikt om crashes op te lossen, aankoopinformatie om het lidmaatschap te leveren en te herstellen, en ondersteuningsberichten om op je verzoek te reageren. Lokale bestanden staan in de door het besturingssysteem afgeschermde opslag van de app en worden beschermd door de beveiliging van je apparaat; de app versleutelt de database niet afzonderlijk met een wachtwoord. Netwerkverzoeken aan diensten gebruiken versleutelde HTTPS. We kunnen beperkte service- of ondersteuningsgegevens bekendmaken wanneer dat wettelijk vereist is of nodig is om rechten te beschermen. Voor deze doeleinden uploaden we je lokale universum niet. Geen enkel beveiligingssysteem is perfect.</p></section>
+<section id="section-11" class="policy-section"><h2>11. Privacyrechten en rechtsgrond</h2><p>Waar privacywetgeving van toepassing is, kun je verzoeken om inzage, correctie, verwijdering of een overdraagbare kopie van informatie die wij bewaren; bezwaar maken tegen verwerking of beperking ervan vragen; toestemming intrekken wanneer verwerking daarop is gebaseerd; en een klacht indienen bij je lokale toezichthouder. Inwoners van Californië behouden de toepasselijke rechten op inzage, correctie en verwijdering en op niet-discriminerende behandeling. We verkopen of delen persoonlijke informatie niet voor contextoverschrijdende reclame. We verwerken beperkte crashgegevens om de betrouwbaarheid te onderhouden, aankoopgegevens om de lidmaatschapsdienst te leveren en aan wettelijke verplichtingen te voldoen, en vrijwillig gestuurde ondersteuningsberichten om je te antwoorden, op basis van de toepasselijke rechtsgrond. Neem contact met ons op om deze rechten uit te oefenen; we reageren binnen de toepasselijke wettelijke termijnen en leggen een eventuele wettelijke uitzondering uit. We hebben geen toegang tot gegevens die alleen op je apparaat staan; die kun je daar zelf beheren.</p></section>
+<section id="section-12" class="policy-section"><h2>12. Bewaartermijn</h2><p>Lokale universumgegevens blijven bewaard totdat je ze verwijdert, de app verwijdert of een reset uitvoert. Crashgegevens volgen de ingestelde bewaartermijn van Sentry. Aankoopgegevens worden door appwinkels en RevenueCat bewaard voor zover nodig voor abonnementscontrole, administratie en wettelijke verplichtingen. Ondersteuningsberichten worden bewaard zolang dat nodig is om het verzoek af te handelen en aan wettelijke verplichtingen te voldoen; je kunt om verwijdering vragen. We beloven geen verwijdering van gegevens die een appwinkel of dienst wettelijk moet bewaren.</p></section>
+<section id="section-13" class="policy-section"><h2>13. Deze beleidspagina</h2><p>Het gepubliceerde beleid gebruikt de gedeelde taal- en weergavebediening van de ontwikkelaarswebsite; die kan een weergavevoorkeur in de lokale browseropslag bewaren. Een gehoste webpagina bekijken verstuurt normale verbindingsverzoeken naar de host en diens lettertypebestanden; dat staat los van het lokale universum in de app. Aan deze pagina’s zijn geen reclame- of analysescripts toegevoegd.</p></section>
+<section class="policy-section"><h2>Diensten en contact</h2><p><a href="https://sentry.io/privacy/">Sentry</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://policies.google.com/privacy">Google</a></p><p>Armando Jimenez · Puerto Rico · <a href="mailto:hello@armandojimenez.dev">hello@armandojimenez.dev</a></p></section>
+<div class="policy-footer-note"><p>Bijgewerkt / van kracht: 5 oktober 2026 · v1.0</p></div></main></div></div>
+<footer class="policy-footer"><div class="footer-content"><p class="footer-copyright">© 2026 Armando Jimenez.</p></div></footer>
+<script src="policy-scripts.js"></script>
+<script>
+const toggle=document.getElementById('themeToggle');
+toggle.setAttribute('aria-label',"Weergave wijzigen");
+document.querySelectorAll('#languageSwitcher [data-lang]').forEach(button=>button.addEventListener('click',()=>{
+ const q=new URLSearchParams(location.search);
+ q.set('lang',button.dataset.lang);
+ q.set('theme',document.documentElement.dataset.theme);
+ location.search=q.toString();
+}));
+</script>
+</body></html>
