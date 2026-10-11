@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it" data-policy-app="universe-shop" data-policy-type="terms" data-policy-langs="en,es,pt-BR,de,fr,it" data-back-to-top="Torna all’inizio">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function() {
+ const q=new URLSearchParams(location.search), requested=q.get('lang');
+ const routes={"en": "terms.html", "es": "terms-es.html", "pt-br": "terms-pt-BR.html", "de": "terms-de.html", "fr": "terms-fr.html", "it": "terms-it.html"}, key=(requested||document.documentElement.lang).toLowerCase();
+ const target=routes[key]||routes.en;
+ const path=location.pathname.slice(0,location.pathname.lastIndexOf('/')+1)+target;
+ if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
+ const theme=q.get('theme');
+ if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;
+})();
+</script>
+<title>Condizioni d’uso - Negozio dell’Universo: manifesta ogni tuo desiderio</title>
+<meta name="description" content="Condizioni d’uso · Negozio dell’Universo: manifesta ogni tuo desiderio · Armando Jimenez">
+<link rel="canonical" href="https://armandojimenez.dev/apps/universe-shop/terms-it.html">
+<link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/terms.html">
+<link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/terms-es.html">
+<link rel="alternate" hreflang="pt-BR" href="https://armandojimenez.dev/apps/universe-shop/terms-pt-BR.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/universe-shop/terms-de.html">
+<link rel="alternate" hreflang="fr" href="https://armandojimenez.dev/apps/universe-shop/terms-fr.html">
+<link rel="alternate" hreflang="it" href="https://armandojimenez.dev/apps/universe-shop/terms-it.html">
+<link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
+</head><body>
+<div class="language-switcher" id="languageSwitcher" role="group" aria-label="Lingua"><button type="button" class="lang-button" data-lang="en" aria-pressed="false">English</button><button type="button" class="lang-button" data-lang="es" aria-pressed="false">Español</button><button type="button" class="lang-button" data-lang="pt-BR" aria-pressed="false">Português (Brasil)</button><button type="button" class="lang-button" data-lang="de" aria-pressed="false">Deutsch</button><button type="button" class="lang-button" data-lang="fr" aria-pressed="false">Français</button><button type="button" class="lang-button active" data-lang="it" aria-pressed="true">Italiano</button></div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+
+<div class="container"><header class="policy-header">
+<div class="app-badge"><div class="badge-icon"><img class="mark-light" src="mark-light.png" width="52" height="52" alt=""><img class="mark-dark" src="mark-dark.png" width="52" height="52" alt=""></div><div class="badge-text"><div class="badge-title">Negozio dell’Universo: manifesta ogni tuo desiderio</div><div class="badge-subtitle">Il tuo universo immaginario</div></div></div>
+<h1 class="policy-title">Condizioni d’uso</h1><div class="policy-meta"><span class="meta-item">Aggiornamento / In vigore: 5 ottobre 2026</span></div>
+</header><div class="content-wrapper"><aside class="table-of-contents"><h2 class="toc-title">Indice</h2><ul class="toc-list"><li><a href="#section-1">Introduzione</a></li>
+<li><a href="#section-2">Accettazione e idoneità</a></li>
+<li><a href="#section-3">La tua licenza</a></li>
+<li><a href="#section-4">Un negozio immaginario</a></li>
+<li><a href="#section-5">Uso gratuito e abbonamento facoltativo</a></li>
+<li><a href="#section-6">Ripristino e modifiche all’abbonamento</a></li>
+<li><a href="#section-7">I tuoi contenuti e le copie</a></li>
+<li><a href="#section-8">Materiali dell’app e uso rispettoso</a></li>
+<li><a href="#section-9">Disponibilità e tuoi diritti</a></li>
+<li><a href="#section-10">Modifiche e contatti</a></li>
+<li><a href="#section-11">Rimborsi e variazioni di prezzo</a></li>
+<li><a href="#section-12">Sicurezza, disponibilità e responsabilità</a></li>
+<li><a href="#section-13">Legge applicabile e controversie</a></li>
+<li><a href="#section-14">Disposizioni generali</a></li></ul></aside>
+<main class="policy-content"><section id="section-1" class="policy-section"><h2>1. Introduzione</h2><p>Queste condizioni descrivono Negozio dell’Universo: manifesta ogni tuo desiderio, un’app offline di immaginazione e visualizzazione realizzata da Armando Jimenez. Contatto: hello@armandojimenez.dev.</p></section>
+<section id="section-2" class="policy-section"><h2>2. Accettazione e idoneità</h2><p>Usando l’app, accetti queste condizioni nei limiti consentiti dalla legge applicabile. Se non puoi accettarle autonomamente secondo la legge, usala solo con il permesso di un genitore o tutore legale. Rispetta i requisiti di età e account della piattaforma. Non è necessario registrare un account nell’app.</p></section>
+<section id="section-3" class="policy-section"><h2>3. La tua licenza</h2><p>Ricevi una licenza limitata, personale e non esclusiva per usare l’app e le funzioni di condivisione previste su dispositivi compatibili, nel rispetto di queste condizioni e delle licenze di terzi. Puoi smettere di usare e disinstallare l’app quando vuoi. I diritti sul software open source sono regolati dai relativi avvisi e non sono limitati da questa licenza.</p></section>
+<section id="section-4" class="policy-section"><h2>4. Un negozio immaginario</h2><p>Tutti gli acquisti del catalogo, saldi, depositi, consegne, certificati di proprietà, regali e attività del mio negozio sono simulati. Non hanno valore monetario e non acquistano, trasferiscono, consegnano né dimostrano la proprietà legale di beni reali. Nessun acquirente reale riceve le tue creazioni. L’app è una pratica creativa personale: non garantisce ricchezza, un risultato specifico o che i desideri si realizzino nella vita reale. Non fornisce consulenza finanziaria, medica o psicologica.</p></section>
+<section id="section-5" class="policy-section"><h2>5. Uso gratuito e abbonamento facoltativo</h2><p>L’universo gratuito resta disponibile senza abbonamento a pagamento. Membro fondatore sblocca i vantaggi mostrati nell’app. Possono essere offerti abbonamenti mensili o annuali a rinnovo automatico. Prezzo esatto, periodo di fatturazione, eventuale offerta introduttiva o prova gratuita, idoneità e condizioni sono mostrati nell’app e confermati dallo store prima dell’acquisto. Al termine di una prova idonea si applica il prezzo ricorrente mostrato, salvo disdetta nei tempi previsti. Gli abbonamenti si rinnovano automaticamente se non disattivi il rinnovo entro la scadenza dello store; sulle piattaforme Apple, annulla almeno 24 ore prima della fine del periodo corrente. Apple o Google gestisce pagamento e abbonamento. Eliminare o azzerare l’app non annulla l’abbonamento.</p></section>
+<section id="section-6" class="policy-section"><h2>6. Ripristino e modifiche all’abbonamento</h2><p>Il ripristino usa lo stesso account dello store e gli acquisti verificati; non recupera contenuti locali né trasferisce un acquisto tra Apple e Google. L’accesso verificato può continuare durante un periodo a pagamento attivo o un periodo di tolleranza approvato dallo store. Scadenza, rimborso, revoca o sospensione del pagamento possono limitare nuove funzioni premium. Il lavoro locale esistente viene conservato. Puoi gestire l’abbonamento nelle impostazioni dell’account dello store.</p></section>
+<section id="section-7" class="policy-section"><h2>7. I tuoi contenuti e le copie</h2><p>Mantieni i diritti sulle parole e sulle foto che crei o importi. Importa solo contenuti che hai il permesso di usare. I contenuti personali restano locali, a meno che tu scelga un’esportazione o un messaggio al supporto. Conserva copie esportate delle prove che vuoi tenere: disinstallazione, perdita del dispositivo o azzeramento applicato possono rimuovere l’universo locale. Non esistono backup server né account per recuperarlo. Quando disponibile, l’azzeramento è previsto alla mezzanotte locale successiva con una finestra per annullarlo; preferenze e abbonamento restano. Le copie salvate fuori dall’app non vengono cancellate dall’azzeramento.</p></section>
+<section id="section-8" class="policy-section"><h2>8. Materiali dell’app e uso rispettoso</h2><p>Software, testi del catalogo inclusi, design e opere grafiche sono forniti per l’uso con l’app e le funzioni di condivisione previste. I materiali di terzi restano soggetti alle rispettive licenze. Non ridistribuire la raccolta di risorse dell’app, eludere la verifica degli acquisti né usare l’app illegalmente. Gli avvisi open source sono disponibili offline nella sezione Licenze. Queste condizioni non limitano diritti oltre quelli previsti dalle licenze applicabili e dalle leggi a tutela dei consumatori.</p></section>
+<section id="section-9" class="policy-section"><h2>9. Disponibilità e tuoi diritti</h2><p>Ci impegniamo a mantenere l’app utilizzabile, ma dispositivi, memoria disponibile, sistemi operativi, store, notifiche e servizi esterni possono guastarsi o cambiare. L’app viene fornita nella misura in cui è disponibile e consentita dalla legge applicabile. Nulla qui limita diritti, rimedi o responsabilità obbligatori che non possono essere esclusi per legge. Non garantiamo servizio ininterrotto, recupero dei dati locali eliminati o risultati di manifestazione nel mondo reale.</p></section>
+<section id="section-10" class="policy-section"><h2>10. Modifiche e contatti</h2><p>La data sopra identifica queste condizioni. Le modifiche al funzionamento dell’app, agli abbonamenti o alle condizioni saranno descritte nell’app e nell’informativa pubblicata quando opportuno. Gli acquisti esistenti restano soggetti alle regole applicabili dello store e alle tutele dei consumatori. Per domande scrivi a hello@armandojimenez.dev. L’uso su App Store è soggetto anche al Contratto di licenza con l’utente finale standard di Apple; l’uso su Google Play alle condizioni applicabili di Google.</p></section>
+<section id="section-11" class="policy-section"><h2>11. Rimborsi e variazioni di prezzo</h2><p>Richieste di rimborso e contestazioni degli acquisti seguono le procedure dello store e i diritti inderogabili dei consumatori; questa informativa non impone un divieto generale di rimborso. Richiedi i rimborsi Apple tramite reportaproblem.apple.com oppure usa la procedura Google Play. Gli store comunicano le variazioni dei prezzi degli abbonamenti e chiedono il consenso quando richiesto dalle regole o dalla legge applicabile. Controlla l’avviso di rinnovo e annulla se non vuoi rinnovare.</p></section>
+<section id="section-12" class="policy-section"><h2>12. Sicurezza, disponibilità e responsabilità</h2><p>Sei responsabile della sicurezza del dispositivo e della protezione delle copie esportate. Nessun sistema può garantire sicurezza o disponibilità perfette. Nei limiti consentiti dalla legge, non siamo responsabili delle perdite causate dall’affidamento su risultati simulati, da guasti del dispositivo o dalla cancellazione di contenuti locali. Nulla esclude responsabilità o rimedi che non possono essere esclusi legalmente. Non imponiamo un limite monetario inventato, arbitrato obbligatorio o rinuncia ai diritti di legge dei consumatori.</p></section>
+<section id="section-13" class="policy-section"><h2>13. Legge applicabile e controversie</h2><p>Queste condizioni sono regolate dalle leggi di Porto Rico e dalle leggi applicabili degli Stati Uniti, salvo prevalenza delle norme inderogabili del tuo luogo di residenza. Contattaci prima per provare a risolvere la questione. Restano disponibili i diritti di ricorso ai tribunali, alle autorità di controllo o ai rimedi per i consumatori locali; queste condizioni non impongono la giurisdizione esclusiva di Porto Rico.</p></section>
+<section id="section-14" class="policy-section"><h2>14. Disposizioni generali</h2><p>Se una disposizione non è applicabile, le altre restano in vigore. La mancata applicazione di una disposizione non costituisce rinuncia. Queste condizioni regolano l’uso dell’app insieme alle regole applicabili dello store e alle licenze di terzi. Le modifiche si applicano nei limiti di legge e non eliminano retroattivamente diritti inderogabili o diritti all’abbonamento già riconosciuti dallo store.</p></section>
+<section class="policy-section"><h2>Riferimenti ai servizi e contatti</h2><p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contratto di licenza con l’utente finale Apple</a> · <a href="https://play.google.com/about/play-terms/">Google Play</a> · <a href="https://reportaproblem.apple.com/">Rimborsi Apple</a> · <a href="https://support.google.com/googleplay/answer/2479637">Rimborsi Google Play</a></p><p>Armando Jimenez · Puerto Rico · <a href="mailto:hello@armandojimenez.dev">hello@armandojimenez.dev</a></p></section>
+<div class="policy-footer-note"><p>Aggiornamento / In vigore: 5 ottobre 2026 · v1.0</p></div></main></div></div>
+<footer class="policy-footer"><div class="footer-content"><p class="footer-copyright">© 2026 Armando Jimenez.</p></div></footer>
+<script src="policy-scripts.js"></script>
+<script>
+const toggle=document.getElementById('themeToggle');
+toggle.setAttribute('aria-label',"Cambia aspetto");
+document.querySelectorAll('#languageSwitcher [data-lang]').forEach(button=>button.addEventListener('click',()=>{
+ const q=new URLSearchParams(location.search);
+ q.set('lang',button.dataset.lang);
+ q.set('theme',document.documentElement.dataset.theme);
+ location.search=q.toString();
+}));
+</script>
+</body></html>
