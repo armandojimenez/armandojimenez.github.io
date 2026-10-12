@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl" data-policy-app="universe-shop" data-policy-type="privacy" data-policy-langs="en,es,pt-BR,de,fr,it,nl,pl" data-back-to-top="Wróć na górę">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function() {
+ const q=new URLSearchParams(location.search), requested=q.get('lang');
+ const routes={"en": "privacy-policy.html", "es": "privacy-policy-es.html", "pt-br": "privacy-policy-pt-BR.html", "de": "privacy-policy-de.html", "fr": "privacy-policy-fr.html", "it": "privacy-policy-it.html", "nl": "privacy-policy-nl.html", "pl": "privacy-policy-pl.html"}, key=(requested||document.documentElement.lang).toLowerCase();
+ const target=routes[key]||routes.en;
+ const path=location.pathname.slice(0,location.pathname.lastIndexOf('/')+1)+target;
+ if(path!==location.pathname) {q.delete('lang');location.replace(path+(q.toString()?'?'+q.toString():'')+location.hash);return;}
+ const theme=q.get('theme');
+ if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;
+})();
+</script>
+<title>Polityka prywatności - Sklep Wszechświata: Manifestuj wszystko</title>
+<meta name="description" content="Polityka prywatności · Sklep Wszechświata: Manifestuj wszystko · Armando Jimenez">
+<link rel="canonical" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-pl.html">
+<link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy.html">
+<link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-es.html">
+<link rel="alternate" hreflang="pt-BR" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-pt-BR.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-de.html">
+<link rel="alternate" hreflang="fr" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-fr.html">
+<link rel="alternate" hreflang="it" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-it.html">
+<link rel="alternate" hreflang="nl" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-nl.html">
+<link rel="alternate" hreflang="pl" href="https://armandojimenez.dev/apps/universe-shop/privacy-policy-pl.html">
+<link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
+</head><body>
+<div class="language-switcher" id="languageSwitcher" role="group" aria-label="Język"><button type="button" class="lang-button" data-lang="en" aria-pressed="false">English</button><button type="button" class="lang-button" data-lang="es" aria-pressed="false">Español</button><button type="button" class="lang-button" data-lang="pt-BR" aria-pressed="false">Português (Brasil)</button><button type="button" class="lang-button" data-lang="de" aria-pressed="false">Deutsch</button><button type="button" class="lang-button" data-lang="fr" aria-pressed="false">Français</button><button type="button" class="lang-button" data-lang="it" aria-pressed="false">Italiano</button><button type="button" class="lang-button" data-lang="nl" aria-pressed="false">Nederlands</button><button type="button" class="lang-button active" data-lang="pl" aria-pressed="true">Polski</button></div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+
+<div class="container"><header class="policy-header">
+<div class="app-badge"><div class="badge-icon"><img class="mark-light" src="mark-light.png" width="52" height="52" alt=""><img class="mark-dark" src="mark-dark.png" width="52" height="52" alt=""></div><div class="badge-text"><div class="badge-title">Sklep Wszechświata: Manifestuj wszystko</div><div class="badge-subtitle">Twój wyobrażony wszechświat</div></div></div>
+<h1 class="policy-title">Polityka prywatności</h1><div class="policy-meta"><span class="meta-item">Zaktualizowano / obowiązuje od: 5 października 2026</span></div>
+</header><div class="content-wrapper"><aside class="table-of-contents"><h2 class="toc-title">Spis treści</h2><ul class="toc-list"><li><a href="#section-1">Wprowadzenie</a></li>
+<li><a href="#section-2">Twój wszechświat jest lokalny</a></li>
+<li><a href="#section-3">Diagnostyka awarii</a></li>
+<li><a href="#section-4">Opcjonalne członkostwo</a></li>
+<li><a href="#section-5">Zdjęcia, przypomnienia i widżety</a></li>
+<li><a href="#section-6">Udostępnianie, pomoc i recenzje</a></li>
+<li><a href="#section-7">Przechowywanie i usuwanie wszechświata</a></li>
+<li><a href="#section-8">Twoje wybory i kontakt</a></li>
+<li><a href="#section-9">Aktualizacje i polityki usług</a></li>
+<li><a href="#section-10">Wykorzystanie i ochrona informacji</a></li>
+<li><a href="#section-11">Prawa do prywatności i podstawa prawna</a></li>
+<li><a href="#section-12">Okres przechowywania</a></li>
+<li><a href="#section-13">Ta strona polityki prywatności</a></li></ul></aside>
+<main class="policy-content"><section id="section-1" class="policy-section"><h2>1. Wprowadzenie</h2><p>Aplikację Sklep Wszechświata: Manifestuj wszystko stworzył Armando Jimenez w Portoryko. Twój osobisty wszechświat pozostaje na Twoim urządzeniu. Ta polityka wyjaśnia, jakie ograniczone usługi są używane w związku z awariami, członkostwem i działaniami podejmowanymi przez Ciebie.</p></section>
+<section id="section-2" class="policy-section"><h2>2. Twój wszechświat jest lokalny</h2><p>Twój profil, zaimportowane zdjęcia, symulowane salda i waluty, zamówienia, adresy, uczucia, afirmacje, dzieła, historie, pamiątki i preferencje są przechowywane lokalnie. Katalog i zdjęcia aplikacji są dołączone do aplikacji. Nie ma konta aplikacji, serwera z Twoimi prywatnymi treściami, synchronizacji w chmurze, reklam ani analityki aplikacji. Kupujący, recenzje, obserwujący, sprzedaż i statystyki w Moim sklepie są symulacją offline; nie dotyczą prawdziwych osób ani telemetrii.</p></section>
+<section id="section-3" class="policy-section"><h2>3. Diagnostyka awarii</h2><p>Wersje testowe i produkcyjne używają Sentry do otrzymywania minimalnych raportów o nieobsłużonych awariach, aby można było naprawiać błędy. Raporty zawierają techniczny typ awarii, ramki stosu z usuniętymi informacjami, wydanie/kompilację aplikacji, czas awarii i informacje symbolikacji. Nie zawierają imion i nazwisk, notatek, adresów, wyszukiwanych słów, zdjęć, ścieżek plików, wiadomości ani tekstu wyjątków. Nie są włączone analityka, śledzenie, profilowanie, śledzenie sesji, zrzuty ekranu, odtwarzanie, logi ani ślady nawigacji. Sentry otrzymuje żądanie sieciowe i może przetwarzać informacje o połączeniu, takie jak adres IP, zgodnie z własną polityką usługi; aplikacja nie dołącza go jako identyfikatora użytkownika. Raporty mogą być przetwarzane poza Twoim krajem i są przechowywane zgodnie z ustawionym okresem przechowywania Sentry.</p></section>
+<section id="section-4" class="policy-section"><h2>4. Opcjonalne członkostwo</h2><p>Apple lub Google obsługuje prawdziwe płatności. RevenueCat weryfikuje członkostwo przy użyciu anonimowego identyfikatora użytkownika aplikacji, identyfikatorów zakupu/produktu, informacji o transakcji i uprawnieniach oraz technicznych informacji o aplikacji/platformie. Automatyczne zbieranie identyfikatorów reklamowych/urządzenia i diagnostyki jest wyłączone. Aplikacja nie otrzymuje danych karty płatniczej ani nie wysyła treści Twoich manifestacji do RevenueCat. Weryfikacja członkostwa i ceny ofert mogą korzystać z sieci także podczas korzystania z bezpłatnej aplikacji. Dane sklepów i RevenueCat podlegają ich politykom i mogą być przetwarzane poza Twoim krajem. Przywrócenie zakupów nie przywraca usuniętego lokalnego wszechświata ani nie synchronizuje go między urządzeniami.</p></section>
+<section id="section-5" class="policy-section"><h2>5. Zdjęcia, przypomnienia i widżety</h2><p>Wybór zdjęć i zaimportowane kopie pozostają lokalne. Aplikacja prosi o dostęp tylko wtedy, gdy wymaga go dana funkcja; uprawnienia można zmienić w Ustawieniach urządzenia. Przypomnienia są planowane lokalnie i wymagają uprawnienia do powiadomień. Widżety ekranu głównego odczytują lokalną reprezentację danych wybranego wszechświata i mogą wyświetlać kwoty, zdjęcia elementów i informacje o sklepie osobom widzącym ekran. Aplikacja nie przesyła treści widżetów. System operacyjny kontroluje czas odświeżania powiadomień i widżetów.</p></section>
+<section id="section-6" class="policy-section"><h2>6. Udostępnianie, pomoc i recenzje</h2><p>Eksporty opuszczają aplikację wyłącznie przez wybrane przez Ciebie miejsce docelowe. Działania kontaktowe otwierają aplikację pocztową z widocznym, edytowalnym szablonem; do pomocy trafiają wyłącznie tekst i załączniki, które zdecydujesz się wysłać. Szablony błędów mogą zawierać widoczną wersję/kompilację aplikacji, platformę i język; nigdy automatycznie nie dołączają osobistych danych ani logów. Usługi pocztowe przetwarzają te wiadomości zgodnie z własnymi zasadami. Prośby o recenzję i linki do sklepów obsługują Apple lub Google; aplikacja nie poznaje ani nie zapisuje Twojej oceny. Otwarcie zewnętrznych stron polityki lub twórcy wysyła zwykłe żądanie przeglądarki do tej witryny.</p></section>
+<section id="section-7" class="policy-section"><h2>7. Przechowywanie i usuwanie wszechświata</h2><p>Nie istnieje kopia Twojego osobistego wszechświata u twórcy, którą można odzyskać. Tam, gdzie to możliwe, dane zarządzane przez aplikację są wyłączone z kopii zapasowych urządzenia/chmury. Usunięcie aplikacji usuwa lokalne dane zarządzane przez aplikację, z uwzględnieniem działania systemu operacyjnego; eksporty i wiadomości zapisane gdzie indziej pozostają. Reset „Rozpocznij nową linię czasu”, gdy będzie dostępny, jest planowany na następną lokalną północ i można go anulować przed zastosowaniem; usuwa osobiste dane wszechświata, wersje robocze, multimedia oraz powiązane lokalne treści powiadomień/widżetów. Zachowane zostają język, wygląd/ustawienia dostępności i członkostwo w sklepie. Odinstalowanie lub reset nie anuluje płatnej subskrypcji. Anuluj ją w sklepie. Dane sklepów, RevenueCat, usługi awarii i wysłanych wiadomości są oddzielone od lokalnego usuwania.</p></section>
+<section id="section-8" class="policy-section"><h2>8. Twoje wybory i kontakt</h2><p>Możesz korzystać z bezpłatnego sklepu offline, odmówić opcjonalnych uprawnień do zdjęć/powiadomień, zdecydować o udostępnianiu oraz zarządzać subskrypcjami przez Apple lub Google. W sprawach prywatności lub informacji wysłanych do pomocy napisz na hello@armandojimenez.dev. Nie mamy dostępu do wszechświata przechowywanego na Twoim urządzeniu ani możliwości zdalnego usunięcia go. Świadomie nie prosimy dzieci o dane osobowe. Jeśli dziecko wyśle informacje do pomocy, skontaktuj się z nami, aby poprosić o ich usunięcie. Nie sprzedajemy danych osobowych ani nie wykorzystujemy ich do reklam. Obowiązujące prawa do prywatności nadal Ci przysługują; przy zwykłych pytaniach nie wymagamy niepotrzebnych dokumentów tożsamości.</p></section>
+<section id="section-9" class="policy-section"><h2>9. Aktualizacje i polityki usług</h2><p>Data powyżej wskazuje tę wersję. Istotne zmiany zostaną odzwierciedlone na tej miarodajnej stronie internetowej i w stosownych przypadkach opisane w aplikacji. Szczegóły usług znajdują się pod adresami sentry.io/privacy, revenuecat.com/privacy, apple.com/legal/privacy i policies.google.com/privacy. Usługi te mają własne okresy przechowywania i obowiązki prawne; nie obiecujemy konkretnego okresu przechowywania ani natychmiastowego usunięcia danych przez podmioty trzecie.</p></section>
+<section id="section-10" class="policy-section"><h2>10. Wykorzystanie i ochrona informacji</h2><p>Lokalne dane obsługują wybrane funkcje; informacje diagnostyczne służą naprawianiu awarii, informacje o zakupie — dostarczaniu i przywracaniu członkostwa, a wiadomości do pomocy — udzielaniu odpowiedzi. Pliki lokalne są przechowywane w odizolowanej przez system przestrzeni aplikacji i chronione zabezpieczeniami urządzenia; aplikacja nie szyfruje osobno bazy danych hasłem. Żądania do usług sieciowych korzystają z szyfrowanego HTTPS. Możemy ujawnić ograniczone dane usługowe lub pomocy, gdy wymaga tego prawo lub jest to konieczne do ochrony praw. W tych celach nie przesyłamy lokalnego wszechświata. Żaden system bezpieczeństwa nie jest doskonały.</p></section>
+<section id="section-11" class="policy-section"><h2>11. Prawa do prywatności i podstawa prawna</h2><p>Jeśli mają zastosowanie przepisy o prywatności, możesz zażądać dostępu do informacji, ich poprawienia, usunięcia lub przenośnej kopii informacji przechowywanych przez nas; sprzeciwić się przetwarzaniu lub zażądać jego ograniczenia; wycofać zgodę, gdy jest podstawą przetwarzania; oraz złożyć skargę do lokalnego organu nadzorczego. Mieszkańcom Kalifornii przysługują odpowiednie prawa do poznania, poprawiania i usuwania informacji oraz niedyskryminacyjnego traktowania. Nie sprzedajemy ani nie udostępniamy danych osobowych do reklam wykorzystujących dane z różnych kontekstów. Ograniczone dane o awariach przetwarzamy, aby utrzymywać niezawodność; dane o zakupach — aby świadczyć usługę członkostwa i wypełniać obowiązki prawne; dobrowolne wiadomości do pomocy — aby odpowiedzieć, na właściwej podstawie prawnej. Skontaktuj się z nami, aby skorzystać z tych praw; odpowiemy w obowiązujących terminach i wyjaśnimy każdy zgodny z prawem wyjątek. Nie mamy dostępu do danych przechowywanych wyłącznie na urządzeniu; możesz zarządzać nimi lokalnie.</p></section>
+<section id="section-12" class="policy-section"><h2>12. Okres przechowywania</h2><p>Lokalne dane wszechświata pozostają do chwili ich usunięcia, odinstalowania aplikacji lub zastosowania resetu. Dane o awariach są przechowywane przez okres ustawiony dla projektu w Sentry. Sklepy i RevenueCat przechowują dane o zakupach w zakresie potrzebnym do weryfikacji subskrypcji, księgowości i wypełniania obowiązków prawnych. Wiadomości do pomocy są przechowywane tak długo, jak potrzeba do rozwiązania sprawy i wypełnienia obowiązków prawnych; można zażądać ich usunięcia. Nie obiecujemy usunięcia danych, które sklep lub usługa musi zgodnie z prawem zachować.</p></section>
+<section id="section-13" class="policy-section"><h2>13. Ta strona polityki prywatności</h2><p>Opublikowana polityka korzysta ze wspólnych ustawień języka i motywu witryny twórcy, które mogą zapisywać preferencję motywu w lokalnym magazynie przeglądarki. Odczyt hostowanej strony wysyła zwykłe żądania połączenia do hosta i zasobów czcionek; jest to oddzielone od lokalnego wszechświata aplikacji. Na tych stronach nie dodano skryptów reklamowych ani analitycznych.</p></section>
+<section class="policy-section"><h2>Informacje o usługach i kontakt</h2><p><a href="https://sentry.io/privacy/">Sentry</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://policies.google.com/privacy">Google</a></p><p>Armando Jimenez · Puerto Rico · <a href="mailto:hello@armandojimenez.dev">hello@armandojimenez.dev</a></p></section>
+<div class="policy-footer-note"><p>Zaktualizowano / obowiązuje od: 5 października 2026 · v1.0</p></div></main></div></div>
+<footer class="policy-footer"><div class="footer-content"><p class="footer-copyright">© 2026 Armando Jimenez.</p></div></footer>
+<script src="policy-scripts.js"></script>
+<script>
+const toggle=document.getElementById('themeToggle');
+toggle.setAttribute('aria-label',"Zmie\u0144 wygl\u0105d");
+document.querySelectorAll('#languageSwitcher [data-lang]').forEach(button=>button.addEventListener('click',()=>{
+ const q=new URLSearchParams(location.search);
+ q.set('lang',button.dataset.lang);
+ q.set('theme',document.documentElement.dataset.theme);
+ location.search=q.toString();
+}));
+</script>
+</body></html>
