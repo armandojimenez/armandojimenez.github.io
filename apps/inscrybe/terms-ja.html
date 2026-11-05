@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja" data-policy-app="inscrybe" data-policy-type="terms" data-policy-langs="en,es,pt,ar,de,fr,tr,it,vi,pl,nl,ja,ko" data-back-to-top="先頭に戻る">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function() {
+ const q = new URLSearchParams(location.search);
+ const routes = {"en": "terms.html", "es": "terms-es.html", "pt": "terms-pt.html", "ar": "terms-ar.html", "de": "terms-de.html", "fr": "terms-fr.html", "tr": "terms-tr.html", "it": "terms-it.html", "vi": "terms-vi.html", "pl": "terms-pl.html", "nl": "terms-nl.html", "ja": "terms-ja.html", "ko": "terms-ko.html"};
+ const requested = (q.get('lang') || '').toLowerCase().replace('_', '-');
+ if (requested) {
+  const target = routes[requested] || routes[requested.split('-')[0]] || routes.en;
+  const here = location.pathname.slice(location.pathname.lastIndexOf('/') + 1);
+  if (target !== here) { q.delete('lang'); location.replace(target + (q.toString() ? '?' + q.toString() : '') + location.hash); return; }
+ }
+ const theme = q.get('theme');
+ if (theme === 'dark' || theme === 'light') document.documentElement.dataset.theme = theme;
+})();
+</script>
+<title>利用規約 · Inscrybe</title>
+<meta name="description" content="Inscrybeの利用規約。Believe PR。">
+<link rel="canonical" href="https://armandojimenez.dev/apps/inscrybe/terms-ja.html">
+<link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/inscrybe/terms.html">
+<link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/inscrybe/terms-es.html">
+<link rel="alternate" hreflang="pt" href="https://armandojimenez.dev/apps/inscrybe/terms-pt.html">
+<link rel="alternate" hreflang="ar" href="https://armandojimenez.dev/apps/inscrybe/terms-ar.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/inscrybe/terms-de.html">
+<link rel="alternate" hreflang="fr" href="https://armandojimenez.dev/apps/inscrybe/terms-fr.html">
+<link rel="alternate" hreflang="tr" href="https://armandojimenez.dev/apps/inscrybe/terms-tr.html">
+<link rel="alternate" hreflang="it" href="https://armandojimenez.dev/apps/inscrybe/terms-it.html">
+<link rel="alternate" hreflang="vi" href="https://armandojimenez.dev/apps/inscrybe/terms-vi.html">
+<link rel="alternate" hreflang="pl" href="https://armandojimenez.dev/apps/inscrybe/terms-pl.html">
+<link rel="alternate" hreflang="nl" href="https://armandojimenez.dev/apps/inscrybe/terms-nl.html">
+<link rel="alternate" hreflang="ja" href="https://armandojimenez.dev/apps/inscrybe/terms-ja.html">
+<link rel="alternate" hreflang="ko" href="https://armandojimenez.dev/apps/inscrybe/terms-ko.html">
+<link rel="alternate" hreflang="x-default" href="https://armandojimenez.dev/apps/inscrybe/terms.html">
+<link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<a class="skip-link" href="#policy">コンテンツにスキップ</a>
+<div class="language-switcher" id="languageSwitcher"><label class="sr-only" for="policyLanguage">言語</label><select id="policyLanguage" class="lang-select"><option value="terms.html" lang="en">English</option><option value="terms-es.html" lang="es">Español</option><option value="terms-pt.html" lang="pt">Português</option><option value="terms-ar.html" lang="ar">العربية</option><option value="terms-de.html" lang="de">Deutsch</option><option value="terms-fr.html" lang="fr">Français</option><option value="terms-tr.html" lang="tr">Türkçe</option><option value="terms-it.html" lang="it">Italiano</option><option value="terms-vi.html" lang="vi">Tiếng Việt</option><option value="terms-pl.html" lang="pl">Polski</option><option value="terms-nl.html" lang="nl">Nederlands</option><option value="terms-ja.html" lang="ja" selected>日本語</option><option value="terms-ko.html" lang="ko">한국어</option></select></div>
+<noscript><nav class="no-script-language"><a href="terms.html" lang="en">English</a> · <a href="terms-es.html" lang="es">Español</a> · <a href="terms-pt.html" lang="pt">Português</a> · <a href="terms-ar.html" lang="ar">العربية</a> · <a href="terms-de.html" lang="de">Deutsch</a> · <a href="terms-fr.html" lang="fr">Français</a> · <a href="terms-tr.html" lang="tr">Türkçe</a> · <a href="terms-it.html" lang="it">Italiano</a> · <a href="terms-vi.html" lang="vi">Tiếng Việt</a> · <a href="terms-pl.html" lang="pl">Polski</a> · <a href="terms-nl.html" lang="nl">Nederlands</a> · <a href="terms-ko.html" lang="ko">한국어</a></nav></noscript>
+<button type="button" class="theme-toggle" id="themeToggle" aria-label="ライトモードとダークモードを切り替える">
+<svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>
+<svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 15A8 8 0 0 1 9 4a8 8 0 1 0 11 11Z"/></svg>
+</button>
+<div class="container">
+<header class="policy-header"><div class="app-badge"><div class="badge-icon"><img src="app-icon.png" alt="" width="64" height="64"></div><div class="badge-text"><div class="badge-title">Inscrybe</div><div class="badge-subtitle">自分のオーディオ。自分の作品。</div></div></div><h1 class="policy-title">利用規約</h1><div class="policy-meta"><span>発効日および更新日: 2026年10月23日</span></div></header>
+<div class="content-wrapper"><aside class="table-of-contents"><h2 class="toc-title">目次</h2><ul class="toc-list"><li><a href="#agreement">同意と利用資格</a></li><li><a href="#service">Inscrybeが提供するもの</a></li><li><a href="#copyright">利用者のファイル、ダウンロードと著作権</a></li><li><a href="#ownership">権利の帰属、アプリのライセンスと付属素材</a></li><li><a href="#safety">視聴、視覚効果と結果を約束しないこと</a></li><li><a href="#purchases">Inscrybe Deepと購入</a></li><li><a href="#third-parties">その他のサービス、バックアップと利用可能性</a></li><li><a href="#conduct">適切な利用と権利侵害の報告</a></li><li><a href="#warranties">保証と責任</a></li><li><a href="#liability">責任の制限と第三者からの請求</a></li><li><a href="#ending">利用の終了と変更</a></li><li><a href="#law">準拠法、Appleと連絡先</a></li></ul></aside><main class="policy-content" id="policy" tabindex="-1"><section id="agreement" class="policy-section"><h2>1. 同意と利用資格</h2><p>本規約は、プエルトリコのArmando Jimenezが所有するBelieve PR（以下“当方”）が提供するInscrybeの利用に適用されます。アプリを利用することにより、適用法で拘束力のある契約が認められる範囲で、本規約に同意したことになります。同意しない場合は、利用を中止してください。連絡先は<a href="mailto:inscrybe@armandojimenez.dev">inscrybe@armandojimenez.dev</a>です。</p><p>Inscrybeは一般向けのオーディオツールです。本契約を締結する法的能力があること、または必要な場合に親もしくは法定後見人の許可と監督の下でアプリを利用することが必要です。居住地域の法律で定められる最低年齢、同意に関する規則、その他の制限も引き続き適用されます。App Storeの年齢制限指定はアプリのコンテンツを示すものであり、読み込むファイルの適切性を保証するものではありません。</p></section>
+<section id="service" class="policy-section"><h2>2. Inscrybeが提供するもの</h2><p>Inscrybeでは、オーディオの読み込みと再生、ライブラリの整理、レイヤーのミックス、音声の録音、システムの音声によるテキストの音声化、付属のアファメーションやサウンドの利用、オーディオや映像の書き出しができます。利用できる機能は、バージョン、デバイス、許可、利用可能なサービスによって異なり、一部の機能にはInscrybe Deepのサブスクリプションも必要です。iCloudでの同期は任意です。</p><p>Inscrybeは作成と再生のためのツールであり、音楽ストリーミングサービス、公開コンテンツのマーケットプレイス、権利処理サービスではありません。ユーザの録音を公開するフィードはホストしていません。ファイルの読み取り、ダウンロード、変換、書き出しが技術的に可能な機能があっても、それらを行う許可があることにはなりません。</p></section>
+<section id="copyright" class="policy-section"><h2>3. 利用者のファイル、ダウンロードと著作権</h2><div class="highlight-box"><p><strong>コンテンツおよびその予定する利用に必要な権利を確保する責任は、利用者にあります。</strong>これには、Inscrybeを使ってダウンロード、読み込み、録音、ペースト、ミックス、変換、映像との同期、書き出し、公開、収益化、共有を行うすべてのものが含まれます。</p></div><ul><li>自身が権利を有する素材、利用の許可を得た素材、または適用されるライセンスや法律上の例外に基づいて適法に利用できる素材を使用してください。クレジット表示、非営利、同一条件での共有、その他の関連する条件に従ってください。</li><li>音楽には、録音物と、その基となる楽曲や歌詞について、それぞれ別の権利が存在する場合があります。写真、アートワーク、映像、スクリプト、アファメーション、録音された音声にも、それぞれ固有の権利が存在する場合があります。</li><li>曲の購入、ストリーミングサービスへの支払い、ダウンロードリンクの発見、クレジットの表示、短い抜粋だけを残すこと、作品を“サブリミナル”と呼ぶことだけでは、再利用、翻案、配布、商業的な公開が許可されることにはなりません。</li><li>ミックス、マスキング、ループ、速度やピッチの変更、フォーマット変換、超音波版の作成、アファメーションの追加を行っても、著作権がなくなったり、利用が自動的に適法になったりすることはありません。</li><li>DRM、有料アクセス制限、その他のアクセス制限を回避したり、提供者の適用規約に反してスクレイピングやダウンロードを行ったり、Inscrybeを使って著作権その他の権利を侵害したりしないでください。ファイルを直接読み込む機能は、ストリーミングサービスから素材を抽出する許可ではありません。</li><li>人を録音し、その人の声、名前、肖像、個人情報を利用する際は、必要な同意を得てください。なりすましや嫌がらせを行ったり、許可なく親密な内容や私的な素材を公開したりしないでください。</li></ul><p>当方は、読み込まれたコンテンツの選定、ライセンスの付与、推奨、適法性の確認を行いません。選択とその結果としての利用に対する責任は、利用者にあります。法律で認められる範囲で、Believe PRとArmando Jimenezは、利用者が提供するコンテンツまたはその利用に起因する権利侵害その他の違法行為について責任を負いません。これは、法律が当方に課す義務や責任を排除するものではありません。</p><p>利用が認められるかどうか不明な場合は、続行する前に許可を得るか、適切な助言を求めてください。Inscrybeは、利用がフェアユースやその他の例外に該当するかどうかを判断しません。</p></section>
+<section id="ownership" class="policy-section"><h2>4. 権利の帰属、アプリのライセンスと付属素材</h2><p>自身のオリジナルの録音、スクリプト、その他のコンテンツについてすでに保有している権利は、引き続き利用者に帰属します。Inscrybeがそれらの所有権を取得することはありません。ミックスを書き出しても、第三者の構成素材に対する所有権は得られません。処理と任意の同期には、利用者が要求する機能を実行するために必要な許可が必要です。本規約は、利用者の非公開の作品を公開する一般的な権利を当方に付与するものではありません。</p><p>当方は、本規約とAppleの使用規則に従うことを条件として、利用者が所有または管理する対応AppleデバイスでInscrybeを利用する、限定的かつ非独占的な権利を付与します。アプリ、ブランド、付属素材は、引き続き当方またはそれぞれのライセンサーに帰属します。アプリを再配布または販売したり、付属ライブラリを抽出して競合するサウンドやアファメーションのコレクションにしたりしないでください。“謝辞”に記載されている、適用されるオープンソースライセンスの独自の条件と権利は、そのまま維持されます。</p><p>付属素材は、明示されているライセンス上の制限に従い、アプリが対応する機能を通じて利用するために提供されます。当方が保有していない権利を付与することはありません。外部での公開や商業的な配布を行う場合は、第三者の写真やシステムで生成した音声を含む、すべての要素の権利を確認してください。Unsplashの画像には、引き続き<a href="https://unsplash.com/license">Unsplashライセンス</a>と<a href="https://unsplash.com/terms">利用規約</a>が適用されます。Appleの音声およびソフトウェアのライセンスにより、生成した音声の利用が制限される場合があります。“書き出す”ボタンは、音声の商用利用ライセンスではありません。</p></section>
+<section id="safety" class="policy-section"><h2>5. 視聴、視覚効果と結果を約束しないこと</h2><p>Inscrybeは、医療機器、治療、専門的な医療サービスではありません。アファメーション、サブリミナルオーディオ、バイノーラルサウンド、ビジュアルは、創作と個人利用のためのツールとして提供されます。当方は、潜在意識の変化、治癒、身体の変化、富、人間関係、引き寄せの成果、その他いかなる結果も約束しません。専門家によるケアや処方された治療の代わりにアプリを使用しないでください。</p><p>快適な音量で使用し、休憩を取ってください。増幅したオーディオ、重ね合わせたオーディオ、高周波のオーディオは、声が聞こえないように感じても、大きな音になっている場合があります。超音波レイヤーを聞こうとして音量を上げないでください。不快感がある場合は、使用を中止してください。注意をそらす視覚効果、睡眠向けのセッション、ヘッドフォンを、安全な運転、機械の操作、周囲の状況の認識を妨げるような方法で使用しないでください。点滅する視覚効果は、光に敏感な人に影響を及ぼす場合があります。アプリの警告に従い、適切な場合は点滅しないオプションを選んでください。</p><p>再生または共有する素材を確認してください。他の人に知らせて適切な同意を得た上でなければ、隠されたメッセージ、録音、有害となる可能性のあるコンテンツにその人をさらさないでください。</p></section>
+<section id="purchases" class="policy-section"><h2>6. Inscrybe Deepと購入</h2><p>Inscrybeは無料でダウンロードできます。Inscrybe Deepは、購入画面に表示される機能を利用できるようにする、任意の月額または年額の自動更新サブスクリプションです。価格は国ごとに設定され、購入を確定する前に、App Storeから取得した価格がお使いの通貨でアプリに表示されます。年額プランには、利用資格のある人向けの無料トライアルが含まれます。対象となる場合は、購入画面にその旨が表示されます。</p><p>購入を確定した時点、または無料トライアルが終了した時点で、Apple Accountに料金が請求されます。現在の期間が終了する少なくとも24時間前までに自動更新をオフにしない限り、サブスクリプションは、その時点の価格で同じ期間、自動的に更新されます。更新料金は、期間が終了する前の24時間以内に請求されます。Apple Accountの“サブスクリプション”設定、またはInscrybeの“設定”にある“サブスクリプションを管理”で、管理またはキャンセルしてください。キャンセルすると次回の更新が停止し、支払い済みの期間が終了するまで引き続き利用できます。無料トライアルが終了する少なくとも24時間前までにキャンセルすれば、料金は請求されません。サブスクリプションを購入すると、無料トライアルの未使用期間は終了します。アプリやそのデータを削除しても、サブスクリプションはキャンセルされません。</p><p>ファミリー共有を利用できます。ファミリー管理者のサブスクリプションは、Appleを通じて最大5人のファミリーメンバーと共有できます。同じApple Accountを使用し、“設定”の“購入を復元”で、新しいデバイスや再インストール後にサブスクリプションを復元できます。</p><p>サブスクリプションが終了しても、作成したものは一切削除されません。再びサブスクリプションに登録するまで、その機能はロックされます。スタジオのプロジェクトは保持され、削除できますが、開くことはできません。ミックスは再生できますが、編集はできません。iCloud同期は停止した時点で一時停止され、テーマには選択した無料のテーマが表示されます。偽装したものや非表示にしたものは、その状態が維持されます。</p><p>Appleは、Appleの規則と適用される消費者保護法に基づいて、請求と返金リクエストを処理します。<a href="https://reportaproblem.apple.com">Appleの返金リクエストサービス</a>を参照してください。当方は、強行法規で保障される返金、撤回、その他の消費者の権利を制限しません。価格、プラン、含まれる機能は変更される場合があります。有効なサブスクリプションの価格変更は、Appleが要求する同意を含め、Appleの規則に従います。</p></section>
+<section id="third-parties" class="policy-section"><h2>7. その他のサービス、バックアップと利用可能性</h2><p>Appleのサービス、iCloud、Unsplash、ファイルのホスティングサービス、共有先のアプリには、それぞれ独自の規約があります。自身の利用に適用される規約を遵守する責任は、利用者にあります。当方は、それらの利用可能性、コンテンツ、ストレージの制限、判断を管理していません。当方は、法律で課される通知、返金、その他の義務に従って、機能を変更または終了する場合があります。</p><p>重要なコンテンツは、別途バックアップを保管してください。同期、変換、書き出し、復旧、タイマーは、デバイス、ネットワーク、ストレージ、オペレーティングシステムの状況により、失敗または中断する場合があります。元のファイルを削除する前に、重要な書き出し結果を確認してください。当方は、永続的な保存、中断のないバックグラウンド再生、特定の音声が利用できること、紛失したPIN、復旧コード、ファイルの復旧を保証しません。</p><p>アプリロック、カモフラージュモード、非表示は、プライバシーのための便利な機能であり、アプリに記載された制限があります。これらは、お使いのデバイス、クラウドアカウント、バックアップ、共有されたコピーにアクセスできる人に対する秘密の保持を保証するものではありません。データの取り扱いについては、<a href="privacy-policy-ja.html">プライバシーポリシー</a>で説明しています。</p></section>
+<section id="conduct" class="policy-section"><h2>8. 適切な利用と権利侵害の報告</h2><p>Inscrybeを違法に利用したり、サービスやセキュリティを妨害したり、マルウェアを配布したり、権利を侵害したり、他者を虐待もしくは欺く素材を作成したり、他の人を搾取したりしないでください。適用法またはオープンソースライセンスで明示的に許可されている場合を除き、リバースエンジニアリングや技術的制限の回避を行わないでください。</p><p>当方が提供する素材に関連する権利侵害の疑いは、<a href="mailto:inscrybe@armandojimenez.dev">inscrybe@armandojimenez.dev</a>に報告してください。保護される著作物、侵害が疑われる素材とその所在、連絡先、申し立ての根拠を明示してください。当方は通知を調査し、適切な場合に対応します。当方は、非公開のライブラリを監視しているとも、他の人のデバイスや第三者のサービスからコンテンツを削除できるとも主張しません。外部で公開されている素材については、そのホスティングを担う提供者にも連絡してください。</p></section>
+<section id="warranties" class="policy-section"><h2>9. 保証と責任</h2><p>法律で認められる範囲で、Inscrybeは“現状有姿”かつ“提供可能な状態”で提供され、商品性、特定目的への適合性、ユーザが提供するコンテンツの非侵害性、エラーのない動作、特定の結果について、追加の約束はありません。使用するファイル、設定、視聴時の音量、送信先や出力先は、利用者が選択します。当方は、利用者または第三者が提供する素材の安全性、正確性、適法性を保証できません。</p><p>これらの記載は、法定の保証、当方による明示的な約束、法律上排除できない義務を排除するものではありません。</p></section>
+<section id="liability" class="policy-section"><h2>10. 責任の制限と第三者からの請求</h2><p>適用法で認められる範囲で、当方は、アプリの利用または利用不能、第三者サービスの障害、ユーザが提供する素材の違法な利用に起因する間接的損失、結果的損失、逸失利益、コンテンツの喪失について責任を負いません。金銭的な上限を設けることが適法な場合、アプリに起因する当方の責任総額は、US$100または請求の原因となった事象の発生前12か月間に利用者がInscrybeに支払った金額の、いずれか高い額を上限とします。</p><p><strong>これらの免責と上限は、詐欺、故意の不正行為、重過失、当方の過失により生じた死亡もしくは人身傷害、または法律上排除もしくは制限できないその他の責任や消費者の権利には適用されません。</strong>居住地域の法律により、追加の救済手段が認められる場合があります。</p><p>法律で認められる範囲で、利用者は、自身の違法な利用、他の人の権利の侵害、本規約の重大な違反に起因する第三者からの合理的な請求、損害、費用（合理的な弁護士費用を含みます）について、Believe PRとArmando Jimenezを補償することに同意します。これは、利用者の行為に起因する範囲にのみ適用され、当方の責めに帰すべき事由には適用されません。当方は、合理的に速やかに通知し、防御に参加する機会を提供します。利用者の合理的な同意なく、利用者に義務を課す和解を受け入れることはありません。本条項は、消費者保護法で禁止されている場合に補償義務を課すものではありません。</p></section>
+<section id="ending" class="policy-section"><h2>11. 利用の終了と変更</h2><p>Inscrybeの利用はいつでも中止できます。ローカルまたはクラウドのコンテンツを削除する前に、必要なものを書き出してください。アプリを削除しても、有効なサブスクリプションはキャンセルされず、他の人が保有するコピーも消去されません。当方は、適用される通知と是正の要件に従って、重大な違反を理由にアプリのライセンスを終了する場合があります。当方は、利用者のローカルライブラリを遠隔で消去する一般的な権利があるとは主張しません。</p><p>当方は、アプリの変更に伴い、本規約を改定する場合があります。上記の日付が規約の版を示します。重要な変更については通知し、法律で要求される同意の機会を提供します。変更により、すでに発生した権利が遡及的に失われることはありません。権利の帰属、すでに発生した支払義務、法的に執行可能な責任および紛争に関する条項は、終了後も存続します。</p></section>
+<section id="law" class="policy-section"><h2>12. 準拠法、Appleと連絡先</h2><p>本規約にはプエルトリコの法律が適用されます。ただし、利用者は、常居所の法律で定められる強行法規上の保護と、同法で認められる裁判所で請求を行う権利を保持します。本規約のいかなる定めも、仲裁を義務付けたり、法律上放棄できない権利を放棄させたりするものではありません。問題が生じた場合は、解決を試みることができるよう、まず当方に連絡してください。</p><p>アプリの取得と利用には、Appleの適用されるストア規約、および該当する場合は<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Appleの標準エンドユーザー使用許諾契約</a>も適用されます。本規約は、そのライセンスを補足するものであり、置き換えることを意図するものではありません。Appleは、Inscrybeのサポートの提供者でも、本追加規約の当事者でもありません。本規約のいかなる定めも、適用される契約に基づいてAppleが有する権利を失わせるものではありません。</p><p>ある条項が執行不能な場合でも、残りの条項は法律で認められる範囲で適用されます。条項の履行を求めないことは、その条項に基づく権利の放棄を意味しません。複数の言語版を提供していますが、不一致がある場合は、現地言語および消費者に関する強行法規上の保護が優先します。</p><div class="contact-card"><h3>Believe PR</h3><p>Armando Jimenez · プエルトリコ</p><p>サポート、法的通知、著作権に関する問い合わせ: <a href="mailto:inscrybe@armandojimenez.dev">inscrybe@armandojimenez.dev</a></p></div></section></main></div></div>
+<footer class="policy-footer"><div class="container"><p>© 2026 Believe PR. すべての権利を留保します。</p></div></footer>
+<script src="../../js/policy-scripts.js"></script>
+<script>
+// The language menu and the links keep the chosen appearance
+(function() {
+ const appearance = function() { return document.documentElement.dataset.theme || 'light'; };
+ const menu = document.getElementById('policyLanguage');
+ menu.addEventListener('change', function() {
+  const q = new URLSearchParams(location.search);
+  q.delete('lang');
+  q.set('theme', appearance());
+  location.href = menu.value + '?' + q.toString() + location.hash;
+ });
+ document.querySelectorAll('.policy-content a[href$=".html"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+   const target = new URL(link.href);
+   target.searchParams.set('theme', appearance());
+   link.href = target.href;
+  });
+ });
+})();
+</script>
+</body></html>

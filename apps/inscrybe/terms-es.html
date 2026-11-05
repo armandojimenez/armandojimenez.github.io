@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="es" data-policy-app="inscrybe" data-policy-type="terms" data-policy-langs="en,es">
+<html lang="es" data-policy-app="inscrybe" data-policy-type="terms" data-policy-langs="en,es,pt,ar,de,fr,tr,it,vi,pl,nl,ja,ko" data-back-to-top="Volver arriba">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
 (function() {
  const q = new URLSearchParams(location.search);
- const requested = q.get('lang');
- const current = document.documentElement.lang;
- if ((requested === 'es' || requested === 'en') && requested !== current) {
-  q.delete('lang');
-  const file = 'terms' + (requested === 'es' ? '-es' : '') + '.html';
-  location.replace(file + (q.toString() ? '?' + q.toString() : '') + location.hash);
+ const routes = {"en": "terms.html", "es": "terms-es.html", "pt": "terms-pt.html", "ar": "terms-ar.html", "de": "terms-de.html", "fr": "terms-fr.html", "tr": "terms-tr.html", "it": "terms-it.html", "vi": "terms-vi.html", "pl": "terms-pl.html", "nl": "terms-nl.html", "ja": "terms-ja.html", "ko": "terms-ko.html"};
+ const requested = (q.get('lang') || '').toLowerCase().replace('_', '-');
+ if (requested) {
+  const target = routes[requested] || routes[requested.split('-')[0]] || routes.en;
+  const here = location.pathname.slice(location.pathname.lastIndexOf('/') + 1);
+  if (target !== here) { q.delete('lang'); location.replace(target + (q.toString() ? '?' + q.toString() : '') + location.hash); return; }
  }
  const theme = q.get('theme');
  if (theme === 'dark' || theme === 'light') document.documentElement.dataset.theme = theme;
 })();
 </script>
 <title>Condiciones de servicio · Inscrybe</title>
-<meta name="description" content="Condiciones de servicio de Inscrybe. Believe PR." >
+<meta name="description" content="Condiciones de servicio de Inscrybe. Believe PR.">
 <link rel="canonical" href="https://armandojimenez.dev/apps/inscrybe/terms-es.html">
 <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/inscrybe/terms.html">
 <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/inscrybe/terms-es.html">
+<link rel="alternate" hreflang="pt" href="https://armandojimenez.dev/apps/inscrybe/terms-pt.html">
+<link rel="alternate" hreflang="ar" href="https://armandojimenez.dev/apps/inscrybe/terms-ar.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/inscrybe/terms-de.html">
+<link rel="alternate" hreflang="fr" href="https://armandojimenez.dev/apps/inscrybe/terms-fr.html">
+<link rel="alternate" hreflang="tr" href="https://armandojimenez.dev/apps/inscrybe/terms-tr.html">
+<link rel="alternate" hreflang="it" href="https://armandojimenez.dev/apps/inscrybe/terms-it.html">
+<link rel="alternate" hreflang="vi" href="https://armandojimenez.dev/apps/inscrybe/terms-vi.html">
+<link rel="alternate" hreflang="pl" href="https://armandojimenez.dev/apps/inscrybe/terms-pl.html">
+<link rel="alternate" hreflang="nl" href="https://armandojimenez.dev/apps/inscrybe/terms-nl.html">
+<link rel="alternate" hreflang="ja" href="https://armandojimenez.dev/apps/inscrybe/terms-ja.html">
+<link rel="alternate" hreflang="ko" href="https://armandojimenez.dev/apps/inscrybe/terms-ko.html">
+<link rel="alternate" hreflang="x-default" href="https://armandojimenez.dev/apps/inscrybe/terms.html">
 <link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<a class="skip-link" href="#policy">Ir al contenido</a>
-<div class="language-switcher" id="languageSwitcher" aria-label="Idioma"></div>
-<noscript><nav class="no-script-language"><a href="terms.html" lang="en">English</a></nav></noscript>
-<button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar modo claro u oscuro">
+<a class="skip-link" href="#policy">Saltar al contenido</a>
+<div class="language-switcher" id="languageSwitcher"><label class="sr-only" for="policyLanguage">Idioma</label><select id="policyLanguage" class="lang-select"><option value="terms.html" lang="en">English</option><option value="terms-es.html" lang="es" selected>Español</option><option value="terms-pt.html" lang="pt">Português</option><option value="terms-ar.html" lang="ar">العربية</option><option value="terms-de.html" lang="de">Deutsch</option><option value="terms-fr.html" lang="fr">Français</option><option value="terms-tr.html" lang="tr">Türkçe</option><option value="terms-it.html" lang="it">Italiano</option><option value="terms-vi.html" lang="vi">Tiếng Việt</option><option value="terms-pl.html" lang="pl">Polski</option><option value="terms-nl.html" lang="nl">Nederlands</option><option value="terms-ja.html" lang="ja">日本語</option><option value="terms-ko.html" lang="ko">한국어</option></select></div>
+<noscript><nav class="no-script-language"><a href="terms.html" lang="en">English</a> · <a href="terms-pt.html" lang="pt">Português</a> · <a href="terms-ar.html" lang="ar">العربية</a> · <a href="terms-de.html" lang="de">Deutsch</a> · <a href="terms-fr.html" lang="fr">Français</a> · <a href="terms-tr.html" lang="tr">Türkçe</a> · <a href="terms-it.html" lang="it">Italiano</a> · <a href="terms-vi.html" lang="vi">Tiếng Việt</a> · <a href="terms-pl.html" lang="pl">Polski</a> · <a href="terms-nl.html" lang="nl">Nederlands</a> · <a href="terms-ja.html" lang="ja">日本語</a> · <a href="terms-ko.html" lang="ko">한국어</a></nav></noscript>
+<button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
 <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>
 <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 15A8 8 0 0 1 9 4a8 8 0 1 0 11 11Z"/></svg>
 </button>
@@ -44,31 +56,27 @@
 <section id="warranties" class="policy-section"><h2>9. Garantías y responsabilidad</h2><p>En la medida permitida por la ley, Inscrybe se proporciona “tal como está” y “según disponibilidad”, sin promesas adicionales de comerciabilidad, adecuación para un fin particular, ausencia de infracción en contenido aportado por usuarios, funcionamiento sin errores o resultados específicos. Tú eliges los archivos, ajustes, niveles de escucha y destinos que utilizas. No podemos garantizar la seguridad, exactitud o legalidad del material aportado por ti o por terceros.</p><p>Estas disposiciones no excluyen garantías legales, nuestros compromisos expresos ni obligaciones que no puedan excluirse legalmente.</p></section>
 <section id="liability" class="policy-section"><h2>10. Límites de responsabilidad y reclamaciones de terceros</h2><p>En la medida permitida por la ley aplicable, no respondemos por pérdidas indirectas o consecuentes, lucro cesante o pérdida de contenido derivados de tu uso o imposibilidad de usar la aplicación, fallos de servicios de terceros o uso ilícito de material aportado por usuarios. Cuando un límite económico sea legal, nuestra responsabilidad total derivada de la aplicación se limita al mayor de US$100 o el importe que hayas pagado por Inscrybe durante los doce meses anteriores al hecho que origine la reclamación.</p><p><strong>Estas exclusiones y el límite no se aplican al fraude, conducta dolosa, negligencia grave, muerte o lesiones personales causadas por nuestra negligencia, ni a ninguna responsabilidad o derecho del consumidor que no pueda excluirse o limitarse legalmente.</strong> La legislación local puede concederte otros recursos.</p><p>En la medida permitida por la ley, aceptas indemnizar a Believe PR y Armando Jimenez por reclamaciones, daños y costos razonables de terceros, incluidos honorarios legales razonables, causados por tu uso ilícito, la violación de derechos ajenos o un incumplimiento sustancial de estas Condiciones. Solo se aplica en la medida atribuible a tu conducta, no a nuestra culpa. Te avisaremos con prontitud razonable y te daremos la oportunidad de participar en la defensa; no aceptaremos acuerdos que te impongan obligaciones sin tu consentimiento razonable. Esta cláusula no impone una indemnización donde la normativa de consumo la prohíba.</p></section>
 <section id="ending" class="policy-section"><h2>11. Fin del uso y cambios</h2><p>Puedes dejar de usar Inscrybe en cualquier momento. Exporta lo necesario antes de eliminar contenido local o de la nube. Eliminar la aplicación no cancela una suscripción activa ni borra copias en poder de otras personas. Podemos terminar la licencia por un incumplimiento sustancial, sujetos a los requisitos legales de notificación y subsanación. No nos atribuimos un derecho general a borrar tu biblioteca local a distancia.</p><p>Podemos revisar estas Condiciones cuando cambie la aplicación. La fecha de arriba identifica la versión. Los cambios importantes se notificarán y ofrecerán la oportunidad de consentimiento exigida por la ley; no eliminarán retroactivamente derechos adquiridos. La propiedad, las obligaciones de pago ya contraídas y las disposiciones exigibles sobre responsabilidad y controversias continúan tras la terminación.</p></section>
-<section id="law" class="policy-section"><h2>12. Ley aplicable, Apple y contacto</h2><p>La ley de Puerto Rico rige estas Condiciones, pero conservas las protecciones obligatorias y el derecho a presentar reclamaciones ante los tribunales que disponga la ley de tu residencia habitual. Nada exige arbitraje ni renuncia a derechos irrenunciables. Si surge un problema, contáctanos primero para intentar resolverlo.</p><p>La adquisición y el uso de la aplicación también están sujetos a las condiciones aplicables de la tienda de Apple y al <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contrato de licencia de usuario final estándar de Apple</a>, cuando corresponda. Estas Condiciones complementan esa licencia y no pretenden sustituirla. Apple no proporciona el soporte de Inscrybe ni es parte de estas Condiciones adicionales. Nada elimina los derechos de Apple conforme a sus acuerdos aplicables.</p><p>Si una disposición no puede exigirse, las demás se aplican en la medida legalmente permitida. No exigir una disposición no implica renunciar a ella. Se proporcionan versiones en inglés y español; las protecciones obligatorias de idioma local y del consumidor prevalecen sobre cualquier discrepancia.</p><div class="contact-card"><h3>Believe PR</h3><p>Armando Jimenez · Puerto Rico</p><p>Soporte, avisos legales y derechos de autor: <a href="mailto:inscrybe@armandojimenez.dev">inscrybe@armandojimenez.dev</a></p></div></section></main></div></div>
+<section id="law" class="policy-section"><h2>12. Ley aplicable, Apple y contacto</h2><p>La ley de Puerto Rico rige estas Condiciones, pero conservas las protecciones obligatorias y el derecho a presentar reclamaciones ante los tribunales que disponga la ley de tu residencia habitual. Nada exige arbitraje ni renuncia a derechos irrenunciables. Si surge un problema, contáctanos primero para intentar resolverlo.</p><p>La adquisición y el uso de la aplicación también están sujetos a las condiciones aplicables de la tienda de Apple y al <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contrato de licencia de usuario final estándar de Apple</a>, cuando corresponda. Estas Condiciones complementan esa licencia y no pretenden sustituirla. Apple no proporciona el soporte de Inscrybe ni es parte de estas Condiciones adicionales. Nada elimina los derechos de Apple conforme a sus acuerdos aplicables.</p><p>Si una disposición no puede exigirse, las demás se aplican en la medida legalmente permitida. No exigir una disposición no implica renunciar a ella. Se proporcionan versiones en varios idiomas; las protecciones obligatorias de idioma local y del consumidor prevalecen sobre cualquier discrepancia.</p><div class="contact-card"><h3>Believe PR</h3><p>Armando Jimenez · Puerto Rico</p><p>Soporte, avisos legales y derechos de autor: <a href="mailto:inscrybe@armandojimenez.dev">inscrybe@armandojimenez.dev</a></p></div></section></main></div></div>
 <footer class="policy-footer"><div class="container"><p>© 2026 Believe PR. Todos los derechos reservados.</p></div></footer>
 <script src="../../js/policy-scripts.js"></script>
 <script>
-// Preserve the selected appearance when changing language or opening the other policy.
+// The language menu and the links keep the chosen appearance
 (function() {
- const language = document.getElementById('languageSwitcher');
- language.addEventListener('click', function(event) {
-  const button = event.target.closest('[data-lang]');
-  if (!button) return;
-  event.stopImmediatePropagation();
+ const appearance = function() { return document.documentElement.dataset.theme || 'light'; };
+ const menu = document.getElementById('policyLanguage');
+ menu.addEventListener('change', function() {
   const q = new URLSearchParams(location.search);
-  q.set('lang', button.dataset.lang);
-  q.set('theme', document.documentElement.dataset.theme || 'light');
-  location.search = q.toString();
- }, true);
+  q.delete('lang');
+  q.set('theme', appearance());
+  location.href = menu.value + '?' + q.toString() + location.hash;
+ });
  document.querySelectorAll('.policy-content a[href$=".html"]').forEach(function(link) {
   link.addEventListener('click', function() {
    const target = new URL(link.href);
-   target.searchParams.set('theme', document.documentElement.dataset.theme || 'light');
+   target.searchParams.set('theme', appearance());
    link.href = target.href;
   });
  });
- const back = document.querySelector('.back-to-top');
- if (back) back.setAttribute('aria-label', 'Volver arriba');
 })();
 </script>
 </body></html>

@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" data-policy-app="inscrybe" data-policy-type="terms" data-policy-langs="en,es">
+<html lang="en" data-policy-app="inscrybe" data-policy-type="terms" data-policy-langs="en,es,pt,ar,de,fr,tr,it,vi,pl,nl,ja,ko" data-back-to-top="Back to top">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
 (function() {
  const q = new URLSearchParams(location.search);
- const requested = q.get('lang');
- const current = document.documentElement.lang;
- if ((requested === 'es' || requested === 'en') && requested !== current) {
-  q.delete('lang');
-  const file = 'terms' + (requested === 'es' ? '-es' : '') + '.html';
-  location.replace(file + (q.toString() ? '?' + q.toString() : '') + location.hash);
+ const routes = {"en": "terms.html", "es": "terms-es.html", "pt": "terms-pt.html", "ar": "terms-ar.html", "de": "terms-de.html", "fr": "terms-fr.html", "tr": "terms-tr.html", "it": "terms-it.html", "vi": "terms-vi.html", "pl": "terms-pl.html", "nl": "terms-nl.html", "ja": "terms-ja.html", "ko": "terms-ko.html"};
+ const requested = (q.get('lang') || '').toLowerCase().replace('_', '-');
+ if (requested) {
+  const target = routes[requested] || routes[requested.split('-')[0]] || routes.en;
+  const here = location.pathname.slice(location.pathname.lastIndexOf('/') + 1);
+  if (target !== here) { q.delete('lang'); location.replace(target + (q.toString() ? '?' + q.toString() : '') + location.hash); return; }
  }
  const theme = q.get('theme');
  if (theme === 'dark' || theme === 'light') document.documentElement.dataset.theme = theme;
 })();
 </script>
 <title>Terms of Service · Inscrybe</title>
-<meta name="description" content="Terms of Service for Inscrybe. Believe PR." >
+<meta name="description" content="Terms of Service for Inscrybe. Believe PR.">
 <link rel="canonical" href="https://armandojimenez.dev/apps/inscrybe/terms.html">
 <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/inscrybe/terms.html">
 <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/inscrybe/terms-es.html">
+<link rel="alternate" hreflang="pt" href="https://armandojimenez.dev/apps/inscrybe/terms-pt.html">
+<link rel="alternate" hreflang="ar" href="https://armandojimenez.dev/apps/inscrybe/terms-ar.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/inscrybe/terms-de.html">
+<link rel="alternate" hreflang="fr" href="https://armandojimenez.dev/apps/inscrybe/terms-fr.html">
+<link rel="alternate" hreflang="tr" href="https://armandojimenez.dev/apps/inscrybe/terms-tr.html">
+<link rel="alternate" hreflang="it" href="https://armandojimenez.dev/apps/inscrybe/terms-it.html">
+<link rel="alternate" hreflang="vi" href="https://armandojimenez.dev/apps/inscrybe/terms-vi.html">
+<link rel="alternate" hreflang="pl" href="https://armandojimenez.dev/apps/inscrybe/terms-pl.html">
+<link rel="alternate" hreflang="nl" href="https://armandojimenez.dev/apps/inscrybe/terms-nl.html">
+<link rel="alternate" hreflang="ja" href="https://armandojimenez.dev/apps/inscrybe/terms-ja.html">
+<link rel="alternate" hreflang="ko" href="https://armandojimenez.dev/apps/inscrybe/terms-ko.html">
+<link rel="alternate" hreflang="x-default" href="https://armandojimenez.dev/apps/inscrybe/terms.html">
 <link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
 </head>
 <body>
 <a class="skip-link" href="#policy">Skip to content</a>
-<div class="language-switcher" id="languageSwitcher" aria-label="Language"></div>
-<noscript><nav class="no-script-language"><a href="terms-es.html" lang="es">Español</a></nav></noscript>
+<div class="language-switcher" id="languageSwitcher"><label class="sr-only" for="policyLanguage">Language</label><select id="policyLanguage" class="lang-select"><option value="terms.html" lang="en" selected>English</option><option value="terms-es.html" lang="es">Español</option><option value="terms-pt.html" lang="pt">Português</option><option value="terms-ar.html" lang="ar">العربية</option><option value="terms-de.html" lang="de">Deutsch</option><option value="terms-fr.html" lang="fr">Français</option><option value="terms-tr.html" lang="tr">Türkçe</option><option value="terms-it.html" lang="it">Italiano</option><option value="terms-vi.html" lang="vi">Tiếng Việt</option><option value="terms-pl.html" lang="pl">Polski</option><option value="terms-nl.html" lang="nl">Nederlands</option><option value="terms-ja.html" lang="ja">日本語</option><option value="terms-ko.html" lang="ko">한국어</option></select></div>
+<noscript><nav class="no-script-language"><a href="terms-es.html" lang="es">Español</a> · <a href="terms-pt.html" lang="pt">Português</a> · <a href="terms-ar.html" lang="ar">العربية</a> · <a href="terms-de.html" lang="de">Deutsch</a> · <a href="terms-fr.html" lang="fr">Français</a> · <a href="terms-tr.html" lang="tr">Türkçe</a> · <a href="terms-it.html" lang="it">Italiano</a> · <a href="terms-vi.html" lang="vi">Tiếng Việt</a> · <a href="terms-pl.html" lang="pl">Polski</a> · <a href="terms-nl.html" lang="nl">Nederlands</a> · <a href="terms-ja.html" lang="ja">日本語</a> · <a href="terms-ko.html" lang="ko">한국어</a></nav></noscript>
 <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light or dark mode">
 <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>
 <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 15A8 8 0 0 1 9 4a8 8 0 1 0 11 11Z"/></svg>
@@ -44,31 +56,27 @@
 <section id="warranties" class="policy-section"><h2>9. Warranties and responsibility</h2><p>To the extent permitted by law, Inscrybe is provided “as is” and “as available,” without additional promises of merchantability, fitness for a particular purpose, noninfringement of user-supplied content, error-free operation or specific results. You choose the files, settings, listening levels and destinations you use. We cannot warrant the safety, accuracy or legality of material supplied by you or third parties.</p><p>These statements do not exclude statutory guarantees, our express commitments, or obligations that cannot lawfully be excluded.</p></section>
 <section id="liability" class="policy-section"><h2>10. Limits of liability and third-party claims</h2><p>To the extent allowed by applicable law, we are not liable for indirect or consequential losses, lost profits, or loss of content arising from your use or inability to use the app, third-party service failures, or unlawful use of user-supplied material. Where a monetary cap is lawful, our total liability arising from the app is limited to the greater of US$100 or the amount you paid for Inscrybe during the twelve months preceding the event giving rise to the claim.</p><p><strong>These exclusions and the cap do not apply to fraud, willful misconduct, gross negligence, death or personal injury caused by our negligence, or any other liability or consumer right that cannot legally be excluded or limited.</strong> Local law may give you additional remedies.</p><p>To the extent permitted by law, you agree to indemnify Believe PR and Armando Jimenez for reasonable third-party claims, damages and costs, including reasonable legal fees, caused by your unlawful use, your violation of another person’s rights, or your material breach of these Terms. This applies only to the extent attributable to your conduct, not our fault. We will give reasonably prompt notice and an opportunity to participate in the defense; no settlement imposing obligations on you will be accepted without your reasonable consent. This clause does not impose an indemnity where consumer law prohibits it.</p></section>
 <section id="ending" class="policy-section"><h2>11. Ending use and changes</h2><p>You may stop using Inscrybe at any time. Export what you need before deleting local or cloud content. Deleting the app does not cancel an active subscription or erase copies held by others. We may terminate the app license for a material breach, subject to applicable notice and remedy requirements. We do not claim a general right to remotely erase your local library.</p><p>We may revise these Terms as the app changes. The date above identifies the version. Material changes will receive notice and any consent opportunity required by law; they do not retroactively remove accrued rights. Ownership, payment obligations already incurred, and enforceable liability and dispute provisions survive termination.</p></section>
-<section id="law" class="policy-section"><h2>12. Applicable law, Apple and contact</h2><p>Puerto Rico law governs these Terms, except that you retain mandatory protections and rights to bring claims in courts provided by the law of your habitual residence. Nothing requires arbitration or waives a right that cannot lawfully be waived. Please contact us first if a problem arises so we can try to resolve it.</p><p>Your acquisition and use of the app are also subject to Apple’s applicable store terms and the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard End User License Agreement</a> where applicable. These Terms supplement, and do not purport to replace, that license. Apple is not the provider of Inscrybe’s support or a party to these additional Terms. Nothing here removes rights Apple has under its applicable agreements.</p><p>If a provision is unenforceable, the remaining provisions apply to the extent lawful. Failure to enforce a provision is not a waiver. English and Spanish versions are provided; mandatory local-language and consumer protections prevail over any inconsistency.</p><div class="contact-card"><h3>Believe PR</h3><p>Armando Jimenez · Puerto Rico</p><p>Support, legal notices and copyright concerns: <a href="mailto:inscrybe@armandojimenez.dev">inscrybe@armandojimenez.dev</a></p></div></section></main></div></div>
+<section id="law" class="policy-section"><h2>12. Applicable law, Apple and contact</h2><p>Puerto Rico law governs these Terms, except that you retain mandatory protections and rights to bring claims in courts provided by the law of your habitual residence. Nothing requires arbitration or waives a right that cannot lawfully be waived. Please contact us first if a problem arises so we can try to resolve it.</p><p>Your acquisition and use of the app are also subject to Apple’s applicable store terms and the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard End User License Agreement</a> where applicable. These Terms supplement, and do not purport to replace, that license. Apple is not the provider of Inscrybe’s support or a party to these additional Terms. Nothing here removes rights Apple has under its applicable agreements.</p><p>If a provision is unenforceable, the remaining provisions apply to the extent lawful. Failure to enforce a provision is not a waiver. Versions in several languages are provided; mandatory local-language and consumer protections prevail over any inconsistency.</p><div class="contact-card"><h3>Believe PR</h3><p>Armando Jimenez · Puerto Rico</p><p>Support, legal notices and copyright concerns: <a href="mailto:inscrybe@armandojimenez.dev">inscrybe@armandojimenez.dev</a></p></div></section></main></div></div>
 <footer class="policy-footer"><div class="container"><p>© 2026 Believe PR. All rights reserved.</p></div></footer>
 <script src="../../js/policy-scripts.js"></script>
 <script>
-// Preserve the selected appearance when changing language or opening the other policy.
+// The language menu and the links keep the chosen appearance
 (function() {
- const language = document.getElementById('languageSwitcher');
- language.addEventListener('click', function(event) {
-  const button = event.target.closest('[data-lang]');
-  if (!button) return;
-  event.stopImmediatePropagation();
+ const appearance = function() { return document.documentElement.dataset.theme || 'light'; };
+ const menu = document.getElementById('policyLanguage');
+ menu.addEventListener('change', function() {
   const q = new URLSearchParams(location.search);
-  q.set('lang', button.dataset.lang);
-  q.set('theme', document.documentElement.dataset.theme || 'light');
-  location.search = q.toString();
- }, true);
+  q.delete('lang');
+  q.set('theme', appearance());
+  location.href = menu.value + '?' + q.toString() + location.hash;
+ });
  document.querySelectorAll('.policy-content a[href$=".html"]').forEach(function(link) {
   link.addEventListener('click', function() {
    const target = new URL(link.href);
-   target.searchParams.set('theme', document.documentElement.dataset.theme || 'light');
+   target.searchParams.set('theme', appearance());
    link.href = target.href;
   });
  });
- const back = document.querySelector('.back-to-top');
- if (back) back.setAttribute('aria-label', 'Back to top');
 })();
 </script>
 </body></html>

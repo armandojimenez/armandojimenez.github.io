@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" data-policy-app="inscrybe" data-policy-type="privacy" data-policy-langs="en,es">
+<html lang="en" data-policy-app="inscrybe" data-policy-type="privacy" data-policy-langs="en,es,pt,ar,de,fr,tr,it,vi,pl,nl,ja,ko" data-back-to-top="Back to top">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
 (function() {
  const q = new URLSearchParams(location.search);
- const requested = q.get('lang');
- const current = document.documentElement.lang;
- if ((requested === 'es' || requested === 'en') && requested !== current) {
-  q.delete('lang');
-  const file = 'privacy-policy' + (requested === 'es' ? '-es' : '') + '.html';
-  location.replace(file + (q.toString() ? '?' + q.toString() : '') + location.hash);
+ const routes = {"en": "privacy-policy.html", "es": "privacy-policy-es.html", "pt": "privacy-policy-pt.html", "ar": "privacy-policy-ar.html", "de": "privacy-policy-de.html", "fr": "privacy-policy-fr.html", "tr": "privacy-policy-tr.html", "it": "privacy-policy-it.html", "vi": "privacy-policy-vi.html", "pl": "privacy-policy-pl.html", "nl": "privacy-policy-nl.html", "ja": "privacy-policy-ja.html", "ko": "privacy-policy-ko.html"};
+ const requested = (q.get('lang') || '').toLowerCase().replace('_', '-');
+ if (requested) {
+  const target = routes[requested] || routes[requested.split('-')[0]] || routes.en;
+  const here = location.pathname.slice(location.pathname.lastIndexOf('/') + 1);
+  if (target !== here) { q.delete('lang'); location.replace(target + (q.toString() ? '?' + q.toString() : '') + location.hash); return; }
  }
  const theme = q.get('theme');
  if (theme === 'dark' || theme === 'light') document.documentElement.dataset.theme = theme;
 })();
 </script>
 <title>Privacy Policy · Inscrybe</title>
-<meta name="description" content="Privacy Policy for Inscrybe. Believe PR." >
+<meta name="description" content="Privacy Policy for Inscrybe. Believe PR.">
 <link rel="canonical" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy.html">
 <link rel="alternate" hreflang="en" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy.html">
 <link rel="alternate" hreflang="es" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-es.html">
+<link rel="alternate" hreflang="pt" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-pt.html">
+<link rel="alternate" hreflang="ar" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-ar.html">
+<link rel="alternate" hreflang="de" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-de.html">
+<link rel="alternate" hreflang="fr" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-fr.html">
+<link rel="alternate" hreflang="tr" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-tr.html">
+<link rel="alternate" hreflang="it" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-it.html">
+<link rel="alternate" hreflang="vi" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-vi.html">
+<link rel="alternate" hreflang="pl" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-pl.html">
+<link rel="alternate" hreflang="nl" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-nl.html">
+<link rel="alternate" hreflang="ja" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-ja.html">
+<link rel="alternate" hreflang="ko" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy-ko.html">
+<link rel="alternate" hreflang="x-default" href="https://armandojimenez.dev/apps/inscrybe/privacy-policy.html">
 <link rel="stylesheet" href="../../css/policy-styles.css"><link rel="stylesheet" href="theme.css">
 </head>
 <body>
 <a class="skip-link" href="#policy">Skip to content</a>
-<div class="language-switcher" id="languageSwitcher" aria-label="Language"></div>
-<noscript><nav class="no-script-language"><a href="privacy-policy-es.html" lang="es">Español</a></nav></noscript>
+<div class="language-switcher" id="languageSwitcher"><label class="sr-only" for="policyLanguage">Language</label><select id="policyLanguage" class="lang-select"><option value="privacy-policy.html" lang="en" selected>English</option><option value="privacy-policy-es.html" lang="es">Español</option><option value="privacy-policy-pt.html" lang="pt">Português</option><option value="privacy-policy-ar.html" lang="ar">العربية</option><option value="privacy-policy-de.html" lang="de">Deutsch</option><option value="privacy-policy-fr.html" lang="fr">Français</option><option value="privacy-policy-tr.html" lang="tr">Türkçe</option><option value="privacy-policy-it.html" lang="it">Italiano</option><option value="privacy-policy-vi.html" lang="vi">Tiếng Việt</option><option value="privacy-policy-pl.html" lang="pl">Polski</option><option value="privacy-policy-nl.html" lang="nl">Nederlands</option><option value="privacy-policy-ja.html" lang="ja">日本語</option><option value="privacy-policy-ko.html" lang="ko">한국어</option></select></div>
+<noscript><nav class="no-script-language"><a href="privacy-policy-es.html" lang="es">Español</a> · <a href="privacy-policy-pt.html" lang="pt">Português</a> · <a href="privacy-policy-ar.html" lang="ar">العربية</a> · <a href="privacy-policy-de.html" lang="de">Deutsch</a> · <a href="privacy-policy-fr.html" lang="fr">Français</a> · <a href="privacy-policy-tr.html" lang="tr">Türkçe</a> · <a href="privacy-policy-it.html" lang="it">Italiano</a> · <a href="privacy-policy-vi.html" lang="vi">Tiếng Việt</a> · <a href="privacy-policy-pl.html" lang="pl">Polski</a> · <a href="privacy-policy-nl.html" lang="nl">Nederlands</a> · <a href="privacy-policy-ja.html" lang="ja">日本語</a> · <a href="privacy-policy-ko.html" lang="ko">한국어</a></nav></noscript>
 <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light or dark mode">
 <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>
 <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 15A8 8 0 0 1 9 4a8 8 0 1 0 11 11Z"/></svg>
@@ -47,27 +59,23 @@
 <footer class="policy-footer"><div class="container"><p>© 2026 Believe PR. All rights reserved.</p></div></footer>
 <script src="../../js/policy-scripts.js"></script>
 <script>
-// Preserve the selected appearance when changing language or opening the other policy.
+// The language menu and the links keep the chosen appearance
 (function() {
- const language = document.getElementById('languageSwitcher');
- language.addEventListener('click', function(event) {
-  const button = event.target.closest('[data-lang]');
-  if (!button) return;
-  event.stopImmediatePropagation();
+ const appearance = function() { return document.documentElement.dataset.theme || 'light'; };
+ const menu = document.getElementById('policyLanguage');
+ menu.addEventListener('change', function() {
   const q = new URLSearchParams(location.search);
-  q.set('lang', button.dataset.lang);
-  q.set('theme', document.documentElement.dataset.theme || 'light');
-  location.search = q.toString();
- }, true);
+  q.delete('lang');
+  q.set('theme', appearance());
+  location.href = menu.value + '?' + q.toString() + location.hash;
+ });
  document.querySelectorAll('.policy-content a[href$=".html"]').forEach(function(link) {
   link.addEventListener('click', function() {
    const target = new URL(link.href);
-   target.searchParams.set('theme', document.documentElement.dataset.theme || 'light');
+   target.searchParams.set('theme', appearance());
    link.href = target.href;
   });
  });
- const back = document.querySelector('.back-to-top');
- if (back) back.setAttribute('aria-label', 'Back to top');
 })();
 </script>
 </body></html>
